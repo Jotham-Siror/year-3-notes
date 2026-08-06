@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 500" width="830" height="500" font-family="Georgia, 'Times New Roman', serif">
+<title>SCE 3104 CAT 1 (14 Aug 2024) — Q4b: rectangular sharp-crested weir</title>
+<desc>Left: side elevation. Water standing at a head H above the crest of a weir wall of height D above the bed spills over as a nappe. Right: front elevation looking at the weir opening of width b, with an elemental horizontal strip of thickness dz at depth z below the free surface — the strip that the integral dQ = C*b*sqrt(2gz) dz sums over. In this question b = 1 m and H = 70 cm.</desc>
+<style>
+  .wall{fill:none;stroke:#1a1a1a;stroke-width:2.6;stroke-linejoin:round}
+  .thin{fill:none;stroke:#1a1a1a;stroke-width:1.6}
+  .fluidfill{fill:#dbe8f2}
+  .dim{stroke:#444;stroke-width:1.1;fill:none}
+  .ext{stroke:#999;stroke-width:0.8;stroke-dasharray:3 2}
+  .dimtxt{font-size:15px;fill:#222;text-anchor:middle;dominant-baseline:middle}
+  .lab{font-size:16px;fill:#111;font-style:italic}
+  .labn{font-size:15px;fill:#111}
+  .fluid{font-size:15px;fill:#1a4a72}
+  .force{stroke:#b3261e;stroke-width:2.2;fill:none}
+  .flow{stroke:#1a4a72;stroke-width:1.6;fill:none}
+  .hatch{stroke:#1a1a1a;stroke-width:1.2}
+  .cap{font-size:13px;fill:#555}
+  .dash{stroke:#1a4a72;stroke-width:1.3;stroke-dasharray:9 7;fill:none}
+</style>
+<defs>
+  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#444"/></marker>
+  <marker id="fh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#b3261e"/></marker>
+  <marker id="vh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#1a4a72"/></marker>
+  <marker id="bh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#111"/></marker>
+</defs>
+
+<rect x="70" y="150.0" width="168" height="222.0" class="fluidfill"/>
+<path d="M258,205 C302,206 334,244 352,296 C362,326 366,350 368,372 L404,372 C402,344 396,314 384,284 C366,238 330,196 258,190 z" class="fluidfill"/>
+<path d="M258,205 C302,206 334,244 352,296 C362,326 366,350 368,372" class="wall"/>
+<path d="M258,190 C330,196 366,238 384,284 C396,314 402,344 404,372" class="wall"/>
+<rect x="238" y="205.0" width="20" height="167.0" fill="#e8e8e8" stroke="#1a1a1a" stroke-width="2.2"/>
+<line x1="238.0" y1="211.0" x2="258.0" y2="202.0" class="hatch" />
+<line x1="238.0" y1="230.9" x2="258.0" y2="221.9" class="hatch" />
+<line x1="238.0" y1="250.8" x2="258.0" y2="241.8" class="hatch" />
+<line x1="238.0" y1="270.6" x2="258.0" y2="261.6" class="hatch" />
+<line x1="238.0" y1="290.5" x2="258.0" y2="281.5" class="hatch" />
+<line x1="238.0" y1="310.4" x2="258.0" y2="301.4" class="hatch" />
+<line x1="238.0" y1="330.2" x2="258.0" y2="321.2" class="hatch" />
+<line x1="238.0" y1="350.1" x2="258.0" y2="341.1" class="hatch" />
+<line x1="238.0" y1="370.0" x2="258.0" y2="361.0" class="hatch" />
+<line x1="70.0" y1="150.0" x2="238.0" y2="150.0" class="wall" />
+<line x1="92" y1="174" x2="140" y2="174" class="dash"/>
+<line x1="156" y1="174" x2="190" y2="174" class="dash"/>
+<line x1="92" y1="196" x2="140" y2="196" class="dash"/>
+<line x1="156" y1="196" x2="190" y2="196" class="dash"/>
+<line x1="70.0" y1="372.0" x2="430.0" y2="372.0" class="wall" />
+<line x1="70.0" y1="372.0" x2="62.3" y2="386.0" class="hatch" />
+<line x1="87.0" y1="372.0" x2="79.3" y2="386.0" class="hatch" />
+<line x1="104.0" y1="372.0" x2="96.3" y2="386.0" class="hatch" />
+<line x1="121.0" y1="372.0" x2="113.3" y2="386.0" class="hatch" />
+<line x1="138.0" y1="372.0" x2="130.3" y2="386.0" class="hatch" />
+<line x1="155.0" y1="372.0" x2="147.3" y2="386.0" class="hatch" />
+<line x1="172.0" y1="372.0" x2="164.3" y2="386.0" class="hatch" />
+<line x1="189.0" y1="372.0" x2="181.3" y2="386.0" class="hatch" />
+<line x1="206.0" y1="372.0" x2="198.3" y2="386.0" class="hatch" />
+<line x1="223.0" y1="372.0" x2="215.3" y2="386.0" class="hatch" />
+<line x1="240.0" y1="372.0" x2="232.3" y2="386.0" class="hatch" />
+<line x1="257.0" y1="372.0" x2="249.3" y2="386.0" class="hatch" />
+<line x1="274.0" y1="372.0" x2="266.3" y2="386.0" class="hatch" />
+<line x1="291.0" y1="372.0" x2="283.3" y2="386.0" class="hatch" />
+<line x1="308.0" y1="372.0" x2="300.3" y2="386.0" class="hatch" />
+<line x1="325.0" y1="372.0" x2="317.3" y2="386.0" class="hatch" />
+<line x1="342.0" y1="372.0" x2="334.3" y2="386.0" class="hatch" />
+<line x1="359.0" y1="372.0" x2="351.3" y2="386.0" class="hatch" />
+<line x1="376.0" y1="372.0" x2="368.3" y2="386.0" class="hatch" />
+<line x1="393.0" y1="372.0" x2="385.3" y2="386.0" class="hatch" />
+<line x1="410.0" y1="372.0" x2="402.3" y2="386.0" class="hatch" />
+<line x1="427.0" y1="372.0" x2="419.3" y2="386.0" class="hatch" />
+<line x1="190.0" y1="150.0" x2="216.0" y2="150.0" class="ext" />
+<line x1="190.0" y1="205.0" x2="216.0" y2="205.0" class="ext" />
+<line x1="212.0" y1="150.0" x2="212.0" y2="205.0" class="dim" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="229.0" y="177.5" class="dimtxt" style="font-size:15px">H</text>
+<line x1="70.0" y1="205.0" x2="104.0" y2="205.0" class="ext" />
+<line x1="84.0" y1="205.0" x2="84.0" y2="372.0" class="dim" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="101.0" y="288.5" class="dimtxt" style="font-size:15px">D</text>
+<rect x="520.0" y="168.0" width="220.0" height="172.0" class="fluidfill"/>
+<rect x="520.0" y="168.0" width="220.0" height="172.0" fill="none" class="wall"/>
+<line x1="520.0" y1="168.0" x2="520.0" y2="136.0" class="ext" />
+<line x1="740.0" y1="168.0" x2="740.0" y2="136.0" class="ext" />
+<line x1="520.0" y1="142.0" x2="740.0" y2="142.0" class="dim" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="630.0" y="128.0" class="dimtxt" style="font-size:15px" transform="rotate(0.0 630.0 128.0)">b</text>
+<rect x="520.0" y="252.0" width="220.0" height="20.0" fill="#a9c9e0" stroke="#1a1a1a" stroke-width="1.4"/>
+<line x1="494.0" y1="168.0" x2="494.0" y2="340.0" class="dim" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="511.0" y="254.0" class="dimtxt" style="font-size:15px">H</text>
+<line x1="740.0" y1="168.0" x2="790.0" y2="168.0" class="ext" />
+<line x1="740.0" y1="252.0" x2="790.0" y2="252.0" class="ext" />
+<line x1="740.0" y1="272.0" x2="790.0" y2="272.0" class="ext" />
+<line x1="770.0" y1="168.0" x2="770.0" y2="252.0" class="dim" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="753.0" y="210.0" class="dimtxt" style="font-size:15px">z</text>
+<line x1="796.0" y1="252.0" x2="796.0" y2="272.0" class="dim" marker-start="url(#ah)" marker-end="url(#ah)"/>
+<text x="776.0" y="262.0" class="dimtxt" style="font-size:15px">dz</text>
+<line x1="542.0" y1="194" x2="608.0" y2="194" class="dash"/>
+<line x1="638.0" y1="194" x2="704.0" y2="194" class="dash"/>
+<line x1="542.0" y1="214" x2="608.0" y2="214" class="dash"/>
+<line x1="638.0" y1="214" x2="704.0" y2="214" class="dash"/>
+<line x1="542.0" y1="234" x2="608.0" y2="234" class="dash"/>
+<line x1="638.0" y1="234" x2="704.0" y2="234" class="dash"/>
+<line x1="500.0" y1="398.0" x2="760.0" y2="398.0" class="wall" />
+<line x1="500.0" y1="398.0" x2="492.3" y2="412.0" class="hatch" />
+<line x1="517.0" y1="398.0" x2="509.3" y2="412.0" class="hatch" />
+<line x1="534.0" y1="398.0" x2="526.3" y2="412.0" class="hatch" />
+<line x1="551.0" y1="398.0" x2="543.3" y2="412.0" class="hatch" />
+<line x1="568.0" y1="398.0" x2="560.3" y2="412.0" class="hatch" />
+<line x1="585.0" y1="398.0" x2="577.3" y2="412.0" class="hatch" />
+<line x1="602.0" y1="398.0" x2="594.3" y2="412.0" class="hatch" />
+<line x1="619.0" y1="398.0" x2="611.3" y2="412.0" class="hatch" />
+<line x1="636.0" y1="398.0" x2="628.3" y2="412.0" class="hatch" />
+<line x1="653.0" y1="398.0" x2="645.3" y2="412.0" class="hatch" />
+<line x1="670.0" y1="398.0" x2="662.3" y2="412.0" class="hatch" />
+<line x1="687.0" y1="398.0" x2="679.3" y2="412.0" class="hatch" />
+<line x1="704.0" y1="398.0" x2="696.3" y2="412.0" class="hatch" />
+<line x1="721.0" y1="398.0" x2="713.3" y2="412.0" class="hatch" />
+<line x1="738.0" y1="398.0" x2="730.3" y2="412.0" class="hatch" />
+<line x1="755.0" y1="398.0" x2="747.3" y2="412.0" class="hatch" />
+<text x="240.0" y="452.0" class="cap" text-anchor="middle" >side elevation</text>
+<text x="630.0" y="452.0" class="cap" text-anchor="middle" >front elevation</text>
+<text x="60.0" y="482.0" class="cap" text-anchor="start" >SCE 3104 CAT 1, 14 Aug 2024 — Q4b.  Redrawn from the exam figure (schematic, not to scale).</text>
+</svg>

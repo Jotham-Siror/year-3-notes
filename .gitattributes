@@ -1,0 +1,19 @@
+# Normalise line endings. Without this, every classmate on macOS or Linux
+# sees whole files as modified the moment they clone.
+* text=auto eol=lf
+
+*.md   text eol=lf
+*.svg  text eol=lf
+*.html text eol=lf
+
+# The study guides are large single-file HTML with embedded assets.
+# Tell GitHub's language detection they are documentation, not source,
+# so the repo isn't reported as an HTML project.
+*.html   linguist-documentation
+*.md     linguist-documentation
+docs/*   linguist-documentation
+
+# Scans are binary — never try to diff or merge them.
+*.jpeg binary
+*.jpg  binary
+*.png  binary

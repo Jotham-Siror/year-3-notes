@@ -1,0 +1,110 @@
+# ═══════════════════════════════════════════════════════════════
+#  DENY-BY-DEFAULT for binaries.
+#
+#  A committed binary lives in git history forever — removing it
+#  needs git filter-repo, a force-push, and everyone re-cloning.
+#  So: block every binary format, then allow back only what we
+#  authored ourselves.
+#
+#  Governing rule: COMMIT WHAT WE AUTHORED.
+#  Raw source material gets a SOURCES.md manifest, never a blob.
+# ═══════════════════════════════════════════════════════════════
+
+# ── Documents & archives ───────────────────────────────────────
+*.pdf
+*.ppt
+*.pptx
+*.pot
+*.potx
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.odt
+*.odp
+*.ods
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# ── Installers & disk images ───────────────────────────────────
+# (the 10 GB ANSYS Electronics zip is caught by *.zip above)
+*.iso
+*.exe
+*.msi
+*.dmg
+*.appimage
+
+# ── Media ──────────────────────────────────────────────────────
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.webp
+*.mp4
+*.mov
+*.avi
+*.mp3
+*.wav
+
+# ── Allow back: material we authored ───────────────────────────
+# SVG is text — it diffs properly and our figures are redrawn by hand.
+!**/figures/*.svg
+!docs/img/*.svg
+
+# Past-paper scans are NOT committed. This repository is public, and a scan is a
+# verbatim photographic reproduction of a university examination paper — the
+# university's copyright, not ours. Keep scans locally if you want them; the
+# transcription in past-papers/*.md is what gets shared.
+#
+# (No negation here on purpose. The media rules above already ignore them.)
+
+# ── Source material — lecturer / publisher copyright ───────────
+# Never committed. Each subject's SOURCES.md says what belongs here.
+# NOTE: single * (not **) so the negations below still work —
+# git cannot re-include a file whose parent directory is excluded.
+**/sources/*
+!**/sources/SOURCES.md
+!**/sources/.gitkeep
+
+# ── Personal overlay — never shared ────────────────────────────
+_personal/
+_Study Log/
+**/*.private.md
+
+# ── Quarantine & build artifacts ───────────────────────────────
+_to_delete/
+build/
+dist/
+*.tmp
+
+# ── Subjects without a knowledge base yet ──────────────────────
+# Remove this line once Thermodynamics has one.
+Thermodynamics/
+
+# ── Windows / OneDrive / Office ────────────────────────────────
+desktop.ini
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+~$*
+*.lnk
+.~lock.*
+
+# ── macOS (classmates on Mac) ──────────────────────────────────
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Editors ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
