@@ -4,6 +4,10 @@ Verified, machine-readable knowledge bases for Year 3 mechanical-engineering cou
 Strathmore University. Built to be used **with Claude** as a study tutor that already knows the
 course — but perfectly readable on their own.
 
+**📖 Read them online: <https://jotham-siror.github.io/year-3-notes/>** — no clone, no GitHub
+account, works on a phone. That's also the only place the interactive study guides actually render;
+GitHub shows `.html` files as source code.
+
 | Subject | Code | Source material | Status |
 |---|---|---|---|
 | [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
