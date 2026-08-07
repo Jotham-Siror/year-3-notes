@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year 3 Engineering — Knowledge Bases</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --ink:#1f2933; --muted:#5b6b7b;
+    --accent:#0f6e8c; --accent2:#12805c; --line:#e3e8ee;
+    --key:#0e7490; --trap:#c2410c; --chip:#eef6f4; --chipline:#cfe6df; --chipink:#254;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0e1418; --card:#151d23; --ink:#e6edf3; --muted:#9aa9b6;
+      --accent:#4ec3e0; --accent2:#4fd1a5; --line:#243039;
+      --key:#38bdd8; --trap:#f08a4b; --chip:#13262b; --chipline:#1f3d44; --chipink:#bfe3dc;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;font-size:17px}
+  header.top{position:sticky;top:0;z-index:50;background:#0b2b39;color:#fff;
+    padding:12px 20px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+  header.top .t{font-weight:700;font-size:16px}
+  header.top .s{font-size:13px;opacity:.8}
+  .wrap{max-width:880px;margin:0 auto;padding:24px 20px 80px}
+  .hero{background:linear-gradient(135deg,#0f6e8c,#12805c);color:#fff;border-radius:14px;
+    padding:26px 28px;margin-bottom:22px}
+  .hero h1{margin:.1em 0;font-size:28px}
+  .hero p{margin:.6em 0 0;opacity:.95;font-size:15px}
+  .note{background:var(--chip);border:1px solid var(--chipline);border-radius:10px;
+    padding:14px 18px;font-size:14.5px;color:var(--chipink);margin-bottom:26px}
+  .note b{color:var(--trap)}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:22px 26px;margin-bottom:22px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+  h2{color:var(--accent);border-bottom:2px solid var(--line);padding-bottom:8px;margin-top:0;font-size:22px}
+  h2 .code{font-size:13px;color:var(--muted);font-weight:400;letter-spacing:.04em}
+  h3{color:var(--accent2);font-size:15px;margin:1.5em 0 .5em;text-transform:uppercase;letter-spacing:.05em}
+  h3:first-of-type{margin-top:.6em}
+  ul.list{list-style:none;margin:0;padding:0}
+  ul.list li{border-bottom:1px solid var(--line);padding:9px 2px}
+  ul.list li:last-child{border-bottom:none}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .tag{display:inline-block;font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;
+    border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:1px 8px;margin-left:8px;vertical-align:1px}
+  .tag.live{border-color:var(--accent2);color:var(--accent2)}
+  .desc{display:block;color:var(--muted);font-size:14px;margin-top:1px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .guide{display:block;background:linear-gradient(135deg,#0f6e8c,#12805c);color:#fff;
+    border-radius:10px;padding:14px 16px;text-decoration:none}
+  .guide:hover{text-decoration:none;opacity:.92}
+  .guide b{display:block;font-size:16px}
+  .guide span{font-size:13.5px;opacity:.92}
+  footer{color:var(--muted);font-size:14px;text-align:center;margin-top:34px;line-height:1.8}
+  footer a{color:var(--muted);text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="t">Year 3 Engineering — Knowledge Bases</div>
+  <div class="s">Verified study material · unofficial</div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1>Year 3 Engineering — Knowledge Bases</h1>
+    <p>Lecture material transcribed into structured notes: every equation in LaTeX, every claim
+       anchored to the slide or page it came from, and <b>93 documented errors</b> in the source
+       material flagged with a corrected form.</p>
+  </div>
+
+  <div class="note">
+    <b>Read this first.</b> These are unofficial student notes. Nobody has endorsed, reviewed or
+    approved them. Don't submit any of it as your own work, and don't treat a correction as
+    authoritative — where a mark depends on it, check a standard textbook or ask your lecturer.
+  </div>
+
+  <section class="card">
+    <h2>Fluid Flow <span class="code">MEC 3104</span></h2>
+
+    <h3>Interactive study guides</h3>
+    <div class="grid">
+      <a class="guide" href="fluid-flow/study-guides/03-fluid-properties.html">
+        <b>Fluid Properties</b><span>Density, viscosity, surface tension, compressibility</span></a>
+      <a class="guide" href="fluid-flow/study-guides/04-fluid-statics.html">
+        <b>Fluid Statics</b><span>Pressure, manometry, forces on surfaces, buoyancy, stability</span></a>
+    </div>
+
+    <h3>Knowledge base — all 11 topics</h3>
+    <ul class="list">
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/00-index.md">00 — Index</a>
+        <span class="desc">Coverage map and dependency order. Start here.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/01-course-admin.md">01 — Course administration</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/02-history.md">02 — History</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/03-fluid-properties.md">03 — Fluid properties</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/04-fluid-statics.md">04 — Fluid statics</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/05-flow-fundamentals.md">05 — Flow fundamentals</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/06-energy-bernoulli.md">06 — Energy &amp; Bernoulli</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/07-momentum.md">07 — Momentum</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/08-viscous-flow.md">08 — Viscous flow</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/09-pipe-flow.md">09 — Pipe flow</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/10-open-channel-flow.md">10 — Open-channel flow</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/11-drag-and-lift.md">11 — Drag and lift</a></li>
+    </ul>
+
+    <h3>Reference</h3>
+    <ul class="list">
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/_verification-log.md">Verification log</a>
+        <span class="desc">Every flagged error with its corrected form. The highest-value file here.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/_formula-sheet.md">Formula sheet</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/_nomenclature.md">Nomenclature</a>
+        <span class="desc">Every symbol, units, and the look-alike clash table.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/fluid-flow/knowledge-base/past-papers/00-past-papers-index.md">Past papers</a>
+        <span class="desc">Two CATs, transcribed and worked through.</span></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Electromagnetic Fields <span class="code">EEE3202</span></h2>
+    <p style="margin-top:0;color:var(--muted);font-size:14.5px">
+      Handouts are issued progressively, so this grows through the semester. One handout covered so far.</p>
+
+    <h3>Knowledge base</h3>
+    <ul class="list">
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/electromagnetic-fields/knowledge-base/00-index.md">00 — Index</a>
+        <span class="desc">Coverage map and the gap list. Start here.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/electromagnetic-fields/knowledge-base/01-wave-characteristics-1.md">01 — Wave characteristics I</a>
+        <span class="desc">Maxwell's equations through to skin depth and the Poynting vector.</span></li>
+    </ul>
+
+    <h3>Reference</h3>
+    <ul class="list">
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/electromagnetic-fields/knowledge-base/_verification-log.md">Verification log</a>
+        <span class="desc">43 flags — including <i>&mu;</i><sub>0</sub> printed three orders of magnitude wrong.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/electromagnetic-fields/knowledge-base/_formula-sheet.md">Formula sheet</a></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/electromagnetic-fields/knowledge-base/_nomenclature.md">Nomenclature</a>
+        <span class="desc">Read the clash table before anything else — &sigma; is used for two different quantities.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/tree/main/electromagnetic-fields/knowledge-base/_reference-old-cohort">Previous cohort</a>
+        <span class="desc">Reference only — a different handout set covering the same syllabus.</span></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>About</h2>
+    <ul class="list">
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes">Repository on GitHub</a>
+        <span class="desc">Clone it and open with Claude to be tutored from these notes directly.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes#readme">README</a>
+        <span class="desc">What this is, what's deliberately left out, and how to contribute a fix.</span></li>
+      <li><a href="https://github.com/Jotham-Siror/year-3-notes/issues">Report an error</a>
+        <span class="desc">Errors found in the knowledge base itself are the most valuable contribution.</span></li>
+    </ul>
+    <p style="color:var(--muted);font-size:14px;margin-bottom:0">
+      Source PDFs, slide decks and textbooks are not published here — only material written from
+      scratch. Third-party figures and exam-paper scans are omitted by design.</p>
+  </section>
+
+  <footer>
+    <a href="https://github.com/Jotham-Siror/year-3-notes/blob/main/LICENSE">CC BY-NC-SA 4.0</a>
+    · share and adapt for non-commercial use, with attribution<br>
+    Unofficial student notes · not endorsed by any lecturer or university
+  </footer>
+
+</div>
+</body>
+</html>
