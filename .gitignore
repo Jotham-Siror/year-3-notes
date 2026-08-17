@@ -84,8 +84,10 @@ dist/
 *.tmp
 
 # ── Subjects without a knowledge base yet ──────────────────────
-# Remove this line once Thermodynamics has one.
-Thermodynamics/
+# (none — Thermodynamics now has one. Its raw material is covered by the
+#  **/sources/* rule above, plus the *.pdf / *.docx / *.zip extension rules.
+#  Do NOT re-add a blanket `thermodynamics/` line: core.ignorecase is true on
+#  Windows, so it would also swallow thermodynamics/knowledge-base/.)
 
 # ── Windows / OneDrive / Office ────────────────────────────────
 desktop.ini

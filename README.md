@@ -1,6 +1,6 @@
 # Year 3 Engineering — Knowledge Bases
 
-Verified, machine-readable knowledge bases for Year 3 mechanical-engineering coursework at
+Verified, machine-readable knowledge bases for Year 3 electrical-engineering coursework at
 Strathmore University. Built to be used **with Claude** as a study tutor that already knows the
 course — but perfectly readable on their own.
 
@@ -12,6 +12,7 @@ GitHub shows `.html` files as source code.
 |---|---|---|---|
 | [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
 | [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 1 handout, 43 flags |
+| [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 🚧 scaffold only — nothing transcribed yet |
 
 ## What this actually is
 
