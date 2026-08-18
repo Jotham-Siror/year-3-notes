@@ -9,7 +9,7 @@ file is loaded automatically; follow it in every session.
 |---|---|---|
 | Fluid Flow | MEC 3104 | `fluid-flow/knowledge-base/00-index.md` |
 | Electromagnetic Fields | EEE3202 | `electromagnetic-fields/knowledge-base/00-index.md` |
-| Thermodynamics | MEC 3105 | `thermodynamics/knowledge-base/00-index.md` — **scaffold only, nothing verified yet** |
+| Thermodynamics | MEC 3105 | `thermodynamics/knowledge-base/00-index.md` |
 
 ## Starting a session
 

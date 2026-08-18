@@ -12,7 +12,7 @@ GitHub shows `.html` files as source code.
 |---|---|---|---|
 | [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
 | [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 1 handout, 43 flags |
-| [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 🚧 scaffold only — nothing transcribed yet |
+| [Thermodynamics](thermodynamics/README.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 50 flags, both group activities |
 
 ## What this actually is
 
@@ -20,7 +20,7 @@ Each subject's lecture material has been transcribed into structured Markdown: e
 LaTeX, every claim anchored to the slide or page it came from, every figure described, and **every
 suspected error in the original flagged and corrected**.
 
-That last part is the reason this exists. Between the two subjects there are **93 documented
+That last part is the reason this exists. Across the three subjects there are **143 documented
 defects** in the lecture material — wrong constants, mislabelled results, broken derivations. A few
 examples:
 
@@ -30,6 +30,8 @@ examples:
   317× too fast — contradicted three lines later on the same page
 - EEE3202 pp. 9–16: $\sigma$ used for both conductivity *and* the attenuation constant, leaving six
   equations self-referential and unsolvable as printed
+- MEC 3105, First Law slide 20: the deck's only worked example flips the sign of the work term, so
+  its printed answer of $-505\ \mathrm{J}$ should be $-2532\ \mathrm{J}$ — wrong by a factor of five
 
 Every one is logged with the correct form and the reasoning. **Revise from the corrected versions.**
 
@@ -110,6 +112,10 @@ This repository is public, so four things are withheld on purpose. Please don't 
 └── electromagnetic-fields/
     ├── knowledge-base/
     │   └── _reference-old-cohort/   # previous cohort — reference only
+    └── sources/SOURCES.md
+└── thermodynamics/
+    ├── knowledge-base/          # 7 topic files + nomenclature, formulas, log
+    │   └── exercises/           # assessed group activities — questions only
     └── sources/SOURCES.md
 ```
 
