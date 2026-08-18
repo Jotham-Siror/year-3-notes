@@ -55,8 +55,10 @@ citation: `·TT p13` is the page whose footer reads 13, i.e. **PDF page 12**.
 
 > ### [added] The lecturer's highlighting is an examinable-content map
 >
-> Roughly twenty phrases across TT are highlighted in yellow, and **every one of them is a
-> definition or a defining condition** — never an example, an aside, or a number. The highlighted
+> Roughly twenty phrases across TT are highlighted in yellow, and **almost every one is a definition or
+> a defining condition** — rarely an example or an aside. *(Three highlights carry no definition: the
+> page-number footer on p12, an empty highlight bar below the questions on p18, and the span on p13
+> which encloses the value 273.15 °C.)* The highlighted
 > span is usually exactly the predicate of a definition ("*energy can be exchanged between them*",
 > "*variation of pressure with temperature of a fixed volume of gas*").
 >
@@ -88,8 +90,8 @@ The notes' own illustration: a metal ice tray feels colder than a package of fro
 the same temperature**, because metal conducts thermal energy away from the hand more rapidly than
 cardboard. Hence the need for a reproducible instrument. ·TT p3
 
-[fig ·TT p4] **Figure 1** — a vertical logarithmic axis labelled *Temperature (K)*, decades marked
-from $10^{-9}$ to $10^{39}$, with arrows to: universe just after beginning ($\sim10^{39}$), highest
+[fig ·TT p4] **Figure 1** — a vertical logarithmic axis labelled *Temperature (K)*, labelled at
+$10^{-9}, 10^{-2}, 10^{0}, 10^{2}, 10^{4}, 10^{6}, 10^{8}$ and $10^{39}$, with arrows to: universe just after beginning ($\sim10^{39}$), highest
 laboratory temperature ($\sim10^{8}$), centre of the Sun, surface of the Sun and tungsten melts
 (both $\sim10^{4}$), water freezes ($\sim10^{2}$), universe today and boiling helium-3
 ($\sim10^{0}$), record low temperature ($\sim10^{-9}$). The caption notes that $T=0$ **cannot be
@@ -138,7 +140,7 @@ temperatures*.
 
 [eq] **The zeroth law of thermodynamics** (TT also calls it *the law of equilibrium*): ·TT p6
 
-$$\boxed{\;\text{If A and B are separately in thermal equilibrium with a third object C,}\;}$$
+$$\boxed{\;\text{If objects A and B are separately in thermal equilibrium with a third object C,}\;}$$
 $$\boxed{\;\text{then A and B are in thermal equilibrium with each other.}\;}$$
 
 [fig ·TT p6] **Figure 2** — three panels. **(a)** block A with probe C into a hand-held digital meter
@@ -284,12 +286,16 @@ or lowering reservoir B to keep the mercury level in column A constant."*
 
 *TT does not write a manometer equation for this figure, so none is given here.*
 
-[fig ·TT p12] **Figure 5** — a typical calibration graph: axes $P$ (vertical, unscaled) against
-$T\ (^\circ\mathrm{C})$ (horizontal), gridded, with ticks at $0$ and $100$. A **single straight
-orange line** rises from a filled black dot at $T=0$ to a filled black dot at $T=100$, with a dashed
-vertical line dropping from the upper dot to the $100$ tick. Two green callouts label the dots:
-*"Pressure at the freezing point of water"* → the $T=0$ dot, *"Pressure at the boiling point of
-water"* → the $T=100$ dot. **The two green lines are callout leaders, not plotted data.**
+[fig ·TT p12] **Figure 5** — "A typical calibration graph of the gas thermometer": axes $P$ (vertical,
+unscaled) against $T\ (^\circ\mathrm{C})$ (horizontal), gridded, with ticks at $0$ and $100$. A
+**single straight orange line** rises from a filled black dot at $T=0$ to a filled black dot at
+$T=100$, with a dashed vertical line dropping from the upper dot to the $100$ tick. Two green callout
+boxes label the dots: *"Pressure at the freezing point of water"* → the $T=0$ dot, *"Pressure at the
+boiling point of water"* → the $T=100$ dot.
+
+**The two green lines are callout leaders, not plotted data** — confirmed at 300 dpi. Note this
+carefully: the left leader runs steeply and diagonally *through* the plot from the $T=0$ dot, so it
+looks like a second, steeper calibration line. It is not. There is **one** line on this graph.
 
 > ⚠ VERIFY **C2** ·TT p12–p13 — the text refers to *"the **curves** in Figure 5"* (plural) and to
 > results holding *"regardless of the type of gas or the value of the low starting pressure"*, which
@@ -465,7 +471,7 @@ the same heights, making the point that one physical state has three numerical n
 
 ## 1.8 [ex] Example 1 — skin warming during vasodilation ·TT p16–p17
 
-**Statement** ·TT p16
+**Statement** ·TT p16–p17
 
 > The temperature gradient between the skin and the air is regulated by cutaneous (skin) blood flow.
 > If the cutaneous blood vessels are constricted, the skin temperature and the temperature of the
@@ -595,9 +601,11 @@ line.
 
 ### Verification notes for this section
 
-Every page read from a **160 dpi render**, with the two suspect lines re-rendered at **400 dpi** to
-settle whether the missing minus signs were page defects or text-extraction artefacts. **They are
-page defects** — V1 and V2 below. Every number in the document was recomputed independently.
+All 17 pages read from a **160 dpi render**. Two targeted re-renders settled the questions that
+resolution could not: p13's two suspect lines at **400 dpi** — the missing minus signs are **page
+defects**, not text-extraction artefacts (V1, V2); and Figure 5 at **300 dpi** — its green lines are
+**callout leaders**, not a second calibration curve (C2). Every number in the document was recomputed
+independently.
 
 | ID | Page | Class | One-line summary |
 |---|---|---|---|
