@@ -40,7 +40,16 @@ A large share of the equation slides are **images**, invisible to text extractio
 |---|---|---|
 | FL | 15–18, 21, 23–26, 28–37 | 19 / 37 |
 | EPC | 1–2, 4, 18, 20–21, 31–38, 59–61, 64, 72, 84, 89–90, 92 | 23 / 92 |
-| TT, TC, HE | none | — |
+| **TC** | **2** | **1 / 24** |
+| **HE** | **2, 16, 18** | **3 / 30** |
+| TT | none | — |
+
+> **Corrected 2026-08-18.** This table previously read *"TT, TC, HE — none"*. That was wrong for TC
+> and HE, and was found by enumerating each PDF's image XObjects and per-page character counts during
+> the build. **TC slide 2 carries no text at all**, which shifts every subsequent title one slide later
+> than a text-based contents listing implies — all `·TC sN` citations in the knowledge base are **true
+> PDF page numbers**. HE additionally carries its equations as images on slides 8, 9, 10, 26, 27 and 28
+> even though those slides do have some text. Recorded as **C19** in `../knowledge-base/_verification-log.md`.
 
 Every page is read from a **render**, never the text layer — `../../docs/kb-format.md` § Verification
 requires it, and these two decks are why.
@@ -54,13 +63,24 @@ Both sets belong to **Topic 1**. GA numbering is not topic numbering.
 | **GA1** | `ga-1/` | 8 per-group sheets + 1 master | Topic 1 Part 1 — 1.1 Thermometry, 1.2 Equations of State (ideal gas, Van der Waals, Z) |
 | **GA2** | `ga-2/` | 9 per-group sheets | Topic 1 Part 2 — 1.3 Work, Heat and the First Law |
 
-`ga-1/MEC_3105_Group_Exercises_Topic1_Part1 - Copy.docx` is the **master**: it contains every
-group's problem set plus a facilitator note, so GA1 is one document to transcribe rather than nine.
-The per-group sheets are near-identical slices of it — diff rather than assume.
+`ga-1/MEC_3105_Group_Exercises_Topic1_Part1 - Copy.docx` is the **master**: it contains all eight
+groups' problem sets, so GA1 is one document to transcribe rather than nine. The per-group sheets are
+near-identical slices of it. **GA2 has no master** — its nine per-group files were each read
+individually and their Part A confirmed identical by diff.
 
 Each sheet is **Part A** (a guided discussion sequence, identical across all groups) and **Part B**
-(a numerical problem set, values varied per group). **No answers are supplied**; every solution in
-the knowledge base is therefore tagged `[added]`.
+(a numerical problem set, values varied per group).
+
+> ### ⚠ GA1's master contains a facilitator answer key — it is not reproduced
+>
+> The master file's final section is headed **"FACILITATOR / LECTURER NOTES (Not distributed to
+> students)"** and gives model answers for all eight groups plus facilitator guidance. It is **not
+> reproduced, quoted or paraphrased** anywhere in the knowledge base. GA2's nine files contain no
+> equivalent section.
+>
+> The knowledge base's `exercises/` files carry **the questions only, with no solutions** — each
+> cross-linked to the topic-file section that supplies the theory. See
+> `../knowledge-base/exercises/00-exercises-index.md`.
 
 `GA 1.zip` and `GA 2.zip` are the archives the folders were extracted from, kept as received.
 
@@ -103,8 +123,9 @@ and identical extracted text** — a re-save, not a revision. Both redundant cop
 
 ## Do the notes work without them?
 
-Not yet — the knowledge base is under construction. See `../knowledge-base/00-index.md` for build
-status. Once complete, the sources are needed only to check a citation against the original page.
+**Yes.** All 200 lecture pages are transcribed and verified, and both group activities are extracted.
+The sources are needed only to check a citation against the original page. See
+`../knowledge-base/00-index.md`.
 
 **Total not tracked: ~12.9 MB.**
 
