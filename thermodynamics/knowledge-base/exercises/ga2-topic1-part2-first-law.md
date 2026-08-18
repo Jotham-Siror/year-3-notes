@@ -25,9 +25,10 @@ tags: [exercises, group-activity, first-law, sign-convention, boundary-work, int
 **Assessed group activity.** 9 groups. Same six-step, ~55-minute structure as GA1.
 
 GA2 is distributed as **nine separate per-group files** — there is no combined master. **Part A** (the
-guided discussion guide and the five concept questions) is **byte-identical across all nine**. For
-**Groups 1–8**, Part B's four tasks have **fixed wording** with only the scenario, gas and numbers
-varying — so this file states each stem **once** and tabulates the per-group values.
+guided discussion guide and the five concept questions) is **identical across all nine** bar two
+trivial rewordings in G9's copy. For **Groups 1–8**, Part B's four tasks have **fixed wording** with
+only the scenario, gas and numbers varying — so this file states each stem **once** and tabulates the
+per-group values.
 
 > ### ⚠ Group 9's brief is a different document
 >
@@ -51,7 +52,8 @@ varying — so this file states each stem **once** and tabulates the per-group v
 > Unlike GA1, **GA2 carries no facilitator answer key** — none of the nine files contains one.
 
 **Reading the cross-links.** `→ 02 §2.5` means *the theory you need is in `02-first-law.md`,
-section 2.5*. Almost everything for GA2 is in **02**; two items are not in any deck (§ Gaps).
+section 2.5*. Almost everything for GA2 is in **02**. One item — the steady-flow energy equation —
+is in no deck at all, and one is named but never analysed (§ Gaps).
 
 ---
 
@@ -80,7 +82,7 @@ $$\boxed{\;\Delta U = Q - W\;}\qquad Q \;\text{positive INTO the system},\quad W
 | **1** Ice-breaker | 5 min | Each member names ONE electrical device or system that either **produces** heat as a by-product (transformer, motor, cable) or **requires** heat input to function (steam turbine). Identify whether heat and work cross the system boundary in each case, and **in which direction**. | → **02** §2.1, §2.5 |
 | **2** Sign convention | 10 min | Discuss the convention above. Why must all members use the same one when applying $\Delta U = Q - W$? Give one example where getting the sign wrong causes a serious engineering error (the brief suggests **undersizing a cooling system**). | → **02** §2.3 |
 | **3** Internal energy, enthalpy, specific heats | 10 min | Why is $h = u + Pv$ more convenient than $u$ for **flow devices** (boilers, turbines, pumps)? Then: for a **constant-volume** process which specific heat applies, and why? For **constant-pressure**? Agree a one-sentence explanation for each. | → **02** §2.7, §2.9 |
-| **4** Numerical problem | 20 min | Solve **all four** Part B tasks. Every member contributes at least one calculation step. State formula → substitution → answer with units for every part. | → Part B below |
+| **4** Numerical problem | 20 min | *"Solve **all three** numerical tasks in Part B"* — Tasks 1–3. Every member contributes at least one calculation step. State formula → substitution → answer with units for every part. **Task 4 belongs to Step 5, not here** *(except for G9, whose Task 4 is numerical)*. | → Part B below |
 | **5** Real-world EE discussion | 5 min | Answer the group's Task 4 scenario, connecting the first law to a practical EE consequence: equipment sizing, protection setting, safety, or efficiency. | → Task 4 below |
 | **6** Summary | 5 min | Elect a spokesperson; 2-minute summary covering (a) a concept insight, (b) all numerical results, (c) the real-world EE conclusion. | — |
 
@@ -102,8 +104,8 @@ builds both from the same piston-and-cylinder, which is the sharpest way to see 
 $U$ is a **property** of a system; $Q$ and $W$ are not. **Explain what this means** in terms of path
 functions versus point functions. Why does the distinction matter when analysing a **cycle** such as
 the Rankine cycle in a steam power station?
-→ **02 §2.3** — work as an inexact differential, $\delta W$. → **03b §3b.3** for the cyclic
-consequence ($\Delta U = 0$ around a cycle, so $Q_{net} = W_{net}$). → **04 §4.4** carries a
+→ **02 §2.3** — work as an inexact differential, $\delta W$. → **03b §3b.4** for the cyclic
+consequence ($\Delta U = 0$ around a cycle, so $Q_{net} = W_{net}$); §3b.3 defines the cycle itself. → **04 §4.4** carries a
 **⚠ VERIFY V20** on exactly this point: TC s12 calls enthalpy "the total heat content of a system",
 conflating a state function with a path-dependent transfer.
 
@@ -247,9 +249,13 @@ further clause to part 3** — see § Group 9.
 > specific-heat relations in **molar** form at s28 via $\gamma$, so converting basis is on you —
 > $c$ (per kg) $= \bar{c}$ (per mol) $/\,M$. → **02 §2.9** *Adiabatic* and `_formula-sheet.md`.
 >
-> **Cross-check available.** Mayer's relation $c_p - c_v = R$ lets you check any row against the
-> matching specific gas constant in GA1 Part B (i) — for instance G2's N₂ pair ($c_v = 0.743$,
-> $R = 0.297$) implies $c_p = 1.040\ \mathrm{kJ\,kg^{-1}K^{-1}}$. → `_formula-sheet.md`.
+> **Cross-check available — but match the *gas*, not the group number.** Mayer's relation
+> $c_p - c_v = R$ lets you check a row against the specific gas constant for **the same gas** in GA1
+> Part B (i). The group numbers do not line up: GA2's **G2 is N₂**, whose $R = 0.297$ comes from
+> **GA1's G1**. That pair gives $0.743 + 0.297 = 1.040\ \mathrm{kJ\,kg^{-1}K^{-1}}$, the standard N₂
+> $c_p$. Seven of the nine rows can be checked this way; **CH₄ (G8) and propane (G9) cannot** — neither
+> gas has a specific gas constant in GA1 Part B (i). *(G9's own Task 2 header does supply propane's
+> $R = 0.189$.)* → `_formula-sheet.md`.
 
 ---
 
@@ -343,14 +349,18 @@ mechanical shaft in.*
 
 ---
 
-## Group reflection block ·GA2 Part B *(common to all groups)*
+## Group reflection block ·GA2 Part B *(Groups 1–8)*
 
 1. Agree on one aspect of the first law that initially seemed counter-intuitive, and how the group
    resolved it.
-2. Confirm the numerical working is recorded as **formula → substitution → answer with units** at
-   every step.
-3. Prepare the spokesperson's 2-minute summary: (a) a concept insight from Part A, (b) all numerical
-   results from Part B Tasks 1–3, (c) the real-world EE conclusion from Task 4.
+2. Confirm the numerical working **for all three tasks** is recorded as **formula → substitution →
+   answer with units** at every step.
+3. Prepare the spokesperson's 2-minute summary: (a) concept insight, (b) numerical results, (c) the
+   real-world EE conclusion.
+
+*G9's version names the parts explicitly — "(a) one concept insight **from Part A**, (b) all numerical
+results from Part B **Tasks 1–3**, (c) your real-world EE conclusion **from Task 4**" — which is the
+same content, spelled out.*
 
 ---
 
@@ -383,7 +393,9 @@ the relevant question above.
 Extracted from all **nine** per-group files (`G2_1` … `G2_9`), and **every group's Part B stem was
 diffed against every other's**, not sampled. Findings:
 
-- **Part A is identical across all nine**, apart from the group number.
+- **Part A is identical across Groups 1–8**, apart from the group number. **G9's copy carries two
+  trivial rewordings** — Step 5 opens "Connect the First Law…" rather than "This should connect the
+  First Law…", and its concept-questions header adds "(All Groups — …)". No question changes.
 - **Groups 1–8's Part B stems are identical**, with only the assigned gas name substituted in.
 - **Group 9's file was authored separately** — re-titled Part B header, a completely different Task 1,
   an added clause in Task 2, a re-framed Task 3 part 3, and the set's only numerical Task 4. All of it

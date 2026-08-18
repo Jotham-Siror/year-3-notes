@@ -184,10 +184,15 @@ is entirely about those cycles, and are supplied `[added]` on the formula sheet.
 gap left open**: it is asked about in GA2 Part A Q3 only, as a discussion prompt with no numbers
 attached, so it is documented rather than filled.
 
-A fourth, smaller gap surfaced when GA1 was extracted: the **Seebeck effect** (GA1 G1 Part B (b)) —
-TT's list of the six physical properties thermometers exploit (**01 §1.4**) does not include
-thermoelectric emf, so the thermocouple is not derivable from anything the course teaches. Left as a
-documented gap; it is outside the lecture syllabus.
+Two further, smaller gaps surfaced when GA1 was extracted, both left documented rather than filled:
+
+- **The Seebeck effect** (GA1 G1 Part B (b)) — TT's list of the six physical properties thermometers
+  exploit (**01 §1.4**) does not include thermoelectric emf, so the thermocouple is not derivable from
+  anything the course teaches. Outside the lecture syllabus.
+- **The Rankine temperature scale** (GA1 Part B, four groups) — TT covers Celsius, Kelvin and
+  Fahrenheit only (**01 §1.6–§1.7**). Rankine is *named* once in the whole course, inside the ·HE s26
+  quotation at **05 §5.3**, and **no conversion is given anywhere**. The GA1 brief supplies
+  $T(^\circ\mathrm{R}) = 1.8\,T(\mathrm{K})$ in its own hint line, which is the only place it appears.
 
 ---
 

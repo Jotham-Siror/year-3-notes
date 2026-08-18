@@ -70,11 +70,13 @@ Three items, all tracked in `00-index.md` § **Gap map**:
 | **Steady-flow energy equation (SFEE)** | GA2 Part A Q3 | ❌ **still not supplied.** FL covers enthalpy but never writes a flow-device balance. `_nomenclature.md` marks $h_1$, $h_2$ as GA2-only. |
 | **Seebeck effect** / thermoelectric measurement | GA1 Part B, G1 (b) | ❌ not supplied — outside the lecture syllabus. TT's list of six exploited properties (**01 §1.4**) does not include thermoelectric emf. |
 
-*Partial:* the **Rankine temperature scale** (GA1, four groups) — **01 §1.7** covers Celsius, Kelvin
-and Fahrenheit only; the brief supplies $T(^\circ\mathrm{R}) = 1.8\,T(\mathrm{K})$ in its own hint
-line. And the **Rankine cycle** (GA2 Part A Q2) is named in **05 §5.4** and **04 §4.5** but no deck
-gives its efficiency formula — a course-wide gap covering Otto, Diesel, Brayton and Stirling too,
-filled `[added]` on `_formula-sheet.md`.
+*Partial, and both also in the gap map:* the **Rankine temperature scale** (GA1, four groups) —
+**01 §1.6–§1.7** covers Celsius, Kelvin and Fahrenheit only, and Rankine is named just once in the
+whole course, inside the ·HE s26 quotation at **05 §5.3**, with **no conversion given anywhere**; the
+brief supplies $T(^\circ\mathrm{R}) = 1.8\,T(\mathrm{K})$ in its own hint line. And the **Rankine
+cycle** (GA2 Part A Q2) is named in **05 §5.4** and **04 §4.5** but no deck gives its efficiency
+formula — a course-wide gap covering Otto, Diesel, Brayton and Stirling too, filled `[added]` on
+`_formula-sheet.md`.
 
 ---
 

@@ -807,6 +807,19 @@ back against the source `.docx` text programmatically — GA1's 8 groups (R, P, 
 GA2's 9 (all Task 1–4 quantities). **All present, none altered.** That check is what surfaced the G9
 discrepancy: a stray `180 kJ` in G9's Task 1 that the common stem could not account for.
 
+**An independent adversarial review was run over both exercise files** after they were written, with
+the source text and every cross-reference target available to it. Twelve findings were raised; **eleven
+were confirmed and fixed**, and **one was rejected** — a claimed broken-link base in
+`thermodynamics/README.md`, which assumed the file sat at the repository root rather than in the
+subject folder. A scripted link check resolves all of its links. The eleven fixes were: a property
+table mis-attributed to TC instead of FL s34; "solve all four tasks" where the brief says three;
+a Mayer cross-check that matched group numbers instead of gases; "byte-identical across all nine" when
+G9's Part A carries two rewordings; a Rankine-scale gap claimed to be in the gap map when it was not
+(now added); a Rankine citation to HE s8–s10 instead of s26; a Kelvin-shift relation attributed to
+§1.7 instead of §1.6; a cyclic-work pointer to §3b.3 instead of §3b.4; a reflection block quoting G9's
+wording as the common one; and two overstatements about how uniform the briefs are. **Rejecting a
+finding is as much the job as accepting one** — the same standard that withdrew V12.
+
 **GA1's facilitator answer key was read but is not reproduced.** The master brief's final section is
 headed *"FACILITATOR / LECTURER NOTES (Not distributed to students)"*. It is marked not for
 distribution and this repository is public, so it is not quoted, paraphrased or verified here — and

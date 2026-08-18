@@ -27,10 +27,11 @@ presentation per group. Targets **CO1** (define key thermodynamic concepts) and 
 relationships); WA graduate attributes **PO1, PO2, PO9, PO10**.
 
 The brief is built in two halves. **Part A** — the guided discussion guide and the concept questions —
-is **identical for every group**. **Part B** — the numerical problem set — has the **same wording for
-every group with different numbers and a different assigned gas**. This file therefore states each
-question stem **once** and tabulates the per-group values, rather than repeating eight near-identical
-copies.
+is **identical for every group**. **Part B** is mixed: its **Sub-Topic 1.1** gives each group a
+*different* measurement scenario with *different* short-answer parts, while its **Sub-Topic 1.2 Parts
+(i) and (ii)** use the **same wording for every group** with only the numbers and the assigned gas
+changing. This file therefore tabulates Sub-Topic 1.1 group by group, and states 1.2's stems **once**
+with a per-group data table, rather than repeating eight near-identical copies.
 
 ---
 
@@ -134,11 +135,16 @@ for **Fahrenheit**, even-numbered for **Rankine**.
 | **G7** | **Thermocouple** on a **steam turbine-generator exhaust flange** | $210\ ^\circ\mathrm{C}$ | K, °F | (b) why a thermocouple beats an RTD at this temperature; (c) convert the manufacturer's $480\ ^\circ\mathrm{F}$ limit to °C and say whether the reading exceeds it |
 | **G8** | **Digital pyrometer**, thermal imaging survey of **MV switchgear**, hot-spot on a cable lug | $74\ ^\circ\mathrm{C}$ | K, °R | (b) IEC allows a $50\ \mathrm{K}$ rise above a $40\ ^\circ\mathrm{C}$ ambient — give the maximum permissible lug temperature in °C and K and say whether the hot-spot is within limits; (c) why standards specify temperature *rise* in K rather than °C |
 
-**Conversion relations supplied in the brief** (all three are in **01 §1.7**):
+**Conversion relations supplied in the brief.** The first three are TT's own equations — the
+Kelvin shift is boxed in **01 §1.6** (TT Eq. 1) and the two Fahrenheit relations in **01 §1.7**
+(TT Eqs. 2a, 2b):
 
 $$T(\mathrm{K}) = T(^\circ\mathrm{C}) + 273.15 \qquad
 T(^\circ\mathrm{F}) = 1.8\,T(^\circ\mathrm{C}) + 32 \qquad
 T(^\circ\mathrm{C}) = \frac{T(^\circ\mathrm{F}) - 32}{1.8}$$
+
+The brief additionally supplies the Rankine relation and the degree-size identity in its hint lines.
+**Rankine is not in TT** (see § Gaps); the identity is **01 §1.7**:
 
 $$T(^\circ\mathrm{R}) = 1.8 \times T(\mathrm{K}) \qquad\text{and}\qquad \Delta T\;\text{of }1\ \mathrm{K} = \Delta T\;\text{of }1\ ^\circ\mathrm{C}$$
 
@@ -177,8 +183,10 @@ constant $R = \bar{R}/M$. → **02 §2.9** *Isochoric* for the constant-volume p
 > comes out in **kg** directly — no conversion factor. This is the reason the specific-gas-constant
 > form is quoted in kJ rather than J. → **02 §2.12**.
 >
-> **Cross-check on G1's $R$.** TC's property table gives N₂ at $R = 0.2968\ \mathrm{kJ\,kg^{-1}K^{-1}}$,
-> which rounds to the $0.297$ used here — the two sources agree. → `00-index.md` § Overlap map.
+> **Cross-check on G1's $R$.** **FL s34**'s specific-gas-constant table gives N₂ at
+> $R = 0.2968\ \mathrm{kJ\,kg^{-1}K^{-1}}$, which rounds to the $0.297$ used here — the deck and the
+> brief agree, and $R_u/M = 8.31447/28.013 = 0.2968$ confirms it. → **02 §2.12** and
+> `_nomenclature.md` **clash 2**.
 
 ---
 
@@ -240,14 +248,15 @@ Every group brief closes with the same three prompts:
 
 ## Gaps — what GA1 assesses that no lecture deck teaches
 
-Three items are needed to answer GA1 in full and appear in **none of the five lecture documents**.
-All three are tracked in `00-index.md` § Gap map.
+Three items are needed to answer GA1 in full. **Two are absent from all five lecture documents**; the
+third is named in one deck but never given as a formula. All three are recorded in
+`00-index.md` § Gap map.
 
 | Item | Asked in | Status |
 |---|---|---|
 | **Van der Waals equation** and its constants $a$, $b$ | Part B (ii), all groups; Part A Q3 | ❌ absent from all five decks. Supplied `[added]` in **02 §2.12** and on `_formula-sheet.md`. FL s37 gives Beattie–Bridgeman, Benedict–Webb–Rubin and virial **instead**. |
 | **Seebeck effect** / thermoelectric measurement | Part B, G1 (b); implied in Part A Q5 | ❌ absent. **TT's list of six properties (01 §1.4) does not include thermoelectric emf** — the thermocouple is not derivable from it. Outside the lecture syllabus. |
-| **Rankine scale** conversion $T(^\circ\mathrm{R}) = 1.8\,T(\mathrm{K})$ | Part B, G2/G4/G6/G8 (a) | ⚠ partial. **TT (01 §1.7) covers Celsius, Kelvin and Fahrenheit only.** Rankine is *named* as the US absolute scale in **05 §5.3** (HE s8–s10) but no conversion is given there; the brief supplies the relation in its own hint line. |
+| **Rankine scale** conversion $T(^\circ\mathrm{R}) = 1.8\,T(\mathrm{K})$ | Part B, G2/G4/G6/G8 (a) | ⚠ partial. **TT (01 §1.6–§1.7) covers Celsius, Kelvin and Fahrenheit only.** Rankine is *named* once as the US absolute scale — inside the ·HE s26 quotation in **05 §5.3** — but **no conversion is given anywhere**; the brief supplies the relation in its own hint line. |
 
 **Not a gap, despite the name:** *Gay-Lussac's law* is nowhere named in the decks, but it is not new
 content — it is the ideal gas law at constant $V$ and $m$, i.e. $P/T = mR/V = \text{constant}$.
