@@ -78,8 +78,10 @@ Each sheet is **Part A** (a guided discussion sequence, identical across all gro
 > reproduced, quoted or paraphrased** anywhere in the knowledge base. GA2's nine files contain no
 > equivalent section.
 >
-> The knowledge base's `exercises/` files carry **the questions only, with no solutions** — each
-> cross-linked to the topic-file section that supplies the theory. See
+> The knowledge base's `exercises/` files carry **every question and a worked solution for each**, all
+> tagged `[added]` and **computed from scratch** — never taken from the key. That independence is
+> audited by script in `../knowledge-base/_verification-log.md`: zero shared prose with the key, and
+> none of its indicative results reproduced. See
 > `../knowledge-base/exercises/00-exercises-index.md`.
 
 `GA 1.zip` and `GA 2.zip` are the archives the folders were extracted from, kept as received.

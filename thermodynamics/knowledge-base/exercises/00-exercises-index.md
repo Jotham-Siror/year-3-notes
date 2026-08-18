@@ -5,8 +5,8 @@ lecturer: "withheld"
 section: "Exercises — index"
 file_role: index
 covers: "GA1 (Topic 1 Part 1) and GA2 (Topic 1 Part 2)"
-solutions: "none anywhere in this folder — by design"
-verification_flags: 0
+solutions: "worked and verified in both files, § Solutions. All tagged [added]."
+verification_flags: 1
 tags: [exercises, index, group-activity]
 ---
 
@@ -14,34 +14,36 @@ tags: [exercises, index, group-activity]
 
 # Exercises — index
 
-The two assessed **group discussion activities**, transcribed as **questions only** and cross-linked
-into the topic files that carry the theory.
+The two assessed **group discussion activities** — every question transcribed, every one **worked and
+verified**, each cross-linked into the topic file that carries the theory.
 
-| File | Activity | Covers | Groups | Maps to |
-|---|---|---|---|---|
-| [`ga1-topic1-part1-equations-of-state.md`](ga1-topic1-part1-equations-of-state.md) | **GA1** — Topic 1 Part 1 | 1.1 Temperature and thermometry · 1.2 Equations of state (ideal gas, Van der Waals, $Z$) | 8 | **01**, **02** §2.12 |
-| [`ga2-topic1-part2-first-law.md`](ga2-topic1-part2-first-law.md) | **GA2** — Topic 1 Part 2 | 1.3 Work, heat and the first law | 9 | **02**, **03b** |
+| File | Activity | Covers | Groups | Maps to | Flags |
+|---|---|---|---|---|---|
+| [`ga1-topic1-part1-equations-of-state.md`](ga1-topic1-part1-equations-of-state.md) | **GA1** — Topic 1 Part 1 | 1.1 Temperature and thermometry · 1.2 Equations of state (ideal gas, Van der Waals, $Z$) | 8 | **01**, **02** §2.12 | ⚠ **V28** |
+| [`ga2-topic1-part2-first-law.md`](ga2-topic1-part2-first-law.md) | **GA2** — Topic 1 Part 2 | 1.3 Work, heat and the first law | 9 | **02**, **03b** | clean |
 
 ---
 
 ## What is in these files, and what is not
 
-**In:** every question as set, the per-group data tables, the session structure, and a cross-link from
-each question to the section of the knowledge base that answers it. Plus the traps worth knowing
-before you start — the unit conversions in GA1's Van der Waals table, and the sign convention and
-mixed scenario shapes in GA2's Task 1.
+**In:** every question as set, the per-group data tables, the session structure, a cross-link from each
+question to the section of the knowledge base that answers it, and a **§ Solutions** section in each
+file working every numerical part and giving answer points for the discussion parts. Plus the traps
+worth knowing before you start — **V28**, the sign convention, and the mixed scenario shapes in GA2's
+Task 1.
+
+**How the solutions are placed.** At the **end** of each file, not under each question, so you can
+attempt a task before seeing the answer. Every one is tagged `[added]`.
 
 **Not in — deliberately:**
 
-1. **No worked solutions.** These are discussion exercises with small weight in the course. The
-   lecture material is what the CAT and exam assess, and that is what **01**–**05** cover in full. The
-   cross-links tell you where to work each answer from; if your group's answer disagrees with the
-   linked section, the linked section is the tie-breaker.
-2. **No facilitator answer key.** GA1's master brief carries a section headed **"FACILITATOR /
+1. **No facilitator answer key.** GA1's master brief carries a section headed **"FACILITATOR /
    LECTURER NOTES (Not distributed to students)"** with model answers for all eight groups. It is
    marked not for distribution and is **not reproduced, quoted or paraphrased** anywhere in this
-   knowledge base. GA2 has no such section in any of its nine files.
-3. **No student names, ever.** The raw submission files carry group member lists and document
+   knowledge base — not a number, not a phrase. **The solutions here are our own working**, computed
+   from scratch and shown with their method so you can check them rather than trust them. GA2 has no
+   such section in any of its nine files.
+2. **No student names, ever.** The raw submission files carry group member lists and document
    metadata. Groups are identified **by number only** throughout. See `00-index.md` § *Why exercises
    are a separate folder*.
 
@@ -66,7 +68,7 @@ Three items, all tracked in `00-index.md` § **Gap map**:
 
 | Item | Activity | Where it is supplied |
 |---|---|---|
-| **Van der Waals equation**, constants $a$, $b$ | GA1 Part B (ii), all 8 groups | `[added]` in **02 §2.12** and `_formula-sheet.md` § *[added] Van der Waals*. FL s37 gives Beattie–Bridgeman, Benedict–Webb–Rubin and virial instead. |
+| **Van der Waals equation**, constants $a$, $b$ | GA1 Part B (ii), all 8 groups | `[added]` in **02 §2.12** and `_formula-sheet.md` § *[added] Van der Waals*. FL s37 gives Beattie–Bridgeman, Benedict–Webb–Rubin and virial instead. ⚠ **GA1 prints $a$ in the wrong units — V28.** |
 | **Steady-flow energy equation (SFEE)** | GA2 Part A Q3 | ❌ **still not supplied.** FL covers enthalpy but never writes a flow-device balance. `_nomenclature.md` marks $h_1$, $h_2$ as GA2-only. |
 | **Seebeck effect** / thermoelectric measurement | GA1 Part B, G1 (b) | ❌ not supplied — outside the lecture syllabus. TT's list of six exploited properties (**01 §1.4**) does not include thermoelectric emf. |
 
@@ -80,7 +82,12 @@ formula — a course-wide gap covering Otto, Diesel, Brayton and Stirling too, f
 
 ---
 
-## Two things to read before either activity
+## Three things to read before either activity
+
+**GA1 — ⚠ V28, the Van der Waals units.** The brief prints $a$ as $\mathrm{J\,m^3\,mol^{-2}}$; the
+values are actually $\mathrm{L^2\,bar\,mol^{-2}}$. **Divide every printed $a$ by 10.** Read literally,
+the cubic returns a liquid-like molar volume and $Z \approx 0.08$ for a gas at 5 MPa. Full entry in
+`../_verification-log.md`; flag box in the GA1 file above the data table.
 
 **GA1 — the $T_C$ clash.** In **TT** (and **01**), $T_C$ is the **Celsius temperature**. In **HE**
 (and **05**), $T_C$ is the **cold-reservoir temperature**. GA1 uses the TT sense.

@@ -6,8 +6,8 @@ lecturer: "withheld"
 file_role: index
 source: "5 lecture documents (200 pp.) + 2 sets of assessed group activities. See ../sources/SOURCES.md"
 built: "COMPLETE — all five lecture documents plus both group activities."
-coverage: "200 / 200 lecture pages transcribed and verified. GA1 (8 groups) and GA2 (9 groups) extracted, questions only."
-total_verification_flags: 50
+coverage: "200 / 200 lecture pages transcribed and verified. GA1 (8 groups) and GA2 (9 groups) transcribed and solved."
+total_verification_flags: 51
 ---
 
 <!-- Compiled by Jotham-JS, 2026. MEC 3105 Thermodynamics knowledge base. -->
@@ -17,8 +17,8 @@ total_verification_flags: 50
 > ## ✅ Build status — complete
 >
 > **Every one of the 200 lecture pages is transcribed and verified.** Both assessed group activities
-> are extracted into `exercises/` as **questions only**, each cross-linked to the section that carries
-> its theory. Study from `01-` … `05-` freely.
+> are in `exercises/` — **every question transcribed, every one worked and verified**, each
+> cross-linked to the section that carries its theory. Study from `01-` … `05-` freely.
 >
 > ### ⚠ Three things to know before teaching from any of it
 >
@@ -58,8 +58,8 @@ piston engine.
 | **EPC** | Energy Equations and Phase Changes | 92 | 2 | `03a-…` **+** `03b-…` *(split)* | ✅ **verified — 8 V, 8 C** |
 | **TC** | Power Production and Thermodynamic Cycles (1) | 24 | 3 | `04-thermodynamic-cycles.md` | ✅ **verified — 5 V, 7 C** |
 | **HE** | Power Production and Thermodynamic Cycles (2) | 30 | 3 | `05-heat-engines-and-carnot.md` | ✅ **verified — 4 V, 2 C** |
-| **GA1** | Group Activities 1 — 8 groups | — | 1 — §1.1, §1.2 | `exercises/ga1-…md` | ✅ **extracted — questions only** |
-| **GA2** | Group Activities 2 — 9 groups | — | 1 — §1.3 | `exercises/ga2-…md` | ✅ **extracted — questions only** |
+| **GA1** | Group Activities 1 — 8 groups | — | 1 — §1.1, §1.2 | `exercises/ga1-…md` | ✅ **solved — 1 V (V28)** |
+| **GA2** | Group Activities 2 — 9 groups | — | 1 — §1.3 | `exercises/ga2-…md` | ✅ **solved — clean** |
 
 Provenance: **·TT p7** (page-based) · **·EPC s68** (slide-based) · **·GA1 G3 Part B Q2** (exercises).
 Full detail in `../sources/SOURCES.md`.
@@ -106,9 +106,9 @@ knowledge-base/
 Four rules keep the separation real:
 
 1. Topic files cite **lecture documents only**; exercise files cite **group activities only**.
-2. **No solutions are written at all** — the exercise files carry the questions and a cross-link to
-   the section that answers them, nothing more. GA1's master brief does contain a facilitator answer
-   key marked *"Not distributed to students"*; it is **not reproduced anywhere**.
+2. **Every solution we write carries `[added]`** and was computed from scratch. GA1's master brief
+   does contain a facilitator answer key marked *"Not distributed to students"*; it is **not
+   reproduced, quoted or paraphrased anywhere**, and no number from it appears in this repository.
 3. This index cross-links the two, but nothing merges them.
 4. **No student names anywhere.** Groups are referred to by number. The raw `.docx` files carry the
    names of every member; they stay untracked in `../sources/`.
@@ -168,7 +168,7 @@ three times and unpicked afterwards.
 
 | Topic | Assessed in | Final verdict |
 |---|---|---|
-| **Van der Waals equation, constants $a$, $b$** | GA1 Part B | ❌ **ABSENT FROM ALL FIVE DECKS.** FL s37 gives Beattie-Bridgeman, Benedict-Webb-Rubin and virial instead. Supplied `[added]` in `02-first-law` §2.12 and on the formula sheet. |
+| **Van der Waals equation, constants $a$, $b$** | GA1 Part B | ❌ **ABSENT FROM ALL FIVE DECKS.** FL s37 gives Beattie-Bridgeman, Benedict-Webb-Rubin and virial instead. Supplied `[added]` in `02-first-law` §2.12 and on the formula sheet. ⚠ **And GA1 prints the constants in the wrong units — see V28.** |
 | **Steady-flow energy equation** | GA2 | ❌ **ABSENT FROM ALL FIVE DECKS.** FL covers closed systems only; TC and HE never write it. **Still unsupplied** — it is needed for one GA2 *discussion* prompt (Part A Q3), not for any numerical task, so it was left as a documented gap rather than invented. |
 | **Otto / Diesel / Brayton / Rankine / Stirling efficiency** | likely CAT | ❌ **ABSENT FROM ALL FIVE DECKS.** Named in TC s13, tabulated in HE s12, analysed nowhere. Supplied `[added]` on the formula sheet. |
 | **Entropy as a property** (general definition, Clausius inequality, $T\,ds$) | — | ⚠ **PARTIAL.** No general definition anywhere. HE s28 gives the **Carnot-specific** $Q_H = T_H\Delta s$, $Q_C = T_C\Delta s$ — the only entropy equations in the course. $dS = \delta Q_{rev}/T$ supplied `[added]`. |
@@ -207,7 +207,9 @@ Full detail in `_verification-log.md`.
 | **EPC** | 92 | **8** | **8** | ✅ complete |
 | **TC** | 24 | **5** | **7** | ✅ complete |
 | **HE** | 30 | **4** | **2** | ✅ complete |
-| **Total** | **200 / 200** | **26** | **24** | **50 flags** |
+| **Total (lecture documents)** | **200 / 200** | **26** | **24** | **50 flags** |
+| **GA1** — group activity | — | **1** *(V28)* | **0** | ✅ |
+| **Grand total** | — | **27** | **24** | **51 flags** |
 
 > **✅ The knowledge base itself has been verified**, not just written — an independent pass re-checked
 > every citation, quotation, figure description and number in all seven topic files against the source
@@ -302,7 +304,7 @@ Staged deliberately — one document at a time, each stage independently finisha
 | **0** | Folder structure, `SOURCES.md`, this index, `.gitignore`, repo corrections | ✅ done |
 | **1a** | **TT** → `01-temperature-thermometry.md` — 17 pp. Plus `_nomenclature.md`, `_formula-sheet.md`, `_verification-log.md` created. | ✅ done |
 | **1b** | **FL** → `02-first-law.md` — 37 slides. Resolved the $Z$ / Van der Waals gap **and the work sign convention**. | ✅ done |
-| **1c** | **GA1 + GA2** → `exercises/` — **questions only**, each cross-linked to the section that answers it. *(Re-scoped: originally "transcribed and solved". See below.)* | ✅ done |
+| **1c** | **GA1 + GA2** → `exercises/` — every question transcribed **and solved**, each cross-linked to the section that answers it. Solving GA1 exposed **V28**. | ✅ done |
 | **2** | **EPC** → **`03a-` + `03b-`** *(split — see below)* — 92 slides, 9 examples recomputed | ✅ done |
 | **3** | **TC + HE** → `04-`, `05-` — 54 slides | ✅ done |
 | **4** | Close out: `README.md`, `exercises/00-exercises-index.md`, `SOURCES.md` corrections, final safety re-run | ✅ done |
@@ -320,22 +322,28 @@ the Diesel cycle** — quantitative, and the examinable spine of Topic 3. They s
 one concept (thermal equilibrium). Keeping them in one file would have buried the second law behind
 twenty slides of particle pictures. **Recorded here so the split is not undone.**
 
-### Stage 1c was re-scoped mid-build — recorded so the change is not mistaken for an omission
+### Stage 1c — transcribed, then solved
 
-The original brief was to transcribe **and solve** every GA question, with each solution carrying
-`[added]`. That was **cut to questions-only** on the reasoning that the group activities carry small
-weight in the course, that solving them would have made them look more central than they are, and that
-the lecture material — which is what the CAT and exam assess — was the thing worth the verification
-effort. The exercise files therefore contain **every question and no answers**, with each question
-cross-linked to the section of `01-`…`05-` that carries its theory.
+The exercise files were first built as **questions only**, then the solutions were added on a second
+pass. Both halves are in place: every question, every worked answer, and a cross-link from each
+question to the section of `01-`…`05-` that carries its theory. **All solutions are tagged `[added]`**
+— the brief supplies no answers to students.
 
-Two further findings from the extraction:
+**Solving GA1 is what exposed V28**, the Van der Waals unit error. It was invisible while the file
+carried questions only, because the constants look unremarkable until you substitute them and get a
+liquid-like molar volume for a gas. **That is the argument for working every exercise rather than
+transcribing it** — the same argument that produced V8 in the lecture material.
+
+Three further findings from the extraction:
 
 - **GA1's master file carries a facilitator answer key**, headed *"FACILITATOR / LECTURER NOTES (Not
   distributed to students)"* — model answers for all eight groups. It is **not reproduced, quoted or
   paraphrased** anywhere in this knowledge base. GA2 has no equivalent section in any of its nine files.
 - **GA2 has no master file.** It ships as nine per-group documents whose Part A is identical; GA1's
   single master covers all eight of its groups.
+
+- **The lecturer's Van der Waals constants are right; only their printed unit is wrong** — V28. The
+  correction is a factor of ten, and it changes every Part (ii) answer.
 
 Of the two gaps Stage 1c was meant to fill, **Van der Waals** was supplied `[added]` in `02-first-law`
 §2.12 and on the formula sheet, and the **steady-flow energy equation remains unsupplied** — it is

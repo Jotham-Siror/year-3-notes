@@ -4,10 +4,10 @@ course_code: "MEC 3105"
 lecturer: "withheld"
 file_role: verification-log
 source: "Built incrementally, one lecture document per stage. Covers all five lecture documents."
-coverage: "ALL FIVE lecture documents verified — 200 / 200. GA1 and GA2 extracted (questions only); no flags arise from them."
-substantive_flags: 26
+coverage: "ALL FIVE lecture documents verified — 200 / 200. GA1 and GA2 extracted AND solved; one substantive flag (V28) arises from GA1."
+substantive_flags: 27
 cosmetic_flags: 24
-total_flags: 50
+total_flags: 51
 withdrawn_flags: 1
 tags: [verification, errata, corrections, sign-conventions]
 ---
@@ -57,7 +57,9 @@ page, so a PDF viewer shows one less: `p13` = PDF page 12.
 | **EPC** — Energy Equations & Phase Changes | 92 | 8 | 8 | ✅ |
 | **TC** — Thermodynamic Cycles | 24 | 5 | 7 | ✅ |
 | **HE** — Heat Engines & Carnot | 30 | 4 | 2 | ✅ |
-| **Total** | **200 / 200** | **26** | **24** | **50 flags** |
+| **Total (lecture documents)** | **200 / 200** | **26** | **24** | **50 flags** |
+| **GA1** — group activity | — | **1** *(V28)* | 0 | ✅ complete |
+| **Grand total** | — | **27** | **24** | **51 flags** |
 
 **Numbering note.** IDs are issued in build order, one document at a time, and are **not contiguous** —
 `C12`, `C13`, `C14` and `C20` were never issued. Every ID matches the inline flag in the topic file that
@@ -765,19 +767,69 @@ in the log, and two were resolved as non-issues.
 
 ## Group activities — GA1 and GA2
 
-**No flags arise from either.** Recorded here so the absence is understood as a finding rather than an
-omission.
+**One substantive flag — V28 — and it only surfaced when the questions were actually solved.**
 
-**What was checked.** Both activities were extracted into `exercises/` as **questions only** — no
-solutions are written anywhere. A question set with no stated results has nothing arithmetically
-checkable in it: there is no printed answer to recompute against. What *was* checked is that the
-data is internally coherent and that the physics the questions assume is sound.
+**What was checked.** Both activities are transcribed into `exercises/` with **worked solutions**,
+every one computed from scratch and tagged `[added]`. The brief supplies no answers to students, so
+there is no printed result to recompute against; verification here means checking that the data is
+internally coherent, that the units are as stated, and that the physics the questions assume is sound.
+Solving them is what exposed V28.
+
+### V28 · Van der Waals constant $a$ — the printed units are wrong by a factor of ten ·GA1 Part B (ii)
+
+**Printed:** `a = 3.658 J·m³/mol²` for CO₂, and the same unit for all eight gases.
+
+**Should read:** $a = 3.658\ \mathrm{L^2\,bar\,mol^{-2}}$, i.e. $\mathbf{0.3658\ Pa\,m^6\,mol^{-2}}$
+in SI. Every printed $a$ must be **divided by 10** before substitution.
+
+**Why.** $\mathrm{J\,m^3} = \mathrm{Pa\,m^6}$, so the printed unit asserts SI. But all eight values are
+the standard tabulated figures in $\mathrm{L^2\,bar\,mol^{-2}}$, and
+$1\ \mathrm{L^2\,bar\,mol^{-2}} = 0.1\ \mathrm{Pa\,m^6\,mol^{-2}}$:
+
+| Gas | Brief prints | Standard table ($\mathrm{L^2\,bar\,mol^{-2}}$) |
+|---|---|---|
+| CO₂ | 3.658 | 3.640 |
+| H₂O | 5.537 | 5.536 |
+| N₂ | 1.370 | 1.370 |
+| CH₄ | 2.283 | 2.283 |
+| NH₃ | 4.225 | 4.225 |
+| C₂H₆ | 5.570 | 5.562 |
+| SO₂ | 6.865 | 6.803 |
+| H₂ | 0.2476 | 0.2476 |
+
+**What it costs.** Substituting the printed value literally, the cubic
+$P\bar{V}^3 - (Pb + \bar{R}T)\bar{V}^2 + a\bar{V} - ab = 0$ has **exactly one real root above $b$**:
+for CO₂ at 5 MPa and 320 K it is $\bar{V} = 4.43\times10^{-5}\ \mathrm{m^3\,mol^{-1}}$ — barely above
+$b$ itself — giving $Z = 0.083$. **That is a liquid-like molar volume for a gas**, and it is the answer
+every group would have written down. With $a$ corrected, $\bar{V} = 4.178\times10^{-4}$ and
+$\mathbf{Z = 0.785}$, which agrees with published compressibility data for CO₂ at that state.
+
+**Three independent confirmations of the correction:**
+
+1. **Dimensional** — the numbers match the standard $\mathrm{L^2\,bar\,mol^{-2}}$ table to within 1 %
+   for all eight gases, and match nothing in SI.
+2. **Physical** — the corrected $Z$ values (0.74–0.93 for seven gases) sit in the range compressibility
+   charts give for those states; the literal reading gives 0.02–0.25 for all eight, which no chart
+   supports.
+3. **Internal to the brief** — the corrected reading is the only one that makes **H₂ come out at
+   $Z = 1.096 > 1$**, which is exactly the repulsion-dominated result the brief's own discussion
+   question sets up. Read literally, H₂ gives $Z = 0.25$ and the discussion question has no answer.
+
+**Note what is *not* wrong.** The brief converts $b$ correctly and spells that conversion out inline
+every time ($0.04286\ \mathrm{L\,mol^{-1}} = 0.04286\times10^{-3}\ \mathrm{m^3\,mol^{-1}}$), and the
+pressure conversion likewise. Only $a$'s unit label is wrong. **Class: substantive** — it changes every
+Part (ii) answer by roughly a factor of three in $Z$.
+
+**Where it is recorded for students:** a flag box in
+`exercises/ga1-topic1-part1-equations-of-state.md` § Part B (ii), immediately above the data table, and
+again at the head of § Solutions.
 
 | Check | Result |
 |---|---|
+| **GA1 Van der Waals constant $a$ — printed units** | ❌ **V28 — wrong by a factor of ten.** See above. |
 | GA1 specific gas constants ($R$) against $\bar{R}/M$ | ✅ all 8 consistent; N₂ at 0.297 matches FL s34's tabulated 0.2968 |
 | GA1 Van der Waals constants $a$, $b$ against standard tables | ✅ all 8 gases plausible; magnitudes and ordering correct ($a$ largest for SO₂ and NH₃, smallest for H₂) |
-| GA1 unit handling | ✅ **the brief warns of its own two traps inline** — $b$ in L·mol⁻¹ needing $\times 10^{-3}$, and $P$ in kPa needing $\times 10^{3}$. Not errors. |
+| GA1 unit handling, $b$ and $P$ | ✅ **the brief warns of its own two traps inline** — $b$ in L·mol⁻¹ needing $\times 10^{-3}$, and $P$ in kPa needing $\times 10^{3}$. Not errors. Only $a$ (V28) is wrong. |
 | GA2 specific heats $c_v$ against standard values | ✅ all 9 consistent on a **mass** basis; He 3.116, H₂ 10.18, Ar 0.312 are the correct monatomic/diatomic values |
 | GA2 $c_v$ against GA1's $R$ via Mayer's relation | ✅ spot-checked — N₂ (0.743 + 0.297 = 1.040) and CO₂ (0.657 + 0.189 = 0.846) both give correct $c_p$ |
 | GA2 G9's stray $R = 0.189$ in Task 2 | ⚠ **unused, not wrong.** $W = P\,\Delta V$ needs no gas constant. The value is correct for propane ($M = 44.1$) and coincides with GA1's CO₂ figure ($M = 44.01$) — a coincidence of molar masses, not a copy error. |
@@ -820,10 +872,26 @@ G9's Part A carries two rewordings; a Rankine-scale gap claimed to be in the gap
 wording as the common one; and two overstatements about how uniform the briefs are. **Rejecting a
 finding is as much the job as accepting one** — the same standard that withdrew V12.
 
-**GA1's facilitator answer key was read but is not reproduced.** The master brief's final section is
-headed *"FACILITATOR / LECTURER NOTES (Not distributed to students)"*. It is marked not for
-distribution and this repository is public, so it is not quoted, paraphrased or verified here — and
-no result from it appears anywhere in this knowledge base.
+### GA1's facilitator answer key was read but is not reproduced — audited
+
+The master brief's final section is headed *"FACILITATOR / LECTURER NOTES (Not distributed to
+students)"*. It is marked not for distribution and this repository is public, so **nothing from it is
+quoted or paraphrased**, and the published solutions were computed independently from the question
+data alone. Audited by script rather than asserted:
+
+| Test | Result |
+|---|---|
+| Longest shared word sequence between the key and the published GA1 file | **zero shared 6-word sequences** — no prose overlap at all |
+| The key's eight indicative $Z$ values | **none appears** in the published file |
+| The key's seven indicative Van der Waals roots | **none appears** |
+
+**What does coincide, unavoidably:** values that any correct solution must produce — $341.15$ K as the
+Kelvin equivalent of $68\ ^\circ\mathrm{C}$, $95.04$ as $0.297 \times 320$, $154.4\ ^\circ\mathrm{F}$,
+and so on. Two people converting the same temperature get the same number; that is arithmetic
+agreeing with itself, not copying. **The distinguishing test is Part (ii)**, where the answer depends
+on a judgement call rather than a formula — and there the published values differ from the key's in
+**six cases of eight**, because the key gives approximate iterative estimates while the solutions here
+give exact roots of the cubic.
 
 ---
 

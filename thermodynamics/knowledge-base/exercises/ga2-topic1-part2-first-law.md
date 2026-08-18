@@ -7,7 +7,7 @@ source: "GA2 — 'G2_1' … 'G2_9', nine per-group briefs (no separate master fi
 file_role: exercises
 covers: "1.3 Work, Heat, and the First Law of Thermodynamics"
 groups: 9
-solutions: "none — questions only, by design (see § How to use this file)"
+solutions: "worked and verified — § Solutions. All tagged [added]; the brief supplies none."
 maps_to: ["02-first-law", "03b-second-law-and-cycles"]
 verification_flags: 0
 tags: [exercises, group-activity, first-law, sign-convention, boundary-work, internal-energy, enthalpy, specific-heats, isochoric, isobaric]
@@ -42,14 +42,17 @@ per-group values.
 
 ## How to use this file
 
-> ### No solutions here — deliberately
+> ### The questions come first, the solutions are at the end
 >
-> This file records **the questions and where the theory for them lives**. It contains no worked
-> answers, for the same reason as GA1: these are discussion exercises, and the lecture material is
-> what the CAT and exam assess. Work each question from the linked section; if your answer disagrees
-> with your group's, the linked section is the tie-breaker.
+> **§ Solutions** at the bottom works every numerical part and gives answer points for the discussion
+> parts. It sits at the end so you can attempt a task before seeing the answer.
 >
-> Unlike GA1, **GA2 carries no facilitator answer key** — none of the nine files contains one.
+> **Every solution is `[added]`** — computed from scratch and independently verified. **GA2 carries no
+> answer key of any kind**; none of the nine files contains one, so there was nothing to transcribe
+> even if we had wanted to.
+>
+> ⚠ **The sign convention is the whole game in this activity** — read the box below before Task 1.
+> Four of the nine scenarios have no work term at all, and two have a *negative* one.
 
 **Reading the cross-links.** `→ 02 §2.5` means *the theory you need is in `02-first-law.md`,
 section 2.5*. Almost everything for GA2 is in **02**. One item — the steady-flow energy equation —
@@ -374,6 +377,209 @@ same content, spelled out.*
 **Not gaps.** Mayer's relation, the four elementary processes, boundary work, enthalpy, the cyclic
 $\Delta U = 0$ result and the sign conventions are all taught — in **02** and **03b** — and linked from
 the relevant question above.
+
+---
+
+## [added] Solutions
+
+**None of this is in the brief** — GA2 ships with no answers at all. Every value below was computed
+from scratch and independently verified. Method first, then the numbers.
+
+> **The one rule that decides every Task 1 answer.**
+>
+> $$\Delta U = Q - W \qquad Q > 0 \text{ INTO the system} \qquad W > 0 \text{ done BY the system}$$
+>
+> So: **heat removed by a cooling system is a negative $Q$, never a $W$.** **Electrical energy fed in
+> is a negative $W$.** Get those two right and Task 1 is one subtraction. → **02 §2.3**.
+
+---
+
+### S1 — Task 1: first law for a closed system ·GA2 Part B Task 1
+
+**Read the scenario into $Q$ and $W$ first.** The nine scenarios come in three shapes, and mis-sorting
+them is the only real difficulty in the task:
+
+| Shape | Groups | How it maps |
+|---|---|---|
+| Heat in + boundary work out | **G1, G2** | $Q > 0$, $W > 0$ — straight substitution |
+| Heat **out** + boundary work out | **G6** | $Q < 0$, $W > 0$ |
+| Electrical work **in** + heat out | **G3, G4** | $W < 0$ **and** $Q < 0$ — both signs flip |
+| Two heat terms, **no work at all** | **G5, G7, G8, G9** | $\Delta U = Q_{\text{in}} - Q_{\text{out}}$, with $W = 0$ |
+
+| Group | $Q$ (kJ) | $W$ (kJ) | $\Delta U = Q - W$ | Direction | Over the repeats |
+|---|---|---|---|---|---|
+| **G1** | $+950$ | $+620$ | $\mathbf{+330\ kJ}$ | rising | $\times 500 = +165\,000\ \mathrm{kJ}$ |
+| **G2** | $+1200$ | $+480$ | $\mathbf{+720\ kJ}$ | rising | $\times 500 = +360\,000\ \mathrm{kJ}$ |
+| **G3** | $-180$ | $-800$ | $\mathbf{+620\ kJ}$ | rising | $\times 500 = +310\,000\ \mathrm{kJ}$ |
+| **G4** | $-420$ | $-1500$ | $\mathbf{+1080\ kJ}$ | rising | $\times 500 = +540\,000\ \mathrm{kJ}$ |
+| **G5** | $+2200-1750 = +450$ | $0$ | $\mathbf{+450\ kJ}$ | rising | $\times 500 = +225\,000\ \mathrm{kJ}$ |
+| **G6** | $-650$ | $+280$ | $\mathbf{-930\ kJ}$ | **falling** | $\times 500 = -465\,000\ \mathrm{kJ}$ |
+| **G7** | $+1800-400 = +1400$ | $0$ | $\mathbf{+1400\ kJ}$ | rising | $\times 500 = +700\,000\ \mathrm{kJ}$ |
+| **G8** | $+560-490 = +70$ | $0$ | $\mathbf{+70\ kJ}$ | rising | $\times 500 = +35\,000\ \mathrm{kJ}$ |
+| **G9** | $+1050-870 = +180$ | $0$ *(stated)* | $\mathbf{+180\ kJ}$ | rising | $\times 8 = +1440\ \mathrm{kJ}$ |
+
+**G6 is the only group whose internal energy falls** — the casing is losing 650 kJ as heat *and*
+spending 280 kJ doing expansion work, so it is drained on both counts. If your group's answer for
+G6 came out positive, you gave $Q$ the wrong sign.
+
+**Part 2 — classification.** G1, G2, G5, G7, G8, G9 are **heat addition**; G3, G4, G6 are **heat
+rejection**. Work is done **by** the system in G1, G2, G6; **on** the system in G3, G4; and there is
+**no work at all** in G5, G7, G8, G9.
+
+**Part 3 — what the repeated-cycle total actually means.** The number is a straight multiple, but the
+*comment* is the point, and the honest answer is that **the extrapolation cannot be physical**. A real
+transformer, cable joint or inverter does not accumulate 700 MJ of internal energy: as its temperature
+rises, the heat rejected to the surroundings rises with it, until $Q_{\text{out}} = Q_{\text{in}}$ and
+$\Delta U = 0$. The calculation describes the **transient** before steady state, and its real use is to
+say **how fast** the temperature climbs and therefore how long the equipment can be left in that
+condition. A monotonically rising $\Delta U$ across 500 cycles is a statement that the cooling is
+undersized, not a prediction. *(G6 is the mirror image — a casing cannot cool indefinitely below
+ambient.)*
+
+---
+
+### S2 — Task 2: boundary work at constant pressure ·GA2 Part B Task 2
+
+$$W = \int_1^2 P\,\mathrm{d}V = P(V_2 - V_1) \quad\text{(constant } P\text{)}$$
+
+$P$ in kPa times $V$ in m³ gives **kJ** directly.
+
+| Group | Gas | $P(V_2 - V_1)$ | $W$ |
+|---|---|---|---|
+| **G1** | Air | $300 \times (0.35-0.10)$ | $\mathbf{+75.0\ kJ}$ |
+| **G2** | N₂ | $450 \times (0.20-0.05)$ | $\mathbf{+67.5\ kJ}$ |
+| **G3** | H₂ | $200 \times (0.30-0.08)$ | $\mathbf{+44.0\ kJ}$ |
+| **G4** | CO₂ | $500 \times (0.25-0.06)$ | $\mathbf{+95.0\ kJ}$ |
+| **G5** | O₂ | $250 \times (0.40-0.12)$ | $\mathbf{+70.0\ kJ}$ |
+| **G6** | Ar | $350 \times (0.28-0.07)$ | $\mathbf{+73.5\ kJ}$ |
+| **G7** | He | $150 \times (0.45-0.15)$ | $\mathbf{+45.0\ kJ}$ |
+| **G8** | CH₄ | $400 \times (0.32-0.09)$ | $\mathbf{+92.0\ kJ}$ |
+| **G9** | C₃H₈ | $280 \times (0.38-0.11)$ | $\mathbf{+75.6\ kJ}$ |
+
+**Part 2.** Every group expands ($V_2 > V_1$), so every $W$ is **positive** — work done **by** the gas
+on its surroundings. Under this convention a positive $W$ *is* the statement "the gas did the work";
+a compression would have come out negative. **The gas identity is irrelevant** — $W = P\Delta V$
+contains no $R$, no $c_v$ and no molar mass. Nine different gases, one formula.
+
+**Part 3 — why the area under the $P$–$V$ curve is the work.** For a piston of area $A$ moving
+$\mathrm{d}x$ against pressure $P$, the force is $PA$ and the work is $PA\,\mathrm{d}x = P\,\mathrm{d}V$.
+Summing over the process gives $\int P\,\mathrm{d}V$, which is by definition the area under the path on
+a $P$–$V$ diagram. At constant pressure that area is a **rectangle**, height $P$, width $V_2 - V_1$.
+The path-dependence follows immediately: a different route between the same two states encloses a
+different area, which is why **work is a path function**. → **02 §2.11**.
+
+---
+
+### S3 — Task 3: constant-volume heating ·GA2 Part B Task 3
+
+At constant volume $\mathrm{d}V = 0$, so $W = \int P\,\mathrm{d}V = \mathbf{0}$ and the first law
+collapses:
+
+$$Q = m\,c_v\,(T_2 - T_1) \qquad W = 0 \qquad \Rightarrow \qquad \Delta U = Q - 0 = Q$$
+
+| Group | Gas | $m\,c_v\,\Delta T$ | $Q = \Delta U$ |
+|---|---|---|---|
+| **G1** | Air | $3.0 \times 0.718 \times 220$ | $\mathbf{473.88\ kJ}$ |
+| **G2** | N₂ | $2.5 \times 0.743 \times 260$ | $\mathbf{482.95\ kJ}$ |
+| **G3** | H₂ | $0.5 \times 10.18 \times 105$ | $\mathbf{534.45\ kJ}$ |
+| **G4** | CO₂ | $4.0 \times 0.657 \times 170$ | $\mathbf{446.76\ kJ}$ |
+| **G5** | O₂ | $5.0 \times 0.658 \times 155$ | $\mathbf{509.95\ kJ}$ |
+| **G6** | Ar | $6.0 \times 0.312 \times 180$ | $\mathbf{336.96\ kJ}$ |
+| **G7** | He | $1.0 \times 3.116 \times 300$ | $\mathbf{934.80\ kJ}$ |
+| **G8** | CH₄ | $2.0 \times 1.706 \times 152$ | $\mathbf{518.62\ kJ}$ |
+| **G9** | C₃H₈ | $3.5 \times 1.490 \times 182$ | $\mathbf{949.13\ kJ}$ |
+
+**Part 2 is not a second calculation.** The verification the task asks for is the *reasoning*: $W = 0$
+because the boundary does not move, therefore $\Delta U = Q$ identically. **Every joule of heat goes
+into internal energy** — none is spent pushing the boundary. That is precisely why $c_v$ rather than
+$c_p$ is the right specific heat here, and why $c_p > c_v$: constant-pressure heating must *also* pay
+for the expansion work. → **02 §2.9**, and Part A Q4.
+
+> **Basis check.** All nine $c_v$ values are **per kilogram**. FL states the specific-heat relations
+> per **mole** at s28, so convert if you work from the deck: $c = \bar{c}/M$. Mayer's relation
+> $c_p - c_v = R$ confirms the values against GA1's specific gas constants **for the same gas** —
+> e.g. N₂: $0.743 + 0.297 = 1.040\ \mathrm{kJ\,kg^{-1}K^{-1}}$, the standard $c_p$.
+
+**Part 3 — constant-volume heating in electrical equipment.** Any **sealed, rigid** enclosure: an
+SF₆ circuit-breaker chamber during an internal arc, a sealed transformer conservator, a GIS
+compartment, or a sealed battery cell. Why the internal-energy rise matters more than the temperature
+rise: in a rigid vessel, $\Delta U$ fixes $\Delta T$, and $\Delta T$ fixes the **pressure rise** through
+$P/T = \text{constant}$. Enclosure wall thickness, seal ratings and rupture-disc settings are all sized
+off that pressure, so a design based on temperature alone misses the mechanical failure mode. → **02
+§2.12**.
+
+---
+
+### S4 — Task 4: the EE discussion ·GA2 Part B Task 4
+
+Only **G9's Task 4 is numerical** (see S5). For the other eight the marks are in the energy balance
+and the engineering decision it drives:
+
+| Group | The balance | The decision it fixes |
+|---|---|---|
+| **G1** | Steady state: $\Delta U = 0$, so $Q_{\text{out}} = Q_{\text{in}} - W_{\text{out}}$. The 22 kW is not waste in the sense of an error — it is what the first law says must leave. | Radiator and coolant-pump sizing for **22 kW continuous**, with margin for ambient. |
+| **G2** | Fault-arc energy raises $U$ of a fixed mass of SF₆ in a **rigid** vessel. $\Delta U \Rightarrow \Delta T \Rightarrow \Delta P$ — one chain, not two effects. | Enclosure pressure rating and **rupture-disc** setting. The two are inseparable because $P$ and $T$ are linked by the state equation at fixed $V$. |
+| **G3** | Fast charge delivers the same $\Delta U$ in less time, so $\mathrm{d}U/\mathrm{d}t$ is larger while $Q_{\text{out}}$ is limited by the same surface area and $\Delta T$. | BESS cooling capacity and charge-rate derating; the thermal-runaway margin is a rate problem, not an energy problem. |
+| **G4** | $\eta = 0.92 \Rightarrow$ **8 % of electrical input becomes heat** in the windings, core and bearings. Nothing else can happen to it — the first law leaves no third destination. | Enclosure ventilation, and the **thermal-overload relay** setting, which is really an $I^2t$ proxy for $\Delta U$. |
+| **G5** | Net $\Delta U > 0$ during overload $\Rightarrow$ $\Delta T$ in the winding, and insulation ageing is exponential in temperature. | Overload **duration** limits, not just magnitude — the accumulated $\Delta U$ is an integral over time. |
+| **G6** | Losing electrical load removes $W_{\text{out}}$ while $Q_{\text{in}}$ from the steam continues, so $\Delta U$ spikes. | Why **overspeed protection and stop-valve closure must be simultaneous** — tripping the load without cutting steam is the dangerous half. |
+| **G7** | Fault energy $\approx I^2Rt$ deposited into a joint with almost no time to conduct away — effectively **adiabatic**, so all of it goes to $\Delta U$. | **Relay clearance time.** $\Delta U \propto t$, so halving clearance time halves the temperature rise. Damage can appear after the fault because the heat is already stored in the joint. |
+| **G8** | 2–4 % of DC input dissipates inside a sealed enclosure. Higher ambient shrinks the $\Delta T$ driving heat out, so junction temperature rises, so semiconductor losses rise — a **positive feedback**. | Enclosure derating curves against ambient; why nameplate efficiency is quoted at a stated ambient. |
+
+---
+
+### S5 — Group 9's numerical parts ·GA2 G9
+
+**Task 1 part 1.** $Q = +1050 - 870 = +180\ \mathrm{kJ}$, $W = 0$ (the brief states the enclosure is
+rigid), so
+
+$$\Delta U = Q - W = 180 - 0 = \mathbf{+180\ kJ}$$
+
+Internal energy — and therefore the temperature of the equipment inside — is **rising**.
+
+**Task 1 part 2.** Nacelle air rises $6\ ^\circ\mathrm{C}$ from $35\ ^\circ\mathrm{C}$:
+
+$$T_{\text{air}} = 35 + 6 = 41\ ^\circ\mathrm{C} \qquad
+T_{\text{junction}} = 41 + 15 = \mathbf{56\ ^\circ C}$$
+
+Against a $150\ ^\circ\mathrm{C}$ limit that is a **94 °C margin — comfortable, not marginal.** The
+honest comment is that *this single period* is safe; the concern is part 3's repetition, and the fact
+that the 15 °C junction-to-air rise is itself a function of load and would grow at higher output.
+
+**Task 1 part 3.** $180 \times 8 = \mathbf{+1440\ kJ}$ over the eight hours — with the same caveat as
+S1 part 3: the rise is self-limiting as heat rejection grows with temperature. **SCADA action:**
+derate output (curtail) or increase cooling-fan speed on a nacelle-temperature threshold, alarm at a
+lower one, and trip on the IGBT junction limit.
+
+**Task 4 part 1 — the rate balance, in kW.** Take the generator as the system, per unit time:
+
+$$\dot{W}_{\text{net, by system}} = \underbrace{850}_{\text{electrical out}} - \underbrace{910}_{\text{shaft in}} = -60\ \mathrm{kW}
+\qquad \dot{Q} = -48\ \mathrm{kW}\ \text{(removed)}$$
+
+$$\frac{\mathrm{d}U}{\mathrm{d}t} = \dot{Q} - \dot{W} = -48 - (-60) = \mathbf{+12\ kW}$$
+
+**Cross-check:** losses $= 910 - 850 = 60\ \mathrm{kW}$; the cooling system removes 48 kW; the
+difference $60 - 48 = 12\ \mathrm{kW}$ accumulates. Both routes agree. → **02 §2.5** *The four forms
+of the balance*.
+
+**Task 4 part 2 — why the same machine overheats at 42 °C.** Heat rejection is driven by the
+temperature *difference* between equipment surface and ambient, not by the equipment temperature
+itself. At a European site the surface sits far above a 15 °C ambient, so a large $\Delta T$ carries
+the 60 kW away easily. At 42 °C ambient the same 60 kW needs the same $\Delta T$, which now puts the
+surface 27 °C higher in absolute terms — pushing components toward their limits at **identical
+electrical output**. Nothing about the loss has changed; only the sink has.
+
+**Task 4 part 3 — one measure other than reducing output.** Any of:
+
+- **Increase the heat-transfer coefficient or area** — higher fan speed, larger heat exchanger, or a
+  liquid-cooled loop. This raises the heat rejected at the same $\Delta T$, restoring $\Delta U \approx 0$.
+- **Lower the sink temperature** — evaporative pre-cooling of the intake air, which uses latent heat of
+  vaporisation to drop the effective ambient below the dry-bulb 42 °C.
+- **Reduce the loss itself** — raise generator efficiency (better lamination steel, larger conductor
+  cross-section), which shrinks the 60 kW that has to be removed at all.
+
+Thermodynamically all three do the same thing: force $\dot{Q}_{\text{out}}$ back up to the 60 kW being
+generated, so $\mathrm{d}U/\mathrm{d}t$ returns to zero and the machine sits at steady state.
 
 ---
 

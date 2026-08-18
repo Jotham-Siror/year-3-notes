@@ -7,9 +7,9 @@ source: "GA1 — 'MEC_3105_Group_Exercises_Topic1_Part1' (master brief) + 8 grou
 file_role: exercises
 covers: "1.1 Temperature and Thermometry | 1.2 Equations of State (Ideal Gas Law and Van der Waals)"
 groups: 8
-solutions: "none — questions only, by design (see § How to use this file)"
+solutions: "worked and verified — § Solutions. All tagged [added]; the brief supplies none."
 maps_to: ["01-temperature-thermometry", "02-first-law"]
-verification_flags: 0
+verification_flags: 1
 tags: [exercises, group-activity, thermometry, temperature-conversion, ideal-gas-law, van-der-waals, compressibility-factor]
 ---
 
@@ -37,19 +37,22 @@ with a per-group data table, rather than repeating eight near-identical copies.
 
 ## How to use this file
 
-> ### No solutions here — deliberately
+> ### The questions come first, the solutions are at the end
 >
-> This file records **the questions and where the theory for them lives**. It contains no worked
-> answers. Two reasons:
+> **§ Solutions** at the bottom of this file works every numerical part and gives answer points for
+> the short-answer parts. It is deliberately at the end so you can attempt a question before seeing
+> the answer — scroll past it, or work from the linked topic sections first.
 >
-> 1. These are discussion exercises, not a problem bank. Their weight in the course is small; the
->    lecture material is what the CAT and exam assess.
-> 2. The master brief carries a **"FACILITATOR / LECTURER NOTES (Not distributed to students)"**
->    section with model answers. That section is **not reproduced anywhere in this knowledge base** —
->    it is marked not for distribution, and this repository is public.
+> **Every solution is `[added]`.** The brief itself supplies no answers to students. These were
+> **computed from scratch and independently verified**, not transcribed from anywhere.
 >
-> Work each question from the linked section. If your answer disagrees with your group's, the linked
-> section is the tie-breaker.
+> The master brief does carry a **"FACILITATOR / LECTURER NOTES (Not distributed to students)"**
+> section. It is marked not for distribution and this repository is public, so **nothing from it is
+> reproduced, quoted or paraphrased** — not a number, not a phrase. The solutions below are our own
+> working, and they stand or fall on the method shown with them.
+>
+> ⚠ **One correction was needed before Part (ii) could be solved at all** — see the flag immediately
+> below.
 
 **Reading the cross-links.** `→ 01 §1.7` means *the theory you need is in
 `01-temperature-thermometry.md`, section 1.7*. Everything you need for GA1 is in **01** and **02**,
@@ -219,6 +222,29 @@ assigned a *different* gas from its Part (i) gas.
 | **G7** | SO₂ | 64 | 6.865 | 0.05679 | 2 500 | 500 |
 | **G8** | Hydrogen, H₂ | 2 | 0.2476 | 0.02661 | 10 000 | 150 |
 
+> ### ⚠ VERIFY **V28** ·GA1 Part B (ii) — the units printed for $a$ are wrong by a factor of ten
+>
+> **Printed:** $a = 3.658\ \mathrm{J\,m^3\,mol^{-2}}$ for CO₂ (and similarly for all eight gases).
+>
+> **Should read:** $a = 3.658\ \mathrm{L^2\,bar\,mol^{-2}}$ — equivalently
+> $\mathbf{0.3658\ J\,m^3\,mol^{-2}}$ in SI. **Divide every printed $a$ by 10 before substituting.**
+>
+> **Why.** $\mathrm{J\,m^3} = \mathrm{Pa\,m^6}$, so the printed unit claims SI. But all eight numbers
+> are the **standard tabulated values in $\mathrm{L^2\,bar\,mol^{-2}}$** — CO₂ 3.658 vs the reference
+> 3.640, N₂ 1.370 vs 1.370, CH₄ 2.283 vs 2.283, H₂ 0.2476 vs 0.2476, and so on for all eight. The
+> conversion is $1\ \mathrm{L^2\,bar\,mol^{-2}} = 0.1\ \mathrm{Pa\,m^6\,mol^{-2}}$.
+>
+> **What it costs you if you miss it.** Substituting the printed value literally, the cubic has
+> **exactly one real root above $b$**: $v = 4.43\times10^{-5}\ \mathrm{m^3\,mol^{-1}}$, barely larger
+> than $b$ itself, giving $Z = 0.083$. That is a **liquid-like molar volume for a gas at 5 MPa and
+> 320 K** — physically impossible, and it would be the answer eight groups out of eight wrote down.
+> With the corrected $a$, $Z = 0.785$, which matches published compressibility-chart data for CO₂ at
+> that state. The same check passes for all eight gases, including H₂'s $Z > 1$ — the very result the
+> brief's own discussion question expects.
+>
+> Note the brief converts $b$ correctly and spells that conversion out inline every time; only $a$'s
+> unit is wrong. Full entry in `_verification-log.md`.
+
 > ⚠ **Two unit traps in this table, both stated in the brief itself.**
 >
 > 1. **$b$ is given in L·mol⁻¹, not m³·mol⁻¹.** The brief spells the conversion out inline every time:
@@ -261,6 +287,170 @@ third is named in one deck but never given as a formula. All three are recorded 
 **Not a gap, despite the name:** *Gay-Lussac's law* is nowhere named in the decks, but it is not new
 content — it is the ideal gas law at constant $V$ and $m$, i.e. $P/T = mR/V = \text{constant}$.
 → **02 §2.9** *Isochoric*.
+
+---
+
+## [added] Solutions
+
+**None of this is in the brief.** Every value below was computed from scratch and verified — the
+arithmetic independently, and the physics against published compressibility data. Method is shown so
+you can check the working rather than trust the number.
+
+> **Before Part (ii): apply V28.** Divide every printed $a$ by 10. The values used below are in SI,
+> $\mathrm{Pa\,m^6\,mol^{-2}}$. See the flag box in the Part (ii) section above.
+
+---
+
+### S1 — Sub-Topic 1.1: temperature conversions ·GA1 Part B
+
+$$T(\mathrm{K}) = T(^\circ\mathrm{C}) + 273.15 \qquad
+T(^\circ\mathrm{F}) = 1.8\,T(^\circ\mathrm{C}) + 32 \qquad
+T(^\circ\mathrm{R}) = 1.8\,T(\mathrm{K})$$
+
+| Group | Reading | Kelvin | Second scale |
+|---|---|---|---|
+| **G1** | $68\ ^\circ\mathrm{C}$ | $341.15\ \mathrm{K}$ | $154.4\ ^\circ\mathrm{F}$ |
+| **G2** | $95\ ^\circ\mathrm{C}$ | $368.15\ \mathrm{K}$ | $662.67\ ^\circ\mathrm{R}$ |
+| **G3** | $112\ ^\circ\mathrm{C}$ | $385.15\ \mathrm{K}$ | $233.6\ ^\circ\mathrm{F}$ |
+| **G4** | $78\ ^\circ\mathrm{C}$ | $351.15\ \mathrm{K}$ | $632.07\ ^\circ\mathrm{R}$ |
+| **G5** | $38\ ^\circ\mathrm{C}$ | $311.15\ \mathrm{K}$ | $100.4\ ^\circ\mathrm{F}$ |
+| **G6** | $55\ ^\circ\mathrm{C}$ | $328.15\ \mathrm{K}$ | $590.67\ ^\circ\mathrm{R}$ |
+| **G7** | $210\ ^\circ\mathrm{C}$ | $483.15\ \mathrm{K}$ | $410.0\ ^\circ\mathrm{F}$ |
+| **G8** | $74\ ^\circ\mathrm{C}$ | $347.15\ \mathrm{K}$ | $624.87\ ^\circ\mathrm{R}$ |
+
+**The extra numeric parts:**
+
+- **G4 (c)** — alarm threshold $85\ ^\circ\mathrm{C} = \mathbf{358.15\ K}$.
+- **G5 (c)** — $-40\ ^\circ\mathrm{C} = \mathbf{233.15\ K}$. *What is notable:* $-40\ ^\circ\mathrm{C}$
+  is also $-40\ ^\circ\mathrm{F}$ — the one temperature where the two scales read the same, because
+  $T_F = 1.8T_C + 32$ has the fixed point $T_C = T_F = -40$.
+- **G6 (b)** — insulation limit $90\ ^\circ\mathrm{C} = \mathbf{363.15\ K}$.
+- **G7 (c)** — $480\ ^\circ\mathrm{F} = (480-32)/1.8 = \mathbf{248.9\ ^\circ C}$. The reading of
+  $210\ ^\circ\mathrm{C}$ is **below** the limit — **within spec**, with $\approx 39\ ^\circ$ margin.
+- **G8 (b)** — maximum lug temperature $= 40 + 50 = \mathbf{90\ ^\circ C} = \mathbf{363.15\ K}$. The
+  measured $74\ ^\circ\mathrm{C}$ is **within limits**, $16\ ^\circ$ below.
+
+**Short-answer parts — the points that earn the marks:**
+
+| | Answer points |
+|---|---|
+| **G1 (b)** Seebeck effect | Two dissimilar conductors joined at both ends; a **temperature difference between the junctions** drives a small emf (µV/K). The measuring junction sits in the oil; the reference junction is at a known temperature. Voltage → temperature by calibration. **Not in any lecture deck** — see § Gaps. |
+| **G1 (c)** thermocouple over liquid-in-glass | Remote electrical readout (no line of sight into a live 33 kV enclosure), small thermal mass so fast response, wide range, rugged, and the output can be fed to a **protection or SCADA system**. A glass thermometer can only be read by eye, on site. |
+| **G2 (b)** RTD over thermocouple | RTD measures **absolute** resistance against a well-characterised, near-linear $R$–$T$ curve; no reference-junction compensation and no µV-level signal, so better accuracy and repeatability (typically ±0.1 °C vs ±1 °C) over the modest 0–150 °C winding range. |
+| **G2 (c)** the law | **The zeroth law.** → **01 §1.3**. |
+| **G3 (b)** non-contact on a busbar | The busbar is **live at high potential** — no safe way to attach a contact sensor without an outage. IR measurement is made from a safe distance, on load, during a survey. |
+| **G3 (c)** pyrometer limitation | It reads **surface** radiance and depends on **emissivity**; a shiny/oxidised or reflective surface, or an intervening window, biases the reading. It also cannot see inside the conductor. An RTD in contact has no emissivity dependence. |
+| **G4 (b)** fibre-optic over thermocouple | The fibre is a **dielectric** — it carries no metallic path into the HV winding, so it neither distorts the electric field nor provides a fault path, and it is **immune to EMI** from the winding. A thermocouple is a metallic loop in a high-field region. |
+| **G5 (b)** thermocouple vs RTD for a weather station | **Recommend the RTD.** Ambient measurement needs accuracy and stability over a narrow range (say −10 to 50 °C), which is exactly the RTD's strength; response speed and extreme range — the thermocouple's advantages — are irrelevant for air temperature. |
+| **G6 (c)** why ampacity depends on absolute temperature | Because the **loss and heat-transfer physics are not linear in Celsius**: conductor resistance rises with absolute temperature, radiation goes as $T^4$ in kelvin, and the insulation ageing rate is an Arrhenius function of **absolute** temperature. Only the *rise* $\Delta T$ is scale-independent. → **01 §1.7**. |
+| **G8 (c)** why rise is specified in K | A **temperature rise is a difference**, and $1\ \mathrm{K} \equiv 1\ ^\circ\mathrm{C}$ by size of degree. Writing it in K makes it unambiguous that a **difference** is meant, not a temperature on the Celsius scale — a 50 K rise added to any ambient is well defined; "50 °C" invites being read as an absolute limit. → **01 §1.7**. |
+
+---
+
+### S2 — Sub-Topic 1.2 Part (i): ideal gas law ·GA1 Part B (i)
+
+**Method.** With $P$ in kPa, $V$ in m³, $R$ in kJ·kg⁻¹K⁻¹ and $T$ in K, $m = PV/(RT)$ comes out in kg
+with no conversion factor. Constant volume and constant mass make $P/T$ constant, so **doubling the
+pressure doubles the absolute temperature**:
+
+$$m = \frac{PV}{RT} \qquad\qquad \frac{P_1}{T_1} = \frac{P_2}{T_2} \;\Rightarrow\; T_2 = T_1\frac{P_2}{P_1} = 2T_1$$
+
+| Group | Gas | Substitution | $m$ | $T_2$ |
+|---|---|---|---|---|
+| **G1** | N₂ | $(180 \times 1.2)/(0.297 \times 320) = 216/95.04$ | $\mathbf{2.273\ kg}$ | $\mathbf{640\ K}$ |
+| **G2** | Air | $(250 \times 0.9)/(0.287 \times 310) = 225/88.97$ | $\mathbf{2.529\ kg}$ | $\mathbf{620\ K}$ |
+| **G3** | H₂ | $(300 \times 0.5)/(4.124 \times 290) = 150/1195.96$ | $\mathbf{0.125\ kg}$ | $\mathbf{580\ K}$ |
+| **G4** | SF₆ | $(400 \times 2.0)/(0.0561 \times 300) = 800/16.83$ | $\mathbf{47.534\ kg}$ | $\mathbf{600\ K}$ |
+| **G5** | O₂ | $(150 \times 2.5)/(0.260 \times 350) = 375/91.0$ | $\mathbf{4.121\ kg}$ | $\mathbf{700\ K}$ |
+| **G6** | Ar | $(200 \times 1.8)/(0.208 \times 330) = 360/68.64$ | $\mathbf{5.245\ kg}$ | $\mathbf{660\ K}$ |
+| **G7** | He | $(500 \times 0.3)/(2.077 \times 280) = 150/581.56$ | $\mathbf{0.258\ kg}$ | $\mathbf{560\ K}$ |
+| **G8** | CO₂ | $(350 \times 0.8)/(0.189 \times 340) = 280/64.26$ | $\mathbf{4.357\ kg}$ | $\mathbf{680\ K}$ |
+
+**Part 3 — the Gay-Lussac check.** It is not a separate calculation. $P/T$ is constant at fixed $V$
+and $m$, so $T_2 = 2T_1$ **is** Gay-Lussac's law; verified for all eight groups
+($P_1/T_1 = P_2/T_2$ exactly, since $P_2 = 2P_1$ and $T_2 = 2T_1$). Gay-Lussac is just the ideal gas
+law with $V$ and $m$ held fixed. → **02 §2.9** *Isochoric*.
+
+> **The sanity check worth doing.** Every $m$ scales the way intuition says it should — SF₆
+> ($M = 146$) gives 47.5 kg from 2 m³, while H₂ ($M = 2$) gives 0.125 kg from half a cubic metre.
+> A specific gas constant is $R_u/M$, so **a heavy gas has a small $R$ and a large mass**. If your
+> hydrogen answer came out heavier than your SF₆ answer, you inverted something.
+
+**Part 4 — where each gas is met in electrical engineering:**
+
+- **N₂ (G1)** — transformer conservator blanketing and cable-pressurisation systems; nitrogen fire
+  suppression in transformer vaults.
+- **Air (G2)** — air-blast circuit breakers, forced-air cooling of transformers and machines, and the
+  ambient itself in every rating calculation.
+- **H₂ (G3)** — **hydrogen cooling of large turbo-generators**: chosen for low density (windage loss)
+  and high thermal conductivity; casing pressure and purity are monitored continuously.
+- **SF₆ (G4)** — **GIS switchgear and SF₆ circuit breakers**; density (not just pressure) is monitored
+  because interrupting capability depends on it, and it must be temperature-compensated.
+- **O₂ (G5)** — dissolved-gas analysis of transformer oil; oxygen ingress drives insulation ageing.
+- **Ar (G6)** — arc-welding shielding in steelwork and busbar fabrication; also fills some lamps.
+- **He (G7)** — leak-testing sealed HV equipment and cryogenic cooling of superconducting plant.
+- **CO₂ (G8)** — gaseous fire suppression in switch rooms; also a decomposition product tracked in DGA.
+
+---
+
+### S3 — Sub-Topic 1.2 Part (ii): Van der Waals and $Z$ ·GA1 Part B (ii)
+
+**The equation, for one mole:**
+
+$$\left(P + \frac{a}{\bar{V}^2}\right)\left(\bar{V} - b\right) = \bar{R}T$$
+
+**How to solve it by hand, as the brief asks.** Do **not** expand the cubic. Rearrange it into a
+fixed-point form and iterate from the ideal-gas volume:
+
+$$\boxed{\;\bar{V}_{n+1} = b + \frac{\bar{R}T}{P + a/\bar{V}_n^{\,2}}\;,\qquad \bar{V}_0 = \frac{\bar{R}T}{P}\;}$$
+
+Worked for **G1** (CO₂, $P = 5\times10^6$ Pa, $T = 320$ K, $a = 0.3658$, $b = 4.286\times10^{-5}$),
+all volumes in $10^{-4}\ \mathrm{m^3\,mol^{-1}}$:
+
+$$\bar{V}_0 = 5.321 \;\to\; 4.657 \;\to\; 4.407 \;\to\; 4.294 \;\to\; 4.238 \;\to\; 4.209 \;\to\; \cdots \;\to\; \mathbf{4.178}$$
+
+It converges monotonically from above — about **12 passes** to four figures for G1, and **5** for G8.
+Two or three passes are enough to see where it is heading in a 20-minute session.
+
+**Then:**
+
+$$\bar{V}_{\text{ideal}} = \frac{\bar{R}T}{P} \qquad\qquad Z = \frac{P\bar{V}}{\bar{R}T} = \frac{\bar{V}}{\bar{V}_{\text{ideal}}}$$
+
+| Group | Gas | $a$ (SI) | $b\times10^{3}$ | $\bar{V}_{\mathrm{vdW}}\times10^{4}$ | $\bar{V}_{\text{ideal}}\times10^{4}$ | $Z$ | |
+|---|---|---|---|---|---|---|---|
+| **G1** | CO₂ | $0.3658$ | $0.0429$ | $\mathbf{4.178}$ | $5.321$ | $\mathbf{0.785}$ | $< 1$ |
+| **G2** | H₂O | $0.5537$ | $0.0305$ | $\mathbf{11.168}$ | $12.471$ | $\mathbf{0.896}$ | $< 1$ |
+| **G3** | N₂ | $0.1370$ | $0.0387$ | $\mathbf{1.681}$ | $2.079$ | $\mathbf{0.809}$ | $< 1$ |
+| **G4** | CH₄ | $0.2283$ | $0.0428$ | $\mathbf{2.709}$ | $3.464$ | $\mathbf{0.782}$ | $< 1$ |
+| **G5** | NH₃ | $0.4225$ | $0.0371$ | $\mathbf{6.538}$ | $7.690$ | $\mathbf{0.850}$ | $< 1$ |
+| **G6** | C₂H₆ | $0.5570$ | $0.0650$ | $\mathbf{5.436}$ | $7.364$ | $\mathbf{0.738}$ | $< 1$ |
+| **G7** | SO₂ | $0.6865$ | $0.0568$ | $\mathbf{15.488}$ | $16.628$ | $\mathbf{0.931}$ | $< 1$ |
+| **G8** | H₂ | $0.0248$ | $0.0266$ | $\mathbf{1.367}$ | $1.247$ | $\mathbf{1.096}$ | $\mathbf{> 1}$ |
+
+*(Units: $a$ in $\mathrm{Pa\,m^6\,mol^{-2}}$, $b$ and both volumes in $\mathrm{m^3\,mol^{-1}}$.
+$\bar{R} = 8.314\ \mathrm{J\,mol^{-1}K^{-1}}$ throughout.)*
+
+**Part 3 — what $Z$ means, and why G8 is the interesting one.**
+
+- **$Z < 1$ (seven groups)** — the real molar volume is *smaller* than ideal. **Intermolecular
+  attraction dominates**: molecules pull on each other, so the gas is easier to compress than an ideal
+  gas. The $a/\bar{V}^2$ term is doing the work.
+- **$Z > 1$ (G8, H₂)** — the real molar volume is *larger* than ideal. **Finite molecular volume —
+  repulsion — dominates**: at 10 MPa the molecules are packed close enough that the excluded volume
+  $b$ matters more than the very weak attraction. Hydrogen has the smallest $a$ of the eight by more
+  than an order of magnitude, which is exactly why it is the one that goes above 1.
+- **In practice:** a substation engineer sizing an **SF₆** compartment, or setting a density alarm on
+  a **hydrogen-cooled generator**, cannot use $PV = mRT$ at rated pressure without a $Z$ correction —
+  the mass of gas actually in the vessel differs from the ideal-gas figure by the same 10–25 % seen in
+  the table.
+
+**Part 4 — when a real gas behaves ideally.** **Low pressure and high temperature, judged relative to
+the critical point** — i.e. high reduced temperature $T_R = T/T_c$ and low reduced pressure
+$P_R = P/P_c$. Physically: low pressure means large $\bar{V}$, so $b \ll \bar{V}$ and
+$a/\bar{V}^2 \ll P$; high temperature means kinetic energy swamps the attractive well depth.
+**All eight states here are chosen to deviate** — every one sits at several MPa, and several
+(N₂ at 200 K, NH₃ at 370 K, C₂H₆ at 310 K) sit near their critical point, which is why the group's
+answer to part 4 should be *"yes, strong deviation is expected here"*. → **02 §2.12**.
 
 ---
 

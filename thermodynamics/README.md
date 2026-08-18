@@ -3,9 +3,9 @@
 Verified notes for MEC 3105, BSc Electrical Engineering Year 3 Semester 1, Strathmore University.
 
 **Everything the five lecture documents contain — 200 pages — transcribed, recomputed and
-cross-checked**, plus both assessed group activities. Every equation in LaTeX, every claim anchored
-to the page or slide it came from, every figure described, and **50 suspected errors in the lecture
-material flagged with the corrected form**.
+cross-checked**, plus both assessed group activities with **every question worked and verified**. Every
+equation in LaTeX, every claim anchored to the page or slide it came from, every figure described, and
+**51 suspected errors flagged with the corrected form**.
 
 These are **unofficial student notes**. Nobody has endorsed or reviewed them. Read
 *[Before you rely on this](#before-you-rely-on-this)* at the bottom.
@@ -21,7 +21,7 @@ These are **unofficial student notes**. Nobody has endorsed or reviewed them. Re
 | **Check a formula before an exam** | [`knowledge-base/_formula-sheet.md`](knowledge-base/_formula-sheet.md) |
 | **Know what the slides get wrong** | [`knowledge-base/_verification-log.md`](knowledge-base/_verification-log.md) — the highest-value file here |
 | **Work out which $T_C$ a slide means** | [`knowledge-base/_nomenclature.md`](knowledge-base/_nomenclature.md) |
-| **Find a group-activity question** | [`knowledge-base/exercises/`](knowledge-base/exercises/00-exercises-index.md) |
+| **Find a group-activity question — or its solution** | [`knowledge-base/exercises/`](knowledge-base/exercises/00-exercises-index.md) |
 
 ## The topic files
 
@@ -56,6 +56,13 @@ to lose marks in this course. Prefer $T_L$ in your own work. → `_nomenclature.
 **3. Slide numbers in the Topic 3 decks are shifted.** TC slide 2 is a full-bleed image with no text,
 so every title sits one slide later than a contents listing implies. All `·TC sN` citations here are
 **true PDF page numbers** — count pages in the viewer, not titles.
+
+**4. The group activity's Van der Waals constants are printed in the wrong units.** GA1 gives $a$ as
+$\mathrm{J\,m^3\,mol^{-2}}$; the numbers are the standard $\mathrm{L^2\,bar\,mol^{-2}}$ values, so
+**divide every printed $a$ by 10**. Substituted as printed, the cubic returns a molar volume barely
+above $b$ — a liquid-like volume for a gas at 5 MPa — and $Z = 0.08$ instead of $0.785$. Corrected, all
+eight groups' answers agree with published compressibility data, including hydrogen's $Z > 1$.
+→ flag **V28**.
 
 There are 47 more flags. `_verification-log.md` has all of them, each with the correct form and the
 reasoning.
