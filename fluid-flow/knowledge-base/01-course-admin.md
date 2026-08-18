@@ -68,4 +68,4 @@ Continuous Assessment Tests **40%**, Examination **60%**, Total 100%.
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

@@ -63,4 +63,4 @@ against the original page or to read the lecturer's own wording.
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

@@ -580,4 +580,4 @@ efficiency they imply (s28), and the entropy column of the four-process table (s
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

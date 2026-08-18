@@ -131,4 +131,4 @@ consistent when this year's handout arrives.*
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026. Symbol tables for the PENDING sections adapted from the old-cohort knowledge base and re-verified against WC1 where they overlap.</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026. Symbol tables for the PENDING sections adapted from the old-cohort knowledge base and re-verified against WC1 where they overlap.</i></sub>

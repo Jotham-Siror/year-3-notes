@@ -266,4 +266,4 @@ Registered so the clash table can be completed rather than rebuilt. **None of th
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

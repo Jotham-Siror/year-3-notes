@@ -230,4 +230,4 @@ Measuring the head $H$ over the crest gives $Q$. ·slide 263
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

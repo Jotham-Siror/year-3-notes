@@ -323,4 +323,4 @@ Slide 17 and slide 13 carry **no title**. Slides 2 and 18 are dividers only. Sli
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

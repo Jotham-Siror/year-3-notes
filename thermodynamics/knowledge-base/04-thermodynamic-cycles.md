@@ -544,4 +544,4 @@ absolute zero; monotonic 100 / 200 / 300 K ticks; a correct Nernst statement).
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

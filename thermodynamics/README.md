@@ -135,4 +135,4 @@ Found an error *in these notes*? That is the most useful possible contribution �
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026 · <a href="../LICENSE">CC BY-NC-SA 4.0</a></i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026 · <a href="../LICENSE">CC BY-NC-SA 4.0</a></i></sub>

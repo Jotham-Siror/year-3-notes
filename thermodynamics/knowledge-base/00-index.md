@@ -359,4 +359,4 @@ needed only for one GA2 discussion prompt, not for any numerical task.
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

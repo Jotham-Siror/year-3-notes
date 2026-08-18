@@ -151,4 +151,4 @@ university's.
 
 ---
 
-<sub>Compiled by Jotham-JS · 2026</sub>
+<sub>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</sub>

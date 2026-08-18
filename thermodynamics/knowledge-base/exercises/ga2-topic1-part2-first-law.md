@@ -616,4 +616,4 @@ mass-vs-molar basis in Task 3 — are **hazards in applying the questions**, not
 
 ---
 
-<sub><i>Compiled by Jotham-JS · 2026</i></sub>
+<sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>
