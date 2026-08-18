@@ -790,9 +790,22 @@ data is internally coherent and that the physics the questions assume is sound.
    input)"* therefore need a negative $W$. See § The FL sign-convention fault.
 2. **GA2 Task 1's nine scenarios are not the same shape.** Three give heat + boundary work; two give
    electrical work in + heat out; **four give two heat terms and no work at all**. Treating a cooling
-   system's heat removal as $W$ is a sign-convention error the wording invites.
+   system's heat removal as $W$ is a sign-convention error the wording invites. **G9's brief states
+   $W = 0$ outright**, which independently confirms the reading for the other three.
 3. **GA2's specific heats are per kg; FL s28 states the relations per mol** via $\gamma$. The basis
    must be converted.
+
+**GA2's Group 9 file was authored separately from the other eight.** Every group's Part B stem was
+diffed against every other's, not sampled. Groups 1–8 are identical apart from the substituted gas
+name; **G9 has a completely different Task 1** (three unrelated sub-questions, including an IGBT
+junction-temperature calculation), an added polytropic clause in Task 2, a re-framed Task 3 part 3,
+and the set's only numerical Task 4. It is transcribed in full in
+`exercises/ga2-topic1-part2-first-law.md` § Group 9 so no G9 member works from the wrong stem.
+
+**A numeric cross-check was run in both directions.** Every value in both exercise files was matched
+back against the source `.docx` text programmatically — GA1's 8 groups (R, P, V, T, P₂, a, b, M) and
+GA2's 9 (all Task 1–4 quantities). **All present, none altered.** That check is what surfaced the G9
+discrepancy: a stray `180 kJ` in G9's Task 1 that the common stem could not account for.
 
 **GA1's facilitator answer key was read but is not reproduced.** The master brief's final section is
 headed *"FACILITATOR / LECTURER NOTES (Not distributed to students)"*. It is marked not for
