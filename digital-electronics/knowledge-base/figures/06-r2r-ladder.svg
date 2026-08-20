@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="430" viewBox="0 0 1080 430" font-family="sans-serif">
+<rect width="1080" height="430" fill="#ffffff"/>
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="arb" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#1a5fb4"/></marker></defs>
+<path d="M96 260 L96 272" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M82 272 L110 272" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M87 278 L105 278" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M92 284 L100 284" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M96 260 L96 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M96 252 L120 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M120 252 L130.0 252 L133.5 245 L140.5 259 L147.5 245 L154.5 259 L161.5 245 L168.5 259 L172.0 252 L182 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M182 252 L262 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="151.0" y="238" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">R₂</text>
+<text x="151.0" y="276" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<circle cx="262" cy="86" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="262" y="70" font-size="13.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">D₀ (LSB)</text>
+<path d="M262 91 L262 114" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M262 114 L262 124.0 L255 127.5 L269 134.5 L255 141.5 L269 148.5 L255 155.5 L269 162.5 L262 166.0 L262 176" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M262 176 L262 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="262" cy="252" r="4" fill="#111111"/>
+<text x="248" y="138" font-size="13" text-anchor="end" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<text x="276" y="138" font-size="12.5" text-anchor="start" fill="#888888" font-weight="400" font-style="normal">R₁</text>
+<circle cx="412" cy="86" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="412" y="70" font-size="13.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">D₁</text>
+<path d="M412 91 L412 114" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M412 114 L412 124.0 L405 127.5 L419 134.5 L405 141.5 L419 148.5 L405 155.5 L419 162.5 L412 166.0 L412 176" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M412 176 L412 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="412" cy="252" r="4" fill="#111111"/>
+<text x="398" y="138" font-size="13" text-anchor="end" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<text x="426" y="138" font-size="12.5" text-anchor="start" fill="#888888" font-weight="400" font-style="normal">R₃</text>
+<circle cx="562" cy="86" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="562" y="70" font-size="13.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">D₂</text>
+<path d="M562 91 L562 114" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M562 114 L562 124.0 L555 127.5 L569 134.5 L555 141.5 L569 148.5 L555 155.5 L569 162.5 L562 166.0 L562 176" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M562 176 L562 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="562" cy="252" r="4" fill="#111111"/>
+<text x="548" y="138" font-size="13" text-anchor="end" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<text x="576" y="138" font-size="12.5" text-anchor="start" fill="#888888" font-weight="400" font-style="normal">R₅</text>
+<circle cx="712" cy="86" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="712" y="70" font-size="13.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">D₃ (MSB)</text>
+<path d="M712 91 L712 114" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M712 114 L712 124.0 L705 127.5 L719 134.5 L705 141.5 L719 148.5 L705 155.5 L719 162.5 L712 166.0 L712 176" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M712 176 L712 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="712" cy="252" r="4" fill="#111111"/>
+<text x="698" y="138" font-size="13" text-anchor="end" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<text x="726" y="138" font-size="12.5" text-anchor="start" fill="#888888" font-weight="400" font-style="normal">R₇</text>
+<path d="M262 252 L292 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M292 252 L302.0 252 L305.5 245 L312.5 259 L319.5 245 L326.5 259 L333.5 245 L340.5 259 L344.0 252 L354 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M354 252 L412 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="323.0" y="238" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">R₄</text>
+<text x="323.0" y="276" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">R</text>
+<path d="M412 252 L442 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M442 252 L452.0 252 L455.5 245 L462.5 259 L469.5 245 L476.5 259 L483.5 245 L490.5 259 L494.0 252 L504 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M504 252 L562 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="473.0" y="238" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">R₆</text>
+<text x="473.0" y="276" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">R</text>
+<path d="M562 252 L592 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M592 252 L602.0 252 L605.5 245 L612.5 259 L619.5 245 L626.5 259 L633.5 245 L640.5 259 L644.0 252 L654 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M654 252 L712 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="623.0" y="238" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">R₈</text>
+<text x="623.0" y="276" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">R</text>
+<path d="M712 252 L800 252" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="772" cy="252" r="4" fill="#111111"/>
+<path d="M772 252 L772 116" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M772 116 L782.0 116 L785.5 109 L792.5 123 L799.5 109 L806.5 123 L813.5 109 L820.5 123 L824.0 116 L834 116" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M834 116 L952 116" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M952 116 L952 271.0" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="803.0" y="100" font-size="13.5" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">Rf = 2R</text>
+<path d="M800 211 L800 331 L912 271.0 L800 211" stroke="#111111" stroke-width="1.8" fill="#fbfbfb" />
+<text x="818" y="256.8" font-size="17" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">&#8722;</text>
+<text x="818" y="302.4" font-size="17" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">+</text>
+<path d="M800 297.4 L766 297.4" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M766 297.4 L766 311.4" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M766 311.4 L766 323.4" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M752 323.4 L780 323.4" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M757 329.4 L775 329.4" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M762 335.4 L770 335.4" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M912 271.0 L1016 271.0" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="952" cy="271.0" r="4" fill="#111111"/>
+<circle cx="1024" cy="271.0" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="1024" y="253.0" font-size="13.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">Vout</text>
+<text x="540.0" y="416" font-size="12" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">two resistor values only  ·  D₃ (MSB) sits closest to the summing junction  ·  R₂ terminates the ladder</text>
+</svg>

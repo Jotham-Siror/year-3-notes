@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="340" viewBox="0 0 850 340" font-family="sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#222"/>
+    </marker>
+    <marker id="ahb" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#1f6f8b"/>
+    </marker>
+    <marker id="ahb0" markerWidth="9" markerHeight="7" refX="0.5" refY="3.5" orient="auto">
+      <path d="M9,0 L0,3.5 L9,7 z" fill="#1f6f8b"/>
+    </marker>
+  </defs>
+  <rect width="850" height="340" fill="#ffffff"/>
+
+  <!-- IEC NAND symbol -->
+  <rect x="60" y="105" width="85" height="90" fill="none" stroke="#222" stroke-width="2"/>
+  <text x="102" y="162" font-size="30" text-anchor="middle" fill="#222">&amp;</text>
+  <line x1="18" y1="130" x2="60" y2="130" stroke="#222" stroke-width="2"/>
+  <line x1="18" y1="172" x2="60" y2="172" stroke="#222" stroke-width="2"/>
+  <text x="10" y="124" font-size="16" text-anchor="end" fill="#222">A</text>
+  <text x="10" y="166" font-size="16" text-anchor="end" fill="#222">B</text>
+  <path d="M145,138 L145,162 L172,150 z" fill="none" stroke="#222" stroke-width="2"/>
+  <line x1="172" y1="150" x2="215" y2="150" stroke="#222" stroke-width="2"/>
+  <text x="224" y="156" font-size="16" fill="#222">X</text>
+  <text x="102" y="228" font-size="13" text-anchor="middle" fill="#666">NAND (IEC form:</text>
+  <text x="102" y="246" font-size="13" text-anchor="middle" fill="#666">&amp; with output</text>
+  <text x="102" y="264" font-size="13" text-anchor="middle" fill="#666">polarity indicator)</text>
+
+  <!-- waveforms -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <polyline points="300,90 400,90 400,55 600,55 600,90 800,90"/>
+    <polyline points="300,170 460,170 460,135 700,135 700,170 800,170"/>
+    <polyline points="300,215 506,215 506,250 646,250 646,215 800,215"/>
+  </g>
+  <g font-size="16" text-anchor="end" fill="#222">
+    <text x="290" y="78">A</text>
+    <text x="290" y="158">B</text>
+    <text x="290" y="238">X</text>
+  </g>
+
+  <!-- cause-and-effect links -->
+  <path d="M462,152 C486,160 480,196 506,212" stroke="#1f6f8b" stroke-width="2" fill="none" marker-end="url(#ahb)"/>
+  <path d="M602,72  C628,86 620,196 646,212" stroke="#1f6f8b" stroke-width="2" fill="none" marker-end="url(#ahb)"/>
+
+  <!-- delay markers -->
+  <g stroke="#888" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="460" y1="135" x2="460" y2="292"/>
+    <line x1="506" y1="215" x2="506" y2="292"/>
+    <line x1="600" y1="55"  x2="600" y2="292"/>
+    <line x1="646" y1="215" x2="646" y2="292"/>
+  </g>
+  <line x1="460" y1="286" x2="506" y2="286" stroke="#1f6f8b" stroke-width="2" marker-start="url(#ahb0)" marker-end="url(#ahb)"/>
+  <line x1="600" y1="286" x2="646" y2="286" stroke="#1f6f8b" stroke-width="2" marker-start="url(#ahb0)" marker-end="url(#ahb)"/>
+  <text x="469" y="315" font-size="15" fill="#1f6f8b">t</text><text x="476" y="319" font-size="11" fill="#1f6f8b">PHL</text>
+  <text x="609" y="315" font-size="15" fill="#1f6f8b">t</text><text x="616" y="319" font-size="11" fill="#1f6f8b">PLH</text>
+  <text x="352" y="315" font-size="13" text-anchor="middle" fill="#666">B rises &#8594; X falls</text>
+  <text x="745" y="315" font-size="13" text-anchor="middle" fill="#666">A falls &#8594; X rises</text>
+</svg>

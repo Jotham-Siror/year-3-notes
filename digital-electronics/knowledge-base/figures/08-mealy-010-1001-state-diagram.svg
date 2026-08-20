@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" font-family="sans-serif"><title>Mealy state diagram: detector for 010 or 1001</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6cab"/></marker><marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M370.0,-14.0 L370.0,32.0" stroke="#111111" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<text x="366.0" y="-23.0" text-anchor="middle" font-size="13" fill="#111111" >reset</text>
+<path d="M115.1,216.8 C99.5,244.3 99.5,155.7 115.1,183.2" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="60.0" y="204.9" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M624.9,183.2 C640.5,155.7 640.5,244.3 624.9,216.8" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="680.0" y="204.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M344.3,77.4 Q255.0,131.0 165.7,184.6" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="265.28991510855053" y="153.0498585142509" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M395.7,77.4 Q485.0,131.0 574.3,184.6" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="474.71008489144947" y="153.0498585142509" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M140.0,230.0 Q140.0,285.0 140.0,340.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="162.0" y="289.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M600.0,230.0 Q600.0,285.0 600.0,340.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="578.0" y="289.9" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M169.3,376.6 Q370.0,422.0 570.7,376.6" fill="none" stroke="#1c6cab" stroke-width="2" marker-end="url(#ahA)"/>
+<text x="370.0" y="421.20781784163853" text-anchor="middle" font-size="14" fill="#1c6cab" >0/1</text>
+<path d="M570.7,363.4 Q370.0,318.0 169.3,363.4" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="370.0" y="328.5921821583614" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M166.4,355.8 Q358.2,253.1 570.7,206.4" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="357.1530799495144" y="255.13774574574492" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M575.1,386.8 Q485.0,447.5 394.9,508.2" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="473.822930758554" y="435.8146714481768" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M341.5,515.8 Q232.6,480.7 159.3,393.0" fill="none" stroke="#1c6cab" stroke-width="2" marker-end="url(#ahA)"/>
+<text x="231.4403420603213" y="487.35949242662" text-anchor="middle" font-size="14" fill="#1c6cab" >1/1</text>
+<path d="M340.0,524.1 Q38.7,515.6 130.8,228.6" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="123.17798276396678" y="460.6894275824235" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<circle cx="370" cy="62" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="370" y="67.6" text-anchor="middle" font-size="16" fill="#111111">S0</text>
+<circle cx="140" cy="200" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="140" y="205.6" text-anchor="middle" font-size="16" fill="#111111">S1</text>
+<circle cx="600" cy="200" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="600" y="205.6" text-anchor="middle" font-size="16" fill="#111111">S4</text>
+<circle cx="140" cy="370" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="140" y="375.6" text-anchor="middle" font-size="16" fill="#111111">S2</text>
+<circle cx="600" cy="370" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="600" y="375.6" text-anchor="middle" font-size="16" fill="#111111">S3</text>
+<circle cx="370" cy="525" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="370" y="530.6" text-anchor="middle" font-size="16" fill="#111111">S5</text>
+<text x="380" y="600" text-anchor="middle" font-size="13" fill="#1c6cab" >arc label is input / output ;  the two blue arcs are the ones that output 1</text>
+</svg>

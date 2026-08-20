@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" font-family="sans-serif">
+  <rect width="900" height="420" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="225" y="28" font-size="13" text-anchor="middle" fill="#111111">(a) incorrect — feedback inside the block</text>
+  <text x="675" y="28" font-size="13" text-anchor="middle" fill="#111111">(b) correct — the loop leaves the block</text>
+  <rect x="85" y="60" width="280" height="230" fill="#eef4f8" stroke="none"/>
+  <text x="353" y="78" font-size="11.5" text-anchor="end" fill="#0b5c8a">SM block</text>
+  <path d="M225 44 L225 86" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="165" y="86" width="120" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="225.0" y="112.86" font-size="13.5" text-anchor="middle" fill="#111111">S0 /</text>
+  <path d="M225 130 L225 166" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M225 170 L273 196 L225 222 L177 196 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="225" y="200.68" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="147" y="188" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="241" y="238" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M225 222 L225 330" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M177 196 L115 196 L115 150 L221 150" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="225" y="360" font-size="11.5" text-anchor="middle" fill="#a33b00">the 0 path re-enters above the</text>
+  <text x="225" y="376" font-size="11.5" text-anchor="middle" fill="#a33b00">decision box, still inside the block</text>
+  <rect x="535" y="60" width="280" height="230" fill="#eef4f8" stroke="none"/>
+  <text x="803" y="78" font-size="11.5" text-anchor="end" fill="#0b5c8a">SM block</text>
+  <path d="M675 44 L675 86" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="615" y="86" width="120" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="675.0" y="112.86" font-size="13.5" text-anchor="middle" fill="#111111">S0 /</text>
+  <path d="M675 130 L675 166" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M675 170 L723 196 L675 222 L627 196 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="675" y="200.68" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="597" y="188" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="691" y="238" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M675 222 L675 330" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M627 196 L510 196 L510 44 L671 44" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="675" y="360" font-size="11.5" text-anchor="middle" fill="#666666">the 0 path exits the block and</text>
+  <text x="675" y="376" font-size="11.5" text-anchor="middle" fill="#666666">re-enters at the entrance path</text>
+</svg>

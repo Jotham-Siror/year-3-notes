@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="810" height="450" viewBox="0 0 810 450" font-family="sans-serif">
+<rect width="810" height="450" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#222222"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a5fb4"/></marker></defs>
+<text x="410" y="28" font-size="15" text-anchor="middle" fill="#222222">ROM (PROM), PAL and PLA — which array is programmable</text>
+<text x="20" y="104" font-size="14" text-anchor="start" fill="#222222">(a)  PROM</text>
+<text x="120" y="104" font-size="12" text-anchor="start" fill="#222222">Inputs</text>
+<line x1="172" y1="100" x2="258" y2="100" stroke="#1e7a4d" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="215" y="88" font-size="11" text-anchor="middle" fill="#1e7a4d">Fixed</text>
+<text x="215" y="120" font-size="11" text-anchor="middle" fill="#1e7a4d">connections</text>
+<rect x="258" y="76" width="150" height="52" rx="0" fill="none" stroke="#1e7a4d" stroke-width="2.0"/>
+<text x="333" y="96" font-size="12" text-anchor="middle" fill="#1e7a4d">Fixed</text>
+<text x="333" y="114" font-size="12" text-anchor="middle" fill="#222222">AND array (decoder)</text>
+<line x1="408" y1="100" x2="494" y2="100" stroke="#1a5fb4" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="451" y="88" font-size="11" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="451" y="120" font-size="11" text-anchor="middle" fill="#1a5fb4">connections</text>
+<rect x="494" y="76" width="150" height="52" rx="0" fill="none" stroke="#1a5fb4" stroke-width="2.0"/>
+<text x="569" y="96" font-size="12" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="569" y="114" font-size="12" text-anchor="middle" fill="#222222">OR array</text>
+<line x1="644" y1="100" x2="700" y2="100" stroke="#222222" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="706" y="104" font-size="12" text-anchor="start" fill="#222222">Outputs</text>
+<text x="20" y="216" font-size="14" text-anchor="start" fill="#222222">(b)  PAL</text>
+<text x="120" y="216" font-size="12" text-anchor="start" fill="#222222">Inputs</text>
+<line x1="172" y1="212" x2="258" y2="212" stroke="#1a5fb4" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="215" y="200" font-size="11" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="215" y="232" font-size="11" text-anchor="middle" fill="#1a5fb4">connections</text>
+<rect x="258" y="188" width="150" height="52" rx="0" fill="none" stroke="#1a5fb4" stroke-width="2.0"/>
+<text x="333" y="208" font-size="12" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="333" y="226" font-size="12" text-anchor="middle" fill="#222222">AND array</text>
+<line x1="408" y1="212" x2="494" y2="212" stroke="#1e7a4d" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="451" y="200" font-size="11" text-anchor="middle" fill="#1e7a4d">Fixed</text>
+<text x="451" y="232" font-size="11" text-anchor="middle" fill="#1e7a4d">connections</text>
+<rect x="494" y="188" width="150" height="52" rx="0" fill="none" stroke="#1e7a4d" stroke-width="2.0"/>
+<text x="569" y="208" font-size="12" text-anchor="middle" fill="#1e7a4d">Fixed</text>
+<text x="569" y="226" font-size="12" text-anchor="middle" fill="#222222">OR array</text>
+<line x1="644" y1="212" x2="700" y2="212" stroke="#222222" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="706" y="216" font-size="12" text-anchor="start" fill="#222222">Outputs</text>
+<text x="20" y="328" font-size="14" text-anchor="start" fill="#222222">(c)  PLA</text>
+<text x="120" y="328" font-size="12" text-anchor="start" fill="#222222">Inputs</text>
+<line x1="172" y1="324" x2="258" y2="324" stroke="#1a5fb4" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="215" y="312" font-size="11" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="215" y="344" font-size="11" text-anchor="middle" fill="#1a5fb4">connections</text>
+<rect x="258" y="300" width="150" height="52" rx="0" fill="none" stroke="#1a5fb4" stroke-width="2.0"/>
+<text x="333" y="320" font-size="12" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="333" y="338" font-size="12" text-anchor="middle" fill="#222222">AND array</text>
+<line x1="408" y1="324" x2="494" y2="324" stroke="#1a5fb4" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="451" y="312" font-size="11" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="451" y="344" font-size="11" text-anchor="middle" fill="#1a5fb4">connections</text>
+<rect x="494" y="300" width="150" height="52" rx="0" fill="none" stroke="#1a5fb4" stroke-width="2.0"/>
+<text x="569" y="320" font-size="12" text-anchor="middle" fill="#1a5fb4">Programmable</text>
+<text x="569" y="338" font-size="12" text-anchor="middle" fill="#222222">OR array</text>
+<line x1="644" y1="324" x2="700" y2="324" stroke="#222222" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="706" y="328" font-size="12" text-anchor="start" fill="#222222">Outputs</text>
+<line x1="20" y1="404" x2="790" y2="404" stroke="#bbbbbb" stroke-width="1"/>
+<text x="20" y="428" font-size="12" text-anchor="start" fill="#222222">Blue = programmable   ·   Green = fixed at manufacture</text>
+
+</svg>

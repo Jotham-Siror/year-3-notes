@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="450" viewBox="0 0 780 450" font-family="sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#222"/>
+    </marker>
+    <marker id="ahd" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#b25400"/>
+    </marker>
+  </defs>
+  <rect width="780" height="450" fill="#ffffff"/>
+
+  <!-- blocks -->
+  <g stroke="#222" stroke-width="2" fill="#f4f4f4">
+    <rect x="110" y="70"  width="110" height="50"/>
+    <rect x="330" y="70"  width="110" height="50"/>
+    <rect x="560" y="70"  width="110" height="50"/>
+    <rect x="240" y="280" width="110" height="50"/>
+    <rect x="450" y="280" width="110" height="50"/>
+  </g>
+  <g font-size="16" text-anchor="middle" fill="#222">
+    <text x="165" y="101">Input</text>
+    <text x="385" y="101">Memory</text>
+    <text x="615" y="101">Output</text>
+    <text x="295" y="311">Control</text>
+    <text x="505" y="311">Arithmetic</text>
+  </g>
+
+  <!-- main information path -->
+  <g stroke="#222" stroke-width="2" fill="none" marker-end="url(#ah)">
+    <line x1="22"  y1="88" x2="106" y2="88"/>
+    <line x1="220" y1="88" x2="326" y2="88"/>
+    <line x1="440" y1="88" x2="556" y2="88"/>
+    <line x1="670" y1="88" x2="762" y2="88"/>
+  </g>
+  <text x="14" y="46" font-size="15" fill="#1f6f8b">Data and</text>
+  <text x="14" y="65" font-size="15" fill="#1f6f8b">instructions</text>
+  <text x="686" y="46" font-size="15" fill="#1f6f8b">Final</text>
+  <text x="686" y="65" font-size="15" fill="#1f6f8b">results</text>
+
+  <!-- memory -> control : instructions -->
+  <path d="M355,120 L355,215 L300,215 L300,276" stroke="#222" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <text x="348" y="168" font-size="14" text-anchor="end" fill="#222">Instructions</text>
+
+  <!-- memory -> arithmetic : data -->
+  <path d="M425,120 L425,215 L505,215 L505,276" stroke="#222" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <text x="418" y="200" font-size="14" text-anchor="end" fill="#222">Data</text>
+
+  <!-- arithmetic -> control : decision information -->
+  <line x1="446" y1="300" x2="356" y2="300" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="400" y="262" font-size="14" text-anchor="middle" fill="#222">Decision information</text>
+
+  <!-- arithmetic -> memory : intermediate and final results -->
+  <path d="M545,280 L545,110 L446,110" stroke="#222" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+  <text x="538" y="152" font-size="14" text-anchor="end" fill="#222">Intermediate and</text>
+  <text x="538" y="171" font-size="14" text-anchor="end" fill="#222">final results</text>
+
+  <!-- control signals, dashed -->
+  <g stroke="#b25400" stroke-width="2" fill="none" stroke-dasharray="7,5" marker-end="url(#ahd)">
+    <path d="M240,300 L165,300 L165,126"/>
+    <path d="M250,280 L250,105 L326,105"/>
+    <path d="M356,315 L444,315"/>
+    <path d="M295,330 L295,392 L660,392 L660,126"/>
+  </g>
+
+  <!-- legend -->
+  <line x1="24" y1="392" x2="74" y2="392" stroke="#222" stroke-width="2"/>
+  <text x="84" y="397" font-size="14" fill="#222">Information signals</text>
+  <line x1="24" y1="420" x2="74" y2="420" stroke="#b25400" stroke-width="2" stroke-dasharray="7,5"/>
+  <text x="84" y="425" font-size="14" fill="#222">Control signals</text>
+</svg>

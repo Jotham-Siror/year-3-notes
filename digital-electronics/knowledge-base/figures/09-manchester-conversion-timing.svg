@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1102" height="552" viewBox="0 0 1102 552" font-family="sans-serif">
+<rect width="1102" height="552" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="551.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">NRZ to Manchester — timing for both machines, bit sequence 0 1 1 1 0 0 1 0</text>
+<line x1="210" y1="60" x2="210" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="314" y1="60" x2="314" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="418" y1="60" x2="418" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="522" y1="60" x2="522" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="626" y1="60" x2="626" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="730" y1="60" x2="730" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="834" y1="60" x2="834" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="938" y1="60" x2="938" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="1042" y1="60" x2="1042" y2="470" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="262" y="78" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="366" y="78" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="470" y="78" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="574" y="78" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="678" y="78" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="782" y="78" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="886" y="78" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="990" y="78" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="196" y="78" text-anchor="end" font-size="14" fill="#111111">bit sequence</text>
+<path d="M 210.0 140.0 L 262.0 140.0 L 262.0 140.0 L 314.0 140.0 L 314.0 110.0 L 366.0 110.0 L 366.0 110.0 L 418.0 110.0 L 418.0 110.0 L 470.0 110.0 L 470.0 110.0 L 522.0 110.0 L 522.0 110.0 L 574.0 110.0 L 574.0 110.0 L 626.0 110.0 L 626.0 140.0 L 678.0 140.0 L 678.0 140.0 L 730.0 140.0 L 730.0 140.0 L 782.0 140.0 L 782.0 140.0 L 834.0 140.0 L 834.0 110.0 L 886.0 110.0 L 886.0 110.0 L 938.0 110.0 L 938.0 140.0 L 990.0 140.0 L 990.0 140.0 L 1042.0 140.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="196" y="134" text-anchor="end" font-size="14" fill="#111111">X (NRZ)</text>
+<line x1="210" y1="152" x2="1042" y2="152" stroke="#cccccc" stroke-width="1"/>
+<path d="M 210.0 180.0 L 262.0 180.0 L 262.0 210.0 L 314.0 210.0 L 314.0 180.0 L 366.0 180.0 L 366.0 210.0 L 418.0 210.0 L 418.0 180.0 L 470.0 180.0 L 470.0 210.0 L 522.0 210.0 L 522.0 180.0 L 574.0 180.0 L 574.0 210.0 L 626.0 210.0 L 626.0 180.0 L 678.0 180.0 L 678.0 210.0 L 730.0 210.0 L 730.0 180.0 L 782.0 180.0 L 782.0 210.0 L 834.0 210.0 L 834.0 180.0 L 886.0 180.0 L 886.0 210.0 L 938.0 210.0 L 938.0 180.0 L 990.0 180.0 L 990.0 210.0 L 1042.0 210.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="196" y="204" text-anchor="end" font-size="14" fill="#111111">Clock2</text>
+<line x1="210" y1="222" x2="1042" y2="222" stroke="#cccccc" stroke-width="1"/>
+<text x="196" y="258" text-anchor="end" font-size="14" fill="#111111">Mealy state</text>
+<text x="236.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="288.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<text x="340.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="392.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="444.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="496.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="548.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="600.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="652.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="704.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<text x="756.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="808.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<text x="860.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="912.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="964.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="1016.0" y="258" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<path d="M 210.0 320.0 L 262.0 320.0 L 262.0 290.0 L 314.0 290.0 L 314.0 290.0 L 366.0 290.0 L 366.0 320.0 L 418.0 320.0 L 418.0 290.0 L 470.0 290.0 L 470.0 320.0 L 522.0 320.0 L 522.0 290.0 L 574.0 290.0 L 574.0 320.0 L 626.0 320.0 L 626.0 320.0 L 678.0 320.0 L 678.0 290.0 L 730.0 290.0 L 730.0 320.0 L 782.0 320.0 L 782.0 290.0 L 834.0 290.0 L 834.0 290.0 L 886.0 290.0 L 886.0 320.0 L 938.0 320.0 L 938.0 320.0 L 990.0 320.0 L 990.0 290.0 L 1042.0 290.0" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+<text x="196" y="314" text-anchor="end" font-size="14" fill="#111111">Z (Mealy)</text>
+<line x1="210" y1="332" x2="1042" y2="332" stroke="#cccccc" stroke-width="1"/>
+<text x="196" y="368" text-anchor="end" font-size="14" fill="#111111">Moore state</text>
+<text x="236.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="288.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<text x="340.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="392.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S3</text>
+<text x="444.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="496.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S3</text>
+<text x="548.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="600.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S3</text>
+<text x="652.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="704.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<text x="756.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="808.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<text x="860.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S2</text>
+<text x="912.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S3</text>
+<text x="964.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S0</text>
+<text x="1016.0" y="368" text-anchor="middle" font-size="11" fill="#777777">S1</text>
+<path d="M 210.0 430.0 L 262.0 430.0 L 262.0 430.0 L 314.0 430.0 L 314.0 400.0 L 366.0 400.0 L 366.0 400.0 L 418.0 400.0 L 418.0 430.0 L 470.0 430.0 L 470.0 400.0 L 522.0 400.0 L 522.0 430.0 L 574.0 430.0 L 574.0 400.0 L 626.0 400.0 L 626.0 430.0 L 678.0 430.0 L 678.0 430.0 L 730.0 430.0 L 730.0 400.0 L 782.0 400.0 L 782.0 430.0 L 834.0 430.0 L 834.0 400.0 L 886.0 400.0 L 886.0 400.0 L 938.0 400.0 L 938.0 430.0 L 990.0 430.0 L 990.0 430.0 L 1042.0 430.0" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+<text x="196" y="424" text-anchor="end" font-size="14" fill="#111111">Z (Moore)</text>
+<line x1="210" y1="442" x2="1042" y2="442" stroke="#cccccc" stroke-width="1"/>
+<text x="210" y="500" font-size="13" fill="#777777">Manchester target: 0 1 1 0 1 0 1 0 0 1 0 1 1 0 0 1</text>
+<text x="210" y="522" font-size="13" fill="#777777">The Mealy output reproduces it exactly; the Moore output is the same pattern delayed by one Clock2 period.</text>
+</svg>

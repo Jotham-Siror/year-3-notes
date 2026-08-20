@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="320.0" y="26" font-size="14" text-anchor="middle" fill="#1a1a1a">State diagram of the slide-21 circuit   (edge label = x / y)</text>
+  <circle cx="170" cy="140" r="30" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <circle cx="170" cy="140" r="25.5" fill="none" stroke="#1b4f72" stroke-width="1.2"/>
+  <text x="170" y="145" font-size="13" text-anchor="middle" fill="#1a1a1a">00</text>
+  <circle cx="470" cy="140" r="30" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="470" y="145" font-size="13" text-anchor="middle" fill="#1a1a1a">10</text>
+  <circle cx="170" cy="370" r="30" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="170" y="375" font-size="13" text-anchor="middle" fill="#1a1a1a">01</text>
+  <circle cx="470" cy="370" r="30" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="470" y="375" font-size="13" text-anchor="middle" fill="#1a1a1a">11</text>
+  <path d="M157.8,112.6 C112.3,74.1 227.7,74.1 182.2,112.6" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M182.20,112.59 L186.63,103.89 L191.51,109.66 Z" fill="#1b4f72" stroke="none"/>
+  <text x="136.0" y="61.2" font-size="12" text-anchor="middle" fill="#117a65">0 / 0</text>
+  <path d="M457.8,112.6 C412.3,74.1 527.7,74.1 482.2,112.6" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M482.20,112.59 L486.63,103.89 L491.51,109.66 Z" fill="#1b4f72" stroke="none"/>
+  <text x="506.0" y="61.2" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M180.2,170.0 Q204.0,255.0 180.2,340.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M180.20,340.00 L178.99,330.31 L186.27,332.35 Z" fill="#1b4f72" stroke="none"/>
+  <text x="234.0" y="259.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M159.8,340.0 Q136.0,255.0 159.8,170.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M159.80,170.00 L161.01,179.69 L153.73,177.65 Z" fill="#1b4f72" stroke="none"/>
+  <text x="104.0" y="259.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M440.0,153.8 Q320.0,186.0 200.0,153.8" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M200.00,153.80 L209.67,152.48 L207.71,159.78 Z" fill="#1b4f72" stroke="none"/>
+  <text x="320.0" y="174.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M446.2,351.7 Q320.0,255.0 193.8,158.3" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M193.81,158.25 L203.25,160.73 L198.65,166.73 Z" fill="#1b4f72" stroke="none"/>
+  <text x="354.0" y="245.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M200.0,370.0 Q320.0,370.0 440.0,370.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M440.00,370.00 L431.00,373.78 L431.00,366.22 Z" fill="#1b4f72" stroke="none"/>
+  <text x="320.0" y="356.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M470.0,340.0 Q470.0,255.0 470.0,170.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M470.00,170.00 L473.78,179.00 L466.22,179.00 Z" fill="#1b4f72" stroke="none"/>
+  <text x="506.0" y="255.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <text x="320.0" y="452" font-size="10" text-anchor="middle" fill="#117a65">state = A B;  double ring marks 00, the state reached from anywhere on x = 0</text>
+</svg>

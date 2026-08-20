@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" font-family="sans-serif">
+<rect width="640" height="360" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6ea4"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7f4f"/></marker></defs>
+<text x="320" y="22" font-size="12" text-anchor="middle" fill="#111111">Memory unit — external connections</text>
+<rect x="250" y="118" width="190" height="132" fill="#f4f8fb" stroke="#111111" stroke-width="1.6"/>
+<text x="345.0" y="164" font-size="13" text-anchor="middle" fill="#111111">Memory unit</text>
+<text x="320" y="190" font-size="12" text-anchor="start" fill="#111111">2</text>
+<text x="327" y="185" font-size="9" text-anchor="start" fill="#111111">k</text>
+<text x="334" y="190" font-size="12" text-anchor="start" fill="#111111"> words</text>
+<text x="345.0" y="212" font-size="12" text-anchor="middle" fill="#111111">n bits per word</text>
+<line x1="345" y1="70" x2="345" y2="116" stroke="#1c6ea4" stroke-width="1.4" marker-end="url(#b)"/>
+<text x="355" y="60" font-size="11" text-anchor="start" fill="#1c6ea4">n data input lines</text>
+<line x1="345" y1="252" x2="345" y2="296" stroke="#1c6ea4" stroke-width="1.4" marker-end="url(#b)"/>
+<text x="355" y="314" font-size="11" text-anchor="start" fill="#1c6ea4">n data output lines</text>
+<line x1="140" y1="150" x2="248" y2="150" stroke="#111111" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="134" y="154" font-size="11" text-anchor="end" fill="#111111">k address lines</text>
+<line x1="140" y1="186" x2="248" y2="186" stroke="#111111" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="134" y="190" font-size="11" text-anchor="end" fill="#111111">Read</text>
+<line x1="140" y1="222" x2="248" y2="222" stroke="#111111" stroke-width="1.4" marker-end="url(#a)"/>
+<text x="134" y="226" font-size="11" text-anchor="end" fill="#111111">Write</text>
+</svg>

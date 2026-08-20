@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" font-family="sans-serif">
+  <rect width="1000" height="560" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <rect x="60" y="60" width="110" height="44" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="115.0" y="86.5" font-size="12.5" text-anchor="middle" fill="#111111">display</text>
+  <rect x="230" y="60" width="110" height="44" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="285.0" y="86.5" font-size="12.5" text-anchor="middle" fill="#111111">display</text>
+  <rect x="60" y="150" width="110" height="54" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="115.0" y="173.75" font-size="12.5" text-anchor="middle" fill="#111111">1-to-6</text>
+  <text x="115.0" y="189.25" font-size="12.5" text-anchor="middle" fill="#111111">counter</text>
+  <rect x="230" y="150" width="110" height="54" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="285.0" y="173.75" font-size="12.5" text-anchor="middle" fill="#111111">1-to-6</text>
+  <text x="285.0" y="189.25" font-size="12.5" text-anchor="middle" fill="#111111">counter</text>
+  <path d="M115 150 L115 110" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M285 150 L285 110" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="60" y="250" width="280" height="44" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="200.0" y="276.5" font-size="12.5" text-anchor="middle" fill="#111111">adder</text>
+  <path d="M115 204 L115 244" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M285 204 L285 244" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="60" y="370" width="110" height="54" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="115.0" y="393.75" font-size="12.5" text-anchor="middle" fill="#111111">point</text>
+  <text x="115.0" y="409.25" font-size="12.5" text-anchor="middle" fill="#111111">register</text>
+  <rect x="230" y="370" width="140" height="44" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="300.0" y="396.5" font-size="12.5" text-anchor="middle" fill="#111111">comparator</text>
+  <rect x="470" y="240" width="110" height="70" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="525.0" y="271.75" font-size="12.5" text-anchor="middle" fill="#111111">test</text>
+  <text x="525.0" y="287.25" font-size="12.5" text-anchor="middle" fill="#111111">logic</text>
+  <rect x="690" y="120" width="120" height="330" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="750.0" y="289.5" font-size="12.5" text-anchor="middle" fill="#111111">control</text>
+  <rect x="870" y="150" width="100" height="44" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="920.0" y="176.5" font-size="12.5" text-anchor="middle" fill="#111111">Win</text>
+  <rect x="870" y="230" width="100" height="44" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="920.0" y="256.5" font-size="12.5" text-anchor="middle" fill="#111111">Lose</text>
+  <path d="M200 294 L200 330 L115 330 L115 364" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="200" y1="294" x2="200" y2="330" stroke="#111111" stroke-width="1.6"/>
+  <path d="M200 330 L465 330 L465 290" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M465 330 L465 292" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <circle cx="200" cy="330" r="3" fill="#111111"/>
+  <text x="216" y="322" font-size="12" text-anchor="start" fill="#0b5c8a">Sum</text>
+  <path d="M170 392 L226 392" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M370 392 L686 392" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="600" y="382" font-size="12" text-anchor="start" fill="#0b5c8a">Eq</text>
+  <path d="M580 262 L686 262" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="600" y="252" font-size="12" text-anchor="start" fill="#0b5c8a">D7</text>
+  <path d="M580 285 L686 285" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="600" y="300" font-size="12" text-anchor="start" fill="#0b5c8a">D711</text>
+  <path d="M580 308 L686 308" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="600" y="326" font-size="12" text-anchor="start" fill="#0b5c8a">D2312</text>
+  <path d="M690 440 L140 440 L140 428" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="420" y="432" font-size="12" text-anchor="start" fill="#0b5c8a">Sp</text>
+  <path d="M690 176 L345 176" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="470" y="166" font-size="12" text-anchor="start" fill="#0b5c8a">Roll</text>
+  <path d="M230 176 L174 176" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M960 168 L814 168" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="966" y="158" font-size="12" text-anchor="end" fill="#0b5c8a">Rb</text>
+  <path d="M960 206 L814 206" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="966" y="196" font-size="12" text-anchor="end" fill="#0b5c8a">Reset</text>
+  <path d="M810 172 L866 172" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M810 252 L866 252" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="500" y="500" font-size="11.5" text-anchor="middle" fill="#666666">Two 1-to-6 counters simulate the dice; the adder forms the sum 2…12. The test logic derives D7, D711 and D2312;</text>
+  <text x="500" y="518" font-size="11.5" text-anchor="middle" fill="#666666">the comparator derives Eq against the point register. Control outputs Roll, Sp, Win, Lose.</text>
+</svg>

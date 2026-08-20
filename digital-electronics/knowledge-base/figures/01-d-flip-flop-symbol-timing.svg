@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="330" viewBox="0 0 940 330" font-family="sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#222"/>
+    </marker>
+    <marker id="ahb" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#1f6f8b"/>
+    </marker>
+  </defs>
+  <rect width="940" height="330" fill="#ffffff"/>
+
+  <!-- IEC symbol -->
+  <rect x="80" y="60" width="110" height="125" fill="none" stroke="#222" stroke-width="2"/>
+  <text x="10" y="92"  font-size="15" fill="#222">DATA</text>
+  <line x1="10" y1="102" x2="80" y2="102" stroke="#222" stroke-width="2"/>
+  <text x="10" y="142" font-size="15" fill="#222">CLOCK</text>
+  <line x1="10" y1="152" x2="80" y2="152" stroke="#222" stroke-width="2"/>
+  <text x="92" y="108" font-size="17" fill="#222">1D</text>
+  <path d="M80,142 L80,162 L98,152 z" fill="none" stroke="#222" stroke-width="2"/>
+  <text x="104" y="158" font-size="17" fill="#222">C1</text>
+  <line x1="190" y1="102" x2="258" y2="102" stroke="#222" stroke-width="2"/>
+  <text x="240" y="92" font-size="16" fill="#222">Q</text>
+  <text x="135" y="215" font-size="13" text-anchor="middle" fill="#666">&#9655; = edge-triggered</text>
+  <text x="135" y="233" font-size="13" text-anchor="middle" fill="#666">1D is controlled by C1</text>
+
+  <!-- edge guides -->
+  <g stroke="#bbb" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="430" y1="52" x2="430" y2="292"/>
+    <line x1="590" y1="52" x2="590" y2="292"/>
+    <line x1="750" y1="52" x2="750" y2="292"/>
+  </g>
+
+  <!-- waveforms -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <polyline points="380,95 430,95 430,60 500,60 500,95 590,95 590,60 660,60 660,95 750,95 750,60 820,60 820,95 900,95"/>
+    <polyline points="380,185 400,185 400,150 465,150 465,185 555,185 555,150 620,150 620,185 900,185"/>
+    <polyline points="380,275 448,275 448,240 768,240 768,275 900,275"/>
+  </g>
+  <g font-size="15" text-anchor="end" fill="#222">
+    <text x="370" y="82">CLOCK</text>
+    <text x="370" y="172">DATA</text>
+    <text x="370" y="262">Q</text>
+  </g>
+
+  <!-- sampled value of D at each rising edge -->
+  <circle cx="430" cy="150" r="6" fill="none" stroke="#1f6f8b" stroke-width="2"/>
+  <circle cx="590" cy="150" r="6" fill="none" stroke="#1f6f8b" stroke-width="2"/>
+  <circle cx="750" cy="185" r="6" fill="none" stroke="#1f6f8b" stroke-width="2"/>
+  <text x="430" y="132" font-size="13" text-anchor="middle" fill="#1f6f8b">D = 1</text>
+  <text x="590" y="132" font-size="13" text-anchor="middle" fill="#1f6f8b">D = 1</text>
+  <text x="750" y="207" font-size="13" text-anchor="middle" fill="#1f6f8b">D = 0</text>
+
+  <!-- cause and effect -->
+  <path d="M432,78 C458,96 434,214 448,236" stroke="#1f6f8b" stroke-width="2" fill="none" marker-end="url(#ahb)"/>
+  <path d="M592,78 C618,96 594,214 608,236" stroke="#1f6f8b" stroke-width="2" fill="none" marker-end="url(#ahb)"/>
+  <path d="M752,78 C778,96 754,214 768,236" stroke="#1f6f8b" stroke-width="2" fill="none" marker-end="url(#ahb)"/>
+  <text x="448" y="305" font-size="13" text-anchor="middle" fill="#666">Q &#8592; 1</text>
+  <text x="612" y="305" font-size="13" text-anchor="middle" fill="#666">Q unchanged</text>
+  <text x="772" y="305" font-size="13" text-anchor="middle" fill="#666">Q &#8592; 0</text>
+</svg>

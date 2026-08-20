@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="810" height="380" viewBox="0 0 810 380" font-family="sans-serif"><title>Moore state diagram for the 101 sequence detector</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6cab"/></marker><marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M44.0,130.0 L90.0,130.0" stroke="#111111" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<text x="40.0" y="121.0" text-anchor="end" font-size="13" fill="#111111" >reset</text>
+<path d="M103.2,105.1 C75.7,89.5 164.3,89.5 136.8,105.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="119.99999999999999" y="57.9" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M283.2,105.1 C255.7,89.5 344.3,89.5 316.8,105.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="300.0" y="57.9" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M150.0,130.0 Q210.0,130.0 270.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="210.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M330.0,130.0 Q390.0,130.0 450.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="390.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M510.0,130.0 Q570.0,130.0 630.0,130.0" fill="none" stroke="#1c6cab" stroke-width="2" marker-end="url(#ahA)"/>
+<text x="570.0" y="116.9" text-anchor="middle" font-size="14" fill="#1c6cab" >1</text>
+<path d="M634.4,145.6 Q570.0,185.0 505.6,145.6" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="570.0" y="184.22175014180962" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M636.6,148.8 Q480.0,275.0 323.4,148.8" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="480.0" y="230.80994306808967" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M453.5,144.0 Q300.0,225.0 146.5,144.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="300.0" y="203.40137929337183" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<circle cx="120" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="120" y="134.9" text-anchor="middle" font-size="14" fill="#111111">S0/0</text>
+<circle cx="300" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="300" y="134.9" text-anchor="middle" font-size="14" fill="#111111">S1/0</text>
+<circle cx="480" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="480" y="134.9" text-anchor="middle" font-size="14" fill="#111111">S2/0</text>
+<circle cx="660" cy="130" r="30" fill="#ffffff" stroke="#1c6cab" stroke-width="2"/>
+<circle cx="660" cy="130" r="25" fill="none" stroke="#1c6cab" stroke-width="1.6"/>
+<text x="660" y="134.9" text-anchor="middle" font-size="14" fill="#1c6cab">S3/1</text>
+<text x="405.0" y="366" text-anchor="middle" font-size="13" fill="#1c6cab" >state label is  state / output ;  arc label is the input value</text>
+</svg>

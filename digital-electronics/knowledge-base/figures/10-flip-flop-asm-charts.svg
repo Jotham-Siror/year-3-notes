@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="760" viewBox="0 0 1020 760" font-family="sans-serif">
+  <rect width="1020" height="760" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="250" y="28" font-size="13.5" text-anchor="middle" fill="#111111">(a) D flip-flop  — Moore, Z = Q</text>
+  <text x="740" y="28" font-size="13.5" text-anchor="middle" fill="#111111">(b) JK flip-flop — Moore, Z = Q</text>
+  <line x1="250" y1="44" x2="250" y2="90" stroke="#111111" stroke-width="1.5"/>
+  <rect x="170" y="90" width="160" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="250.0" y="115.86" font-size="13.5" text-anchor="middle" fill="#111111">Z = 0</text>
+  <text x="162" y="115.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">A</text>
+  <path d="M250 132 L250 164" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M250 167 L296 192 L250 217 L204 192 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="250" y="196.68" font-size="13" text-anchor="middle" fill="#111111">D</text>
+  <text x="176" y="184" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="268" y="236" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M204 192 L110 192 L110 72 L244 72" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M250 217 L250 272" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="170" y="274" width="160" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="250.0" y="299.86" font-size="13.5" text-anchor="middle" fill="#111111">Z = 1</text>
+  <text x="162" y="299.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">B</text>
+  <path d="M250 316 L250 348" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M250 351 L296 376 L250 401 L204 376 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="250" y="380.68" font-size="13" text-anchor="middle" fill="#111111">D</text>
+  <text x="176" y="368" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="316" y="368" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M204 376 L50 376 L50 50 L244 50" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M296 376 L400 376 L400 250 L256 250" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="250" y1="250" x2="250" y2="274" stroke="#111111" stroke-width="1.5"/>
+  <text x="250" y="470" font-size="11.5" text-anchor="middle" fill="#666666">Next state = D in both states, so Q⁺ = D.</text>
+  <text x="250" y="490" font-size="11.5" text-anchor="middle" fill="#666666">Every decision box has two labelled exits.</text>
+  <line x1="740" y1="44" x2="740" y2="96" stroke="#111111" stroke-width="1.5"/>
+  <rect x="660" y="96" width="160" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="740.0" y="121.86" font-size="13.5" text-anchor="middle" fill="#111111">Z = 0</text>
+  <text x="652" y="121.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">A</text>
+  <path d="M740 138 L740 166" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M740 168 L782 192 L740 216 L698 192 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="740" y="196.68" font-size="13" text-anchor="middle" fill="#111111">J</text>
+  <text x="670" y="184" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="758" y="232" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M698 192 L610 192 L610 222" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M610 224 L652 248 L610 272 L568 248 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="610" y="252.68" font-size="13" text-anchor="middle" fill="#111111">K</text>
+  <path d="M568 248 L500 248 L500 74 L734 74" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M740 216 L740 246" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M740 248 L782 272 L740 296 L698 272 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="740" y="276.68" font-size="13" text-anchor="middle" fill="#111111">K</text>
+  <path d="M740 296 L740 340" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="660" y="342" width="160" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="740.0" y="367.86" font-size="13.5" text-anchor="middle" fill="#111111">Z = 1</text>
+  <text x="652" y="367.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">B</text>
+  <path d="M740 384 L740 412" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M740 414 L782 438 L740 462 L698 438 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="740" y="442.68" font-size="13" text-anchor="middle" fill="#111111">K</text>
+  <text x="670" y="430" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="802" y="430" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M698 438 L610 438 L610 468" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M610 470 L652 494 L610 518 L568 494 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="610" y="498.68" font-size="13" text-anchor="middle" fill="#111111">J</text>
+  <path d="M782 438 L870 438 L870 468" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M870 470 L912 494 L870 518 L828 494 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="870" y="498.68" font-size="13" text-anchor="middle" fill="#111111">J</text>
+  <path d="M568 494 L450 494 L450 320 L734 320" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="740" y1="320" x2="740" y2="342" stroke="#111111" stroke-width="1.5"/>
+  <path d="M912 494 L990 494 L990 52 L734 52" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="740" y="600" font-size="11.5" text-anchor="middle" fill="#666666">In state A the next state depends on J alone; in state B on K alone,</text>
+  <text x="740" y="618" font-size="11.5" text-anchor="middle" fill="#666666">so the K box inside A and the J boxes inside B change nothing.</text>
+  <text x="740" y="644" font-size="11.5" text-anchor="middle" fill="#a33b00">⚠ The deck draws those redundant boxes with a single unlabelled exit (C10-3);</text>
+  <text x="740" y="662" font-size="11.5" text-anchor="middle" fill="#a33b00">a decision box must always show both branches.</text>
+  <text x="740" y="692" font-size="11.5" text-anchor="middle" fill="#666666">A→A on JK = 00, 01;  A→B on 10, 11;  B→B on 00, 10;  B→A on 01, 11,</text>
+  <text x="740" y="710" font-size="11.5" text-anchor="middle" fill="#666666">which is exactly Q⁺ = J Q′ + K′ Q.</text>
+</svg>

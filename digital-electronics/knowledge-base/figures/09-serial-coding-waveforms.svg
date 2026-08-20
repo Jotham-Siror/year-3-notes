@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1198" height="580" viewBox="0 0 1198 580" font-family="sans-serif">
+<rect width="1198" height="580" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="599.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Serial-data coding schemes for the bit sequence 0 1 1 1 0 0 1 0</text>
+<line x1="180" y1="70" x2="180" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="276" y1="70" x2="276" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="372" y1="70" x2="372" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="468" y1="70" x2="468" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="564" y1="70" x2="564" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="660" y1="70" x2="660" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="756" y1="70" x2="756" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="852" y1="70" x2="852" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="948" y1="70" x2="948" y2="520" stroke="#bbbbbb" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="228.0" y="88" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="324.0" y="88" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="420.0" y="88" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="516.0" y="88" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="612.0" y="88" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="708.0" y="88" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="804.0" y="88" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="900.0" y="88" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="164" y="88" text-anchor="end" font-size="14" fill="#111111">bit sequence</text>
+<path d="M 180.0 160.0 L 276.0 160.0 L 276.0 126.0 L 372.0 126.0 L 372.0 126.0 L 468.0 126.0 L 468.0 126.0 L 564.0 126.0 L 564.0 160.0 L 660.0 160.0 L 660.0 160.0 L 756.0 160.0 L 756.0 126.0 L 852.0 126.0 L 852.0 160.0 L 948.0 160.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="164" y="152" text-anchor="end" font-size="14" fill="#111111">NRZ</text>
+<line x1="180" y1="174" x2="948" y2="174" stroke="#cccccc" stroke-width="1"/>
+<path d="M 180.0 240.0 L 276.0 240.0 L 276.0 206.0 L 372.0 206.0 L 372.0 240.0 L 468.0 240.0 L 468.0 206.0 L 564.0 206.0 L 564.0 206.0 L 660.0 206.0 L 660.0 206.0 L 756.0 206.0 L 756.0 240.0 L 852.0 240.0 L 852.0 240.0 L 948.0 240.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="164" y="232" text-anchor="end" font-size="14" fill="#111111">NRZI</text>
+<line x1="180" y1="254" x2="948" y2="254" stroke="#cccccc" stroke-width="1"/>
+<path d="M 180.0 320.0 L 228.0 320.0 L 228.0 320.0 L 276.0 320.0 L 276.0 286.0 L 324.0 286.0 L 324.0 320.0 L 372.0 320.0 L 372.0 286.0 L 420.0 286.0 L 420.0 320.0 L 468.0 320.0 L 468.0 286.0 L 516.0 286.0 L 516.0 320.0 L 564.0 320.0 L 564.0 320.0 L 612.0 320.0 L 612.0 320.0 L 660.0 320.0 L 660.0 320.0 L 708.0 320.0 L 708.0 320.0 L 756.0 320.0 L 756.0 286.0 L 804.0 286.0 L 804.0 320.0 L 852.0 320.0 L 852.0 320.0 L 900.0 320.0 L 900.0 320.0 L 948.0 320.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="164" y="312" text-anchor="end" font-size="14" fill="#111111">RZ</text>
+<line x1="180" y1="334" x2="948" y2="334" stroke="#cccccc" stroke-width="1"/>
+<path d="M 180.0 400.0 L 228.0 400.0 L 228.0 366.0 L 276.0 366.0 L 276.0 366.0 L 324.0 366.0 L 324.0 400.0 L 372.0 400.0 L 372.0 366.0 L 420.0 366.0 L 420.0 400.0 L 468.0 400.0 L 468.0 366.0 L 516.0 366.0 L 516.0 400.0 L 564.0 400.0 L 564.0 400.0 L 612.0 400.0 L 612.0 366.0 L 660.0 366.0 L 660.0 400.0 L 708.0 400.0 L 708.0 366.0 L 756.0 366.0 L 756.0 366.0 L 804.0 366.0 L 804.0 400.0 L 852.0 400.0 L 852.0 400.0 L 900.0 400.0 L 900.0 366.0 L 948.0 366.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="164" y="392" text-anchor="end" font-size="14" fill="#111111">Manchester</text>
+<line x1="180" y1="414" x2="948" y2="414" stroke="#cccccc" stroke-width="1"/>
+<path d="M 180.0 446.0 L 228.0 446.0 L 228.0 480.0 L 276.0 480.0 L 276.0 446.0 L 324.0 446.0 L 324.0 480.0 L 372.0 480.0 L 372.0 446.0 L 420.0 446.0 L 420.0 480.0 L 468.0 480.0 L 468.0 446.0 L 516.0 446.0 L 516.0 480.0 L 564.0 480.0 L 564.0 446.0 L 612.0 446.0 L 612.0 480.0 L 660.0 480.0 L 660.0 446.0 L 708.0 446.0 L 708.0 480.0 L 756.0 480.0 L 756.0 446.0 L 804.0 446.0 L 804.0 480.0 L 852.0 480.0 L 852.0 446.0 L 900.0 446.0 L 900.0 480.0 L 948.0 480.0" fill="none" stroke="#1f6feb" stroke-width="2.4"/>
+<text x="164" y="472" text-anchor="end" font-size="14" fill="#111111">clock (bit rate)</text>
+<line x1="180" y1="494" x2="948" y2="494" stroke="#cccccc" stroke-width="1"/>
+<text x="972" y="160" font-size="13" fill="#777777">0 &#8658; 0;   1 &#8658; 1</text>
+<text x="972" y="240" font-size="13" fill="#777777">0 &#8658; hold;   1 &#8658; toggle</text>
+<text x="972" y="320" font-size="13" fill="#777777">0 &#8658; 00;   1 &#8658; 10</text>
+<text x="972" y="400" font-size="13" fill="#777777">0 &#8658; 01;   1 &#8658; 10</text>
+<text x="180" y="556" font-size="13" fill="#777777">One bit time = 96 px here; RZ, Manchester and the clock change at the half-bit point.</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500" font-family="sans-serif">
+  <rect width="980" height="500" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker></defs>
+
+  <!-- switch -->
+  <circle cx="60" cy="110" r="3.5" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <circle cx="60" cy="190" r="3.5" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <text x="52" y="100" font-size="13" text-anchor="end" fill="#111111">Vin</text>
+  <text x="52" y="196" font-size="13" text-anchor="end" fill="#111111">&#8722;VREF</text>
+  <path d="M64 110 H100 M64 190 H100" stroke="#111111" stroke-width="1.6"/>
+  <circle cx="103" cy="110" r="3.2" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <circle cx="103" cy="190" r="3.2" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <path d="M106 112 L140 145" stroke="#111111" stroke-width="1.8"/>
+  <circle cx="143" cy="150" r="3.2" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <text x="120" y="86" font-size="12.5" fill="#a33b00">SW</text>
+
+  <!-- R -->
+  <path d="M146 150 H176 L182 140 L194 160 L206 140 L218 160 L224 150 H250" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="200" y="130" font-size="13" text-anchor="middle" fill="#111111">R</text>
+
+  <!-- integrator -->
+  <path d="M280 106 L280 194 L344 150 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="290" y="138" font-size="13" fill="#111111">&#8722;</text>
+  <text x="290" y="176" font-size="13" fill="#111111">+</text>
+  <path d="M250 150 H280" stroke="#111111" stroke-width="1.6"/>
+  <path d="M264 172 H280" stroke="#111111" stroke-width="1.6"/>
+  <path d="M264 172 V196 M256 196 H272 M259 202 H269 M262 208 H266" stroke="#111111" stroke-width="1.4"/>
+  <path d="M264 150 V72 H296 M312 72 H344 V150" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M296 60 V84 M312 60 V84" stroke="#111111" stroke-width="1.8"/>
+  <circle cx="264" cy="150" r="3" fill="#111111"/>
+  <text x="304" y="50" font-size="13" text-anchor="middle" fill="#111111">C</text>
+  <text x="300" y="240" font-size="12" text-anchor="middle" fill="#666666">integrator (ramp generator)</text>
+
+  <!-- comparator -->
+  <path d="M400 118 L400 182 L452 150 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="409" y="143" font-size="13" fill="#111111">&#8722;</text>
+  <text x="409" y="174" font-size="13" fill="#111111">+</text>
+  <path d="M344 150 H400" stroke="#111111" stroke-width="1.6"/>
+  <path d="M386 168 H400" stroke="#111111" stroke-width="1.6"/>
+  <path d="M386 168 V192 M378 192 H394 M381 198 H391 M384 204 H388" stroke="#111111" stroke-width="1.4"/>
+  <text x="432" y="216" font-size="12" text-anchor="middle" fill="#666666">comparator</text>
+
+  <!-- AND gate -->
+  <path d="M540 118 H566 A32 32 0 0 1 566 182 H540 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M452 150 H500 V164 H540" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <circle cx="500" cy="150" r="3" fill="#111111"/>
+  <path d="M500 150 V266" stroke="#111111" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M500 76 V164 H540" fill="none" stroke="#111111" stroke-width="0" />
+  <path d="M470 76 H520 V136 H540" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="464" y="80" font-size="13" text-anchor="end" fill="#111111">CLK</text>
+
+  <!-- counter -->
+  <rect x="660" y="96" width="180" height="104" rx="4" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="750" y="140" font-size="14" text-anchor="middle" fill="#111111">counter</text>
+  <text x="750" y="160" font-size="11.5" text-anchor="middle" fill="#666666">n stages</text>
+  <path d="M598 150 H660" fill="none" stroke="#111111" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="668" y="124" font-size="12" fill="#666666">C</text>
+  <text x="668" y="192" font-size="12" fill="#666666">R (clear)</text>
+
+  <!-- latches -->
+  <rect x="660" y="270" width="180" height="80" rx="4" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="750" y="316" font-size="14" text-anchor="middle" fill="#111111">latches</text>
+  <g stroke="#111111" stroke-width="1.4">
+    <path d="M690 200 V270"/><path d="M720 200 V270"/><path d="M750 200 V270"/><path d="M780 200 V270"/><path d="M810 200 V270"/>
+    <path d="M690 350 V390"/><path d="M720 350 V390"/><path d="M750 350 V390"/><path d="M780 350 V390"/><path d="M810 350 V390"/>
+  </g>
+  <text x="750" y="412" font-size="13" text-anchor="middle" fill="#111111">Dn-1 ... D0   binary or BCD output</text>
+
+  <!-- control logic -->
+  <rect x="420" y="270" width="150" height="70" rx="4" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="495" y="300" font-size="13.5" text-anchor="middle" fill="#111111">control</text>
+  <text x="495" y="320" font-size="13.5" text-anchor="middle" fill="#111111">logic</text>
+  <path d="M500 300 H570" fill="none" stroke="#111111" stroke-width="0"/>
+  <path d="M570 288 H660" fill="none" stroke="#a33b00" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="600" y="280" font-size="12" text-anchor="middle" fill="#a33b00">EN</text>
+  <path d="M570 320 H620 V188 H660" fill="none" stroke="#a33b00" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="638" y="238" font-size="12" fill="#a33b00">CLEAR</text>
+  <path d="M420 310 H143 V156" fill="none" stroke="#a33b00" stroke-width="1.6" marker-end="url(#ar)"/>
+  <text x="270" y="302" font-size="12" fill="#a33b00">switch control</text>
+
+  <text x="30" y="452" font-size="12.5" fill="#111111">Phase 1: SW selects Vin and the integrator ramps for a fixed count. Phase 2: SW selects &#8722;VREF, the ramp returns to 0 V at a fixed rate,</text>
+  <text x="30" y="472" font-size="12.5" fill="#111111">and the count reached when the comparator trips is proportional to Vin. R and C cancel, so neither affects the result.</text>
+</svg>

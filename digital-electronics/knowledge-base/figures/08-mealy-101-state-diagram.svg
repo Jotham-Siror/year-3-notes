@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="330" viewBox="0 0 680 330" font-family="sans-serif"><title>Mealy state diagram for the 101 sequence detector</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6cab"/></marker><marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M54.0,130.0 L100.0,130.0" stroke="#111111" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<text x="50.0" y="121.0" text-anchor="end" font-size="13" fill="#111111" >reset</text>
+<path d="M113.2,105.1 C85.7,89.5 174.3,89.5 146.8,105.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="130.0" y="57.9" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M313.2,105.1 C285.7,89.5 374.3,89.5 346.8,105.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="330.0" y="57.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M160.0,130.0 Q230.0,130.0 300.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="230.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M360.0,130.0 Q430.0,130.0 500.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="430.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M505.4,147.2 Q430.0,200.0 354.6,147.2" fill="none" stroke="#1c6cab" stroke-width="2" marker-end="url(#ahA)"/>
+<text x="430.0" y="194.50193516544996" text-anchor="middle" font-size="14" fill="#1c6cab" >1/1</text>
+<path d="M505.1,146.8 Q330.0,265.0 154.9,146.8" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="330.0" y="226.79209282501594" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<circle cx="130" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="130" y="134.9" text-anchor="middle" font-size="14" fill="#111111">S0</text>
+<circle cx="330" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="330" y="134.9" text-anchor="middle" font-size="14" fill="#111111">S1</text>
+<circle cx="530" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="530" y="134.9" text-anchor="middle" font-size="14" fill="#111111">S2</text>
+<text x="340.0" y="316" text-anchor="middle" font-size="13" fill="#1c6cab" >arc label is  input / output ;  the 1/1 arc is where 101 is recognised</text>
+</svg>

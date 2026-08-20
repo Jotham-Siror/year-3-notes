@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" font-family="sans-serif">
+  <rect width="980" height="470" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="230" y="28" font-size="13" text-anchor="middle" fill="#111111">(a) one compound condition</text>
+  <text x="700" y="28" font-size="13" text-anchor="middle" fill="#111111">(b) inputs tested one at a time</text>
+  <path d="M230 52 L230 78" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="170" y="78" width="120" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="230.0" y="104.86" font-size="13.5" text-anchor="middle" fill="#111111">S0 /</text>
+  <path d="M230 122 L230 152" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M230 154 L302 182 L230 210 L158 182 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="230" y="186.68" font-size="13" text-anchor="middle" fill="#111111">A + BC</text>
+  <text x="150" y="174" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="330" y="174" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M302 182 L370 182 L370 214" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="334.0" y="220.0" width="72" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="370" y="244.68" font-size="13" text-anchor="middle" fill="#111111">Z1</text>
+  <path d="M370 260 L370 304" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M158 182 L105 182 L105 304 L368 304" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M370 304 L370 340 L80 340 L80 100 L168 100" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="230" y="392" font-size="12" text-anchor="middle" fill="#666666">one state, no state change → combinational</text>
+  <text x="230" y="412" font-size="13" text-anchor="middle" fill="#111111">Z1 = A + BC</text>
+  <path d="M700 52 L700 78" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="640" y="78" width="120" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="700.0" y="104.86" font-size="13.5" text-anchor="middle" fill="#111111">S0 /</text>
+  <path d="M700 122 L700 148" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M700 151 L746 176 L700 201 L654 176 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="700" y="180.68" font-size="13" text-anchor="middle" fill="#111111">A</text>
+  <text x="628" y="168" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="778" y="168" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M654 176 L600 176 L600 206" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M600 207 L646 232 L600 257 L554 232 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="600" y="236.68" font-size="13" text-anchor="middle" fill="#111111">C</text>
+  <text x="524" y="224" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="660" y="214" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M646 232 L690 232 L690 262" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M690 263 L736 288 L690 313 L644 288 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="690" y="292.68" font-size="13" text-anchor="middle" fill="#111111">B</text>
+  <text x="618" y="280" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="762" y="280" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M746 176 L870 176 L870 306" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="834.0" y="312.0" width="72" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="870" y="336.68" font-size="13" text-anchor="middle" fill="#111111">Z1</text>
+  <path d="M736 288 L870 288" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M554 232 L530 232 L530 382 L697 382" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M690 313 L690 382" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M870 352 L870 382 L703 382" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M700 382 L700 410 L560 410 L560 100 L638 100" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="700" y="442" font-size="13" text-anchor="middle" fill="#111111">Z1 = A + A′BC = A + BC</text>
+</svg>

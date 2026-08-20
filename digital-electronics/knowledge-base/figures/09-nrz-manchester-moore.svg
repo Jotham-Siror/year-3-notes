@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="480" viewBox="0 0 1180 480" font-family="sans-serif">
+<rect width="1180" height="480" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="590.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">NRZ to Manchester — Moore conversion machine (four states)</text>
+<path d="M 310.0 150.0 L 630.0 150.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="470.0" y="138.0" text-anchor="middle" font-size="14" fill="#1f6feb">0</text>
+<path d="M 654.8 179.5 Q 628.8 260.0 654.8 340.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="615.8" y="260.0" text-anchor="middle" font-size="14" fill="#1f6feb">0</text>
+<path d="M 665.2 340.5 Q 691.2 260.0 665.2 179.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="704.2" y="260.0" text-anchor="middle" font-size="14" fill="#1f6feb">0</text>
+<path d="M 630.0 370.0 L 310.0 370.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="470.0" y="392.0" text-anchor="middle" font-size="14" fill="#1f6feb">1</text>
+<path d="M 285.2 340.5 Q 311.2 260.0 285.2 179.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="324.2" y="260.0" text-anchor="middle" font-size="14" fill="#1f6feb">1</text>
+<path d="M 274.8 179.5 Q 248.8 260.0 274.8 340.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="235.8" y="260.0" text-anchor="middle" font-size="14" fill="#1f6feb">1</text>
+<circle cx="280" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="258" y1="150" x2="302" y2="150" stroke="#111111" stroke-width="1.2"/>
+<text x="280" y="144" text-anchor="middle" font-size="16" fill="#111111">S₀</text>
+<text x="280" y="169" text-anchor="middle" font-size="15" fill="#1f6feb">0</text>
+<circle cx="660" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="638" y1="150" x2="682" y2="150" stroke="#111111" stroke-width="1.2"/>
+<text x="660" y="144" text-anchor="middle" font-size="16" fill="#111111">S₁</text>
+<text x="660" y="169" text-anchor="middle" font-size="15" fill="#1f6feb">0</text>
+<circle cx="660" cy="370" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="638" y1="370" x2="682" y2="370" stroke="#111111" stroke-width="1.2"/>
+<text x="660" y="364" text-anchor="middle" font-size="16" fill="#111111">S₂</text>
+<text x="660" y="389" text-anchor="middle" font-size="15" fill="#1f6feb">1</text>
+<circle cx="280" cy="370" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="258" y1="370" x2="302" y2="370" stroke="#111111" stroke-width="1.2"/>
+<text x="280" y="364" text-anchor="middle" font-size="16" fill="#111111">S₃</text>
+<text x="280" y="389" text-anchor="middle" font-size="15" fill="#1f6feb">1</text>
+<text x="280" y="450" text-anchor="middle" font-size="14" fill="#777777">starting states: S₀ (for a 0 bit) and S₂ (for a 1 bit)</text>
+<text x="800" y="190" font-size="13" fill="#111111">S₀ : first half, Z = 0</text>
+<text x="800" y="216" font-size="13" fill="#111111">S₁ : second half of a 0 cell, Z = 0</text>
+<text x="800" y="242" font-size="13" fill="#111111">S₂ : first half of a 1 cell, Z = 1</text>
+<text x="800" y="268" font-size="13" fill="#111111">S₃ : second half of a 1 cell, Z = 1</text>
+<text x="800" y="320" font-size="13" fill="#777777">More states than the Mealy version, and the output</text>
+<text x="800" y="340" font-size="13" fill="#777777">appears one Clock2 period late — but it is glitch-free.</text>
+</svg>

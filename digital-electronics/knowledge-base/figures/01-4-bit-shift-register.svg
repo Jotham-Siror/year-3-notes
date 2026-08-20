@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="310" viewBox="0 0 920 310" font-family="sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#222"/>
+    </marker>
+  </defs>
+  <rect width="920" height="310" fill="#ffffff"/>
+
+  <!-- flip-flops -->
+  <g stroke="#222" stroke-width="2" fill="#f6f9fa">
+    <rect x="200" y="60" width="110" height="130"/>
+    <rect x="350" y="60" width="110" height="130"/>
+    <rect x="500" y="60" width="110" height="130"/>
+    <rect x="650" y="60" width="110" height="130"/>
+  </g>
+  <g font-size="17" fill="#222">
+    <text x="212" y="98">D</text><text x="362" y="98">D</text>
+    <text x="512" y="98">D</text><text x="662" y="98">D</text>
+    <text x="226" y="163">C</text><text x="376" y="163">C</text>
+    <text x="526" y="163">C</text><text x="676" y="163">C</text>
+  </g>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M200,145 L200,167 L218,156 z"/>
+    <path d="M350,145 L350,167 L368,156 z"/>
+    <path d="M500,145 L500,167 L518,156 z"/>
+    <path d="M650,145 L650,167 L668,156 z"/>
+  </g>
+
+  <!-- data path -->
+  <g stroke="#222" stroke-width="2">
+    <line x1="78"  y1="92" x2="200" y2="92"/>
+    <line x1="310" y1="92" x2="350" y2="92"/>
+    <line x1="460" y1="92" x2="500" y2="92"/>
+    <line x1="610" y1="92" x2="650" y2="92"/>
+    <line x1="760" y1="92" x2="836" y2="92"/>
+  </g>
+  <text x="12" y="86"  font-size="16" fill="#222">Serial</text>
+  <text x="12" y="106" font-size="16" fill="#222">input</text>
+  <text x="140" y="82" font-size="15" font-style="italic" fill="#1f6f8b">SI</text>
+  <text x="790" y="82" font-size="15" font-style="italic" fill="#1f6f8b">SO</text>
+  <text x="846" y="86"  font-size="16" fill="#222">Serial</text>
+  <text x="846" y="106" font-size="16" fill="#222">output</text>
+
+  <!-- stage names -->
+  <g font-size="15" text-anchor="middle" fill="#1f6f8b">
+    <text x="330" y="80">A</text>
+    <text x="480" y="80">B</text>
+    <text x="630" y="80">C</text>
+  </g>
+  <text x="798" y="112" font-size="15" text-anchor="middle" fill="#1f6f8b">(Out)</text>
+
+  <!-- clock rail -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M200,156 L170,156 L170,240"/>
+    <path d="M350,156 L320,156 L320,240"/>
+    <path d="M500,156 L470,156 L470,240"/>
+    <path d="M650,156 L620,156 L620,240"/>
+    <line x1="110" y1="240" x2="620" y2="240"/>
+  </g>
+  <g fill="#222">
+    <circle cx="170" cy="240" r="4"/><circle cx="320" cy="240" r="4"/><circle cx="470" cy="240" r="4"/>
+  </g>
+  <text x="100" y="246" font-size="16" font-style="italic" text-anchor="end" fill="#222">CLK</text>
+
+  <!-- shift direction -->
+  <line x1="330" y1="278" x2="630" y2="278" stroke="#b25400" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="480" y="270" font-size="14" text-anchor="middle" fill="#b25400">one bit position per clock pulse, to the right</text>
+  <text x="480" y="300" font-size="12" text-anchor="middle" fill="#666">stage names A, B, C, Out are added here; the deck's figure labels only SI, SO, D and C</text>
+</svg>

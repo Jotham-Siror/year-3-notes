@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="470" viewBox="0 0 840 470" font-family="sans-serif">
+<rect width="840" height="470" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="174" y1="150" x2="226" y2="150"/><line x1="200" y1="150" x2="200" y2="98"/><line x1="188" y1="150" x2="164" y2="180"/><polygon points="162.6,181.8 175.0,175.0 166.4,168.2" fill="#222222" stroke="none"/><line x1="164" y1="180" x2="164" y2="198"/><line x1="166" y1="150" x2="142" y2="180"/><polygon points="140.6,181.8 153.0,175.0 144.4,168.2" fill="#222222" stroke="none"/><line x1="142" y1="180" x2="142" y2="198"/><line x1="144" y1="150" x2="120" y2="180"/><polygon points="118.6,181.8 131.0,175.0 122.4,168.2" fill="#222222" stroke="none"/><line x1="120" y1="180" x2="120" y2="198"/><line x1="212" y1="150" x2="236" y2="180"/><line x1="236" y1="180" x2="236" y2="198"/>
+<line x1="200" y1="46" x2="200" y2="53.0"/><path d="M 200 53.0 l 9 5.7 l -18 8.9 l 18 8.9 l -18 8.9 l 9 5.7"/><line x1="200" y1="91.0" x2="200" y2="98"/>
+<line x1="164" y1="198" x2="164" y2="258"/>
+<line x1="70" y1="258" x2="164" y2="258"/>
+<circle cx="62" cy="258" r="5" fill="#ffffff"/>
+<line x1="142" y1="198" x2="142" y2="284"/>
+<line x1="70" y1="284" x2="142" y2="284"/>
+<circle cx="62" cy="284" r="5" fill="#ffffff"/>
+<line x1="120" y1="198" x2="120" y2="310"/>
+<line x1="70" y1="310" x2="120" y2="310"/>
+<circle cx="62" cy="310" r="5" fill="#ffffff"/>
+<line x1="236" y1="198" x2="236" y2="190"/>
+<line x1="236" y1="190" x2="310" y2="190"/>
+<line x1="310" y1="164" x2="310" y2="216"/><line x1="310" y1="190" x2="280" y2="190"/><line x1="310" y1="177" x2="334" y2="153"/><line x1="334" y1="153" x2="334" y2="137"/><line x1="310" y1="203" x2="334" y2="227"/><polygon points="336.5,229.5 331.2,216.4 323.4,224.2" fill="#222222" stroke="none"/><line x1="334" y1="227" x2="334" y2="243"/>
+<line x1="334" y1="137" x2="334" y2="130"/>
+<line x1="334" y1="130" x2="380" y2="130"/>
+<circle cx="380" cy="130" r="4" fill="#222222"/>
+<line x1="380" y1="46" x2="380" y2="64.5"/><path d="M 380 64.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="380" y1="111.5" x2="380" y2="130"/>
+<line x1="380" y1="130" x2="550" y2="130"/>
+<line x1="334" y1="243" x2="334" y2="290"/>
+<circle cx="334" cy="290" r="4" fill="#222222"/>
+<line x1="334" y1="290" x2="334" y2="326.5"/><path d="M 334 326.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="334" y1="373.5" x2="334" y2="410"/>
+<line x1="334" y1="290" x2="550" y2="290"/>
+<line x1="550" y1="104" x2="550" y2="156"/><line x1="550" y1="130" x2="520" y2="130"/><line x1="550" y1="117" x2="574" y2="93"/><line x1="574" y1="93" x2="574" y2="83"/><line x1="550" y1="143" x2="574" y2="167"/><polygon points="576.5,169.5 571.2,156.4 563.4,164.2" fill="#222222" stroke="none"/><line x1="574" y1="167" x2="574" y2="177"/>
+<line x1="574" y1="83" x2="620" y2="83"/>
+<line x1="620" y1="46" x2="620" y2="52.5"/><path d="M 620 52.5 l 9 3.6 l -18 5.6 l 18 5.6 l -18 5.6 l 9 3.6"/><line x1="620" y1="76.5" x2="620" y2="83"/>
+<line x1="574" y1="177" x2="574" y2="205"/>
+<polygon points="560,209 588,209 574,237" fill="#e9eef4"/><line x1="558" y1="237" x2="590" y2="237"/>
+<line x1="574" y1="241" x2="574" y2="258"/>
+<circle cx="574" cy="258" r="4" fill="#222222"/>
+<line x1="574" y1="258" x2="750" y2="258"/>
+<circle cx="758" cy="258" r="5" fill="#ffffff"/>
+<line x1="550" y1="264" x2="550" y2="316"/><line x1="550" y1="290" x2="520" y2="290"/><line x1="550" y1="277" x2="574" y2="253"/><line x1="574" y1="253" x2="574" y2="243"/><line x1="550" y1="303" x2="574" y2="327"/><polygon points="576.5,329.5 571.2,316.4 563.4,324.2" fill="#222222" stroke="none"/><line x1="574" y1="327" x2="574" y2="337"/>
+<line x1="574" y1="243" x2="574" y2="258"/>
+<line x1="574" y1="337" x2="574" y2="410"/>
+<line x1="334" y1="410" x2="574" y2="410"/>
+<line x1="200" y1="46" x2="620" y2="46"/>
+<circle cx="380" cy="46" r="4" fill="#222222"/>
+<line x1="470" y1="46" x2="470" y2="30"/>
+<circle cx="470" cy="24" r="5" fill="#ffffff"/>
+<circle cx="470" cy="46" r="4" fill="#222222"/>
+</g><text x="470" y="20" font-size="13" fill="#222222" text-anchor="start">+V_CC = 5 V</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="216" y="100" font-size="13" fill="#222222" text-anchor="start">R_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="396" y="100" font-size="13" fill="#222222" text-anchor="start">R_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="650" y="100" font-size="13" fill="#222222" text-anchor="start">R_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="348" y="360" font-size="13" fill="#222222" text-anchor="start">R_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="262" font-size="13" fill="#222222" text-anchor="end">A</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="288" font-size="13" fill="#222222" text-anchor="end">B</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="314" font-size="13" fill="#222222" text-anchor="end">C</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="766" y="262" font-size="13" fill="#222222" text-anchor="start">Y</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="244" y="142" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="350" y="214" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="506" y="116" font-size="13" fill="#222222" text-anchor="end">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="506" y="300" font-size="13" fill="#222222" text-anchor="end">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="596" y="228" font-size="13" fill="#222222" text-anchor="start">D</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="420" y="452" font-size="13.5" fill="#1f4e79" font-weight="bold" text-anchor="middle">Y = NOT (A . B . C)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg>

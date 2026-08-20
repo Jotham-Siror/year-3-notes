@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" viewBox="0 0 980 440" font-family="sans-serif">
+<rect width="980" height="440" fill="#ffffff"/>
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="arb" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#1a5fb4"/></marker></defs>
+<circle cx="86" cy="150" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="86" y="132" font-size="13.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">VTH</text>
+<path d="M91 150 L120 150" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M120 150 L130.0 150 L133.5 143 L140.5 157 L147.5 143 L154.5 157 L161.5 143 L168.5 157 L172.0 150 L182 150" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="151.0" y="136" font-size="12.5" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">RTH = R</text>
+<path d="M182 150 L214 150" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M214 150 L224.0 150 L227.5 143 L234.5 157 L241.5 143 L248.5 157 L255.5 143 L262.5 157 L266.0 150 L276 150" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="245.0" y="136" font-size="12.5" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">R₈ = R</text>
+<path d="M276 150 L452 150" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="320" cy="150" r="4" fill="#111111"/>
+<path d="M320 182 L320 192.0 L313 195.5 L327 202.5 L313 209.5 L327 216.5 L313 223.5 L327 230.5 L320 234.0 L320 244" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M320 150 L320 182" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M320 244 L320 266" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="304" y="218" font-size="13" text-anchor="end" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<text x="336" y="218" font-size="12.5" text-anchor="start" fill="#888888" font-weight="400" font-style="normal">R₇</text>
+<path d="M320 266 L320 278" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M306 278 L334 278" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M311 284 L329 284" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M316 290 L324 290" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M348 168 L348 196" stroke="#cc8800" stroke-width="1.6" fill="none" marker-end="url(#arb)"/>
+<text x="376" y="186" font-size="12.5" text-anchor="middle" fill="#cc8800" font-weight="400" font-style="normal">I ≈ 0</text>
+<path d="M286 114 L332 114" stroke="#1a5fb4" stroke-width="1.6" fill="none" marker-end="url(#arb)"/>
+<text x="300" y="102" font-size="12.5" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">I = VTH / 2R</text>
+<text x="440" y="176" font-size="12" text-anchor="end" fill="#888888" font-weight="400" font-style="normal">≈ 0 V</text>
+<path d="M392 150 L392 60" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M392 60 L402.0 60 L405.5 53 L412.5 67 L419.5 53 L426.5 67 L433.5 53 L440.5 67 L444.0 60 L454 60" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M454 60 L660 60" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M660 60 L660 169.0" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="423.0" y="46" font-size="13.5" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">Rf = 2R</text>
+<path d="M452 109 L452 229 L564 169.0 L452 109" stroke="#111111" stroke-width="1.8" fill="#fbfbfb" />
+<text x="470" y="154.8" font-size="17" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">&#8722;</text>
+<text x="470" y="200.39999999999998" font-size="17" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">+</text>
+<path d="M452 195.39999999999998 L418 195.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M418 195.39999999999998 L418 209.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M418 209.39999999999998 L418 221.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M404 221.39999999999998 L432 221.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M409 227.39999999999998 L427 227.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M414 233.39999999999998 L422 233.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M564 169.0 L740 169.0" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="660" cy="169.0" r="4" fill="#111111"/>
+<circle cx="748" cy="169.0" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="762" y="174.0" font-size="13" text-anchor="start" fill="#1a5fb4" font-weight="400" font-style="normal">Vout = −I·Rf = −VTH</text>
+<path d="M130 326 L810 326" stroke="#111111" stroke-width="1.4" fill="none" />
+<text x="150" y="318" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="600" font-style="normal">input HIGH</text>
+<text x="320" y="318" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="600" font-style="normal">VTH</text>
+<text x="490" y="318" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="600" font-style="normal">I</text>
+<text x="660" y="318" font-size="12.5" text-anchor="middle" fill="#888888" font-weight="600" font-style="normal">Vout</text>
+<text x="150" y="348" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">D₂ only</text>
+<text x="320" y="348" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">+2.5 V</text>
+<text x="490" y="348" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">2.5 V / 2R</text>
+<text x="660" y="348" font-size="13" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">−2.5 V</text>
+<text x="150" y="374" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">D₁ only</text>
+<text x="320" y="374" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">+1.25 V</text>
+<text x="490" y="374" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">1.25 V / 2R</text>
+<text x="660" y="374" font-size="13" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">−1.25 V</text>
+<text x="150" y="400" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">D₀ only</text>
+<text x="320" y="400" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">+0.625 V</text>
+<text x="490" y="400" font-size="13" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">0.625 V / 2R</text>
+<text x="660" y="400" font-size="13" text-anchor="middle" fill="#1a5fb4" font-weight="400" font-style="normal">−0.625 V</text>
+<text x="490.0" y="428" font-size="11.5" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">slides 45(b), 46(c), 46(d): each lower bit reaches the summing junction through one more R–2R section, halving VTH</text>
+</svg>

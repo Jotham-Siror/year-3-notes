@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="650" viewBox="0 0 1060 650" font-family="sans-serif">
+  <rect width="1060" height="650" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="260" y="28" font-size="13.5" text-anchor="middle" fill="#111111">(a) state graph</text>
+  <text x="760" y="28" font-size="13.5" text-anchor="middle" fill="#111111">(b) equivalent SM chart</text>
+  <circle cx="110" cy="150" r="30" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <line x1="80" y1="150" x2="140" y2="150" stroke="#111111" stroke-width="1.2"/>
+  <text x="110" y="142" font-size="13" text-anchor="middle" fill="#111111">S0</text>
+  <text x="110" y="170" font-size="13" text-anchor="middle" fill="#111111">Za</text>
+  <circle cx="280" cy="150" r="30" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <line x1="250" y1="150" x2="310" y2="150" stroke="#111111" stroke-width="1.2"/>
+  <text x="280" y="142" font-size="13" text-anchor="middle" fill="#111111">S1</text>
+  <text x="280" y="170" font-size="13" text-anchor="middle" fill="#111111">Zb</text>
+  <circle cx="450" cy="150" r="30" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <line x1="420" y1="150" x2="480" y2="150" stroke="#111111" stroke-width="1.2"/>
+  <text x="450" y="142" font-size="13" text-anchor="middle" fill="#111111">S2</text>
+  <text x="450" y="170" font-size="13" text-anchor="middle" fill="#111111">Zc</text>
+  <path d="M90 128 A36 36 0 1 1 133 131" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="112" y="72" font-size="12" text-anchor="middle" fill="#0b5c8a">0 / 0</text>
+  <path d="M471 126 A36 36 0 1 1 473 176" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="556" y="150" font-size="12" text-anchor="middle" fill="#0b5c8a">1 / Z2</text>
+  <path d="M141 140 L246 140" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="193" y="130" font-size="12" text-anchor="middle" fill="#0b5c8a">1 / 0</text>
+  <path d="M246 162 L143 162" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="193" y="184" font-size="12" text-anchor="middle" fill="#0b5c8a">0 / 0</text>
+  <path d="M311 140 L416 140" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="363" y="130" font-size="12" text-anchor="middle" fill="#0b5c8a">1 / 0</text>
+  <path d="M444 178 A260 120 0 0 1 124 172" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="280" y="246" font-size="12" text-anchor="middle" fill="#0b5c8a">0 / Z1</text>
+  <text x="280" y="300" font-size="12" text-anchor="middle" fill="#666666">state codes AB:  S0 = 00,  S1 = 01,  S2 = 11</text>
+  <path d="M790 54 L790 80" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="720" y="80" width="140" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="790.0" y="106.86" font-size="13.5" text-anchor="middle" fill="#111111">S0 / Za</text>
+  <text x="866" y="75" font-size="12" text-anchor="start" fill="#0b5c8a">00</text>
+  <path d="M790 124 L790 150" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M790 152 L838 178 L790 204 L742 178 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="790" y="182.68" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="712" y="170" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="856" y="170" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M838 178 L830 178 L830 214" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="760" y="214" width="140" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="830.0" y="240.86" font-size="13.5" text-anchor="middle" fill="#111111">S1 / Zb</text>
+  <text x="906" y="209" font-size="12" text-anchor="start" fill="#0b5c8a">01</text>
+  <path d="M830 258 L830 286" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M830 288 L878 314 L830 340 L782 314 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="830" y="318.68" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="752" y="306" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="896" y="306" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M878 314 L870 314 L870 350" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="800" y="350" width="140" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="870.0" y="376.86" font-size="13.5" text-anchor="middle" fill="#111111">S2 / Zc</text>
+  <text x="946" y="345" font-size="12" text-anchor="start" fill="#0b5c8a">11</text>
+  <path d="M870 394 L870 422" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M870 424 L918 450 L870 476 L822 450 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="870" y="454.68" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="792" y="442" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="936" y="442" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M822 450 L776 450 L776 484" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="739.0" y="490.0" width="74" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="776" y="514.68" font-size="13" text-anchor="middle" fill="#111111">Z1</text>
+  <path d="M918 450 L958 450 L958 484" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="921.0" y="490.0" width="74" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="958" y="514.68" font-size="13" text-anchor="middle" fill="#111111">Z2</text>
+  <path d="M742 178 L640 178 L640 54 L786 54" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M782 314 L640 314" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M776 530 L776 586 L640 586" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <line x1="640" y1="586" x2="640" y2="58" stroke="#111111" stroke-width="1.5"/>
+  <path d="M958 530 L958 586 L1026 586 L1026 190 L834 190" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="530" y="626" font-size="12" text-anchor="middle" fill="#a33b00">Link 1: S0→S1 on X.    Link 2: S1→S2 on X.    Link 3: S2→S2 on X.</text>
+</svg>

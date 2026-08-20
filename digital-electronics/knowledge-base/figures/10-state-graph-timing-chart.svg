@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="sans-serif">
+  <rect width="900" height="430" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="126" y="66" font-size="12.5" text-anchor="end" fill="#111111">Clock</text>
+  <line x1="140" y1="80" x2="740" y2="80" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="110" font-size="12.5" text-anchor="end" fill="#111111">State</text>
+  <line x1="140" y1="124" x2="740" y2="124" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="154" font-size="12.5" text-anchor="end" fill="#111111">X</text>
+  <line x1="140" y1="168" x2="740" y2="168" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="198" font-size="12.5" text-anchor="end" fill="#111111">Za</text>
+  <line x1="140" y1="212" x2="740" y2="212" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="242" font-size="12.5" text-anchor="end" fill="#111111">Zb</text>
+  <line x1="140" y1="256" x2="740" y2="256" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="286" font-size="12.5" text-anchor="end" fill="#111111">Zc</text>
+  <line x1="140" y1="300" x2="740" y2="300" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="330" font-size="12.5" text-anchor="end" fill="#111111">Z1</text>
+  <line x1="140" y1="344" x2="740" y2="344" stroke="#cccccc" stroke-width="1"/>
+  <text x="126" y="374" font-size="12.5" text-anchor="end" fill="#111111">Z2</text>
+  <line x1="140" y1="388" x2="740" y2="388" stroke="#cccccc" stroke-width="1"/>
+  <line x1="140" y1="50" x2="140" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="240" y1="50" x2="240" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="340" y1="50" x2="340" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="440" y1="50" x2="440" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="540" y1="50" x2="540" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="640" y1="50" x2="640" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="740" y1="50" x2="740" y2="388" stroke="#dddddd" stroke-width="1" stroke-dasharray="4 4"/>
+  <path d="M140 80 L160 80 L160 60 L200 60 L200 80 L240 80 L260 80 L260 60 L300 60 L300 80 L340 80 L360 80 L360 60 L400 60 L400 80 L440 80 L460 80 L460 60 L500 60 L500 80 L540 80 L560 80 L560 60 L600 60 L600 80 L640 80 L660 80 L660 60 L700 60 L700 80 L740 80" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <text x="190.0" y="116" font-size="13" text-anchor="middle" fill="#111111">S0</text>
+  <text x="290.0" y="116" font-size="13" text-anchor="middle" fill="#111111">S1</text>
+  <text x="390.0" y="116" font-size="13" text-anchor="middle" fill="#111111">S2</text>
+  <text x="490.0" y="116" font-size="13" text-anchor="middle" fill="#111111">S2</text>
+  <text x="590.0" y="116" font-size="13" text-anchor="middle" fill="#111111">S0</text>
+  <text x="690.0" y="116" font-size="13" text-anchor="middle" fill="#111111">S0</text>
+  <path d="M140 168 L140 148 L240 148 L340 148 L440 148 L440 168 L540 168 L640 168 L740 168" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <path d="M140 212 L140 192 L240 192 L240 212 L340 212 L440 212 L540 212 L540 192 L640 192 L740 192 L740 212" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <path d="M140 256 L240 256 L240 236 L340 236 L340 256 L440 256 L540 256 L640 256 L740 256" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <path d="M140 300 L240 300 L340 300 L340 280 L440 280 L540 280 L540 300 L640 300 L740 300" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <path d="M140 344 L240 344 L340 344 L440 344 L440 324 L540 324 L540 344 L640 344 L740 344" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <path d="M140 388 L240 388 L340 388 L340 368 L440 368 L440 388 L540 388 L640 388 L740 388" fill="none" stroke="#0b5c8a" stroke-width="2"/>
+  <text x="450" y="410" font-size="11.5" text-anchor="middle" fill="#666666">Input sequence X = 1, 1, 1, 0, 0, 0.  Za/Zb/Zc are state (Moore) outputs; Z1 and Z2 are conditional (Mealy) outputs in S2.</text>
+</svg>

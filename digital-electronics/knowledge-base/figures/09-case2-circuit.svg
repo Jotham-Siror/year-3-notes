@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="640" viewBox="0 0 1060 640" font-family="sans-serif">
+<rect width="1060" height="640" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="530.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Case II — gate realisation of the 101 detector (two D flip-flops)</text>
+<path d="M 60 520 L 980 520" fill="none" stroke="#111111" stroke-width="2"/>
+<text x="52" y="525" text-anchor="end" font-size="15" fill="#1f6feb">X</text>
+<path d="M 60 580 L 700 580" fill="none" stroke="#111111" stroke-width="2"/>
+<text x="52" y="585" text-anchor="end" font-size="15" fill="#1f6feb">Clock</text>
+<path d="M 120 520 L 120 317 L 150 317" fill="none" stroke="#111111" stroke-width="2"/>
+<circle cx="120" cy="520" r="4" fill="#111111"/>
+<path d="M 150 300 L 182 317.0 L 150 334 Z" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<circle cx="186" cy="317.0" r="5" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="212" y="300" text-anchor="middle" font-size="13" fill="#777777">X&#8242;</text>
+<path d="M 194 317 L 210 317 L 210 305 L 240 305" fill="none" stroke="#111111" stroke-width="2"/>
+<path d="M 240 293 L 265.2 293 A 24.0 24.0 0 0 1 265.2 341 L 240 341 Z" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="300" y="284" text-anchor="middle" font-size="13" fill="#777777">X&#8242;B</text>
+<rect x="400" y="190" width="150" height="130" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="414" y="218" font-size="15" fill="#1f6feb">D</text>
+<text x="536" y="218" text-anchor="end" font-size="15" fill="#1f6feb">A</text>
+<text x="536" y="304" text-anchor="end" font-size="15" fill="#1f6feb">A&#8242;</text>
+<text x="430" y="304" text-anchor="middle" font-size="13" fill="#1f6feb">CK</text>
+<path d="M 400 286 L 416 294 L 400 302" fill="none" stroke="#111111" stroke-width="2"/>
+<rect x="680" y="190" width="150" height="130" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="694" y="218" font-size="15" fill="#1f6feb">D</text>
+<text x="816" y="218" text-anchor="end" font-size="15" fill="#1f6feb">B</text>
+<text x="816" y="304" text-anchor="end" font-size="15" fill="#1f6feb">B&#8242;</text>
+<text x="710" y="304" text-anchor="middle" font-size="13" fill="#1f6feb">CK</text>
+<path d="M 680 286 L 696 294 L 680 302" fill="none" stroke="#111111" stroke-width="2"/>
+<path d="M 296 317 L 350 317 L 350 215 L 400 215" fill="none" stroke="#111111" stroke-width="2"/>
+<path d="M 400 294 L 370 294 L 370 580" fill="none" stroke="#111111" stroke-width="2"/>
+<circle cx="370" cy="580" r="4" fill="#111111"/>
+<path d="M 680 294 L 655 294 L 655 580" fill="none" stroke="#111111" stroke-width="2"/>
+<circle cx="655" cy="580" r="4" fill="#111111"/>
+<path d="M 640 520 L 640 215 L 680 215" fill="none" stroke="#111111" stroke-width="2"/>
+<circle cx="640" cy="520" r="4" fill="#111111"/>
+<text x="655" y="205" text-anchor="middle" font-size="13" fill="#777777">X</text>
+<path d="M 830 215 L 890 215 L 890 110 L 230 110 L 230 329 L 240 329" fill="none" stroke="#111111" stroke-width="2"/>
+<path d="M 550 215 L 580 215 L 580 452 L 860 452" fill="none" stroke="#111111" stroke-width="2"/>
+<path d="M 920 520 L 920 476 L 860 476" fill="none" stroke="#111111" stroke-width="2"/>
+<circle cx="920" cy="520" r="4" fill="#111111"/>
+<path d="M 860 440 L 885.2 440 A 24.0 24.0 0 0 1 885.2 488 L 860 488 Z" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<path d="M 916 464 L 975 464" fill="none" stroke="#111111" stroke-width="2"/>
+<text x="985" y="470" font-size="15" fill="#1f6feb">Z</text>
+<text x="888" y="432" text-anchor="middle" font-size="13" fill="#777777">Z = XA</text>
+<text x="24" y="624" font-size="13" fill="#777777">D of A = X&#8242;B,  D of B = X,  Z = XA, with the assignment S0 = 00, S1 = 01, S2 = 10.</text>
+</svg>

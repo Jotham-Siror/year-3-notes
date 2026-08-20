@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="640" viewBox="0 0 1020 640" font-family="sans-serif">
+  <rect width="1020" height="640" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <path d="M180 60 L204.3 60 A23.0 23.0 0 0 1 204.3 106 L180 106 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M134 72 L180 72" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="128" y="76" font-size="12" text-anchor="end" fill="#0b5c8a">T₀</text>
+  <path d="M134 94 L180 94" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="128" y="98" font-size="12" text-anchor="end" fill="#0b5c8a">S</text>
+  <path d="M300 60 Q320 83.0 300 106 Q343.4 106 362 83.0 Q343.4 60 300 60 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M234 83 L300 72" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M254 94 L300 94" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="248" y="98" font-size="12" text-anchor="end" fill="#0b5c8a">T₁</text>
+  <path d="M362 83 L430 83" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="434" y="50" width="120" height="130" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="450" y="84" font-size="12.5" text-anchor="start" fill="#111111">D</text>
+  <path d="M436 102 L450 112 L436 122" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <text x="456" y="120" font-size="12.5" text-anchor="start" fill="#111111">C</text>
+  <text x="538" y="84" font-size="12.5" text-anchor="end" fill="#111111">Q</text>
+  <text x="538" y="164" font-size="12.5" text-anchor="end" fill="#111111">Q′</text>
+  <text x="562" y="84" font-size="12.5" text-anchor="start" fill="#0b5c8a">G₀</text>
+  <text x="562" y="164" font-size="12.5" text-anchor="start" fill="#0b5c8a">T₀</text>
+  <path d="M554 78 L558 78" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M554 158 L558 158" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <text x="560" y="42" font-size="12" text-anchor="start" fill="#a33b00">D_G0 = T₀ S + T₁</text>
+  <path d="M388 180 L430 180" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="382" y="184" font-size="12" text-anchor="end" fill="#666666">clock</text>
+  <path d="M180 300 L208.8 300 A38.0 38.0 0 0 1 208.8 376 L180 376 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M134 318 L180 318" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="128" y="322" font-size="12" text-anchor="end" fill="#0b5c8a">T₁</text>
+  <path d="M134 338 L180 338" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="128" y="342" font-size="12" text-anchor="end" fill="#0b5c8a">A₃</text>
+  <path d="M134 358 L180 358" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="128" y="362" font-size="12" text-anchor="end" fill="#0b5c8a">A₄</text>
+  <path d="M244 338 L430 338" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="434" y="300" width="120" height="130" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="450" y="334" font-size="12.5" text-anchor="start" fill="#111111">D</text>
+  <path d="M436 352 L450 362 L436 372" fill="none" stroke="#111111" stroke-width="1.4"/>
+  <text x="456" y="370" font-size="12.5" text-anchor="start" fill="#111111">C</text>
+  <text x="538" y="334" font-size="12.5" text-anchor="end" fill="#111111">Q</text>
+  <text x="538" y="414" font-size="12.5" text-anchor="end" fill="#111111">Q′</text>
+  <text x="562" y="334" font-size="12.5" text-anchor="start" fill="#0b5c8a">G₁</text>
+  <text x="562" y="414" font-size="12.5" text-anchor="start" fill="#0b5c8a">G₁′</text>
+  <path d="M554 328 L558 328" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M554 408 L558 408" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <text x="560" y="292" font-size="12" text-anchor="start" fill="#a33b00">D_G1 = T₁ A₃ A₄</text>
+  <path d="M388 368 L430 368" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="382" y="372" font-size="12" text-anchor="end" fill="#666666">clock</text>
+  <text x="740" y="120" font-size="13" text-anchor="start" fill="#111111">T₀ = G₀′</text>
+  <path d="M700 190 L724.3 190 A23.0 23.0 0 0 1 724.3 236 L700 236 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M654 202 L700 202" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="648" y="206" font-size="12" text-anchor="end" fill="#0b5c8a">G₁′</text>
+  <path d="M654 224 L700 224" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="648" y="228" font-size="12" text-anchor="end" fill="#0b5c8a">G₀</text>
+  <path d="M754 213 L830 213" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="838" y="217" font-size="13" text-anchor="start" fill="#111111">T₁ = G₁′ G₀</text>
+  <text x="740" y="330" font-size="13" text-anchor="start" fill="#111111">T₂ = G₁</text>
+  <path d="M700 430 L724.3 430 A23.0 23.0 0 0 1 724.3 476 L700 476 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M654 442 L700 442" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="648" y="446" font-size="12" text-anchor="end" fill="#0b5c8a">T₀</text>
+  <path d="M654 464 L700 464" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="648" y="468" font-size="12" text-anchor="end" fill="#0b5c8a">S</text>
+  <path d="M754 453 L830 453" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="838" y="457" font-size="13" text-anchor="start" fill="#a33b00">Clear‑A</text>
+  <text x="510" y="560" font-size="12" text-anchor="middle" fill="#666666">State assignment G₁G₀:  T₀ = 00,  T₁ = 01,  T₂ = 11 (10 unused, treated as a don't care).</text>
+  <text x="510" y="584" font-size="11.5" text-anchor="middle" fill="#a33b00">⚠ The deck draws the gate that combines A₃A₄ with T₁ as an OR (·CH6 slide 34); the equation on slide 33 requires an AND.</text>
+  <text x="510" y="606" font-size="11.5" text-anchor="middle" fill="#a33b00">The corrected three-input AND is shown here.</text>
+</svg>

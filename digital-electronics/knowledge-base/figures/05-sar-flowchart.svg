@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="740" viewBox="0 0 700 740" font-family="sans-serif">
+  <rect width="700" height="740" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker></defs>
+  <g fill="none" stroke="#111111" stroke-width="1.6">
+    <ellipse cx="400" cy="42" rx="62" ry="24"/>
+    <rect x="320" y="100" width="160" height="46" rx="4"/>
+    <rect x="320" y="182" width="160" height="46" rx="4"/>
+    <rect x="320" y="264" width="160" height="46" rx="4"/>
+    <path d="M400 348 L510 410 L400 472 L290 410 Z"/>
+    <rect x="80" y="386" width="150" height="46" rx="4"/>
+    <rect x="560" y="386" width="120" height="46" rx="4"/>
+    <path d="M400 512 L520 570 L400 628 L280 570 Z"/>
+    <rect x="80" y="547" width="150" height="46" rx="4"/>
+    <ellipse cx="400" cy="672" rx="86" ry="24"/>
+  </g>
+  <g font-size="13.5" fill="#111111" text-anchor="middle">
+    <text x="400" y="47">start</text>
+    <text x="400" y="128">sample Vin and hold it</text>
+    <text x="400" y="210">clear all n bits</text>
+    <text x="400" y="282">set the trial bit to 1</text>
+    <text x="400" y="415">Vin &gt; Vdac ?</text>
+    <text x="155" y="415">clear that bit</text>
+    <text x="620" y="415">keep that bit</text>
+    <text x="400" y="562">have all n bits</text>
+    <text x="400" y="580">been tested ?</text>
+    <text x="155" y="565">move to the next</text>
+    <text x="155" y="583">lower bit</text>
+    <text x="400" y="677">end: code is valid</text>
+  </g>
+  <g stroke="#111111" stroke-width="1.6" fill="none" marker-end="url(#ar)">
+    <path d="M400 66 V96"/>
+    <path d="M400 146 V178"/>
+    <path d="M400 228 V260"/>
+    <path d="M400 310 V344"/>
+    <path d="M290 410 H234"/>
+    <path d="M510 410 H556"/>
+    <path d="M400 496 V508"/>
+    <path d="M280 570 H234"/>
+    <path d="M400 628 V644"/>
+  </g>
+  <g stroke="#111111" stroke-width="1.6" fill="none">
+    <path d="M155 432 V496 H400"/>
+    <path d="M620 432 V496 H400"/>
+    <path d="M80 570 H44 V287 H316"/>
+  </g>
+  <path d="M312 287 H320" stroke="#111111" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <g font-size="12.5" fill="#a33b00">
+    <text x="252" y="400">no</text>
+    <text x="524" y="400">yes</text>
+    <text x="250" y="560">no</text>
+    <text x="412" y="646">yes</text>
+  </g>
+  <text x="350" y="726" font-size="12.5" fill="#666666" text-anchor="middle">one pass of the loop = one clock period; the loop runs n times, MSB first</text>
+</svg>

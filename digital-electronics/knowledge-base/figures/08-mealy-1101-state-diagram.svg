@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="430" viewBox="0 0 840 430" font-family="sans-serif"><title>Mealy state diagram for the 1101 sequence detector</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6cab"/></marker><marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M54.0,130.0 L100.0,130.0" stroke="#111111" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<text x="50.0" y="121.0" text-anchor="end" font-size="13" fill="#111111" >reset</text>
+<path d="M113.2,105.1 C85.7,89.5 174.3,89.5 146.8,105.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="130.0" y="57.9" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M473.2,105.1 C445.7,89.5 534.3,89.5 506.8,105.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="490.0" y="57.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M160.0,130.0 Q220.0,130.0 280.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="220.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M340.0,130.0 Q400.0,130.0 460.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="400.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >1/0</text>
+<path d="M520.0,130.0 Q580.0,130.0 640.0,130.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="580.0" y="116.9" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M283.3,143.7 Q220.0,176.0 156.7,143.7" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="220.0" y="177.72666589683664" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<path d="M646.3,148.4 Q490.0,270.0 333.7,148.4" fill="none" stroke="#1c6cab" stroke-width="2" marker-end="url(#ahA)"/>
+<text x="490.0" y="229.10910920272383" text-anchor="middle" font-size="14" fill="#1c6cab" >1/1</text>
+<path d="M648.0,150.4 Q400.0,380.0 152.0,150.4" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="400.0" y="285.0911204724746" text-anchor="middle" font-size="14" fill="#111111" >0/0</text>
+<circle cx="130" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="130" y="134.9" text-anchor="middle" font-size="14" fill="#111111">A</text>
+<circle cx="310" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="310" y="134.9" text-anchor="middle" font-size="14" fill="#111111">B</text>
+<circle cx="490" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="490" y="134.9" text-anchor="middle" font-size="14" fill="#111111">C</text>
+<circle cx="670" cy="130" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="670" y="134.9" text-anchor="middle" font-size="14" fill="#111111">D</text>
+<text x="420.0" y="416" text-anchor="middle" font-size="13" fill="#1c6cab" >A = nothing yet,  B = 1,  C = 11 (two or more),  D = 110</text>
+</svg>

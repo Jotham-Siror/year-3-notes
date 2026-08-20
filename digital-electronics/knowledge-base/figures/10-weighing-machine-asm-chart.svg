@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="880" viewBox="0 0 900 880" font-family="sans-serif">
+  <rect width="900" height="880" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <path d="M440 40 L440 70" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="330" y="70" width="220" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440.0" y="96.86" font-size="13.5" text-anchor="middle" fill="#111111">initial state</text>
+  <text x="556" y="65" font-size="12" text-anchor="start" fill="#0b5c8a">00</text>
+  <text x="322" y="96.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">S₀</text>
+  <path d="M440 114 L440 146" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M440 149 L486 174 L440 199 L394 174 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440" y="178.68" font-size="13" text-anchor="middle" fill="#111111">S</text>
+  <text x="366" y="166" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="458" y="218" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M394 174 L90 174 L90 40 L436 40" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M440 199 L440 234" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="330.0" y="234.0" width="220" height="56" rx="28.0" ry="28.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440" y="258.68" font-size="13" text-anchor="middle" fill="#111111">R ← input</text>
+  <text x="440" y="274.68" font-size="13" text-anchor="middle" fill="#111111">W ← all 1s</text>
+  <path d="M440 290 L440 326" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="330" y="328" width="220" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440.0" y="354.86" font-size="13.5" text-anchor="middle" fill="#111111">W ← W + 1</text>
+  <text x="556" y="323" font-size="12" text-anchor="start" fill="#0b5c8a">01</text>
+  <text x="322" y="354.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">S₁</text>
+  <path d="M440 372 L440 404" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M440 407 L486 432 L440 457 L394 432 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440" y="436.68" font-size="13" text-anchor="middle" fill="#111111">Z</text>
+  <text x="506" y="424" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <text x="458" y="476" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <path d="M486 432 L740 432 L740 40 L444 40" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M440 457 L440 494" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="330" y="496" width="220" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440.0" y="522.86" font-size="13.5" text-anchor="middle" fill="#111111">shift right into F</text>
+  <text x="556" y="491" font-size="12" text-anchor="start" fill="#0b5c8a">10</text>
+  <text x="322" y="522.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">S₂</text>
+  <path d="M440 540 L440 596" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="330" y="598" width="220" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440.0" y="624.86" font-size="13.5" text-anchor="middle" fill="#111111">(no operation)</text>
+  <text x="556" y="593" font-size="12" text-anchor="start" fill="#0b5c8a">11</text>
+  <text x="322" y="624.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">S₃</text>
+  <path d="M440 642 L440 676" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M440 679 L486 704 L440 729 L394 704 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="440" y="708.68" font-size="13" text-anchor="middle" fill="#111111">F</text>
+  <text x="506" y="696" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="458" y="748" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M486 704 L640 704 L640 472 L444 472" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M440 729 L440 772 L170 772 L170 306 L436 306" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="450" y="824" font-size="11.5" text-anchor="middle" fill="#666666">W starts at all 1s so that the first increment makes it 0; thereafter W is incremented once for every 1 shifted out of R.</text>
+  <text x="450" y="844" font-size="11.5" text-anchor="middle" fill="#666666">S₃ carries no data operation: it exists only because F is not valid until the clock edge that ends S₂ has passed.</text>
+</svg>

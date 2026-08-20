@@ -13,6 +13,7 @@ GitHub shows `.html` files as source code.
 | [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
 | [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 1 handout, 43 flags |
 | [Thermodynamics](thermodynamics/README.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 50 flags, both group activities |
+| [Digital Electronics II](digital-electronics/knowledge-base/00-index.md) | BEE 3102 | 6 chapter decks (348 slides) + excitation-table sheet | 10 topic files, 81 flags, 142 figures |
 
 ## What this actually is
 
@@ -20,7 +21,7 @@ Each subject's lecture material has been transcribed into structured Markdown: e
 LaTeX, every claim anchored to the slide or page it came from, every figure described, and **every
 suspected error in the original flagged and corrected**.
 
-That last part is the reason this exists. Across the three subjects there are **143 documented
+That last part is the reason this exists. Across the four subjects there are **224 documented
 defects** in the lecture material — wrong constants, mislabelled results, broken derivations. A few
 examples:
 
@@ -32,6 +33,12 @@ examples:
   equations self-referential and unsolvable as printed
 - MEC 3105, First Law slide 20: the deck's only worked example flips the sign of the work term, so
   its printed answer of $-505\ \mathrm{J}$ should be $-2532\ \mathrm{J}$ — wrong by a factor of five
+- BEE 3102, Chapter 4 slide 44: the R/2R ladder transfer function is off by one in the exponent, so
+  **every voltage the deck gives for that converter is half what the circuit produces** — slide 47's
+  printed $-3.4375$ V should be $-6.875$ V, and the deck's own nodal analysis two slides earlier
+  contradicts its formula
+- BEE 3102, Chapter 3 slide 29: the Hamming syndrome for an error in bit 12 is printed $1000$, which
+  is the code for bit 8 — the one property the whole scheme exists to provide
 
 Every one is logged with the correct form and the reasoning. **Revise from the corrected versions.**
 
@@ -116,6 +123,11 @@ This repository is public, so four things are withheld on purpose. Please don't 
 └── thermodynamics/
     ├── knowledge-base/          # 7 topic files + nomenclature, formulas, log
     │   └── exercises/           # assessed group activities — questions only
+    └── sources/SOURCES.md
+└── digital-electronics/
+    ├── knowledge-base/          # 10 topic files + nomenclature, formulas, log
+    │   ├── figures/             # 142 redrawn SVGs
+    │   └── flags/               # per-file verification working
     └── sources/SOURCES.md
 ```
 

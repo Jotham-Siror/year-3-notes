@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="430" viewBox="0 0 660 430" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="330.0" y="26" font-size="13" text-anchor="middle" fill="#1a1a1a">Moore state diagram of the T-flip-flop circuit   (node = A B / output,  edge = x)</text>
+  <circle cx="200" cy="140" r="32" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <circle cx="200" cy="140" r="27.5" fill="none" stroke="#1b4f72" stroke-width="1.2"/>
+  <text x="200" y="139" font-size="13" text-anchor="middle" fill="#1a1a1a">00</text>
+  <text x="200" y="153" font-size="11" text-anchor="middle" fill="#117a65">y = 0</text>
+  <circle cx="470" cy="140" r="32" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="470" y="139" font-size="13" text-anchor="middle" fill="#1a1a1a">01</text>
+  <text x="470" y="153" font-size="11" text-anchor="middle" fill="#117a65">y = 0</text>
+  <circle cx="470" cy="320" r="32" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="470" y="319" font-size="13" text-anchor="middle" fill="#1a1a1a">10</text>
+  <text x="470" y="333" font-size="11" text-anchor="middle" fill="#117a65">y = 0</text>
+  <circle cx="200" cy="320" r="32" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="200" y="319" font-size="13" text-anchor="middle" fill="#1a1a1a">11</text>
+  <text x="200" y="333" font-size="11" text-anchor="middle" fill="#117a65">y = 1</text>
+  <path d="M170.8,153.0 C136.2,195.8 136.2,84.2 170.8,127.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M170.77,126.98 L162.17,122.36 L168.05,117.61 Z" fill="#1b4f72" stroke="none"/>
+  <text x="103.1" y="148.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M499.2,127.0 C533.8,84.2 533.8,195.8 499.2,153.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M499.23,153.02 L507.83,157.64 L501.95,162.39 Z" fill="#1b4f72" stroke="none"/>
+  <text x="566.9" y="148.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M499.2,307.0 C533.8,264.2 533.8,375.8 499.2,333.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M499.23,333.02 L507.83,337.64 L501.95,342.39 Z" fill="#1b4f72" stroke="none"/>
+  <text x="566.9" y="328.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M170.8,333.0 C136.2,375.8 136.2,264.2 170.8,307.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M170.77,306.98 L162.17,302.36 L168.05,297.61 Z" fill="#1b4f72" stroke="none"/>
+  <text x="103.1" y="328.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M232.0,140.0 Q335.0,140.0 438.0,140.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M438.00,140.00 L429.00,143.78 L429.00,136.22 Z" fill="#1b4f72" stroke="none"/>
+  <text x="335.0" y="126.0" font-size="12" text-anchor="middle" fill="#117a65">1</text>
+  <path d="M470.0,172.0 Q470.0,230.0 470.0,288.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M470.00,288.00 L466.22,279.00 L473.78,279.00 Z" fill="#1b4f72" stroke="none"/>
+  <text x="490.0" y="230.0" font-size="12" text-anchor="middle" fill="#117a65">1</text>
+  <path d="M438.0,320.0 Q335.0,320.0 232.0,320.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M232.00,320.00 L241.00,316.22 L241.00,323.78 Z" fill="#1b4f72" stroke="none"/>
+  <text x="335.0" y="340.0" font-size="12" text-anchor="middle" fill="#117a65">1</text>
+  <path d="M200.0,288.0 Q200.0,230.0 200.0,172.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M200.00,172.00 L203.78,181.00 L196.22,181.00 Z" fill="#1b4f72" stroke="none"/>
+  <text x="180.0" y="230.0" font-size="12" text-anchor="middle" fill="#117a65">1</text>
+  <text x="330.0" y="400" font-size="10" text-anchor="middle" fill="#117a65">a 2-bit up counter enabled by x;  y = A B is high only in state 11</text>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="660" viewBox="0 0 900 660" font-family="sans-serif">
+<rect width="900" height="660" fill="#ffffff"/>
+<path d="M215 70.0 L215 84.6 L221 87.7 L209 93.9 L221 100.0 L209 106.2 L221 112.4 L209 118.6 L215 121.7 L215 136.25" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="107.1" font-size="13" fill="#111111">R</text>
+<path d="M215 136.25 L215 150.8 L221 153.9 L209 160.1 L221 166.3 L209 172.5 L221 178.7 L209 184.8 L215 187.9 L215 202.5" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="173.4" font-size="13" fill="#111111">R</text>
+<path d="M215 202.5 L215 217.1 L221 220.2 L209 226.3 L221 232.5 L209 238.7 L221 244.9 L209 251.1 L215 254.2 L215 268.75" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="239.6" font-size="13" fill="#111111">R</text>
+<path d="M215 268.75 L215 283.3 L221 286.4 L209 292.6 L221 298.8 L209 305.0 L221 311.1 L209 317.3 L215 320.4 L215 335.0" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="305.9" font-size="13" fill="#111111">R</text>
+<path d="M215 335.0 L215 349.6 L221 352.7 L209 358.9 L221 365.0 L209 371.2 L221 377.4 L209 383.6 L215 386.7 L215 401.25" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="372.1" font-size="13" fill="#111111">R</text>
+<path d="M215 401.25 L215 415.8 L221 418.9 L209 425.1 L221 431.3 L209 437.5 L221 443.6 L209 449.8 L215 452.9 L215 467.5" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="438.4" font-size="13" fill="#111111">R</text>
+<path d="M215 467.5 L215 482.1 L221 485.2 L209 491.3 L221 497.5 L209 503.7 L221 509.9 L209 516.1 L215 519.2 L215 533.75" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="504.6" font-size="13" fill="#111111">R</text>
+<path d="M215 533.75 L215 548.3 L221 551.4 L209 557.6 L221 563.8 L209 570.0 L221 576.1 L209 582.3 L215 585.4 L215 600.0" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="231" y="570.9" font-size="13" fill="#111111">R</text>
+<path d="M215 44 V70" stroke="#111111" stroke-width="1.6"/>
+<circle cx="215" cy="40" r="3.5" fill="none" stroke="#111111" stroke-width="1.4"/>
+<text x="227" y="44" font-size="14" fill="#111111">+VREF</text>
+<path d="M201 600 H229 M206 607 H224 M211 614 H219" stroke="#111111" stroke-width="1.6"/>
+<path d="M285 106.4375 V586.75" stroke="#1a5fb4" stroke-width="1.8"/>
+<path d="M60 106.4375 H175 M255 106.4375 H285" stroke="#1a5fb4" stroke-width="1.8"/>
+<path d="M175 106.4375 Q215 84.4375 255 106.4375" fill="none" stroke="#1a5fb4" stroke-width="1.8"/>
+<circle cx="56" cy="106.4375" r="3.5" fill="none" stroke="#1a5fb4" stroke-width="1.4"/>
+<text x="34" y="90.4375" font-size="13" fill="#1a5fb4">Vin from S/H</text>
+<path d="M215 533.75 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="533.75" r="3" fill="#111111"/>
+<path d="M350 513.75 L350 553.75 L412 533.75 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="529.75" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="550.75" font-size="13" fill="#111111">+</text>
+<path d="M285 544.75 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="544.75" r="3" fill="#1a5fb4"/>
+<path d="M349 533.75 V522.75 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 533.75 H428 V461.2 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="465.2" font-size="12.5" text-anchor="end" fill="#a33b00">1</text>
+<text x="191" y="537.75" font-size="11.5" text-anchor="end" fill="#666666">1VREF/8</text>
+<path d="M215 467.5 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="467.5" r="3" fill="#111111"/>
+<path d="M350 447.5 L350 487.5 L412 467.5 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="463.5" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="484.5" font-size="13" fill="#111111">+</text>
+<path d="M285 478.5 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="478.5" r="3" fill="#1a5fb4"/>
+<path d="M349 467.5 V456.5 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 467.5 H435 V408.8 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="412.8" font-size="12.5" text-anchor="end" fill="#a33b00">2</text>
+<text x="191" y="471.5" font-size="11.5" text-anchor="end" fill="#666666">2VREF/8</text>
+<path d="M215 401.25 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="401.25" r="3" fill="#111111"/>
+<path d="M350 381.25 L350 421.25 L412 401.25 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="397.25" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="418.25" font-size="13" fill="#111111">+</text>
+<path d="M285 412.25 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="412.25" r="3" fill="#1a5fb4"/>
+<path d="M349 401.25 V390.25 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 401.25 H442 V356.2 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="360.2" font-size="12.5" text-anchor="end" fill="#a33b00">3</text>
+<text x="191" y="405.25" font-size="11.5" text-anchor="end" fill="#666666">3VREF/8</text>
+<path d="M215 335.0 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="335.0" r="3" fill="#111111"/>
+<path d="M350 315.0 L350 355.0 L412 335.0 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="331.0" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="352.0" font-size="13" fill="#111111">+</text>
+<path d="M285 346.0 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="346.0" r="3" fill="#1a5fb4"/>
+<path d="M349 335.0 V324.0 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 335.0 H449 V303.8 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="307.8" font-size="12.5" text-anchor="end" fill="#a33b00">4</text>
+<text x="191" y="339.0" font-size="11.5" text-anchor="end" fill="#666666">4VREF/8</text>
+<path d="M215 268.75 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="268.75" r="3" fill="#111111"/>
+<path d="M350 248.75 L350 288.75 L412 268.75 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="264.75" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="285.75" font-size="13" fill="#111111">+</text>
+<path d="M285 279.75 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="279.75" r="3" fill="#1a5fb4"/>
+<path d="M349 268.75 V257.75 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 268.75 H456 V251.2 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="255.2" font-size="12.5" text-anchor="end" fill="#a33b00">5</text>
+<text x="191" y="272.75" font-size="11.5" text-anchor="end" fill="#666666">5VREF/8</text>
+<path d="M215 202.5 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="202.5" r="3" fill="#111111"/>
+<path d="M350 182.5 L350 222.5 L412 202.5 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="198.5" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="219.5" font-size="13" fill="#111111">+</text>
+<path d="M285 213.5 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="213.5" r="3" fill="#1a5fb4"/>
+<path d="M349 202.5 V191.5 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 202.5 H463 V198.8 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="202.8" font-size="12.5" text-anchor="end" fill="#a33b00">6</text>
+<text x="191" y="206.5" font-size="11.5" text-anchor="end" fill="#666666">6VREF/8</text>
+<path d="M215 136.25 H350" stroke="#111111" stroke-width="1.4"/>
+<circle cx="215" cy="136.25" r="3" fill="#111111"/>
+<path d="M350 116.25 L350 156.25 L412 136.25 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="359" y="132.25" font-size="13" fill="#111111">&#8722;</text>
+<text x="359" y="153.25" font-size="13" fill="#111111">+</text>
+<path d="M285 147.25 H350" stroke="#1a5fb4" stroke-width="1.4"/>
+<circle cx="285" cy="147.25" r="3" fill="#1a5fb4"/>
+<path d="M349 136.25 V125.25 H350" stroke="#111111" stroke-width="1.4"/>
+<path d="M412 136.25 H470 V146.2 H565" fill="none" stroke="#a33b00" stroke-width="1.4"/>
+<text x="557" y="150.2" font-size="12.5" text-anchor="end" fill="#a33b00">7</text>
+<text x="191" y="140.25" font-size="11.5" text-anchor="end" fill="#666666">7VREF/8</text>
+<rect x="565" y="120" width="160" height="420" fill="none" stroke="#111111" stroke-width="1.6" rx="4"/>
+<text x="645.0" y="322.0" font-size="14" text-anchor="middle" fill="#111111">priority</text>
+<text x="645.0" y="342.0" font-size="14" text-anchor="middle" fill="#111111">encoder</text>
+<text x="557" y="517.8" font-size="12.5" text-anchor="end" fill="#a33b00">0</text>
+<path d="M519 513.8 H565" stroke="#a33b00" stroke-width="1.4"/>
+<path d="M507 513.8 h12 M511 519.8 h8 M515 525.8 h4" stroke="#a33b00" stroke-width="1.4"/>
+<path d="M725 250 H785" stroke="#111111" stroke-width="1.6"/>
+<text x="793" y="255" font-size="14" fill="#111111">D2</text>
+<path d="M725 330 H785" stroke="#111111" stroke-width="1.6"/>
+<text x="793" y="335" font-size="14" fill="#111111">D1</text>
+<path d="M725 410 H785" stroke="#111111" stroke-width="1.6"/>
+<text x="793" y="415" font-size="14" fill="#111111">D0</text>
+<text x="890" y="216" font-size="12.5" text-anchor="end" fill="#666666">parallel binary output</text>
+<path d="M645.0 540 V580" stroke="#111111" stroke-width="1.6"/>
+<text x="645.0" y="598" font-size="13" text-anchor="middle" fill="#111111">EN (enable pulses)</text>
+<text x="30" y="638" font-size="12.5" fill="#111111">3-bit flash converter: 8 equal resistors set 7 thresholds, one per comparator; 2ⁿ&#8722;1 = 7 comparators, step &#916;V = VREF/2ⁿ</text>
+</svg>

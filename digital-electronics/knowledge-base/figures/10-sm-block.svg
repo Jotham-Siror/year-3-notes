@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520" font-family="sans-serif">
+  <rect width="980" height="520" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <rect x="60" y="60" width="860" height="330" fill="#eef4f8" stroke="none"/>
+  <text x="880" y="80" font-size="12.5" text-anchor="end" fill="#0b5c8a">SM block</text>
+  <text x="560" y="40" font-size="12.5" text-anchor="middle" fill="#666666">one entrance path</text>
+  <path d="M560 46 L560 86" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="490" y="86" width="140" height="50" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="560.0" y="115.86" font-size="13.5" text-anchor="middle" fill="#111111">S1 / Z1 Z2</text>
+  <text x="650" y="113" font-size="12" text-anchor="start" fill="#666666">one state box</text>
+  <path d="M560 136 L560 168" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M560 170 L614 196 L560 222 L506 196 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="560" y="200.68" font-size="13" text-anchor="middle" fill="#111111">X1</text>
+  <path d="M506 196 L400 196 L400 232" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="470" y="188" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="660" y="188" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M614 196 L730 196 L730 232" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="340.0" y="237.0" width="120" height="46" rx="23.0" ry="23.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="400" y="264.68" font-size="13" text-anchor="middle" fill="#111111">Z3 Z4</text>
+  <path d="M400 283 L400 318" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M400 320 L454 346 L400 372 L346 346 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="400" y="350.68" font-size="13" text-anchor="middle" fill="#111111">X2</text>
+  <path d="M346 346 L250 346 L250 430" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M454 346 L540 346 L540 430" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="316" y="338" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="486" y="338" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M730 234 L784 260 L730 286 L676 260 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="730" y="264.68" font-size="13" text-anchor="middle" fill="#111111">X3</text>
+  <path d="M676 260 L620 260 L620 300" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="650" y="252" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="806" y="252" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <rect x="575.0" y="305.0" width="90" height="42" rx="21.0" ry="21.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620" y="330.68" font-size="13" text-anchor="middle" fill="#111111">Z5</text>
+  <path d="M620 347 L620 430" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M784 260 L850 260 L850 430" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="264" y="455" font-size="12.5" text-anchor="start" fill="#0b5c8a">1</text>
+  <text x="554" y="455" font-size="12.5" text-anchor="start" fill="#0b5c8a">2</text>
+  <text x="634" y="455" font-size="12.5" text-anchor="start" fill="#0b5c8a">3</text>
+  <text x="864" y="455" font-size="12.5" text-anchor="start" fill="#0b5c8a">n</text>
+  <text x="490" y="490" font-size="12.5" text-anchor="middle" fill="#666666">n exit paths — one for every combination of X1, X2, X3</text>
+  <text x="150" y="196" font-size="12" text-anchor="start" fill="#a33b00">link path a:</text>
+  <text x="150" y="214" font-size="12" text-anchor="start" fill="#a33b00">S1 → exit 1</text>
+  <text x="150" y="300" font-size="12" text-anchor="start" fill="#a33b00">link path b:</text>
+  <text x="150" y="318" font-size="12" text-anchor="start" fill="#a33b00">S1 → exit 3</text>
+</svg>

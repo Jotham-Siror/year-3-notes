@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="462" viewBox="0 0 1280 462" font-family="sans-serif">
+<rect width="1280" height="462" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="640.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">D flip-flop input maps and output map for the six-state machine</text>
+<line x1="34" y1="76" x2="80" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="72" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">XQ₁</text>
+<text x="38" y="104" font-size="13" font-style="italic" fill="#111111">Q₂Q₃</text>
+<text x="109.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">00</text>
+<text x="167.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">01</text>
+<text x="225.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">11</text>
+<text x="283.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">10</text>
+<text x="72" y="138.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="72" y="184.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="72" y="230.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="72" y="276.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="80" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="109.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="138" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="167.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="196" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="225.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="254" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="283.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="80" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="109.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="138" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="167.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="196" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="225.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="254" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="283.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="80" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="109.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="138" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="167.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="196" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="225.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="254" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="283.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="80" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="109.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="138" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="167.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="196" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="225.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="254" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="283.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="196.0" y="320" text-anchor="middle" font-size="15" fill="#111111">D₁ = Q₁⁺ = X′Q₁Q₂′ + XQ₁′</text>
+<line x1="334" y1="76" x2="380" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="372" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">XQ₁</text>
+<text x="338" y="104" font-size="13" font-style="italic" fill="#111111">Q₂Q₃</text>
+<text x="409.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">00</text>
+<text x="467.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">01</text>
+<text x="525.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">11</text>
+<text x="583.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">10</text>
+<text x="372" y="138.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="372" y="184.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="372" y="230.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="372" y="276.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="380" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="409.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="438" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="467.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="496" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="525.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="554" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="583.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="380" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="409.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="438" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="467.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="496" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="525.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="554" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="583.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="380" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="409.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="438" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="467.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="496" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="525.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="554" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="583.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="380" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="409.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="438" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="467.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="496" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="525.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="554" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="583.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="496.0" y="320" text-anchor="middle" font-size="15" fill="#111111">D₂ = Q₂⁺ = Q₃</text>
+<line x1="634" y1="76" x2="680" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="672" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">XQ₁</text>
+<text x="638" y="104" font-size="13" font-style="italic" fill="#111111">Q₂Q₃</text>
+<text x="709.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">00</text>
+<text x="767.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">01</text>
+<text x="825.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">11</text>
+<text x="883.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">10</text>
+<text x="672" y="138.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="672" y="184.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="672" y="230.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="672" y="276.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="680" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="709.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="738" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="767.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="796" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="825.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="854" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="883.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="680" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="709.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="738" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="767.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="796" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="825.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="854" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="883.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="680" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="709.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="738" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="767.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="796" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="825.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="854" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="883.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="680" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="709.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="738" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="767.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="796" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="825.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="854" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="883.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="796.0" y="320" text-anchor="middle" font-size="15" fill="#111111">D₃ = Q₃⁺ = XQ₁′Q₂ + X′Q₃</text>
+<line x1="934" y1="76" x2="980" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="972" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">XQ₁</text>
+<text x="938" y="104" font-size="13" font-style="italic" fill="#111111">Q₂Q₃</text>
+<text x="1009.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">00</text>
+<text x="1067.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">01</text>
+<text x="1125.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">11</text>
+<text x="1183.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">10</text>
+<text x="972" y="138.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="972" y="184.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="972" y="230.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="972" y="276.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="980" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1009.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="1038" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1067.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="1096" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1125.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="1154" y="110" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1183.0" y="139.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="980" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1009.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="1038" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1067.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="1096" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1125.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="1154" y="156" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1183.0" y="185.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="980" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1009.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="1038" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1067.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="1096" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1125.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="1154" y="202" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1183.0" y="231.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="980" y="248" width="58" height="46" fill="#fdecea" stroke="#111111" stroke-width="1.4"/>
+<text x="1009.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="1038" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1067.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="1096" y="248" width="58" height="46" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="1125.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="1154" y="248" width="58" height="46" fill="#fdecea" stroke="#111111" stroke-width="1.4"/>
+<text x="1183.0" y="277.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="1096.0" y="320" text-anchor="middle" font-size="15" fill="#111111">Z</text>
+<text x="1096" y="386" text-anchor="middle" font-size="15" fill="#111111">Z = XQ₂Q₃ + X′Q₂′Q₃ + <tspan fill="#c0392b">X′</tspan>Q₂Q₃′</text>
+<text x="1096" y="406" text-anchor="middle" font-size="12" fill="#c0392b">CH5 s101 prints XQ₂Q₃′ for the third term (V09-3)</text>
+<text x="80" y="440" font-size="13" fill="#777777">Rows Q2Q3 = 00, 01, 11, 10 downwards; columns XQ1 = 00, 01, 11, 10 left to right. Map cells are exactly as printed; only the Z equation is corrected.</text>
+</svg>

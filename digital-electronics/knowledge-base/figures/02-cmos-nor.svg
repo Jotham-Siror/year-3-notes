@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="580" viewBox="0 0 620 580" font-family="sans-serif">
+<rect width="620" height="580" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="370" y1="106" x2="370" y2="174"/><line x1="370" y1="140" x2="336" y2="140"/><line x1="384" y1="107" x2="384" y2="125"/><line x1="384" y1="131" x2="384" y2="149"/><line x1="384" y1="155" x2="384" y2="173"/><line x1="384" y1="116" x2="416" y2="116"/><line x1="416" y1="116" x2="416" y2="98"/><line x1="384" y1="164" x2="416" y2="164"/><line x1="416" y1="164" x2="416" y2="182"/><line x1="384" y1="140" x2="416" y2="140"/><polygon points="389,134 389,146 399,140" fill="#222222" stroke="none"/><circle cx="416" cy="140" r="4" fill="#222222"/>
+<line x1="370" y1="206" x2="370" y2="274"/><line x1="370" y1="240" x2="336" y2="240"/><line x1="384" y1="207" x2="384" y2="225"/><line x1="384" y1="231" x2="384" y2="249"/><line x1="384" y1="255" x2="384" y2="273"/><line x1="384" y1="216" x2="416" y2="216"/><line x1="416" y1="216" x2="416" y2="198"/><line x1="384" y1="264" x2="416" y2="264"/><line x1="416" y1="264" x2="416" y2="282"/><line x1="384" y1="240" x2="416" y2="240"/><polygon points="389,234 389,246 399,240" fill="#222222" stroke="none"/><circle cx="416" cy="240" r="4" fill="#222222"/>
+<line x1="416" y1="98" x2="416" y2="60"/>
+<circle cx="416" cy="50" r="5" fill="#ffffff"/>
+<line x1="416" y1="182" x2="416" y2="198"/>
+<line x1="416" y1="282" x2="416" y2="330"/>
+<line x1="200" y1="376" x2="200" y2="444"/><line x1="200" y1="410" x2="166" y2="410"/><line x1="214" y1="377" x2="214" y2="395"/><line x1="214" y1="401" x2="214" y2="419"/><line x1="214" y1="425" x2="214" y2="443"/><line x1="214" y1="386" x2="246" y2="386"/><line x1="246" y1="386" x2="246" y2="362"/><line x1="214" y1="434" x2="246" y2="434"/><line x1="246" y1="434" x2="246" y2="458"/><line x1="214" y1="410" x2="246" y2="410"/><polygon points="219,404 219,416 209,410" fill="#222222" stroke="none"/><circle cx="246" cy="410" r="4" fill="#222222"/>
+<line x1="430" y1="376" x2="430" y2="444"/><line x1="430" y1="410" x2="464" y2="410"/><line x1="416" y1="377" x2="416" y2="395"/><line x1="416" y1="401" x2="416" y2="419"/><line x1="416" y1="425" x2="416" y2="443"/><line x1="416" y1="386" x2="384" y2="386"/><line x1="384" y1="386" x2="384" y2="362"/><line x1="416" y1="434" x2="384" y2="434"/><line x1="384" y1="434" x2="384" y2="458"/><line x1="416" y1="410" x2="384" y2="410"/><polygon points="411,404 411,416 421,410" fill="#222222" stroke="none"/><circle cx="384" cy="410" r="4" fill="#222222"/>
+<line x1="246" y1="362" x2="246" y2="330"/>
+<line x1="384" y1="362" x2="384" y2="330"/>
+<line x1="246" y1="330" x2="545" y2="330"/>
+<circle cx="384" cy="330" r="4" fill="#222222"/>
+<circle cx="416" cy="330" r="4" fill="#222222"/>
+<circle cx="553" cy="330" r="5" fill="#ffffff"/>
+<line x1="246" y1="458" x2="246" y2="500"/>
+<line x1="384" y1="458" x2="384" y2="500"/>
+<line x1="246" y1="500" x2="384" y2="500"/>
+<line x1="296" y1="500" x2="334" y2="500"/><line x1="303" y1="507" x2="327" y2="507"/><line x1="309" y1="514" x2="321" y2="514"/>
+<line x1="52" y1="190" x2="120" y2="190"/>
+<circle cx="52" cy="190" r="5" fill="#ffffff"/>
+<circle cx="120" cy="190" r="4" fill="#222222"/>
+<line x1="120" y1="190" x2="120" y2="140"/>
+<line x1="120" y1="140" x2="336" y2="140"/>
+<line x1="120" y1="190" x2="120" y2="410"/>
+<line x1="120" y1="410" x2="166" y2="410"/>
+<line x1="52" y1="240" x2="336" y2="240"/>
+<circle cx="52" cy="240" r="5" fill="#ffffff"/>
+<circle cx="180" cy="240" r="4" fill="#222222"/>
+<line x1="180" y1="240" x2="180" y2="545"/>
+<line x1="180" y1="545" x2="464" y2="545"/>
+<line x1="464" y1="545" x2="464" y2="410"/>
+</g><text x="430" y="48" font-size="13" fill="#222222" text-anchor="start">+V_DD</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="194" font-size="13" fill="#222222" text-anchor="end">A</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="244" font-size="13" fill="#222222" text-anchor="end">B</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="561" y="334" font-size="13" fill="#222222" text-anchor="start">X</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="430" y="140" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="430" y="240" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="260" y="410" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="474" y="410" font-size="13" fill="#222222" text-anchor="start">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="24" font-size="12.5" fill="#0b7a5b" text-anchor="middle">p-channel pair in series, n-channel pair in parallel</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="572" font-size="13.5" fill="#1f4e79" font-weight="bold" text-anchor="middle">CMOS NOR:  X = NOT (A + B)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg>

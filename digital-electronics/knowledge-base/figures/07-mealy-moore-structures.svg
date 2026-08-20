@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1010" height="520" viewBox="0 0 1010 520" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="60" y="34" font-size="15" text-anchor="start" fill="#1b4f72">Mealy machine</text>
+  <rect x="140" y="60" width="120" height="86" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="200" y="96" font-size="12" text-anchor="middle" fill="#1a1a1a">Next-state</text>
+  <text x="200" y="114" font-size="12" text-anchor="middle" fill="#1a1a1a">logic F</text>
+  <rect x="350" y="60" width="120" height="86" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="410" y="92" font-size="12" text-anchor="middle" fill="#1a1a1a">State</text>
+  <text x="410" y="110" font-size="12" text-anchor="middle" fill="#1a1a1a">memory</text>
+  <text x="410" y="134" font-size="10" text-anchor="middle" fill="#117a65">clock input</text>
+  <rect x="560" y="60" width="110" height="86" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="615" y="96" font-size="12" text-anchor="middle" fill="#1a1a1a">Output</text>
+  <text x="615" y="114" font-size="12" text-anchor="middle" fill="#1a1a1a">logic G</text>
+  <path d="M50,88 L140,88" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="66" y="80" font-size="11" text-anchor="middle" fill="#1b4f72">inputs</text>
+  <path d="M260,88 L350,88" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="305" y="78" font-size="10" text-anchor="middle" fill="#1b4f72">excitation</text>
+  <path d="M470,88 L560,88" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="515" y="78" font-size="10" text-anchor="middle" fill="#1b4f72">current state</text>
+  <path d="M670,88 L760,88" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="800" y="92" font-size="11" text-anchor="middle" fill="#1b4f72">outputs</text>
+  <path d="M490,88 L490,180 L120,180 L120,122 L140,122" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="490" cy="88" r="3.4" fill="#1a1a1a"/>
+  <path d="M50,210 L410,210 L410,146" stroke="#117a65" stroke-width="1.6" fill="none"/>
+  <text x="70" y="226" font-size="10" text-anchor="middle" fill="#117a65">clock signal</text>
+  <path d="M90,88 L90,46 L600,46 L600,60" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="90" cy="88" r="3.4" fill="#1a1a1a"/>
+  <text x="680" y="180" font-size="11" text-anchor="start" fill="#117a65">Next state = F₁(current state, inputs)</text>
+  <text x="680" y="198" font-size="11" text-anchor="start" fill="#117a65">Output = G₁(current state, inputs)</text>
+  <text x="60" y="294" font-size="15" text-anchor="start" fill="#1b4f72">Moore machine</text>
+  <rect x="140" y="320" width="120" height="86" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="200" y="356" font-size="12" text-anchor="middle" fill="#1a1a1a">Next-state</text>
+  <text x="200" y="374" font-size="12" text-anchor="middle" fill="#1a1a1a">logic F</text>
+  <rect x="350" y="320" width="120" height="86" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="410" y="352" font-size="12" text-anchor="middle" fill="#1a1a1a">State</text>
+  <text x="410" y="370" font-size="12" text-anchor="middle" fill="#1a1a1a">memory</text>
+  <text x="410" y="394" font-size="10" text-anchor="middle" fill="#117a65">clock input</text>
+  <rect x="560" y="320" width="110" height="86" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="615" y="356" font-size="12" text-anchor="middle" fill="#1a1a1a">Output</text>
+  <text x="615" y="374" font-size="12" text-anchor="middle" fill="#1a1a1a">logic G</text>
+  <path d="M50,348 L140,348" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="66" y="340" font-size="11" text-anchor="middle" fill="#1b4f72">inputs</text>
+  <path d="M260,348 L350,348" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="305" y="338" font-size="10" text-anchor="middle" fill="#1b4f72">excitation</text>
+  <path d="M470,348 L560,348" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="515" y="338" font-size="10" text-anchor="middle" fill="#1b4f72">current state</text>
+  <path d="M670,348 L760,348" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="800" y="352" font-size="11" text-anchor="middle" fill="#1b4f72">outputs</text>
+  <path d="M490,348 L490,440 L120,440 L120,382 L140,382" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="490" cy="348" r="3.4" fill="#1a1a1a"/>
+  <path d="M50,470 L410,470 L410,406" stroke="#117a65" stroke-width="1.6" fill="none"/>
+  <text x="70" y="486" font-size="10" text-anchor="middle" fill="#117a65">clock signal</text>
+  <text x="680" y="440" font-size="11" text-anchor="start" fill="#117a65">Next state = F₂(current state, inputs)</text>
+  <text x="680" y="458" font-size="11" text-anchor="start" fill="#117a65">Output = G₂(current state)</text>
+</svg>

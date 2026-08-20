@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="450" viewBox="0 0 920 450" font-family="sans-serif">
+<rect width="920" height="450" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="144" y1="140" x2="196" y2="140"/><line x1="170" y1="140" x2="170" y2="92"/><line x1="158" y1="140" x2="134" y2="170"/><polygon points="132.6,171.8 145.0,165.0 136.4,158.2" fill="#222222" stroke="none"/><line x1="134" y1="170" x2="134" y2="188"/><line x1="182" y1="140" x2="206" y2="170"/><line x1="206" y1="170" x2="206" y2="188"/>
+<line x1="170" y1="46" x2="170" y2="53.0"/><path d="M 170 53.0 l 9 4.8 l -18 7.5 l 18 7.5 l -18 7.5 l 9 4.8"/><line x1="170" y1="85.0" x2="170" y2="92"/>
+<line x1="134" y1="188" x2="134" y2="230"/>
+<line x1="60" y1="230" x2="134" y2="230"/>
+<circle cx="52" cy="230" r="5" fill="#ffffff"/>
+<circle cx="100" cy="230" r="4" fill="#222222"/>
+<line x1="100" y1="230" x2="100" y2="280"/>
+<polygon points="86,312 114,312 100,284" fill="#e9eef4"/><line x1="84" y1="284" x2="116" y2="284"/>
+<line x1="100" y1="316" x2="100" y2="390"/>
+<line x1="206" y1="188" x2="206" y2="180"/>
+<line x1="206" y1="180" x2="260" y2="180"/>
+<line x1="260" y1="154" x2="260" y2="206"/><line x1="260" y1="180" x2="230" y2="180"/><line x1="260" y1="167" x2="284" y2="143"/><line x1="284" y1="143" x2="284" y2="131"/><line x1="260" y1="193" x2="284" y2="217"/><polygon points="286.5,219.5 281.2,206.4 273.4,214.2" fill="#222222" stroke="none"/><line x1="284" y1="217" x2="284" y2="229"/>
+<line x1="284" y1="131" x2="284" y2="110"/>
+<line x1="284" y1="46" x2="284" y2="54.5"/><path d="M 284 54.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="284" y1="101.5" x2="284" y2="110"/>
+<line x1="284" y1="229" x2="284" y2="280"/>
+<circle cx="284" cy="280" r="4" fill="#222222"/>
+<line x1="284" y1="280" x2="284" y2="311.5"/><path d="M 284 311.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="284" y1="358.5" x2="284" y2="390"/>
+<line x1="284" y1="280" x2="360" y2="280"/>
+<line x1="360" y1="254" x2="360" y2="306"/><line x1="360" y1="280" x2="330" y2="280"/><line x1="360" y1="267" x2="384" y2="243"/><line x1="384" y1="243" x2="384" y2="223"/><line x1="360" y1="293" x2="384" y2="317"/><polygon points="386.5,319.5 381.2,306.4 373.4,314.2" fill="#222222" stroke="none"/><line x1="384" y1="317" x2="384" y2="337"/>
+<line x1="384" y1="223" x2="420" y2="223"/>
+<circle cx="428" cy="223" r="5" fill="#ffffff"/>
+<line x1="384" y1="337" x2="384" y2="390"/>
+<line x1="100" y1="390" x2="384" y2="390"/>
+<line x1="221" y1="390" x2="259" y2="390"/><line x1="228" y1="397" x2="252" y2="397"/><line x1="234" y1="404" x2="246" y2="404"/>
+<line x1="170" y1="46" x2="284" y2="46"/>
+<line x1="240" y1="46" x2="240" y2="30"/>
+<circle cx="240" cy="24" r="5" fill="#ffffff"/>
+<circle cx="240" cy="46" r="4" fill="#222222"/>
+</g><text x="252" y="20" font-size="13" fill="#222222" text-anchor="start">+V_CC</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="186" y="96" font-size="13" fill="#222222" text-anchor="start">R_1 = 4 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="96" font-size="13" fill="#222222" text-anchor="start">R_2 = 1.6 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="296" y="346" font-size="13" fill="#222222" text-anchor="start">R_3 = 1.0 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="222" font-size="13" fill="#222222" text-anchor="end">in</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="436" y="227" font-size="13" fill="#222222" text-anchor="start">output</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="214" y="132" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="206" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="402" y="302" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="120" y="306" font-size="13" fill="#222222" text-anchor="start">D_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="240" y="432" font-size="13" fill="#222222" font-weight="bold" text-anchor="middle">(a) open-collector inverter - no internal pull-up</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<rect x="560" y="150" width="120" height="110" fill="none"/>
+<line x1="516" y1="205" x2="560" y2="205"/>
+<circle cx="508" cy="205" r="5" fill="#ffffff"/>
+<line x1="680" y1="205" x2="720" y2="205"/>
+<line x1="720" y1="179" x2="720" y2="231"/><line x1="720" y1="205" x2="690" y2="205"/><line x1="720" y1="192" x2="744" y2="168"/><line x1="744" y1="168" x2="744" y2="152"/><line x1="720" y1="218" x2="744" y2="242"/><polygon points="746.5,244.5 741.2,231.4 733.4,239.2" fill="#222222" stroke="none"/><line x1="744" y1="242" x2="744" y2="258"/>
+<line x1="744" y1="152" x2="744" y2="130"/>
+<circle cx="744" cy="130" r="4" fill="#222222"/>
+<line x1="744" y1="130" x2="850" y2="130"/>
+<circle cx="858" cy="130" r="5" fill="#ffffff"/>
+<line x1="800" y1="60" x2="800" y2="71.5"/><path d="M 800 71.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="800" y1="118.5" x2="800" y2="130"/>
+<circle cx="800" cy="130" r="4" fill="#222222"/>
+<line x1="700" y1="60" x2="800" y2="60"/>
+<line x1="700" y1="60" x2="700" y2="44"/>
+<circle cx="700" cy="38" r="5" fill="#ffffff"/>
+<line x1="744" y1="258" x2="744" y2="340"/>
+<line x1="725" y1="340" x2="763" y2="340"/><line x1="732" y1="347" x2="756" y2="347"/><line x1="738" y1="354" x2="750" y2="354"/>
+</g><text x="690" y="34" font-size="13" fill="#222222" text-anchor="end">+V_CC</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="816" y="88" font-size="12.5" fill="#0b7a5b" text-anchor="start">R (external</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="816" y="104" font-size="12.5" fill="#0b7a5b" text-anchor="start">pull-up)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="500" y="197" font-size="13" fill="#222222" text-anchor="end">in</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="866" y="134" font-size="13" fill="#222222" text-anchor="start">output</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="576" y="210" font-size="13" fill="#222222" text-anchor="start">input stage</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="764" y="230" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="700" y="432" font-size="13" fill="#222222" font-weight="bold" text-anchor="middle">(b) with the external pull-up fitted</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg>

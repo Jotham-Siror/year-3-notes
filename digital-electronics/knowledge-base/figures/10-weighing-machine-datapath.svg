@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="700" viewBox="0 0 1020 700" font-family="sans-serif">
+  <rect width="1020" height="700" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <path d="M84 40 L106.5 40 A21.0 21.0 0 0 1 106.5 82 L84 82 Z" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <path d="M42 52 L84 52" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="36" y="56" font-size="12" text-anchor="end" fill="#0b5c8a">T₀</text>
+  <path d="M42 70 L84 70" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="36" y="74" font-size="12" text-anchor="end" fill="#0b5c8a">S</text>
+  <path d="M134 61 L140 61" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <text x="146" y="52" font-size="11.5" text-anchor="start" fill="#a33b00">T₀·S</text>
+  <rect x="330" y="88" width="300" height="74" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="480.0" y="129.5" font-size="12.5" text-anchor="middle" fill="#111111">right shift register R</text>
+  <path d="M480 30 L480 84" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="480" y="20" font-size="12" text-anchor="middle" fill="#0b5c8a">input data (the binary number)</text>
+  <path d="M200 104 L326 104" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="263" y="98" font-size="11.5" text-anchor="middle" fill="#0b5c8a">shift right = T₂</text>
+  <path d="M200 126 L326 126" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="263" y="120" font-size="11.5" text-anchor="middle" fill="#0b5c8a">serial input = 0</text>
+  <line x1="140" y1="61" x2="140" y2="148" stroke="#111111" stroke-width="1.5"/>
+  <path d="M140 148 L326 148" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="263" y="142" font-size="11.5" text-anchor="middle" fill="#a33b00">load = T₀·S</text>
+  <circle cx="140" cy="148" r="3" fill="#111111"/>
+  <line x1="140" y1="148" x2="140" y2="596" stroke="#111111" stroke-width="1.5"/>
+  <path d="M140 596 L326 596" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="263" y="590" font-size="11.5" text-anchor="middle" fill="#a33b00">load = T₀·S</text>
+  <rect x="360" y="210" width="240" height="54" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="480.0" y="241.5" font-size="12.5" text-anchor="middle" fill="#111111">zero-checking circuit</text>
+  <path d="M480 162 L480 206" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="600" y1="237" x2="770" y2="237" stroke="#111111" stroke-width="1.5"/>
+  <text x="690" y="229" font-size="11.5" text-anchor="middle" fill="#0b5c8a">Z = 1 if R = 0</text>
+  <line x1="770" y1="237" x2="770" y2="392" stroke="#111111" stroke-width="1.5"/>
+  <path d="M770 392 L656 392" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="760" y="88" width="150" height="58" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="835.0" y="121.5" font-size="12.5" text-anchor="middle" fill="#111111">D flip-flop  F</text>
+  <path d="M630 117 L756 117" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="693" y="109" font-size="11.5" text-anchor="middle" fill="#666666">LSB out of R</text>
+  <path d="M835 40 L835 84" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="835" y="30" font-size="12" text-anchor="middle" fill="#666666">clock</text>
+  <line x1="910" y1="117" x2="970" y2="117" stroke="#111111" stroke-width="1.5"/>
+  <line x1="970" y1="117" x2="970" y2="424" stroke="#111111" stroke-width="1.5"/>
+  <path d="M970 424 L656 424" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="930" y="110" font-size="12" text-anchor="start" fill="#0b5c8a">F</text>
+  <rect x="330" y="340" width="320" height="150" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="490.0" y="419.5" font-size="12.5" text-anchor="middle" fill="#111111">control</text>
+  <text x="348" y="376" font-size="12.5" text-anchor="start" fill="#0b5c8a">T₀</text>
+  <path d="M326 372 L276 372" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="348" y="408" font-size="12.5" text-anchor="start" fill="#0b5c8a">T₁</text>
+  <path d="M326 404 L276 404" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="348" y="440" font-size="12.5" text-anchor="start" fill="#0b5c8a">T₂</text>
+  <path d="M326 436 L276 436" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="348" y="472" font-size="12.5" text-anchor="start" fill="#0b5c8a">T₃</text>
+  <path d="M326 468 L276 468" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="632" y="364" font-size="12.5" text-anchor="end" fill="#0b5c8a">S</text>
+  <text x="632" y="396" font-size="12.5" text-anchor="end" fill="#0b5c8a">Z</text>
+  <text x="632" y="428" font-size="12.5" text-anchor="end" fill="#0b5c8a">F</text>
+  <path d="M880 360 L656 360" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="888" y="364" font-size="12" text-anchor="start" fill="#0b5c8a">start</text>
+  <text x="430" y="516" font-size="11.5" text-anchor="middle" fill="#666666">T₃ drives nothing — state S₃ only tests F</text>
+  <rect x="330" y="560" width="260" height="64" rx="3" fill="none" stroke="#111111" stroke-width="1.6"/>
+  <text x="460.0" y="596.5" font-size="12.5" text-anchor="middle" fill="#111111">counter W</text>
+  <path d="M200 578 L326 578" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="263" y="572" font-size="11.5" text-anchor="middle" fill="#0b5c8a">increment = T₁</text>
+  <path d="M700 600 L596 600" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="708" y="604" font-size="12" text-anchor="start" fill="#0b5c8a">all 1s</text>
+  <path d="M460 624 L460 656" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="460" y="676" font-size="12" text-anchor="middle" fill="#0b5c8a">count = weight of the input word (number of 1s)</text>
+</svg>

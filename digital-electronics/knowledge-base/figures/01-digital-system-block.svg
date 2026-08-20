@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="330" viewBox="0 0 640 330" font-family="sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#222"/>
+    </marker>
+  </defs>
+  <rect width="640" height="330" fill="#ffffff"/>
+
+  <!-- processing block -->
+  <rect x="225" y="45" width="200" height="140" fill="none" stroke="#222" stroke-width="2"/>
+  <text x="325" y="95"  font-size="17" text-anchor="middle" fill="#222">Discrete</text>
+  <text x="325" y="119" font-size="17" text-anchor="middle" fill="#222">Information</text>
+  <text x="325" y="143" font-size="17" text-anchor="middle" fill="#222">Processing</text>
+  <text x="325" y="167" font-size="17" text-anchor="middle" fill="#222">System</text>
+
+  <!-- inputs -->
+  <text x="20" y="102" font-size="17" fill="#1f6f8b">Discrete</text>
+  <text x="20" y="126" font-size="17" fill="#1f6f8b">Inputs</text>
+  <line x1="120" y1="115" x2="220" y2="115" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+
+  <!-- outputs -->
+  <line x1="425" y1="115" x2="520" y2="115" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="530" y="102" font-size="17" fill="#1f6f8b">Discrete</text>
+  <text x="530" y="126" font-size="17" fill="#1f6f8b">Outputs</text>
+
+  <!-- state block -->
+  <rect x="240" y="240" width="170" height="60" fill="none" stroke="#222" stroke-width="2"/>
+  <text x="325" y="277" font-size="17" text-anchor="middle" fill="#222">System State</text>
+
+  <!-- state write / read -->
+  <line x1="285" y1="185" x2="285" y2="236" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="365" y1="240" x2="365" y2="189" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+</svg>

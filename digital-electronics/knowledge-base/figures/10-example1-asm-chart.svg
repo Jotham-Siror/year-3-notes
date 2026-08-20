@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700" font-family="sans-serif">
+  <rect width="900" height="700" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <path d="M470 40 L470 70" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="380" y="70" width="180" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470.0" y="96.86" font-size="13.5" text-anchor="middle" fill="#111111">initial state</text>
+  <text x="372" y="96.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">T₀</text>
+  <path d="M470 114 L470 146" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M470 149 L516 174 L470 199 L424 174 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470" y="178.68" font-size="13" text-anchor="middle" fill="#111111">S</text>
+  <text x="396" y="166" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="488" y="218" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M424 174 L140 174 L140 40 L466 40" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M470 199 L470 232" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="390.0" y="232.0" width="160" height="52" rx="26.0" ry="26.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470" y="254.68" font-size="13" text-anchor="middle" fill="#111111">A ← 0</text>
+  <text x="470" y="270.68" font-size="13" text-anchor="middle" fill="#111111">F ← 0</text>
+  <path d="M470 284 L470 318" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="380" y="320" width="180" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470.0" y="346.86" font-size="13.5" text-anchor="middle" fill="#111111">A ← A + 1</text>
+  <text x="372" y="346.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">T₁</text>
+  <path d="M470 364 L470 396" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M470 399 L516 424 L470 449 L424 424 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470" y="428.68" font-size="13" text-anchor="middle" fill="#111111">A₃</text>
+  <text x="396" y="416" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="536" y="416" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M424 424 L280 424 L280 458" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="220.0" y="463.0" width="120" height="42" rx="21.0" ry="21.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="280" y="488.68" font-size="13" text-anchor="middle" fill="#111111">E ← 0</text>
+  <path d="M516 424 L660 424 L660 458" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="600.0" y="463.0" width="120" height="42" rx="21.0" ry="21.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="660" y="488.68" font-size="13" text-anchor="middle" fill="#111111">E ← 1</text>
+  <path d="M280 505 L280 560 L180 560 L180 296 L376 296" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M660 505 L660 540" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M660 541 L706 566 L660 591 L614 566 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="660" y="570.68" font-size="13" text-anchor="middle" fill="#111111">A₄</text>
+  <text x="734" y="558" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="678" y="610" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M706 566 L710 566 L710 296 L566 296" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M660 591 L660 620" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="570" y="622" width="180" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="660.0" y="648.86" font-size="13.5" text-anchor="middle" fill="#111111">F ← 1</text>
+  <text x="562" y="648.0" font-size="12.5" text-anchor="end" fill="#0b5c8a">T₂</text>
+  <path d="M660 666 L660 684 L60 684 L60 40 L464 40" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <text x="450" y="60" font-size="12" text-anchor="middle" fill="#111111"></text>
+</svg>

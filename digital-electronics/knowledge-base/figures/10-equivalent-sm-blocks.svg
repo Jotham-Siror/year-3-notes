@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520" font-family="sans-serif">
+  <rect width="980" height="520" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="240" y="30" font-size="13" text-anchor="middle" fill="#111111">(a) X1 tested once, Z2 on the X1 = 0 branch</text>
+  <text x="730" y="30" font-size="13" text-anchor="middle" fill="#111111">(b) X1 tested inside both X2 branches</text>
+  <path d="M240 50 L240 72" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="180" y="72" width="120" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="240.0" y="98.86" font-size="13.5" text-anchor="middle" fill="#111111">S1 / Z1</text>
+  <path d="M240 116 L240 142" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M240 144 L288 170 L240 196 L192 170 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="240" y="174.68" font-size="13" text-anchor="middle" fill="#111111">X1</text>
+  <text x="160" y="162" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="322" y="162" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M192 170 L120 170 L120 206" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="84.0" y="212.0" width="72" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="120" y="236.68" font-size="13" text-anchor="middle" fill="#111111">Z2</text>
+  <path d="M120 252 L120 296 L238 296" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M288 170 L360 170 L360 296 L242 296" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <path d="M240 296 L240 322" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M240 324 L288 350 L240 376 L192 350 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="240" y="354.68" font-size="13" text-anchor="middle" fill="#111111">X2</text>
+  <text x="160" y="342" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="322" y="342" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M192 350 L130 350 L130 404" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M288 350 L350 350 L350 404" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="75" y="404" width="110" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="130.0" y="429.86" font-size="13.5" text-anchor="middle" fill="#111111">S2 /</text>
+  <rect x="295" y="404" width="110" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="350.0" y="429.86" font-size="13.5" text-anchor="middle" fill="#111111">S3 /</text>
+  <path d="M730 50 L730 72" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="670" y="72" width="120" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="730.0" y="98.86" font-size="13.5" text-anchor="middle" fill="#111111">S1 / Z1</text>
+  <path d="M730 116 L730 142" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M730 144 L778 170 L730 196 L682 170 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="730" y="174.68" font-size="13" text-anchor="middle" fill="#111111">X2</text>
+  <text x="650" y="162" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="812" y="162" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M682 170 L620 170 L620 204" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M778 170 L845 170 L845 204" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M620 205 L664 230 L620 255 L576 230 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620" y="234.68" font-size="13" text-anchor="middle" fill="#111111">X1</text>
+  <path d="M845 205 L889 230 L845 255 L801 230 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="845" y="234.68" font-size="13" text-anchor="middle" fill="#111111">X1</text>
+  <text x="556" y="222" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <text x="910" y="222" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <text x="640" y="268" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="866" y="268" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <path d="M620 255 L620 290" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M845 255 L845 290" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="584.0" y="296.0" width="72" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620" y="320.68" font-size="13" text-anchor="middle" fill="#111111">Z2</text>
+  <rect x="809.0" y="296.0" width="72" height="40" rx="20.0" ry="20.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="845" y="320.68" font-size="13" text-anchor="middle" fill="#111111">Z2</text>
+  <path d="M576 230 L540 230 L540 368 L618 368" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M889 230 L925 230 L925 368 L847 368" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M620 336 L620 404" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M845 336 L845 404" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="565" y="404" width="110" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620.0" y="429.86" font-size="13.5" text-anchor="middle" fill="#111111">S2 /</text>
+  <rect x="790" y="404" width="110" height="42" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="845.0" y="429.86" font-size="13.5" text-anchor="middle" fill="#111111">S3 /</text>
+  <text x="490" y="486" font-size="12" text-anchor="middle" fill="#666666">Both blocks give the same next state and the same output set for every (X1, X2) — verified exhaustively.</text>
+</svg>

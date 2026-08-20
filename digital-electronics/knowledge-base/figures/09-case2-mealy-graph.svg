@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="480" viewBox="0 0 1140 480" font-family="sans-serif">
+<rect width="1140" height="480" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="570.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Case II — Mealy state graph for the overlapping 101 detector (no reset)</text>
+<path d="M 194.3 194.4 Q 210.0 148.2 225.7 194.4" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="210.0" y="151.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 665.6 204.3 Q 711.8 220.0 665.6 235.7" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="719.0" y="220.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 240.0 220.0 L 610.0 220.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="425.0" y="208.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 612.2 231.2 Q 509.9 283.0 440.9 374.6" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="500.2" y="284.9" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 452.8 388.8 Q 555.1 337.0 624.1 245.4" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="566.8" y="341.1" text-anchor="middle" font-size="14" fill="#1f6feb"><tspan fill="#c0392b">1/1</tspan></text>
+<path d="M 402.0 380.7 L 233.0 239.3" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="313.5" y="330.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<circle cx="210" cy="220" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="210" y="226" text-anchor="middle" font-size="17" fill="#111111">S₀</text>
+<circle cx="640" cy="220" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="640" y="226" text-anchor="middle" font-size="17" fill="#111111">S₁</text>
+<circle cx="425" cy="400" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="425" y="406" text-anchor="middle" font-size="17" fill="#111111">S₂</text>
+<path d="M 136 220 L 177 220" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="132" y="225" text-anchor="end" font-size="13" fill="#777777">reset</text>
+<text x="770" y="175" font-size="13" fill="#111111">S₀ : initial / no useful history</text>
+<text x="770" y="201" font-size="13" fill="#111111">S₁ : sequence ends in 1</text>
+<text x="770" y="227" font-size="13" fill="#111111">S₂ : sequence ends in 10</text>
+</svg>

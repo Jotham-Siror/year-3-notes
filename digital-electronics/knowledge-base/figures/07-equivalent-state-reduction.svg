@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="800" viewBox="0 0 980 800" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="490.0" y="26" font-size="13" text-anchor="middle" fill="#1a1a1a">State reduction by equivalence   (edge label = x / output;  S0 is a Moore state with output 0)</text>
+  <text x="230" y="68" font-size="13" text-anchor="middle" fill="#1b4f72">1 · as given (slide 35)</text>
+  <circle cx="130" cy="160" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <circle cx="130" cy="160" r="23.5" fill="none" stroke="#1b4f72" stroke-width="1.2"/>
+  <text x="130" y="159" font-size="13" text-anchor="middle" fill="#1a1a1a">S0</text>
+  <text x="130" y="173" font-size="11" text-anchor="middle" fill="#117a65">y = 0</text>
+  <circle cx="370" cy="160" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="370" y="165" font-size="13" text-anchor="middle" fill="#1a1a1a">S1</text>
+  <circle cx="370" cy="300" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="370" y="305" font-size="13" text-anchor="middle" fill="#1a1a1a">S3</text>
+  <circle cx="130" cy="300" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="130" y="305" font-size="13" text-anchor="middle" fill="#1a1a1a">S2</text>
+  <path d="M158.0,148.0 Q250.0,120.0 342.0,148.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M342.00,148.00 L332.29,149.00 L334.49,141.76 Z" fill="#1b4f72" stroke="none"/>
+  <text x="250.0" y="106.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M342.0,172.0 Q250.0,200.0 158.0,172.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M158.00,172.00 L167.71,171.00 L165.51,178.24 Z" fill="#1b4f72" stroke="none"/>
+  <text x="250.0" y="216.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M370.0,188.0 Q370.0,230.0 370.0,272.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M370.00,272.00 L366.22,263.00 L373.78,263.00 Z" fill="#1b4f72" stroke="none"/>
+  <text x="396.0" y="230.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M345.8,285.9 Q250.0,230.0 154.2,174.1" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M154.19,174.11 L163.86,175.38 L160.06,181.91 Z" fill="#1b4f72" stroke="none"/>
+  <text x="290.0" y="256.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M342.0,300.0 Q250.0,300.0 158.0,300.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M158.00,300.00 L167.00,296.22 L167.00,303.78 Z" fill="#1b4f72" stroke="none"/>
+  <text x="250.0" y="322.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M139.0,272.0 Q160.0,230.0 139.0,188.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M139.00,188.00 L146.41,194.36 L139.64,197.74 Z" fill="#1b4f72" stroke="none"/>
+  <text x="182.0" y="230.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M104.4,171.4 C69.2,213.2 69.2,106.8 104.4,148.6" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M104.42,148.61 L95.73,144.16 L101.51,139.29 Z" fill="#1b4f72" stroke="none"/>
+  <text x="41.099999999999994" y="168.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M104.4,311.4 C69.2,353.2 69.2,246.8 104.4,288.6" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M104.42,288.61 L95.73,284.16 L101.51,279.29 Z" fill="#1b4f72" stroke="none"/>
+  <text x="33.099999999999994" y="308.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <text x="230" y="380" font-size="10" text-anchor="middle" fill="#117a65">S2 and S3: same outputs, same next states → equivalent</text>
+  <text x="710" y="68" font-size="13" text-anchor="middle" fill="#1b4f72">2 · S3 merged into S2 (slide 36)</text>
+  <circle cx="610" cy="160" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <circle cx="610" cy="160" r="23.5" fill="none" stroke="#1b4f72" stroke-width="1.2"/>
+  <text x="610" y="159" font-size="13" text-anchor="middle" fill="#1a1a1a">S0</text>
+  <text x="610" y="173" font-size="11" text-anchor="middle" fill="#117a65">y = 0</text>
+  <circle cx="850" cy="160" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="850" y="165" font-size="13" text-anchor="middle" fill="#1a1a1a">S1</text>
+  <circle cx="850" cy="300" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="850" y="305" font-size="13" text-anchor="middle" fill="#1a1a1a">S2</text>
+  <path d="M638.0,148.0 Q730.0,120.0 822.0,148.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M822.00,148.00 L812.29,149.00 L814.49,141.76 Z" fill="#1b4f72" stroke="none"/>
+  <text x="730.0" y="106.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M822.0,172.0 Q730.0,200.0 638.0,172.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M638.00,172.00 L647.71,171.00 L645.51,178.24 Z" fill="#1b4f72" stroke="none"/>
+  <text x="730.0" y="216.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M850.0,188.0 Q850.0,230.0 850.0,272.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M850.00,272.00 L846.22,263.00 L853.78,263.00 Z" fill="#1b4f72" stroke="none"/>
+  <text x="876.0" y="230.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M825.8,285.9 Q730.0,230.0 634.2,174.1" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M634.19,174.11 L643.86,175.38 L640.06,181.91 Z" fill="#1b4f72" stroke="none"/>
+  <text x="770.0" y="256.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M584.4,171.4 C549.2,213.2 549.2,106.8 584.4,148.6" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M584.42,148.61 L575.73,144.16 L581.51,139.29 Z" fill="#1b4f72" stroke="none"/>
+  <text x="521.1" y="168.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M875.6,288.6 C910.8,246.8 910.8,353.2 875.6,311.4" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M875.58,311.39 L884.27,315.84 L878.49,320.71 Z" fill="#1b4f72" stroke="none"/>
+  <text x="948.9" y="308.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <text x="710" y="380" font-size="10" text-anchor="middle" fill="#117a65">now S1 and S2 pass the same test → equivalent</text>
+  <text x="470" y="468" font-size="13" text-anchor="middle" fill="#1b4f72">3 · S2 merged into S1 — minimal machine</text>
+  <circle cx="370" cy="560" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <circle cx="370" cy="560" r="23.5" fill="none" stroke="#1b4f72" stroke-width="1.2"/>
+  <text x="370" y="559" font-size="13" text-anchor="middle" fill="#1a1a1a">S0</text>
+  <text x="370" y="573" font-size="11" text-anchor="middle" fill="#117a65">y = 0</text>
+  <circle cx="610" cy="560" r="28" fill="#ffffff" stroke="#1b4f72" stroke-width="2.0"/>
+  <text x="610" y="565" font-size="13" text-anchor="middle" fill="#1a1a1a">S1</text>
+  <path d="M398.0,548.0 Q490.0,520.0 582.0,548.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M582.00,548.00 L572.29,549.00 L574.49,541.76 Z" fill="#1b4f72" stroke="none"/>
+  <text x="490.0" y="506.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <path d="M582.0,572.0 Q490.0,600.0 398.0,572.0" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M398.00,572.00 L407.71,571.00 L405.51,578.24 Z" fill="#1b4f72" stroke="none"/>
+  <text x="490.0" y="616.0" font-size="12" text-anchor="middle" fill="#117a65">0 / 1</text>
+  <path d="M344.4,571.4 C309.2,613.2 309.2,506.8 344.4,548.6" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M344.42,548.61 L335.73,544.16 L341.51,539.29 Z" fill="#1b4f72" stroke="none"/>
+  <text x="281.1" y="568.0" font-size="12" text-anchor="middle" fill="#117a65">0</text>
+  <path d="M635.6,548.6 C670.8,506.8 670.8,613.2 635.6,571.4" stroke="#1b4f72" stroke-width="1.7" fill="none"/>
+  <path d="M635.58,571.39 L644.27,575.84 L638.49,580.71 Z" fill="#1b4f72" stroke="none"/>
+  <text x="706.9" y="568.0" font-size="12" text-anchor="middle" fill="#117a65">1 / 0</text>
+  <text x="470" y="780" font-size="10" text-anchor="middle" fill="#117a65">two states remain; equivalent to the original on every input string</text>
+</svg>

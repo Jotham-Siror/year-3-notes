@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" font-family="sans-serif">
+<rect width="900" height="600" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="450.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Reduced 7-state Mealy graph for the 0101 / 1001 recogniser</text>
+<path d="M 424.5 105.8 L 265.5 204.2" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="321.0" y="151.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 475.5 105.8 L 634.5 204.2" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="579.0" y="151.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 240.0 250.0 L 240.0 320.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="214.0" y="285.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 660.0 250.0 L 660.0 320.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="686.0" y="285.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 268.7 228.9 L 631.3 341.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="315.0" y="275.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 631.3 228.9 L 268.7 341.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="585.0" y="275.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 240.0 380.0 L 240.0 450.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="196.0" y="415.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0, 1/0</text>
+<path d="M 660.0 380.0 L 660.0 450.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="684.0" y="415.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 631.3 358.9 L 268.7 471.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="510.0" y="433.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 210 480 L 100.0 480.0 Q 90 480 90.0 470.0 L 90.0 100.0 Q 90 90 100.0 90.0 L 417 90" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="90" y="300" text-anchor="middle" font-size="14" fill="#1f6feb">0/0, 1/0</text>
+<path d="M 690 480 L 810.0 480.0 Q 820 480 820.0 470.0 L 820.0 100.0 Q 820 90 810.0 90.0 L 483 90" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="820" y="300" text-anchor="middle" font-size="14" fill="#1f6feb">0/0, <tspan fill="#c0392b">1/1</tspan></text>
+<circle cx="450" cy="90" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="450" y="96" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">A</tspan></text>
+<circle cx="240" cy="220" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="240" y="226" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">B</tspan></text>
+<circle cx="660" cy="220" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="660" y="226" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">C</tspan></text>
+<circle cx="240" cy="350" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="240" y="356" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">D</tspan></text>
+<circle cx="660" cy="350" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="660" y="356" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">E</tspan></text>
+<circle cx="240" cy="480" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="240" y="486" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">H</tspan></text>
+<circle cx="660" cy="480" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="660" y="486" text-anchor="middle" font-size="17" fill="#111111"><tspan font-style="italic">J</tspan></text>
+<path d="M 366 50 L 417 90" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="362" y="55" text-anchor="end" font-size="13" fill="#777777">reset</text>
+<text x="24" y="584" font-size="13" fill="#777777">15 states reduce to 7:  {D,G}→D,  {E,F}→E,  {H,I,K,M,N,P}→H,  {J,L}→J.</text>
+</svg>

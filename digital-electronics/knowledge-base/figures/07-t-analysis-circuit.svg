@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="500" viewBox="0 0 830 500" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="415.0" y="26" font-size="14" text-anchor="middle" fill="#1a1a1a">Analysis with T flip-flops:  T_A = B x,  T_B = x,  y = A B</text>
+  <path d="M280,90 L304.2,90 A22.0,22.0 0 0 1 304.2,134 L280,134 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <rect x="470" y="72" width="92" height="130" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="483" y="119.33333333333334" font-size="13" text-anchor="start" fill="#1a1a1a" font-style="italic">T</text>
+  <path d="M470,160.2 L483,168.2 L470,176.2" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="488" y="172.2" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">Clk</text>
+  <text x="551" y="141.0" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">A</text>
+  <circle cx="516.0" cy="207" r="4.5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.6"/>
+  <text x="526.0" y="196" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">R</text>
+  <rect x="470" y="266" width="92" height="130" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="483" y="313.3333333333333" font-size="13" text-anchor="start" fill="#1a1a1a" font-style="italic">T</text>
+  <path d="M470,354.2 L483,362.2 L470,370.2" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="488" y="366.2" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">Clk</text>
+  <text x="551" y="335.0" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">B</text>
+  <circle cx="516.0" cy="401" r="4.5" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.6"/>
+  <text x="526.0" y="390" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">R</text>
+  <path d="M640,150 L664.2,150 A22.0,22.0 0 0 1 664.2,194 L640,194 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="44" y="110" font-size="15" text-anchor="end" fill="#1a1a1a" font-style="italic">x</text>
+  <path d="M54,107 L120,107" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M120,107 L120,309.3333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="120" cy="119.33333333333333" r="3.4" fill="#1a1a1a"/>
+  <path d="M120,119.33333333333333 L280,119.33333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M120,309.3333333333333 L470,309.3333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M326.2,112.0 L470,115.33333333333334" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="408" y="106.33333333333334" font-size="10" text-anchor="middle" fill="#117a65">T_A = B x</text>
+  <text x="408" y="300.3333333333333" font-size="10" text-anchor="middle" fill="#117a65">T_B = x</text>
+  <path d="M562,115 L600,115" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="600" cy="115" r="3.4" fill="#1a1a1a"/>
+  <path d="M600,115 L600,164.66666666666666 L640,164.66666666666666" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M600,115 L770,115" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="794" y="119" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">A</text>
+  <path d="M562,309 L620,309" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="620" cy="309" r="3.4" fill="#1a1a1a"/>
+  <path d="M620,309 L620,179.33333333333334 L640,179.33333333333334" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M620,309 L770,309" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="794" y="313" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">B</text>
+  <path d="M620,309 L620,432 L90,432 L90,104.66666666666667 L280,104.66666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M686.2,172.0 L770,172" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="794" y="176" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">y</text>
+  <path d="M300,478 L424,478 L424,168" stroke="#117a65" stroke-width="1.6" fill="none"/>
+  <circle cx="424" cy="362" r="3.4" fill="#117a65"/>
+  <path d="M424,362 L470,362" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M424,168 L470,168" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="286" y="482" font-size="12" text-anchor="end" fill="#117a65">Clock</text>
+  <path d="M300,456 L516,456" stroke="#117a65" stroke-width="1.6" fill="none"/>
+  <circle cx="516" cy="456" r="3.4" fill="#117a65"/>
+  <path d="M516,456 L516,406" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M516,456 L716,456 L716,232 L516,232 L516,213" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="286" y="460" font-size="12" text-anchor="end" fill="#117a65">reset</text>
+</svg>

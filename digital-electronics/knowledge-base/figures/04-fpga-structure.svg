@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="470" viewBox="0 0 820 470" font-family="sans-serif">
+<rect width="820" height="470" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#222222"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a5fb4"/></marker></defs>
+<text x="410" y="26" font-size="14" text-anchor="middle" fill="#222222">FPGA: array of configurable logic blocks in programmable interconnect</text>
+<rect x="70" y="115" width="640" height="10" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="70" y="215" width="640" height="10" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="70" y="315" width="640" height="10" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="185" y="60" width="10" height="330" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="295" y="60" width="10" height="330" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="405" y="60" width="10" height="330" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="515" y="60" width="10" height="330" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<text x="620" y="404" font-size="11" text-anchor="middle" fill="#1a5fb4">programmable interconnect</text>
+<line x1="560" y1="398" x2="545" y2="330" stroke="#1a5fb4" stroke-width="1.2"/>
+<rect x="211" y="146" width="68" height="48" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="245" y="175" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="321" y="146" width="68" height="48" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="355" y="175" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="431" y="146" width="68" height="48" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="465" y="175" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="211" y="246" width="68" height="48" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="245" y="275" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="321" y="246" width="68" height="48" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="355" y="275" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="431" y="246" width="68" height="48" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="465" y="275" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<text x="575" y="170" font-size="13" text-anchor="middle" fill="#222222">&#183; &#183; &#183;</text>
+<text x="575" y="270" font-size="13" text-anchor="middle" fill="#222222">&#183; &#183; &#183;</text>
+<text x="245" y="360" font-size="16" text-anchor="middle" fill="#222222">&#183;</text>
+<text x="355" y="360" font-size="16" text-anchor="middle" fill="#222222">&#183;</text>
+<text x="465" y="360" font-size="16" text-anchor="middle" fill="#222222">&#183;</text>
+<rect x="160" y="62" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="190" y="84" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="160" y="354" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="190" y="376" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="270" y="62" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="300" y="84" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="270" y="354" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="300" y="376" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="380" y="62" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="410" y="84" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="380" y="354" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="410" y="376" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="490" y="62" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="520" y="84" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="490" y="354" width="60" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="520" y="376" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="70" y="103" width="52" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="96" y="124" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="658" y="103" width="52" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="684" y="124" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="70" y="203" width="52" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="96" y="224" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="658" y="203" width="52" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="684" y="224" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="70" y="303" width="52" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="96" y="324" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<rect x="658" y="303" width="52" height="34" rx="0" fill="none" stroke="#1e7a4d" stroke-width="1.6"/>
+<text x="684" y="324" font-size="12" text-anchor="middle" fill="#222222">I/O</text>
+<text x="410" y="432" font-size="12" text-anchor="middle" fill="#222222">A CLB (logic array block) holds look-up tables, multiplexers, gates and flip-flops.</text>
+<text x="410" y="452" font-size="12" text-anchor="middle" fill="#222222">A look-up table is a truth table held in SRAM, so the block&#8217;s combinational function is set by loading memory.</text>
+
+</svg>

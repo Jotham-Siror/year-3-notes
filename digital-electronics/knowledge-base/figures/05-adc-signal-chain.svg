@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" font-family="sans-serif">
+  <rect width="880" height="250" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-width="1.6">
+    <rect x="120" y="60" width="120" height="60" rx="4"/>
+    <rect x="290" y="60" width="120" height="60" rx="4"/>
+    <rect x="460" y="60" width="120" height="60" rx="4"/>
+    <rect x="630" y="60" width="120" height="60" rx="4"/>
+  </g>
+  <g stroke="#111111" stroke-width="1.6" fill="none" marker-end="url(#a5)">
+    <path d="M30 90 H118"/>
+    <path d="M240 90 H288"/>
+    <path d="M410 90 H458"/>
+    <path d="M580 90 H628"/>
+    <path d="M750 90 H845"/>
+  </g>
+  <defs>
+    <marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 z" fill="#111111"/>
+    </marker>
+  </defs>
+  <g font-size="14" fill="#111111" text-anchor="middle">
+    <text x="180" y="85">Anti-aliasing</text><text x="180" y="103">low-pass filter</text>
+    <text x="350" y="85">Sample</text><text x="350" y="103">and hold</text>
+    <text x="520" y="85">Quantiser</text><text x="520" y="103">(L levels)</text>
+    <text x="690" y="85">Encoder</text>
+    <text x="66" y="80">analogue</text><text x="66" y="98">input</text>
+    <text x="812" y="80">n-bit</text><text x="812" y="98">code</text>
+  </g>
+  <g font-size="12.5" fill="#1a5fb4" text-anchor="middle">
+    <text x="180" y="145">passes only</text>
+    <text x="180" y="161">f below the cut-off fc,</text>
+    <text x="180" y="177">with fc &lt; fs/2</text>
+    <text x="350" y="145">freezes each</text>
+    <text x="350" y="161">sample for the</text>
+    <text x="350" y="177">conversion time</text>
+    <text x="520" y="145">rounds to the</text>
+    <text x="520" y="161">nearest of</text>
+    <text x="520" y="177">L = 2ⁿ levels</text>
+    <text x="690" y="145">gives each level</text>
+    <text x="690" y="161">its binary code</text>
+  </g>
+  <g font-size="13" fill="#a33b00" text-anchor="middle">
+    <text x="265" y="42">SAMPLING</text>
+    <text x="520" y="42">QUANTISATION</text>
+    <text x="690" y="42">CODING</text>
+  </g>
+  <g font-size="12" fill="#555555" text-anchor="middle">
+    <text x="440" y="220">continuous in time and amplitude  |  discrete in time  |  discrete in time and amplitude</text>
+  </g>
+</svg>

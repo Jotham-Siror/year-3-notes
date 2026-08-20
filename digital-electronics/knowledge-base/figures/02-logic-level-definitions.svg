@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="420" viewBox="0 0 820 420" font-family="sans-serif">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+    <!-- left panel: voltage transfer characteristic -->
+    <line x1="80" y1="350" x2="400" y2="350"/>
+    <line x1="80" y1="350" x2="80" y2="45"/>
+    <path d="M 84 82 L 150 92 C 176 99 184 148 198 196 C 212 244 220 296 246 304 L 392 320" stroke="#1f4e79" stroke-width="2.4"/>
+  </g>
+  <g stroke="#222222" stroke-width="1" stroke-dasharray="4 3" fill="none">
+    <line x1="80" y1="92" x2="150" y2="92"/>
+    <line x1="150" y1="92" x2="150" y2="350"/>
+    <line x1="80" y1="304" x2="246" y2="304"/>
+    <line x1="246" y1="304" x2="246" y2="350"/>
+    <line x1="80" y1="78" x2="110" y2="78"/>
+    <line x1="80" y1="318" x2="330" y2="318"/>
+    <line x1="330" y1="318" x2="330" y2="350"/>
+    <line x1="110" y1="78" x2="110" y2="350"/>
+  </g>
+  <g font-size="13" fill="#222222">
+    <text x="60" y="40">v_O</text>
+    <text x="404" y="355">v_I</text>
+    <text x="34" y="96">V_OH</text>
+    <text x="44" y="82">V_H</text>
+    <text x="36" y="308">V_OL</text>
+    <text x="46" y="322">V_L</text>
+    <text x="100" y="368">V_L</text>
+    <text x="138" y="368">V_IL</text>
+    <text x="234" y="368">V_IH</text>
+    <text x="320" y="368">V_H</text>
+    <text x="200" y="140" fill="#1f4e79">slope = -1</text>
+    <text x="250" y="270" fill="#1f4e79">slope = -1</text>
+    <text x="212" y="188" fill="#0b7a5b">high-gain</text>
+    <text x="212" y="204" fill="#0b7a5b">transition</text>
+    <text x="120" y="396" font-weight="bold">(a) voltage transfer characteristic</text>
+  </g>
+  <!-- right panel: level bands -->
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+    <rect x="520" y="60" width="90" height="290"/>
+    <rect x="680" y="60" width="90" height="290"/>
+    <line x1="520" y1="120" x2="610" y2="120"/>
+    <line x1="520" y1="290" x2="610" y2="290"/>
+    <line x1="680" y1="150" x2="770" y2="150"/>
+    <line x1="680" y1="250" x2="770" y2="250"/>
+  </g>
+  <g fill="#e9eef4" stroke="none">
+    <rect x="521" y="121" width="88" height="168"/>
+    <rect x="681" y="151" width="88" height="98"/>
+  </g>
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+    <rect x="520" y="60" width="90" height="290"/>
+    <rect x="680" y="60" width="90" height="290"/>
+    <line x1="520" y1="120" x2="610" y2="120"/>
+    <line x1="520" y1="290" x2="610" y2="290"/>
+    <line x1="680" y1="150" x2="770" y2="150"/>
+    <line x1="680" y1="250" x2="770" y2="250"/>
+  </g>
+  <g font-size="12.5" fill="#222222">
+    <text x="565" y="98" text-anchor="middle">logic 1</text>
+    <text x="565" y="212" fill="#8a4b00" text-anchor="middle">not used</text>
+    <text x="565" y="326" text-anchor="middle">logic 0</text>
+    <text x="725" y="112" text-anchor="middle">logic 1</text>
+    <text x="725" y="212" fill="#8a4b00" text-anchor="middle">undefined</text>
+    <text x="725" y="310" text-anchor="middle">logic 0</text>
+    <text x="482" y="64">V_+</text>
+    <text x="478" y="124">V_OH</text>
+    <text x="478" y="294">V_OL</text>
+    <text x="486" y="354">V_-</text>
+    <text x="776" y="154">V_IH</text>
+    <text x="776" y="254">V_IL</text>
+    <text x="524" y="46" font-weight="bold">output</text>
+    <text x="686" y="46" font-weight="bold">input</text>
+  </g>
+  <g stroke="#0b7a5b" stroke-width="1.8" fill="none">
+    <line x1="645" y1="120" x2="645" y2="150"/>
+    <line x1="645" y1="250" x2="645" y2="290"/>
+  </g>
+  <g font-size="12.5" fill="#0b7a5b">
+    <text x="645" y="108" text-anchor="middle">NM_H</text>
+    <text x="645" y="316" text-anchor="middle">NM_L</text>
+  </g>
+  <text x="530" y="396" font-size="13" font-weight="bold" fill="#222222">(b) level bands and noise margins</text>
+</svg>

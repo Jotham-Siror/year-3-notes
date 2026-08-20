@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="540" viewBox="0 0 1300 540" font-family="sans-serif">
+<rect width="1300" height="540" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="650.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Alphanumeric arc labels — F (forward) has priority over R (reverse)</text>
+<path d="M 459.4 178.5 Q 579.4 244.8 596.9 380.8" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="597.8" y="258.2" text-anchor="middle" font-size="14" fill="#1f6feb">F</text>
+<path d="M 591.2 391.7 Q 450.0 453.7 308.8 391.7" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="450.0" y="456.7" text-anchor="middle" font-size="14" fill="#1f6feb">F</text>
+<path d="M 303.1 380.8 Q 320.6 244.8 440.6 178.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="300.2" y="258.2" text-anchor="middle" font-size="14" fill="#1f6feb">F</text>
+<path d="M 426.9 169.2 Q 386.3 289.5 289.4 371.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="336.2" y="283.9" text-anchor="middle" font-size="14" fill="#1f6feb">F′R</text>
+<path d="M 308.8 408.3 Q 450.0 374.3 591.2 408.3" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="450.0" y="375.3" text-anchor="middle" font-size="14" fill="#1f6feb">F′R</text>
+<path d="M 610.6 371.5 Q 513.7 289.5 473.1 169.2" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="563.8" y="283.9" text-anchor="middle" font-size="14" fill="#1f6feb">F′R</text>
+<path d="M 434.3 124.4 Q 450.0 74.4 465.7 124.4" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="450.0" y="78.0" text-anchor="middle" font-size="14" fill="#1f6feb">F′R′</text>
+<path d="M 645.6 384.3 Q 695.6 400.0 645.6 415.7" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="706.0" y="404.0" text-anchor="middle" font-size="14" fill="#1f6feb">F′R′</text>
+<path d="M 254.4 415.7 Q 204.4 400.0 254.4 384.3" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="194.0" y="404.0" text-anchor="middle" font-size="14" fill="#1f6feb">F′R′</text>
+<circle cx="450" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="428" y1="150" x2="472" y2="150" stroke="#111111" stroke-width="1.2"/>
+<text x="450" y="144" text-anchor="middle" font-size="16" fill="#111111">S₀</text>
+<text x="450" y="169" text-anchor="middle" font-size="15" fill="#1f6feb">Z₁</text>
+<circle cx="620" cy="400" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="598" y1="400" x2="642" y2="400" stroke="#111111" stroke-width="1.2"/>
+<text x="620" y="394" text-anchor="middle" font-size="16" fill="#111111">S₁</text>
+<text x="620" y="419" text-anchor="middle" font-size="15" fill="#1f6feb">Z₂</text>
+<circle cx="280" cy="400" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<line x1="258" y1="400" x2="302" y2="400" stroke="#111111" stroke-width="1.2"/>
+<text x="280" y="394" text-anchor="middle" font-size="16" fill="#111111">S₂</text>
+<text x="280" y="419" text-anchor="middle" font-size="15" fill="#1f6feb">Z₃</text>
+<text x="790" y="150" font-size="14" font-weight="bold" fill="#111111">present</text>
+<text x="920" y="150" font-size="14" font-weight="bold" fill="#111111">next state,  FR =</text>
+<text x="1180" y="150" font-size="14" font-weight="bold" fill="#111111">Z₁Z₂Z₃</text>
+<text x="790" y="172" font-size="14" fill="#111111">state</text>
+<text x="930" y="172" text-anchor="middle" font-size="14" fill="#1f6feb">00</text>
+<text x="992" y="172" text-anchor="middle" font-size="14" fill="#1f6feb">01</text>
+<text x="1054" y="172" text-anchor="middle" font-size="14" fill="#1f6feb">10</text>
+<text x="1116" y="172" text-anchor="middle" font-size="14" fill="#1f6feb">11</text>
+<line x1="782" y1="182" x2="1260" y2="182" stroke="#111111" stroke-width="1.2"/>
+<text x="790" y="208" font-size="14" fill="#111111">S₀</text>
+<text x="930" y="208" text-anchor="middle" font-size="14" fill="#111111">S₀</text>
+<text x="992" y="208" text-anchor="middle" font-size="14" fill="#111111">S₂</text>
+<text x="1054" y="208" text-anchor="middle" font-size="14" fill="#111111">S₁</text>
+<text x="1116" y="208" text-anchor="middle" font-size="14" fill="#111111">S₁</text>
+<text x="1190" y="208" font-size="14" fill="#111111">1 0 0</text>
+<text x="790" y="236" font-size="14" fill="#111111">S₁</text>
+<text x="930" y="236" text-anchor="middle" font-size="14" fill="#111111">S₁</text>
+<text x="992" y="236" text-anchor="middle" font-size="14" fill="#111111">S₀</text>
+<text x="1054" y="236" text-anchor="middle" font-size="14" fill="#111111">S₂</text>
+<text x="1116" y="236" text-anchor="middle" font-size="14" fill="#111111">S₂</text>
+<text x="1190" y="236" font-size="14" fill="#111111">0 1 0</text>
+<text x="790" y="264" font-size="14" fill="#111111">S₂</text>
+<text x="930" y="264" text-anchor="middle" font-size="14" fill="#111111">S₂</text>
+<text x="992" y="264" text-anchor="middle" font-size="14" fill="#111111">S₁</text>
+<text x="1054" y="264" text-anchor="middle" font-size="14" fill="#111111">S₀</text>
+<text x="1116" y="264" text-anchor="middle" font-size="14" fill="#111111">S₀</text>
+<text x="1190" y="264" font-size="14" fill="#111111">0 0 1</text>
+<text x="790" y="330" font-size="13" fill="#777777">Completeness check: F + F′R + F′R′ = F + F′ = 1</text>
+<text x="790" y="352" font-size="13" fill="#777777">Uniqueness check: F&#183;F′R = F&#183;F′R′ = F′R&#183;F′R′ = 0</text>
+<text x="24" y="524" font-size="13" fill="#777777">F alone on an arc means F = 1 whatever R is; F′R means reverse only when forward is not asserted.</text>
+</svg>

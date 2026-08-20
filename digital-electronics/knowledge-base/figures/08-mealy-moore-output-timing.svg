@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="963" height="400" viewBox="0 0 963 400" font-family="sans-serif"><title>Mealy and Moore output timing for the 101 detector</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6cab"/></marker><marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M135,70 L205,70 L205,44 L248,44 L248,70 L291,70 L291,44 L334,44 L334,70 L377,70 L377,44 L420,44 L420,70 L463,70 L463,44 L506,44 L506,70 L549,70 L549,44 L592,44 L592,70 L635,70 L635,44 L678,44 L678,70 L721,70 L721,44 L764,44 L764,70 L807,70 L807,44 L850,44 L850,70 L893,70" fill="none" stroke="#111111" stroke-width="1.6"/>
+<text x="127" y="75" text-anchor="end" font-size="15" fill="#111111" >clk</text>
+<line x1="205" y1="36" x2="205" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="248.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t0</text>
+<line x1="291" y1="36" x2="291" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="334.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t1</text>
+<line x1="377" y1="36" x2="377" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="420.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t2</text>
+<line x1="463" y1="36" x2="463" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="506.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t3</text>
+<line x1="549" y1="36" x2="549" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="592.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t4</text>
+<line x1="635" y1="36" x2="635" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="678.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t5</text>
+<line x1="721" y1="36" x2="721" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="764.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t6</text>
+<line x1="807" y1="36" x2="807" y2="345" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="850.0" y="34" text-anchor="middle" font-size="12" fill="#1c6cab" >t7</text>
+<path d="M135,160 L205,160 L205,160 L291,160 L291,130 L377,130 L377,160 L463,160 L463,130 L549,130 L549,130 L635,130 L635,160 L721,160 L721,130 L807,130 L807,160 L893,160 L893,160" fill="none" stroke="#111111" stroke-width="2.2"/>
+<text x="127" y="165" text-anchor="end" font-size="15" fill="#111111" >x</text>
+<text x="248.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >0</text>
+<text x="334.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >1</text>
+<text x="420.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >0</text>
+<text x="506.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >1</text>
+<text x="592.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >1</text>
+<text x="678.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >0</text>
+<text x="764.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >1</text>
+<text x="850.0" y="120" text-anchor="middle" font-size="13" fill="#111111" >0</text>
+<path d="M135,250 L205,250 L205,250 L291,250 L291,250 L377,250 L377,250 L463,250 L463,220 L549,220 L549,250 L635,250 L635,250 L721,250 L721,220 L807,220 L807,250 L893,250 L893,250" fill="none" stroke="#1c6cab" stroke-width="2.2"/>
+<text x="127" y="255" text-anchor="end" font-size="15" fill="#1c6cab" >Z (Mealy)</text>
+<text x="248.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >0</text>
+<text x="334.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >0</text>
+<text x="420.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >0</text>
+<text x="506.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >1</text>
+<text x="592.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >0</text>
+<text x="678.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >0</text>
+<text x="764.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >1</text>
+<text x="850.0" y="210" text-anchor="middle" font-size="13" fill="#1c6cab" >0</text>
+<path d="M135,340 L205,340 L205,340 L291,340 L291,340 L377,340 L377,340 L463,340 L463,340 L549,340 L549,310 L635,310 L635,340 L721,340 L721,340 L807,340 L807,310 L893,310 L893,340" fill="none" stroke="#2f7d4f" stroke-width="2.2"/>
+<text x="127" y="345" text-anchor="end" font-size="15" fill="#2f7d4f" >Z (Moore)</text>
+<text x="248.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >0</text>
+<text x="334.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >0</text>
+<text x="420.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >0</text>
+<text x="506.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >0</text>
+<text x="592.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >1</text>
+<text x="678.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >0</text>
+<text x="764.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >0</text>
+<text x="850.0" y="300" text-anchor="middle" font-size="13" fill="#2f7d4f" >1</text>
+<text x="481.5" y="382" text-anchor="middle" font-size="13" fill="#1c6cab" >the Moore pulse is the Mealy pulse shifted one clock period later</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="sans-serif">
+<rect width="900" height="430" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6ea4"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7f4f"/></marker></defs>
+<text x="300" y="22" font-size="12" text-anchor="middle" fill="#111111">Binary cell — logic diagram</text>
+<text x="740" y="22" font-size="12" text-anchor="middle" fill="#111111">Block symbol</text>
+<line x1="300" y1="50" x2="300" y2="88" stroke="#111111" stroke-width="1.2"/>
+<text x="300" y="42" font-size="11" text-anchor="middle" fill="#1c6ea4">Select</text>
+<circle cx="300" cy="88" r="3" fill="#111111"/>
+<line x1="150" y1="88" x2="410" y2="88" stroke="#111111" stroke-width="1.2"/>
+<line x1="150" y1="88" x2="150" y2="220" stroke="#111111" stroke-width="1.2"/>
+<circle cx="150" cy="150" r="3" fill="#111111"/>
+<circle cx="150" cy="220" r="3" fill="#111111"/>
+<path d="M196,138 H230.0 A24.0,24.0 0 0 1 230.0,186 H196 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<path d="M196,208 H230.0 A24.0,24.0 0 0 1 230.0,256 H196 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<line x1="150" y1="150" x2="196" y2="150" stroke="#111111" stroke-width="1.2"/>
+<line x1="150" y1="220" x2="196" y2="220" stroke="#111111" stroke-width="1.2"/>
+<text x="52" y="162" font-size="11" text-anchor="end" fill="#1c6ea4">Input</text>
+<line x1="56" y1="162" x2="96" y2="162" stroke="#111111" stroke-width="1.2"/>
+<circle cx="96" cy="162" r="3" fill="#111111"/>
+<line x1="96" y1="162" x2="196" y2="162" stroke="#111111" stroke-width="1.2"/>
+<path d="M100,270 L100,300 L134,285.0 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="138" cy="285.0" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<line x1="96" y1="162" x2="96" y2="285" stroke="#111111" stroke-width="1.2"/>
+<line x1="96" y1="285" x2="100" y2="285" stroke="#111111" stroke-width="1.2"/>
+<line x1="138" y1="285" x2="190" y2="285" stroke="#111111" stroke-width="1.2"/>
+<line x1="190" y1="285" x2="190" y2="232" stroke="#111111" stroke-width="1.2"/>
+<line x1="190" y1="232" x2="196" y2="232" stroke="#111111" stroke-width="1.2"/>
+<text x="772" y="360" font-size="11" text-anchor="start" fill="#1c6ea4">Read/Write</text>
+<line x1="768" y1="356" x2="430" y2="356" stroke="#111111" stroke-width="1.2"/>
+<circle cx="430" cy="356" r="3" fill="#111111"/>
+<line x1="430" y1="356" x2="284" y2="356" stroke="#111111" stroke-width="1.2"/>
+<path d="M284,342 L284,370 L250,356.0 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="246" cy="356.0" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<line x1="246" y1="356" x2="168" y2="356" stroke="#111111" stroke-width="1.2"/>
+<line x1="168" y1="356" x2="168" y2="174" stroke="#111111" stroke-width="1.2"/>
+<line x1="168" y1="174" x2="196" y2="174" stroke="#111111" stroke-width="1.2"/>
+<circle cx="168" cy="244" r="3" fill="#111111"/>
+<line x1="168" y1="244" x2="196" y2="244" stroke="#111111" stroke-width="1.2"/>
+<rect x="292" y="138" width="66" height="118" fill="#f4f8fb" stroke="#111111" stroke-width="1.2"/>
+<text x="302" y="168" font-size="13" text-anchor="start" fill="#111111">S</text>
+<text x="302" y="240" font-size="13" text-anchor="start" fill="#111111">R</text>
+<line x1="254" y1="162" x2="292" y2="162" stroke="#111111" stroke-width="1.2"/>
+<line x1="254" y1="232" x2="292" y2="232" stroke="#111111" stroke-width="1.2"/>
+<path d="M452,146 H485.0 A25.0,25.0 0 0 1 485.0,196 H452 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<line x1="358" y1="171" x2="452" y2="171" stroke="#111111" stroke-width="1.2"/>
+<line x1="410" y1="88" x2="410" y2="158" stroke="#111111" stroke-width="1.2"/>
+<line x1="410" y1="158" x2="452" y2="158" stroke="#111111" stroke-width="1.2"/>
+<line x1="430" y1="356" x2="430" y2="184" stroke="#111111" stroke-width="1.2"/>
+<line x1="430" y1="184" x2="452" y2="184" stroke="#111111" stroke-width="1.2"/>
+<line x1="510" y1="171" x2="556" y2="171" stroke="#111111" stroke-width="1.2"/>
+<text x="560" y="175" font-size="11" text-anchor="start" fill="#1c6ea4">Output</text>
+<text x="300" y="410" font-size="10" text-anchor="middle" fill="#888888">Read/Write = 0 with Select = 1 writes the Input into the latch;</text>
+<text x="300" y="424" font-size="10" text-anchor="middle" fill="#888888">Read/Write = 1 with Select = 1 puts the stored bit on Output</text>
+<rect x="706" y="146" width="68" height="52" fill="#f4f8fb" stroke="#111111" stroke-width="1.2"/>
+<text x="740" y="177" font-size="13" text-anchor="middle" fill="#111111">BC</text>
+<line x1="650" y1="172" x2="704" y2="172" stroke="#1c6ea4" stroke-width="1.4" marker-end="url(#b)"/>
+<text x="646" y="176" font-size="10" text-anchor="end" fill="#1c6ea4">Input</text>
+<line x1="776" y1="172" x2="830" y2="172" stroke="#1c6ea4" stroke-width="1.4" marker-end="url(#b)"/>
+<text x="834" y="176" font-size="10" text-anchor="start" fill="#1c6ea4">Output</text>
+<line x1="740" y1="110" x2="740" y2="144" stroke="#1c6ea4" stroke-width="1.4" marker-end="url(#b)"/>
+<text x="740" y="104" font-size="10" text-anchor="middle" fill="#1c6ea4">Select</text>
+<line x1="740" y1="240" x2="740" y2="200" stroke="#1c6ea4" stroke-width="1.4" marker-end="url(#b)"/>
+<text x="740" y="256" font-size="10" text-anchor="middle" fill="#1c6ea4">Read/Write</text>
+</svg>

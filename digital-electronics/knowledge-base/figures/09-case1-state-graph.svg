@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1230" height="600" viewBox="0 0 1230 600" font-family="sans-serif">
+<rect width="1230" height="600" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="615.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Case I — complete state graph for the 0101 / 1001 detector (resets after four inputs)</text>
+<path d="M 405.4 107.2 L 254.6 212.8" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="304.0" y="156.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 454.6 107.2 L 605.4 212.8" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="556.0" y="156.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 230.0 260.0 L 230.0 350.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="204.0" y="305.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 630.0 260.0 L 630.0 350.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="656.0" y="305.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 258.1 240.5 L 601.9 369.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="300.0" y="295.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 601.9 240.5 L 258.1 369.5" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="560.0" y="295.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 230.0 410.0 L 230.0 490.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="182.0" y="450.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0, 1/0</text>
+<path d="M 630.0 410.0 L 630.0 490.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="654.0" y="450.0" text-anchor="middle" font-size="14" fill="#1f6feb">0/0</text>
+<path d="M 601.7 389.9 L 258.3 510.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="486.0" y="470.0" text-anchor="middle" font-size="14" fill="#1f6feb">1/0</text>
+<path d="M 200 520 L 90.0 520.0 Q 80 520 80.0 510.0 L 80.0 100.0 Q 80 90 90.0 90.0 L 397 90" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="80" y="300" text-anchor="middle" font-size="14" fill="#1f6feb">0/0, 1/0</text>
+<path d="M 660 520 L 790.0 520.0 Q 800 520 800.0 510.0 L 800.0 100.0 Q 800 90 790.0 90.0 L 463 90" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="800" y="300" text-anchor="middle" font-size="14" fill="#1f6feb">0/0, <tspan fill="#c0392b">1/1</tspan></text>
+<circle cx="430" cy="90" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="430" y="96" text-anchor="middle" font-size="17" fill="#111111">S₀</text>
+<circle cx="230" cy="230" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="230" y="236" text-anchor="middle" font-size="17" fill="#111111">S₁</text>
+<circle cx="630" cy="230" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="630" y="236" text-anchor="middle" font-size="17" fill="#111111">S₂</text>
+<circle cx="230" cy="380" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="230" y="386" text-anchor="middle" font-size="17" fill="#111111">S₅</text>
+<circle cx="630" cy="380" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="630" y="386" text-anchor="middle" font-size="17" fill="#111111">S₃</text>
+<circle cx="230" cy="520" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="230" y="526" text-anchor="middle" font-size="17" fill="#111111">S₆</text>
+<circle cx="630" cy="520" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="630" y="526" text-anchor="middle" font-size="17" fill="#111111">S₄</text>
+<path d="M 346 50 L 397 90" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="342" y="55" text-anchor="end" font-size="13" fill="#777777">reset</text>
+<text x="880" y="120" font-size="13" fill="#111111">S₀ : reset</text>
+<text x="880" y="144" font-size="13" fill="#111111">S₁ : 0</text>
+<text x="880" y="168" font-size="13" fill="#111111">S₂ : 1</text>
+<text x="880" y="192" font-size="13" fill="#111111">S₃ : 01 or 10</text>
+<text x="880" y="216" font-size="13" fill="#111111">S₄ : 010 or 100</text>
+<text x="880" y="240" font-size="13" fill="#111111">S₅ : two inputs, no match possible</text>
+<text x="880" y="264" font-size="13" fill="#111111">S₆ : three inputs, no match possible</text>
+<text x="24" y="584" font-size="13" fill="#777777">Isomorphic to the reduced 7-state machine of CH5 slide 81 under A→S₀, B→S₁, C→S₂, D→S₅, E→S₃, H→S₆, J→S₄.</text>
+</svg>

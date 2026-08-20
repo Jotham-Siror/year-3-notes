@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="560" viewBox="0 0 1020 560" font-family="sans-serif">
+  <rect width="1020" height="560" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <text x="218" y="52" font-size="13.5" text-anchor="middle" fill="#111111">A⁺</text>
+  <text x="124" y="80" font-size="12" text-anchor="start" fill="#0b5c8a">AB</text>
+  <text x="44" y="126" font-size="12" text-anchor="start" fill="#0b5c8a">CRb</text>
+  <line x1="44" y1="72" x2="90" y2="110" stroke="#111111" stroke-width="1.1"/>
+  <text x="122.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">00</text>
+  <text x="186.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">01</text>
+  <text x="250.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">11</text>
+  <text x="314.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">10</text>
+  <text x="78" y="146.0" font-size="12" text-anchor="end" fill="#0b5c8a">00</text>
+  <text x="78" y="210.0" font-size="12" text-anchor="end" fill="#0b5c8a">01</text>
+  <text x="78" y="274.0" font-size="12" text-anchor="end" fill="#0b5c8a">11</text>
+  <text x="78" y="338.0" font-size="12" text-anchor="end" fill="#0b5c8a">10</text>
+  <line x1="90" y1="110" x2="346" y2="110" stroke="#111111" stroke-width="1.2"/>
+  <line x1="90" y1="110" x2="90" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="90" y1="174" x2="346" y2="174" stroke="#111111" stroke-width="1.2"/>
+  <line x1="154" y1="110" x2="154" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="90" y1="238" x2="346" y2="238" stroke="#111111" stroke-width="1.2"/>
+  <line x1="218" y1="110" x2="218" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="90" y1="302" x2="346" y2="302" stroke="#111111" stroke-width="1.2"/>
+  <line x1="282" y1="110" x2="282" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="90" y1="366" x2="346" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="346" y1="110" x2="346" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <text x="250.0" y="147.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="314.0" y="147.0" font-size="13" text-anchor="middle" fill="#111111">1</text>
+  <text x="250.0" y="211.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="314.0" y="211.0" font-size="13" text-anchor="middle" fill="#111111">1</text>
+  <text x="250.0" y="275.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="314.0" y="275.0" font-size="13" text-anchor="middle" fill="#111111">1</text>
+  <text x="122.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">E₁</text>
+  <text x="250.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="314.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">E₂</text>
+  <rect x="228" y="120" width="108" height="108" rx="12" fill="none" stroke="#0b5c8a" stroke-width="1.8"/>
+  <rect x="224" y="180" width="116" height="116" rx="12" fill="none" stroke="#0b5c8a" stroke-width="1.8"/>
+  <rect x="220" y="112" width="124" height="252" rx="12" fill="none" stroke="#0b5c8a" stroke-width="1.8"/>
+  <text x="218" y="396" font-size="12" text-anchor="middle" fill="#111111">E₁ = D₇₁₁′ D₂₃₁₂′</text>
+  <text x="218" y="416" font-size="12" text-anchor="middle" fill="#111111">E₂ = D₇′ Eq′</text>
+  <text x="548" y="52" font-size="13.5" text-anchor="middle" fill="#111111">B⁺</text>
+  <text x="454" y="80" font-size="12" text-anchor="start" fill="#0b5c8a">AB</text>
+  <text x="374" y="126" font-size="12" text-anchor="start" fill="#0b5c8a">CRb</text>
+  <line x1="374" y1="72" x2="420" y2="110" stroke="#111111" stroke-width="1.1"/>
+  <text x="452.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">00</text>
+  <text x="516.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">01</text>
+  <text x="580.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">11</text>
+  <text x="644.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">10</text>
+  <text x="408" y="146.0" font-size="12" text-anchor="end" fill="#0b5c8a">00</text>
+  <text x="408" y="210.0" font-size="12" text-anchor="end" fill="#0b5c8a">01</text>
+  <text x="408" y="274.0" font-size="12" text-anchor="end" fill="#0b5c8a">11</text>
+  <text x="408" y="338.0" font-size="12" text-anchor="end" fill="#0b5c8a">10</text>
+  <line x1="420" y1="110" x2="676" y2="110" stroke="#111111" stroke-width="1.2"/>
+  <line x1="420" y1="110" x2="420" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="420" y1="174" x2="676" y2="174" stroke="#111111" stroke-width="1.2"/>
+  <line x1="484" y1="110" x2="484" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="420" y1="238" x2="676" y2="238" stroke="#111111" stroke-width="1.2"/>
+  <line x1="548" y1="110" x2="548" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="420" y1="302" x2="676" y2="302" stroke="#111111" stroke-width="1.2"/>
+  <line x1="612" y1="110" x2="612" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="420" y1="366" x2="676" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="676" y1="110" x2="676" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <text x="516.0" y="147.0" font-size="13" text-anchor="middle" fill="#111111">R′</text>
+  <text x="580.0" y="147.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="516.0" y="211.0" font-size="13" text-anchor="middle" fill="#111111">R′</text>
+  <text x="580.0" y="211.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="516.0" y="275.0" font-size="13" text-anchor="middle" fill="#111111">R′</text>
+  <text x="580.0" y="275.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="452.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">E₃</text>
+  <text x="516.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">R′</text>
+  <text x="580.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="644.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">E₄</text>
+  <rect x="490" y="116" width="116" height="244" rx="12" fill="none" stroke="#0b5c8a" stroke-width="1.8"/>
+  <rect x="560" y="314" width="104" height="40" rx="12" fill="none" stroke="#0b5c8a" stroke-width="1.8"/>
+  <text x="548" y="396" font-size="12" text-anchor="middle" fill="#111111">R = Reset</text>
+  <text x="548" y="416" font-size="12" text-anchor="middle" fill="#111111">E₃ = D₇₁₁ + D₇₁₁′D₂₃₁₂ = D₇₁₁ + D₂₃₁₂</text>
+  <text x="548" y="436" font-size="12" text-anchor="middle" fill="#111111">E₄ = Eq + Eq′D₇ = Eq + D₇</text>
+  <text x="878" y="52" font-size="13.5" text-anchor="middle" fill="#111111">Win</text>
+  <text x="784" y="80" font-size="12" text-anchor="start" fill="#0b5c8a">AB</text>
+  <text x="704" y="126" font-size="12" text-anchor="start" fill="#0b5c8a">CRb</text>
+  <line x1="704" y1="72" x2="750" y2="110" stroke="#111111" stroke-width="1.1"/>
+  <text x="782.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">00</text>
+  <text x="846.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">01</text>
+  <text x="910.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">11</text>
+  <text x="974.0" y="102" font-size="12" text-anchor="middle" fill="#0b5c8a">10</text>
+  <text x="738" y="146.0" font-size="12" text-anchor="end" fill="#0b5c8a">00</text>
+  <text x="738" y="210.0" font-size="12" text-anchor="end" fill="#0b5c8a">01</text>
+  <text x="738" y="274.0" font-size="12" text-anchor="end" fill="#0b5c8a">11</text>
+  <text x="738" y="338.0" font-size="12" text-anchor="end" fill="#0b5c8a">10</text>
+  <line x1="750" y1="110" x2="1006" y2="110" stroke="#111111" stroke-width="1.2"/>
+  <line x1="750" y1="110" x2="750" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="750" y1="174" x2="1006" y2="174" stroke="#111111" stroke-width="1.2"/>
+  <line x1="814" y1="110" x2="814" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="750" y1="238" x2="1006" y2="238" stroke="#111111" stroke-width="1.2"/>
+  <line x1="878" y1="110" x2="878" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="750" y1="302" x2="1006" y2="302" stroke="#111111" stroke-width="1.2"/>
+  <line x1="942" y1="110" x2="942" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="750" y1="366" x2="1006" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <line x1="1006" y1="110" x2="1006" y2="366" stroke="#111111" stroke-width="1.2"/>
+  <text x="846.0" y="147.0" font-size="13" text-anchor="middle" fill="#111111">1</text>
+  <text x="910.0" y="147.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="846.0" y="211.0" font-size="13" text-anchor="middle" fill="#111111">1</text>
+  <text x="910.0" y="211.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="910.0" y="275.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <text x="910.0" y="339.0" font-size="13" text-anchor="middle" fill="#111111">X</text>
+  <rect x="822" y="118" width="112" height="112" rx="12" fill="none" stroke="#0b5c8a" stroke-width="1.8"/>
+  <text x="878" y="396" font-size="12" text-anchor="middle" fill="#111111">Win = B C′</text>
+  <text x="510" y="520" font-size="11.5" text-anchor="middle" fill="#666666">Map-entered-variable maps: a cell holding E is 1 only when that expression is 1. X marks the unused codes ABC = 110 and 111.</text>
+</svg>

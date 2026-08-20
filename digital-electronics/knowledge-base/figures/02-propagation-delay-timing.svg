@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430" font-family="sans-serif">
+  <rect width="820" height="430" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+  <line x1="110" y1="180" x2="770" y2="180"/>
+  <line x1="110" y1="180" x2="110" y2="40"/>
+  <line x1="110" y1="400" x2="770" y2="400"/>
+  <line x1="110" y1="400" x2="110" y2="235"/>
+  </g>
+  <g stroke="#222222" stroke-width="1" stroke-dasharray="4 3" fill="none">
+  <line x1="110" y1="55" x2="740" y2="55"/>
+  <line x1="110" y1="66" x2="740" y2="66"/>
+  <line x1="110" y1="110" x2="740" y2="110"/>
+  <line x1="110" y1="154" x2="740" y2="154"/>
+  <line x1="110" y1="165" x2="740" y2="165"/>
+  <line x1="110" y1="250" x2="740" y2="250"/>
+  <line x1="110" y1="261" x2="740" y2="261"/>
+  <line x1="110" y1="305" x2="740" y2="305"/>
+  <line x1="110" y1="349" x2="740" y2="349"/>
+  <line x1="110" y1="360" x2="740" y2="360"/>
+  </g>
+  <g stroke="#1f4e79" fill="none" stroke-width="2.4">
+  <path d="M 120 165 L 180 165 L 300 55 L 470 55 L 590 165 L 740 165"/>
+  <path d="M 120 250 L 240 250 L 360 360 L 530 360 L 650 250 L 740 250"/>
+  </g>
+  <g stroke="#0b7a5b" stroke-width="1.2" stroke-dasharray="3 3" fill="none">
+  <line x1="240" y1="110" x2="240" y2="310"/>
+  <line x1="300" y1="305" x2="300" y2="200"/>
+  <line x1="530" y1="110" x2="530" y2="310"/>
+  <line x1="590" y1="305" x2="590" y2="200"/>
+  </g>
+  <g stroke="#0b7a5b" stroke-width="1.8" fill="none">
+  <line x1="240" y1="212" x2="300" y2="212"/>
+  <line x1="530" y1="212" x2="590" y2="212"/>
+  </g>
+  <g stroke="#8a4b00" stroke-width="1.6" fill="none">
+  <line x1="192" y1="192" x2="288" y2="192"/>
+  <line x1="482" y1="192" x2="578" y2="192"/>
+  </g>
+  <text x="46" y="58" font-size="12.5" fill="#222222">V_H</text>
+  <text x="46" y="169" font-size="12.5" fill="#222222">V_L</text>
+  <text x="66" y="70" font-size="11.5" fill="#222222">90%</text>
+  <text x="66" y="114" font-size="11.5" fill="#222222">50%</text>
+  <text x="66" y="152" font-size="11.5" fill="#222222">10%</text>
+  <text x="46" y="253" font-size="12.5" fill="#222222">V_H</text>
+  <text x="46" y="364" font-size="12.5" fill="#222222">V_L</text>
+  <text x="66" y="265" font-size="11.5" fill="#222222">90%</text>
+  <text x="66" y="309" font-size="11.5" fill="#222222">50%</text>
+  <text x="66" y="347" font-size="11.5" fill="#222222">10%</text>
+  <text x="86" y="36" font-size="12.5" fill="#222222">v_I</text>
+  <text x="86" y="231" font-size="12.5" fill="#222222">v_O</text>
+  <text x="776" y="184" font-size="12.5" fill="#222222">t</text>
+  <text x="776" y="404" font-size="12.5" fill="#222222">t</text>
+  <text x="186" y="197" font-size="12.5" fill="#8a4b00" text-anchor="end">t_r</text>
+  <text x="476" y="197" font-size="12.5" fill="#8a4b00" text-anchor="end">t_f</text>
+  <text x="270" y="228" font-size="12.5" fill="#0b7a5b" text-anchor="middle">tau_PHL</text>
+  <text x="560" y="228" font-size="12.5" fill="#0b7a5b" text-anchor="middle">tau_PLH</text>
+  
+  
+  <text x="110" y="424" font-size="12.5" fill="#222222">v_I is the gate input, v_O the output of an inverting gate. t_r and t_f are read 10% to 90%; the delays, 50% to 50%.</text>
+  </svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="470" viewBox="0 0 760 470" font-family="sans-serif">
+<rect width="760" height="470" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="380.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Two assignment maps satisfying the guidelines</text>
+<line x1="74" y1="56" x2="120" y2="90" stroke="#111111" stroke-width="1"/>
+<text x="112" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#111111">A</text>
+<text x="78" y="84" font-size="13" font-style="italic" fill="#111111">BC</text>
+<text x="163.0" y="81" text-anchor="middle" font-size="13" fill="#1f6feb">0</text>
+<text x="249.0" y="81" text-anchor="middle" font-size="13" fill="#1f6feb">1</text>
+<text x="112" y="125.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="112" y="185.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="112" y="245.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="112" y="305.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="120" y="90" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="163.0" y="126.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">0</tspan></text>
+<rect x="206" y="90" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="249.0" y="126.0" text-anchor="middle" font-size="15" fill="#111111">&#8212;</text>
+<rect x="120" y="150" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="163.0" y="186.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">2</tspan></text>
+<rect x="206" y="150" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="249.0" y="186.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">5</tspan></text>
+<rect x="120" y="210" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="163.0" y="246.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">4</tspan></text>
+<rect x="206" y="210" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="249.0" y="246.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">3</tspan></text>
+<rect x="120" y="270" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="163.0" y="306.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">6</tspan></text>
+<rect x="206" y="270" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="249.0" y="306.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">1</tspan></text>
+<text x="206.0" y="356" text-anchor="middle" font-size="15" fill="#111111">(a) assignment used in the deck</text>
+<line x1="394" y1="56" x2="440" y2="90" stroke="#111111" stroke-width="1"/>
+<text x="432" y="66" text-anchor="end" font-size="13" font-style="italic" fill="#111111">A</text>
+<text x="398" y="84" font-size="13" font-style="italic" fill="#111111">BC</text>
+<text x="483.0" y="81" text-anchor="middle" font-size="13" fill="#1f6feb">0</text>
+<text x="569.0" y="81" text-anchor="middle" font-size="13" fill="#1f6feb">1</text>
+<text x="432" y="125.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="432" y="185.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="432" y="245.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="432" y="305.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="440" y="90" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="483.0" y="126.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">0</tspan></text>
+<rect x="526" y="90" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="569.0" y="126.0" text-anchor="middle" font-size="15" fill="#111111">&#8212;</text>
+<rect x="440" y="150" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="483.0" y="186.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">1</tspan></text>
+<rect x="526" y="150" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="569.0" y="186.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">6</tspan></text>
+<rect x="440" y="210" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="483.0" y="246.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">3</tspan></text>
+<rect x="526" y="210" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="569.0" y="246.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">4</tspan></text>
+<rect x="440" y="270" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="483.0" y="306.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">5</tspan></text>
+<rect x="526" y="270" width="86" height="60" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="569.0" y="306.0" text-anchor="middle" font-size="15" fill="#111111"><tspan font-style="italic">S</tspan><tspan font-size="11" baseline-shift="sub">2</tspan></text>
+<text x="526.0" y="356" text-anchor="middle" font-size="15" fill="#111111">(b) the second assignment</text>
+<text x="120" y="400" font-size="13" fill="#777777">Cell (A, BC) holds the code ABC. Code 100 is unused in both maps.</text>
+<text x="120" y="422" font-size="13" fill="#777777">Map (a) gives S0=000, S1=110, S2=001, S3=111, S4=011, S5=101, S6=010.</text>
+<text x="120" y="444" font-size="13" fill="#777777">Map (b) gives S0=000, S1=001, S2=110, S3=011, S4=111, S5=010, S6=101.</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470" font-family="sans-serif">
+<rect width="880" height="470" fill="#ffffff"/>
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker></defs>
+<path d="M110 300 H810" stroke="#111111" stroke-width="1.3" fill="none" marker-end="url(#ar)"/>
+<path d="M110 300 V56" stroke="#111111" stroke-width="1.3" fill="none" marker-end="url(#ar)"/>
+<text x="810" y="322" font-size="13" text-anchor="end" fill="#111111">t</text>
+<text x="118" y="48" font-size="13" fill="#111111">integrator output (magnitude)</text>
+<path d="M110 300 L360 110 L610 300" fill="none" stroke="#1a5fb4" stroke-width="2.2"/>
+<path d="M610 293 V307" stroke="#1a5fb4" stroke-width="1.4"/>
+<text x="610" y="286" font-size="12.5" text-anchor="middle" fill="#1a5fb4">n3</text>
+<text x="370" y="115" font-size="12.5" fill="#1a5fb4">large Vin</text>
+<path d="M110 300 L360 170 L531 300" fill="none" stroke="#a33b00" stroke-width="2.2"/>
+<path d="M531 293 V307" stroke="#a33b00" stroke-width="1.4"/>
+<text x="531" y="286" font-size="12.5" text-anchor="middle" fill="#a33b00">n2</text>
+<text x="370" y="175" font-size="12.5" fill="#a33b00">medium Vin</text>
+<path d="M110 300 L360 230 L452 300" fill="none" stroke="#111111" stroke-width="2.2"/>
+<path d="M452 293 V307" stroke="#111111" stroke-width="1.4"/>
+<text x="452" y="286" font-size="12.5" text-anchor="middle" fill="#111111">n1</text>
+<text x="370" y="235" font-size="12.5" fill="#111111">small Vin</text>
+<path d="M360 60 V300" stroke="#cccccc" stroke-width="1" stroke-dasharray="4 4"/>
+<path d="M110 340 H360 M110 334 V346 M360 334 V346" stroke="#666666" stroke-width="1.2" fill="none"/>
+<text x="235" y="360" font-size="12.5" text-anchor="middle" fill="#666666">phase 1 — fixed time T1 = 2ⁿ TCLK, slope proportional to Vin</text>
+<path d="M360 380 H610 M360 374 V386 M610 374 V386" stroke="#666666" stroke-width="1.2" fill="none"/>
+<text x="485" y="400" font-size="12.5" text-anchor="middle" fill="#666666">phase 2 — fixed slope set by VREF, so T2 is proportional to Vin</text>
+<text x="30" y="432" font-size="12.5" fill="#111111">n1 &lt; n2 &lt; n3: the count reached at the zero crossing is the converted value.</text>
+<text x="30" y="454" font-size="12.5" fill="#111111">[added] n = 2ⁿ × Vin/VREF, so R, C and the clock rate cancel and do not affect the reading.</text>
+</svg>

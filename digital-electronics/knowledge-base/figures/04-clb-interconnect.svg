@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="422" viewBox="0 0 800 422" font-family="sans-serif">
+<rect width="800" height="422" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#222222"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a5fb4"/></marker></defs>
+<text x="400" y="26" font-size="14" text-anchor="middle" fill="#222222">Two CLBs inside the global row and column interconnect</text>
+<rect x="60" y="60" width="680" height="12" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="60" y="330" width="680" height="12" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="100" y="50" width="12" height="302" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="390" y="50" width="12" height="302" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="700" y="50" width="12" height="302" fill="#dbe6f2" stroke="#1a5fb4" stroke-width="1"/>
+<rect x="150" y="88" width="220" height="220" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="260" y="108" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="166" y="120" width="16" height="170" fill="#e8eef6" stroke="#222222" stroke-width="1.4"/>
+<text x="174" y="306" font-size="10" text-anchor="middle" fill="#222222">local</text>
+<text x="174" y="318" font-size="10" text-anchor="middle" fill="#222222">interconnect</text>
+<rect x="230" y="122" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="290" y="141" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="182" y1="136" x2="230" y2="136" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="230" y1="136" x2="182" y2="136" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="230" y="158" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="290" y="177" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="182" y1="172" x2="230" y2="172" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="230" y1="172" x2="182" y2="172" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="230" y="194" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="290" y="213" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="182" y1="208" x2="230" y2="208" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="230" y1="208" x2="182" y2="208" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="230" y="258" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="290" y="277" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="182" y1="272" x2="230" y2="272" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="230" y1="272" x2="182" y2="272" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="290" y="244" font-size="14" text-anchor="middle" fill="#222222">&#8942;</text>
+<line x1="260" y1="88" x2="260" y2="72" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="260" y1="72" x2="260" y2="88" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="260" y1="308" x2="260" y2="330" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="260" y1="330" x2="260" y2="308" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="150" y1="198" x2="112" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="112" y1="198" x2="150" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="370" y1="198" x2="408" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="408" y1="198" x2="370" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="440" y="88" width="220" height="220" rx="0" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="550" y="108" font-size="13" text-anchor="middle" fill="#222222">CLB</text>
+<rect x="456" y="120" width="16" height="170" fill="#e8eef6" stroke="#222222" stroke-width="1.4"/>
+<text x="464" y="306" font-size="10" text-anchor="middle" fill="#222222">local</text>
+<text x="464" y="318" font-size="10" text-anchor="middle" fill="#222222">interconnect</text>
+<rect x="520" y="122" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="580" y="141" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="472" y1="136" x2="520" y2="136" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="520" y1="136" x2="472" y2="136" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="520" y="158" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="580" y="177" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="472" y1="172" x2="520" y2="172" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="520" y1="172" x2="472" y2="172" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="520" y="194" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="580" y="213" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="472" y1="208" x2="520" y2="208" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="520" y1="208" x2="472" y2="208" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<rect x="520" y="258" width="120" height="28" rx="0" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="580" y="277" font-size="11" text-anchor="middle" fill="#222222">logic module</text>
+<line x1="472" y1="272" x2="520" y2="272" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<line x1="520" y1="272" x2="472" y2="272" stroke="#222222" stroke-width="1.4" marker-end="url(#ah)"/>
+<text x="580" y="244" font-size="14" text-anchor="middle" fill="#222222">&#8942;</text>
+<line x1="550" y1="88" x2="550" y2="72" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="550" y1="72" x2="550" y2="88" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="550" y1="308" x2="550" y2="330" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="550" y1="330" x2="550" y2="308" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="440" y1="198" x2="402" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="402" y1="198" x2="440" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="660" y1="198" x2="698" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<line x1="698" y1="198" x2="660" y2="198" stroke="#1a5fb4" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="106" y="372" font-size="11" text-anchor="middle" fill="#1a5fb4">global column interconnect</text>
+<line x1="106" y1="364" x2="106" y2="346" stroke="#1a5fb4" stroke-width="1.2"/>
+<text x="640" y="372" font-size="11" text-anchor="middle" fill="#1a5fb4">global row interconnect</text>
+<line x1="640" y1="364" x2="660" y2="346" stroke="#1a5fb4" stroke-width="1.2"/>
+<text x="400" y="404" font-size="11" text-anchor="middle" fill="#222222">Each logic module reaches its neighbours through the CLB&#8217;s local interconnect, and other CLBs through the global rows and columns.</text>
+
+</svg>

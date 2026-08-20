@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="810" height="475" viewBox="0 0 810 475" font-family="sans-serif">
+<rect width="810" height="475" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#222222"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a5fb4"/></marker></defs>
+<text x="410" y="26" font-size="15" text-anchor="middle" fill="#222222">PLD notation for cross-points</text>
+<text x="70" y="62" font-size="12" text-anchor="middle" fill="#222222">a</text>
+<line x1="70" y1="70" x2="70" y2="132" stroke="#222222" stroke-width="1.6"/>
+<text x="98" y="62" font-size="12" text-anchor="middle" fill="#222222">b</text>
+<line x1="98" y1="70" x2="98" y2="132" stroke="#222222" stroke-width="1.6"/>
+<text x="126" y="62" font-size="12" text-anchor="middle" fill="#222222">c</text>
+<line x1="126" y1="70" x2="126" y2="132" stroke="#222222" stroke-width="1.6"/>
+<line x1="48" y1="100" x2="152" y2="100" stroke="#222222" stroke-width="1.6"/>
+<line x1="64" y1="94" x2="76" y2="106" stroke="#1a5fb4" stroke-width="1.8"/><line x1="64" y1="106" x2="76" y2="94" stroke="#1a5fb4" stroke-width="1.8"/>
+<line x1="92" y1="94" x2="104" y2="106" stroke="#1a5fb4" stroke-width="1.8"/><line x1="92" y1="106" x2="104" y2="94" stroke="#1a5fb4" stroke-width="1.8"/>
+<line x1="120" y1="94" x2="132" y2="106" stroke="#1a5fb4" stroke-width="1.8"/><line x1="120" y1="106" x2="132" y2="94" stroke="#1a5fb4" stroke-width="1.8"/>
+<path d="M 152 78 H 180.0 A 22.0 22.0 0 0 1 180.0 122 H 152 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="202" y1="100" x2="228" y2="100" stroke="#222222" stroke-width="1.6"/>
+<text x="234" y="104" font-size="12" text-anchor="start" fill="#222222">abc</text>
+<text x="100" y="156" font-size="12" text-anchor="middle" fill="#222222">(a)</text>
+<text x="320" y="62" font-size="12" text-anchor="middle" fill="#222222">a</text>
+<line x1="320" y1="70" x2="320" y2="132" stroke="#222222" stroke-width="1.6"/>
+<text x="348" y="62" font-size="12" text-anchor="middle" fill="#222222">b</text>
+<line x1="348" y1="70" x2="348" y2="132" stroke="#222222" stroke-width="1.6"/>
+<text x="376" y="62" font-size="12" text-anchor="middle" fill="#222222">c</text>
+<line x1="376" y1="70" x2="376" y2="132" stroke="#222222" stroke-width="1.6"/>
+<line x1="298" y1="100" x2="402" y2="100" stroke="#222222" stroke-width="1.6"/>
+<line x1="314" y1="94" x2="326" y2="106" stroke="#1a5fb4" stroke-width="1.8"/><line x1="314" y1="106" x2="326" y2="94" stroke="#1a5fb4" stroke-width="1.8"/>
+<line x1="342" y1="94" x2="354" y2="106" stroke="#1a5fb4" stroke-width="1.8"/><line x1="342" y1="106" x2="354" y2="94" stroke="#1a5fb4" stroke-width="1.8"/>
+<line x1="370" y1="94" x2="382" y2="106" stroke="#1a5fb4" stroke-width="1.8"/><line x1="370" y1="106" x2="382" y2="94" stroke="#1a5fb4" stroke-width="1.8"/>
+<path d="M 402 78 Q 416 100.0 402 122 Q 430.6 122 454 100.0 Q 430.6 78 402 78 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="454" y1="100" x2="478" y2="100" stroke="#222222" stroke-width="1.6"/>
+<text x="484" y="104" font-size="12" text-anchor="start" fill="#222222">a + b + c</text>
+<text x="350" y="156" font-size="12" text-anchor="middle" fill="#222222">(b)</text>
+<text x="70" y="192" font-size="12" text-anchor="middle" fill="#222222">a</text>
+<line x1="70" y1="200" x2="70" y2="262" stroke="#222222" stroke-width="1.6"/>
+<text x="98" y="192" font-size="12" text-anchor="middle" fill="#222222">b</text>
+<line x1="98" y1="200" x2="98" y2="262" stroke="#222222" stroke-width="1.6"/>
+<text x="126" y="192" font-size="12" text-anchor="middle" fill="#222222">c</text>
+<line x1="126" y1="200" x2="126" y2="262" stroke="#222222" stroke-width="1.6"/>
+<line x1="48" y1="230" x2="152" y2="230" stroke="#222222" stroke-width="1.6"/>
+<line x1="64" y1="224" x2="76" y2="236" stroke="#1a5fb4" stroke-width="1.8"/><line x1="64" y1="236" x2="76" y2="224" stroke="#1a5fb4" stroke-width="1.8"/>
+<line x1="120" y1="224" x2="132" y2="236" stroke="#1a5fb4" stroke-width="1.8"/><line x1="120" y1="236" x2="132" y2="224" stroke="#1a5fb4" stroke-width="1.8"/>
+<path d="M 152 208 H 180.0 A 22.0 22.0 0 0 1 180.0 252 H 152 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="202" y1="230" x2="228" y2="230" stroke="#222222" stroke-width="1.6"/>
+<text x="234" y="234" font-size="12" text-anchor="start" fill="#222222">ac</text>
+<text x="100" y="286" font-size="12" text-anchor="middle" fill="#222222">(c)</text>
+<text x="320" y="192" font-size="12" text-anchor="middle" fill="#222222">a</text>
+<line x1="320" y1="200" x2="320" y2="262" stroke="#222222" stroke-width="1.6"/>
+<text x="348" y="192" font-size="12" text-anchor="middle" fill="#222222">b</text>
+<line x1="348" y1="200" x2="348" y2="262" stroke="#222222" stroke-width="1.6"/>
+<text x="376" y="192" font-size="12" text-anchor="middle" fill="#222222">c</text>
+<line x1="376" y1="200" x2="376" y2="262" stroke="#222222" stroke-width="1.6"/>
+<line x1="298" y1="230" x2="402" y2="230" stroke="#222222" stroke-width="1.6"/>
+<line x1="314" y1="224" x2="326" y2="236" stroke="#1a5fb4" stroke-width="1.8"/><line x1="314" y1="236" x2="326" y2="224" stroke="#1a5fb4" stroke-width="1.8"/>
+<line x1="342" y1="224" x2="354" y2="236" stroke="#1a5fb4" stroke-width="1.8"/><line x1="342" y1="236" x2="354" y2="224" stroke="#1a5fb4" stroke-width="1.8"/>
+<path d="M 402 208 Q 416 230.0 402 252 Q 430.6 252 454 230.0 Q 430.6 208 402 208 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="454" y1="230" x2="478" y2="230" stroke="#222222" stroke-width="1.6"/>
+<text x="484" y="234" font-size="12" text-anchor="start" fill="#222222">a + b</text>
+<text x="350" y="286" font-size="12" text-anchor="middle" fill="#222222">(d)</text>
+<text x="70" y="322" font-size="12" text-anchor="middle" fill="#222222">a</text>
+<line x1="70" y1="330" x2="70" y2="392" stroke="#222222" stroke-width="1.6"/>
+<text x="98" y="322" font-size="12" text-anchor="middle" fill="#222222">b</text>
+<line x1="98" y1="330" x2="98" y2="392" stroke="#222222" stroke-width="1.6"/>
+<text x="126" y="322" font-size="12" text-anchor="middle" fill="#222222">c</text>
+<line x1="126" y1="330" x2="126" y2="392" stroke="#222222" stroke-width="1.6"/>
+<line x1="48" y1="360" x2="152" y2="360" stroke="#222222" stroke-width="1.6"/>
+<circle cx="70" cy="360" r="4.0" fill="#222222"/>
+<circle cx="98" cy="360" r="4.0" fill="#222222"/>
+<circle cx="126" cy="360" r="4.0" fill="#222222"/>
+<path d="M 152 338 H 180.0 A 22.0 22.0 0 0 1 180.0 382 H 152 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="202" y1="360" x2="228" y2="360" stroke="#222222" stroke-width="1.6"/>
+<text x="234" y="364" font-size="12" text-anchor="start" fill="#222222">abc</text>
+<text x="100" y="416" font-size="12" text-anchor="middle" fill="#222222">(g)</text>
+<text x="320" y="322" font-size="12" text-anchor="middle" fill="#222222">a</text>
+<line x1="320" y1="330" x2="320" y2="392" stroke="#222222" stroke-width="1.6"/>
+<text x="348" y="322" font-size="12" text-anchor="middle" fill="#222222">b</text>
+<line x1="348" y1="330" x2="348" y2="392" stroke="#222222" stroke-width="1.6"/>
+<text x="376" y="322" font-size="12" text-anchor="middle" fill="#222222">c</text>
+<line x1="376" y1="330" x2="376" y2="392" stroke="#222222" stroke-width="1.6"/>
+<line x1="298" y1="360" x2="402" y2="360" stroke="#222222" stroke-width="1.6"/>
+<circle cx="320" cy="360" r="4.0" fill="#222222"/>
+<circle cx="348" cy="360" r="4.0" fill="#222222"/>
+<circle cx="376" cy="360" r="4.0" fill="#222222"/>
+<path d="M 402 338 Q 416 360.0 402 382 Q 430.6 382 454 360.0 Q 430.6 338 402 338 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="454" y1="360" x2="478" y2="360" stroke="#222222" stroke-width="1.6"/>
+<text x="484" y="364" font-size="12" text-anchor="start" fill="#222222">a + b + c</text>
+<text x="350" y="416" font-size="12" text-anchor="middle" fill="#222222">(h)</text>
+<line x1="30" y1="430" x2="780" y2="430" stroke="#bbbbbb" stroke-width="1"/>
+<text x="30" y="454" font-size="12" text-anchor="start" fill="#222222">Cross  =  fusible link intact.      No mark  =  fuse blown / no connection.      Solid dot  =  hard-wired, not fusible.</text>
+
+</svg>

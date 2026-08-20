@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="470" viewBox="0 0 840 470" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="420.0" y="28" font-size="15" text-anchor="middle" fill="#1a1a1a">Clocked synchronous FSM — general structure</text>
+  <rect x="300" y="60" width="240" height="110" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="420" y="110" font-size="14" text-anchor="middle" fill="#1a1a1a">Combinational</text>
+  <text x="420" y="130" font-size="14" text-anchor="middle" fill="#1a1a1a">logic</text>
+  <path d="M140,82 L300,82" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M140,106 L300,106" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M140,130 L300,130" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="92" y="110" font-size="13" text-anchor="middle" fill="#1b4f72">Inputs</text>
+  <text x="220" y="152" font-size="11" text-anchor="middle" fill="#1a1a1a">• • •</text>
+  <path d="M540,82 L690,82" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M540,106 L690,106" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M540,130 L690,130" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="742" y="110" font-size="13" text-anchor="middle" fill="#1b4f72">Outputs</text>
+  <text x="614" y="152" font-size="11" text-anchor="middle" fill="#1a1a1a">• • •</text>
+  <rect x="340" y="240" width="170" height="150" rx="6" fill="none" stroke="#117a65" stroke-width="1.6"/>
+  <text x="425" y="412" font-size="12" text-anchor="middle" fill="#117a65">Storage elements (flip-flops)</text>
+  <rect x="372" y="258" width="96" height="32" rx="0" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.6"/>
+  <text x="420" y="279" font-size="12" text-anchor="middle" fill="#1a1a1a" font-style="italic">Q₀</text>
+  <rect x="372" y="306" width="96" height="32" rx="0" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.6"/>
+  <text x="420" y="327" font-size="12" text-anchor="middle" fill="#1a1a1a" font-style="italic">Q₁</text>
+  <rect x="372" y="356" width="96" height="32" rx="0" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.6"/>
+  <text x="420" y="377" font-size="12" text-anchor="middle" fill="#1a1a1a" font-style="italic">Qₘ₋₁</text>
+  <text x="420" y="348" font-size="11" text-anchor="middle" fill="#1a1a1a">• • •</text>
+  <path d="M540,150 L610,150 L610,274 L468,274" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M610,274 L610,322 L468,322" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="610" cy="274" r="3.4" fill="#1a1a1a"/>
+  <path d="M610,322 L610,372 L468,372" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="610" cy="322" r="3.4" fill="#1a1a1a"/>
+  <text x="660" y="212" font-size="12" text-anchor="middle" fill="#1b4f72">Next state</text>
+  <path d="M372,274 L270,274 L270,142 L300,142" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M372,322 L244,322 L244,154 L300,154" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M372,372 L218,372 L218,166 L300,166" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="150" y="300" font-size="12" text-anchor="middle" fill="#1b4f72">Current state</text>
+  <text x="150" y="318" font-size="11" text-anchor="middle" fill="#1b4f72">( = the state)</text>
+  <path d="M760,440 L425,440" stroke="#117a65" stroke-width="1.6" fill="none"/>
+  <path d="M425,440 L425,390" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="790" y="444" font-size="12" text-anchor="middle" fill="#117a65">Clock</text>
+</svg>

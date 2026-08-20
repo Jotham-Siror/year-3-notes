@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1010" height="752" viewBox="0 0 1010 752" font-family="sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="7" refX="8.5" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 z" fill="#222"/>
+    </marker>
+  </defs>
+  <rect width="1010" height="752" fill="#ffffff"/>
+
+  <!-- ============ circuit ============ -->
+  <g stroke="#222" stroke-width="2" fill="#f6f9fa">
+    <rect x="140" y="110" width="130" height="150"/>
+    <rect x="340" y="110" width="130" height="150"/>
+    <rect x="540" y="110" width="130" height="150"/>
+    <rect x="740" y="110" width="130" height="150"/>
+  </g>
+  <g font-size="16" fill="#222">
+    <text x="152" y="156">J</text><text x="152" y="236">K</text>
+    <text x="352" y="156">J</text><text x="352" y="236">K</text>
+    <text x="552" y="156">J</text><text x="552" y="236">K</text>
+    <text x="752" y="156">J</text><text x="752" y="236">K</text>
+    <text x="258" y="156" text-anchor="end">QA</text><text x="258" y="242" text-anchor="end">QA</text>
+    <text x="458" y="156" text-anchor="end">QB</text><text x="458" y="242" text-anchor="end">QB</text>
+    <text x="658" y="156" text-anchor="end">QC</text><text x="658" y="242" text-anchor="end">QC</text>
+    <text x="858" y="156" text-anchor="end">QD</text><text x="858" y="242" text-anchor="end">QD</text>
+  </g>
+  <g stroke="#222" stroke-width="1.6">
+    <line x1="228" y1="226" x2="258" y2="226"/><line x1="428" y1="226" x2="458" y2="226"/>
+    <line x1="628" y1="226" x2="658" y2="226"/><line x1="828" y1="226" x2="858" y2="226"/>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#666">
+    <text x="205" y="102">FFA</text><text x="405" y="102">FFB</text>
+    <text x="605" y="102">FFC</text><text x="805" y="102">FFD</text>
+  </g>
+  <!-- clock inputs on the bottom edge -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M195,260 L215,260 L205,244 z"/><path d="M395,260 L415,260 L405,244 z"/>
+    <path d="M595,260 L615,260 L605,244 z"/><path d="M795,260 L815,260 L805,244 z"/>
+    <line x1="205" y1="260" x2="205" y2="320"/><line x1="405" y1="260" x2="405" y2="320"/>
+    <line x1="605" y1="260" x2="605" y2="320"/><line x1="805" y1="260" x2="805" y2="320"/>
+    <line x1="105" y1="320" x2="805" y2="320"/>
+  </g>
+  <g fill="#222"><circle cx="205" cy="320" r="4"/><circle cx="405" cy="320" r="4"/><circle cx="605" cy="320" r="4"/></g>
+  <text x="98" y="326" font-size="15" text-anchor="end" fill="#222">Clock Pulse</text>
+
+  <!-- J/K feeds -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M100,60 L100,230 M100,150 L140,150 M100,230 L140,230"/>
+    <path d="M270,150 L300,150 M300,33 L300,230 M300,150 L340,150 M300,230 L340,230"/>
+    <path d="M470,150 L490,150 M490,67 L490,150"/>
+    <path d="M515,90 L515,230 M515,150 L540,150 M515,230 L540,230"/>
+    <path d="M670,150 L690,150 M690,67 L690,150"/>
+    <path d="M715,90 L715,230 M715,150 L740,150 M715,230 L740,230"/>
+    <path d="M870,150 L960,150"/>
+  </g>
+  <g fill="#222"><circle cx="300" cy="150" r="4"/><circle cx="490" cy="150" r="4"/><circle cx="690" cy="150" r="4"/><circle cx="660" cy="50" r="4"/></g>
+  <line x1="100" y1="60" x2="100" y2="34" stroke="#222" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="100" y="22" font-size="14" text-anchor="middle" fill="#222">(Logic 1)</text>
+  <text x="968" y="156" font-size="15" fill="#1f6f8b">Out</text>
+
+  <!-- AND gates -->
+  <g stroke="#222" stroke-width="2" fill="#eef4f6">
+    <path d="M560,25 L585,25 A25,25 0 0 1 585,75 L560,75 z"/>
+    <path d="M760,25 L785,25 A25,25 0 0 1 785,75 L760,75 z"/>
+  </g>
+  <g font-size="16" text-anchor="middle" fill="#222"><text x="572" y="56">&amp;</text><text x="772" y="56">&amp;</text></g>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M300,33 L560,33"/>
+    <path d="M490,67 L560,67"/>
+    <path d="M610,50 L660,50 M660,50 L660,90 L515,90"/>
+    <path d="M660,50 L660,33 L760,33"/>
+    <path d="M690,67 L760,67"/>
+    <path d="M810,50 L860,50 L860,90 L715,90"/>
+  </g>
+  <text x="505" y="352" font-size="13" text-anchor="middle" fill="#666">every flip-flop sees the same clock edge; the AND gates decide which ones are allowed to toggle on it</text>
+
+  <!-- ============ timing ============ -->
+  <g stroke="#ddd" stroke-width="1" stroke-dasharray="3,4"><line x1="200" y1="390" x2="200" y2="678"/><line x1="246" y1="390" x2="246" y2="678"/><line x1="292" y1="390" x2="292" y2="678"/><line x1="338" y1="390" x2="338" y2="678"/><line x1="384" y1="390" x2="384" y2="678"/><line x1="430" y1="390" x2="430" y2="678"/><line x1="476" y1="390" x2="476" y2="678"/><line x1="522" y1="390" x2="522" y2="678"/><line x1="568" y1="390" x2="568" y2="678"/><line x1="614" y1="390" x2="614" y2="678"/><line x1="660" y1="390" x2="660" y2="678"/><line x1="706" y1="390" x2="706" y2="678"/><line x1="752" y1="390" x2="752" y2="678"/><line x1="798" y1="390" x2="798" y2="678"/><line x1="844" y1="390" x2="844" y2="678"/><line x1="890" y1="390" x2="890" y2="678"/><line x1="936" y1="390" x2="936" y2="678"/></g>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <polyline points="200,423 210,423 210,396 230,396 230,423 246,423 256,423 256,396 276,396 276,423 292,423 302,423 302,396 322,396 322,423 338,423 348,423 348,396 368,396 368,423 384,423 394,423 394,396 414,396 414,423 430,423 440,423 440,396 460,396 460,423 476,423 486,423 486,396 506,396 506,423 522,423 532,423 532,396 552,396 552,423 568,423 578,423 578,396 598,396 598,423 614,423 624,423 624,396 644,396 644,423 660,423 670,423 670,396 690,396 690,423 706,423 716,423 716,396 736,396 736,423 752,423 762,423 762,396 782,396 782,423 798,423 808,423 808,396 828,396 828,423 844,423 854,423 854,396 874,396 874,423 890,423 900,423 900,396 920,396 920,423 958,423"/>
+    <polyline points="200,480 246,480 246,480 246,448 292,448 292,448 292,480 338,480 338,480 338,448 384,448 384,448 384,480 430,480 430,480 430,448 476,448 476,448 476,480 522,480 522,480 522,448 568,448 568,448 568,480 614,480 614,480 614,448 660,448 660,448 660,480 706,480 706,480 706,448 752,448 752,448 752,480 798,480 798,480 798,448 844,448 844,448 844,480 890,480 890,480 890,448 936,448 936,448 936,480 958,480"/>
+    <polyline points="200,542 246,542 292,542 292,542 292,510 338,510 384,510 384,510 384,542 430,542 476,542 476,542 476,510 522,510 568,510 568,510 568,542 614,542 660,542 660,542 660,510 706,510 752,510 752,510 752,542 798,542 844,542 844,542 844,510 890,510 936,510 936,510 936,542 958,542"/>
+    <polyline points="200,604 246,604 292,604 338,604 384,604 384,604 384,572 430,572 476,572 522,572 568,572 568,572 568,604 614,604 660,604 706,604 752,604 752,604 752,572 798,572 844,572 890,572 936,572 936,572 936,604 958,604"/>
+    <polyline points="200,666 246,666 292,666 338,666 384,666 430,666 476,666 522,666 568,666 568,666 568,634 614,634 660,634 706,634 752,634 798,634 844,634 890,634 936,634 936,634 936,666 958,666"/>
+  </g>
+  <g font-size="14" text-anchor="end" fill="#222">
+    <text x="190" y="416">Clock</text>
+    <text x="190" y="470">QA</text><text x="190" y="532">QB</text>
+    <text x="190" y="594">QC</text><text x="190" y="656">QD</text>
+  </g>
+  <text x="196" y="456" font-size="11" text-anchor="end" fill="#666">(l.s.b.)</text>
+  <text x="196" y="642" font-size="11" text-anchor="end" fill="#666">(m.s.b.)</text>
+  <g font-size="11" text-anchor="middle" fill="#666"><text x="220" y="382">1</text><text x="266" y="382">2</text><text x="312" y="382">3</text><text x="358" y="382">4</text><text x="404" y="382">5</text><text x="450" y="382">6</text><text x="496" y="382">7</text><text x="542" y="382">8</text><text x="588" y="382">9</text><text x="634" y="382">10</text><text x="680" y="382">11</text><text x="726" y="382">12</text><text x="772" y="382">13</text><text x="818" y="382">14</text><text x="864" y="382">15</text><text x="910" y="382">16</text></g>
+  <g font-size="12" text-anchor="middle" fill="#222"><text x="223" y="704">0</text><text x="269" y="704">1</text><text x="315" y="704">2</text><text x="361" y="704">3</text><text x="407" y="704">4</text><text x="453" y="704">5</text><text x="499" y="704">6</text><text x="545" y="704">7</text><text x="591" y="704">8</text><text x="637" y="704">9</text><text x="683" y="704">10</text><text x="729" y="704">11</text><text x="775" y="704">12</text><text x="821" y="704">13</text><text x="867" y="704">14</text><text x="913" y="704">15</text></g>
+  <text x="190" y="704" font-size="14" text-anchor="end" fill="#222">Count</text>
+  <text x="966" y="704" font-size="12" fill="#666">0</text>
+</svg>

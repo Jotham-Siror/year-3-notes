@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="430" viewBox="0 0 660 430" font-family="sans-serif">
+<rect width="660" height="430" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6ea4"/></marker><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2a7f4f"/></marker></defs>
+<text x="330" y="22" font-size="12" text-anchor="middle" fill="#111111">SRAM latch memory cell, drawn as the slide draws it</text>
+<path d="M160,88 H196.0 A26.0,26.0 0 0 1 196.0,140 H160 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="226" cy="114.0" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<text x="191" y="120" font-size="9" text-anchor="middle" fill="#111111">NAND</text>
+<circle cx="70" cy="60" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<text x="70" y="48" font-size="11" text-anchor="middle" fill="#1c6ea4">Select</text>
+<polyline points="70,64 70,100 160,100" fill="none" stroke="#111111" stroke-width="1.2"/>
+<circle cx="70" cy="378" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<text x="70" y="398" font-size="11" text-anchor="middle" fill="#1c6ea4">Data in</text>
+<polyline points="70,374 70,128 160,128" fill="none" stroke="#111111" stroke-width="1.2"/>
+<polyline points="226,114 300,114" fill="none" stroke="#111111" stroke-width="1.2"/>
+<circle cx="268" cy="114" r="3" fill="#111111"/>
+<text x="268" y="106" font-size="10" text-anchor="middle" fill="#2a7f4f">N</text>
+<polyline points="300,114 300,101 372,101" fill="none" stroke="#111111" stroke-width="1.2"/>
+<path d="M250,168 L288,168 L269.0,214 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="269.0" cy="218" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<polyline points="268,114 268,168" fill="none" stroke="#111111" stroke-width="1.2"/>
+<polyline points="268,218 268,306 372,306" fill="none" stroke="#111111" stroke-width="1.2"/>
+<text x="300" y="238" font-size="10" text-anchor="middle" fill="#2a7f4f">N</text>
+<line x1="296" y1="227" x2="305" y2="227" stroke="#2a7f4f" stroke-width="1.2"/>
+<path d="M372,86 Q411.6,86 444,114.0 Q411.6,142 372,142 Q387.84,114.0 372,86 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="379.92" cy="101.12" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="379.92" cy="126.88" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<path d="M372,268 Q411.6,268 444,296.0 Q411.6,324 372,324 Q387.84,296.0 372,268 Z" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="379.92" cy="283.12" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<circle cx="379.92" cy="308.88" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<text x="408" y="352" font-size="9" text-anchor="middle" fill="#888888">cross-coupled NAND pair</text>
+<text x="408" y="366" font-size="9" text-anchor="middle" fill="#888888">(De Morgan form)</text>
+<polyline points="448,114 540,114" fill="none" stroke="#111111" stroke-width="1.2"/>
+<circle cx="496" cy="114" r="3" fill="#111111"/>
+<polyline points="540,114 540,378" fill="none" stroke="#111111" stroke-width="1.2"/>
+<circle cx="540" cy="382" r="4" fill="#fff" stroke="#111111" stroke-width="1.2"/>
+<text x="540" y="402" font-size="11" text-anchor="middle" fill="#1c6ea4">Data out</text>
+<text x="470" y="106" font-size="10" text-anchor="middle" fill="#2a7f4f">Q</text>
+<polyline points="496,114 496,244 348,244 348,282 372,282" fill="none" stroke="#111111" stroke-width="1.2"/>
+<polyline points="448,296 486,296 486,196 356,196 356,128 372,128" fill="none" stroke="#111111" stroke-width="1.2"/>
+<text x="468" y="290" font-size="10" text-anchor="middle" fill="#2a7f4f">Q</text>
+<line x1="464" y1="279" x2="473" y2="279" stroke="#2a7f4f" stroke-width="1.2"/>
+<text x="330" y="418" font-size="10" text-anchor="middle" fill="#888888">N = NAND(Select, Data in);   Q = NAND(N, Q̄);   Q̄ = NAND(N̄, Q)</text>
+</svg>

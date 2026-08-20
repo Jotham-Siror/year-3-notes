@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="470" viewBox="0 0 880 470" font-family="sans-serif"><title>Moore state diagram for the 1101 sequence detector</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker><marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c6cab"/></marker><marker id="ahB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f7d4f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M54.0,150.0 L100.0,150.0" stroke="#111111" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<text x="50.0" y="141.0" text-anchor="end" font-size="13" fill="#111111" >reset</text>
+<path d="M113.2,125.1 C85.7,109.5 174.3,109.5 146.8,125.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="130.0" y="77.9" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M473.2,125.1 C445.7,109.5 534.3,109.5 506.8,125.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="490.0" y="77.9" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M160.0,150.0 Q220.0,150.0 280.0,150.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="220.0" y="136.9" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M340.0,150.0 Q400.0,150.0 460.0,150.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="400.0" y="136.9" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M520.0,150.0 Q580.0,150.0 640.0,150.0" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="580.0" y="136.9" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M670.0,180.0 Q670.0,237.5 670.0,295.0" fill="none" stroke="#1c6cab" stroke-width="2" marker-end="url(#ahA)"/>
+<text x="690.0" y="242.4" text-anchor="middle" font-size="14" fill="#1c6cab" >1</text>
+<path d="M642.7,312.6 Q548.6,269.8 503.2,176.9" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="550.3309454599816" y="272.9167418125903" text-anchor="middle" font-size="14" fill="#111111" >1</text>
+<path d="M283.5,164.1 Q220.0,198.0 156.5,164.1" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="220.0" y="199.95882352941177" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M640.1,327.6 Q363.0,351.7 152.7,169.6" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="375.07748826790214" y="319.30375048761636" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<path d="M642.4,138.2 Q400.0,35.0 157.6,138.2" fill="none" stroke="#111111" stroke-width="2" marker-end="url(#ah)"/>
+<text x="400.0" y="76.52206902312213" text-anchor="middle" font-size="14" fill="#111111" >0</text>
+<circle cx="130" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="130" y="154.9" text-anchor="middle" font-size="14" fill="#111111">A/0</text>
+<circle cx="310" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="310" y="154.9" text-anchor="middle" font-size="14" fill="#111111">B/0</text>
+<circle cx="490" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="490" y="154.9" text-anchor="middle" font-size="14" fill="#111111">C/0</text>
+<circle cx="670" cy="150" r="30" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+<text x="670" y="154.9" text-anchor="middle" font-size="14" fill="#111111">D/0</text>
+<circle cx="670" cy="325" r="30" fill="#ffffff" stroke="#1c6cab" stroke-width="2"/>
+<circle cx="670" cy="325" r="25" fill="none" stroke="#1c6cab" stroke-width="1.6"/>
+<text x="670" y="329.9" text-anchor="middle" font-size="14" fill="#1c6cab">E/1</text>
+<text x="440" y="456" text-anchor="middle" font-size="13" fill="#1c6cab" >A = nothing yet,  B = 1,  C = 11 (two or more),  D = 110,  E = 1101 recognised</text>
+</svg>

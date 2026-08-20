@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="412" viewBox="0 0 940 412" font-family="sans-serif">
+<rect width="940" height="412" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111111"/></marker></defs>
+<text x="470.0" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#111111">Case II — state maps for the assignment S0 = 00, S1 = 01, S2 = 10</text>
+<line x1="64" y1="76" x2="110" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="102" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">X</text>
+<text x="68" y="104" font-size="13" font-style="italic" fill="#111111">AB</text>
+<text x="142.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">0</text>
+<text x="206.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">1</text>
+<text x="102" y="140.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="102" y="190.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="102" y="240.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="102" y="290.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="110" y="110" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="142.0" y="141.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="174" y="110" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="206.0" y="141.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="110" y="160" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="142.0" y="191.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="174" y="160" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="206.0" y="191.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="110" y="210" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="142.0" y="241.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="174" y="210" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="206.0" y="241.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="110" y="260" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="142.0" y="291.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="174" y="260" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="206.0" y="291.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<text x="174.0" y="336" text-anchor="middle" font-size="15" fill="#111111">A⁺ = X′B</text>
+<line x1="324" y1="76" x2="370" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="362" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">X</text>
+<text x="328" y="104" font-size="13" font-style="italic" fill="#111111">AB</text>
+<text x="402.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">0</text>
+<text x="466.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">1</text>
+<text x="362" y="140.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="362" y="190.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="362" y="240.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="362" y="290.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="370" y="110" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="402.0" y="141.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="434" y="110" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="466.0" y="141.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="370" y="160" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="402.0" y="191.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="434" y="160" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="466.0" y="191.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<rect x="370" y="210" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="402.0" y="241.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="434" y="210" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="466.0" y="241.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="370" y="260" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="402.0" y="291.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="434" y="260" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="466.0" y="291.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="434.0" y="336" text-anchor="middle" font-size="15" fill="#111111">B⁺ = X</text>
+<line x1="584" y1="76" x2="630" y2="110" stroke="#111111" stroke-width="1"/>
+<text x="622" y="86" text-anchor="end" font-size="13" font-style="italic" fill="#111111">X</text>
+<text x="588" y="104" font-size="13" font-style="italic" fill="#111111">AB</text>
+<text x="662.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">0</text>
+<text x="726.0" y="101" text-anchor="middle" font-size="13" fill="#1f6feb">1</text>
+<text x="622" y="140.0" text-anchor="end" font-size="13" fill="#1f6feb">00</text>
+<text x="622" y="190.0" text-anchor="end" font-size="13" fill="#1f6feb">01</text>
+<text x="622" y="240.0" text-anchor="end" font-size="13" fill="#1f6feb">11</text>
+<text x="622" y="290.0" text-anchor="end" font-size="13" fill="#1f6feb">10</text>
+<rect x="630" y="110" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="662.0" y="141.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="694" y="110" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="726.0" y="141.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="630" y="160" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="662.0" y="191.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="694" y="160" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="726.0" y="191.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="630" y="210" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="662.0" y="241.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="694" y="210" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="726.0" y="241.0" text-anchor="middle" font-size="15" fill="#111111">X</text>
+<rect x="630" y="260" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="662.0" y="291.0" text-anchor="middle" font-size="15" fill="#111111">0</text>
+<rect x="694" y="260" width="64" height="50" fill="#ffffff" stroke="#111111" stroke-width="1.4"/>
+<text x="726.0" y="291.0" text-anchor="middle" font-size="15" fill="#111111">1</text>
+<text x="694.0" y="336" text-anchor="middle" font-size="15" fill="#111111">Z = XA</text>
+<text x="110" y="392" font-size="13" fill="#777777">Rows AB = 00, 01, 11, 10; columns X = 0, 1. AB = 11 is the unused code and is a don't-care throughout.</text>
+</svg>

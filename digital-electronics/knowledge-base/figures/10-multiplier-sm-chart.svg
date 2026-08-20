@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="770" viewBox="0 0 940 770" font-family="sans-serif">
+  <rect width="940" height="770" fill="#ffffff"/>
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="ara" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0b5c8a"/></marker></defs>
+  <path d="M560 40 L560 70" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="495" y="70" width="130" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="560.0" y="96.86" font-size="13.5" text-anchor="middle" fill="#111111">S0 /</text>
+  <path d="M560 114 L560 142" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M560 144 L608 170 L560 196 L512 170 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="560" y="174.68" font-size="13" text-anchor="middle" fill="#111111">St</text>
+  <text x="482" y="162" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="626" y="162" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M608 170 L620 170 L620 206" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="565.0" y="211.0" width="110" height="42" rx="21.0" ry="21.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620" y="236.68" font-size="13" text-anchor="middle" fill="#111111">Load</text>
+  <path d="M620 253 L620 290" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="555" y="290" width="130" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620.0" y="316.86" font-size="13.5" text-anchor="middle" fill="#111111">S1 /</text>
+  <path d="M620 334 L620 362" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M620 364 L668 390 L620 416 L572 390 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="620" y="394.68" font-size="13" text-anchor="middle" fill="#111111">M</text>
+  <text x="542" y="382" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="686" y="382" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M572 390 L470 390 L470 426" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="422.0" y="431.0" width="96" height="42" rx="21.0" ry="21.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470" y="456.68" font-size="13" text-anchor="middle" fill="#111111">Sh</text>
+  <path d="M470 473 L470 510" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M470 512 L518 538 L470 564 L422 538 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470" y="542.68" font-size="13" text-anchor="middle" fill="#111111">K</text>
+  <text x="392" y="530" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <text x="478" y="586" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <path d="M470 564 L470 616" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M668 390 L760 390 L760 426" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="712.0" y="431.0" width="96" height="42" rx="21.0" ry="21.0" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="760" y="456.68" font-size="13" text-anchor="middle" fill="#111111">Ad</text>
+  <path d="M760 473 L760 506" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="695" y="506" width="130" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="760.0" y="532.86" font-size="13.5" text-anchor="middle" fill="#111111">S2 / Sh</text>
+  <path d="M760 550 L760 578" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M760 580 L808 606 L760 632 L712 606 Z" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="760" y="610.68" font-size="13" text-anchor="middle" fill="#111111">K</text>
+  <text x="682" y="598" font-size="12.5" text-anchor="middle" fill="#0b5c8a">1</text>
+  <text x="826" y="598" font-size="12.5" text-anchor="middle" fill="#0b5c8a">0</text>
+  <rect x="400" y="616" width="140" height="44" fill="none" stroke="#111111" stroke-width="1.8"/>
+  <text x="470.0" y="642.86" font-size="13.5" text-anchor="middle" fill="#111111">S3 / Done</text>
+  <path d="M712 606 L544 606 L544 616" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M422 538 L310 538 L310 312 L551 312" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M808 606 L880 606 L880 312 L691 312" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M470 660 L470 706 L230 706 L230 92 L491 92" fill="none" stroke="#111111" stroke-width="1.5" marker-end="url(#ar)"/>
+  <path d="M512 170 L230 170" fill="none" stroke="#111111" stroke-width="1.5"/>
+  <text x="560" y="748" font-size="11.5" text-anchor="middle" fill="#666666">Sh appears twice: as a conditional output in S1 (M = 0) and as a state output in S2 — a shift must always follow an add.</text>
+</svg>

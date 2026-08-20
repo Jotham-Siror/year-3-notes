@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="545" viewBox="0 0 900 545" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="450.0" y="26" font-size="14" text-anchor="middle" fill="#1a1a1a">Example sequential circuit analysed on slides 21–24</text>
+  <path d="M250,80 L274.2,80 A22.0,22.0 0 0 1 274.2,124 L250,124 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M250,150 L274.2,150 A22.0,22.0 0 0 1 274.2,194 L250,194 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M360,115 C372.936,127.32 372.936,146.68 360,159 C385.41,159 399.27,151.07999999999998 406.2,137.0 C399.27,122.92 385.41,115 360,115 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M250,271 L274.2,271 A22.0,22.0 0 0 1 274.2,315 L250,315 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M250,398 C261.76,409.2 261.76,426.8 250,438 C273.1,438 285.7,430.8 292.0,418.0 C285.7,405.2 273.1,398 250,398 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M392,392 L414.0,392 A20.0,20.0 0 0 1 414.0,432 L392,432 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M250,462 L272.8,474.0 L250,486 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <circle cx="276.8" cy="474.0" r="4" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.6"/>
+  <rect x="520" y="90" width="90" height="130" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="533" y="137.33333333333334" font-size="13" text-anchor="start" fill="#1a1a1a" font-style="italic">D</text>
+  <path d="M520,178.2 L533,186.2 L520,194.2" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="538" y="190.2" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">Clk</text>
+  <text x="599" y="137.33333333333334" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">A</text>
+  <text x="599" y="180.66666666666669" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">A′</text>
+  <rect x="520" y="250" width="90" height="130" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="533" y="297.3333333333333" font-size="13" text-anchor="start" fill="#1a1a1a" font-style="italic">D</text>
+  <path d="M520,338.2 L533,346.2 L520,354.2" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="538" y="350.2" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">Clk</text>
+  <text x="599" y="297.3333333333333" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">B</text>
+  <text x="599" y="340.6666666666667" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">B′</text>
+  <text x="36" y="64" font-size="15" text-anchor="end" fill="#1a1a1a" font-style="italic">x</text>
+  <path d="M46,60 L120,60" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M120,60 L120,474" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="120" cy="109.33333333333333" r="3.4" fill="#1a1a1a"/>
+  <path d="M120,109.33333333333333 L250,109.33333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="120" cy="179.33333333333334" r="3.4" fill="#1a1a1a"/>
+  <path d="M120,179.33333333333334 L250,179.33333333333334" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="120" cy="300.3333333333333" r="3.4" fill="#1a1a1a"/>
+  <path d="M120,300.3333333333333 L250,300.3333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <circle cx="120" cy="474" r="3.4" fill="#1a1a1a"/>
+  <path d="M120,474 L250,474" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M610,133 L760,133" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="760" cy="133" r="3.4" fill="#1a1a1a"/>
+  <text x="792" y="137" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">A</text>
+  <path d="M760,133 L760,44 L96,44 L96,411.3333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="96" cy="94.66666666666667" r="3.4" fill="#1a1a1a"/>
+  <path d="M96,94.66666666666667 L250,94.66666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M96,411.3333333333333 L256.4,411.3333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M610,177 L690,177" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="690" cy="177" r="3.4" fill="#1a1a1a"/>
+  <text x="716" y="181" font-size="14" text-anchor="start" fill="#1a1a1a" font-style="italic">A′</text>
+  <path d="M690,177 L690,232 L72,232 L72,285.6666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M72,285.6666666666667 L250,285.6666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M610,293 L824,293" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="824" cy="293" r="3.4" fill="#1a1a1a"/>
+  <text x="856" y="297" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">B</text>
+  <path d="M824,293 L824,362 L48,362" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M48,362 L48,164.66666666666666" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M48,164.66666666666666 L250,164.66666666666666" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M48,362 L48,424.6666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M48,424.6666666666667 L256.4,424.6666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M296.2,102.0 L340,102.0 L340,129.66666666666666" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M340,129.66666666666666 L367.04,129.66666666666666" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M296.2,172.0 L340,172.0 L340,144.33333333333334" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <path d="M340,144.33333333333334 L367.04,144.33333333333334" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M406.2,137.0 L520,133" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="476" y="124" font-size="11" text-anchor="middle" fill="#117a65">D_A</text>
+  <path d="M296.2,293.0 L520,293" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="470" y="280" font-size="11" text-anchor="middle" fill="#117a65">D_B</text>
+  <path d="M292.0,418.0 L345,418.0 L345,405.3333333333333 L392,405.3333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M280.8,474.0 L345,474.0 L345,418.6666666666667 L392,418.6666666666667" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="316" y="466" font-size="12" text-anchor="middle" fill="#117a65">x′</text>
+  <path d="M434.0,412.0 L640,412.0" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="660" y="417.0" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">y</text>
+  <path d="M760,522 L460,522 L460,186" stroke="#117a65" stroke-width="1.6" fill="none"/>
+  <circle cx="460" cy="346" r="3.4" fill="#117a65"/>
+  <path d="M460,346 L520,346" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M460,186 L520,186" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="790" y="526" font-size="12" text-anchor="start" fill="#117a65">Clock</text>
+</svg>

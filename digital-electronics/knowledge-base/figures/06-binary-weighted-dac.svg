@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="390" viewBox="0 0 880 390" font-family="sans-serif">
+<rect width="880" height="390" fill="#ffffff"/>
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#111111"/></marker><marker id="arb" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#1a5fb4"/></marker></defs>
+<circle cx="112" cy="62" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<path d="M117 62 L142 62" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M142 62 L152.0 62 L155.5 55 L162.5 69 L169.5 55 L176.5 69 L183.5 55 L190.5 69 L194.0 62 L204 62" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M204 62 L352 62" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="352" cy="62" r="4" fill="#111111"/>
+<text x="173.0" y="48" font-size="14" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">8R</text>
+<text x="98" y="67" font-size="13.5" text-anchor="end" fill="#1a5fb4" font-weight="400" font-style="normal">2⁰</text>
+<text x="177.0" y="88" font-size="12" text-anchor="middle" fill="#cc8800" font-weight="400" font-style="normal">I₀ = V/8R</text>
+<circle cx="112" cy="132" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<path d="M117 132 L142 132" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M142 132 L152.0 132 L155.5 125 L162.5 139 L169.5 125 L176.5 139 L183.5 125 L190.5 139 L194.0 132 L204 132" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M204 132 L352 132" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="352" cy="132" r="4" fill="#111111"/>
+<text x="173.0" y="118" font-size="14" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">4R</text>
+<text x="98" y="137" font-size="13.5" text-anchor="end" fill="#1a5fb4" font-weight="400" font-style="normal">2¹</text>
+<text x="177.0" y="158" font-size="12" text-anchor="middle" fill="#cc8800" font-weight="400" font-style="normal">I₁ = V/4R</text>
+<circle cx="112" cy="202" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<path d="M117 202 L142 202" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M142 202 L152.0 202 L155.5 195 L162.5 209 L169.5 195 L176.5 209 L183.5 195 L190.5 209 L194.0 202 L204 202" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M204 202 L352 202" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="352" cy="202" r="4" fill="#111111"/>
+<text x="173.0" y="188" font-size="14" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">2R</text>
+<text x="98" y="207" font-size="13.5" text-anchor="end" fill="#1a5fb4" font-weight="400" font-style="normal">2²</text>
+<text x="177.0" y="228" font-size="12" text-anchor="middle" fill="#cc8800" font-weight="400" font-style="normal">I₂ = V/2R</text>
+<circle cx="112" cy="272" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<path d="M117 272 L142 272" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M142 272 L152.0 272 L155.5 265 L162.5 279 L169.5 265 L176.5 279 L183.5 265 L190.5 279 L194.0 272 L204 272" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M204 272 L352 272" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="352" cy="272" r="4" fill="#111111"/>
+<text x="173.0" y="258" font-size="14" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">R</text>
+<text x="98" y="277" font-size="13.5" text-anchor="end" fill="#1a5fb4" font-weight="400" font-style="normal">2³</text>
+<text x="177.0" y="298" font-size="12" text-anchor="middle" fill="#cc8800" font-weight="400" font-style="normal">I₃ = V/R</text>
+<path d="M352 62 L352 272" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M352 165 L452 165" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M392 165 L392 48" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M392 48 L402.0 48 L405.5 41 L412.5 55 L419.5 41 L426.5 55 L433.5 41 L440.5 55 L444.0 48 L454 48" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M454 48 L646 48" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M646 48 L646 184.0" stroke="#111111" stroke-width="1.8" fill="none" />
+<text x="423.0" y="34" font-size="13.5" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">Rf</text>
+<path d="M452 124 L452 244 L564 184.0 L452 124" stroke="#111111" stroke-width="1.8" fill="#fbfbfb" />
+<text x="470" y="169.8" font-size="17" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">&#8722;</text>
+<text x="470" y="215.39999999999998" font-size="17" text-anchor="middle" fill="#111111" font-weight="400" font-style="normal">+</text>
+<path d="M452 210.39999999999998 L414 210.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M414 210.39999999999998 L414 226.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M414 226.39999999999998 L414 238.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M400 238.39999999999998 L428 238.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M405 244.39999999999998 L423 244.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M410 250.39999999999998 L418 250.39999999999998" stroke="#111111" stroke-width="1.8" fill="none" />
+<path d="M564 184.0 L742 184.0" stroke="#111111" stroke-width="1.8" fill="none" />
+<circle cx="646" cy="184.0" r="4" fill="#111111"/>
+<circle cx="750" cy="184.0" r="5" fill="#ffffff" stroke="#111111" stroke-width="1.8"/>
+<text x="764" y="189.0" font-size="14" text-anchor="start" fill="#1a5fb4" font-weight="400" font-style="normal">Vout</text>
+<text x="440.0" y="376" font-size="12" text-anchor="middle" fill="#888888" font-weight="400" font-style="normal">LSB at top (2⁰, 8R)   ·   MSB at bottom (2³, R)   ·   V = input HIGH level</text>
+</svg>

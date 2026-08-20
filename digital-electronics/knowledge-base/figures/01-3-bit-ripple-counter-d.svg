@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" font-family="sans-serif">
+  <defs>
+    <marker id="ahd" markerWidth="8" markerHeight="8" refX="4" refY="7.5" orient="auto">
+      <path d="M0,0 L8,0 L4,8 z" fill="#b25400"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="750" fill="#ffffff"/>
+
+  <!-- ================= circuit ================= -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <rect x="120" y="120" width="140" height="170"/>
+    <rect x="420" y="120" width="140" height="170"/>
+    <rect x="720" y="120" width="140" height="170"/>
+  </g>
+  <g font-size="18" fill="#222">
+    <text x="136" y="176">1D</text><text x="436" y="176">1D</text><text x="736" y="176">1D</text>
+    <text x="164" y="258">C1</text><text x="464" y="258">C1</text><text x="764" y="258">C1</text>
+  </g>
+  <!-- external polarity (inverting) indicators + internal dynamic indicators -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M96,156 L96,180 L120,168 z"/>  <path d="M96,238 L96,262 L120,250 z"/>  <path d="M120,238 L120,262 L142,250 z"/>
+    <path d="M396,156 L396,180 L420,168 z"/><path d="M396,238 L396,262 L420,250 z"/><path d="M420,238 L420,262 L442,250 z"/>
+    <path d="M696,156 L696,180 L720,168 z"/><path d="M696,238 L696,262 L720,250 z"/><path d="M720,238 L720,262 L742,250 z"/>
+  </g>
+  <!-- Q taps, feedback loops, clock chain -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <path d="M260,168 L315,168"/>  <path d="M300,168 L300,250 L396,250"/>  <path d="M300,168 L300,60 L50,60 L50,168 L96,168"/>
+    <path d="M560,168 L615,168"/>  <path d="M600,168 L600,250 L696,250"/>  <path d="M600,168 L600,60 L350,60 L350,168 L396,168"/>
+    <path d="M860,168 L915,168"/>  <path d="M900,168 L900,60 L650,60 L650,168 L696,168"/>
+    <path d="M20,250 L96,250"/>
+  </g>
+  <g fill="#222">
+    <circle cx="300" cy="168" r="5"/><circle cx="600" cy="168" r="5"/><circle cx="900" cy="168" r="5"/>
+  </g>
+  <g font-size="17" fill="#1f6f8b">
+    <text x="290" y="48" text-anchor="middle">Q0</text>
+    <text x="590" y="48" text-anchor="middle">Q1</text>
+    <text x="890" y="48" text-anchor="middle">Q2</text>
+  </g>
+  <text x="16" y="240" font-size="16" fill="#222">CLOCK</text>
+  <text x="500" y="326" font-size="13" text-anchor="middle" fill="#666">the small triangle outside each input is a polarity (inverting) indicator: the D input is fed from the inverted Q, and each stage triggers on the falling edge of its clock</text>
+
+  <!-- ================= timing ================= -->
+  <g stroke="#bbb" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="280" y1="392" x2="280" y2="660"/><line x1="410" y1="392" x2="410" y2="660"/>
+    <line x1="540" y1="392" x2="540" y2="660"/><line x1="670" y1="392" x2="670" y2="660"/>
+    <line x1="800" y1="392" x2="800" y2="660"/>
+  </g>
+  <g stroke="#222" stroke-width="2" fill="none">
+    <polyline points="200,430 215,430 215,400 280,400 280,430 345,430 345,400 410,400 410,430 475,430 475,400 540,400 540,430 605,430 605,400 670,400 670,430 735,430 735,400 800,400 800,430 900,430"/>
+    <polyline points="200,500 280,500 280,470 410,470 410,500 540,500 540,470 670,470 670,500 800,500 800,470 900,470"/>
+    <polyline points="200,570 410,570 410,540 670,540 670,570 900,570"/>
+    <polyline points="200,610 670,610 670,640 900,640"/>
+  </g>
+  <g font-size="16" text-anchor="end" fill="#222">
+    <text x="190" y="420">CLOCK</text><text x="190" y="491">Q0</text>
+    <text x="190" y="561">Q1</text><text x="190" y="631">Q2</text>
+  </g>
+  <g stroke="#b25400" stroke-width="2" marker-end="url(#ahd)">
+    <line x1="280" y1="402" x2="280" y2="422"/><line x1="410" y1="402" x2="410" y2="422"/>
+    <line x1="540" y1="402" x2="540" y2="422"/><line x1="670" y1="402" x2="670" y2="422"/>
+    <line x1="800" y1="402" x2="800" y2="422"/>
+  </g>
+  <g font-size="17" text-anchor="middle" fill="#222">
+    <text x="240" y="692">4</text><text x="345" y="692">5</text><text x="475" y="692">6</text>
+    <text x="605" y="692">7</text><text x="735" y="692">0</text><text x="850" y="692">1</text>
+  </g>
+  <text x="190" y="692" font-size="16" text-anchor="end" fill="#222">Q2:0</text>
+  <text x="500" y="728" font-size="14" text-anchor="middle" fill="#b25400">propagation delay CLOCK-falling to Q2 = 3 &#215; 1 ns = 3 ns (worst case, all three stages ripple)</text>
+</svg>

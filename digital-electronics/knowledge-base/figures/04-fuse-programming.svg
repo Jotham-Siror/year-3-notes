@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="265" viewBox="0 0 800 265" font-family="sans-serif">
+<rect width="800" height="265" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#222222"/></marker><marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1a5fb4"/></marker></defs>
+<text x="400" y="26" font-size="15" text-anchor="middle" fill="#222222">Programming by blowing fuses</text>
+<text x="40" y="74" font-size="13" text-anchor="middle" fill="#222222">a</text>
+<line x1="50" y1="70" x2="70" y2="70" stroke="#222222" stroke-width="1.6"/>
+<line x1="70" y1="70" x2="86" y2="70" stroke="#222222" stroke-width="1.6"/>
+<circle cx="86" cy="70" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<path d="M 89 70 q 7 -9 14 0 q 7 9 14 0" fill="none" stroke="#1a5fb4" stroke-width="1.6"/>
+<circle cx="120" cy="70" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="123" y1="70" x2="150" y2="70" stroke="#222222" stroke-width="1.6"/>
+<line x1="150" y1="70" x2="190" y2="70" stroke="#222222" stroke-width="1.6"/>
+<text x="40" y="100" font-size="13" text-anchor="middle" fill="#222222">b</text>
+<line x1="50" y1="96" x2="70" y2="96" stroke="#222222" stroke-width="1.6"/>
+<line x1="70" y1="96" x2="86" y2="96" stroke="#222222" stroke-width="1.6"/>
+<circle cx="86" cy="96" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<path d="M 89 96 q 7 -9 14 0 q 7 9 14 0" fill="none" stroke="#1a5fb4" stroke-width="1.6"/>
+<circle cx="120" cy="96" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="123" y1="96" x2="150" y2="96" stroke="#222222" stroke-width="1.6"/>
+<line x1="150" y1="96" x2="190" y2="96" stroke="#222222" stroke-width="1.6"/>
+<text x="40" y="126" font-size="13" text-anchor="middle" fill="#222222">c</text>
+<line x1="50" y1="122" x2="70" y2="122" stroke="#222222" stroke-width="1.6"/>
+<line x1="70" y1="122" x2="86" y2="122" stroke="#222222" stroke-width="1.6"/>
+<circle cx="86" cy="122" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<path d="M 89 122 q 7 -9 14 0 q 7 9 14 0" fill="none" stroke="#1a5fb4" stroke-width="1.6"/>
+<circle cx="120" cy="122" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="123" y1="122" x2="150" y2="122" stroke="#222222" stroke-width="1.6"/>
+<line x1="150" y1="122" x2="190" y2="122" stroke="#222222" stroke-width="1.6"/>
+<text x="40" y="152" font-size="13" text-anchor="middle" fill="#222222">d</text>
+<line x1="50" y1="148" x2="70" y2="148" stroke="#222222" stroke-width="1.6"/>
+<line x1="70" y1="148" x2="86" y2="148" stroke="#222222" stroke-width="1.6"/>
+<circle cx="86" cy="148" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<path d="M 89 148 q 7 -9 14 0 q 7 9 14 0" fill="none" stroke="#1a5fb4" stroke-width="1.6"/>
+<circle cx="120" cy="148" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="123" y1="148" x2="150" y2="148" stroke="#222222" stroke-width="1.6"/>
+<line x1="150" y1="148" x2="190" y2="148" stroke="#222222" stroke-width="1.6"/>
+<path d="M 190 60 H 190.0 A 52.0 52.0 0 0 1 190.0 164 H 190 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="242" y1="112" x2="290" y2="112" stroke="#222222" stroke-width="1.6"/>
+<text x="296" y="116" font-size="13" text-anchor="start" fill="#222222">abcd</text>
+<text x="170" y="206" font-size="12" text-anchor="middle" fill="#222222">(a)  before programming</text>
+<text x="420" y="74" font-size="13" text-anchor="middle" fill="#222222">a</text>
+<line x1="430" y1="70" x2="450" y2="70" stroke="#222222" stroke-width="1.6"/>
+<line x1="450" y1="70" x2="466" y2="70" stroke="#222222" stroke-width="1.6"/>
+<circle cx="466" cy="70" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<circle cx="500" cy="70" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="503" y1="70" x2="530" y2="70" stroke="#222222" stroke-width="1.6"/>
+<line x1="530" y1="70" x2="570" y2="70" stroke="#222222" stroke-width="1.6"/>
+<text x="420" y="100" font-size="13" text-anchor="middle" fill="#222222">b</text>
+<line x1="430" y1="96" x2="450" y2="96" stroke="#222222" stroke-width="1.6"/>
+<line x1="450" y1="96" x2="466" y2="96" stroke="#222222" stroke-width="1.6"/>
+<circle cx="466" cy="96" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<path d="M 469 96 q 7 -9 14 0 q 7 9 14 0" fill="none" stroke="#1a5fb4" stroke-width="1.6"/>
+<circle cx="500" cy="96" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="503" y1="96" x2="530" y2="96" stroke="#222222" stroke-width="1.6"/>
+<line x1="530" y1="96" x2="570" y2="96" stroke="#222222" stroke-width="1.6"/>
+<text x="420" y="126" font-size="13" text-anchor="middle" fill="#222222">c</text>
+<line x1="430" y1="122" x2="450" y2="122" stroke="#222222" stroke-width="1.6"/>
+<line x1="450" y1="122" x2="466" y2="122" stroke="#222222" stroke-width="1.6"/>
+<circle cx="466" cy="122" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<path d="M 469 122 q 7 -9 14 0 q 7 9 14 0" fill="none" stroke="#1a5fb4" stroke-width="1.6"/>
+<circle cx="500" cy="122" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="503" y1="122" x2="530" y2="122" stroke="#222222" stroke-width="1.6"/>
+<line x1="530" y1="122" x2="570" y2="122" stroke="#222222" stroke-width="1.6"/>
+<text x="420" y="152" font-size="13" text-anchor="middle" fill="#222222">d</text>
+<line x1="430" y1="148" x2="450" y2="148" stroke="#222222" stroke-width="1.6"/>
+<line x1="450" y1="148" x2="466" y2="148" stroke="#222222" stroke-width="1.6"/>
+<circle cx="466" cy="148" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<circle cx="500" cy="148" r="3.2" fill="#ffffff" stroke="#222222" stroke-width="1.3"/>
+<line x1="503" y1="148" x2="530" y2="148" stroke="#222222" stroke-width="1.6"/>
+<line x1="530" y1="148" x2="570" y2="148" stroke="#222222" stroke-width="1.6"/>
+<path d="M 570 60 H 570.0 A 52.0 52.0 0 0 1 570.0 164 H 570 Z" fill="#ffffff" stroke="#222222" stroke-width="1.6"/>
+<line x1="622" y1="112" x2="670" y2="112" stroke="#222222" stroke-width="1.6"/>
+<text x="676" y="116" font-size="13" text-anchor="start" fill="#222222">bc</text>
+<text x="550" y="206" font-size="12" text-anchor="middle" fill="#222222">(b)  after programming</text>
+<text x="400" y="246" font-size="12" text-anchor="middle" fill="#222222">A link drawn with a squiggle is intact; a plain open link has been blown. Blowing a and d turns abcd into bc.</text>
+
+</svg>

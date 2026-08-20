@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="300" viewBox="0 0 620 300" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b4f72"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="310.0" y="26" font-size="14" text-anchor="middle" fill="#1a1a1a">Analysis with a D flip-flop:  D_A = A ⊕ x ⊕ y</text>
+  <path d="M155.52,120 C169.044,132.88 169.044,153.12 155.52,166 C182.085,166 196.57500000000002,157.72 203.82000000000002,143.0 C196.57500000000002,128.28 182.085,120 155.52,120 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M150,120 C163.524,132.88 163.524,153.12 150,166" stroke="#1a1a1a" stroke-width="1.8" fill="none"/>
+  <path d="M305.52,110 C319.044,122.88 319.044,143.12 305.52,156 C332.085,156 346.575,147.72 353.82,133.0 C346.575,118.28 332.085,110 305.52,110 Z" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <path d="M300,110 C313.524,122.88 313.524,143.12 300,156" stroke="#1a1a1a" stroke-width="1.8" fill="none"/>
+  <rect x="440" y="90" width="90" height="120" rx="0" fill="#eef3f8" stroke="#1a1a1a" stroke-width="1.8"/>
+  <text x="453" y="134.0" font-size="13" text-anchor="start" fill="#1a1a1a" font-style="italic">D</text>
+  <path d="M440,170.8 L453,178.8 L440,186.8" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <text x="458" y="182.8" font-size="11" text-anchor="start" fill="#1a1a1a" font-style="italic">Clk</text>
+  <text x="519" y="154.0" font-size="13" text-anchor="end" fill="#1a1a1a" font-style="italic">Q</text>
+  <text x="70" y="138" font-size="15" text-anchor="end" fill="#1a1a1a" font-style="italic">x</text>
+  <path d="M80,134 L150,134" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="70" y="170" font-size="15" text-anchor="end" fill="#1a1a1a" font-style="italic">y</text>
+  <path d="M80,166 L150,166" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M203.82000000000002,143.0 L255,143.0 L255,140.66666666666666 L302,140.66666666666666" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M353.82,133.0 L440,130" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="412" y="122" font-size="11" text-anchor="middle" fill="#117a65">D_A</text>
+  <path d="M530,130 L578,130" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+  <circle cx="578" cy="130" r="3.4" fill="#1a1a1a"/>
+  <text x="600" y="134" font-size="15" text-anchor="start" fill="#1a1a1a" font-style="italic">A</text>
+  <path d="M578,130 L578,62 L230,62 L230,125.33333333333333 L302,125.33333333333333" stroke="#1a1a1a" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <path d="M60,270 L485,270 L485,210" stroke="#117a65" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="46" y="274" font-size="11" text-anchor="end" fill="#117a65">Clock</text>
+</svg>
