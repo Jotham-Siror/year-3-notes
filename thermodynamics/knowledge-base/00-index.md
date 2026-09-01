@@ -14,6 +14,9 @@ total_verification_flags: 51
 
 # Thermodynamics (MEC 3105) — Knowledge Base Index
 
+> A plain-language overview of this subject — what it covers and what to be careful of — is in
+> [`../README.md`](../README.md). This file is the operational index.
+
 > ## ✅ Build status — complete
 >
 > **Every one of the 200 lecture pages is transcribed and verified.** Both assessed group activities

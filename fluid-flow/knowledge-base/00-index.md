@@ -5,7 +5,7 @@ file_role: index
 source: "MEC 3104 FLUID THEORY NOTES.pptx (594 slides)"
 built: "extracted + verified from the deck; equations from OMML→LaTeX + canonical reconstruction; figures from slide images"
 coverage: "594/594 slides mapped, contiguous, no gaps or overlaps (verified)"
-total_verification_flags: 50   # 18 first-pass + 32 second-pass slide flags (S1–S32); plus 13 exam-paper flags (P1–P13)
+total_verification_flags: 50   # 18 first-pass + 32 second-pass slide flags (S1–S32); plus 15 exam-paper flags (P1–P15)
 past_papers: 2                 # see past-papers/00-past-papers-index.md
 ---
 
@@ -66,12 +66,12 @@ Reynolds, vorticity) → `06` energy/Bernoulli → `07` momentum → `08` viscou
 layer) → `09` pipe flow → `10` open-channel → `11` drag & lift. Later sections lean on `05` (continuity,
 circulation) and `08` (boundary layer, separation).
 
-## Verification summary (49 slide flags + 13 exam-paper errata — see `_verification-log.md`)
+## Verification summary (50 slide flags + 15 exam-paper errata — see `_verification-log.md`)
 
 > **A second, independent audit of all 11 topic files was run on 2026-08-03.** All 594 slides were re-extracted
 > from the .pptx XML **including equation objects** (the first pass read text boxes only), ~200 `·slide N`
 > citations were sampled, and every worked example was re-computed. Result: all 18 original flags **confirmed
-> verbatim**, only 2 wrong citations found, `_formula-sheet.md` clean — but **31 further slide errors** (`S1`–`S31`)
+> verbatim**, only 2 wrong citations found, `_formula-sheet.md` clean — but **31 further slide errors** (`S1`–`S31`; a 32nd, `S32`, was added later as an addendum — hence the 32 in the frontmatter)
 > and **4 errors in the KB itself** (now fixed, tagged `⚠ KB-FIX 2026-08-03`). Read `_verification-log.md`
 > **§ Second-pass audit** before teaching sections 04, 06, 07 or 09: several derivations there are broken on the
 > slides in ways the topic files had silently repaired without flagging. The worst is slide 256, where the

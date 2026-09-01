@@ -11,9 +11,11 @@ GitHub shows `.html` files as source code.
 | Subject | Code | Source material | Status |
 |---|---|---|---|
 | [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
-| [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 1 handout, 43 flags |
-| [Thermodynamics](thermodynamics/README.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 50 flags, both group activities |
-| [Digital Electronics II](digital-electronics/knowledge-base/00-index.md) | BEE 3102 | 6 chapter decks (348 slides) + excitation-table sheet | 10 topic files, 81 flags, 142 figures |
+| [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 1 handout, 43 flags, 1 past paper, 1 lab |
+| [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 51 flags, both group activities |
+| [Analogue Electronics I](analogue-electronics/knowledge-base/00-index.md) | BEE 3103 | Lecture notes (100 pp.) + 7 lesson documents (169 pp.) + 4 reference decks | 14 topic files, 388 flags, 3 tiers |
+| [Digital Electronics II](digital-electronics/knowledge-base/00-index.md) | BEE 3102 | 6 chapter decks (348 slides) + excitation-table sheet | 10 topic files, 81 flags, 144 figures, 1 past paper |
+| [Engineering Mathematics III](engineering-math/knowledge-base/00-index.md) | EMT 3101 | 6 topic documents (66 pp.) — one typeset, five handwritten scans | 6 topic files, 24 flags, 1 assignment |
 
 ## What this actually is
 
@@ -21,7 +23,7 @@ Each subject's lecture material has been transcribed into structured Markdown: e
 LaTeX, every claim anchored to the slide or page it came from, every figure described, and **every
 suspected error in the original flagged and corrected**.
 
-That last part is the reason this exists. Across the four subjects there are **224 documented
+That last part is the reason this exists. Across the six subjects there are **637 documented
 defects** in the lecture material — wrong constants, mislabelled results, broken derivations. A few
 examples:
 
@@ -33,12 +35,23 @@ examples:
   equations self-referential and unsolvable as printed
 - MEC 3105, First Law slide 20: the deck's only worked example flips the sign of the work term, so
   its printed answer of $-505\ \mathrm{J}$ should be $-2532\ \mathrm{J}$ — wrong by a factor of five
+- BEE 3103, Lesson 2 p4: half-wave rectification efficiency printed as **409.6 %**. It is
+  $4/\pi^{2} = 40.5\,\%$, and the correct decimal 0.406 sits on the line above it
+- BEE 3103, Lesson 7 p11: $\beta$ means the feedback fraction and the transistor current gain within
+  eight lines of each other — 0.02 versus 50, in equations that look identical
+- BEE 3103, lecture notes p35: Boltzmann's constant printed as $1.38\times10^{-28}$ J/K, which puts
+  the thermal voltage at 0.26 µV instead of 26 mV — caught because the *other* source has it right
 - BEE 3102, Chapter 4 slide 44: the R/2R ladder transfer function is off by one in the exponent, so
   **every voltage the deck gives for that converter is half what the circuit produces** — slide 47's
   printed $-3.4375$ V should be $-6.875$ V, and the deck's own nodal analysis two slides earlier
   contradicts its formula
 - BEE 3102, Chapter 3 slide 29: the Hamming syndrome for an error in bit 12 is printed $1000$, which
   is the code for bit 8 — the one property the whole scheme exists to provide
+- EMT 3101, Bessel p2: the $-\nu$ is missing from the exponent of $J_{-\nu}$, so **every value the
+  printed series produces is wrong** — 0.7029 instead of 1.0653 at $\nu = 0.3$, $x = 0.5$; the page's
+  own line above it implies the missing term
+- EMT 3101, Gamma and Beta printed p6: $\Gamma(9/2) = 16.8114$. It is **11.6317** — and the next line
+  on the same page uses the correct value to reach $(4.5)! = 52.3428$
 
 Every one is logged with the correct form and the reasoning. **Revise from the corrected versions.**
 
@@ -124,11 +137,21 @@ This repository is public, so four things are withheld on purpose. Please don't 
     ├── knowledge-base/          # 7 topic files + nomenclature, formulas, log
     │   └── exercises/           # assessed group activities — questions only
     └── sources/SOURCES.md
+└── analogue-electronics/
+    ├── knowledge-base/          # 14 topic files in 3 tiers + nomenclature, formulas, log
+    │   └── _reference-decks.md  # 4 slide decks — mapped, not verified
+    └── sources/SOURCES.md
 └── digital-electronics/
     ├── knowledge-base/          # 10 topic files + nomenclature, formulas, log
     │   ├── figures/             # 142 redrawn SVGs
-    │   └── flags/               # per-file verification working
+    │   ├── flags/               # per-file verification working
+    │   └── past-papers/         # transcribed CATs, worked; figures redrawn
     └── sources/SOURCES.md
+└── engineering-math/
+    ├── knowledge-base/          # 6 topic files + nomenclature, formulas, log
+    │   └── past-papers/         # transcribed assignment, worked
+    └── sources/SOURCES.md       # (a local _transcripts/ layer sits beside the
+                                 #  knowledge base, untracked — see SOURCES.md)
 ```
 
 ## Portable prompts

@@ -72,6 +72,31 @@
 !**/sources/SOURCES.md
 !**/sources/.gitkeep
 
+# ── Page-by-page transcripts — the extraction working layer ────
+# Ours in the sense that we typed them, but ~95% of each file IS the
+# lecturer's page, transcribed line for line. That is the same thing
+# sources/ holds, so it gets the same treatment: kept locally, never
+# committed. The knowledge base beside it is the authored product —
+# reorganised, corrected and analysed — and that is what ships.
+# Each subject's SOURCES.md says these exist and what they are for.
+**/knowledge-base/_transcripts/
+
+# ── Third-party lab material — copyright ───────────────────────
+# BEE 3102's laboratory material reproduces a published commercial lab
+# manual's procedure text verbatim and keeps crops of its pages. That
+# breaks docs/kb-format.md § "What never gets committed", rule 3, and the
+# commit-what-we-authored principle.
+#
+# These rules previously lived in .git/info/exclude, which is LOCAL ONLY —
+# it does not survive a clone, so a fresh checkout elsewhere would have
+# nothing stopping it publishing the crops. Moved here so the protection
+# travels with the repository.
+#
+# To publish: paraphrase the procedure text and discussion questions,
+# delete labs/figures/scan/, then remove the two lines below.
+digital-electronics/knowledge-base/labs/
+digital-electronics/study-guides/lab-01-ttl-nand-nor.html
+
 # ── Personal overlay — never shared ────────────────────────────
 _personal/
 _Study Log/
@@ -82,6 +107,13 @@ _to_delete/
 build/
 dist/
 *.tmp
+
+# ── Python bytecode from the lab/assignment scripts ────────────
+# The .py files ARE committed; their compiled output never is.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
 
 # ── Subjects without a knowledge base yet ──────────────────────
 # (none — Thermodynamics now has one. Its raw material is covered by the

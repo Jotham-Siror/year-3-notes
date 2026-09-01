@@ -17,16 +17,37 @@ knowledge bases usable by both a person and a model — a file that drifts from 
 │   ├── _nomenclature.md       # every symbol, meaning, SI units, clashes
 │   ├── _formula-sheet.md      # every equation, tagged to its source
 │   ├── _verification-log.md   # every flagged error in the source material
+│   ├── _transcripts/          # optional, UNTRACKED — see below
 │   └── past-papers/           # optional
 │       ├── 00-past-papers-index.md
 │       ├── <CODE>-<TYPE>-<YYYY-MM-DD>.md
 │       └── figures/*.svg      # redrawn, never screenshotted
+├── assignments/               # optional — lab and assignment work we authored
 ├── study-guides/              # optional, human-facing HTML
 └── sources/
     └── SOURCES.md             # manifest; the files themselves are untracked
 ```
 
 Everything **kebab-case**. Leading `_` marks a cross-cutting file rather than a topic.
+
+**`past-papers/` lives inside `knowledge-base/`**, not beside it — it is part of the verified
+material and its index cross-references the topic files. `assignments/` and `study-guides/` sit at
+subject level, because they are outputs rather than knowledge.
+
+### `_transcripts/` — the extraction layer, never committed
+
+Some subjects are built in two passes: a page-by-page transcription first, then the topic files.
+Where that intermediate layer is kept, it goes in `knowledge-base/_transcripts/` and is **excluded
+in `.gitignore`**.
+
+We typed those files, but most of what is *in* them is the lecturer's page copied out line for line
+— one transcript matched 481 of 485 source lines on a programmatic diff. That is the same thing
+`sources/` holds, so it gets the same treatment. The authored product is the knowledge base beside
+it: reorganised, corrected, analysed.
+
+Keep them locally — they are the fastest way to check a citation without opening a PDF. Say in
+`SOURCES.md` that they exist. **Where a transcript and a topic file disagree, the topic file wins**:
+it carries the readings settled last.
 
 ## How to split topic files
 
@@ -119,7 +140,25 @@ $\alpha$/$\beta$ formulas was invisible in the text layer and obvious in the ren
    is wrong
 6. **Numerical claims** — recompute every one
 
-**Recording.** Substantive errors get `V1`, `V2`, … ; cosmetic ones `C1`, `C2`, …. Each entry gives:
+**Recording.** Four prefixes, and they mean different things. Keep them distinct — a reader who
+cannot tell "the notes are wrong" from "the scan is unreadable" cannot trust either.
+
+| Prefix | Means | Is it a defect? |
+|---|---|---|
+| `V1`, `V2`, … | **substantive** error in the source — changes the mathematics | yes |
+| `C1`, `C2`, … | **cosmetic** error — typo, mislabel, numbering slip | yes, harmless once seen |
+| `P1`, `P2`, … | defect in an **assessment paper** rather than the teaching material. IDs run across the whole `past-papers/` folder, not per paper | yes |
+| `L1`, `L2`, … | **reading limitation** — the page is clipped, over-written or cut in the scan | **no.** The source is fine; the image is not |
+
+`L` is for subjects built from scans, where "I could not read this" must never be filed alongside
+"the lecturer got this wrong". Mark it `⚠ SCAN` inline, not `⚠ VERIFY`, and record whether each one
+was later settled, reconstructed, or is genuinely unreadable.
+
+**Do not reuse a letter across meanings.** MEC 3104 already uses `S1`–`S32` for *slide* flags, which
+are real defects; a scan-limitation `S` in another subject would mean the opposite. EMT 3101 uses
+`L` for exactly that reason.
+
+Each `V` / `C` entry gives:
 
 - what the page **prints**, verbatim
 - what it **should be**

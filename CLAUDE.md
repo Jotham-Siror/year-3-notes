@@ -10,7 +10,9 @@ file is loaded automatically; follow it in every session.
 | Fluid Flow | MEC 3104 | `fluid-flow/knowledge-base/00-index.md` |
 | Electromagnetic Fields | EEE3202 | `electromagnetic-fields/knowledge-base/00-index.md` |
 | Thermodynamics | MEC 3105 | `thermodynamics/knowledge-base/00-index.md` |
+| Analogue Electronics I | BEE 3103 | `analogue-electronics/knowledge-base/00-index.md` |
 | Digital Electronics II | BEE 3102 | `digital-electronics/knowledge-base/00-index.md` |
+| Engineering Mathematics III | EMT 3101 | `engineering-math/knowledge-base/00-index.md` |
 
 ## Starting a session
 
@@ -26,9 +28,23 @@ If it does not exist, proceed with these defaults.
 ## Using a knowledge base
 
 1. Open that subject's `knowledge-base/00-index.md` first and follow it.
+   **BEE 3103 has three tiers** and the index explains which one wins: files `01`-`07` are the
+   course's own lecture notes and set the scope; `11`-`17` are lesson documents that go deeper on
+   diodes, rectifiers, BJTs and FETs and are the **only** source for h-parameters, feedback,
+   frequency response and fabrication; `_reference-decks.md` is unverified background.
    **BEE 3102 splits three of its six chapter decks across more than one topic file** — Chapter 3
    into `03`/`04`, Chapter 4 into `05`/`06`, Chapter 5 into `07`/`08`/`09` — so a chapter number is
    not a file number. The index carries a chapter-to-file map; use it before opening anything.
+   **EMT 3101 has two page-numbering conventions and a broken topic numbering.** Its Gamma/Beta
+   document is typeset and carries *printed* page numbers, so `·GB p6` is that document's own p6
+   (PDF page 4); the five handwritten documents have no printed numbers and cite the scan page. And
+   the documents' internal topic labels do not match their filenames — the Topic 1 document signs
+   off "End of Topic Four", the Topic 4 document's header says "Topic 6". **Match by content, never
+   by number.** Files `03`, `04` and `05` are the source's own §3.1, §3.2 and §3.3 under one
+   heading, *Power Series Method of solving O.D.E*. A local, **untracked** `_transcripts/` folder
+   sits inside that knowledge base holding the page-by-page extraction. Treat it the way you treat
+   `sources/`: don't work from it by default, and where it disagrees with a topic file, **the topic
+   file wins** — it carries the readings settled at 600 dpi.
 2. Load the topic file it points to. **Do not re-parse the raw PDFs** in `sources/` — the knowledge
    base already contains everything, verified.
 3. Generate notes, summaries and practice **fresh** from the knowledge base rather than pasting its
@@ -79,8 +95,17 @@ material, each with an ID (`V1`, `C3`, …).
   that, mention terms in passing; don't re-define what's already above.
 - **Call out look-alike symbols explicitly.** Each knowledge base has a `_nomenclature.md` clash
   table — use it. EEE3202 is especially bad: $\sigma$ conductivity vs the handout's misuse of
-  $\sigma$ for $\alpha$; $\mu$ permeability vs the micro prefix. **BEE 3102 has two clashes that
-  change answers rather than merely confusing.** The step-size convention changes between halves of one
+  $\sigma$ for $\alpha$; $\mu$ permeability vs the micro prefix. BEE 3103 is worse
+  still, and two of its clashes change answers rather than merely confusing: **$\beta$** is the
+  transistor current gain in Lessons 3 and 6 but the **feedback fraction** in Lesson 7, where both
+  meanings appear within eight lines of each other; and **$V_P$** in Lesson 4 is used with both
+  signs, so the wrong one in Shockley's equation returns a drain current larger than $I_{DSS}$.
+  **EMT 3101's worst clash is $n$**, which is the Gamma argument, the second Beta parameter, the
+  binomial index, the order of a derivative and the order of a Bessel function — and two of those
+  meanings sit inside a single equation, $B(m,n) = \Gamma(m)\Gamma(n)/\Gamma(m+n)$. Its second is
+  $\sigma^2$: in the Beta parameter-fitting problem the *number* substituted is already the
+  variance, and squaring it again is exactly the error the notes make.
+  **BEE 3102 has two of the same kind.** The step-size convention changes between halves of one
   chapter — the ADC slides divide a span by $2^n$, the DAC slides divide full scale by $2^n - 1$ —
   and picking the wrong one is the most common way to lose marks in the unit; state which convention
   a question is in before working it. And in Chapter 5 a **prime means the complement almost
