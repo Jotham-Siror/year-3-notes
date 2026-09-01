@@ -32,6 +32,27 @@ been issued so far. This index is the register — update it as each new handout
 
 Provenance is cited as **·WC1 p7** in the topic files.
 
+## Past-paper register
+
+| Paper | Sat | Marks | Solutions |
+|---|---|---|---|
+| CAT 1 — *Electromagnetic Fields and Waves* | Wed 13 Aug 2025, 13:15–14:15 | 30 | `past-papers/EEE3202-CAT1-2025-08-13.md` |
+| Lab 2 — *Propagation coefficient* | — | — | `../assignments/lab2-propagation-coefficient/` — our Python model, sweep plots and verification script |
+
+**What that paper tells us about examinable scope:**
+
+- **About 13 of 30 marks came from material absent from WC1** — polarization (Q1a, Q1e)
+  and the Poynting vector (Q1c, Q1d, Q2a(v)). Both live only in `_reference-old-cohort/`.
+  The gap map below is therefore not academic; it is nearly half the paper.
+- **§5 (the α/β derivation) and §6 (loss tangent) were not examined at all.** Teach §5 for
+  *use*, not for reproduction, unless a later paper says otherwise.
+- **§8 (skin depth) carried 7 marks** across three separate parts — the best
+  marks-per-page in the handout.
+- **§2 and §4 carried ~9 marks** in one plane-wave expression question (Q2a): read ω and β
+  off the expression, then ε_r, η, v, H and direction.
+- The paper itself contains two misprints (σ exponent in Q2b; probably mW/m² for W/m² in
+  Q1d) — both logged in the solutions file.
+
 ## How the files are organised
 
 - **Topic files `01`, `02`, …** — **one file per handout**, in the order issued.
@@ -102,7 +123,7 @@ WC1's page 1 lists four learning objectives but delivers only three.
 | i. Wave equation in different media | ✅ WC1 §1 | — | — |
 | ii. Uniform plane wave and wave propagation | ✅ WC1 §2, §5 | — | — |
 | iii. Characterization of conductors and dielectrics | ✅ WC1 §6, §7 | — | — |
-| **iv. Types of polarization** | ❌ **absent from WC1** | `_reference-old-cohort/06-polarization.md` | **Axis convention differs — see below** |
+| **iv. Types of polarization** | ❌ **absent from WC1** | `_reference-old-cohort/06-polarization.md` | **Axis convention differs — see below. Examined for 5 marks in Aug 2025** |
 
 ### Using the polarization gap-filler
 
@@ -122,6 +143,10 @@ not this year's notes.
 ---
 
 ## Old-cohort reference
+
+> **Not optional.** The Aug 2025 CAT drew ~13 of 30 marks from polarization and the
+> Poynting vector, neither of which WC1 contains. Until WC2 arrives, these files are
+> examinable content, not background reading.
 
 `_reference-old-cohort/` holds a complete knowledge base built from **three handouts belonging to a
 previous cohort** (EMW 31 pp., UPW 16 pp., POL 4 pp. — same lecturer, same course).
