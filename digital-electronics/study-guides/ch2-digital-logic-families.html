@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 — Digital Logic Families · Cram Guide</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1f2933;--muted:#5b6b7b;--accent:#0f6e8c;--accent2:#12805c;
+--line:#e3e8ee;--trap:#c2410c;--prac:#7c3aed;--key:#0e7490;--verb:#334155}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+line-height:1.62;font-size:16.5px}
+header.top{position:sticky;top:0;z-index:50;background:#0b2b39;color:#fff;padding:11px 20px;
+box-shadow:0 2px 8px rgba(0,0,0,.15)}
+header.top .t{font-weight:700;font-size:15.5px}
+header.top .s{font-size:12.5px;opacity:.8}
+.wrap{max-width:960px;margin:0 auto;padding:24px 20px 80px}
+.hero{background:linear-gradient(135deg,#0f6e8c,#12805c);color:#fff;border-radius:14px;padding:24px 28px;margin-bottom:20px}
+.hero h1{margin:.1em 0;font-size:27px}
+.hero p{margin:.4em 0 0;opacity:.95;font-size:14.5px}
+.phases{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.phase{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:8px;padding:6px 12px;font-size:13.5px}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:26px}
+nav.toc b{display:block;margin-bottom:6px;color:var(--muted);font-size:12.5px;text-transform:uppercase;letter-spacing:.05em}
+nav.toc ol{margin:0;padding-left:20px;columns:2;column-gap:26px}
+nav.toc a{color:var(--accent);text-decoration:none}
+nav.toc a:hover{text-decoration:underline}
+section.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 26px;
+margin-bottom:20px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
+h2{color:var(--accent);border-bottom:2px solid var(--line);padding-bottom:8px;margin-top:0;font-size:21px}
+h3{color:#0b2b39;font-size:17px;margin:1.3em 0 .4em}
+h4{color:#0b2b39;font-size:15px;margin:1.1em 0 .3em}
+.key{background:#ecfeff;border-left:4px solid var(--key);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.key b{color:var(--key)}
+.trap{background:#fff5ec;border-left:4px solid var(--trap);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.trap .lab{color:var(--trap);font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
+.added{background:#f7f2fe;border-left:4px solid var(--prac);padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+.added .lab{color:var(--prac);font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:3px}
+figure{margin:18px 0;text-align:center}
+figure svg{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+figcaption{color:var(--muted);font-size:13px;margin-top:6px}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14.5px}
+th,td{border:1px solid #c9d2db;padding:7px 10px;text-align:left;vertical-align:middle}
+th{background:#eef3f8;font-size:13.5px}
+.eq{background:#f8fafc;border:1px solid #dfe6ee;border-radius:10px;padding:12px 18px;margin:14px 0;
+text-align:center;font-size:18px;font-family:Georgia,"Times New Roman",serif}
+.eq i{font-style:italic}
+.step{background:#fbfdff;border:1px solid #e6eef5;border-radius:8px;padding:8px 16px;margin:8px 0;
+font-family:Georgia,"Times New Roman",serif;font-size:17px;text-align:center}
+.ans{background:#eefbf3;border:2px solid #12805c;border-radius:8px;padding:9px 16px;margin:12px 0;
+font-family:Georgia,"Times New Roman",serif;font-size:18px;text-align:center;font-weight:700;color:#0b5c40}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:760px){.grid2{grid-template-columns:1fr}}
+.muted{color:var(--muted)}
+.q{font-size:15.5px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.q:last-child{border-bottom:none}
+.q .id{display:inline-block;background:#0b2b39;color:#fff;border-radius:5px;padding:1px 8px;font-size:12.5px;font-weight:700;margin-right:8px}
+footer{color:var(--muted);font-size:13px;text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid var(--line)}
+@media(max-width:640px){nav.toc ol{columns:1}.wrap{padding:16px 13px 60px}}
+@media print{@page{size:A4;margin:11mm}
+body{background:#fff;font-size:10.5pt;line-height:1.42}
+header.top,nav.toc{display:none}.wrap{max-width:none;padding:0}
+.hero{background:#0b2b39!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;border-radius:0;padding:14px 18px}
+section.card{box-shadow:none;border:1px solid #bbb;border-radius:0;padding:12px 14px;margin-bottom:10px;break-inside:avoid}
+.key,.trap,.added,.eq,.ans{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+figure svg{max-height:150mm}}
+</style></head><body>
+<header class="top"><div class="t">Chapter 2 — Digital Logic Families</div>
+<div class="s">BEE 3102 Digital Electronics II · cram guide · 43 slides</div></header>
+<div class="wrap">
+<div class="hero"><h1>Digital Logic Families</h1>
+<p>Everything in Chapter 2 that can be examined — the five equations, the ten circuits, and the errors in the slides.</p>
+<div class="phases"><div class="phase"><b>5</b> equations in the whole chapter</div>
+<div class="phase"><b>10</b> circuits worth drawing</div>
+<div class="phase"><b>3</b> identify-the-gate exercises</div><div class="phase"><b>CAT 1</b> Q2 and Q3 worked</div></div></div>
+
+<nav class="toc"><b>Contents</b><ol>
+<li><a href="#spine">The spine of the chapter</a></li>
+<li><a href="#params">The seven parameters</a></li>
+<li><a href="#levels">Logic levels — the four symbols</a></li>
+<li><a href="#nm">Noise margins (worked)</a></li>
+<li><a href="#delay">Propagation delay</a></li>
+<li><a href="#power">Power dissipation (worked)</a></li>
+<li><a href="#diode">Diode logic + the level walk</a></li>
+<li><a href="#rtl">RTL + identify the gates</a></li>
+<li><a href="#dtl">DTL + the slide-27 example</a></li>
+<li><a href="#ttl">TTL, open-collector, tri-state</a></li>
+<li><a href="#cmos">CMOS inverter, NAND, NOR</a></li>
+<li><a href="#compare">CMOS against TTL</a></li>
+<li><a href="#errors">Errors in your slides</a></li>
+<li><a href="#recall">Quick-recall lists</a></li>
+<li><a href="#cat">CAT 1 (2024) &mdash; Q2 and Q3 worked</a></li>
+<li><a href="#practice">Practice questions</a></li>
+</ol></nav>
+
+<section class="card" id="spine"><h2>1 · The spine of the chapter</h2>
+<p>Chapter 2 answers one question: <b>what makes one logic family different from another?</b>
+The answer is seven parameters, then six circuit technologies compared against them.</p>
+<p>The six technologies are presented as a <b>build</b> — each one fixes the previous one's flaw.
+If you remember only this chain, you can reconstruct most of the chapter:</p>
+<table><tr><th>Technology</th><th>What it adds</th><th>Its flaw</th></tr>
+<tr><td><b>Diode logic</b></td><td>gates from diodes and a resistor</td><td>only AND and OR; loses 0.7 V per stage, no gain to restore it</td></tr>
+<tr><td><b>RTL</b></td><td>a transistor — now you get NOR</td><td>poor speed, poor noise margin, high power</td></tr>
+<tr><td><b>DTL</b></td><td>diode-AND feeding an inverting transistor, so the level is restored</td><td>slower than TTL, more components</td></tr>
+<tr><td><b>TTL</b></td><td>replaces input diodes with a multi-emitter transistor; totem-pole output</td><td>high power, fixed 5 V supply</td></tr>
+<tr><td><b>Open-collector / tri-state</b></td><td>output-stage variants that allow wired logic and shared buses</td><td>needs an external pull-up / needs enable control</td></tr>
+<tr><td><b>CMOS</b></td><td>complementary MOSFETs — no DC path to ground in either state</td><td>classically slower; sensitive to static</td></tr></table>
+<div class="key"><b>The whole chapter contains five equations.</b> Everything else is circuits,
+tables and definitions. If the equations feel thin, that is because they are — the marks here are
+in drawing and explaining circuits.</div>
+</section>
+<section class="card" id="params"><h2>2 · The seven parameters that define a family</h2>
+<p>Slide 5 lists them; slides 6&ndash;19 are nothing but elaboration of these seven.</p>
+<table><tr><th>Parameter</th><th>What it states</th></tr>
+<tr><td>Logic levels</td><td>the signal ranges for 1 and 0, specified separately at inputs and at outputs</td></tr>
+<tr><td>Propagation delay</td><td>time for an input change to produce an output change</td></tr>
+<tr><td>Fan-in</td><td>number of inputs available on a gate</td></tr>
+<tr><td>Fan-out</td><td>number of standard loads one output can drive &mdash; the loading factor</td></tr>
+<tr><td>Noise margin</td><td>largest noise voltage that can sit on a valid input without corrupting the output</td></tr>
+<tr><td>Power dissipation</td><td>power drawn from the supply and consumed by the gate</td></tr>
+<tr><td>Cost per gate</td><td>the gate's contribution to the cost of the IC</td></tr></table>
+<div class="key"><b>Likely question:</b> &ldquo;State and briefly explain the characteristics used to
+compare logic families.&rdquo; Seven items, one line each &mdash; a clean 7-marker.</div>
+</section>
+<section class="card" id="levels"><h2>3 · Logic levels &mdash; where the four symbols come from</h2>
+<p>A real gate does not switch at one exact voltage. Its output-versus-input curve is a smooth
+S, not a vertical step, and near the middle the output is neither a clean 1 nor a clean 0.</p>
+<p>So lines are drawn on the voltage axis. And you need <b>two sets</b> of them, because:</p>
+<ul><li>a gate's <b>output</b> is a promise about what it will <i>produce</i>;</li>
+<li>a gate's <b>input</b> is a promise about what it will <i>accept</i>.</li></ul>
+<p>Two promises &times; two logic states = <b>four levels</b>.</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" font-family="sans-serif">
+  <rect width="820" height="420" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+    <!-- left panel: voltage transfer characteristic -->
+    <line x1="80" y1="350" x2="400" y2="350"/>
+    <line x1="80" y1="350" x2="80" y2="45"/>
+    <path d="M 84 82 L 150 92 C 176 99 184 148 198 196 C 212 244 220 296 246 304 L 392 320" stroke="#1f4e79" stroke-width="2.4"/>
+  </g>
+  <g stroke="#222222" stroke-width="1" stroke-dasharray="4 3" fill="none">
+    <line x1="80" y1="92" x2="150" y2="92"/>
+    <line x1="150" y1="92" x2="150" y2="350"/>
+    <line x1="80" y1="304" x2="246" y2="304"/>
+    <line x1="246" y1="304" x2="246" y2="350"/>
+    <line x1="80" y1="78" x2="110" y2="78"/>
+    <line x1="80" y1="318" x2="330" y2="318"/>
+    <line x1="330" y1="318" x2="330" y2="350"/>
+    <line x1="110" y1="78" x2="110" y2="350"/>
+  </g>
+  <g font-size="13" fill="#222222">
+    <text x="60" y="40">v_O</text>
+    <text x="404" y="355">v_I</text>
+    <text x="34" y="96">V_OH</text>
+    <text x="44" y="82">V_H</text>
+    <text x="36" y="308">V_OL</text>
+    <text x="46" y="322">V_L</text>
+    <text x="100" y="368">V_L</text>
+    <text x="138" y="368">V_IL</text>
+    <text x="234" y="368">V_IH</text>
+    <text x="320" y="368">V_H</text>
+    <text x="200" y="140" fill="#1f4e79">slope = -1</text>
+    <text x="250" y="270" fill="#1f4e79">slope = -1</text>
+    <text x="212" y="188" fill="#0b7a5b">high-gain</text>
+    <text x="212" y="204" fill="#0b7a5b">transition</text>
+    <text x="120" y="396" font-weight="bold">(a) voltage transfer characteristic</text>
+  </g>
+  <!-- right panel: level bands -->
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+    <rect x="520" y="60" width="90" height="290"/>
+    <rect x="680" y="60" width="90" height="290"/>
+    <line x1="520" y1="120" x2="610" y2="120"/>
+    <line x1="520" y1="290" x2="610" y2="290"/>
+    <line x1="680" y1="150" x2="770" y2="150"/>
+    <line x1="680" y1="250" x2="770" y2="250"/>
+  </g>
+  <g fill="#e9eef4" stroke="none">
+    <rect x="521" y="121" width="88" height="168"/>
+    <rect x="681" y="151" width="88" height="98"/>
+  </g>
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+    <rect x="520" y="60" width="90" height="290"/>
+    <rect x="680" y="60" width="90" height="290"/>
+    <line x1="520" y1="120" x2="610" y2="120"/>
+    <line x1="520" y1="290" x2="610" y2="290"/>
+    <line x1="680" y1="150" x2="770" y2="150"/>
+    <line x1="680" y1="250" x2="770" y2="250"/>
+  </g>
+  <g font-size="12.5" fill="#222222">
+    <text x="565" y="98" text-anchor="middle">logic 1</text>
+    <text x="565" y="212" fill="#8a4b00" text-anchor="middle">not used</text>
+    <text x="565" y="326" text-anchor="middle">logic 0</text>
+    <text x="725" y="112" text-anchor="middle">logic 1</text>
+    <text x="725" y="212" fill="#8a4b00" text-anchor="middle">undefined</text>
+    <text x="725" y="310" text-anchor="middle">logic 0</text>
+    <text x="482" y="64">V_+</text>
+    <text x="478" y="124">V_OH</text>
+    <text x="478" y="294">V_OL</text>
+    <text x="486" y="354">V_-</text>
+    <text x="776" y="154">V_IH</text>
+    <text x="776" y="254">V_IL</text>
+    <text x="524" y="46" font-weight="bold">output</text>
+    <text x="686" y="46" font-weight="bold">input</text>
+  </g>
+  <g stroke="#0b7a5b" stroke-width="1.8" fill="none">
+    <line x1="645" y1="120" x2="645" y2="150"/>
+    <line x1="645" y1="250" x2="645" y2="290"/>
+  </g>
+  <g font-size="12.5" fill="#0b7a5b">
+    <text x="645" y="108" text-anchor="middle">NM_H</text>
+    <text x="645" y="316" text-anchor="middle">NM_L</text>
+  </g>
+  <text x="530" y="396" font-size="13" font-weight="bold" fill="#222222">(b) level bands and noise margins</text>
+</svg><figcaption>The voltage transfer characteristic. V<sub>IL</sub> and V<sub>IH</sub> are defined as the two points where the slope passes through &minus;1 &mdash; the edges of the steep transition region (slide 8).</figcaption></figure>
+<h3>Decoding the symbols</h3>
+<p>Don't memorise them &mdash; read them. Every symbol is <i>V</i> followed by two letters:
+<b>first letter</b> I for input, O for output; <b>second letter</b> H for high, L for low.</p>
+<table><tr><th>Symbol</th><th>The promise it makes</th><th>Which extreme</th></tr>
+<tr><td><i>V</i><sub>OH</sub></td><td>&ldquo;When I output a 1, it will be <b>at least</b> this high.&rdquo;</td><td>a minimum</td></tr>
+<tr><td><i>V</i><sub>OL</sub></td><td>&ldquo;When I output a 0, it will be <b>no more</b> than this.&rdquo;</td><td>a maximum</td></tr>
+<tr><td><i>V</i><sub>IH</sub></td><td>&ldquo;Give me <b>at least</b> this and I'll read it as a 1.&rdquo;</td><td>a minimum</td></tr>
+<tr><td><i>V</i><sub>IL</sub></td><td>&ldquo;Anything up to this I'll still read as a 0.&rdquo;</td><td>a maximum</td></tr></table>
+<p>Anything landing between <i>V</i><sub>IL</sub> and <i>V</i><sub>IH</sub> is the
+<b>undefined band</b>. Behaviour there is unpredictable and no design may rely on it.</p>
+<h3>The standard levels (slide 9)</h3>
+<p>These are <b>supplied</b> in a question &mdash; you are not expected to recall all twelve. Learn the
+TTL column and the fact that 3.3 V CMOS is identical to it (which is why HCT and ACT parts are called
+&ldquo;TTL-compatible&rdquo;).</p>
+<table><tr><th>Level</th><th>TTL</th><th>+5 V CMOS</th><th>+3.3 V CMOS</th></tr>
+<tr><td><i>V</i><sub>IH</sub> (min)</td><td>2.0 V</td><td>3.5 V</td><td>2.0 V</td></tr>
+<tr><td><i>V</i><sub>IL</sub> (max)</td><td>0.8 V</td><td>1.5 V</td><td>0.8 V</td></tr>
+<tr><td><i>V</i><sub>OH</sub> (min)</td><td>2.4 V</td><td>4.4 V</td><td>2.4 V</td></tr>
+<tr><td><i>V</i><sub>OL</sub> (max)</td><td>0.4 V</td><td>0.33 V</td><td>0.4 V</td></tr></table>
+<div class="trap"><span class="lab">Slide error &mdash; V02-2</span>
+Slide 8 defines <i>V</i><sub>L</sub> as the low-logic voltage &ldquo;<b>at the input</b> of a logic
+gate&rdquo;. It is an <b>output</b> quantity &mdash; the slide's own <i>V</i><sub>H</sub> entry one line
+later says &ldquo;at the output&rdquo;. Recognise the printed version; write the correct one.</div>
+</section>
+<section class="card" id="nm"><h2>4 &middot; Noise margins <span class="muted">&mdash; worked</span></h2>
+<p>A signal travels down a wire and picks up noise. How much can it pick up before the receiving gate misreads it? Read the answer straight off this map.</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" font-family="sans-serif">
+<rect width="760" height="430" fill="#ffffff"/>
+<!-- axis -->
+<line x1="150" y1="30" x2="150" y2="390" stroke="#222" stroke-width="1.6"/>
+<text x="60" y="24" font-size="13" fill="#5b6b7b">volts</text>
+
+<!-- HIGH output band (driver guarantee) 2.4 - 5.0 -->
+<rect x="150" y="40" width="230" height="90" fill="#cfe8d8" stroke="#12805c" stroke-width="1.2"/>
+<text x="265" y="80" font-size="13" text-anchor="middle" fill="#0b5c40">driver OUTPUT</text>
+<text x="265" y="98" font-size="13" text-anchor="middle" fill="#0b5c40" font-weight="bold">valid 1</text>
+<text x="265" y="116" font-size="12" text-anchor="middle" fill="#0b5c40">at least 2.4 V</text>
+
+<!-- HIGH input band (receiver accept) 2.0 - 5.0 -->
+<rect x="470" y="40" width="230" height="120" fill="#d6e4f2" stroke="#1f4e79" stroke-width="1.2"/>
+<text x="585" y="82" font-size="13" text-anchor="middle" fill="#123a5c">receiver INPUT</text>
+<text x="585" y="100" font-size="13" text-anchor="middle" fill="#123a5c" font-weight="bold">reads as 1</text>
+<text x="585" y="118" font-size="12" text-anchor="middle" fill="#123a5c">2.0 V and above</text>
+
+<!-- undefined -->
+<rect x="470" y="160" width="230" height="110" fill="#f2e3e3" stroke="#b04040" stroke-width="1.2" stroke-dasharray="5 3"/>
+<text x="585" y="208" font-size="13" text-anchor="middle" fill="#8a2b2b" font-weight="bold">UNDEFINED</text>
+<text x="585" y="226" font-size="12" text-anchor="middle" fill="#8a2b2b">0.8 V to 2.0 V</text>
+<text x="585" y="244" font-size="12" text-anchor="middle" fill="#8a2b2b">output unpredictable</text>
+
+<!-- LOW input band -->
+<rect x="470" y="270" width="230" height="110" fill="#d6e4f2" stroke="#1f4e79" stroke-width="1.2"/>
+<text x="585" y="312" font-size="13" text-anchor="middle" fill="#123a5c">receiver INPUT</text>
+<text x="585" y="330" font-size="13" text-anchor="middle" fill="#123a5c" font-weight="bold">reads as 0</text>
+<text x="585" y="348" font-size="12" text-anchor="middle" fill="#123a5c">0.8 V and below</text>
+
+<!-- LOW output band -->
+<rect x="150" y="330" width="230" height="50" fill="#cfe8d8" stroke="#12805c" stroke-width="1.2"/>
+<text x="265" y="350" font-size="13" text-anchor="middle" fill="#0b5c40" font-weight="bold">driver OUTPUT valid 0</text>
+<text x="265" y="368" font-size="12" text-anchor="middle" fill="#0b5c40">at most 0.4 V</text>
+
+<!-- level ticks and labels -->
+<g font-size="12.5" fill="#1f2933">
+<line x1="143" y1="40" x2="380" y2="40" stroke="#999" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="138" y="44" text-anchor="end">5.0 V</text>
+<line x1="143" y1="130" x2="700" y2="130" stroke="#12805c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="138" y="134" text-anchor="end">2.4 V</text>
+<line x1="143" y1="160" x2="700" y2="160" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="138" y="164" text-anchor="end">2.0 V</text>
+<line x1="143" y1="270" x2="700" y2="270" stroke="#1f4e79" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="138" y="274" text-anchor="end">0.8 V</text>
+<line x1="143" y1="330" x2="700" y2="330" stroke="#12805c" stroke-width="1.3" stroke-dasharray="4 3"/>
+<text x="138" y="334" text-anchor="end">0.4 V</text>
+<line x1="143" y1="390" x2="380" y2="390" stroke="#999" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="138" y="394" text-anchor="end">0.0 V</text>
+</g>
+
+<!-- symbol labels on the right of ticks -->
+<g font-size="12.5" font-style="italic" fill="#444">
+<text x="708" y="134"><tspan font-size="13.5" font-style="italic">V</tspan><tspan font-size="10" dy="4">OH</tspan></text>
+<text x="708" y="164"><tspan font-size="13.5" font-style="italic">V</tspan><tspan font-size="10" dy="4">IH</tspan></text>
+<text x="708" y="274"><tspan font-size="13.5" font-style="italic">V</tspan><tspan font-size="10" dy="4">IL</tspan></text>
+<text x="708" y="334"><tspan font-size="13.5" font-style="italic">V</tspan><tspan font-size="10" dy="4">OL</tspan></text>
+</g>
+
+<!-- noise margin brackets -->
+<g stroke="#c2410c" stroke-width="2" fill="none">
+<line x1="425" y1="130" x2="425" y2="160"/>
+<line x1="419" y1="130" x2="431" y2="130"/>
+<line x1="419" y1="160" x2="431" y2="160"/>
+<line x1="425" y1="270" x2="425" y2="330"/>
+<line x1="419" y1="270" x2="431" y2="270"/>
+<line x1="419" y1="330" x2="431" y2="330"/>
+</g>
+<text x="437" y="140" font-size="12.5" fill="#c2410c" font-weight="bold">NM<tspan font-size="9.5" dy="3">H</tspan><tspan dy="-3"> = 0.4 V</tspan></text>
+<text x="437" y="304" font-size="12.5" fill="#c2410c" font-weight="bold">NM<tspan font-size="9.5" dy="3">L</tspan><tspan dy="-3"> = 0.4 V</tspan></text>
+
+<text x="265" y="405" font-size="12.5" text-anchor="middle" fill="#5b6b7b">what the driver GUARANTEES</text>
+<text x="585" y="405" font-size="12.5" text-anchor="middle" fill="#5b6b7b">what the receiver REQUIRES</text>
+</svg><figcaption>Noise margin is simply the gap between what the driver guarantees (green) and what the receiver requires (blue). TTL numbers shown.</figcaption></figure>
+<p><b>HIGH state.</b> The driver puts out at least 2.4 V; the receiver only needs 2.0 V.
+0.4 V of slack &mdash; noise can drag the signal down that far before the 1 is lost.</p>
+<p><b>LOW state.</b> The driver puts out at most 0.4 V; the receiver tolerates up to 0.8 V.
+Again 0.4 V of slack.</p>
+<div class="eq">NM<sub>H</sub> = <i>V</i><sub>OH</sub> &minus; <i>V</i><sub>IH</sub></div>
+<div class="eq">NM<sub>L</sub> = <i>V</i><sub>IL</sub> &minus; <i>V</i><sub>OL</sub></div>
+<div class="key"><b>One rule covers both, so you never have to recall the order:</b><br>
+noise margin = what is <b>guaranteed</b> &minus; what is <b>required</b>.<br>
+A noise margin is always positive. A negative answer means you subtracted the wrong way &mdash; or the
+two families genuinely cannot drive each other, which is itself a valid answer in an interfacing
+question.</div>
+<h3>Worked &mdash; Example 1, slide 13</h3>
+<div class="grid2"><div>
+<h4>TTL</h4>
+<div class="step">NM<sub>H</sub> = 2.4 &minus; 2.0</div>
+<div class="ans">NM<sub>H</sub> = 0.4 V</div>
+<div class="step">NM<sub>L</sub> = 0.8 &minus; 0.4</div>
+<div class="ans">NM<sub>L</sub> = 0.4 V</div>
+</div><div>
+<h4>5 V CMOS</h4>
+<div class="step">NM<sub>H</sub> = 4.4 &minus; 3.5</div>
+<div class="ans">NM<sub>H</sub> = 0.9 V</div>
+<div class="step">NM<sub>L</sub> = 1.5 &minus; 0.33</div>
+<div class="ans">NM<sub>L</sub> = 1.17 V</div>
+</div></div>
+<p><b>What it tells you.</b> CMOS tolerates roughly three times the noise TTL does. These four
+numbers are the <i>evidence</i> behind the &ldquo;CMOS noise immunity high, TTL low&rdquo; row of the
+comparison table. If asked <i>why</i> CMOS has better noise immunity, quote them rather than
+describing.</p>
+<div class="trap"><span class="lab">Naming clash &mdash; C02-1</span>
+Slide 12 calls these NM<sub>L</sub> and NM<sub>H</sub>; slide 13 works the same example calling them
+<i>V</i><sub>NL</sub> and <i>V</i><sub>NH</sub>. Same two quantities, both names in your deck.</div>
+</section>
+<section class="card" id="delay"><h2>5 &middot; Propagation delay</h2>
+<p>Propagation delay is measured between the <b>50% point of the input</b> and the
+<b>50% point of the output</b>. Rise and fall times use the <b>10% and 90%</b> points instead &mdash;
+different reference levels, and mixing them up is a standard way to lose a mark.</p>
+<div class="eq"><i>V</i><sub>50%</sub> = ( <i>V</i><sub>H</sub> + <i>V</i><sub>L</sub> ) / 2</div>
+<div class="eq">&tau;<sub>P</sub> = ( &tau;<sub>PHL</sub> + &tau;<sub>PLH</sub> ) / 2</div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" font-family="sans-serif">
+  <rect width="820" height="430" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.6">
+  <line x1="110" y1="180" x2="770" y2="180"/>
+  <line x1="110" y1="180" x2="110" y2="40"/>
+  <line x1="110" y1="400" x2="770" y2="400"/>
+  <line x1="110" y1="400" x2="110" y2="235"/>
+  </g>
+  <g stroke="#222222" stroke-width="1" stroke-dasharray="4 3" fill="none">
+  <line x1="110" y1="55" x2="740" y2="55"/>
+  <line x1="110" y1="66" x2="740" y2="66"/>
+  <line x1="110" y1="110" x2="740" y2="110"/>
+  <line x1="110" y1="154" x2="740" y2="154"/>
+  <line x1="110" y1="165" x2="740" y2="165"/>
+  <line x1="110" y1="250" x2="740" y2="250"/>
+  <line x1="110" y1="261" x2="740" y2="261"/>
+  <line x1="110" y1="305" x2="740" y2="305"/>
+  <line x1="110" y1="349" x2="740" y2="349"/>
+  <line x1="110" y1="360" x2="740" y2="360"/>
+  </g>
+  <g stroke="#1f4e79" fill="none" stroke-width="2.4">
+  <path d="M 120 165 L 180 165 L 300 55 L 470 55 L 590 165 L 740 165"/>
+  <path d="M 120 250 L 240 250 L 360 360 L 530 360 L 650 250 L 740 250"/>
+  </g>
+  <g stroke="#0b7a5b" stroke-width="1.2" stroke-dasharray="3 3" fill="none">
+  <line x1="240" y1="110" x2="240" y2="310"/>
+  <line x1="300" y1="305" x2="300" y2="200"/>
+  <line x1="530" y1="110" x2="530" y2="310"/>
+  <line x1="590" y1="305" x2="590" y2="200"/>
+  </g>
+  <g stroke="#0b7a5b" stroke-width="1.8" fill="none">
+  <line x1="240" y1="212" x2="300" y2="212"/>
+  <line x1="530" y1="212" x2="590" y2="212"/>
+  </g>
+  <g stroke="#8a4b00" stroke-width="1.6" fill="none">
+  <line x1="192" y1="192" x2="288" y2="192"/>
+  <line x1="482" y1="192" x2="578" y2="192"/>
+  </g>
+  <text x="46" y="58" font-size="12.5" fill="#222222">V_H</text>
+  <text x="46" y="169" font-size="12.5" fill="#222222">V_L</text>
+  <text x="66" y="70" font-size="11.5" fill="#222222">90%</text>
+  <text x="66" y="114" font-size="11.5" fill="#222222">50%</text>
+  <text x="66" y="152" font-size="11.5" fill="#222222">10%</text>
+  <text x="46" y="253" font-size="12.5" fill="#222222">V_H</text>
+  <text x="46" y="364" font-size="12.5" fill="#222222">V_L</text>
+  <text x="66" y="265" font-size="11.5" fill="#222222">90%</text>
+  <text x="66" y="309" font-size="11.5" fill="#222222">50%</text>
+  <text x="66" y="347" font-size="11.5" fill="#222222">10%</text>
+  <text x="86" y="36" font-size="12.5" fill="#222222">v_I</text>
+  <text x="86" y="231" font-size="12.5" fill="#222222">v_O</text>
+  <text x="776" y="184" font-size="12.5" fill="#222222">t</text>
+  <text x="776" y="404" font-size="12.5" fill="#222222">t</text>
+  <text x="186" y="197" font-size="12.5" fill="#8a4b00" text-anchor="end">t_r</text>
+  <text x="476" y="197" font-size="12.5" fill="#8a4b00" text-anchor="end">t_f</text>
+  <text x="270" y="228" font-size="12.5" fill="#0b7a5b" text-anchor="middle">tau_PHL</text>
+  <text x="560" y="228" font-size="12.5" fill="#0b7a5b" text-anchor="middle">tau_PLH</text>
+  
+  
+  <text x="110" y="424" font-size="12.5" fill="#222222">v_I is the gate input, v_O the output of an inverting gate. t_r and t_f are read 10% to 90%; the delays, 50% to 50%.</text>
+  </svg><figcaption>Input and output of an inverting gate, with t<sub>r</sub>, t<sub>f</sub>, &tau;<sub>PHL</sub> and &tau;<sub>PLH</sub> marked.</figcaption></figure>
+<div class="key"><b>The subscript rule.</b> HL and LH describe the direction
+<b>the output</b> moves, never the input. &tau;<sub>PHL</sub> is the delay on the edge where the
+output falls from high to low.</div>
+<div class="trap"><span class="lab">Slide error &mdash; V02-3</span>
+Slide 10's two written glosses are <b>swapped</b>: it describes &tau;<sub>PHL</sub> as
+&ldquo;going from logical 0 to logical 1&rdquo; and &tau;<sub>PLH</sub> as the reverse. The subscripts
+and the waveform beside them are correct; the words are not. <b>Read the subscripts, not the
+words.</b></div>
+</section>
+<section class="card" id="power"><h2>6 &middot; Power dissipation <span class="muted">&mdash; worked</span></h2>
+<p>A TTL gate draws a different supply current depending on what its output is doing &mdash; output
+HIGH, the pull-up conducts; output LOW, the pull-down conducts through a different path. One gate,
+two supply currents, both quoted on the datasheet.</p>
+<p>To collapse that into one power figure you must assume how the gate splits its time. The
+manufacturer's assumption is a <b>50% duty cycle</b> &mdash; HIGH half the time, LOW half the time.
+State that assumption in your answer; it earns the mark.</p>
+<div class="eq"><i>I</i><sub>CC(avg)</sub> = ( <i>I</i><sub>CCH</sub> + <i>I</i><sub>CCL</sub> ) / 2</div>
+<div class="eq"><i>P</i><sub>D(avg)</sub> = <i>V</i><sub>CC</sub> &times; <i>I</i><sub>CC(avg)</sub></div>
+<h3>Worked &mdash; Example 2, slide 17</h3>
+<p class="muted">A gate draws 2 mA with its output HIGH and 3.6 mA with its output LOW. Find the
+average power dissipation at <i>V</i><sub>CC</sub> = 5 V on a 50% duty cycle.</p>
+<div class="step"><i>I</i><sub>CC</sub> = ( 2 mA + 3.6 mA ) / 2</div>
+<div class="ans"><i>I</i><sub>CC</sub> = 2.8 mA</div>
+<div class="step"><i>P</i><sub>D</sub> = 5 V &times; 2.8 mA</div>
+<div class="ans"><i>P</i><sub>D</sub> = 14 mW</div>
+<div class="trap"><span class="lab">Slide error &mdash; V02-4 &middot; costs marks</span>
+The slide asks the question in <b>milliamps</b> and then solves it in <b>microamps</b>, printing
+2.8 &micro;A and 14 &micro;W. The digits are right; the prefix is wrong by a factor of 1000. The
+answer is <b>14 mW</b>. If a marking scheme is built from the slide it will expect 14 &micro;W &mdash;
+write 14 mW and note that the data given is in mA.</div>
+</section>
+<section class="card" id="diode"><h2>7 &middot; Diode logic, and why it died</h2>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" font-family="sans-serif">
+  <rect width="820" height="330" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.8">
+    <!-- OR gate -->
+    <line x1="60" y1="80" x2="130" y2="80"/>
+    <line x1="60" y1="160" x2="130" y2="160"/>
+    <polygon points="130,64 168,80 130,96" fill="#e9eef4"/>
+    <line x1="168" y1="62" x2="168" y2="98"/>
+    <polygon points="130,144 168,160 130,176" fill="#e9eef4"/>
+    <line x1="168" y1="142" x2="168" y2="178"/>
+    <line x1="168" y1="80" x2="240" y2="80"/>
+    <line x1="168" y1="160" x2="300" y2="160"/>
+    <line x1="240" y1="80" x2="240" y2="160"/>
+    <line x1="240" y1="160" x2="240" y2="200"/>
+    <path d="M 240 200 l 10 8 l -20 12 l 20 12 l -20 12 l 10 8"/>
+    <line x1="240" y1="252" x2="240" y2="284"/>
+    <line x1="222" y1="284" x2="258" y2="284"/>
+    <line x1="228" y1="292" x2="252" y2="292"/>
+    <line x1="234" y1="300" x2="246" y2="300"/>
+    <circle cx="52" cy="80" r="5"/>
+    <circle cx="52" cy="160" r="5"/>
+    <circle cx="308" cy="160" r="5"/>
+    <circle cx="240" cy="160" r="4" fill="#222222"/>
+  </g>
+  <g font-size="13.5" fill="#222222">
+    <text x="30" y="85">A</text>
+    <text x="30" y="165">B</text>
+    <text x="140" y="118">D_1</text>
+    <text x="140" y="200">D_2</text>
+    <text x="256" y="232">R</text>
+    <text x="316" y="152">Z</text>
+    <text x="316" y="176" fill="#1f4e79">v_O</text>
+    <text x="120" y="322" font-weight="bold">diode OR: Z = A + B</text>
+  </g>
+  <g stroke="#222222" fill="none" stroke-width="1.8">
+    <!-- AND gate -->
+    <line x1="480" y1="120" x2="560" y2="120"/>
+    <line x1="480" y1="200" x2="560" y2="200"/>
+    <polygon points="598,104 560,120 598,136" fill="#e9eef4"/>
+    <line x1="560" y1="102" x2="560" y2="138"/>
+    <polygon points="598,184 560,200 598,216" fill="#e9eef4"/>
+    <line x1="560" y1="182" x2="560" y2="218"/>
+    <line x1="598" y1="120" x2="700" y2="120"/>
+    <line x1="598" y1="200" x2="670" y2="200"/>
+    <line x1="670" y1="200" x2="670" y2="120"/>
+    <line x1="670" y1="120" x2="670" y2="86"/>
+    <path d="M 670 86 l 10 -8 l -20 -12 l 20 -12 l -20 -12 l 10 -8"/>
+    <line x1="670" y1="34" x2="670" y2="20"/>
+    <circle cx="670" cy="14" r="5"/>
+    <circle cx="472" cy="120" r="5"/>
+    <circle cx="472" cy="200" r="5"/>
+    <circle cx="708" cy="120" r="5"/>
+    <circle cx="670" cy="120" r="4" fill="#222222"/>
+  </g>
+  <g font-size="13.5" fill="#222222">
+    <text x="450" y="125">A</text>
+    <text x="450" y="205">B</text>
+    <text x="604" y="146">D_1</text>
+    <text x="604" y="226">D_2</text>
+    <text x="686" y="62">R</text>
+    <text x="686" y="16">+5 V</text>
+    <text x="716" y="125">Z</text>
+    <text x="520" y="322" font-weight="bold">diode AND: Z = A . B</text>
+  </g>
+</svg><figcaption>Diode OR and diode AND. The diode orientation <b>is</b> the function &mdash; this is the whole content of the figure.</figcaption></figure>
+<table><tr><th>Gate</th><th>Diode orientation</th><th>Resistor</th><th>Why it works</th></tr>
+<tr><td><b>OR</b></td><td>anodes at the inputs, cathodes commoned at the output</td><td><i>R</i> to ground</td>
+<td>any input HIGH forward-biases its diode and pulls the output up; all inputs LOW leaves every diode off and <i>R</i> holds the output at 0</td></tr>
+<tr><td><b>AND</b></td><td>cathodes at the inputs, anodes commoned at the output</td><td><i>R</i> to +5 V</td>
+<td>any input LOW forward-biases its diode and clamps the output down; only with every input HIGH do all diodes turn off and <i>R</i> pulls the output up</td></tr></table>
+<h3>The level walk &mdash; the quantitative argument</h3>
+<p>A diode gate contains no transistor, so it has <b>no gain</b>. Every stage costs one forward drop
+&mdash; about 0.7 V in silicon &mdash; and nothing anywhere puts it back.</p>
+<div class="eq"><i>V</i><sub>out</sub> = <i>V</i><sub>in</sub> &minus; 0.7</div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" font-family="sans-serif">
+<rect width="720" height="360" fill="#ffffff"/>
+<line x1="90" y1="300" x2="670" y2="300" stroke="#222" stroke-width="1.6"/>
+<line x1="90" y1="300" x2="90" y2="30" stroke="#222" stroke-width="1.6"/>
+<text x="60" y="26" font-size="12.5" fill="#5b6b7b">volts</text>
+<text x="380" y="330" font-size="13" text-anchor="middle" fill="#5b6b7b">number of diode stages passed through</text>
+
+<!-- undefined band 0.8 to 2.0 : y for 0V=300, 5V=50 -> 50 per volt -->
+<rect x="90" y="200" width="580" height="60" fill="#f7e6e6" stroke="none"/>
+<text x="660" y="236" font-size="12" text-anchor="end" fill="#8a2b2b">undefined band (0.8 V – 2.0 V)</text>
+<line x1="90" y1="200" x2="670" y2="200" stroke="#b04040" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="86" y="204" font-size="12" text-anchor="end" fill="#8a2b2b">2.0 V</text>
+<text x="86" y="264" font-size="12" text-anchor="end" fill="#8a2b2b">0.8 V</text>
+<line x1="90" y1="260" x2="670" y2="260" stroke="#b04040" stroke-width="1.3" stroke-dasharray="5 3"/>
+
+<!-- staircase: 5.0,4.3,3.6,2.9,2.2,1.5 -->
+<polyline points="110,50 190,50 190,85 270,85 270,120 350,120 350,155 430,155 430,190 510,190 510,225 590,225"
+  fill="none" stroke="#1f4e79" stroke-width="2.6"/>
+
+<g font-size="12.5" fill="#123a5c">
+<text x="150" y="42" text-anchor="middle">5.0 V</text>
+<text x="230" y="77" text-anchor="middle">4.3 V</text>
+<text x="310" y="112" text-anchor="middle">3.6 V</text>
+<text x="390" y="147" text-anchor="middle">2.9 V</text>
+<text x="470" y="182" text-anchor="middle">2.2 V</text>
+<text x="550" y="217" text-anchor="middle">1.5 V</text>
+</g>
+<g font-size="12" fill="#5b6b7b">
+<text x="150" y="316" text-anchor="middle">in</text>
+<text x="230" y="316" text-anchor="middle">1</text>
+<text x="310" y="316" text-anchor="middle">2</text>
+<text x="390" y="316" text-anchor="middle">3</text>
+<text x="470" y="316" text-anchor="middle">4</text>
+<text x="550" y="316" text-anchor="middle">5</text>
+</g>
+<g stroke="#c2410c" stroke-width="1.6" fill="none">
+<line x1="190" y1="50" x2="190" y2="85"/><line x1="270" y1="85" x2="270" y2="120"/>
+<line x1="350" y1="120" x2="350" y2="155"/><line x1="430" y1="155" x2="430" y2="190"/>
+<line x1="510" y1="190" x2="510" y2="225"/>
+</g>
+<text x="200" y="72" font-size="11.5" fill="#c2410c">-0.7</text>
+<text x="280" y="107" font-size="11.5" fill="#c2410c">-0.7</text>
+<text x="360" y="142" font-size="11.5" fill="#c2410c">-0.7</text>
+<text x="440" y="177" font-size="11.5" fill="#c2410c">-0.7</text>
+<text x="520" y="212" font-size="11.5" fill="#c2410c">-0.7</text>
+<circle cx="550" cy="225" r="7" fill="none" stroke="#c2410c" stroke-width="2.2"/>
+<text x="596" y="229" font-size="12.5" fill="#c2410c" font-weight="bold">signal dead</text>
+</svg><figcaption>Starting from 5 V, the HIGH level walks down 0.7 V per stage. By the fifth stage it has fallen into the TTL undefined band and the chain has stopped working.</figcaption></figure>
+<div class="added"><span class="lab">Added &mdash; not in your deck</span>
+The deck states only the first two steps (4.3 V and 3.6 V). Carrying the chain further is what makes
+the argument land, and it is worth writing out if you are asked to justify why diode logic is
+obsolete.</div>
+<h3>The three reasons the deck gives (slide 22)</h3>
+<ol><li>It permits only AND and OR &mdash; NAND and NOR arise only as special cases.</li>
+<li>It suffers a voltage drop from one stage to the next.</li>
+<li>It is usable for simple stand-alone logic but not inside integrated circuits.</li></ol>
+<div class="key"><b>The link to the next section.</b> The fix is to <b>add a transistor to restore the
+level</b> &mdash; and that is exactly what DTL is. One sentence, and it connects two sections of the
+chapter.</div>
+</section>
+<section class="card" id="rtl"><h2>8 &middot; RTL &mdash; resistor-transistor logic</h2>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 360" font-family="sans-serif">
+  <rect width="620" height="360" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.8">
+    <line x1="330" y1="22" x2="330" y2="52"/>
+    <circle cx="330" cy="16" r="5"/>
+    <path d="M 330 52 l 10 8 l -20 12 l 20 12 l -20 12 l 10 8"/>
+    <line x1="330" y1="104" x2="330" y2="132"/>
+    <line x1="200" y1="132" x2="470" y2="132"/>
+    <circle cx="478" cy="132" r="5"/>
+    <!-- Q1 -->
+    <circle cx="240" cy="200" r="40"/>
+    <line x1="222" y1="176" x2="222" y2="224"/>
+    <line x1="200" y1="200" x2="222" y2="200"/>
+    <line x1="222" y1="188" x2="248" y2="168"/>
+    <line x1="248" y1="168" x2="248" y2="132"/>
+    <line x1="222" y1="212" x2="248" y2="232"/>
+    <polygon points="240,224 250,230 240,236" fill="#222222" stroke="none"/>
+    <line x1="248" y1="232" x2="248" y2="290"/>
+    <!-- Q2 -->
+    <circle cx="410" cy="200" r="40"/>
+    <line x1="392" y1="176" x2="392" y2="224"/>
+    <line x1="370" y1="200" x2="392" y2="200"/>
+    <line x1="392" y1="188" x2="418" y2="168"/>
+    <line x1="418" y1="168" x2="418" y2="132"/>
+    <line x1="392" y1="212" x2="418" y2="232"/>
+    <polygon points="410,224 420,230 410,236" fill="#222222" stroke="none"/>
+    <line x1="418" y1="232" x2="418" y2="290"/>
+    <line x1="248" y1="290" x2="418" y2="290"/>
+    <line x1="333" y1="290" x2="333" y2="308"/>
+    <line x1="313" y1="308" x2="353" y2="308"/>
+    <line x1="320" y1="316" x2="346" y2="316"/>
+    <line x1="327" y1="324" x2="339" y2="324"/>
+    <!-- input resistors -->
+    <line x1="70" y1="200" x2="112" y2="200"/>
+    <path d="M 112 200 l 8 -10 l 12 20 l 12 -20 l 12 20 l 12 -20 l 8 10"/>
+    <line x1="176" y1="200" x2="200" y2="200"/>
+    <line x1="70" y1="272" x2="112" y2="272"/>
+    <path d="M 112 272 l 8 -10 l 12 20 l 12 -20 l 12 20 l 12 -20 l 8 10"/>
+    <line x1="176" y1="272" x2="370" y2="272"/>
+    <line x1="370" y1="272" x2="370" y2="200"/>
+    <circle cx="62" cy="200" r="5"/>
+    <circle cx="62" cy="272" r="5"/>
+  </g>
+  <g font-size="13.5" fill="#222222">
+    <text x="344" y="88">R_C</text>
+    <text x="346" y="18">+V_CC</text>
+    <text x="486" y="136">Y</text>
+    <text x="286" y="196">Q_1</text>
+    <text x="456" y="196">Q_2</text>
+    <text x="122" y="188">R_1</text>
+    <text x="122" y="298">R_2</text>
+    <text x="38" y="205">A</text>
+    <text x="38" y="277">B</text>
+    <text x="200" y="348" font-weight="bold" fill="#1f4e79">Y = NOT (A + B)</text>
+  </g>
+</svg><figcaption>The basic RTL gate is a <b>NOR</b>: two transistors in parallel under one collector resistor.</figcaption></figure>
+<p><b>Operation.</b> Either input HIGH drives base current through its resistor, saturates that
+transistor and pulls the output down to <i>V</i><sub>CE(sat)</sub> &mdash; a logic 0. Only with both
+inputs LOW are both transistors off, and <i>R</i><sub>C</sub> pulls the output up to a logic 1.
+That is NOR.</p>
+<h3>Identify the gates &mdash; the slide-24 exercise</h3>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" font-family="sans-serif">
+  <rect width="840" height="420" fill="#ffffff"/>
+  <!-- (i) single-input stage -->
+  <g stroke="#222222" fill="none" stroke-width="1.7">
+    <line x1="150" y1="40" x2="190" y2="40"/>
+    <line x1="170" y1="40" x2="170" y2="62"/>
+    <path d="M 170 62 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="170" y1="104" x2="170" y2="126"/>
+    <line x1="170" y1="126" x2="228" y2="126"/>
+    <circle cx="234" cy="126" r="5"/>
+    <circle cx="170" cy="126" r="3.5" fill="#222222"/>
+    <line x1="170" y1="126" x2="170" y2="152"/>
+    <line x1="152" y1="152" x2="152" y2="196"/>
+    <line x1="152" y1="174" x2="138" y2="174"/>
+    <line x1="138" y1="166" x2="138" y2="182"/>
+    <polygon points="118,166 118,182 138,174" fill="#222222" stroke="none"/>
+    <line x1="118" y1="174" x2="100" y2="174"/>
+    <line x1="152" y1="162" x2="172" y2="150"/>
+    <line x1="152" y1="186" x2="172" y2="198"/>
+    <polygon points="164,190 174,196 164,202" fill="#222222" stroke="none"/>
+    <line x1="172" y1="198" x2="172" y2="222"/>
+    <line x1="156" y1="222" x2="188" y2="222"/>
+    <line x1="162" y1="229" x2="182" y2="229"/>
+    <line x1="168" y1="236" x2="176" y2="236"/>
+    <line x1="100" y1="174" x2="100" y2="196"/>
+    <path d="M 100 196 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="100" y1="238" x2="100" y2="256"/>
+    <line x1="84" y1="256" x2="116" y2="256"/>
+    <line x1="100" y1="174" x2="60" y2="174"/>
+    <circle cx="54" cy="174" r="5"/>
+    <circle cx="100" cy="174" r="3.5" fill="#222222"/>
+  </g>
+  <g font-size="12.5" fill="#222222">
+    <text x="182" y="88">R_2</text>
+    <text x="158" y="30">V+</text>
+    <text x="242" y="130">Q</text>
+    <text x="184" y="178">Q_1</text>
+    <text x="66" y="222">R_1</text>
+    <text x="86" y="272">V-</text>
+    <text x="34" y="178">A</text>
+    <text x="112" y="160" fill="#1f4e79">D</text>
+    <text x="60" y="300" font-weight="bold">(i)</text>
+  </g>
+  <!-- (ii) two-input stage -->
+  <g stroke="#222222" fill="none" stroke-width="1.7">
+    <line x1="440" y1="40" x2="480" y2="40"/>
+    <line x1="460" y1="40" x2="460" y2="62"/>
+    <path d="M 460 62 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="460" y1="104" x2="460" y2="126"/>
+    <line x1="460" y1="126" x2="518" y2="126"/>
+    <circle cx="524" cy="126" r="5"/>
+    <circle cx="460" cy="126" r="3.5" fill="#222222"/>
+    <line x1="460" y1="126" x2="460" y2="152"/>
+    <line x1="442" y1="152" x2="442" y2="196"/>
+    <line x1="442" y1="174" x2="428" y2="174"/>
+    <line x1="428" y1="166" x2="428" y2="182"/>
+    <polygon points="408,166 408,182 428,174" fill="#222222" stroke="none"/>
+    <line x1="408" y1="174" x2="400" y2="174"/>
+    <line x1="442" y1="162" x2="462" y2="150"/>
+    <line x1="442" y1="186" x2="462" y2="198"/>
+    <polygon points="454,190 464,196 454,202" fill="#222222" stroke="none"/>
+    <line x1="462" y1="198" x2="462" y2="222"/>
+    <line x1="446" y1="222" x2="478" y2="222"/>
+    <line x1="452" y1="229" x2="472" y2="229"/>
+    <line x1="458" y1="236" x2="466" y2="236"/>
+    <line x1="400" y1="174" x2="400" y2="196"/>
+    <path d="M 400 196 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="400" y1="238" x2="400" y2="256"/>
+    <line x1="384" y1="256" x2="416" y2="256"/>
+    <circle cx="400" cy="174" r="3.5" fill="#222222"/>
+    <!-- A branch -->
+    <line x1="290" y1="140" x2="320" y2="140"/>
+    <path d="M 320 140 l 6 -8 l 10 16 l 10 -16 l 10 16 l 10 -16 l 6 8"/>
+    <line x1="372" y1="140" x2="400" y2="140"/>
+    <line x1="400" y1="140" x2="400" y2="174"/>
+    <line x1="290" y1="174" x2="320" y2="174"/>
+    <path d="M 320 174 l 6 -8 l 10 16 l 10 -16 l 10 16 l 10 -16 l 6 8"/>
+    <line x1="372" y1="174" x2="400" y2="174"/>
+    <circle cx="284" cy="140" r="5"/>
+    <circle cx="284" cy="174" r="5"/>
+  </g>
+  <g font-size="12.5" fill="#222222">
+    <text x="472" y="88">R_2</text>
+    <text x="448" y="30">V+</text>
+    <text x="532" y="130">Q</text>
+    <text x="474" y="178">Q_1</text>
+    <text x="366" y="222">R_1</text>
+    <text x="386" y="272">V-</text>
+    <text x="330" y="128">R_3</text>
+    <text x="330" y="200">R_4</text>
+    <text x="264" y="144">A</text>
+    <text x="264" y="178">B</text>
+    <text x="402" y="160" fill="#1f4e79">D</text>
+    <text x="350" y="300" font-weight="bold">(ii)</text>
+  </g>
+  <!-- (iii) stacked emitter followers -->
+  <g stroke="#222222" fill="none" stroke-width="1.7">
+    <line x1="700" y1="29" x2="700" y2="70"/>
+    <circle cx="700" cy="24" r="5"/>
+    <line x1="682" y1="70" x2="682" y2="114"/>
+    <line x1="682" y1="92" x2="640" y2="92"/>
+    <line x1="682" y1="80" x2="702" y2="68"/>
+    <line x1="702" y1="68" x2="702" y2="46"/>
+    <line x1="700" y1="46" x2="700" y2="46"/>
+    <line x1="682" y1="104" x2="702" y2="116"/>
+    <polygon points="694,110 704,116 694,122" fill="#222222" stroke="none"/>
+    <line x1="702" y1="116" x2="702" y2="160"/>
+    <line x1="682" y1="160" x2="682" y2="204"/>
+    <line x1="682" y1="182" x2="640" y2="182"/>
+    <line x1="682" y1="170" x2="702" y2="158"/>
+    <line x1="682" y1="194" x2="702" y2="206"/>
+    <polygon points="694,200 704,206 694,212" fill="#222222" stroke="none"/>
+    <line x1="702" y1="206" x2="702" y2="252"/>
+    <line x1="702" y1="252" x2="790" y2="252"/>
+    <circle cx="796" cy="252" r="5"/>
+    <circle cx="702" cy="252" r="3.5" fill="#222222"/>
+    <line x1="702" y1="252" x2="702" y2="276"/>
+    <path d="M 702 276 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="702" y1="318" x2="702" y2="336"/>
+    <line x1="686" y1="336" x2="718" y2="336"/>
+    <line x1="691" y1="343" x2="713" y2="343"/>
+    <line x1="696" y1="350" x2="708" y2="350"/>
+    <line x1="560" y1="92" x2="590" y2="92"/>
+    <path d="M 590 92 l 6 -8 l 10 16 l 10 -16 l 10 16 l 10 -16 l 6 8"/>
+    <line x1="642" y1="92" x2="640" y2="92"/>
+    <line x1="560" y1="182" x2="590" y2="182"/>
+    <path d="M 590 182 l 6 -8 l 10 16 l 10 -16 l 10 16 l 10 -16 l 6 8"/>
+    <line x1="642" y1="182" x2="640" y2="182"/>
+    <circle cx="554" cy="92" r="5"/>
+    <circle cx="554" cy="182" r="5"/>
+  </g>
+  <g font-size="12.5" fill="#222222">
+    <text x="710" y="20">+V_CC</text>
+    <text x="716" y="96">T_1</text>
+    <text x="716" y="186">T_2</text>
+    <text x="600" y="80">R</text>
+    <text x="600" y="206">R</text>
+    <text x="534" y="96">A</text>
+    <text x="534" y="186">B</text>
+    <text x="668" y="302">R</text>
+    <text x="806" y="278" fill="#1f4e79" text-anchor="end">Q = A . B</text>
+    <text x="620" y="300" font-weight="bold">(iii)</text>
+  </g>
+  <text x="40" y="392" font-size="13" fill="#0b7a5b">Slide 24 draws (ii) twice, once at bottom left and once at bottom right - see C02-2.</text>
+  <text x="40" y="410" font-size="13" fill="#0b7a5b">D is the series base diode the slide draws in (i) and (ii); (iii) has no negative rail and no diode.</text>
+</svg><figcaption>The three distinct circuits set for identification on slide 24. The deck draws four, but two of them are the same circuit.</figcaption></figure>
+<table><tr><th>Circuit</th><th>What to look at</th><th>Answer</th></tr>
+<tr><td>(i)</td><td>one input into one common-emitter stage</td><td><b>Inverter</b>, <i>Q</i> = <i>A</i>&prime;</td></tr>
+<tr><td>(ii)</td><td>two inputs summed by resistors into one base</td><td><b>NOR</b>, <i>Q</i> = (<i>A</i> + <i>B</i>)&prime;</td></tr>
+<tr><td>(iii)</td><td>two emitter followers stacked in series &mdash; current reaches the output only if both conduct</td><td><b>AND</b>, <i>Q</i> = <i>A</i>&middot;<i>B</i> <span class="muted">(the slide prints this one)</span></td></tr></table>
+<div class="trap"><span class="lab">Slide error &mdash; C02-2</span>
+Slide 24 shows <b>four</b> circuits but only <b>three</b> distinct ones &mdash; the bottom-left and
+bottom-right schematics are identical down to the component labels. <b>Answer three, not four.</b></div>
+<div class="added"><span class="lab">Added &mdash; the mark on the base lead</span>
+The solid mark on each base lead in circuits (i) and (ii) is a <b>diode in series with the base</b>,
+anode at the summing node. It is there because <i>R</i><sub>1</sub> returns the base to a
+<b>negative</b> rail; without it, inputs LOW would reverse-bias the emitter-base junction, whose
+reverse breakdown is only about 5&ndash;7 V. Circuit (iii) runs from +<i>V</i><sub>CC</sub> alone, has no
+negative rail, and carries no diode &mdash; which corroborates the reading.</div>
+<h3>Advantages and limitations (slide 25)</h3>
+<table><tr><th>Advantages</th><th>Limitations</th></tr>
+<tr><td>almost as simple as diode logic, and inexpensive</td><td>high power dissipation</td></tr>
+<tr><td>low supply voltage per gate</td><td>poor noise immunity, low noise margin</td></tr>
+<tr><td>minimum transistor count for a given expression</td><td>poor speed</td></tr>
+<tr><td>usable as cheap small-signal amplifiers / linear-to-digital interface</td><td>not designed for linear operation</td></tr></table>
+</section>
+<section class="card" id="dtl"><h2>9 &middot; DTL &mdash; diode-transistor logic</h2>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 400" font-family="sans-serif">
+  <rect width="760" height="400" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.8">
+    <line x1="180" y1="52" x2="620" y2="52"/>
+    <line x1="400" y1="52" x2="400" y2="30"/>
+    <circle cx="400" cy="24" r="5"/>
+    <circle cx="400" cy="52" r="3.5" fill="#222222"/>
+    <!-- R1 -->
+    <line x1="180" y1="52" x2="180" y2="80"/>
+    <path d="M 180 80 l 9 7 l -18 11 l 18 11 l -18 11 l 9 7"/>
+    <line x1="180" y1="127" x2="180" y2="250"/>
+    <!-- RL -->
+    <line x1="620" y1="52" x2="620" y2="80"/>
+    <path d="M 620 80 l 9 7 l -18 11 l 18 11 l -18 11 l 9 7"/>
+    <line x1="620" y1="127" x2="620" y2="200"/>
+    <line x1="620" y1="200" x2="700" y2="200"/>
+    <circle cx="708" cy="200" r="5"/>
+    <circle cx="620" cy="200" r="3.5" fill="#222222"/>
+    <!-- input diodes: cathode (bar) at input, anode at node -->
+    <line x1="60" y1="150" x2="112" y2="150"/>
+    <polygon points="150,134 112,150 150,166" fill="#e9eef4"/>
+    <line x1="112" y1="132" x2="112" y2="168"/>
+    <line x1="150" y1="150" x2="180" y2="150"/>
+    <line x1="60" y1="200" x2="112" y2="200"/>
+    <polygon points="150,184 112,200 150,216" fill="#e9eef4"/>
+    <line x1="112" y1="182" x2="112" y2="218"/>
+    <line x1="150" y1="200" x2="180" y2="200"/>
+    <line x1="60" y1="250" x2="112" y2="250"/>
+    <polygon points="150,234 112,250 150,266" fill="#e9eef4"/>
+    <line x1="112" y1="232" x2="112" y2="268"/>
+    <line x1="150" y1="250" x2="180" y2="250"/>
+    <circle cx="52" cy="150" r="5"/>
+    <circle cx="52" cy="200" r="5"/>
+    <circle cx="52" cy="250" r="5"/>
+    <circle cx="180" cy="150" r="3.5" fill="#222222"/>
+    <circle cx="180" cy="200" r="3.5" fill="#222222"/>
+    <line x1="180" y1="250" x2="180" y2="250"/>
+    <!-- R2 with C1 in parallel -->
+    <line x1="180" y1="200" x2="240" y2="200"/>
+    <path d="M 240 200 l 7 -9 l 11 18 l 11 -18 l 11 18 l 11 -18 l 7 9"/>
+    <line x1="298" y1="200" x2="420" y2="200"/>
+    <line x1="200" y1="200" x2="200" y2="150"/>
+    <line x1="200" y1="150" x2="296" y2="150"/>
+    <line x1="296" y1="138" x2="296" y2="162"/>
+    <line x1="308" y1="138" x2="308" y2="162"/>
+    <line x1="308" y1="150" x2="356" y2="150"/>
+    <line x1="356" y1="150" x2="356" y2="200"/>
+    <circle cx="200" cy="200" r="3.5" fill="#222222"/>
+    <circle cx="356" cy="200" r="3.5" fill="#222222"/>
+    <!-- R3 to -VBB -->
+    <line x1="356" y1="200" x2="356" y2="240"/>
+    <path d="M 356 240 l 9 7 l -18 11 l 18 11 l -18 11 l 9 7"/>
+    <line x1="356" y1="287" x2="356" y2="330"/>
+    <circle cx="356" cy="336" r="5"/>
+    <!-- Q1 -->
+    <circle cx="470" cy="200" r="42"/>
+    <line x1="450" y1="176" x2="450" y2="224"/>
+    <line x1="420" y1="200" x2="450" y2="200"/>
+    <line x1="450" y1="188" x2="478" y2="166"/>
+    <line x1="478" y1="166" x2="478" y2="132"/>
+    <line x1="478" y1="132" x2="620" y2="132"/><circle cx="620" cy="132" r="3.5" fill="#222222"/>
+    <line x1="450" y1="212" x2="478" y2="234"/>
+    <polygon points="470,226 480,232 470,238" fill="#222222" stroke="none"/>
+    <line x1="478" y1="234" x2="478" y2="300"/>
+    <line x1="462" y1="300" x2="494" y2="300"/>
+    <line x1="468" y1="308" x2="488" y2="308"/>
+    <line x1="474" y1="316" x2="482" y2="316"/>
+  </g>
+  <g font-size="13.5" fill="#222222">
+    <text x="410" y="20">+V_CC</text>
+    <text x="192" y="106">R_1</text>
+    <text x="632" y="106">R_L</text>
+    <text x="60" y="128">inputs</text>
+    <text x="122" y="128">D_1</text>
+    <text x="122" y="180">D_2</text>
+    <text x="122" y="230">D_3</text>
+    <text x="256" y="234">R_2</text>
+    <text x="236" y="126">C_1</text>
+    <text x="368" y="278">R_3</text>
+    <text x="368" y="342">-V_BB</text>
+    <text x="514" y="196">Q_1</text>
+    <text x="716" y="204">output</text>
+    <text x="200" y="382" font-weight="bold" fill="#1f4e79">output = NOT (A . B . C)</text>
+  </g>
+</svg><figcaption>The DTL NAND gate: a diode-AND input network feeding an inverting transistor stage. AND then NOT gives NAND.</figcaption></figure>
+<p><b>Operation.</b></p>
+<ul>
+<li><b>Any input LOW</b> &mdash; that diode pulls the common node down. The node cannot reach the
+voltage needed to drive the base, <i>R</i><sub>3</sub> holds the base at &minus;<i>V</i><sub>BB</sub>,
+the transistor is off, and <i>R</i><sub>L</sub> pulls the output HIGH.</li>
+<li><b>All inputs HIGH</b> &mdash; every diode turns off, <i>R</i><sub>1</sub> pulls the node up,
+current flows into the base, the transistor saturates, and the output goes LOW.</li>
+</ul>
+<p>That is NAND. The capacitor across <i>R</i><sub>2</sub> is a <b>speed-up capacitor</b> &mdash; it
+passes the leading edge of the base drive straight through, shortening turn-on time.</p>
+<h3>The slide-27 example &mdash; identify the function</h3>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" font-family="sans-serif">
+  <rect width="700" height="360" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.8">
+    <!-- input A -->
+    <line x1="60" y1="110" x2="204" y2="110"/>
+    <polygon points="204,94 242,110 204,126" fill="#e9eef4"/>
+    <line x1="242" y1="92" x2="242" y2="128"/>
+    <line x1="242" y1="110" x2="290" y2="110"/>
+    <circle cx="52" cy="110" r="5"/>
+    <!-- input B -->
+    <line x1="60" y1="250" x2="204" y2="250"/>
+    <polygon points="204,234 242,250 204,266" fill="#e9eef4"/>
+    <line x1="242" y1="232" x2="242" y2="268"/>
+    <line x1="242" y1="250" x2="290" y2="250"/>
+    <circle cx="52" cy="250" r="5"/>
+    <!-- common node -->
+    <line x1="290" y1="110" x2="290" y2="250"/>
+    <circle cx="290" cy="180" r="4" fill="#222222"/>
+    <line x1="290" y1="180" x2="320" y2="180"/>
+    <path d="M 320 180 l 7 -9 l 11 18 l 11 -18 l 11 18 l 11 -18 l 7 9"/>
+    <line x1="378" y1="180" x2="440" y2="180"/>
+    <!-- transistor -->
+    <line x1="440" y1="152" x2="440" y2="208"/>
+    <line x1="440" y1="166" x2="472" y2="140"/>
+    <line x1="472" y1="140" x2="472" y2="112"/>
+    <line x1="440" y1="194" x2="472" y2="220"/>
+    <polygon points="462,214 474,220 462,228" fill="#222222" stroke="none"/>
+    <line x1="472" y1="220" x2="472" y2="290"/>
+    <line x1="454" y1="290" x2="490" y2="290"/>
+    <line x1="460" y1="298" x2="484" y2="298"/>
+    <line x1="466" y1="306" x2="478" y2="306"/>
+    <!-- collector load -->
+    <line x1="472" y1="112" x2="472" y2="80"/>
+    <path d="M 472 80 l 9 -7 l -18 -11 l 18 -11 l -18 -11 l 9 -7"/>
+    <line x1="472" y1="33" x2="472" y2="20"/>
+    <circle cx="472" cy="14" r="5"/>
+    <line x1="472" y1="112" x2="580" y2="112"/>
+    <circle cx="588" cy="112" r="5"/>
+    <circle cx="472" cy="112" r="4" fill="#222222"/>
+  </g>
+  <g font-size="13.5" fill="#222222">
+    <text x="30" y="115">A</text>
+    <text x="30" y="255">B</text>
+    <text x="86" y="98">0 V / 5 V</text>
+    <text x="86" y="238">0 V / 5 V</text>
+    <text x="204" y="82">diode</text>
+    <text x="204" y="222">diode</text>
+    <text x="332" y="212">1 k</text>
+    <text x="490" y="60">1 k</text>
+    <text x="486" y="16">+5 V</text>
+    <text x="596" y="116">Y</text>
+    <text x="494" y="200">MMBT3904</text>
+    <text x="150" y="340" font-size="13" fill="#1f4e79">anodes at the inputs, cathodes commoned - a diode OR feeding an inverting stage</text>
+  </g>
+</svg><figcaption>Slide 27: two diodes into the base of an MMBT3904, 1 k&Omega; collector load to +5 V, output at the collector.</figcaption></figure>
+<div class="key"><b>The orientation decides the answer, and it is reversed from the NAND above.</b>
+Here the diode <b>anodes</b> face the inputs and the cathodes are commoned. So a diode conducts only
+when <i>its own</i> input is driven HIGH &mdash; the common node is a diode <b>OR</b>, feeding an
+inverting stage. OR then NOT gives <b>NOR</b>.</div>
+<table><tr><th><i>A</i></th><th><i>B</i></th><th><i>Y</i></th></tr>
+<tr><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td></tr>
+<tr><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table>
+<div class="ans"><i>Y</i> = ( <i>A</i> + <i>B</i> )&prime; &mdash; a NOR gate</div>
+<div class="trap"><span class="lab">Slide error &mdash; C02-3</span>
+The blank truth table on slide 27 is headed <i>A</i>, <i>A</i>, <i>Y</i>. The second column must be
+<i>B</i>.</div>
+</section>
+<section class="card" id="ttl"><h2>10 &middot; TTL &mdash; the family the chapter is built around</h2>
+<p>Introduced by Texas Instruments in 1964. The <b>NAND gate is the family's basic building
+block</b>. The switching model used throughout: a saturated transistor is a closed switch to ground,
+an OFF transistor is an open switch.</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 470" font-family="sans-serif">
+<rect width="840" height="470" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="174" y1="150" x2="226" y2="150"/><line x1="200" y1="150" x2="200" y2="98"/><line x1="188" y1="150" x2="164" y2="180"/><polygon points="162.6,181.8 175.0,175.0 166.4,168.2" fill="#222222" stroke="none"/><line x1="164" y1="180" x2="164" y2="198"/><line x1="212" y1="150" x2="236" y2="180"/><line x1="236" y1="180" x2="236" y2="198"/>
+<line x1="200" y1="46" x2="200" y2="53.0"/><path d="M 200 53.0 l 9 5.7 l -18 8.9 l 18 8.9 l -18 8.9 l 9 5.7"/><line x1="200" y1="91.0" x2="200" y2="98"/>
+<line x1="164" y1="198" x2="164" y2="258"/>
+<line x1="70" y1="258" x2="164" y2="258"/>
+<circle cx="62" cy="258" r="5" fill="#ffffff"/>
+<line x1="236" y1="198" x2="236" y2="190"/>
+<line x1="236" y1="190" x2="310" y2="190"/>
+<line x1="310" y1="164" x2="310" y2="216"/><line x1="310" y1="190" x2="280" y2="190"/><line x1="310" y1="177" x2="334" y2="153"/><line x1="334" y1="153" x2="334" y2="137"/><line x1="310" y1="203" x2="334" y2="227"/><polygon points="336.5,229.5 331.2,216.4 323.4,224.2" fill="#222222" stroke="none"/><line x1="334" y1="227" x2="334" y2="243"/>
+<line x1="334" y1="137" x2="334" y2="130"/>
+<line x1="334" y1="130" x2="380" y2="130"/>
+<circle cx="380" cy="130" r="4" fill="#222222"/>
+<line x1="380" y1="46" x2="380" y2="64.5"/><path d="M 380 64.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="380" y1="111.5" x2="380" y2="130"/>
+<line x1="380" y1="130" x2="550" y2="130"/>
+<line x1="334" y1="243" x2="334" y2="290"/>
+<circle cx="334" cy="290" r="4" fill="#222222"/>
+<line x1="334" y1="290" x2="334" y2="326.5"/><path d="M 334 326.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="334" y1="373.5" x2="334" y2="410"/>
+<line x1="334" y1="290" x2="550" y2="290"/>
+<line x1="550" y1="104" x2="550" y2="156"/><line x1="550" y1="130" x2="520" y2="130"/><line x1="550" y1="117" x2="574" y2="93"/><line x1="574" y1="93" x2="574" y2="83"/><line x1="550" y1="143" x2="574" y2="167"/><polygon points="576.5,169.5 571.2,156.4 563.4,164.2" fill="#222222" stroke="none"/><line x1="574" y1="167" x2="574" y2="177"/>
+<line x1="574" y1="83" x2="620" y2="83"/>
+<line x1="620" y1="46" x2="620" y2="52.5"/><path d="M 620 52.5 l 9 3.6 l -18 5.6 l 18 5.6 l -18 5.6 l 9 3.6"/><line x1="620" y1="76.5" x2="620" y2="83"/>
+<line x1="574" y1="177" x2="574" y2="205"/>
+<polygon points="560,209 588,209 574,237" fill="#e9eef4"/><line x1="558" y1="237" x2="590" y2="237"/>
+<line x1="574" y1="241" x2="574" y2="258"/>
+<circle cx="574" cy="258" r="4" fill="#222222"/>
+<line x1="574" y1="258" x2="750" y2="258"/>
+<circle cx="758" cy="258" r="5" fill="#ffffff"/>
+<line x1="550" y1="264" x2="550" y2="316"/><line x1="550" y1="290" x2="520" y2="290"/><line x1="550" y1="277" x2="574" y2="253"/><line x1="574" y1="253" x2="574" y2="243"/><line x1="550" y1="303" x2="574" y2="327"/><polygon points="576.5,329.5 571.2,316.4 563.4,324.2" fill="#222222" stroke="none"/><line x1="574" y1="327" x2="574" y2="337"/>
+<line x1="574" y1="243" x2="574" y2="258"/>
+<line x1="574" y1="337" x2="574" y2="410"/>
+<line x1="334" y1="410" x2="574" y2="410"/>
+<line x1="200" y1="46" x2="620" y2="46"/>
+<circle cx="380" cy="46" r="4" fill="#222222"/>
+<line x1="470" y1="46" x2="470" y2="30"/>
+<circle cx="470" cy="24" r="5" fill="#ffffff"/>
+<circle cx="470" cy="46" r="4" fill="#222222"/>
+<circle cx="94" cy="258" r="4" fill="#222222"/>
+<line x1="94" y1="258" x2="94" y2="300"/>
+<polygon points="80,332 108,332 94,304" fill="#e9eef4"/><line x1="78" y1="304" x2="110" y2="304"/>
+<line x1="94" y1="336" x2="94" y2="410"/>
+<line x1="94" y1="410" x2="334" y2="410"/>
+<rect x="512" y="76" width="128" height="352" fill="none" stroke="#0b7a5b" stroke-width="1.4" stroke-dasharray="6 4"/>
+</g><text x="482" y="20" font-size="13" fill="#222222" text-anchor="start">+V_CC</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="216" y="100" font-size="13" fill="#222222" text-anchor="start">R_1 = 4 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="396" y="100" font-size="13" fill="#222222" text-anchor="start">R_2 = 1.6 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="650" y="100" font-size="13" fill="#222222" text-anchor="start">R_3 = 130</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="348" y="360" font-size="13" fill="#222222" text-anchor="start">R_4 = 1.0 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="248" font-size="13" fill="#222222" text-anchor="end">input</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="766" y="262" font-size="13" fill="#222222" text-anchor="start">output</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="244" y="142" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="350" y="214" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="506" y="116" font-size="13" fill="#222222" text-anchor="end">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="506" y="300" font-size="13" fill="#222222" text-anchor="end">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="596" y="228" font-size="13" fill="#222222" text-anchor="start">D_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="112" y="326" font-size="13" fill="#222222" text-anchor="start">D_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="576" y="452" font-size="12.5" fill="#0b7a5b" text-anchor="middle">totem-pole output stage</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg><figcaption>The standard TTL inverter with totem-pole output (slide 29).</figcaption></figure>
+<div class="grid2"><div><h4>Input HIGH &rarr; output LOW</h4>
+<ul><li><i>Q</i><sub>1</sub>'s base-emitter junction is <b>reverse-biased</b>; its base-collector
+junction conducts instead and passes current into the phase splitter.</li>
+<li>Three stacked forward drops fix the node voltages: 3 &times; 0.7 = 2.1 V at
+<i>Q</i><sub>1</sub>'s base, 1.4 V at the phase splitter's base, 0.7 V at the pull-down's base.</li>
+<li>Phase splitter ON, pull-down ON, output at <i>V</i><sub>CE(sat)</sub> &asymp; 0.2 V.</li>
+<li>Pull-up OFF: turning it on would need 0.2 + 0.7 + 0.7 = 1.6 V at its base, and the saturated
+phase splitter holds its collector far below that.</li></ul></div>
+<div><h4>Input LOW &rarr; output HIGH</h4>
+<ul><li><i>Q</i><sub>1</sub>'s base-emitter junction conducts, base at 0.7 V, and it saturates &mdash;
+so no current reaches the phase splitter.</li>
+<li>Phase splitter OFF, pull-down base at 0 V so pull-down OFF.</li>
+<li><i>R</i><sub>2</sub> pulls the pull-up's base up; it turns ON and sources the output HIGH.</li></ul>
+<p>The <b>level-shift diode</b> exists to guarantee the two output transistors are never on together
+&mdash; it adds a drop to the voltage the pull-up needs before it can conduct.</p></div></div>
+<div class="trap"><span class="lab">Slide error &mdash; C02-5</span>
+Slide 29(a) labels the phase-splitter collector &ldquo;&cong; 0.7 V&rdquo;. With that transistor
+saturated the node sits at 0.7 + 0.2 = <b>0.9 V</b>. The conclusion is unchanged &mdash; either figure
+is well below the 1.6 V needed &mdash; but quote 0.9 V.</div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 470" font-family="sans-serif">
+<rect width="840" height="470" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="174" y1="150" x2="226" y2="150"/><line x1="200" y1="150" x2="200" y2="98"/><line x1="188" y1="150" x2="164" y2="180"/><polygon points="162.6,181.8 175.0,175.0 166.4,168.2" fill="#222222" stroke="none"/><line x1="164" y1="180" x2="164" y2="198"/><line x1="166" y1="150" x2="142" y2="180"/><polygon points="140.6,181.8 153.0,175.0 144.4,168.2" fill="#222222" stroke="none"/><line x1="142" y1="180" x2="142" y2="198"/><line x1="144" y1="150" x2="120" y2="180"/><polygon points="118.6,181.8 131.0,175.0 122.4,168.2" fill="#222222" stroke="none"/><line x1="120" y1="180" x2="120" y2="198"/><line x1="212" y1="150" x2="236" y2="180"/><line x1="236" y1="180" x2="236" y2="198"/>
+<line x1="200" y1="46" x2="200" y2="53.0"/><path d="M 200 53.0 l 9 5.7 l -18 8.9 l 18 8.9 l -18 8.9 l 9 5.7"/><line x1="200" y1="91.0" x2="200" y2="98"/>
+<line x1="164" y1="198" x2="164" y2="258"/>
+<line x1="70" y1="258" x2="164" y2="258"/>
+<circle cx="62" cy="258" r="5" fill="#ffffff"/>
+<line x1="142" y1="198" x2="142" y2="284"/>
+<line x1="70" y1="284" x2="142" y2="284"/>
+<circle cx="62" cy="284" r="5" fill="#ffffff"/>
+<line x1="120" y1="198" x2="120" y2="310"/>
+<line x1="70" y1="310" x2="120" y2="310"/>
+<circle cx="62" cy="310" r="5" fill="#ffffff"/>
+<line x1="236" y1="198" x2="236" y2="190"/>
+<line x1="236" y1="190" x2="310" y2="190"/>
+<line x1="310" y1="164" x2="310" y2="216"/><line x1="310" y1="190" x2="280" y2="190"/><line x1="310" y1="177" x2="334" y2="153"/><line x1="334" y1="153" x2="334" y2="137"/><line x1="310" y1="203" x2="334" y2="227"/><polygon points="336.5,229.5 331.2,216.4 323.4,224.2" fill="#222222" stroke="none"/><line x1="334" y1="227" x2="334" y2="243"/>
+<line x1="334" y1="137" x2="334" y2="130"/>
+<line x1="334" y1="130" x2="380" y2="130"/>
+<circle cx="380" cy="130" r="4" fill="#222222"/>
+<line x1="380" y1="46" x2="380" y2="64.5"/><path d="M 380 64.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="380" y1="111.5" x2="380" y2="130"/>
+<line x1="380" y1="130" x2="550" y2="130"/>
+<line x1="334" y1="243" x2="334" y2="290"/>
+<circle cx="334" cy="290" r="4" fill="#222222"/>
+<line x1="334" y1="290" x2="334" y2="326.5"/><path d="M 334 326.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="334" y1="373.5" x2="334" y2="410"/>
+<line x1="334" y1="290" x2="550" y2="290"/>
+<line x1="550" y1="104" x2="550" y2="156"/><line x1="550" y1="130" x2="520" y2="130"/><line x1="550" y1="117" x2="574" y2="93"/><line x1="574" y1="93" x2="574" y2="83"/><line x1="550" y1="143" x2="574" y2="167"/><polygon points="576.5,169.5 571.2,156.4 563.4,164.2" fill="#222222" stroke="none"/><line x1="574" y1="167" x2="574" y2="177"/>
+<line x1="574" y1="83" x2="620" y2="83"/>
+<line x1="620" y1="46" x2="620" y2="52.5"/><path d="M 620 52.5 l 9 3.6 l -18 5.6 l 18 5.6 l -18 5.6 l 9 3.6"/><line x1="620" y1="76.5" x2="620" y2="83"/>
+<line x1="574" y1="177" x2="574" y2="205"/>
+<polygon points="560,209 588,209 574,237" fill="#e9eef4"/><line x1="558" y1="237" x2="590" y2="237"/>
+<line x1="574" y1="241" x2="574" y2="258"/>
+<circle cx="574" cy="258" r="4" fill="#222222"/>
+<line x1="574" y1="258" x2="750" y2="258"/>
+<circle cx="758" cy="258" r="5" fill="#ffffff"/>
+<line x1="550" y1="264" x2="550" y2="316"/><line x1="550" y1="290" x2="520" y2="290"/><line x1="550" y1="277" x2="574" y2="253"/><line x1="574" y1="253" x2="574" y2="243"/><line x1="550" y1="303" x2="574" y2="327"/><polygon points="576.5,329.5 571.2,316.4 563.4,324.2" fill="#222222" stroke="none"/><line x1="574" y1="327" x2="574" y2="337"/>
+<line x1="574" y1="243" x2="574" y2="258"/>
+<line x1="574" y1="337" x2="574" y2="410"/>
+<line x1="334" y1="410" x2="574" y2="410"/>
+<line x1="200" y1="46" x2="620" y2="46"/>
+<circle cx="380" cy="46" r="4" fill="#222222"/>
+<line x1="470" y1="46" x2="470" y2="30"/>
+<circle cx="470" cy="24" r="5" fill="#ffffff"/>
+<circle cx="470" cy="46" r="4" fill="#222222"/>
+</g><text x="470" y="20" font-size="13" fill="#222222" text-anchor="start">+V_CC = 5 V</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="216" y="100" font-size="13" fill="#222222" text-anchor="start">R_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="396" y="100" font-size="13" fill="#222222" text-anchor="start">R_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="650" y="100" font-size="13" fill="#222222" text-anchor="start">R_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="348" y="360" font-size="13" fill="#222222" text-anchor="start">R_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="262" font-size="13" fill="#222222" text-anchor="end">A</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="288" font-size="13" fill="#222222" text-anchor="end">B</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="54" y="314" font-size="13" fill="#222222" text-anchor="end">C</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="766" y="262" font-size="13" fill="#222222" text-anchor="start">Y</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="244" y="142" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="350" y="214" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="506" y="116" font-size="13" fill="#222222" text-anchor="end">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="506" y="300" font-size="13" fill="#222222" text-anchor="end">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="596" y="228" font-size="13" fill="#222222" text-anchor="start">D</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="420" y="452" font-size="13.5" fill="#1f4e79" font-weight="bold" text-anchor="middle">Y = NOT (A . B . C)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg><figcaption>The standard 3-input TTL NAND (slide 31). The multi-emitter input transistor is the only change from the inverter &mdash; one emitter per input.</figcaption></figure>
+<div class="key"><b>The multi-emitter transistor is a fabrication trick, not a new device.</b>
+Its equivalent is a diode network &mdash; a diode from base to each emitter, plus one from base to
+collector &mdash; which is exactly the diode-AND of section 7. That is <i>why</i> TTL's input stage
+behaves like DTL's.</div>
+<div class="trap"><span class="lab">Slide error &mdash; C02-4</span>
+<b>The totem-pole numbering changes between slides.</b> On slides 29 and 30 the pull-up is
+<i>Q</i><sub>4</sub> and the pull-down <i>Q</i><sub>3</sub>; on slide 31 they are swapped. Identify
+the devices <b>by position</b> &mdash; upper is the pull-up, lower is the pull-down &mdash; never by
+number.</div>
+<h3>Slide 30 &mdash; identify the gate</h3>
+<p>The inverter drawn with a <b>two-emitter</b> input transistor, one emitter per input.
+Either emitter pulled LOW turns the input transistor on and starves the phase splitter, so the output
+goes HIGH; only with both inputs HIGH does the output go LOW.</p>
+<div class="ans">A two-input TTL NAND with a totem-pole output</div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" font-family="sans-serif">
+<rect width="920" height="450" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="144" y1="140" x2="196" y2="140"/><line x1="170" y1="140" x2="170" y2="92"/><line x1="158" y1="140" x2="134" y2="170"/><polygon points="132.6,171.8 145.0,165.0 136.4,158.2" fill="#222222" stroke="none"/><line x1="134" y1="170" x2="134" y2="188"/><line x1="182" y1="140" x2="206" y2="170"/><line x1="206" y1="170" x2="206" y2="188"/>
+<line x1="170" y1="46" x2="170" y2="53.0"/><path d="M 170 53.0 l 9 4.8 l -18 7.5 l 18 7.5 l -18 7.5 l 9 4.8"/><line x1="170" y1="85.0" x2="170" y2="92"/>
+<line x1="134" y1="188" x2="134" y2="230"/>
+<line x1="60" y1="230" x2="134" y2="230"/>
+<circle cx="52" cy="230" r="5" fill="#ffffff"/>
+<circle cx="100" cy="230" r="4" fill="#222222"/>
+<line x1="100" y1="230" x2="100" y2="280"/>
+<polygon points="86,312 114,312 100,284" fill="#e9eef4"/><line x1="84" y1="284" x2="116" y2="284"/>
+<line x1="100" y1="316" x2="100" y2="390"/>
+<line x1="206" y1="188" x2="206" y2="180"/>
+<line x1="206" y1="180" x2="260" y2="180"/>
+<line x1="260" y1="154" x2="260" y2="206"/><line x1="260" y1="180" x2="230" y2="180"/><line x1="260" y1="167" x2="284" y2="143"/><line x1="284" y1="143" x2="284" y2="131"/><line x1="260" y1="193" x2="284" y2="217"/><polygon points="286.5,219.5 281.2,206.4 273.4,214.2" fill="#222222" stroke="none"/><line x1="284" y1="217" x2="284" y2="229"/>
+<line x1="284" y1="131" x2="284" y2="110"/>
+<line x1="284" y1="46" x2="284" y2="54.5"/><path d="M 284 54.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="284" y1="101.5" x2="284" y2="110"/>
+<line x1="284" y1="229" x2="284" y2="280"/>
+<circle cx="284" cy="280" r="4" fill="#222222"/>
+<line x1="284" y1="280" x2="284" y2="311.5"/><path d="M 284 311.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="284" y1="358.5" x2="284" y2="390"/>
+<line x1="284" y1="280" x2="360" y2="280"/>
+<line x1="360" y1="254" x2="360" y2="306"/><line x1="360" y1="280" x2="330" y2="280"/><line x1="360" y1="267" x2="384" y2="243"/><line x1="384" y1="243" x2="384" y2="223"/><line x1="360" y1="293" x2="384" y2="317"/><polygon points="386.5,319.5 381.2,306.4 373.4,314.2" fill="#222222" stroke="none"/><line x1="384" y1="317" x2="384" y2="337"/>
+<line x1="384" y1="223" x2="420" y2="223"/>
+<circle cx="428" cy="223" r="5" fill="#ffffff"/>
+<line x1="384" y1="337" x2="384" y2="390"/>
+<line x1="100" y1="390" x2="384" y2="390"/>
+<line x1="221" y1="390" x2="259" y2="390"/><line x1="228" y1="397" x2="252" y2="397"/><line x1="234" y1="404" x2="246" y2="404"/>
+<line x1="170" y1="46" x2="284" y2="46"/>
+<line x1="240" y1="46" x2="240" y2="30"/>
+<circle cx="240" cy="24" r="5" fill="#ffffff"/>
+<circle cx="240" cy="46" r="4" fill="#222222"/>
+</g><text x="252" y="20" font-size="13" fill="#222222" text-anchor="start">+V_CC</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="186" y="96" font-size="13" fill="#222222" text-anchor="start">R_1 = 4 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="96" font-size="13" fill="#222222" text-anchor="start">R_2 = 1.6 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="296" y="346" font-size="13" fill="#222222" text-anchor="start">R_3 = 1.0 k</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="222" font-size="13" fill="#222222" text-anchor="end">in</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="436" y="227" font-size="13" fill="#222222" text-anchor="start">output</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="214" y="132" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="206" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="402" y="302" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="120" y="306" font-size="13" fill="#222222" text-anchor="start">D_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="240" y="432" font-size="13" fill="#222222" font-weight="bold" text-anchor="middle">(a) open-collector inverter - no internal pull-up</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<rect x="560" y="150" width="120" height="110" fill="none"/>
+<line x1="516" y1="205" x2="560" y2="205"/>
+<circle cx="508" cy="205" r="5" fill="#ffffff"/>
+<line x1="680" y1="205" x2="720" y2="205"/>
+<line x1="720" y1="179" x2="720" y2="231"/><line x1="720" y1="205" x2="690" y2="205"/><line x1="720" y1="192" x2="744" y2="168"/><line x1="744" y1="168" x2="744" y2="152"/><line x1="720" y1="218" x2="744" y2="242"/><polygon points="746.5,244.5 741.2,231.4 733.4,239.2" fill="#222222" stroke="none"/><line x1="744" y1="242" x2="744" y2="258"/>
+<line x1="744" y1="152" x2="744" y2="130"/>
+<circle cx="744" cy="130" r="4" fill="#222222"/>
+<line x1="744" y1="130" x2="850" y2="130"/>
+<circle cx="858" cy="130" r="5" fill="#ffffff"/>
+<line x1="800" y1="60" x2="800" y2="71.5"/><path d="M 800 71.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="800" y1="118.5" x2="800" y2="130"/>
+<circle cx="800" cy="130" r="4" fill="#222222"/>
+<line x1="700" y1="60" x2="800" y2="60"/>
+<line x1="700" y1="60" x2="700" y2="44"/>
+<circle cx="700" cy="38" r="5" fill="#ffffff"/>
+<line x1="744" y1="258" x2="744" y2="340"/>
+<line x1="725" y1="340" x2="763" y2="340"/><line x1="732" y1="347" x2="756" y2="347"/><line x1="738" y1="354" x2="750" y2="354"/>
+</g><text x="690" y="34" font-size="13" fill="#222222" text-anchor="end">+V_CC</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="816" y="88" font-size="12.5" fill="#0b7a5b" text-anchor="start">R (external</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="816" y="104" font-size="12.5" fill="#0b7a5b" text-anchor="start">pull-up)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="500" y="197" font-size="13" fill="#222222" text-anchor="end">in</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="866" y="134" font-size="13" fill="#222222" text-anchor="start">output</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="576" y="210" font-size="13" fill="#222222" text-anchor="start">input stage</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="764" y="230" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="700" y="432" font-size="13" fill="#222222" font-weight="bold" text-anchor="middle">(b) with the external pull-up fitted</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg><figcaption>Open-collector inverter, without and with the external pull-up (slide 32).</figcaption></figure>
+<p><b>What has been deleted:</b> the pull-up transistor, the level-shift diode and the 130 &Omega;
+collector resistor &mdash; the entire upper half of the totem pole. The output transistor's collector
+is brought out bare.</p>
+<p><b>Consequence:</b> the gate can pull its output LOW but <b>cannot drive it HIGH at all</b>. An
+<b>external pull-up resistor</b> must be fitted for the output to reach a valid 1. The symbol is a
+diamond-and-bar inside the gate body.</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 510" font-family="sans-serif">
+<rect width="900" height="510" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="164" y1="150" x2="216" y2="150"/><line x1="190" y1="150" x2="190" y2="100"/><line x1="178" y1="150" x2="154" y2="180"/><polygon points="152.6,181.8 165.0,175.0 156.4,168.2" fill="#222222" stroke="none"/><line x1="154" y1="180" x2="154" y2="198"/><line x1="156" y1="150" x2="132" y2="180"/><polygon points="130.6,181.8 143.0,175.0 134.4,168.2" fill="#222222" stroke="none"/><line x1="132" y1="180" x2="132" y2="198"/><line x1="202" y1="150" x2="226" y2="180"/><line x1="226" y1="180" x2="226" y2="198"/>
+<line x1="190" y1="46" x2="190" y2="53.0"/><path d="M 190 53.0 l 9 6.0 l -18 9.4 l 18 9.4 l -18 9.4 l 9 6.0"/><line x1="190" y1="93.0" x2="190" y2="100"/>
+<line x1="132" y1="198" x2="132" y2="250"/>
+<line x1="60" y1="250" x2="132" y2="250"/>
+<circle cx="52" cy="250" r="5" fill="#ffffff"/>
+<line x1="154" y1="198" x2="154" y2="290"/>
+<line x1="154" y1="290" x2="310" y2="290"/>
+<line x1="226" y1="198" x2="226" y2="240"/>
+<line x1="226" y1="240" x2="400" y2="240"/>
+<line x1="310" y1="46" x2="310" y2="144.5"/><path d="M 310 144.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="310" y1="191.5" x2="310" y2="290"/>
+<circle cx="310" cy="290" r="4" fill="#222222"/>
+<line x1="430" y1="214" x2="430" y2="266"/><line x1="430" y1="240" x2="400" y2="240"/><line x1="430" y1="227" x2="454" y2="203"/><line x1="454" y1="203" x2="454" y2="187"/><line x1="430" y1="253" x2="454" y2="277"/><polygon points="456.5,279.5 451.2,266.4 443.4,274.2" fill="#222222" stroke="none"/><line x1="454" y1="277" x2="454" y2="293"/>
+<line x1="454" y1="187" x2="454" y2="170"/>
+<line x1="360" y1="170" x2="570" y2="170"/>
+<circle cx="454" cy="170" r="4" fill="#222222"/>
+<line x1="360" y1="170" x2="360" y2="174"/>
+<polygon points="346,174 374,174 360,202" fill="#e9eef4"/><line x1="344" y1="202" x2="376" y2="202"/>
+<line x1="360" y1="202" x2="360" y2="290"/><line x1="310" y1="290" x2="360" y2="290"/>
+<circle cx="360" cy="290" r="4" fill="#222222"/>
+<line x1="500" y1="46" x2="500" y2="84.5"/><path d="M 500 84.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="500" y1="131.5" x2="500" y2="170"/>
+<circle cx="500" cy="170" r="4" fill="#222222"/>
+<line x1="600" y1="144" x2="600" y2="196"/><line x1="600" y1="170" x2="570" y2="170"/><line x1="600" y1="157" x2="624" y2="133"/><line x1="624" y1="133" x2="624" y2="123"/><line x1="600" y1="183" x2="624" y2="207"/><polygon points="626.5,209.5 621.2,196.4 613.4,204.2" fill="#222222" stroke="none"/><line x1="624" y1="207" x2="624" y2="217"/>
+<line x1="624" y1="123" x2="680" y2="123"/>
+<line x1="680" y1="46" x2="680" y2="61.0"/><path d="M 680 61.0 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="680" y1="108.0" x2="680" y2="123"/>
+<line x1="624" y1="217" x2="624" y2="236"/>
+<polygon points="610,236 638,236 624,264" fill="#e9eef4"/><line x1="608" y1="264" x2="640" y2="264"/>
+<line x1="624" y1="264" x2="624" y2="293"/>
+<circle cx="624" cy="293" r="4" fill="#222222"/>
+<line x1="624" y1="293" x2="810" y2="293"/>
+<circle cx="818" cy="293" r="5" fill="#ffffff"/>
+<line x1="600" y1="314" x2="600" y2="366"/><line x1="600" y1="340" x2="570" y2="340"/><line x1="600" y1="327" x2="624" y2="303"/><line x1="624" y1="303" x2="624" y2="293"/><line x1="600" y1="353" x2="624" y2="377"/><polygon points="626.5,379.5 621.2,366.4 613.4,374.2" fill="#222222" stroke="none"/><line x1="624" y1="377" x2="624" y2="387"/>
+<line x1="624" y1="293" x2="624" y2="293"/>
+<line x1="624" y1="387" x2="624" y2="440"/>
+<line x1="454" y1="293" x2="454" y2="340"/>
+<circle cx="454" cy="340" r="4" fill="#222222"/>
+<line x1="454" y1="340" x2="570" y2="340"/>
+<line x1="454" y1="340" x2="454" y2="366.5"/><path d="M 454 366.5 l 9 7.0 l -18 11.0 l 18 11.0 l -18 11.0 l 9 7.0"/><line x1="454" y1="413.5" x2="454" y2="440"/>
+<circle cx="454" cy="440" r="4" fill="#222222"/>
+<line x1="286" y1="364" x2="286" y2="416"/><line x1="286" y1="390" x2="256" y2="390"/><line x1="286" y1="377" x2="310" y2="353"/><line x1="310" y1="353" x2="310" y2="340"/><line x1="286" y1="403" x2="310" y2="427"/><polygon points="312.5,429.5 307.2,416.4 299.4,424.2" fill="#222222" stroke="none"/><line x1="310" y1="427" x2="310" y2="440"/>
+<line x1="256" y1="390" x2="60" y2="390"/>
+<circle cx="52" cy="390" r="5" fill="#ffffff"/>
+<line x1="310" y1="340" x2="310" y2="290"/>
+<line x1="310" y1="440" x2="310" y2="440"/>
+<line x1="310" y1="440" x2="624" y2="440"/>
+<line x1="501" y1="440" x2="539" y2="440"/><line x1="508" y1="447" x2="532" y2="447"/><line x1="514" y1="454" x2="526" y2="454"/>
+<line x1="190" y1="46" x2="680" y2="46"/>
+<circle cx="310" cy="46" r="4" fill="#222222"/>
+<circle cx="500" cy="46" r="4" fill="#222222"/>
+<line x1="590" y1="46" x2="590" y2="30"/>
+<circle cx="590" cy="24" r="5" fill="#ffffff"/>
+<circle cx="590" cy="46" r="4" fill="#222222"/>
+</g><text x="602" y="20" font-size="13" fill="#222222" text-anchor="start">+V_CC</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="206" y="100" font-size="13" fill="#222222" text-anchor="start">R_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="284" y="250" font-size="13" fill="#222222" text-anchor="start">R_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="516" y="100" font-size="13" fill="#222222" text-anchor="start">R_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="696" y="100" font-size="13" fill="#222222" text-anchor="start">R_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="468" y="398" font-size="13" fill="#222222" text-anchor="start">R_5</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="242" font-size="13" fill="#222222" text-anchor="end">input</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="382" font-size="13" fill="#222222" text-anchor="end">enable</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="826" y="297" font-size="13" fill="#222222" text-anchor="start">output</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="236" y="142" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="472" y="262" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="214" y="412" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="556" y="156" font-size="13" fill="#222222" text-anchor="end">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="556" y="354" font-size="13" fill="#222222" text-anchor="end">Q_5</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="644" y="256" font-size="13" fill="#222222" text-anchor="start">D_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="376" y="196" font-size="13" fill="#222222" text-anchor="start">D_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="450" y="490" font-size="12" fill="#1f4e79" text-anchor="middle">enable asserted: normal totem-pole    -    de-asserted: Q_4 and Q_5 both off, output floats</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg><figcaption>Tri-state TTL gate (slide 33) &mdash; a third output condition is added: high impedance.</figcaption></figure>
+<table><tr><th>Enable</th><th>Input</th><th>Output</th></tr>
+<tr><td>asserted</td><td>HIGH</td><td>LOW &mdash; normal inverter behaviour</td></tr>
+<tr><td>asserted</td><td>LOW</td><td>HIGH &mdash; normal inverter behaviour</td></tr>
+<tr><td>de-asserted</td><td>don't care</td><td><b>high impedance</b> &mdash; both output transistors off, output floats open</td></tr></table>
+<div class="key"><b>Why it exists, in one sentence:</b> it lets many outputs share one bus &mdash;
+exactly one is enabled at a time and the rest present no load.</div>
+</section>
+<section class="card" id="cmos"><h2>11 &middot; CMOS</h2>
+<p><b>Complementary</b> metal-oxide semiconductor &mdash; two <i>types</i> of transistor in the
+output circuit, one n-channel and one p-channel.</p>
+<table><tr><th>Device</th><th>Turns ON when</th></tr>
+<tr><td>n-channel enhancement</td><td>gate is <b>higher</b> than source</td></tr>
+<tr><td>p-channel enhancement</td><td>gate is <b>lower</b> than source</td></tr></table>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 470" font-family="sans-serif">
+<rect width="620" height="470" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="300" y1="96" x2="300" y2="164"/><line x1="300" y1="130" x2="266" y2="130"/><line x1="314" y1="97" x2="314" y2="115"/><line x1="314" y1="121" x2="314" y2="139"/><line x1="314" y1="145" x2="314" y2="163"/><line x1="314" y1="106" x2="346" y2="106"/><line x1="346" y1="106" x2="346" y2="84"/><line x1="314" y1="154" x2="346" y2="154"/><line x1="346" y1="154" x2="346" y2="176"/><line x1="314" y1="130" x2="346" y2="130"/><polygon points="319,124 319,136 329,130" fill="#222222" stroke="none"/><circle cx="346" cy="130" r="4" fill="#222222"/>
+<line x1="300" y1="236" x2="300" y2="304"/><line x1="300" y1="270" x2="266" y2="270"/><line x1="314" y1="237" x2="314" y2="255"/><line x1="314" y1="261" x2="314" y2="279"/><line x1="314" y1="285" x2="314" y2="303"/><line x1="314" y1="246" x2="346" y2="246"/><line x1="346" y1="246" x2="346" y2="224"/><line x1="314" y1="294" x2="346" y2="294"/><line x1="346" y1="294" x2="346" y2="316"/><line x1="314" y1="270" x2="346" y2="270"/><polygon points="319,264 319,276 309,270" fill="#222222" stroke="none"/><circle cx="346" cy="270" r="4" fill="#222222"/>
+<line x1="346" y1="84" x2="346" y2="50"/>
+<circle cx="346" cy="42" r="5" fill="#ffffff"/>
+<line x1="346" y1="176" x2="346" y2="200"/>
+<circle cx="346" cy="200" r="4" fill="#222222"/>
+<line x1="346" y1="224" x2="346" y2="200"/>
+<line x1="346" y1="200" x2="480" y2="200"/>
+<circle cx="488" cy="200" r="5" fill="#ffffff"/>
+<line x1="346" y1="316" x2="346" y2="360"/>
+<line x1="327" y1="360" x2="365" y2="360"/><line x1="334" y1="367" x2="358" y2="367"/><line x1="340" y1="374" x2="352" y2="374"/>
+<line x1="266" y1="130" x2="200" y2="130"/>
+<line x1="200" y1="130" x2="200" y2="270"/>
+<line x1="200" y1="270" x2="266" y2="270"/>
+<line x1="200" y1="200" x2="80" y2="200"/>
+<circle cx="72" cy="200" r="5" fill="#ffffff"/>
+<circle cx="200" cy="200" r="4" fill="#222222"/>
+</g><text x="358" y="42" font-size="13" fill="#222222" text-anchor="start">+V_DD</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="64" y="192" font-size="13" fill="#222222" text-anchor="end">in</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="496" y="204" font-size="13" fill="#222222" text-anchor="start">out</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="358" y="80" font-size="12.5" fill="#222222" text-anchor="start">S</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="358" y="182" font-size="12.5" fill="#222222" text-anchor="start">D</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="358" y="236" font-size="12.5" fill="#222222" text-anchor="start">D</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="358" y="330" font-size="12.5" fill="#222222" text-anchor="start">S</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="386" y="130" font-size="13" fill="#222222" text-anchor="start">Q_1  (p-channel)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="386" y="270" font-size="13" fill="#222222" text-anchor="start">Q_2  (n-channel)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+<g stroke="#0b7a5b" stroke-width="1.2" fill="none">
+<rect x="70" y="380" width="260" height="68"/>
+<line x1="70" y1="402" x2="330" y2="402"/>
+<line x1="135" y1="380" x2="135" y2="448"/>
+<line x1="200" y1="380" x2="200" y2="448"/>
+<line x1="265" y1="380" x2="265" y2="448"/>
+</g>
+<g font-size="12.5" fill="#222222" text-anchor="middle">
+<text x="102" y="396">in</text><text x="167" y="396">Q_1</text><text x="232" y="396">Q_2</text><text x="297" y="396">out</text>
+<text x="102" y="419">0</text><text x="167" y="419">on</text><text x="232" y="419">off</text><text x="297" y="419">1</text>
+<text x="102" y="442">1</text><text x="167" y="442">off</text><text x="232" y="442">on</text><text x="297" y="442">0</text>
+</g>
+</svg><figcaption>The CMOS inverter &mdash; two transistors, gates tied together, drains tied together.</figcaption></figure>
+<ul><li><b>Input LOW</b> &mdash; p-channel ON, n-channel OFF, output pulled to <i>V</i><sub>DD</sub>.</li>
+<li><b>Input HIGH</b> &mdash; p-channel OFF, n-channel ON, output pulled to ground.</li></ul>
+<div class="key"><b>The key sentence, and it is worth a mark on its own:</b> neither steady state
+leaves a conducting path from <i>V</i><sub>DD</sub> to ground, which is why CMOS static power is
+negligible.</div>
+<div class="grid2"><div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 560" font-family="sans-serif">
+<rect width="620" height="560" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="200" y1="116" x2="200" y2="184"/><line x1="200" y1="150" x2="166" y2="150"/><line x1="214" y1="117" x2="214" y2="135"/><line x1="214" y1="141" x2="214" y2="159"/><line x1="214" y1="165" x2="214" y2="183"/><line x1="214" y1="126" x2="246" y2="126"/><line x1="246" y1="126" x2="246" y2="100"/><line x1="214" y1="174" x2="246" y2="174"/><line x1="246" y1="174" x2="246" y2="200"/><line x1="214" y1="150" x2="246" y2="150"/><polygon points="219,144 219,156 229,150" fill="#222222" stroke="none"/><circle cx="246" cy="150" r="4" fill="#222222"/>
+<line x1="350" y1="116" x2="350" y2="184"/><line x1="350" y1="150" x2="316" y2="150"/><line x1="364" y1="117" x2="364" y2="135"/><line x1="364" y1="141" x2="364" y2="159"/><line x1="364" y1="165" x2="364" y2="183"/><line x1="364" y1="126" x2="396" y2="126"/><line x1="396" y1="126" x2="396" y2="100"/><line x1="364" y1="174" x2="396" y2="174"/><line x1="396" y1="174" x2="396" y2="200"/><line x1="364" y1="150" x2="396" y2="150"/><polygon points="369,144 369,156 379,150" fill="#222222" stroke="none"/><circle cx="396" cy="150" r="4" fill="#222222"/>
+<line x1="246" y1="100" x2="246" y2="60"/>
+<line x1="396" y1="100" x2="396" y2="60"/>
+<line x1="246" y1="60" x2="470" y2="60"/>
+<circle cx="396" cy="60" r="4" fill="#222222"/>
+<line x1="470" y1="60" x2="470" y2="40"/>
+<circle cx="470" cy="34" r="5" fill="#ffffff"/>
+<line x1="246" y1="200" x2="246" y2="250"/>
+<line x1="396" y1="200" x2="396" y2="250"/>
+<line x1="246" y1="250" x2="540" y2="250"/>
+<circle cx="396" cy="250" r="4" fill="#222222"/>
+<circle cx="548" cy="250" r="5" fill="#ffffff"/>
+<line x1="350" y1="296" x2="350" y2="364"/><line x1="350" y1="330" x2="316" y2="330"/><line x1="364" y1="297" x2="364" y2="315"/><line x1="364" y1="321" x2="364" y2="339"/><line x1="364" y1="345" x2="364" y2="363"/><line x1="364" y1="306" x2="396" y2="306"/><line x1="396" y1="306" x2="396" y2="288"/><line x1="364" y1="354" x2="396" y2="354"/><line x1="396" y1="354" x2="396" y2="372"/><line x1="364" y1="330" x2="396" y2="330"/><polygon points="369,324 369,336 359,330" fill="#222222" stroke="none"/><circle cx="396" cy="330" r="4" fill="#222222"/>
+<line x1="350" y1="396" x2="350" y2="464"/><line x1="350" y1="430" x2="316" y2="430"/><line x1="364" y1="397" x2="364" y2="415"/><line x1="364" y1="421" x2="364" y2="439"/><line x1="364" y1="445" x2="364" y2="463"/><line x1="364" y1="406" x2="396" y2="406"/><line x1="396" y1="406" x2="396" y2="388"/><line x1="364" y1="454" x2="396" y2="454"/><line x1="396" y1="454" x2="396" y2="472"/><line x1="364" y1="430" x2="396" y2="430"/><polygon points="369,424 369,436 359,430" fill="#222222" stroke="none"/><circle cx="396" cy="430" r="4" fill="#222222"/>
+<line x1="396" y1="288" x2="396" y2="250"/>
+<line x1="396" y1="372" x2="396" y2="388"/>
+<line x1="396" y1="472" x2="396" y2="482"/>
+<line x1="377" y1="482" x2="415" y2="482"/><line x1="384" y1="489" x2="408" y2="489"/><line x1="390" y1="496" x2="402" y2="496"/>
+<line x1="166" y1="150" x2="120" y2="150"/>
+<line x1="120" y1="150" x2="120" y2="330"/>
+<line x1="120" y1="330" x2="316" y2="330"/>
+<line x1="120" y1="200" x2="60" y2="200"/>
+<circle cx="52" cy="200" r="5" fill="#ffffff"/>
+<circle cx="120" cy="200" r="4" fill="#222222"/>
+<line x1="316" y1="150" x2="276" y2="150"/>
+<line x1="276" y1="150" x2="276" y2="110"/>
+<line x1="276" y1="110" x2="90" y2="110"/>
+<line x1="90" y1="110" x2="90" y2="430"/>
+<line x1="90" y1="430" x2="316" y2="430"/>
+<line x1="90" y1="240" x2="60" y2="240"/>
+<circle cx="52" cy="240" r="5" fill="#ffffff"/>
+<circle cx="90" cy="240" r="4" fill="#222222"/>
+</g><text x="482" y="30" font-size="13" fill="#222222" text-anchor="start">+V_DD</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="204" font-size="13" fill="#222222" text-anchor="end">A</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="244" font-size="13" fill="#222222" text-anchor="end">B</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="556" y="254" font-size="13" fill="#222222" text-anchor="start">X</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="262" y="196" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="410" y="150" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="410" y="330" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="410" y="430" font-size="13" fill="#222222" text-anchor="start">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="250" y="24" font-size="12.5" fill="#0b7a5b" text-anchor="middle">p-channel pair in parallel, n-channel pair in series</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="548" font-size="13.5" fill="#1f4e79" font-weight="bold" text-anchor="middle">CMOS NAND:  X = NOT (A . B)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg><figcaption>CMOS NAND (slide 39)</figcaption></figure></div><div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 580" font-family="sans-serif">
+<rect width="620" height="580" fill="#ffffff"/>
+<g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="370" y1="106" x2="370" y2="174"/><line x1="370" y1="140" x2="336" y2="140"/><line x1="384" y1="107" x2="384" y2="125"/><line x1="384" y1="131" x2="384" y2="149"/><line x1="384" y1="155" x2="384" y2="173"/><line x1="384" y1="116" x2="416" y2="116"/><line x1="416" y1="116" x2="416" y2="98"/><line x1="384" y1="164" x2="416" y2="164"/><line x1="416" y1="164" x2="416" y2="182"/><line x1="384" y1="140" x2="416" y2="140"/><polygon points="389,134 389,146 399,140" fill="#222222" stroke="none"/><circle cx="416" cy="140" r="4" fill="#222222"/>
+<line x1="370" y1="206" x2="370" y2="274"/><line x1="370" y1="240" x2="336" y2="240"/><line x1="384" y1="207" x2="384" y2="225"/><line x1="384" y1="231" x2="384" y2="249"/><line x1="384" y1="255" x2="384" y2="273"/><line x1="384" y1="216" x2="416" y2="216"/><line x1="416" y1="216" x2="416" y2="198"/><line x1="384" y1="264" x2="416" y2="264"/><line x1="416" y1="264" x2="416" y2="282"/><line x1="384" y1="240" x2="416" y2="240"/><polygon points="389,234 389,246 399,240" fill="#222222" stroke="none"/><circle cx="416" cy="240" r="4" fill="#222222"/>
+<line x1="416" y1="98" x2="416" y2="60"/>
+<circle cx="416" cy="50" r="5" fill="#ffffff"/>
+<line x1="416" y1="182" x2="416" y2="198"/>
+<line x1="416" y1="282" x2="416" y2="330"/>
+<line x1="200" y1="376" x2="200" y2="444"/><line x1="200" y1="410" x2="166" y2="410"/><line x1="214" y1="377" x2="214" y2="395"/><line x1="214" y1="401" x2="214" y2="419"/><line x1="214" y1="425" x2="214" y2="443"/><line x1="214" y1="386" x2="246" y2="386"/><line x1="246" y1="386" x2="246" y2="362"/><line x1="214" y1="434" x2="246" y2="434"/><line x1="246" y1="434" x2="246" y2="458"/><line x1="214" y1="410" x2="246" y2="410"/><polygon points="219,404 219,416 209,410" fill="#222222" stroke="none"/><circle cx="246" cy="410" r="4" fill="#222222"/>
+<line x1="430" y1="376" x2="430" y2="444"/><line x1="430" y1="410" x2="464" y2="410"/><line x1="416" y1="377" x2="416" y2="395"/><line x1="416" y1="401" x2="416" y2="419"/><line x1="416" y1="425" x2="416" y2="443"/><line x1="416" y1="386" x2="384" y2="386"/><line x1="384" y1="386" x2="384" y2="362"/><line x1="416" y1="434" x2="384" y2="434"/><line x1="384" y1="434" x2="384" y2="458"/><line x1="416" y1="410" x2="384" y2="410"/><polygon points="411,404 411,416 421,410" fill="#222222" stroke="none"/><circle cx="384" cy="410" r="4" fill="#222222"/>
+<line x1="246" y1="362" x2="246" y2="330"/>
+<line x1="384" y1="362" x2="384" y2="330"/>
+<line x1="246" y1="330" x2="545" y2="330"/>
+<circle cx="384" cy="330" r="4" fill="#222222"/>
+<circle cx="416" cy="330" r="4" fill="#222222"/>
+<circle cx="553" cy="330" r="5" fill="#ffffff"/>
+<line x1="246" y1="458" x2="246" y2="500"/>
+<line x1="384" y1="458" x2="384" y2="500"/>
+<line x1="246" y1="500" x2="384" y2="500"/>
+<line x1="296" y1="500" x2="334" y2="500"/><line x1="303" y1="507" x2="327" y2="507"/><line x1="309" y1="514" x2="321" y2="514"/>
+<line x1="52" y1="190" x2="120" y2="190"/>
+<circle cx="52" cy="190" r="5" fill="#ffffff"/>
+<circle cx="120" cy="190" r="4" fill="#222222"/>
+<line x1="120" y1="190" x2="120" y2="140"/>
+<line x1="120" y1="140" x2="336" y2="140"/>
+<line x1="120" y1="190" x2="120" y2="410"/>
+<line x1="120" y1="410" x2="166" y2="410"/>
+<line x1="52" y1="240" x2="336" y2="240"/>
+<circle cx="52" cy="240" r="5" fill="#ffffff"/>
+<circle cx="180" cy="240" r="4" fill="#222222"/>
+<line x1="180" y1="240" x2="180" y2="545"/>
+<line x1="180" y1="545" x2="464" y2="545"/>
+<line x1="464" y1="545" x2="464" y2="410"/>
+</g><text x="430" y="48" font-size="13" fill="#222222" text-anchor="start">+V_DD</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="194" font-size="13" fill="#222222" text-anchor="end">A</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="44" y="244" font-size="13" fill="#222222" text-anchor="end">B</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="561" y="334" font-size="13" fill="#222222" text-anchor="start">X</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="430" y="140" font-size="13" fill="#222222" text-anchor="start">Q_1</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="430" y="240" font-size="13" fill="#222222" text-anchor="start">Q_2</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="260" y="410" font-size="13" fill="#222222" text-anchor="start">Q_3</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="474" y="410" font-size="13" fill="#222222" text-anchor="start">Q_4</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="24" font-size="12.5" fill="#0b7a5b" text-anchor="middle">p-channel pair in series, n-channel pair in parallel</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g><text x="300" y="572" font-size="13.5" fill="#1f4e79" font-weight="bold" text-anchor="middle">CMOS NOR:  X = NOT (A + B)</text><g stroke="#222222" fill="none" stroke-width="1.8" stroke-linecap="round">
+</g>
+</svg><figcaption>CMOS NOR (slide 40)</figcaption></figure></div></div>
+<div class="key"><b>One rule generates both circuits &mdash; learn this instead of memorising two
+schematics.</b><br>
+The n-channel network and the p-channel network are <b>duals</b>: whatever the pull-down does in
+series, the pull-up does in parallel, and vice versa.
+<table style="margin-top:10px"><tr><th>Gate</th><th>n-channel (pull-down)</th><th>p-channel (pull-up)</th><th>Why</th></tr>
+<tr><td><b>NAND</b></td><td>series</td><td>parallel</td><td>output pulled LOW only when both inputs are HIGH</td></tr>
+<tr><td><b>NOR</b></td><td>parallel</td><td>series</td><td>either input HIGH pulls the output LOW</td></tr></table></div>
+<h3>Why CMOS (slide 37)</h3>
+<ul><li>very low <b>static</b> power &mdash; no DC path in either steady state</li>
+<li>full rail-to-rail output swing</li>
+<li>scales well, which is what makes large-scale integration possible</li></ul>
+<p>Two cautions from the same slide: <b>never leave inputs floating</b> (in TTL a floating input
+floats HIGH; in CMOS the result is genuinely undefined), and CMOS is susceptible to
+<b>electrostatic damage</b>.</p>
+<div class="trap"><span class="lab">Slide error &mdash; V02-5</span>
+Slide 36 draws <b>both</b> enhancement stages with the source grounded. That is right for the
+n-channel device and wrong for the p-channel one &mdash; with its source at 0 V it would need a
+negative gate voltage, which a 0&ndash;5 V logic system can never supply. The p-channel source belongs
+at <i>V</i><sub>DD</sub>, which is exactly how it is drawn in the inverter two slides later. The deck
+contradicts itself here.</div>
+</section>
+<section class="card" id="compare"><h2>12 &middot; CMOS against TTL (slide 42)</h2>
+<table><tr><th>Characteristic</th><th>CMOS</th><th>TTL</th></tr>
+<tr><td>Voltage levels</td><td>wide range</td><td>fixed, typically 5 V</td></tr>
+<tr><td>Power consumption</td><td>low</td><td>high</td></tr>
+<tr><td>Technology</td><td>MOSFET</td><td>bipolar junction transistor</td></tr>
+<tr><td>Noise immunity</td><td>high &mdash; 0.9 V and 1.17 V</td><td>low &mdash; 0.4 V both ways</td></tr>
+<tr><td>Fan-out</td><td>high</td><td>lower</td></tr>
+<tr><td>Speed</td><td>slow propagation delays</td><td>fast propagation delays</td></tr>
+<tr><td>Power supply</td><td>typically 5 V or 3.3 V</td><td>typically 5 V</td></tr>
+<tr><td>Applications</td><td>battery-operated devices, high-density ICs</td><td>high-speed applications, memory systems</td></tr></table>
+<div class="added"><span class="lab">Worth knowing</span>
+The speed row describes classical 4000-series CMOS against standard TTL. Slide 41 records that 74HC
+and later brought a &ldquo;drastic increase in speed&rdquo;, so the row is a historical comparison
+rather than a present-day one.</div>
+</section>
+<section class="card" id="errors"><h2>13 &middot; Errors in your slides &mdash; the short list</h2>
+<p>Teach yourself the corrected form, but <b>recognise the printed one</b> &mdash; a marking scheme
+built from the slide may expect it.</p>
+<table><tr><th>ID</th><th>Slide</th><th>What is wrong</th><th>Correct</th></tr>
+<tr><td>V02-4</td><td>17</td><td>question in mA, solution in &micro;A</td><td><b>14 mW</b>, not 14 &micro;W</td></tr>
+<tr><td>V02-3</td><td>10</td><td>the &tau;<sub>PHL</sub> / &tau;<sub>PLH</sub> word descriptions are swapped</td><td>read the subscripts, not the words</td></tr>
+<tr><td>V02-5</td><td>36</td><td>p-channel source drawn grounded</td><td>p-channel source goes to <i>V</i><sub>DD</sub></td></tr>
+<tr><td>V02-2</td><td>8</td><td><i>V</i><sub>L</sub> called an input quantity</td><td>it is an <b>output</b> level</td></tr>
+<tr><td>C02-4</td><td>29 / 31</td><td>totem-pole transistor numbering swaps between slides</td><td>identify by position, upper = pull-up</td></tr>
+<tr><td>C02-5</td><td>29(a)</td><td>phase-splitter collector marked 0.7 V</td><td>0.9 V</td></tr>
+<tr><td>C02-2</td><td>24</td><td>four circuits drawn, two identical</td><td>answer three</td></tr>
+<tr><td>C02-3</td><td>27</td><td>truth table headed <i>A</i>, <i>A</i>, <i>Y</i></td><td>second column is <i>B</i></td></tr>
+</table>
+<div class="trap"><span class="lab">Also unresolved &mdash; V02-1</span>
+The deck carries <b>two incompatible integration-scale tables</b>. If an exam question quotes gate
+counts for SSI / MSI / LSI / VLSI, check which table it is using before answering.</div>
+</section>
+<section class="card" id="recall"><h2>14 &middot; Quick-recall lists</h2>
+<h3>Classification of the families (slide 20)</h3>
+<table><tr><th>Branch</th><th>Sub-branch</th><th>Families</th></tr>
+<tr><td rowspan="1"><b>Unipolar</b> (MOSFETs)</td><td>&mdash;</td><td>PMOS, NMOS, CMOS</td></tr>
+<tr><td rowspan="2"><b>Bipolar</b> (BJTs)</td><td>saturated</td><td>RTL, DTL, TTL, HTL, DCTL</td></tr>
+<tr><td>unsaturated</td><td>Schottky TTL, ECL</td></tr></table>
+<p><b>Why the unsaturated branch is the fast one:</b> keeping a transistor out of saturation removes
+the stored-charge delay of pulling it back out. That is why Schottky TTL sits there rather than
+beside standard TTL.</p>
+<h3>Fan-in and fan-out</h3>
+<ul><li><b>Fan-in</b> &mdash; number of inputs the gate provides. A three-input XOR has fan-in 3.</li>
+<li><b>Fan-out</b> &mdash; number of inputs one output can drive. Standard TTL is about 10.</li></ul>
+<h3>Current sourcing and sinking</h3>
+<table><tr><th></th><th>Driver output</th><th>Current direction</th><th>Symbol</th></tr>
+<tr><td><b>Sourcing</b></td><td>HIGH</td><td>flows out of the driver into the load input</td><td><i>I</i><sub>IH</sub>, ~40 &micro;A</td></tr>
+<tr><td><b>Sinking</b></td><td>LOW</td><td>flows out of the load input into the driver</td><td><i>I</i><sub>IL</sub>, ~1.6 mA</td></tr></table>
+<div class="key"><b>The exam-worthy consequence:</b> in TTL the sink current per load is far larger
+than the source current, so <b>the LOW state is what limits fan-out</b>.</div>
+<h3>Unused inputs (slide 19)</h3>
+<p>Never leave them floating. Tie them to <i>V</i><sub>CC</sub> through about 1.0 k&Omega;, or tie
+them to ground. Which one depends on the gate: an unused <b>NAND</b> input is tied <b>HIGH</b>, an
+unused <b>NOR</b> input is tied <b>LOW</b> &mdash; both leave the function of the remaining inputs
+untouched.</p>
+<h3>Homework the deck sets (slide 43)</h3>
+<p>ECL circuits and PMOS / NMOS / E&sup2;CMOS are <b>named in the classification but taught nowhere in
+the deck</b> &mdash; they are set as textbook reading. If an exam covers them, the deck is not your
+source.</p>
+</section>
+<section class="card" id="cat"><h2>16 &middot; CAT 1 (6 Aug 2024) &mdash; the two Chapter 2 questions</h2>
+
+<div class="trap"><span class="lab">Read this before you plan any more revision</span>
+That paper was <b>30 marks over 8 questions</b>, and this is where the marks actually came from:
+<table style="margin-top:10px"><tr><th>Source</th><th>Marks</th><th>Share</th></tr>
+<tr><td><b>CH4 &mdash; the DAC half of Signal Conversion</b></td><td><b>15</b></td><td><b>50 %</b></td></tr>
+<tr><td>CH2 &mdash; Digital Logic Families</td><td>8</td><td>27 %</td></tr>
+<tr><td>CH3 &mdash; Memory and PLDs</td><td>4</td><td>13 %</td></tr>
+<tr><td>Not taught in any deck</td><td>3</td><td>10 %</td></tr>
+<tr><td>CH5 + CH6 &mdash; FSMs and ASMs</td><td><b>0</b></td><td>0 %</td></tr></table>
+<b>Half the paper was twenty slides of Chapter 4.</b> Chapter 2 is worth cramming &mdash; it is the
+second-biggest block &mdash; but if a similar paper is coming, the DAC material is where the marks
+are concentrated.</div>
+
+<h3>Question 2 &mdash; truth table and gate identification <span class="muted">(4 marks)</span></h3>
+<p class="muted"><i>Develop the truth table for the circuit in figure 1 and determine its logic gate.</i></p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="sans-serif">
+  <rect width="760" height="520" fill="#ffffff"/>
+  <g stroke="#222222" fill="none" stroke-width="1.7">
+
+    <!-- Vcc rail -->
+    <line x1="100" y1="40" x2="640" y2="40"/>
+    <circle cx="646" cy="40" r="5"/>
+
+    <!-- R1 4k -->
+    <line x1="190" y1="40" x2="190" y2="70"/>
+    <path d="M 190 70 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="190" y1="112" x2="190" y2="180"/>
+    <circle cx="190" cy="40" r="3.5" fill="#222222"/>
+
+    <!-- Q1 multi-emitter: base bar horizontal -->
+    <line x1="152" y1="180" x2="232" y2="180"/>
+    <!-- emitter 1 -->
+    <line x1="168" y1="180" x2="148" y2="200"/>
+    <polygon points="156,188 150,199 162,194" fill="#222222" stroke="none"/>
+    <line x1="148" y1="200" x2="60" y2="200"/>
+    <!-- emitter 2 -->
+    <line x1="196" y1="180" x2="176" y2="200"/>
+    <polygon points="184,188 178,199 190,194" fill="#222222" stroke="none"/>
+    <line x1="176" y1="200" x2="176" y2="280"/>
+    <line x1="176" y1="280" x2="60" y2="280"/>
+    <!-- collector -->
+    <line x1="220" y1="180" x2="245" y2="205"/>
+    <line x1="245" y1="205" x2="245" y2="270"/>
+    <line x1="245" y1="270" x2="310" y2="270"/>
+    <circle cx="54" cy="200" r="5"/>
+    <circle cx="54" cy="280" r="5"/>
+
+    <!-- D1 clamp on input A -->
+    <circle cx="100" cy="200" r="3.5" fill="#222222"/>
+    <line x1="100" y1="200" x2="100" y2="222"/>
+    <line x1="88" y1="222" x2="112" y2="222"/>
+    <polygon points="88,244 112,244 100,222" fill="#222222" stroke="none"/>
+    <line x1="100" y1="244" x2="100" y2="256"/>
+    <line x1="86" y1="256" x2="114" y2="256"/>
+    <line x1="91" y1="262" x2="109" y2="262"/>
+    <line x1="96" y1="268" x2="104" y2="268"/>
+
+    <!-- D2 clamp on input B -->
+    <circle cx="100" cy="280" r="3.5" fill="#222222"/>
+    <line x1="100" y1="280" x2="100" y2="302"/>
+    <line x1="88" y1="302" x2="112" y2="302"/>
+    <polygon points="88,324 112,324 100,302" fill="#222222" stroke="none"/>
+    <line x1="100" y1="324" x2="100" y2="336"/>
+    <line x1="86" y1="336" x2="114" y2="336"/>
+    <line x1="91" y1="342" x2="109" y2="342"/>
+    <line x1="96" y1="348" x2="104" y2="348"/>
+
+    <!-- R3 1.6k -->
+    <line x1="330" y1="40" x2="330" y2="180"/>
+    <path d="M 330 180 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="330" y1="222" x2="330" y2="245"/>
+    <circle cx="330" cy="40" r="3.5" fill="#222222"/>
+
+    <!-- Q2 phase splitter -->
+    <line x1="310" y1="245" x2="310" y2="295"/>
+    <line x1="310" y1="270" x2="245" y2="270"/>
+    <line x1="310" y1="256" x2="330" y2="244"/>
+    <line x1="310" y1="284" x2="330" y2="296"/>
+    <polygon points="322,290 332,296 322,302" fill="#222222" stroke="none"/>
+    <line x1="330" y1="296" x2="330" y2="350"/>
+    <circle cx="330" cy="245" r="3.5" fill="#222222"/>
+    <circle cx="330" cy="350" r="3.5" fill="#222222"/>
+
+    <!-- R2 1.0k to ground -->
+    <line x1="330" y1="350" x2="330" y2="378"/>
+    <path d="M 330 378 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="330" y1="420" x2="330" y2="436"/>
+    <line x1="316" y1="436" x2="344" y2="436"/>
+    <line x1="321" y1="442" x2="339" y2="442"/>
+    <line x1="326" y1="448" x2="334" y2="448"/>
+
+    <!-- R5 130 -->
+    <line x1="530" y1="40" x2="530" y2="78"/>
+    <path d="M 530 78 l 8 6 l -16 10 l 16 10 l -16 10 l 8 6"/>
+    <line x1="530" y1="120" x2="530" y2="140"/>
+    <circle cx="530" cy="40" r="3.5" fill="#222222"/>
+
+    <!-- Q4 upper totem-pole -->
+    <line x1="510" y1="145" x2="510" y2="195"/>
+    <line x1="510" y1="170" x2="420" y2="170"/>
+    <line x1="420" y1="170" x2="420" y2="245"/>
+    <line x1="420" y1="245" x2="330" y2="245"/>
+    <line x1="510" y1="156" x2="530" y2="144"/>
+    <line x1="510" y1="184" x2="530" y2="196"/>
+    <polygon points="522,190 532,196 522,202" fill="#222222" stroke="none"/>
+    <line x1="530" y1="196" x2="530" y2="222"/>
+
+    <!-- D3 -->
+    <polygon points="518,222 542,222 530,244" fill="#222222" stroke="none"/>
+    <line x1="518" y1="244" x2="542" y2="244"/>
+    <line x1="530" y1="244" x2="530" y2="290"/>
+
+    <!-- output node -->
+    <circle cx="530" cy="290" r="3.5" fill="#222222"/>
+    <line x1="530" y1="290" x2="646" y2="290"/>
+    <circle cx="652" cy="290" r="5"/>
+
+    <!-- Q3 lower totem-pole -->
+    <line x1="530" y1="290" x2="530" y2="320"/>
+    <line x1="510" y1="325" x2="510" y2="375"/>
+    <line x1="510" y1="350" x2="330" y2="350"/>
+    <line x1="510" y1="336" x2="530" y2="324"/>
+    <line x1="510" y1="364" x2="530" y2="376"/>
+    <polygon points="522,370 532,376 522,382" fill="#222222" stroke="none"/>
+    <line x1="530" y1="376" x2="530" y2="410"/>
+    <line x1="516" y1="410" x2="544" y2="410"/>
+    <line x1="521" y1="416" x2="539" y2="416"/>
+    <line x1="526" y1="422" x2="534" y2="422"/>
+  </g>
+
+  <g font-size="12.5" fill="#222222">
+    <text x="200" y="96">R1  4 k</text>
+    <text x="340" y="206">R3  1.6 k</text>
+    <text x="540" y="104">R5  130</text>
+    <text x="340" y="404">R2  1.0 k</text>
+    <text x="656" y="44">+Vcc</text>
+    <text x="240" y="176">Q1</text>
+    <text x="286" y="240">Q2</text>
+    <text x="486" y="140">Q4</text>
+    <text x="486" y="392">Q3</text>
+    <text x="546" y="238">D3</text>
+    <text x="118" y="240">D1</text>
+    <text x="118" y="320">D2</text>
+    <text x="20" y="204">A</text>
+    <text x="20" y="284">B</text>
+    <text x="600" y="282">Output</text>
+  </g>
+
+  <g font-size="12" fill="#1f4e79">
+    <text x="40" y="486">Figure 1 - two-input TTL NAND (7400 stage). Q1 multi-emitter input, Q2 phase splitter,</text>
+    <text x="40" y="502">Q4 / D3 / Q3 totem-pole output. Both inputs HIGH is the only case that pulls the output LOW.</text>
+  </g>
+</svg><figcaption>Figure 1 of the paper &mdash; a two-input TTL gate with multi-emitter input and totem-pole output.</figcaption></figure>
+<h4>The exam answer</h4>
+<table><tr><th><i>A</i></th><th><i>B</i></th><th><i>Q</i><sub>1</sub></th><th><i>Q</i><sub>2</sub></th><th><i>Q</i><sub>3</sub></th><th><i>Q</i><sub>4</sub></th><th>Output</th></tr>
+<tr><td>0</td><td>0</td><td>saturated</td><td>off</td><td>off</td><td>on</td><td><b>1</b></td></tr>
+<tr><td>0</td><td>1</td><td>saturated</td><td>off</td><td>off</td><td>on</td><td><b>1</b></td></tr>
+<tr><td>1</td><td>0</td><td>saturated</td><td>off</td><td>off</td><td>on</td><td><b>1</b></td></tr>
+<tr><td>1</td><td>1</td><td>reverse active</td><td>on</td><td>on</td><td>off</td><td><b>0</b></td></tr></table>
+<div class="ans"><i>Z</i> = ( <i>A</i> &middot; <i>B</i> )&prime; &mdash; a two-input NAND gate</div>
+<h4>The explanation</h4>
+<p><b>Any input LOW.</b> That emitter's base-emitter junction is forward biased, so
+<i>Q</i><sub>1</sub> saturates and its collector &mdash; the base of <i>Q</i><sub>2</sub> &mdash; is
+pulled down to about 0.2 V. That is far below the &asymp;&nbsp;1.4 V needed to turn on
+<i>Q</i><sub>2</sub> and <i>Q</i><sub>3</sub> in series, so both stay off. The pull-up's base sits
+near <i>V</i><sub>CC</sub> through <i>R</i><sub>3</sub>, it conducts, and the output goes HIGH.</p>
+<p><b>Both inputs HIGH.</b> Neither emitter can conduct, so current from <i>R</i><sub>1</sub> flows
+through <i>Q</i><sub>1</sub>'s forward-biased base-collector junction into <i>Q</i><sub>2</sub>
+&mdash; <i>Q</i><sub>1</sub> is in <b>reverse active</b> mode. <i>Q</i><sub>2</sub> turns on, its
+emitter current drives <i>Q</i><sub>3</sub> into saturation, and the output is pulled down to
+<i>V</i><sub>CE(sat)</sub> &asymp; 0.2 V. At the same time the pull-up turns off, so the two output
+transistors are never on together.</p>
+<p>Only the all-HIGH row gives a LOW output. That is NAND.</p>
+<div class="key"><b>The two diodes on the inputs take no part in the logic.</b> They are clamps that
+conduct only if an input is driven below ground, limiting negative undershoot. Say so &mdash; it shows
+you read the circuit rather than recognised it.</div>
+
+<h3>Question 3 &mdash; draw a DTL NAND gate <span class="muted">(4 marks)</span></h3>
+<p class="muted"><i>Draw a Diode Transistor Logic for a NAND gate.</i></p>
+<div class="key"><b>Two of the four marks are for the circuit and two for the explanation.</b>
+Draw it <i>and</i> say how it works.</div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 520" font-family="sans-serif">
+<rect width="740" height="520" fill="#ffffff"/>
+<g stroke="#222" fill="none" stroke-width="1.8" stroke-linecap="round">
+<line x1="180" y1="50" x2="600" y2="50"/>
+<line x1="265" y1="50" x2="265" y2="95"/>
+<line x1="265" y1="150" x2="265" y2="330"/>
+<line x1="120" y1="185" x2="175" y2="185"/><line x1="215" y1="185" x2="265" y2="185"/>
+<line x1="120" y1="255" x2="175" y2="255"/><line x1="215" y1="255" x2="265" y2="255"/>
+<line x1="265" y1="330" x2="330" y2="330"/>
+<line x1="370" y1="330" x2="390" y2="330"/>
+<line x1="430" y1="330" x2="500" y2="330"/>
+<line x1="465" y1="330" x2="465" y2="378"/>
+<line x1="465" y1="432" x2="465" y2="442"/>
+<line x1="505" y1="305" x2="505" y2="355"/>
+<line x1="505" y1="316" x2="545" y2="288"/>
+<line x1="545" y1="288" x2="545" y2="205"/>
+<line x1="505" y1="344" x2="545" y2="372"/>
+<line x1="545" y1="372" x2="545" y2="442"/>
+<line x1="545" y1="50" x2="545" y2="105"/>
+<line x1="545" y1="160" x2="545" y2="205"/>
+<line x1="545" y1="205" x2="660" y2="205"/>
+</g>
+<path d="M 533 364 L 545 372 L 535 353 Z" fill="#222"/>
+<g>
+<rect x="258.0" y="95" width="14" height="55" fill="#fff" stroke="#222" stroke-width="1.6"/><text x="279" y="126.5" font-size="13.5" font-style="italic">R<tspan font-size="10" dy="3">1</tspan></text>
+<rect x="538.0" y="105" width="14" height="55" fill="#fff" stroke="#222" stroke-width="1.6"/><text x="559" y="136.5" font-size="13.5" font-style="italic">R<tspan font-size="10" dy="3">C</tspan></text>
+<rect x="458.0" y="378" width="14" height="54" fill="#fff" stroke="#222" stroke-width="1.6"/><text x="479" y="409.0" font-size="13.5" font-style="italic">R<tspan font-size="10" dy="3">2</tspan></text>
+</g>
+<path d="M 211 174 L 211 196 L 185.0 185 Z" fill="#222" stroke="none"/><line x1="185.0" y1="173" x2="185.0" y2="197" stroke="#222" stroke-width="2.4"/><text x="195.0" y="173" font-size="13.5" font-style="italic" text-anchor="middle">D<tspan font-size="10" dy="3">1</tspan></text>
+<path d="M 211 244 L 211 266 L 185.0 255 Z" fill="#222" stroke="none"/><line x1="185.0" y1="243" x2="185.0" y2="267" stroke="#222" stroke-width="2.4"/><text x="195.0" y="243" font-size="13.5" font-style="italic" text-anchor="middle">D<tspan font-size="10" dy="3">2</tspan></text>
+<path d="M 340.0 319 L 340.0 341 L 360.0 330 Z" fill="#222" stroke="none"/><line x1="360.0" y1="318" x2="360.0" y2="342" stroke="#222" stroke-width="2.4"/><text x="350.0" y="318" font-size="13.5" font-style="italic" text-anchor="middle">D<tspan font-size="10" dy="3">3</tspan></text>
+<path d="M 400.0 319 L 400.0 341 L 420.0 330 Z" fill="#222" stroke="none"/><line x1="420.0" y1="318" x2="420.0" y2="342" stroke="#222" stroke-width="2.4"/><text x="410.0" y="318" font-size="13.5" font-style="italic" text-anchor="middle">D<tspan font-size="10" dy="3">4</tspan></text>
+<circle cx="265" cy="185" r="4.5" fill="#222"/>
+<circle cx="265" cy="255" r="4.5" fill="#222"/>
+<circle cx="265" cy="330" r="4.5" fill="#222"/>
+<circle cx="465" cy="330" r="4.5" fill="#222"/>
+<circle cx="545" cy="205" r="4.5" fill="#222"/>
+<circle cx="114" cy="185" r="6" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<circle cx="114" cy="255" r="6" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<circle cx="666" cy="205" r="6" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<circle cx="545" cy="50" r="6" fill="#fff" stroke="#222" stroke-width="1.8"/>
+<line x1="465" y1="442" x2="465" y2="452" stroke="#222" stroke-width="1.8"/><line x1="449" y1="452" x2="481" y2="452" stroke="#222" stroke-width="2.2"/><line x1="455" y1="458" x2="475" y2="458" stroke="#222" stroke-width="2.2"/><line x1="461" y1="464" x2="469" y2="464" stroke="#222" stroke-width="2.2"/>
+<line x1="545" y1="442" x2="545" y2="452" stroke="#222" stroke-width="1.8"/><line x1="529" y1="452" x2="561" y2="452" stroke="#222" stroke-width="2.2"/><line x1="535" y1="458" x2="555" y2="458" stroke="#222" stroke-width="2.2"/><line x1="541" y1="464" x2="549" y2="464" stroke="#222" stroke-width="2.2"/>
+<g font-size="15">
+<text x="92" y="190" text-anchor="end">A</text>
+<text x="92" y="260" text-anchor="end">B</text>
+<text x="682" y="211">Z</text>
+<text x="558" y="42" font-size="14">+V<tspan font-size="10.5" dy="3">CC</tspan></text>
+<text x="248" y="352" text-anchor="end" font-size="14" fill="#0f6e8c" font-weight="bold">P</text>
+<text x="578" y="322" font-size="14" font-style="italic">Q<tspan font-size="10" dy="3">1</tspan></text>
+</g>
+<g font-size="12.5" fill="#0f6e8c">
+<text x="150" y="404">two series diodes set the</text>
+<text x="150" y="420">2.1 V turn-on threshold</text>
+</g>
+<text x="120" y="500" font-size="12.5" fill="#5b6b7b">Input diodes: cathode at the input, anodes commoned at P &#8212; a diode AND. Transistor inverts it &#8594; NAND.</text>
+</svg><figcaption>The DTL NAND gate as the model answer draws it &mdash; diode AND at the input, two series level-shifting diodes, inverting transistor stage.</figcaption></figure>
+<h4>What to draw, as a checklist</h4>
+<ul>
+<li>inputs <i>A</i> and <i>B</i>, each through a diode with its <b>cathode at the input</b>, anodes
+joined at a common node <i>P</i>;</li>
+<li><i>R</i><sub>1</sub> from +<i>V</i><sub>CC</sub> down to <i>P</i>;</li>
+<li><b>two series level-shifting diodes</b> from <i>P</i> to the base of an npn transistor;</li>
+<li><i>R</i><sub>2</sub> from that base to ground;</li>
+<li><i>R</i><sub>C</sub> from +<i>V</i><sub>CC</sub> to the collector, which is the output;</li>
+<li>emitter to ground.</li>
+</ul>
+<h4>The operation, one line each</h4>
+<p><b>Any input LOW</b> &mdash; that input diode conducts and holds <i>P</i> at about 0.7 V, which
+cannot supply the 2.1 V needed across the two series diodes and <i>V</i><sub>BE</sub>. The transistor
+is off and the <b>output is HIGH</b>.</p>
+<p><b>All inputs HIGH</b> &mdash; both input diodes are reverse biased, <i>P</i> rises, current flows
+through the series diodes into the base, the transistor saturates and the <b>output is LOW</b>.</p>
+<div class="ans"><i>Z</i> = ( <i>A</i> &middot; <i>B</i> )&prime; &mdash; a NAND</div>
+<h4>Why the two series diodes are there &mdash; the marks-earning sentence</h4>
+<p>They set the turn-on threshold. Each adds one forward drop to the voltage <i>P</i> must reach
+before any base current flows:</p>
+<div class="eq"><i>V</i><sub>P(on)</sub> = 0.7 + 0.7 + 0.7 = 2.1 V</div>
+<div class="eq"><i>V</i><sub>P(input LOW)</sub> &asymp; 0.7 V</div>
+<p>So the LOW state sits <b>1.4 V clear</b> of the turn-on threshold. Without the series diodes,
+<i>P</i> at 0.7 V would already be starting to turn the transistor on, and the gate would have
+essentially no noise margin.</p>
+<div class="trap"><span class="lab">Do not copy the wrong slide</span>
+&middot;CH2 <b>slide 26</b> is the DTL <b>NAND</b> &mdash; that is the one this question wants.
+&middot;CH2 <b>slide 27</b> draws a DTL <b>NOR</b>: the diode orientation is reversed there
+(anodes at the inputs). Copying slide 27 answers a different question.</div>
+</section>
+
+<section class="card" id="practice"><h2>17 &middot; Practice questions</h2>
+<div class="q"><span class="id">1</span>A family has <i>V</i><sub>OH</sub> = 3.8 V,
+<i>V</i><sub>IH</sub> = 2.4 V, <i>V</i><sub>IL</sub> = 1.0 V, <i>V</i><sub>OL</sub> = 0.5 V. Find both
+noise margins. Which logic state is more vulnerable to noise?</div>
+<div class="q"><span class="id">2</span>A gate draws 8 mA output HIGH and 12 mA output LOW on a 3.3 V
+rail at 50% duty cycle. Find the average power dissipation.</div>
+<div class="q"><span class="id">3</span>Four such gates share one package and all are switching.
+Package dissipation?</div>
+<div class="q"><span class="id">4</span>A diode OR chain is driven from 5 V. After how many stages does
+the HIGH level fall below the TTL <i>V</i><sub>IH</sub> minimum of 2.0 V?</div>
+<div class="q"><span class="id">5</span>Why is the average-power formula invalid if the output sits
+HIGH 90% of the time &mdash; and what would you compute instead?</div>
+<div class="q"><span class="id">6</span>Draw a CMOS NOR gate and state, for each of the four input
+combinations, which transistors conduct.</div>
+<div class="q"><span class="id">7</span>An open-collector gate's output is connected straight to the
+input of another gate with no other components. What happens, and why?</div>
+<div class="q"><span class="id">8</span>Two diodes feed the base of an npn transistor with the diode
+<b>cathodes</b> commoned at the base resistor. Collector load to +5 V, output at the collector. What
+gate is it? Now reverse both diodes &mdash; what gate is it then?</div>
+<div class="q"><span class="id">9</span>Explain why a TTL gate's fan-out is limited by its LOW output
+state rather than its HIGH state.</div>
+<div class="q"><span class="id">10</span>Sketch the voltage transfer characteristic of a real
+inverter and mark <i>V</i><sub>OH</sub>, <i>V</i><sub>OL</sub>, <i>V</i><sub>IH</sub>,
+<i>V</i><sub>IL</sub> and both noise margins on it.</div>
+</section>
+<footer>Chapter 2 &middot; Digital Logic Families &middot; BEE 3102 Digital Electronics II<br>
+Built from the verified knowledge base. Circuit figures redrawn from the lecture slides;
+material marked <i>Added</i> is not in the deck.</footer>
+</div></body></html>

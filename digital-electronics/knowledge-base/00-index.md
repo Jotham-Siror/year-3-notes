@@ -3,13 +3,15 @@ kb: "Digital Electronics — BEE 3102"
 lecturer: "withheld"
 file_role: index
 unit_title: "Digital Electronics II"
-subject_status: "six chapter decks indexed in full; one lab indexed; taught unit"
+subject_status: "six chapter decks indexed in full; one lab indexed; one past paper transcribed and worked; taught unit"
 visibility: "tracked; labs/ and its study guide excluded deliberately — see the lab register"
 topics: 10
 labs: 1
-figures: 156
+past_papers: 1
+figures: 158        # on disk. 144 are PUBLISHED — the 14 in labs/figures/ are excluded from the repo (see below)
 verification_flags: 81
-tags: [digital-electronics, bee-3102, logic-families, memory, plds, adc, dac, fsm, asm]
+errata: 3
+tags: [digital-electronics, bee-3102, logic-families, memory, plds, adc, dac, fsm, asm, past-papers]
 ---
 
 <!-- FOR FUTURE CLAUDE — start here.
@@ -63,7 +65,8 @@ then open the file you need rather than going back to the raw PDFs.
 | | |
 |---|---|
 | Lecture notes | **six chapter decks, 348 slides, indexed in full** as ten topic files |
-| Labs | 1, indexed in full — `labs/lab-01-ttl-nand-nor.md` |
+| Labs | 1, indexed in full — `labs/lab-01-ttl-nand-nor.md` (held locally, not published) |
+| Past papers | **1** — CAT 1, 6 Aug 2024, transcribed and fully worked: `past-papers/` |
 | Unit code | **BEE 3102**; the decks' footers title the unit *Digital Electronics II* |
 | Verification log | **`_verification-log.md`** — 81 defects: 36 substantive, 45 cosmetic |
 | Nomenclature | **`_nomenclature.md`** — every symbol, with a two-tier clash table |
@@ -98,6 +101,10 @@ digital-electronics/
 │   │   └── 01.md … 10.md                    ← per-file defect entries, cited from the topic files
 │   ├── figures/
 │   │   └── NN-<slug>.svg                    ← 142 redrawn figures, prefixed by topic-file number
+│   ├── past-papers/
+│   │   ├── 00-past-papers-index.md          ← register, scope analysis, house format
+│   │   ├── BEE3102-CAT1-2024-08-06.md       ← 8 questions, transcribed and worked
+│   │   └── figures/                         ← 2 redrawn figures
 │   └── labs/
 │       ├── lab-01-ttl-nand-nor.md
 │       └── figures/
@@ -389,6 +396,41 @@ captioned. When in doubt, caption.
 
 ---
 
+## Past papers
+
+**One paper held: CAT 1, 6 August 2024** — 30 marks, 8 questions, 1 hr 20 min. Transcribed into
+`past-papers/BEE3102-CAT1-2024-08-06.md`, every question answered and every number recomputed. The
+paper itself is not committed; rule 4 of `docs/kb-format.md` forbids it.
+
+| Paper | Date | Marks | Qs | Status | File |
+|---|---|---|---|---|---|
+| CAT 1 | 6 Aug 2024 | 30 | 8 | `solved` | `past-papers/BEE3102-CAT1-2024-08-06.md` |
+
+**What it says about where the marks are.** One paper is one data point, not a pattern — but it is
+a sharp one, and it should shape revision until a second paper contradicts it.
+
+| Source | Marks | Share |
+|---|---|---|
+| **CH4 — signal conversion, DAC half (`06`)** | **15** | **50 %** |
+| CH2 — digital logic families (`02`) | 8 | 27 % |
+| CH3 — memory and programmable logic (`04`) | 4 | 13 % |
+| **Not taught in any deck** | **3** | 10 % |
+| CH5 + CH6 — FSMs and ASMs (`07`–`10`) | **0** | 0 % |
+
+- **Half the paper came out of twenty slides.** `06-digital-to-analogue-conversion.md` carried four
+  of the eight questions. Highest marks-per-slide in the unit, by a wide margin.
+- **158 slides of FSM and ASM material scored nothing.** Expected of a CAT 1 sat mid-semester, but
+  it says plainly where CAT 2 and the final examination have to go.
+- **Question 1 was outside the taught material** — see the gap map below.
+- **Question 5 sits on a defective slide.** It is ·CH4 slide 37's BCD example with a fourth digit,
+  and the deck's version of that example is wrong in three places (**V06-4**, **V06-6**,
+  **V06-7**). Revising from the slide as printed carries the error into the exam.
+
+Defects in the papers themselves are numbered `P1`, `P2`, … in `past-papers/`, kept separate from
+the `V`/`C` numbering that catalogues defects in the decks. Three are logged so far.
+
+---
+
 ## Coverage and gaps
 
 **What the decks teach, and examine.** All six chapters are taught in full, and the examinable
@@ -405,14 +447,16 @@ weight sits where the worked examples are:
   in CH3 and the PLA table in CH6.
 
 **What the decks name but never teach.** Recorded so that a reader does not go looking for a
-treatment that is not there.
+treatment that is not there. This list is not academic: **CAT 1 2024 took 3 of its 30 marks straight
+out of it** (Q1 — monotonicity, linearity, sensitivity). Treat every row as examinable.
 
 | Topic | Where it is named | Where it is meant to come from |
 |---|---|---|
 | **ECL (emitter-coupled logic)** | the family classification ·CH2 slide 20 | textbook reading, set as homework ·CH2 slide 43 — **taught nowhere in the deck** |
 | **Plain PMOS and NMOS logic** | the same classification ·CH2 slide 20; called obsolete in passing | the same homework ·CH2 slide 43 — **taught nowhere in the deck** |
 | **Digital-ramp (counter-type) ADC** | **one row** of the comparison table ·CH4 slide 28 | set as homework ·CH4 slide 24 — the exercise deliberately sends the reader outside the deck |
-| **Monotonicity, linearity error, settling time** | ·CH4 slide 49 only | named on no other slide in any of the six decks; the homework asks for all three |
+| **Monotonicity, linearity error, settling time** | ·CH4 slide 49 only | named on no other slide in any of the six decks; the homework asks for all three. ⚠ **Examined for 3 marks** — CAT 1 2024 Q1 |
+| **Sensitivity** | nowhere in any deck | ⚠ **Examined** in the same question. A search of all 348 slides finds the word nowhere |
 | **Final expressions from map-entered variables** | ·CH6 slide 22 stops at the maps and refers out to the textbook | file 10 reads them off the maps and supplies the final expressions, tagged `[added]` |
 | **PROM/EPROM/EEPROM detail, flash memory, memory expansion, magnetic and optical storage** | reading list ·CH3 slide 64 | textbook reading; the decks give the block-level treatment only |
 | **TTL worked examples 15-3 to 15-7** | pointer only ·CH2 slide 34 | third-party textbook, not reproduced here |
