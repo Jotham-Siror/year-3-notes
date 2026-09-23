@@ -6,7 +6,7 @@ source: "MEC 3104 FLUID THEORY NOTES.pptx (594 slides)"
 built: "extracted + verified from the deck; equations from OMML→LaTeX + canonical reconstruction; figures from slide images"
 coverage: "594/594 slides mapped, contiguous, no gaps or overlaps (verified)"
 total_verification_flags: 50   # 18 first-pass + 32 second-pass slide flags (S1–S32); plus 15 exam-paper flags (P1–P15)
-past_papers: 2                 # see past-papers/00-past-papers-index.md
+past_papers: 5                 # see past-papers/00-past-papers-index.md
 ---
 
 <!-- Compiled by Jotham-JS, 2026. MEC 3104 Fluid Theory knowledge base. -->
@@ -35,8 +35,11 @@ Finished human-facing study guides live in the `study-guides/` folder alongside 
 - **`_formula-sheet.md`** — all key equations in one place, each tagged to its section.
 - **`_verification-log.md`** — every flagged slide error/typo, with the correct form + a source. Also holds
   **§ Exam papers** (IDs `P1`, `P2`, …): defects found in his actual CAT/exam papers.
-- **`past-papers/`** — his real assessment papers, transcribed verbatim and machine-readable, with figures
-  redrawn as SVG. Start at `past-papers/00-past-papers-index.md` (register + the format for adding the next one).
+- **`past-papers/`** — his real assessment papers, transcribed verbatim and machine-readable. **Five now:**
+  2025 CAT 1, 2024 CAT 1, 2024 CAT 2, 2025 CAT 2 and the 2025 end-of-semester paper. The three oldest have
+  figures redrawn as SVG; the two 2025 papers carry `figure_data` blocks only. Start at
+  `past-papers/00-past-papers-index.md` (register, coverage, recurrence analysis, house format).
+  **`09-pipe-flow` is now examined on three papers running** — the gap this index used to flag is closed.
 
 ## Tag legend (used in every topic file)
 `[def]` definition · `[derivation]` step-by-step · `[eq]` key equation · `[ex]` worked example (lecturer's

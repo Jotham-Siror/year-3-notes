@@ -303,6 +303,388 @@ full entry lives here only — the paper file just points to it.
   Teach the method from slides 41–44 rather than assuming it.
 - **Severity:** partial gap (teachable from the notes, but not taught in them).
 
+### P16 · MEC 3104 CAT 2 (9 Oct 2024), Q1(b) — dimensions marked in feet, note says inches
+- **Paper:** the Pitot figure carries "**15.5′**" and "**18.6′**"; the line printed under it reads
+  "Note that the dimensions are given in **inches**."
+- **Issue:** ′ is the foot mark (inches take ″). As drawn the two readings claim to be 15.5 ft and 18.6 ft,
+  while the note says inches — the figure and its own caption disagree.
+- **Correct reading:** **inches**, per the explicit note. The head is then a few inches, which is what gives an
+  ordinary pipe velocity; taking the readings as feet inflates the velocity by √12 ≈ **3.46×**.
+- **How to handle:** convert to feet before substituting either way, because the only g offered in imperial
+  units is 32.2 ft/s². Say plainly that the tick marks on the figure are wrong, not the note.
+- **Severity:** notation (unit symbol). Changes the answer by a factor of 3.46 if read literally.
+
+### P17 · MEC 3104 CAT 2 (9 Oct 2024), Q1(b) — the head *h* is never defined
+- **Paper:** "The velocity is given by: $C_f\sqrt{2gh}$" — and the figure labels two column heights, 15.5 and
+  18.6, both measured from the pipe centreline. The symbol **h appears nowhere on the drawing**.
+- **Issue:** in a Pitot–static measurement $h$ is the **difference** between the stagnation column and the
+  static column, not either reading on its own. The paper never says so.
+- **Correct reading:** $h = 18.6 - 15.5$ in the units of P16. The shared datum (the pipe centreline) cancels
+  in the subtraction, which is precisely why measuring both columns from it is legitimate.
+- **How to handle:** ask him what $h$ is *before* he substitutes. Reaching for 18.6 directly is the trap this
+  question sets, and it is the single most likely way to lose all three marks.
+- **Severity:** omission (undefined symbol). Recoverable, but only from the physics.
+
+### P18 · MEC 3104 CAT 2 (9 Oct 2024), Q2(c)(ii) — "Show that λ = 64/Re" with no laminar condition
+- **Paper:** "Show that: $\lambda = \frac{64}{Re}$." *(4 marks)*
+- **Issue:** $\lambda = 64/Re$ is the **laminar** friction factor. It drops out of equating the
+  Hagen–Poiseuille law the question itself supplies ($\Delta p = 32\mu l v/d^2$) to Darcy–Weisbach — and
+  Hagen–Poiseuille holds for laminar flow only. Neither the question nor the stem states the restriction.
+- **Note on the part that follows:** Q2(c)(iii) then hands over λ = 0.016 for a flow that is firmly
+  **turbulent**. Within one question λ is derived from a laminar-only result and then used at a turbulent
+  Reynolds number. The two parts stay consistent only because (iii) supplies λ instead of asking for it —
+  which is also why the printed 0.016 is a reasonable wrought-iron value and not itself an erratum.
+- **How to handle:** make "for laminar flow" the first line of his derivation. Markers routinely give a mark
+  for stating the condition, and it is the one line that shows he knows why the result is not general.
+- **Severity:** omission (missing condition).
+
+### P19 · MEC 3104 CAT 2 (9 Oct 2024), Q2(c) — the loss head changes symbol mid-sentence
+- **Paper:** "The loss head, **hs** is given by: hs = λ(l/d)(v²/2g), Δp = 32μlv/d² and that **h** = (p1−p2)/ρg".
+- **Issue:** the head is $h_s$ in the first expression and $h$ in the third; "hs" is set with an inline s
+  rather than a subscript, and $p1$, $p2$ are set upright while ρ and μ are italic.
+- **Correct form:** one symbol throughout — $h_f$ is the usual name for the friction head loss, and
+  $h_f = (p_1-p_2)/\rho g$ is the same quantity as $h_s$, not a different one.
+- **Severity:** notation (cosmetic). No effect on the physics, but it makes the three-equation chain in
+  (c)(ii) harder to follow than it needs to be.
+
+### P20 · MEC 3104 CAT 2 (9 Oct 2024), Q3(a) — Manning coefficient printed as 1.4228
+- **Paper:** "$V = \frac{1.4228}{n}\,m^{2/3}\,i^{1/2}$".
+- **Issue:** the US-customary form of Manning's equation is $V = \frac{1.486}{n}R^{2/3}S^{1/2}$, the constant
+  being $3.2808^{1/3} = 1.4859$ — the conversion of the SI constant (1.0) into ft^(1/3)/s. **1.4228 is not a
+  recognised value for it**, and is about 4.3 % low. The paper's own units confirm the imperial form is meant:
+  the conduit in (a)(ii) is 7 ft.
+- **Not an error:** the symbols $m$ (hydraulic mean depth, $m = A/P$) and $i$ (bed slope) are the standard
+  **British-textbook** names for what US texts call $R$ and $S$. Part (a)(i) is asking exactly for that —
+  $m = A/P$ and why it, rather than the depth, is the length scale that governs the flow.
+- **How to handle:** work it with the printed 1.4228 for the marks, then show him the same calculation with
+  1.486 so he sees the ≈4 % gap. Worth asking the lecturer where 1.4228 came from.
+- **Severity:** value (unverified constant). Affects the numerical answer by ≈4 %.
+
+### P21 · MEC 3104 CAT 2 (9 Oct 2024), Q3(b) — "still air (ρ = 1200 kg/m³)" ★ most serious on this paper
+- **Paper:** "Calculate the drag force on the plate if it is moving through **still air (ρ = 1200 kg/m³)**."
+- **Issue:** air at room conditions is **≈1.2 kg/m³**. 1200 kg/m³ is a liquid — denser than water. The printed
+  figure is **1000× too large**, and since $D_f \propto \rho$ the drag force computed from it is 1000× too
+  large as well.
+- **Correct value:** $\rho_{air} \approx 1.2\ \text{kg/m}^3$ (1.225 kg/m³ at 15 °C and 101.325 kPa).
+- **How to handle:** work it **both** ways in a mock — once with 1200 for the marks, once with 1.2 so he sees
+  what a real 0.1 m × 0.1 m plate at 5 m/s actually feels. Tell him which is which; the examiner's mark scheme
+  will almost certainly want the printed number.
+- **Severity:** value (wrong by 10³). This is the defect most likely to teach him something false.
+
+### P22 · MEC 3104 CAT 2 (9 Oct 2024), foot of the paper — units of g
+- **Paper:** "Take g = **9.8 m/s** or g = 32.2 ft/s²".
+- **Issue:** acceleration is m/s², not m/s. The imperial value printed alongside carries its exponent
+  correctly, so this is a dropped superscript rather than a misunderstanding.
+- **Correct form:** $g = 9.8\ \text{m/s}^2 = 32.2\ \text{ft/s}^2$.
+- **Severity:** notation (unit). He pencilled the missing "2" onto his own copy.
+- **Related:** the 2024 CAT 1 carries the same defect in its Note block — see **P12**. Two papers, same slip.
+
+### P23 · MEC 3104 CAT 2 (7 Oct 2025), head of the paper — units of g, both of them
+- **Paper:** "Take g = **9.8 m/s** or g = **32.2 ft/s**".
+- **Issue:** acceleration is m/s² and ft/s². The 2024 CAT 2 dropped the exponent from the metric value only
+  (**P22**) and kept it on the imperial one; this paper drops it from **both**.
+- **Correct form:** $g = 9.8\ \text{m/s}^2 = 32.2\ \text{ft/s}^2$.
+- **Confirmation from the paper itself:** Q2(1)(a)(ii) reprints "Take g = 32.2 ft/s²" **with** its exponent.
+  So the head of the paper is a typesetting slip, not a different convention the paper is following.
+- **Severity:** notation (unit).
+- **Related:** the same slip on the 2024 CAT 1 Note block (**P12**) and the 2024 CAT 2 (**P22**). Three papers,
+  four instances. Tell him plainly that this examiner drops that exponent, so he never copies it into a script.
+
+### P24 · MEC 3104 CAT 2 (7 Oct 2025), Q1(3)(b)(iii) — "Take f = 0.00026 m" ★ most serious on this paper
+- **Paper:** "Determine the headloss in the pipe. **Take f = 0.00026 m**" — for water at 20 °C in a **new cast
+  iron** pipe, 400 m long, 150 mm bore, at 4.2 m/s, ν = 1.02 × 10⁻⁶ m²/s, with the head loss defined two lines
+  earlier as $h_f = f(L/d)(v^2/2g)$.
+- **Issue:** the $f$ in Darcy–Weisbach is **dimensionless**. A friction factor cannot be quoted in metres. The
+  number quoted, 0.00026 m = 0.26 mm, is the standard absolute **roughness** ε of new cast iron — a wall
+  dimension, not a friction factor. The paper has handed over the wrong quantity under the right symbol.
+- **Checked here (2026-09-03, Python):** $Re = 4.2 \times 0.150 / 1.02\times10^{-6} = 6.18\times10^{5}$, firmly
+  turbulent, so $\lambda = 64/Re$ does not apply. Reading 0.00026 m as ε gives ε/d = 0.00173, and Colebrook at
+  that relative roughness and that Re returns **λ ≈ 0.0229**. Head loss: **0.62 m** using the printed value as
+  $f$, **54.9 m** using the Colebrook value — the printed number understates the loss by a factor of **88**.
+- **Correct form:** either "take ε = 0.26 mm and read λ off the Moody chart", or supply a dimensionless λ of
+  about 0.023 directly. As printed it is neither.
+- **How to handle:** work it **both** ways in a mock. Substituting 0.00026 straight in is almost certainly what
+  the mark scheme wants, and it takes one line; then show him the 54.9 m and ask which of the two a 400 m cast
+  iron main actually loses. This is the defect on this paper most likely to teach him something false — a
+  student who accepts it learns that a 400 m main at 4.2 m/s costs him 60 cm of head.
+- **Severity:** value (wrong quantity, wrong by ~10²) — and notation, since it carries a unit it cannot have.
+
+### P25 · MEC 3104 CAT 2 (7 Oct 2025), Q1(3) — the Darcy coefficient is printed as *f*, which this KB defines as λ/4
+- **Paper:** "The headloss in a pipe is given by the expression: $hf = (f)(L/d)(v^2/2g)$".
+- **Issue:** the equation is right; the symbol collides. The deck, all eleven topic files and the 2024 CAT 2
+  write this coefficient as **λ**, and `_nomenclature.md` explicitly reserves **f** for the **Fanning**
+  coefficient, $f = \lambda/4$. A student who reads the paper's $f$ against the KB's $f$ is out by a factor
+  of **4**.
+- **Correct form:** read the paper's $f$ as the KB's **λ**. The Darcy form $h = \lambda(l/d)(v^2/2g)$ and the
+  Fanning form $h = 4f(l/d)(v^2/2g)$ are the same equation; only one of them may be called $f$.
+- **How to handle:** say this out loud the first time he opens the paper, and check which convention any
+  supplied friction factor belongs to before he substitutes. It is also worth noting that the end-of-semester
+  exam three weeks later uses **f** as well, in its useful-information block — so on 2025 papers, f means λ.
+- **Severity:** notation (symbol clash between paper and knowledge base).
+- **Related:** **P19**, where the 2024 CAT 2 changed the same head loss from $h_s$ to $h$ inside one sentence.
+
+### P26 · MEC 3104 CAT 2 (7 Oct 2025), Q2 — an orphaned item letter, and two numbering levels used as one
+- **Paper:** Question Two runs "**1.** The following expressions ... **a.** Water is flowing at 150 ft³/s ...
+  **i.** ... **ii.** ..." and then "**2.** A rectangular channel ...", "**3.**", "**4.**", "**5.**".
+- **Issue:** two things. The "a." under item 1 has **no matching "b."** — it is a single lettered sub-item.
+  And items 2 to 5 are set at the same level as item 1, so the reader has to decide whether they hang off the
+  three expressions quoted under 1 or stand alone. (They stand alone: 3, 4 and 5 have nothing to do with
+  critical depth.) The same paper's Question One numbers its parts 1., 2., 3. and then a., b., i., ii., iii.,
+  which is consistent; Question Two is not.
+- **How to handle:** cite parts of this question as Q2(1)(a)(i), Q2(2), Q2(3) … as this KB does, and say which
+  scheme you are using. When setting it as a mock, mark items 2–5 independently of item 1.
+- **Severity:** structural (cataloguing). No effect on the physics.
+
+### P27 · MEC 3104 CAT 2 (7 Oct 2025), Q2(3) — a depth compared with a "flow"
+- **Paper:** "In a subcritical flow, the height of water at a channel is deeper (greater) than the **critical
+  flow**." (true/false, 2 marks)
+- **Issue:** a height cannot be greater than a *flow*. The comparison the statement is reaching for is with the
+  **critical depth** $h_c$ — that is the definition of subcritical (tranquil) flow at
+  `10-open-channel-flow.md` §10.7: deeper than $h_c$ ⇒ $v < \sqrt{gh}$ ⇒ $Fr < 1$.
+- **Correct form:** "… is greater than the critical **depth**."
+- **How to handle:** the intent is unambiguous, so mark it as set — but make him say the corrected sentence
+  back, because "critical depth", "critical flow" and "critical velocity" are three different things and this
+  question blurs two of them in nine words.
+- **Severity:** notation (wording). Also a small ambiguity: "the height of water **at** a channel" should be
+  "in".
+
+### P28 · MEC 3104 CAT 2 (7 Oct 2025), Q3(2)(ii) — the density of water is never supplied
+- **Paper:** "Determine the drag force of one side of a plate, which is 2.0 m wide and 10.0 m long and is being
+  towed lengthwise through **still water at 20 °C** and at a velocity of 5.0 m/s. Take C_D = 0.0023." The
+  formula supplied one line above is $D_f = C_D\rho(v^2/2)A$.
+- **Issue:** ρ appears in the formula and nowhere else on the paper. The constants line at the head of the
+  paper offers only g. The question cannot be answered from the data given.
+- **Correct form:** water at 20 °C is **998 kg/m³** — the value this examiner supplied on the 2024 CAT 1 and
+  again on the 2025 end-of-semester exam.
+- **How to handle:** have him write "taking ρ = 998 kg/m³ for water at 20 °C" as a stated assumption before he
+  substitutes. Markers give the mark for the assumption; leaving the number to appear from nowhere loses it.
+- **Not an error:** C_D = 0.0023 **is** plausible. Checked here 2026-09-03: $Re_L = 5\times10/1.004\times10^{-6}
+  = 5\times10^{7}$, and the turbulent flat-plate correlation $0.074/Re^{1/5}$ gives 0.0021. The 2024 CAT 2's
+  drag question misprinted its density by 10³ (**P21**); this one simply omits it.
+- **Severity:** omission (question not answerable from the data given).
+
+### P29 · MEC 3104 CAT 2 (7 Oct 2025), Q1 and Q2 — spelling and notation, collected
+- **Paper:** "Reynold's number" (Q1(3)(b)(i)) for **Reynolds**; "$E_{min} = A_c/2b + y_c$" (Q2(1)) set without
+  brackets, where $A_c/(2b)$ is meant, and read strictly left to right the printed form means $(A_c/2)\cdot b$;
+  "the height of water **at** a channel" (Q2(3)).
+- **Issue:** cosmetic. None of it changes an answer, but the missing brackets would if a student took them
+  literally — for a rectangular section $A_c/(2b) = y_c/2$, which is what makes $E_{min} = 1.5\,y_c$ come out.
+- **Correct form:** Reynolds; $E_{min} = \dfrac{A_c}{2b} + y_c$.
+- **Severity:** notation (cosmetic).
+- **Related:** "Reynold's" also on the 2024 CAT 1 (**P13**) and the 2025 CAT 1 (**P6**), and again on the 2025
+  end-of-semester exam (**P32**). Four papers out of five.
+
+### P30 · MEC 3104 EXAM (29 Oct 2025), Q1(d)(ii) — "Take I₀ = b(L)³/12", with b and L never defined ★ most serious on this paper
+- **Paper:** "A rectangular boat, 7ft high, **18 ft wide** and **32 ft long** carrying garbage has its center of
+  gravity 2 ft above the water line … Obtain the metacentre for the boat *(3 marks)*. Indicate, with reason(s)
+  whether the boat is stable **Take I₀ = b(L)³/12** *(2 marks)*", with $\overline{GM} = I_o/v_{sub} -
+  \overline{GB}$ supplied at the head of part (d).
+- **Issue:** $I_o$ is the second moment of the **waterplane** area, and which second moment you want depends on
+  the axis the vessel heels about. A stability question about a barge means **rolling**, about the longitudinal
+  axis, for which $I_o = L\,b^3/12$ with $b$ the beam. The paper's own words make $b$ = 18 ft (wide) and
+  $L$ = 32 ft (long), so $b(L)^3/12$ is the **pitching** second moment — the other one. Neither $b$ nor $L$ is
+  defined anywhere in the question, and no heel axis is stated, so the student cannot tell which is meant.
+- **Checked here (2026-09-03, Python):** $v_{sub} = 18\times32\times5 = 2880$ ft³ (draft 5 ft = 7 ft height −
+  2 ft freeboard, confirmed by Figure 3, which dimensions 5 ft below the water line and 2 ft above it).
+  $\overline{GB} = 2 + 2.5 = 4.5$ ft. Then
+  · $I = b(L)^3/12 = 49\,152$ ft⁴ ⇒ BM = 17.07 ft ⇒ **GM = 12.57 ft**
+  · $I = L\,b^3/12 = 15\,552$ ft⁴ ⇒ BM = 5.40 ft ⇒ **GM = 0.90 ft**
+  The two second moments differ by a factor of 3.16 and the metacentric heights by a factor of **14**.
+- **Correct form:** state the axis, then $I_o = \dfrac{L\,b^3}{12}$ with $b$ the beam (18 ft) and $L$ the
+  length (32 ft) — i.e. the printed expression is right only if you read its $b$ as the boat's *length* and its
+  $L$ as the boat's *width*, which is the opposite of the words in the question.
+- **How to handle:** this is the one to slow him down on. Make him name the axis **before** he picks an $I$,
+  and work it both ways so he sees that the verdict (stable) survives but the margin does not — 0.9 ft of
+  metacentric height on a loaded garbage barge is a very different vessel from 12.6 ft. Worth asking the
+  lecturer which was intended; the mark scheme will want the printed expression substituted literally.
+- **Severity:** ambiguity (undefined symbols) with a value consequence of 14×.
+
+### P31 · MEC 3104 EXAM (29 Oct 2025), Q1(g) — the columns headed RHS and LHS are printed the wrong way round
+- **Paper:** "Match the terms on the **RHS** with ONE corresponding term on the **LHS**, as used in Fluid
+  Theory. Note, if more than one match is given, the answer is marked as incorrect," *(6 marks)*. Below it, the
+  column headed **RHS** (Euler, Bourdon, Couette flow, Darcy-Weissberg) is printed on the **left-hand side** of
+  the page, and the column headed **LHS** (Coarseness, Weir, Pipe friction, Uniform velocity, Turbulence,
+  Pressure measurement) on the **right-hand side**.
+- **Issue:** the labels are swapped relative to the page. Every other matching question in this folder — 2024
+  CAT 1 Q1(c), 2024 CAT 2 Q1(a), 2025 CAT 1 Q4, 2025 CAT 2 Q3(1) — puts the names on the left and the fields on
+  the right and labels them accordingly. Anyone answering by position rather than by heading will still be
+  right; anyone following the headings literally writes their answer against the wrong column.
+- **Secondary:** the question gives four names against six fields but never says that two are distractors, and
+  6 marks over 4 pairs is 1.5 marks a pair. Do not conclude from the odd arithmetic that two names have been
+  lost off the page — the 2024 CAT 2 did the same thing with 9 marks over 6 pairs.
+- **How to handle:** tell him to answer by writing the pairs out in full ("Bourdon — pressure measurement")
+  rather than by column position or by drawing lines. That is immune to the swap.
+- **Severity:** structural (labels reversed).
+
+### P32 · MEC 3104 EXAM (29 Oct 2025), throughout — names, spelling and notation, collected
+- **Paper:** "**Darcy-Weissberg**" (Q1(g)) for **Darcy–Weisbach**; "Reynold's number" (Q5(d)(i)) for
+  **Reynolds**; "(1 **marks**)" twice (Q3(a)(ii), Q5(d)(ii)); "a **head flow** of 0.8 m" (Q4(c)) for a *head*;
+  "the circulation of a fluid **turning** around a cylinder … **is turning** counterclockwise" (Q1(f)), which
+  carries two main verbs and then calls the cylinder a "**column**" in the next sentence; and Figure 6 labels
+  the moving surface **U** where the question text calls its speed **v** (Q3(b)).
+- **Issue:** cosmetic, with one exception worth naming: **"Darcy-Weissberg" is not a searchable form of the
+  name.** A student revising from it finds nothing. It is Julius **Weisbach**.
+- **Correct form:** Darcy–Weisbach; Reynolds; (1 mark); "a head of 0.8 m"; and read Figure 6's $U$ as the
+  question's $v$.
+- **Severity:** notation (cosmetic), except the surname, which is worth correcting out loud.
+- **Related:** Reynolds misspelt on **P6** (2025 CAT 1), **P13** (2024 CAT 1) and **P29** (2025 CAT 2).
+
+### P33 · MEC 3104 EXAM (29 Oct 2025), Q2(c) — the jet-pump pressure change is printed with the subtraction reversed
+- **Paper:** "The change in pressure is given by:
+  $p_1 - p_2 = \rho\frac{d^2}{D^2}\frac{D^2-d^2}{D^2}(v_0-v_1)^2$", under Figure 5.
+- **Issue:** the right-hand side is a square multiplied by positive quantities, so it can never be negative. But
+  a jet pump **raises** the pressure between Section 1 and Section 2 — that is what it is for — so $p_2 > p_1$
+  and the printed left-hand side is negative. The **same expression, with the same figure**, is printed on the
+  2024 CAT 1 (Q4(a)) as "$P2 - p1 = \rho\ldots$". One of the two papers has the subtraction the wrong way
+  round, and it is this one.
+- **Correct form:** $p_2 - p_1 = \rho\dfrac{d^2}{D^2}\dfrac{D^2-d^2}{D^2}(v_0-v_1)^2$, matching
+  `07-momentum.md` §7.6 (·slides 280–282).
+- **Checked here (2026-09-03):** with ρ = 998 kg/m³, d = 6 cm, D = 20 cm, v₀ = 40 m/s and 3 m/s for the
+  annulus velocity, the right-hand side is **+111.9 kPa**. As a value of $p_1 - p_2$ that would mean the pump
+  drops the pressure by 112 kPa.
+- **How to handle:** have him quote the magnitude and then say in words which section is at the higher
+  pressure. That earns the mark either way and shows he knows what a jet pump does. Set the two papers side by
+  side — the same formula printed two ways, three semesters apart, is a good lesson in not trusting a printed
+  sign.
+- **Severity:** value (sign).
+
+### P34 · MEC 3104 EXAM (29 Oct 2025), Q2(c)(ii) — an exit velocity supplied for a formula that takes v₁
+- **Paper:** "Determine the change in pressure in a jet pump in which water (density 998 kg/m³) is flowing at
+  40 m/s through a 6-cm pipe and **exits the pump through a 20-cm pipe at 3 m/s**."
+- **Issue:** the supplied expression contains $(v_0 - v_1)^2$, where — per Figure 5 and `07-momentum` §7.6 —
+  $v_0$ is the jet velocity at the nozzle and $v_1$ is the velocity of the **surrounding stream at Section 1**,
+  in the annulus around the jet. "Exits the pump" names $v_2$, the mixed velocity at Section 2, which is a
+  different quantity and does not appear in the formula at all.
+- **Correct reading:** the 3 m/s has to be taken as $v_1$ for the question to be a 4-mark substitution. Read as
+  $v_2$, the printed formula cannot be used until $v_1$ is recovered from continuity, which is a longer
+  question than the marks allow.
+- **How to handle:** ask him which velocity the formula wants **before** he substitutes — the same discipline
+  P17 asks for on the 2024 Pitot question. Then have him say what he assumed. The 2024 CAT 1 version of this
+  question described the same quantity as "a larger pipe **whose flow rate is** 6.3 m/s" (**P9**), which was
+  wrong in a different way. Neither paper has yet named $v_1$ correctly.
+- **Severity:** ambiguity (a symbol identified by the wrong physical description).
+
+### P35 · MEC 3104 EXAM (29 Oct 2025), Q2(c)(i) — angular momentum inside a linear-momentum question
+- **Paper:** the stem reads "One of the applications of **conservation of momentum** is the jet pump …", the
+  supplied formula is the jet-pump pressure rise, and part (i) then asks: "State the law of conservation of
+  **angular** momentum *(2 marks)*".
+- **Issue:** the jet pump is a **linear** momentum problem — a control-volume force balance along the pipe
+  axis. Angular momentum plays no part in it, in the formula, or in Figure 5. As printed, part (i) either
+  belongs to a different question or should read "linear momentum".
+- **Correct form:** unresolved. It may be a deliberate free-standing recall item (the KB does teach angular
+  momentum, `07-momentum` §7.8, ·slides 286–288), or it may be a slip for "linear". The paper gives no way to
+  tell.
+- **How to handle:** answer it as printed — state conservation of angular momentum — and do **not** try to
+  connect it to the jet pump; there is no connection to find. Worth asking the lecturer which was intended.
+- **Severity:** ambiguity (a sub-part that does not follow from its own stem).
+
+### P36 · MEC 3104 EXAM (29 Oct 2025), Q3(a) — the velocity field does not satisfy continuity
+- **Paper:** "The flow velocity of a certain system is given by the following equation for a two dimensional
+  flow. $v = ky(x+y);\ u = -kx(x+y)$" — then: obtain the streamline equation (3 marks), and state whether the
+  flow is rotational or irrotational (1 mark).
+- **Checked here (2026-09-03, sympy):** $\dfrac{\partial u}{\partial x} + \dfrac{\partial v}{\partial y} =
+  -k(2x+y) + k(x+2y) = k(y-x)$, which vanishes only on the line $y = x$.
+- **Issue:** an incompressible two-dimensional flow must satisfy $\partial u/\partial x + \partial v/\partial y
+  = 0$ everywhere (`08-viscous-flow` §8.1, ·slides 304–307). This field does not, so it is not a physically
+  admissible incompressible flow — the paper calls it "the flow velocity of a certain system" when no such
+  system exists.
+- **Does it break the question?** No. Both parts are still answerable exactly as set: the streamline equation
+  follows from $dy/dx = v/u$ whatever the divergence is, and part (ii) is a direct evaluation of the printed
+  operator. Nothing is unanswerable; the physics behind it is simply not real.
+- **How to handle:** let him answer it as set for the marks, then ask him to test continuity on it as a
+  five-line extra. It is the cheapest way to make the continuity equation stick, and it teaches him that a
+  velocity field handed to him in an exam is not automatically a flow.
+- **Severity:** value (an unphysical data set), not omission — the question still works.
+
+### P37 · MEC 3104 EXAM (29 Oct 2025), Q1(d) and Q3(b) — sub-part labels that do not pair up
+- **Paper:** two places. **Q1(d)** prints "**ii)** Obtain the metacentre for the boat *(3 marks)*" and then, on
+  the next line and with no label of its own, "Indicate, with reason(s) whether the boat is stable Take I₀ =
+  b(L)³/12 *(2 marks)*" — two separately marked tasks under one roman numeral. **Q3(b)** prints an unlettered
+  descriptive part ("briefly describe the theory of lubrication …", 3 marks) and then a part labelled "**ii)**"
+  with no "i)" anywhere above it.
+- **Issue:** cataloguing. A reader tallying parts by label undercounts Q1(d) and cannot place Q3(b)(ii).
+- **How to handle:** cite them as this KB does — Q1(d)(ii) for the metacentre and Q1(d)(ii) *continued* for the
+  stability mark; Q3(b) for the description and Q3(b)(ii) for the viscosity calculation. Say which scheme you
+  are using whenever you quote a part number back to him.
+- **Severity:** structural (cataloguing). No effect on the physics or on the marks total, which still reaches
+  30 and 15 respectively.
+
+### P38 · MEC 3104 EXAM (29 Oct 2025), Q3(b)(ii) — γ = 53.7 with no units
+- **Paper:** "Take: $(p_1-p_2)/\gamma = 32\mu Lv/\gamma d^2$; **γ = 53.7**; 1 ft = 12 in."
+- **Issue:** a bare number. γ is a specific weight, and in the imperial system this question is set in it is
+  **lb/ft³**. Without the unit the student cannot tell whether to convert the 30.0 psi to lb/ft² before
+  dividing (he must: 30.0 psi × 144 = 4320 lb/ft²).
+- **Checked here (2026-09-03):** the oil's stated specific gravity is 0.860, so
+  $\gamma = 0.860 \times 62.4 = 53.66\ \text{lb/ft}^3$. The printed **value is right; only its unit is
+  missing** — and, incidentally, it is redundant, since the SG already gives it.
+- **How to handle:** write "γ = 53.7 lb/ft³" onto his copy. Then note that γ cancels from both sides of the
+  printed relation anyway, so it is needed only to convert the pressure drop into a head.
+- **Not an error — the data is sound:** checked here, $v = Q/A = 0.0436/0.0218 = 2.00$ ft/s, and the resulting
+  Reynolds number is **≈ 296**, so the question's own "assume laminar flow" is consistent with its own numbers
+  and the viscosity that falls out is an ordinary lubricating-oil value.
+- **Severity:** notation (missing unit).
+- **Related:** **P1**, where the 2025 CAT 1 printed a specific weight with an impossible unit rather than none.
+
+### P39 · MEC 3104 EXAM (29 Oct 2025), Q3(c) — a head loss with no unit, and no length for the capillary
+- **Paper:** "Take the loss of head (h_f) to be equal to **0.32**" and "Take $h_f = 128\mu LQ/\pi\rho gd^4$",
+  with Figure 7 dimensioning 0.1 m, 0.22 m and 0.08 m and marking the tube $d_1 = 1$ mm.
+- **Issue:** two omissions. (i) 0.32 carries no unit. (ii) The supplied formula needs **L**, the length of the
+  capillary tube, and the figure never dimensions it — it dimensions the two water surfaces and the tank floors
+  instead.
+- **Checked here (2026-09-03):** 0.1 m + 0.22 m = **0.32 m** — the figure's own surface-to-surface elevation
+  difference is exactly the printed h_f, which settles the unit as metres. The tube length is **not** settled:
+  reading it from tank A's floor to the tube's open lower end gives 0.22 + 0.08 = 0.30 m, but reading it to
+  tank B's free surface gives 0.22 m, and the two differ by 36 % in the answer.
+- **How to handle:** give him the unit (metres — and show him where it comes from, because the figure proving
+  it is a nice piece of reasoning). Then make him **state** which length he is taking for L before he
+  substitutes. Do not resolve L for him silently; the drawing genuinely does not say.
+- **Severity:** omission (missing unit + a quantity the printed formula requires and the figure does not give).
+
+### P40 · MEC 3104 EXAM (29 Oct 2025), Q4(c) — "Take the value of C to be 1.69"
+- **Paper:** part (b) asks him to show that $Q = \frac{2}{3}C\,b\sqrt{2g}\,H^{3/2}$, defining **C** as "the
+  coefficient of discharge of a weir". Part (c) then says: "A sharp crested rectangular weir 0.8 m wide carries
+  water at a head flow of 0.8 m. Calculate the volumetric flow rate. **Take the value of C to be 1.69**".
+- **Issue:** 1.69 is the **dimensional** SI constant of the engineering weir formula $Q = 1.69\,b\,H^{3/2}$
+  (units m^½/s), in which the $\frac{2}{3}\sqrt{2g}$ and the discharge coefficient are **already multiplied
+  in**. A dimensionless coefficient of discharge for a sharp-crested weir is about **0.62**. Substituting 1.69
+  into the part-(b) formula applies $\frac{2}{3}\sqrt{2g}$ twice.
+- **Checked here (2026-09-03):** the part-(b) formula with C = 1.69 gives **2.857 m³/s**; $Q = 1.69bH^{3/2}$
+  gives **0.967 m³/s**. The ratio is **2.953**, which is exactly $\frac{2}{3}\sqrt{2g}$ at g = 9.81 — the group
+  that has been counted twice.
+- **Correct form:** either $Q = \frac{2}{3}\,C_d\,b\sqrt{2g}\,H^{3/2}$ with $C_d \approx 0.62$, or
+  $Q = 1.69\,b\,H^{3/2}$ — not the two combined.
+- **How to handle:** work it both ways and say which is which. The mark scheme will want 1.69 substituted
+  straight into part (b)'s formula, exactly as the 2024 CAT 1 wanted 3.2 substituted into its integral.
+- **Severity:** value (a dimensional constant presented as a dimensionless coefficient).
+- **Related:** **P11** — the identical defect on the 2024 CAT 1 with the imperial constant 3.2. **Two papers,
+  the same weir, the same mistake in two unit systems.** This is now a pattern, not an accident: whenever this
+  examiner writes "coefficient of discharge", check its dimensions before substituting.
+
+### P41 · MEC 3104 EXAM (29 Oct 2025), Question Five heading — no mark allocation printed
+- **Paper:** the heading reads "**Question Five**" and nothing else. Question One is headed "(30 marks)",
+  Questions Two, Three and Four "(15 marks)" each.
+- **Issue:** the reader has no printed figure to check Question Five's parts against. Its parts do sum to 15
+  (2+2+2+3+2+1+3), which matches the other optional questions, but that is an inference, not something the
+  paper states. **No overall total is printed on the paper either**, so this is the one question in the folder
+  whose marks cannot be reconciled against anything printed — hence `marks_reconcile: false` on
+  `MEC3104-EXAM-2025-10-29.md`, even though Questions One to Four reconcile exactly.
+- **How to handle:** mark Question Five out of 15 in a mock and say that you are doing so. If he ever sits a
+  paper where a question heading has no total, the safest move is to answer every part and flag it to the
+  invigilator.
+- **Severity:** omission (paper defect).
+
+### P42 · MEC 3104 EXAM (29 Oct 2025), page 3 — a stray section heading above item (h)
+- **Paper:** page 3 opens with a centred line, "**One dimensional fluid flows**", set above item **h.** of
+  Question One and belonging to no question. It is not numbered, carries no marks, and nothing on the paper
+  refers to it.
+- **Issue:** it reads like a section title left in from whatever document the questions were assembled from.
+  A candidate could reasonably take it as an instruction — "assume one-dimensional flow" — for everything that
+  follows, which would be a different paper. Item (h) is the Pitot question and the two questions after it are
+  not one-dimensional in any useful sense.
+- **How to handle:** ignore it, and say so out loud the first time he reads the page, so that he does not
+  spend exam minutes trying to work out what it governs.
+- **Severity:** structural (stray text).
+
 <!-- Later papers append their own P-numbered entries above this line. -->
 
 ---

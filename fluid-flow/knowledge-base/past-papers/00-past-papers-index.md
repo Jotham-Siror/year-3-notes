@@ -2,10 +2,11 @@
 kb: "MEC 3104 Fluid Theory"
 file_role: past-papers-index
 purpose: "Register of every CAT / exam / assignment paper transcribed into this KB, plus the house format for adding the next one."
-papers: 2
-total_questions: 14
+papers: 5
+total_questions: 25
+total_parts: 78
 unit_codes: ["MEC 3104", "SCE 3104"]
-unit_code_note: "the same course has been examined under both codes — SCE 3104 for the 2024 cohort (School of Computing and Engineering Sciences), MEC 3104 for 2025. Treat papers under either code as the same syllabus."
+unit_code_note: "the same course has been examined under both codes — SCE 3104 for the 2024 cohort CAT 1, MEC 3104 for the 2024 CAT 2 and for 2025. Treat papers under either code as the same syllabus. ⚠ AND: the 2024 THERMODYNAMICS papers are ALSO printed MEC 3104 (see ../../../thermodynamics/knowledge-base/past-papers/). One code, two different units, same academic year. Match a paper by unit NAME, never by code alone."
 status_legend: "unsolved = questions only · partial = some model solutions worked & verified · solved = all verified"
 ---
 
@@ -30,43 +31,89 @@ status_legend: "unsolved = questions only · partial = some model solutions work
 |---|---|---|---|---|---|
 | MEC 3104 **CAT 1** | 19 Aug 2025 | 40 | 10 | `unsolved` | [`MEC3104-CAT1-2025-08-19.md`](MEC3104-CAT1-2025-08-19.md) |
 | SCE 3104 **CAT 1** | 14 Aug 2024 | 40 | 4 (11 parts) | `unsolved` | [`SCE3104-CAT1-2024-08-14.md`](SCE3104-CAT1-2024-08-14.md) |
+| MEC 3104 **CAT 2** | 9 Oct 2024 | 40 ✓ | 3 (10 parts) | `unsolved` | [`MEC3104-CAT2-2024-10-09.md`](MEC3104-CAT2-2024-10-09.md) |
+| MEC 3104 **CAT 2** | 7 Oct 2025 | 40 ✓ | 3 (15 parts) | `unsolved` | [`MEC3104-CAT2-2025-10-07.md`](MEC3104-CAT2-2025-10-07.md) |
+| MEC 3104 **End of Semester** | 29 Oct 2025 | 90 printed / 60 sat | 5 (32 parts) | `unsolved` | [`MEC3104-EXAM-2025-10-29.md`](MEC3104-EXAM-2025-10-29.md) |
 
-Errata IDs are allocated across the whole folder, not per paper: **P1–P6** belong to the 2025 CAT, **P7–P13** to
-the 2024 CAT. The next paper starts at P14.
+Errata IDs are allocated across the whole folder, not per paper: **P1–P6** and **P14–P15** belong to the 2025
+CAT 1, **P7–P13** to the 2024 CAT 1, **P16–P22** to the 2024 CAT 2, **P23–P29** to the 2025 CAT 2, **P30–P42**
+to the 2025 end-of-semester paper. The next paper starts at **P43**.
 
 ## Topic coverage so far
 
 | KB section | Questions that have appeared |
 |---|---|
 | `02-history` | 2024 Q1a (hydraulics vs hydrodynamics), Q1b (which came first) |
-| `03-fluid-properties` | 2025 Q1 (dimensional homogeneity), Q4 (compressibility / bulk modulus) |
-| `04-fluid-statics` | 2025 Q2 (buoyancy derivation), Q3 (floating body), Q4 (manometer, metacentre, relative equilibrium), Q5 (force + centre of pressure on an inclined gate) · 2024 Q1c (inclined manometer), Q1d (three characteristics of pressure) |
-| `05-flow-fundamentals` | 2025 Q6 (streamlines, Lagrangian), Q7 (Re symbols), Q8a, Q9 (vorticity), Q10 (flow rate) · 2024 Q1c (steady flow, continuity, vortices), Q1e (define streamline), Q2a |
-| `06-energy-bernoulli` | 2025 Q4 (Bernoulli → headloss) · 2024 Q3a (derive Bernoulli from Euler), Q3b (Venturi), Q4b (weir) |
-| `07-momentum` | 2024 Q4a (jet pump) |
-| `08-viscous-flow` | 2025 Q8 (Re, laminar/turbulent) · 2024 Q2 (Re from ν and Q) |
-| `10-open-channel-flow` | 2024 Q4b (weir discharge by integration) |
-| `11-drag-and-lift` | 2025 Q4 (Stokes) · 2024 Q1c (constant descending velocity → terminal velocity) |
+| `03-fluid-properties` | 2025 CAT 1 Q1 (dimensional homogeneity), Q4 (compressibility / bulk modulus) · **2025 exam Q1(a), Q1(b)** |
+| `04-fluid-statics` | 2025 CAT 1 Q2, Q3, Q4, Q5 · 2024 CAT 1 Q1c, Q1d · **2025 exam Q1(c), Q1(d), Q1(g)** (metacentric height on an 18 × 32 ft pontoon) |
+| ❌ **absent from the KB** | **2025 CAT 2 Q2(5)** — "the wall effect", 2 marks. Zero hits across all eleven topic files, the formula sheet and the nomenclature |
+| `05-flow-fundamentals` | 2025 Q6 (streamlines, Lagrangian), Q7 (Re symbols), Q8a, Q9 (vorticity), Q10 (flow rate) · 2024 CAT 1 Q1c (steady flow, continuity, vortices), Q1e (define streamline), Q2a · **2024 CAT 2 Q1a** (matching six scientists to their fields) · **2025 CAT 2 Q1(3)(b)(i)** · **2025 exam Q1(e), Q1(f), Q2(b), Q2(d), Q3(a), Q5(d)(i)** |
+| `06-energy-bernoulli` | 2025 Q4 (Bernoulli → headloss) · 2024 CAT 1 Q3a (derive Bernoulli from Euler), Q3b (Venturi), Q4b (weir) · **2024 CAT 2 Q1b** (Pitot tube) · **2025 CAT 2 Q1(1), Q3(1)** · **2025 exam Q1(h), Q4(a)–(d)** (Pitot again, and Bernoulli with a head-loss reservoir) |
+| `07-momentum` | 2024 CAT 1 Q4a (jet pump) · **2025 exam Q2(c)** (the jet pump returns — same figure, subtraction reversed) |
+| `08-viscous-flow` | 2025 Q8 (Re, laminar/turbulent) · 2024 CAT 1 Q2 (Re from ν and Q) · **2024 CAT 2 Q2a**, **Q2c(ii)** · **2025 CAT 2 Q1(3)(b)(i)–(ii)** · **2025 exam Q3(b), Q3(c), Q5(d)(ii)** |
+| `09-pipe-flow` | **2024 CAT 2 Q2b** (pipe branch vs junction), **Q2c(i)** (symbols of Darcy–Weisbach and Hagen–Poiseuille), **Q2c(ii)** (laminar friction factor), **Q2c(iii)** (head loss, 2 km of 200 mm wrought iron at 60 L/s) · **2025 CAT 2 Q1(2), Q1(3)(a), Q1(3)(b)(iii)** · **2025 exam Q2(a), Q5(d)(iii)** |
+| `10-open-channel-flow` | 2024 CAT 1 Q4b (weir discharge by integration) · **2024 CAT 2 Q3a** (Manning) · **2025 CAT 2 Q2 — the whole question** (hydraulic jump, subcritical flow, specific energy) · **2025 exam Q4(a), Q4(c), Q5(a)–(c)** |
+| `11-drag-and-lift` | 2025 Q4 (Stokes) · 2024 CAT 1 Q1c (constant descending velocity → terminal velocity) · **2024 CAT 2 Q3b** (flat-plate drag) · **2025 CAT 2 Q3** (the whole question) |
 
-**Not yet examined in either paper: `09-pipe-flow` — and here is what that section actually is.**
+**The `09-pipe-flow` gap is closed, and it stayed closed.**
 
-In plain terms, pipe flow is *what it costs to push a fluid through a pipe*. Real pipes rub on the fluid, so
-pressure is lost along the way, and more is lost at every bend, valve, sudden widening or narrowing. The
-section teaches you to calculate that loss and size the pump needed to overcome it. Its three tools are the
-**Darcy–Weisbach equation** (head lost to friction, h_f = λ·(l/d)·v²/2g), the **Moody chart** (which gives the
-friction factor λ from the Reynolds number and how rough the pipe is), and **minor-loss coefficients** (a K or
-ζ value for each fitting). Slides 387–478.
+For two papers `09-pipe-flow` was the one large section nobody had tested: 92 slides, the biggest in the
+course, and untouched by either CAT 1. The **2024 CAT 2** examined it end to end (14 of 40 marks). The
+**2025 CAT 2** did it again — 9 of 40 — and the 2025 exam adds 6 more. Worth saying to him plainly: this was
+predicted here before it happened, and it has now happened three papers running. **Pipe flow is CAT 2
+territory** specifically: it takes 9 of the 2025 CAT 2's 40 marks but only 6 of the exam's 90.
 
-Two reasons this gap matters. First, it is the **largest section in the course** — 92 slides, more than any
-other. Second, it is the most practically useful: sizing a pump and predicting a pressure drop is the everyday
-job of a mechanical engineer working with fluids. So it is heavily taught and, so far, untested.
+**What the five papers weight differently:**
 
-Say this plainly rather than as a prediction: two papers is a small sample, not a pattern. But a large,
-heavily-weighted section that has not yet been examined is exactly the kind of thing that turns up next.
+| Paper | Centre of gravity |
+|---|---|
+| 2025 CAT 1 | **statics** — buoyancy, centre of pressure, metacentre |
+| 2024 CAT 1 | **energy and momentum** — Euler → Bernoulli, Venturi, jet pump, weir |
+| 2024 CAT 2 | **pipe flow and applied substitution** — every numerical part hands him the formula |
+| 2025 CAT 2 | **open-channel flow** — the whole of Question Two: hydraulic jump, subcritical flow, specific energy |
+| 2025 exam | **broad** — the only paper that reaches all nine topic files, and the only one that opens on `03-fluid-properties` |
 
-**What the two papers weight differently:** 2025 is statics-heavy (buoyancy, centre of pressure, metacentre);
-2024 is energy/momentum-heavy (Euler → Bernoulli, Venturi, jet pump, weir). Both open with definitions and a
-matching question, and both carry a Reynolds-number calculation — those three are the safest bets.
+**CAT 2 is not a smaller CAT 1.** Both CAT 1s are broad and definition-led. Both CAT 2s are narrow and
+heavy: three questions, every numerical part supplied with its formula, and a centre of gravity in the back
+half of the course (pipe flow, open channels, drag). If he is revising for a CAT 2 specifically, drill
+formula-substitution and the last three topic files, not definitions.
+
+---
+
+## ⚠ Recurrence across the five papers
+
+This is the most useful section in the file. Everything below is a repeat, not a resemblance.
+
+| What repeats | Where |
+|---|---|
+| **"Define the term: Weir" *(2 marks)*, word for word** | 2025 CAT 2 Q1(1) **and** 2025 exam Q4(a) — **22 days apart** |
+| **The jet pump** — same pasted figure, same formula | 2024 CAT 1 Q4(a) → 2025 exam Q2(c), but with the subtraction **reversed** (P33) |
+| **The Pitot tube** | 2024 CAT 2 Q1(b) → 2025 exam Q1(h) — and the 2025 printing **repairs both** of the 2024 defects (P16, P17) |
+| **The weir discharge coefficient** | P11's imperial `C = 3.2` reappears as `C = 1.69`, its exact SI twin — same weir, same mistake, two unit systems |
+| **"Distinguish two pipe fittings" *(3 marks)*** | third paper running |
+
+Two papers is a small sample; five is a pattern worth acting on. **A definitions-or-matching opener, a
+Reynolds-number calculation, and the weir turn up in nearly every paper.** Those three are the safest bets
+he has.
+
+---
+
+## ⚠ Check the arithmetic and the units before setting any of these
+
+Four of the five papers reconcile. The **2025 end-of-semester paper does not**: Questions One to Four sum
+exactly to their printed headings (30/15/15/15), but **Question Five prints no allocation at all** and no
+grand total appears anywhere. Its parts sum to 15 by inference only.
+
+**And the unit slips are systematic.** The 2024 CAT 2 mixes inches, feet and SI inside forty marks. The 2025
+CAT 2 prints "Take **f = 0.00026 m**" — that is the absolute *roughness* of new cast iron, not a friction
+factor, and a friction factor cannot carry metres; taking it literally makes the head loss **88× too small**
+(P24, computed here). The 2025 exam prints `I₀ = b(L)³/12` with neither symbol defined and no heel axis
+stated, which on the question's own dimensions gives a metacentric height **14× out** (P30). Both are the
+most serious defect on their paper, and both are the kind a student cannot catch without knowing the physics
+first.
+
+**Twenty of the folder's forty-two errata belong to the two 2025 papers.** Check every paper's arithmetic
+and every supplied constant before setting it as a timed mock.
 
 ---
 
