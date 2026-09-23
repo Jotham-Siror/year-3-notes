@@ -1,32 +1,39 @@
 ---
 kb: "Electromagnetic Fields — EEE3202"
 file_role: nomenclature
-purpose: "Every symbol used in the handouts with meaning and SI units. Resolves symbol clashes. Consult this when a topic file's notation is ambiguous."
-scope: "Sections marked CURRENT are covered by a current-cohort handout. Sections marked PENDING are carried over from the old cohort and await this year's handout."
+purpose: "Every symbol used in the course material with meaning and SI units. Resolves symbol clashes. Consult this when a topic file's notation is ambiguous."
+scope: "Sections marked CURRENT are covered by a current-cohort document (WC1, TL or TLT). Sections marked PENDING are carried over from the old cohort and await this year's equivalent."
 ---
 
 # Nomenclature and symbols
 
 ## ⚠ Symbol clashes and look-alikes — read first
 
-This subject is unusually bad for symbol collisions, and **the handout itself makes one of them**.
-Flag these explicitly when teaching.
+This subject is unusually bad for symbol collisions, and **the sources themselves make several of
+them**. Flag these explicitly when teaching.
 
 | Symbol | Meaning | Clash / warning |
 |---|---|---|
 | **$\sigma$** | **conductivity** (S/m, formerly mho/m) | ⚠ **WC1 repeatedly prints $\sigma$ where it means $\alpha$** — pp. 9, 10 and 16, six equations. See `_verification-log.md` V9, V12, V14, V15, V19. Where an equation has $\sigma$ on *both* sides, the left-hand one is $\alpha$ |
 | **$\alpha$** | **attenuation constant** (Np/m) | the victim of the collision above. Multiply by 8.686 to convert Np/m → dB/m |
 | **$\beta$** | **phase constant** / phase-shift constant (rad/m) | always the phase constant in this subject; also mislabelled as $\alpha$ in the old-cohort handouts |
-| **$\gamma$** | **propagation constant** $= \alpha + j\beta$ (m⁻¹) | not the ratio of specific heats (that is Thermodynamics) |
+| **$\gamma$** | **propagation constant** $= \alpha + j\beta$ (m⁻¹) | ⚠ **two different formulas, same symbol.** In WC1 it is a *medium* property, $\sqrt{j\mu\omega(\sigma+j\omega\varepsilon)}$; in TL/TLT it is a *line* property, $\sqrt{(R+j\omega L)(G+j\omega C)}$. Same meaning, different sources — do not mix the formulas. Not the ratio of specific heats (that is Thermodynamics) |
 | **$\eta$** | **intrinsic impedance** $\sqrt{\mu/\varepsilon}$ (Ω); $\eta^*$ = complex $\eta$ in a lossy medium | not efficiency. ⚠ WC1 p11 writes the impedance angle as $\theta_n$; the subscript is $\eta$, not the letter n |
+| **$Z_0$** vs **$\eta_0$** | $Z_0$ = a **line's** characteristic impedance; $\eta_0$ = **free space's** intrinsic impedance | ⚠ **both are called "impedance" and both take subscript zero, and they are unrelated.** $Z_0$ varies by cable (50, 75, 300 Ω); $\eta_0$ is fixed at 377 Ω |
+| **$C$** vs **$c$** | $C$ = **capacitance per unit length** (F/m) in TL/TLT; $c$ = **speed of light** | ⚠ **·TL pp. 3–4 print the capacitance as lowercase $c$** inside $(G+j\omega c)$, four times (C32). Rule: inside a $(G+j\omega\,\cdot)$ bracket it is always capacitance |
+| **$\Gamma$** | **reflection coefficient** | ⚠ **two formulas.** At a *material boundary* (old cohort): $(\eta_2-\eta_1)/(\eta_2+\eta_1)$. On a *transmission line* (TL/TLT): $(Z_L-Z_0)/(Z_L+Z_0)$. Structurally identical, physically different — pick by whether the problem is a wave crossing a medium or a wave reaching a load |
+| **$z$** vs **$z_L$, $z_N$** | $z$ = **position** along the line (m) | ⚠ on the Smith chart pages lowercase $z$ means a **normalized impedance** (dimensionless), not a distance. TLT writes $z_N$ for the same thing |
+| **$S$** | **standing wave ratio** in TL/TLT (dimensionless) | not the Poynting vector, which is $P$ in this KB's old-cohort files but $S$ in most textbooks |
+| **$T$** | **transmission coefficient** (boundary) *or* **period** (energy section) | two unrelated uses already in this file. Neither is used in TL/TLT |
 | **$\mu$** | **permeability** (H/m) | also the SI prefix **micro** ($10^{-6}$) — "μA/m" is microamps per metre. Watch context |
 | **$\varepsilon$** | **permittivity** (F/m); $\varepsilon^*$ = complex permittivity | $\varepsilon_0$ = free-space value |
 | **$\rho_v$** vs **$\rho_s$** | $\rho_v$ = **volume** charge density (C/m³) — the one used throughout | $\rho_s$ = *surface* charge density (C/m²). ⚠ WC1 p3 prints $\rho_s$ where $\rho_v$ is meant (V6) |
 | **$\delta$** | **skin depth / depth of penetration** (m) | not a boundary-layer thickness (that is Fluid Flow) |
-| **$\theta$** | **loss-tangent angle**, $\tan\theta = \sigma/\omega\varepsilon$ | distinguish from $\theta_\eta$, the impedance angle, which is *half* the arctangent |
+| **$\theta$** | **loss-tangent angle**, $\tan\theta = \sigma/\omega\varepsilon$ | distinguish from $\theta_\eta$, the impedance angle, which is *half* the arctangent; and from $\theta_r$, the phase of $\Gamma$ in TL/TLT |
 | **$k$** vs **$\beta$** | $k = \omega\sqrt{\mu\varepsilon}$ is the **wave number** in a lossless medium | in a lossless medium $k$ and $\beta$ coincide; in a lossy one they do not |
 | **$\mathbf{a}$** vs **$\alpha$** | $\mathbf{a}_x, \mathbf{a}_y, \mathbf{a}_z$ = **unit vectors** | visually close to $\alpha$ in the handout's font |
-| **$J$** | current density (A/m²) — $J_c$ conduction, $J_{disp}$ displacement | not to be confused with $j = \sqrt{-1}$ |
+| **$J$** | current density (A/m²) — $J_c$ conduction, $J_{disp}$ displacement | not to be confused with $j = \sqrt{-1}$; and ⚠ ·TL p7 switches from $j$ to $i$ for the imaginary unit mid-equation (C34) |
+| **superscripts $^{+}$ / $^{-}$** | forward- / backward-travelling wave amplitude | ⚠ **·TL prints $V_0^{+}$ where $V_0^{-}$ belongs three times** (T5, T6, T7), each time collapsing the expression to something trivial. Check the superscript against which direction the term travels |
 
 ---
 
@@ -60,7 +67,7 @@ Flag these explicitly when teaching.
 
 | Symbol | Quantity | SI unit | Notes |
 |---|---|---|---|
-| $\gamma$ | propagation constant $= \alpha + j\beta$ | m⁻¹ | $\gamma^2 = j\mu\omega(\sigma + j\omega\varepsilon)$ |
+| $\gamma$ | propagation constant $= \alpha + j\beta$ | m⁻¹ | $\gamma^2 = j\mu\omega(\sigma + j\omega\varepsilon)$ **in a medium** |
 | $\alpha$ | attenuation constant | Np/m | ×8.686 → dB/m |
 | $\beta$ | phase constant | rad/m | $\lambda = 2\pi/\beta$ |
 | $k$ | wave number $= \omega\sqrt{\mu\varepsilon}$ | rad/m | lossless media |
@@ -76,24 +83,59 @@ Flag these explicitly when teaching.
 | $\delta$ | skin depth $= 1/\alpha$ | m | — |
 | $f$, $g$ | forward / backward travelling-wave profiles (d'Alembert) | field units | $f(z-vt)$, $g(z+vt)$ |
 
-## Vectors and operators — CURRENT
+## Transmission lines — CURRENT
 
-| Symbol | Meaning |
-|---|---|
-| $\mathbf{a}_x, \mathbf{a}_y, \mathbf{a}_z$ | unit vectors along $x$, $y$, $z$ |
-| $\nabla \times$ | curl |
-| $\nabla \cdot$ | divergence |
-| $\nabla^2$ | Laplacian ⚠ **WC1 p5 omits the squares — see V2** |
-| $j$ | imaginary unit $\sqrt{-1}$; $\sqrt{j} = (1+j)/\sqrt{2}$; $e^{j\pi/4} = (1+j)/\sqrt{2}$ |
-| $\bar{A}$ | the dummy vector of the identity $\nabla \times \nabla \times \bar{A} = \nabla(\nabla\cdot\bar{A}) - \nabla^2\bar{A}$ — **not a field**. ⚠ WC1 leaves it in three boxed results that should read $\bar{H}$ (V5) |
+*Covered by TL and TLT. See `02-transmission-lines.md`.*
+
+### The four primary line constants — all **per unit length**
+
+| Symbol | Quantity | SI unit | Represents |
+|---|---|---|---|
+| $R$ | series resistance per unit length | Ω/m | conductor ohmic loss |
+| $L$ | series inductance per unit length | H/m | magnetic energy storage |
+| $G$ | shunt conductance per unit length | S/m | dielectric leakage |
+| $C$ | shunt capacitance per unit length | F/m | dielectric energy storage |
+
+> These four are a recurring **4-mark bookwork question** — asked on the 1 Oct 2025 CAT (Q1a) and
+> again on the 23 Oct 2025 exam (Q1g). The marks are for the *significance*, not the names.
+
+### Line and wave quantities
+
+| Symbol | Quantity | SI unit | Notes |
+|---|---|---|---|
+| $\Delta z$, $\Delta\ell$ | length of the elementary line cell | m | must satisfy $\Delta\ell \ll \lambda$ |
+| $v(z,t)$, $i(z,t)$ | instantaneous line voltage and current | V, A | lowercase = time domain |
+| $V(z)$, $I(z)$ | phasor line voltage and current | V, A | uppercase = phasor |
+| $V_0^{+}$, $V_0^{-}$ | forward / backward voltage wave amplitudes | V | ⚠ see the superscript warning above |
+| $I_0^{+}$, $I_0^{-}$ | forward / backward current wave amplitudes | A | — |
+| $u_p$ | phase velocity along the line | m/s | $u_p = 1/\sqrt{LC}$ |
+| $\gamma$ | propagation constant **of the line** | m⁻¹ | $\sqrt{(R+j\omega L)(G+j\omega C)}$ |
+| $\alpha$, $\beta$ | attenuation and phase constants | Np/m, rad/m | lossless: $\alpha = 0$, $\beta = \omega\sqrt{LC}$ |
+| $Z_0$ | **characteristic impedance** of the line | Ω | $\sqrt{(R+j\omega L)/(G+j\omega C)}$; lossless $\sqrt{L/C}$. Common: 50, 75, 300 Ω |
+| $Z_L$ | load impedance terminating the line | Ω | — |
+| $Z_{in}(-z)$ | input impedance seen from distance $z$ **back from the load** | Ω | the argument is negative because $z$ is measured from the load |
+| $z_L$, $z_N$ | **normalized** impedance $Z_L/Z_0$ | – | dimensionless; Smith chart only. Centre of chart is $1+j0$ |
+
+### Reflection and standing waves
+
+| Symbol | Quantity | SI unit | Notes |
+|---|---|---|---|
+| $\Gamma$ | voltage reflection coefficient | – | $(Z_L-Z_0)/(Z_L+Z_0)$. $0 \le \lvert\Gamma\rvert \le 1$ for a passive load |
+| $\theta_r$ | phase angle of $\Gamma$ | rad or ° | $\Gamma = \lvert\Gamma\rvert e^{j\theta_r}$ |
+| $S$, VSWR, SWR | voltage standing wave ratio | – | $(1+\lvert\Gamma\rvert)/(1-\lvert\Gamma\rvert)$; $S=1$ matched, $S\to\infty$ total reflection |
+| RL | return loss | dB | $-20\log_{10}\lvert\Gamma\rvert$; $\infty$ when matched |
+| $z_{max}$, $z_{min}$ | positions of voltage maxima / minima | m | max-to-max is $\lambda/2$; max-to-adjacent-min is $\lambda/4$. ⚠ ·TL p9 labels the minimum $z_{max}$ (T10) |
+| $d_{min}$ | distance from the load to the **first** voltage minimum | m | the slotted-line input that fixes $\theta_r$ |
+| $X$ | reactance — imaginary part of a stub's input impedance | Ω | $+$ inductive, $-$ capacitive |
+| $\ell$ | physical line length | m or λ | exam answers usually want it in wavelengths |
 
 ---
 
 ## Energy and power — PENDING
 
-*No current-cohort handout covers the Poynting vector yet. These symbols come from the old-cohort
+*No current-cohort document covers the Poynting vector yet. These symbols come from the old-cohort
 material in `_reference-old-cohort/05-poynting-vector.md` and are listed so notation stays
-consistent when this year's handout arrives.*
+consistent when this year's equivalent arrives.*
 
 | Symbol | Quantity | SI unit |
 |---|---|---|
@@ -105,7 +147,13 @@ consistent when this year's handout arrives.*
 
 ## Boundary and reflection — PENDING
 
-*From `_reference-old-cohort/07-reflection-transmission.md`. Awaiting this year's handout.*
+*From `_reference-old-cohort/07-reflection-transmission.md`. Awaiting this year's equivalent.*
+
+> ⚠ **$\Gamma$ now has two live meanings in this knowledge base.** Below it is a wave crossing a
+> **material boundary**, written in intrinsic impedances $\eta$. In `02-transmission-lines.md` it is
+> a wave reaching a **load on a line**, written in $Z_L$ and $Z_0$. The algebra is the same shape;
+> the quantities are not. The transmission-line one is CURRENT and examinable; this one is still
+> pending its handout.
 
 | Symbol | Quantity | SI unit |
 |---|---|---|

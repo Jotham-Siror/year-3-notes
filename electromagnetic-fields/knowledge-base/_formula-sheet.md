@@ -1,8 +1,8 @@
 ---
 kb: "Electromagnetic Fields — EEE3202"
 file_role: formula-sheet
-purpose: "Every key equation from the current-cohort handouts in one place, each tagged to its source page. All forms given here are the CORRECTED forms; where the handout prints something different, the flag ID is noted."
-scope: "WC1 only. Extend as further handouts arrive."
+purpose: "Every key equation from the current-cohort material in one place, each tagged to its source page. All forms given here are the CORRECTED forms; where the handout prints something different, the flag ID is noted."
+scope: "WC1 (§1-8), TL and TLT (§9-13). Extend as further material arrives."
 ---
 
 # Formula sheet — Electromagnetic Fields (EEE3202)
@@ -178,6 +178,153 @@ rises.
 
 ---
 
+## 9 · Transmission lines — the RLGC model
+
+*Source: TL and TLT. See `02-transmission-lines.md`. Every form below is the **corrected** form; a ⚠
+marks one where a source prints something different.*
+
+**The four primary line constants** — all **per unit length** ·TL p1 · ·TLT pp. 3–4
+
+| $R$ (Ω/m) | $L$ (H/m) | $G$ (S/m) | $C$ (F/m) |
+|---|---|---|---|
+| conductor ohmic loss | magnetic energy storage | dielectric leakage | dielectric energy storage |
+
+**Telegrapher's equations** ·TL pp. 1–2 ⚠ T1, T2 (printed with $\partial/\partial t$ on the left) · ·TLT p7
+
+$$-\frac{\partial v}{\partial z} = R\,i + L\frac{\partial i}{\partial t} \qquad\qquad -\frac{\partial i}{\partial z} = G\,v + C\frac{\partial v}{\partial t}$$
+
+**Lossy wave equation** ·TLT p8
+
+$$\frac{\partial^2 V}{\partial z^2} = LC\frac{\partial^2 V}{\partial t^2} + (LG+RC)\frac{\partial V}{\partial t} + RG\,V$$
+
+Identical in form for $I$ — so identical solutions.
+
+**Lossless wave equation and phase velocity** ·TL pp. 2–3 · ·TLT p10
+
+$$\frac{\partial^2 v}{\partial z^2} = LC\frac{\partial^2 v}{\partial t^2} = \frac{1}{u_p^2}\frac{\partial^2 v}{\partial t^2} \qquad\qquad u_p = \frac{1}{\sqrt{LC}}$$
+
+**d'Alembert solution** ·TL p3
+
+$$v(z,t) = V^{+}\!\left(t - \frac{z}{u_p}\right) + V^{-}\!\left(t + \frac{z}{u_p}\right)$$
+
+---
+
+## 10 · Line propagation constant and characteristic impedance
+
+**Propagation constant** ·TL p4 ⚠ T3 (eqs 8, 9 printed with $-j\omega L$, $-j\omega C$) · ·TLT p12, p16
+
+$$\gamma = \sqrt{(R+j\omega L)(G+j\omega C)} = \sqrt{RG + j\omega(LG+RC) - \omega^2 LC} = \alpha + j\beta$$
+
+The two radicands are the same expression multiplied out. **Lossless case:**
+
+$$\alpha = 0 \qquad\qquad \beta = \omega\sqrt{LC} = \frac{2\pi}{\lambda} \qquad\qquad \gamma = j\beta$$
+
+> ⚠ **Do not confuse with WC1's $\gamma$.** WC1 § 5 gives
+> $\gamma^2 = j\mu\omega(\sigma+j\omega\varepsilon)$ — a property of the **medium**. This one is a
+> property of the **line**. Same symbol, same meaning, different formula.
+
+**Characteristic impedance** ·TLT p15
+
+$$Z_0 = \frac{V_0^{+}}{I_0^{+}} = \sqrt{\frac{R+j\omega L}{G+j\omega C}} \qquad\qquad \text{lossless:}\quad Z_0 = \sqrt{\frac{L}{C}} \quad\text{(purely real)}$$
+
+$$Z_0 = \frac{\text{forward voltage}}{\text{forward current}} = -\,\frac{\text{backward voltage}}{\text{backward current}}$$
+
+**Travelling-wave solution** ·TLT p13 ⚠ T4 (backward term printed $e^{j\gamma}$)
+
+$$V(z) = V_0^{+}e^{-\gamma z} + V_0^{-}e^{+\gamma z} \qquad\qquad I(z) = I_0^{+}e^{-\gamma z} + I_0^{-}e^{+\gamma z}$$
+
+$e^{-\gamma z}$ travels in $+z$; $e^{+\gamma z}$ travels in $-z$.
+
+---
+
+## 11 · Reflection, standing waves and VSWR
+
+**Reflection coefficient** ·TL p5 ⚠ T5, T6, T7 · ·TLT p17
+
+$$\Gamma = \frac{V_0^{-}}{V_0^{+}} = \frac{Z_L-Z_0}{Z_L+Z_0} = |\Gamma|e^{j\theta_r} \qquad\qquad V_{ref} = \Gamma V_{in}$$
+
+$$Z_L = Z_0\,\frac{1+\Gamma}{1-\Gamma} \quad \text{[added — the inverted form, needed for every slotted-line problem]}$$
+
+| Termination | $Z_L$ | $\Gamma$ |
+|---|---|---|
+| Matched | $Z_0$ | $0$ — no reflection, no standing wave |
+| Open circuit | $\infty$ | $+1$ |
+| Short circuit | $0$ | $-1$ |
+
+For a passive load on a lossless line, $0 \le |\Gamma| \le 1$.
+
+**Standing-wave magnitude** ·TL p7 ⚠ T8, T9 (brackets and square root both missing) · ·TL p11 *(correct there)*
+
+$$|V(z)| = |V_0^{+}|\left[1 + |\Gamma|^2 + 2|\Gamma|\cos(2\beta z + \theta_r)\right]^{1/2}$$
+
+**Positions of maxima and minima** ·TL p9 ⚠ T10 (minimum labelled $-z_{max}$)
+
+$$-z_{max} = \frac{\theta_r\lambda}{4\pi} + \frac{n\lambda}{2} \qquad\qquad -z_{min} = \frac{\theta_r\lambda}{4\pi} + \frac{(2n+1)\lambda}{4}$$
+
+Max-to-max $= \lambda/2$. Min-to-min $= \lambda/2$. **Max to adjacent min $= \lambda/4$** ⚠ C25.
+Voltage maxima coincide with current minima.
+
+**VSWR and return loss** ·TL p9 · ·TLT p17
+
+$$S = \frac{|V|_{max}}{|V|_{min}} = \frac{1+|\Gamma|}{1-|\Gamma|} \qquad\qquad |\Gamma| = \frac{S-1}{S+1}\ \text{[added]} \qquad\qquad \text{RL} = -20\log_{10}|\Gamma|\ \text{dB}$$
+
+$\Gamma$, $S$ and RL are three expressions of the same thing — given any one, you have the others.
+
+**Slotted-line inversion** [added] — the step neither source writes, needed by both its exercises
+
+$$|\Gamma| = \frac{S-1}{S+1} \;;\quad \lambda = 2\times(\text{minimum spacing}) \;;\quad \theta_r = 2\beta d_{min} - \pi \;;\quad Z_L = Z_0\frac{1+\Gamma}{1-\Gamma}$$
+
+---
+
+## 12 · Line impedance, stubs and matching
+
+**Input impedance at distance $z$ back from the load** ·TL p12
+
+$$Z_{in}(-z) = Z_0\,\frac{Z_L\cos\beta z + jZ_0\sin\beta z}{Z_0\cos\beta z + jZ_L\sin\beta z} = Z_0\,\frac{Z_L + jZ_0\tan\beta z}{Z_0 + jZ_L\tan\beta z}\ \text{[added form]}$$
+
+This one equation is the parent of everything below — each case is a particular $Z_L$ or $z$.
+
+**Stubs** ·TL pp. 12–14 ⚠ C26
+
+$$\text{short-circuit } (Z_L = 0):\quad Z_{in} = jZ_0\tan\beta z \qquad\qquad \text{open-circuit } (Z_L \to \infty):\quad Z_{in} = -jZ_0\cot\beta z$$
+
+Both are **purely reactive**. Which half gives which reactance **depends on the termination**:
+
+| Length | Shorted stub | Open stub |
+|---|---|---|
+| $0 \to \lambda/4$ | **inductive** ($X: 0 \to +\infty$) | **capacitive** |
+| $\lambda/4 \to \lambda/2$ | **capacitive** ($X: -\infty \to 0$) | **inductive** |
+
+The pattern repeats every $\lambda/2$.
+
+**Quarter-wave transformer** ·TL pp. 14–15 ⚠ T11 ($\beta z$ printed as $\lambda/2$)
+
+$$z = \frac{\lambda}{4} \;\Longrightarrow\; \beta z = \frac{\pi}{2} \;\Longrightarrow\; \boxed{Z_{in} = \frac{Z_0^2}{Z_L}} \qquad\qquad \boxed{Z_0 = \sqrt{Z_{in}Z_L}}\ \text{[added — the design form]}$$
+
+The section's characteristic impedance is the **geometric mean** of the two impedances it matches.
+
+---
+
+## 13 · The Smith chart
+
+·TLT pp. 18–22. **The only source for this in the repository. ·TLT p20 is a full blank chart — print it.**
+
+**Normalize first, always:**
+
+$$z_L = \frac{Z_L}{Z_0} \qquad\text{(dimensionless; the chart centre is } 1+j0\text{)}$$
+
+**Procedure** ·TLT p19, p21:
+
+1. Plot $z_L$.
+2. Draw the circle through it centred on $1+j0$ — the constant-$|\Gamma|$ (constant-VSWR) circle.
+   Every impedance along the line lies on it.
+3. Move round that circle **toward the generator**; read the distance off the *wavelengths toward
+   generator* perimeter scale.
+
+The chart also reads off $\Gamma$ (magnitude and angle), VSWR, return loss and power delivered.
+
+---
+
 ## Quick numerical anchors
 
 | Quantity | Value |
@@ -187,6 +334,9 @@ rises.
 | $\mu_0$ | $4\pi\times10^{-7}$ H/m |
 | $\varepsilon_0$ | $\dfrac{10^{-9}}{36\pi} = 8.854\times10^{-12}$ F/m |
 | $\alpha$ conversion | Np/m × 8.686 = dB/m |
+| $Z_0$ common values | 50 Ω (RF/coax), 75 Ω (video/aerial), 300 Ω (twin-lead / folded dipole) |
+| dipole input impedance | 73 Ω (half-wave, the value both TL and TLT use) |
+| $S = 1$ | perfectly matched; $\Gamma = 0$; RL $= \infty$ |
 
 ---
 
