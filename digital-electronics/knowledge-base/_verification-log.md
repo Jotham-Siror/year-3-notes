@@ -1440,3 +1440,165 @@ Three clashes surfaced by this log and worth an entry in the clash table:
    and throughout the ADC half (C05-5, C06-6).
 3. **The noise margins.** $NM_L$/$NM_H$ on CH2 slide 12 and $V_{NL}$/$V_{NH}$ on slide 13, for the
    same two quantities (C02-1).
+
+---
+
+## Exam papers
+
+Defects in the actual assessment papers (not the chapter decks). Entry IDs are `P1`, `P2`, …
+allocated continuously across the whole `past-papers/` folder, and referenced by a `⚠ VERIFY` marker
+at the matching question in `past-papers/<paper>.md`. Per standing instruction the full entry lives
+**here only** — the paper file just points to it. These are kept deliberately separate from the
+`V`/`C` numbering above, which catalogues defects in the lecturer's slides.
+
+> ⚠ **This section does not start at P1.** `P1`–`P3` belong to the **CAT 1 of 6 August 2024** and
+> predate this section: they were written into `past-papers/BEE3102-CAT1-2024-08-06.md` itself, under
+> its own "Errata" heading, before the folder-wide convention existed. They have **not** been moved,
+> and they carry no entry here. This series is therefore not a complete list of every exam defect in
+> the subject — for the 2024 CAT 1, read that file.
+
+**Allocation:** `P1`–`P3` = CAT 1, 6 Aug 2024 *(in that paper's own file)* · `P4`–`P7` = CAT 2,
+25 Aug 2024 · `P8`–`P14` = End of Semester, 28 Oct 2024 · `P15`–`P17` = CAT 1, 14 Aug 2025 ·
+`P18`–`P21` = End of Semester, 3 Nov 2025. **Next paper starts at `P22`.**
+
+**A note on recurrence.** Four of the entries below (`P14`, `P16`, `P19`, `P20`) record the *same*
+defect reappearing on a *later* paper, unfixed. The question bank is plainly being reused without
+re-typesetting. When a defect is met on one paper, check whether it also sits on the others.
+
+### P4 · CAT 2 (25 Aug 2024), whole paper — printed part-marks sum to 29, header says 30 ★
+- **Paper:** the header reads "**(30 Marks)**". The printed allocations are Q1 (½, 1, ½, 2, 1, ½, 5½, 3), Q2 (8) and Q3 (7).
+- **Issue:** those sum to $14 + 8 + 7 = \mathbf{29}$. One mark is unaccounted for on a 30-mark CAT. Recomputed in Python in exact fractions, 2026 — the halves are not a rounding artefact.
+- **Two readings, and the page does not choose between them:** either a part has lost its allocation in typesetting, or the header is simply wrong. **Question 3 is the suspect** — it prints a single "(7 Marks)" against the question stem and gives parts (a), (b) and (c) **no individual marks at all**, where Question 1 itemises all eight of its parts. Three parts sharing 7 marks does not divide evenly either.
+- **Nothing is cropped:** both photographs are complete, the sheets are consecutive, and Table 1 runs continuously from the foot of page 1 to the top of page 2.
+- **How to handle:** if setting this as a timed mock, mark it out of 29 and say so, or scale to 30 and say so. **Do not invent a missing part.** Worth raising with the lecturer.
+- **Severity:** structural (marks). Affects grading, not what is taught.
+
+### P5 · CAT 2 (25 Aug 2024), Q2 and Table 1 — the initial state is named S0 but the table has no S0
+- **Paper:** "State **S0** is the initial state, and the circuit enters state **S0** after the fourth input." Table 1's first row is Input Pattern "-", Present State "**S1**", and its fifteen states run **S1 … S15**.
+- **Issue:** there is no S0 anywhere in Table 1, and no S16 either — the reset state *is* S1. A candidate following the prose looks for a state that does not exist; a candidate following the table has to silently reinterpret the prose. The reduction in part (ii) turns on which state is the reset, because every leaf row returns to it.
+- **Correct form:** either rename the table's S1 to S0 and shift every index down, or change the prose to "State **S1** is the initial state, and the circuit enters state S1 after the fourth input." The second is the smaller edit and matches the table as printed.
+- **How to handle:** work from the **table**. It is internally consistent — fifteen states, one reset, eight leaves, all returning to S1. Say plainly that the prose is wrong.
+- **Severity:** structural (naming). No effect on the reduction if the table is trusted; considerable effect on a candidate who trusts the prose.
+- **Recurs:** the identical table with the identical prose is reprinted as Table 1 of the **End of Semester of 3 Nov 2025**, Q2(a) — see **P20**.
+
+### P6 · CAT 2 (25 Aug 2024), Q1 and Figure 1 — no initial state marked on the state diagram
+- **Paper:** Figure 1 draws four Moore states $S_0/0$, $S_1/0$, $S_2/0$, $S_3/1$ with eight arcs. There is **no reset arrow, no double circle and no "start" label** on any of them.
+- **Issue:** parts (ii) and (iii) ask which sequence is detected and what the case of detection is. Both answers are read from the path that ends in the output-1 state **starting from the reset state**. With no reset marked, the candidate has to assume one.
+- **Correct form:** mark $S_0$ with an incoming reset arrow. ($S_0$ is the only state the numbering, the left-to-right layout and the "hold on 0" self-loop all point to, and it is the convention every worked machine in `09-state-reduction-and-assignment.md` uses — but that is an inference, not something the figure says.)
+- **How to handle:** state the assumption explicitly in the answer. The diagram is otherwise complete and deterministic — every state carries exactly one 0-arc and one 1-arc, checked arc by arc.
+- **Severity:** omission. Low impact, because only one reading is sensible; worth a sentence in any model answer.
+
+### P7 · CAT 2 (25 Aug 2024) — cosmetic: no rubric printed, and the letterhead omits "SCIENCE IN"
+- **Paper:** the sheet carries **no instruction line at all** — no "Answer ALL questions", no time-per-question guidance, nothing between the "CAT 2 · 1 Hr 20 Min · 25th August, 2024" rule and Question 1. The two End of Semester papers in this folder both print a three-point Instructions block.
+- **Paper:** the letterhead reads "BACHELOR OF ELECTRICAL AND ELECTRONICS ENGINEERING", omitting "SCIENCE IN".
+- **Correct form:** *Bachelor of Science in Electrical and Electronics Engineering*. The same omission is on all four papers transcribed in this batch, and the Thermodynamics log records it on that subject's 2024 papers too — it is a departmental letterhead, not a one-off slip.
+- **How to handle:** with three questions and every part marked, "answer all" is the only reading. Assume it, and say so when setting the paper as a mock.
+- **Severity:** cosmetic.
+
+### P8 · End of Semester (28 Oct 2024), Q1(d) and Figure 2 — the state-01 self-loop asserts the output ★
+- **Paper:** Figure 2 (the four-state diagram on page 2) labels the self-loop on state **01** as "**1/1**". Q1(d) asks: "What is the sequence detected by the sequence detector in figure 2?"
+- **Issue:** the machine, coded up and simulated in Python (2026), differs from the canonical **overlapping 1001 Mealy detector** — under the same 00/01/10/11 encoding — in **exactly one** of its eight edges, and that edge is this self-loop. All seven others match, next state *and* output. As printed, the machine asserts $Z = 1$ on the suffixes **11, 011, 111, 0011, 0111, 1001, 1011 and 1111** — that is, on any input 1 arriving while the low state bit is 1. **It is therefore not a detector for one sequence, and the question as asked has no single correct answer.**
+- **Correct form:** the self-loop is `1/0`. With that one change the machine is exactly the overlapping 1001 detector: $00 \xrightarrow{1/0} 01 \xrightarrow{0/0} 10 \xrightarrow{0/0} 11 \xrightarrow{1/1} 01$, with $01 \xrightarrow{1/0} 01$, $10 \xrightarrow{1/0} 01$ and $11 \xrightarrow{0/0} 00$.
+- **How to handle:** teach the corrected machine, answer "**1001**, overlapping", and say plainly that the figure as printed also fires on 11. **Then point at Question 3(a) of the same paper**, which asks the candidate to design an overlapping 1001 detector from scratch for 15 marks — the corrected Figure 2 *is* the answer to Q3(a)(i). Whether that was intended is unknowable; that it is true is worth knowing before a mock.
+- **Severity:** value. The most serious defect on this paper.
+- **Recurs:** the identical figure, defect included, is reprinted as **Figure 3** of the End of Semester of 3 Nov 2025, Q1(g) — see **P19**.
+
+### P9 · End of Semester (28 Oct 2024) — two different figures are both captioned "Figure 2"
+- **Paper:** page 2 captions a **four-state** Mealy diagram "*Figure 2*"; page 3 captions a completely different **seven-state** Mealy diagram "*Figure 2*" as well. Q1(d) says "the sequence detector in figure 2"; Q4(a) says "state diagram in Figure 2".
+- **Issue:** the two questions mean different figures, and nothing on the page says so. A candidate answering Q4(a) — "reduce the number of states" — could reasonably open the four-state diagram, which has nothing worth reducing, and lose 8 marks.
+- **Correct form:** the page-3 diagram should be **Figure 3**.
+- **How to handle:** the seven-state diagram is printed immediately below Q4(a) on the same page, so context resolves it. This knowledge base disambiguates them as `q1d-figure2-p2` and `q4a-figure2-p3` and never writes bare "Figure 2" for this paper.
+- **Severity:** cataloguing (figure numbering).
+
+### P10 · End of Semester (28 Oct 2024), Q1(h)(iii) — "Combinational Box" is not an ASM element
+- **Paper:** "Illustrate with block diagrams and discuss the following terms as used in Algorithmic State Machines … **iii. Combinational Box** *(2 Marks)*".
+- **Issue:** an ASM chart has **three** elements and none of them is a "combinational box". They are the **state box**, the **decision box** and the **conditional output box** — parts (i) and (ii) name the first two correctly, so the third is a slip for the third.
+- **Correct form:** *Conditional output box*. `10-algorithmic-state-machines.md` §10.2 is titled "The three elements of an ASM chart" and names all three; ·CH6 slides 4–8 draw them.
+- **How to handle:** answer the conditional output box, and say the paper's term is wrong. **On the student's own copy the printed words are struck through in blue ink and "Conditional Box" written underneath** — almost certainly copied from an invigilator's announcement during the sitting, which suggests the department knew. That annotation is *his*, not the paper's; do not quote it as printed text.
+- **Severity:** value (terminology). 2 marks depend on knowing which box is meant.
+
+### P11 · End of Semester (28 Oct 2024), Q2 — the third part is lettered "i)" instead of "c)"
+- **Paper:** Question Two runs "**a)** Realize a PROM … **b)** Design a 4-bit DAC … **i)** Draw a clearly labelled schematic diagram for a 2 input CMOS NAND gate."
+- **Issue:** the letter sequence breaks. Parts (a) and (b) have no roman sub-parts, so "i)" cannot be a sub-part of anything; it is the question's third top-level part.
+- **Correct form:** **c)**.
+- **How to handle:** treat it as part (c). This knowledge base writes it as "Q2(i)" so the paper can still be quoted exactly, and says what it should be at the question.
+- **Severity:** structural (labelling). No effect on the physics.
+
+### P12 · End of Semester (28 Oct 2024), Q2(b) — the DAC question prints no resistor values
+- **Paper:** "Design a 4-bit DAC using binary-weighted resistors and calculate the output voltage for an input code of 1101, given that the reference voltage is 5V. *(6 Marks)*"
+- **Issue:** a binary-weighted DAC's output is $V_{\text{out}} = -R_f \sum_i V_i / R_i$. The reference voltage alone does not determine it — **the question supplies neither an input resistor value nor the feedback resistor**, so $V_{\text{out}}$ cannot be computed as printed. The design half of the question is answerable; the "calculate" half is not.
+- **Correct form:** any $R_f$ and MSB resistor. On the student's copy "**MSB = 1kΩ**" and "**Rf = 1kΩ**" are written in blue ink in the right margin — again, almost certainly an invigilator's announcement. **Those values are not printed on the paper** and must never be presented as given data.
+- **How to handle:** answer symbolically — derive $V_{\text{out}} = -(R_f/R_{\text{MSB}}) \times V_{\text{REF}} \times D/8$ for $D = 13$, then substitute whatever values the marker supplies. State that the paper omits them. If the pencilled 1 kΩ / 1 kΩ is used, say where it came from.
+- **Severity:** omission. Half of a 6-mark question is unanswerable as set.
+
+### P13 · End of Semester (28 Oct 2024), Q1(b) and Figure 1 — circuit 1b shorts Q₄'s base to its own emitter
+- **Paper:** in Figure 1's right-hand circuit (1b), the wire leaving $Q_4$'s base runs right, down, then left and lands on the **same vertical conductor** that carries $Q_3$'s and $Q_4$'s emitters, $Q_2$'s collector, $Q_5$'s base and the top of $R_4$. Junction dots are printed at both ends of that conductor.
+- **Issue:** as drawn, $Q_4$'s base is tied to $Q_4$'s own emitter, so $V_{BE} = 0$ and the device can never conduct. **$Q_4$ is inert**, and the circuit reduces to $Q_1$/$Q_2$ into a single follower $Q_3$ and an output inverter $Q_5$ — which makes the truth table the question asks for depend on a device the drawing has disabled.
+- **Not a photograph artefact.** The figure is printed **twice** in this folder — here and as Figure 1 of the **CAT 1 of 14 August 2025** — and both printings show the junction identically, at every magnification checked.
+- **A second, related observation on the same figure:** in **both** sub-circuits the output stage has **no collector pull-up**. $Q_4$ (in 1a) and $Q_5$ (in 1b) each have their emitter on the ground rail and their collector wired straight to the Output terminal, with nothing tying that terminal to $V_{CC}$. The LOW output level is defined; the HIGH level is not. That is consistent with an open-collector gate, but nothing on the figure says so.
+- **Correct form:** unknown. Two readings are possible — the base wire is meant to reach some other node, or one printed junction is meant to be a crossing — and the drawing does not choose. **NOT RESOLVED. Do not silently redraw it.**
+- **How to handle:** answer the truth table from the input stage and the pull-down path, and state that the figure disables $Q_4$ as drawn. Ask the lecturer. Note also that circuit 1b is **not** one of the four families whose circuits the decks draw (diode logic, RTL, DTL, TTL — `02-digital-logic-families.md` §11–§14) and is not the CMOS pair of §15, so naming it may fall on the **ECL / plain PMOS-NMOS** row of the gap map in `00-index.md`. **No identification is asserted anywhere in this knowledge base.**
+- **Severity:** structural (topology) plus ambiguity.
+
+### P14 · End of Semester (28 Oct 2024), Q1(e) — the 9.99 V BCD full scale, reprinted from the 2024 CAT 1
+- **Paper:** "A 16-bit Digital-to-Analog Converter (DAC) using a Binary Coded Decimal (BCD) input code has a full-scale output of **9.99V**… for an input code of 0110100101010111."
+- **Issue:** this is **CAT 1 of 6 August 2024, Question 5, reprinted word for word and digit for digit** — and the defect in it is already logged, as **P1 inside `past-papers/BEE3102-CAT1-2024-08-06.md`**. 16 bits of BCD is four digits, maximum code 9999; a 9.99 V full scale gives a step of $9.99/9999 = 0.999$ mV, where 9.999 V gives exactly 1.000 mV. 9.99 V is the correct full scale for the **three**-digit converter on ·CH4 slide 37, which the question appears to be adapted from.
+- **Effect:** about 6 mV on the final answer. The percentage resolution is 0.01 % either way.
+- **How to handle:** answer as printed, note the discrepancy, and read P1 in the CAT 1 file for the full arithmetic — it is not repeated here. **Also note the wider point:** two questions on this paper (Q1(e) and Q1(g)) are the 2024 CAT 1 verbatim, and Q2(a)'s first minterm list is that CAT's Q4 first function. Work the CAT 1 answers before this paper.
+- **Severity:** cataloguing (a known defect reprinted unfixed). The underlying value defect is P1's.
+
+### P15 · CAT 1 (14 Aug 2025), Q3 — one "percentage resolution" for a converter addressed in two codings ★
+- **Paper:** "A **12-bit** Digital-to-Analog Converter (DAC) has a full-scale output of 5V. Calculate; **a.** The percentage resolution *(1 Mark)* **b.** The output voltage for an input **BCD** code of 001110010001 *(1½ Mark)* **c.** Determine the output voltage for an input **octal** code of 725 *(1½ Mark)*".
+- **Issue (two, compounding):**
+  1. Part (a) asks for *the* percentage resolution before any coding is named, and parts (b) and (c) then address the same converter in **two different codings**. 12 bits of BCD is three decimal digits, maximum code 999; 12 bits of octal is four octal digits, maximum $7777_8 = 4095$. Those are different full-scale codes and therefore **different resolutions and different step sizes** — $5/999$ V against $5/4095$ V. Nothing on the paper says which (a) means, and there is no binary reading offered.
+  2. $725_8$ is **three** octal digits — nine bits. A 12-bit octal-coded converter holds four. Whether the code should be padded to $0725_8$ (giving 469 of 4095) or read as a three-digit converter in its own right is not stated.
+- **Correct form:** state the coding in part (a), and print the octal code with all four digits.
+- **How to handle:** answer (a) for **both** codings, say so, and pad the octal code to $0725_8$ with the assumption written down. The KB's transfer relation is `06-digital-to-analogue-conversion.md` §6.2 and its resolution treatment §6.3; the deck's own BCD example on ·CH4 slide 37 is itself defective (**V06-4**, **V06-6**, **V06-7**), so do not revise this from the slide.
+- **Severity:** ambiguity. The most serious defect on this paper.
+- **Recurs:** reprinted word for word as **Q1(b)** of the End of Semester of 3 Nov 2025, remarked 1 / 2 / 2.
+
+### P16 · CAT 1 (14 Aug 2025), Q6 — the "Xm(a,b,c)" typo, reprinted a year later
+- **Paper:** "$W(a,b,c) = \sum m(0,1,3,5,7)$, $\;\mathbf{Xm}(a,b,c) = \sum m(0,2,4,5)$, $\;Y(a,b,c) = \sum m(1,2,4,7)$, $\;Z(a,b,c) = \sum m(0,3,5,6,7)$".
+- **Issue:** the output is named $X$, in sequence with $W$, $Y$ and $Z$; the $m$ has migrated from the $\sum m$ that follows. This is **CAT 1 of 6 August 2024, Question 4, reprinted word for word — typo included** — and that occurrence is already logged as **P2 inside `past-papers/BEE3102-CAT1-2024-08-06.md`**.
+- **Correct form:** $X(a,b,c) = \sum m(0,2,4,5)$.
+- **How to handle:** read it as $X$ and move on. **The reason this is logged separately is the recurrence, not the typo:** a cosmetic slip surviving verbatim into a second cohort a year later is direct evidence that the question bank is reused without re-typesetting. Treat every question on the 2024 papers as a live candidate for the next one.
+- **Severity:** cataloguing. The underlying cosmetic defect is P2's.
+
+### P17 · CAT 1 (14 Aug 2025) — cosmetic slips
+- **"(30 arks)"** — the mark total in the top right of the header, missing the M of "Marks".
+- **"Sampling , Quantization"** (Q1) — a space before the comma.
+- **"R = R_f = 10 k"** (Q8) — the ohm is omitted from both values. The reference voltage on the same line carries its unit.
+- **"Find V_o if S₀ and S₁ is 1 and S₃, S₂, are all 0."** (Q8) — "is" for "are", a stray comma after $S_2$, and "all" of two items.
+- **Letterhead** — "BACHELOR OF ELECTRICAL AND ELECTRONICS ENGINEERING", omitting "SCIENCE IN"; see P7.
+- **Severity:** cosmetic. None of these changes an answer. Logged as one entry per the folder convention, not one each.
+
+### P18 · End of Semester (3 Nov 2025), Q2(b) and Figure 4 — the DAC's input lines carry no bit labels ★
+- **Paper:** Figure 4 draws a four-branch binary-weighted-input DAC with **120 kΩ, 60 kΩ, 30 kΩ and 15 kΩ** (top to bottom) into an inverting summing amplifier with $R_f = 10\ \text{k}\Omega$. Each branch begins at a **bare open circle**. Q2(b) then asks for $V_{\text{out}}$ for the binary inputs **1101** and **1010**.
+- **Issue:** there is **no $D_0 \ldots D_3$, no MSB, no LSB, no A/B/C/D** on the figure, and the question text never says which line carries which bit. The code 1101 cannot be applied to the network without inventing the mapping. Reading it the wrong way round turns 1101 into 1011 and changes the answer.
+- **Correct form:** label the branches. The resistor values are a clean $8 : 4 : 2 : 1$ ratio, so the **15 kΩ** branch carries eight times the current of the 120 kΩ branch and is the MSB *by construction* — but the figure does not say so, and it is drawn at the **bottom**, opposite to the usual MSB-at-top convention, which is exactly the trap.
+- **How to handle:** state the assumption (15 kΩ = MSB, 120 kΩ = LSB) in the first line of the answer and work it through. Note that this is the **only** thing separating the question from `06-digital-to-analogue-conversion.md` §6.5, which is otherwise a complete treatment.
+- **Severity:** omission. The most serious defect on this paper.
+
+### P19 · End of Semester (3 Nov 2025), Q1(g) and Figure 3 — the defective self-loop, reprinted
+- **Paper:** Figure 3 is the four-state Mealy diagram of the **28 October 2024 exam's Figure 2**, redrawn identically — including the **1/1 self-loop on state 01**. Q1(g) asks the same question ("What is the sequence detected by the sequence detector in figure 3?"), remarked 3 → 2.
+- **Issue and correct form:** see **P8**. The self-loop should be `1/0`; as printed the machine also fires on 11 and the question has no single answer. Both printings were compared arc by arc; they are identical.
+- **How to handle:** as P8. Answer the corrected overlapping 1001 detector and say plainly that both printings are wrong.
+- **Severity:** value (a known defect reprinted unfixed). The underlying entry is P8's.
+
+### P20 · End of Semester (3 Nov 2025), Q2(a) and Table 1 — the S0 / S1 mismatch, reprinted
+- **Paper:** "State **S0** is the initial state, and the circuit enters state **S0** after the fourth input", above a Table 1 whose fifteen states run **S1 … S15**. Identical, row for row, to Table 1 of the CAT 2 of 25 August 2024.
+- **Issue and correct form:** see **P5**. Work from the table.
+- **One thing did change, and it is worth noting.** The CAT 2 stem read "A state table, table 1, was constructed **as a Mealy table** using a sufficient number of states…"; here those three words are removed, and a new part (i) asks "Does the resulting table specify a Mealy or a Moore circuit? *(1 Mark)*". The same table has been re-cut into a three-part question and the answer to (i) was previously printed in the stem. Any tutor setting the CAT 2 version as practice should delete those three words first.
+- **Severity:** structural (naming), reprinted unfixed. The underlying entry is P5's.
+
+### P21 · End of Semester (3 Nov 2025) — cosmetic slips
+- **"and is circuit is to be designed using J-K flip-flops"** (Q3(a) stem) — "is" for "its".
+- **"Simply the flip-flop input equations and the output logic using K-Maps"** (Q5(a)(vi)) — "Simply" for "Simplify".
+- **"Figure 6 show a state diagram of a Moore Machine."** (Q4(a)) — "show" for "shows".
+- **"(2 Mark)"** twice in Q1(b) — singular where two marks are awarded.
+- **"Find V_o if S₀ and S₁ is 1 and S₃, S₂, are 0's."** (Q1(d)) — as P17, with "are 0's" replacing "are all 0"; the rest of the sentence is identical to the 14 Aug 2025 CAT's Q8.
+- **Letterhead** — "BACHELOR OF ELECTRICAL AND ELECTRONICS ENGINEERING", omitting "SCIENCE IN"; see P7.
+- **One structural oddity, not an error:** the Q3(a) stem states that the circuit uses three flip-flops, and part (i) then asks the candidate to determine how many are required. The answer is in the question. Worth a mark to the alert candidate, so it is noted rather than corrected.
+- **Severity:** cosmetic. None of these changes an answer.
+
+<!-- Later papers append their own P-numbered entries above this line. -->

@@ -3,11 +3,11 @@ kb: "Digital Electronics — BEE 3102"
 lecturer: "withheld"
 file_role: index
 unit_title: "Digital Electronics II"
-subject_status: "six chapter decks indexed in full; one lab indexed; one past paper transcribed and worked; taught unit"
+subject_status: "six chapter decks indexed in full; one lab indexed; five past papers transcribed (one worked); taught unit"
 visibility: "tracked; labs/ and its study guide excluded deliberately — see the lab register"
 topics: 10
 labs: 1
-past_papers: 1
+past_papers: 5
 figures: 158        # on disk. 144 are PUBLISHED — the 14 in labs/figures/ are excluded from the repo (see below)
 verification_flags: 81
 errata: 3
@@ -66,7 +66,7 @@ then open the file you need rather than going back to the raw PDFs.
 |---|---|
 | Lecture notes | **six chapter decks, 348 slides, indexed in full** as ten topic files |
 | Labs | 1, indexed in full — `labs/lab-01-ttl-nand-nor.md` (held locally, not published) |
-| Past papers | **1** — CAT 1, 6 Aug 2024, transcribed and fully worked: `past-papers/` |
+| Past papers | **5** — 2024 CAT 1 (solved) + 2024 CAT 2, 2024 exam, 2025 CAT 1, 2025 exam (transcribed, unsolved): `past-papers/` |
 | Unit code | **BEE 3102**; the decks' footers title the unit *Digital Electronics II* |
 | Verification log | **`_verification-log.md`** — 81 defects: 36 substantive, 45 cosmetic |
 | Nomenclature | **`_nomenclature.md`** — every symbol, with a two-tier clash table |
