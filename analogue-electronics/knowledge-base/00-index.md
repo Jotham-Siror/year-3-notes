@@ -369,13 +369,44 @@ This is the most valuable thing two independent sources buy. Full table in the l
 - **Nothing was invented.** Three pages need a screenshot and are named above; every other gap is
   recorded rather than filled.
 
-## No past papers yet
+## Past papers — four, transcribed
 
-There is no `past-papers/` folder for this unit. When a CAT or exam arrives, transcribe it into
-`past-papers/` **inside this knowledge base** — see `../../docs/kb-format.md` § Folder layout —
-following the pattern in `../../fluid-flow/knowledge-base/past-papers/`, work the
-solutions, and add a past-paper register here. **The mark distribution should then replace the triage
-table above**, which currently rests on the sources' own weighting alone.
+`past-papers/` now holds four papers, transcribed verbatim, `status: unsolved`. Start at
+[`past-papers/00-past-papers-index.md`](past-papers/00-past-papers-index.md).
+
+| Paper | Date | Marks | File |
+|---|---|---|---|
+| **CAT** | 17 Sep 2024 | 40 ✓ | `past-papers/BEE3106-CAT-2024-09-17.md` |
+| **End of Semester** | 22 Oct 2024 | 90 printed / 60 sat | `past-papers/BEE3106-EXAM-2024-10-22.md` |
+| **CAT** | 9 Sep 2025 | 40 ✓ | `past-papers/BEE3106-CAT-2025-09-09.md` |
+| **End of Semester** | 21 Oct 2025 | 90 printed / 60 sat | `past-papers/BEE3106-EXAM-2025-10-21.md` |
+
+**⚠ The papers are printed BEE 3106, not BEE 3103.** This index and `CLAUDE.md` both use BEE 3103. Same
+unit; the code on the paper is what the file names use. Logged as erratum **P1**.
+
+### What the real mark distribution says — and it does not match the triage table
+
+**Now that four papers exist, the weighting above should be read against them rather than against the
+sources' own page counts.** Three findings:
+
+1. **`15`, `16` and `17` carry the exams** — fabrication and ICs, h-parameters and BJT amplifiers, and
+   multistage/feedback/frequency response take roughly half of every end-of-semester paper between them.
+2. **`02-resistors-and-dc-network-theorems` has never been worth a single mark** across all four papers.
+3. **The CATs and the exams test different material.** Both CATs stay in diodes, transistors and
+   fabrication; the exams reach much further. Revising for a CAT and revising for the final are different
+   jobs in this unit.
+
+### ⚠ Two-thirds of the 2024 exam is not in the course lecture notes
+
+Nothing on these papers is absent from this knowledge base — but **59 of the 2024 exam's 90 marks (66 %)**,
+and **43 of the 2025 exam's 90 (48 %)**, sit on material carried only by the tier-2 lesson documents and
+tier-3 decks, not by the 100-page tier-1 course notes. Teach it from tier 2 and 3 without apology, but say
+which tier it comes from — he will not find it in the notes he was handed.
+
+### ⚠ The 2025 CAT is the 2024 CAT, verbatim
+
+All eight items, all forty marks, word for word. Five of those items reappear on the 2024 exam;
+Czochralski and ion implantation appear on both exams. Detail in the past-papers index.
 
 ---
 

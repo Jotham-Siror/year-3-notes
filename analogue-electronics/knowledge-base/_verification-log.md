@@ -3072,4 +3072,367 @@ running:
 
 ---
 
+## Exam papers
+
+Defects found in the **examination and CAT papers** transcribed into `past-papers/`. This section was
+opened when the first four papers were filed; it did not exist before them.
+
+**How the IDs work.** They are `P`-numbered, they run **consecutively across the whole
+`past-papers/` folder** and not per paper, and they are allocated in the order the papers were filed
+(chronologically by sitting date). A question that carries a defect shows only a
+`⚠ VERIFY *(short description — erratum PN)*` pointer in its paper file; **the full entry lives here and
+nowhere else.** Never duplicate an entry into a paper file, and never renumber — a `P` number, once
+issued, belongs to that defect for good.
+
+**These IDs are a different scheme from the rest of this log.** `JV`/`JC` flags are raised against the
+lecture notes, `V`/`C` flags against the lesson handouts, and `P` flags against **examination papers**.
+A `P` entry never corrects a source document; it records what a printed paper got wrong. Where a paper's
+question lands on a source defect, the entry says so and cites the source flag — but the source flag
+keeps its own ID.
+
+**Severities** follow the house list: `notation`, `value`, `omission`, `ambiguity`, `structural`,
+`legibility`, `cataloguing`. **★ marks the worst defect on each paper.**
+
+**Papers covered so far** — P1 is folder-wide; the rest belong to one paper each.
+
+| Paper | File | IDs |
+|---|---|---|
+| *(all four papers)* | — | **P1** |
+| CAT, 17 Sep 2024 | `past-papers/BEE3106-CAT-2024-09-17.md` | P2–P5 |
+| End of Semester, 22 Oct 2024 | `past-papers/BEE3106-EXAM-2024-10-22.md` | P6–P11 |
+| CAT, 9 Sep 2025 | `past-papers/BEE3106-CAT-2025-09-09.md` | P12–P14 |
+| End of Semester, 21 Oct 2025 | `past-papers/BEE3106-EXAM-2025-10-21.md` | P15–P20 |
+
+---
+
+### P1 · ALL FOUR PAPERS — the unit code on the papers is not the unit code in this knowledge base
+- **Paper:** every page of all four papers is headed "**BEE 3106**: ANALOGUE ELECTRONICS I". The
+  knowledge base, its index, this log's own front matter and the project `CLAUDE.md` all say
+  "Analogue Electronics I — **BEE 3103**".
+- **Issue:** one unit, two codes, and nothing in either source explains the difference. The title,
+  the programme (BSc Electrical and Electronic Engineering), the school and the content are identical
+  on both sides, so these are certainly the same unit. The risk is bidirectional: a reader who trusts
+  the knowledge base will think the papers belong to another unit, and a reader who trusts the papers
+  will think the knowledge base does. It also means a search for "BEE 3106" elsewhere in this
+  repository may return this unit under a code no other file in `../` uses.
+- **Correct form:** there is no evidence here for which code is current. Both are recorded. The
+  papers are the primary document for their own code; the knowledge base is the primary document for
+  the teaching material.
+- **How to handle:** the folder's convention is **filenames and `unit_code:` follow the PAPER (BEE
+  3106); everything in `../` keeps BEE 3103**, and every paper file carries a loud `unit_code_note`
+  saying so. Never silently normalise one to the other. Ask the lecturer or the department which code
+  is current before any document leaves the repository under either.
+- **Severity:** cataloguing
+
+---
+
+### P2 · CAT (17 Sep 2024) — no instructions, no rubric and no printed total
+- **Paper:** the sheet runs straight from the date line to "a) Using circuit diagrams and graphical
+  plots …". There is no `Instructions` block, no statement of how many items to attempt, and no total
+  mark anywhere on either page.
+- **Issue:** a candidate cannot tell whether all eight items are compulsory, and a marker cannot check
+  the paper adds up. The eight printed allocations do sum to 40 — verified by addition here on
+  2026-09-03 — but the paper never says 40, so the transcription has nothing to reconcile against.
+  Contrast the two examinations, which both print a full `Instructions` block.
+- **Correct form:** an instruction line and a stated total. Neither can be reconstructed.
+- **How to handle:** treat all eight items as compulsory (they carry equal marks and cover eight
+  distinct topics, which is how a 90-minute CAT is normally built) and say to the student that this is
+  an inference, not the paper's instruction. When setting it as a mock, set 40 marks in 90 minutes.
+- **Severity:** omission
+
+### P3 ★ · CAT (17 Sep 2024), item (e), Fig. 3(c) — panel (a)'s gate connection cannot be resolved
+- **Paper:** "The parameters of the enhancement-only NMOS shown in Fig. 3(c) are V_GS(th)=2V and
+  K=2x10⁻⁴ A/V². Calculate the values of I_D and V_DS for each of the two circuits (5mrks)". Fig. 3(c)
+  shows two panels, (a) and (b), each a MOSFET with a 5 K drain resistor to a 12 V rail and the source
+  grounded.
+- **Issue:** in panel (b) an L-shaped wire plainly ties the gate back to the source/ground rail, so
+  V_GS = 0 there. **In panel (a) no external gate connection can be made out.** The gate plate appears
+  to terminate inside the device envelope, and the drain, substrate and source leads crowd into a few
+  pixels on the right of the symbol where a gate-to-drain link would have to run. The same artwork was
+  examined at up to 12× on all three photographs that carry it (this paper p2, the 2025 CAT p2, the
+  2024 examination p4) and the connection is not decidable on any of them. **As readable, panel (a) is
+  under-determined: with no gate connection there is no V_GS and therefore no I_D.** This is the one
+  defect on this paper that stops a candidate dead.
+- **Correct form:** unknown, and deliberately not guessed. The two textbook readings are gate-to-drain
+  (V_GS = V_DS, the "diode-connected" device) and gate open. They give completely different answers,
+  and nothing on the photograph chooses between them.
+- **How to handle:** **do not assume the drain-connected reading.** Look at the original printed sheet,
+  or ask the lecturer. If neither is available, work panel (b) (V_GS = 0) fully, then work panel (a)
+  both ways and label each — that is honest and it demonstrates the square law twice. Say plainly that
+  the figure as photographed does not determine panel (a).
+- **Severity:** legibility
+
+### P4 · CAT (17 Sep 2024) — figure numbers imply parent figures that do not exist
+- **Paper:** the three figures are captioned "Fig. 1(d)", "Fig. 2(c)" and "Fig. 3(c)", and the question
+  text refers to them by those names.
+- **Issue:** panel letters (d), (c) and (c) imply figures 1, 2 and 3 each with panels (a), (b) … , and
+  none of those panels appears anywhere on the paper. The numbering is inherited from whatever
+  document the figures were lifted from. A candidate looking for "Fig. 2(a)" or "Fig. 1(a)" will not
+  find it, and a reader of this transcription might think pages are missing. They are not — both pages
+  of the CAT are present and the item sequence a)–h) is unbroken.
+- **Correct form:** Fig. 1, Fig. 2, Fig. 3 — or panels that exist.
+- **How to handle:** reassure him that nothing is missing. The `figure_data` blocks in the paper file
+  use internal ids (`q-b-clipper` and so on) precisely so that the paper's own numbering does not have
+  to be trusted.
+- **Severity:** structural
+
+### P5 · CAT (17 Sep 2024) — cosmetic bundle
+- **Paper:** "**(5mrks)**" with no space, eight times. Fig. 2(c)'s resistors printed as bare numbers,
+  "100" and "1 K", with no Ω. Fig. 1(d)'s as "1M" and "10k" with no Ω and inconsistent capitalisation
+  of the prefix. Fig. 3(c)'s as "5 K". Item (h)'s "graphs/ curves" with the space after the solidus.
+  Item (g)'s "Enhancement-only N-Channel MOSFET" with inconsistent internal capitals.
+- **Issue:** none of it changes an answer; all of it makes a bare number ambiguous to a reader who does
+  not already know the circuit. The unit-less resistances are the only ones worth mentioning out loud,
+  because "1 K" beside a diode could in principle be a current or a capacitance to a nervous candidate.
+- **Correct form:** 100 Ω, 1 kΩ, 1 MΩ, 10 kΩ, 5 kΩ; "(5 mrks)".
+- **How to handle:** transcribe verbatim, as the paper files do, and read the units aloud when teaching
+  from the figure.
+- **Severity:** notation
+
+---
+
+### P6 ★ · End of Semester (22 Oct 2024), Q1(g) — "the new system performance" names no quantity, and β collides
+- **Paper:** "An RC coupled amplifier has a mid-frequency gain of 200 and a frequency response from
+  100Hz to 20KHz. A negative feedback network with β=0.02 is incorporated into the amplifier circuit.
+  Determine the new system performance (3mrks)".
+- **Issue:** two faults in three lines. First, **"the new system performance" is not a quantity.**
+  `17` §7.4–§7.10 gives five consequences of applying negative feedback — gain, bandwidth, distortion,
+  noise and terminal impedances — and the paper does not say which of them the three marks are for. A
+  candidate who computes the closed-loop gain and the new bandwidth may have done exactly the right
+  thing or two thirds of it. Second, **β here is the feedback fraction (0.02)**, while β on this same
+  paper's Fig. 1(d) is a transistor current gain of 100 and β₁ = β₂ = 50 in Q5(a) are likewise current
+  gains. Three meanings of one symbol on one paper — and `17` §7.2 is the KB section that flags exactly
+  this collision, with both meanings appearing within eight lines of each other on ·L7 p11.
+- **Correct form:** "Determine the closed-loop gain and the new lower and upper cut-off frequencies",
+  and a different symbol (`B`, or `β_f`) for the feedback fraction.
+- **How to handle:** work gain and bandwidth as the minimum answer, state in the script that the
+  question does not say which quantities are wanted, and list the other three consequences in one line
+  each. Before teaching it, make him say out loud which β is which — that habit is worth more than the
+  three marks.
+- **Severity:** ambiguity
+
+### P7 · End of Semester (22 Oct 2024), Q1(b) — an absolute temperature printed with a degree sign
+- **Paper:** "Calculate the change in barrier potential of a P-N junction at **300⁰K** if doping on the
+  N-side is increased 1000 times …".
+- **Issue:** kelvin is an absolute scale; it takes no degree sign. Written as printed the quantity reads
+  "300 degrees kelvin", which is not a unit. Nothing computed changes — the intended 300 K is
+  unambiguous — but the same paper is teaching a student to write it.
+- **Correct form:** 300 K.
+- **How to handle:** correct it when quoting, and use the opportunity to fix V_T. Computed here on
+  2026-09-03 in Python: V_T = kT/q = 25.852 mV at 300 K, with k = 1.380649×10⁻²³ J/K and
+  q = 1.602176634×10⁻¹⁹ C. **Do not take k from ·J p35, which prints 1.38×10⁻²⁸ — flag `JV4.2`, wrong
+  by 10⁵.**
+- **Severity:** notation
+
+### P8 · End of Semester (22 Oct 2024), Q5(a) — r_e = 50 mV/I_E
+- **Paper:** "Neglect V_BE and use r_e=50mV/I_E. Take β₁=β₂=50 and treat the transformers as ideal
+  ones."
+- **Issue:** the small-signal emitter resistance is r_e = V_T/I_E, and V_T computed here on 2026-09-03
+  in Python from k = 1.380649×10⁻²³ J/K, q = 1.602176634×10⁻¹⁹ C and T = 300 K is **25.852 mV** — so
+  the printed 50 mV is very nearly exactly **twice** the thermal voltage, and every stage gain worked
+  from it comes out at half its usual value.
+- **Correct form:** r_e = 25.9 mV/I_E at 300 K (25–26 mV is the usual quoted range).
+- **How to handle:** **this is almost certainly deliberate, not a typo** — the identical instruction,
+  "use r_e=50mV/I_E", appears again on the 2025 examination's Q2(b) (erratum P19), so it is the
+  lecturer's standing convention across two cohorts. Work the question with the printed 50 mV, because
+  that is what the mark scheme will expect, and write the standard 25.9 mV result beside it so he
+  recognises both. Ask the lecturer which is wanted before an examination, not after.
+- **Severity:** value
+
+### P9 · End of Semester (22 Oct 2024), Fig. 5(a) — one supply rail carries two labels
+- **Paper:** the top rail of Fig. 5(a) is labelled "9 V" at its centre, with a supply circle, and
+  "V_CC" at its right-hand end, with a second supply circle. Both circles sit on the same continuous
+  horizontal conductor.
+- **Issue:** it reads at a glance as two supplies. It is one: V_CC = 9 V. On a two-stage amplifier
+  where the candidate must find two separate bias points, a spurious second rail is an expensive
+  misreading. The same figure is reprinted as Fig. 2(b) of the 2025 examination with the same double
+  label.
+- **Correct form:** one label — "V_CC = 9 V".
+- **How to handle:** say it once, out loud, before he starts: one rail, 9 V. The `figure_data` block in
+  both paper files records it as a single node.
+- **Severity:** notation
+
+### P10 · End of Semester (22 Oct 2024) — no paper-level total, and 90 printed against 60 attemptable
+- **Paper:** "This examination consists of FIVE questions. Answer Question ONE (COMPULSORY) and any
+  other TWO questions." Headers: QUESTION ONE (30mrks), TWO (15mrks), THREE (15mrks), FOUR (15mrks),
+  FIVE (15mrks). No overall total appears.
+- **Issue:** the five headers sum to 90, verified by addition here on 2026-09-03, and each header
+  reconciles exactly against its own part-marks — but a candidate can only attempt 30 + 15 + 15 = **60**.
+  Anyone reading the paper (or this transcription) as a 90-mark instrument will set a mock at the wrong
+  length and mis-scale the marks. The 2025 examination has the identical structure and the identical
+  omission.
+- **Correct form:** "Total: 60 marks" on the instruction block.
+- **How to handle:** `total_marks: 90` in the paper's frontmatter is the sum of what is **printed**;
+  `marks_reconcile: true` refers to the five per-question reconciliations, which all pass. When setting
+  a timed mock, **set 60 marks in 180 minutes.**
+- **Severity:** structural
+
+### P11 · End of Semester (22 Oct 2024) — cosmetic bundle
+- **Paper:** "(3mrks)", "(4mrks)", "(1mrk)", "(5mrks)" with no spaces. "A CE amplifier is **drawn by** a
+  voltage source" for "driven by". "transformer **–**coupled" with a stray space before the dash. The
+  source resistance is `r_s` in Q1(h) and `R_s` in Q4(b) — same quantity, two symbols, two questions
+  apart. "h_fe=50" and "h_fb = -0.98" spaced inconsistently. Ω appears sometimes and is dropped from
+  the figure values throughout (1M, 10k, 100Ω, 3 K, 2 K, 20 K, 4 K, 1 K, 90 K, 10 K, 3k).
+- **Issue:** nothing computed changes. The `r_s`/`R_s` drift is the only one worth a sentence, because
+  the h-parameter formulas in `16` use one fixed symbol and a student copying between the two questions
+  can lose track.
+- **Correct form:** one symbol for the source resistance; Ω throughout; "(3 marks)".
+- **How to handle:** transcribe verbatim, correct when speaking.
+- **Severity:** notation
+
+---
+
+### P12 ★ · CAT (9 Sep 2025) — the paper is the 2024 CAT reissued verbatim
+- **Paper:** "DATE: Tuesday, 9ᵗʰ September 2025 · Time: 1.5 Hours: 4.15pm-5.45pm", followed by eight
+  items a)–h). Compared against `BEE3106-CAT-2024-09-17.md` ("DATE: Tuesday, 17ᵗʰ 09 2024 · Time: 1.5
+  Hours: 8.15am-9.45am"), **all eight items are word-for-word identical, all three figures are the same
+  artwork with the same labels, and all eight mark allocations are the same 5 marks.** Only the date and
+  time line differs. 40 of 40 marks are reissued unchanged.
+- **Issue:** it is not a defect in the printing — it is a defect in the *evidence*. Two CAT papers in a
+  folder read as two independent observations of what the unit examines; they are one paper printed
+  twice, a year apart, for two different cohorts. Any statement of the form "both CATs asked about X"
+  is empty. Every defect is reissued with it, which is why P13 and P14 exist as their own IDs rather
+  than as a footnote on P2–P5.
+- **Correct form:** not applicable — nothing is misprinted.
+- **How to handle:** **record it prominently and use it.** Told honestly, this is the strongest revision
+  signal in the unit: this lecturer reuses a CAT unchanged across cohorts, so these eight items and
+  three figures are the highest-value 40 marks available. Set them as a timed mock first. But when
+  counting evidence — in the past-paper register, in any coverage table — **count the two CATs as one
+  paper.**
+- **Severity:** cataloguing
+
+### P13 · CAT (9 Sep 2025), item (e), Fig. 3(c) — panel (a)'s gate connection cannot be resolved
+- **Paper:** identical wording and identical artwork to the 2024 CAT's item (e). See P3.
+- **Issue:** the same unresolvable panel-(a) gate connection, on a second photograph of the same
+  figure. This copy is the highest-resolution of the three (2176 × 3000) and it does not settle it
+  either, which is why the defect is recorded again rather than cross-referenced away: two independent
+  photographs failing to resolve it is worth knowing.
+- **Correct form:** unknown; not guessed. See P3.
+- **How to handle:** as P3 — do not assume the drain-connected reading; work panel (b) fully and panel
+  (a) both ways, labelled; ask the lecturer.
+- **Severity:** legibility
+
+### P14 · CAT (9 Sep 2025) — the 2024 CAT's structural and cosmetic defects, reissued
+- **Paper:** no `Instructions` block, no rubric, no printed total (as P2); "Fig. 1(d)", "Fig. 2(c)",
+  "Fig. 3(c)" with no parent figures 1, 2 or 3 anywhere (as P4); "(5mrks)" throughout and unitless
+  "100", "1 K", "1M", "10k", "5 K" on the figures (as P5).
+- **Issue:** a year of use produced no correction to any of them. That is itself informative: nobody
+  has fed these defects back, so they will be on the next reissue too.
+- **Correct form:** as P2, P4 and P5.
+- **How to handle:** as P2, P4 and P5. Treat all eight items as compulsory and say the inference out
+  loud; reassure him nothing is missing from the figure numbering; read the units aloud.
+- **Severity:** omission
+
+---
+
+### P15 ★ · End of Semester (21 Oct 2025), Question 1 — a duplicated item letter
+- **Paper:** Question 1's items are printed **a) b) c) d) e) b) f) g) h)**. The sixth item — "Using a
+  graphical plot for voltage vs current, describe the concept of forward biasing and reverse biasing a
+  P-N junction diode (4marks)" — is lettered **"b)"**, the same letter as the voltage-divider-bias item
+  three items earlier. Every item after it is one letter short, so the question ends at (h) instead of
+  (i).
+- **Issue:** Question 1 contains **two items labelled (b)**, and a reference to "Q1(b)" is ambiguous
+  between a 6-mark bias calculation and a 4-mark diode-bias description. A candidate cross-referencing
+  answers to item letters in the answer booklet can mis-attribute six marks. The paper's own letters
+  are what a marker will use, so this cannot be silently renumbered in the transcription.
+- **Correct form:** a) b) c) d) e) **f)** g) h) i) — nine items, ending at (i). The mark allocations
+  are unaffected: 3 + 6 + 2 + 4 + 5 + 4 + 3 + 2 + 1 = 30, verified by addition here on 2026-09-03,
+  and 30 is what the question header states.
+- **How to handle:** the paper file's section headings are written as `### Q1f · … · **printed on the
+  paper as "b)"**` so that both the corrected and the printed letter are always visible and a reference
+  can never be ambiguous. When talking to him, say "the second (b)" or "the diode-bias item", never
+  "Q1(b)". The student pencilled f, g, h, i into the margin himself and struck the printed letters
+  through — those pencil letters are his and are recorded as a photo artefact, not as the paper's.
+- **Severity:** structural
+
+### P16 · End of Semester (21 Oct 2025), Q4(b) — the text names a textbook figure that is not on the paper
+- **Paper:** "The triangular voltage of Fig. 4 (b) is applied to the biased parallel clipper circuit of
+  **Fig. 52.36 (b)**. Find the wave-shape of the output voltage. (3 marks)". The figure printed below
+  carries the caption "**Fig. 4 (b)**" and contains both panels — the triangular input as (a) and the
+  clipper circuit as (b).
+- **Issue:** "Fig. 52.36 (b)" is a figure number from the textbook the question was lifted from. There
+  is no Fig. 52.36 on this paper, and there are only six figures in total. A candidate hunting for it
+  loses time in an examination. Worse, the sentence names *two different figures* for what is in fact
+  one two-panel figure, so it reads as though a circuit diagram is missing. It is not: the clipper is
+  panel (b) of Fig. 4 (b).
+- **Correct form:** "…is applied to the biased parallel clipper circuit of Fig. 4 (b)(b)" — or, better,
+  captions that distinguish the two panels.
+- **How to handle:** tell him at once that the clipper is the right-hand panel of the figure printed
+  immediately below the question, and that nothing is missing. The paper file's `figure_data` block
+  records both names under `caption_on_figure` and `also_called_in_text`.
+- **Severity:** structural
+
+### P17 · End of Semester (21 Oct 2025), Q1(e), Fig. 1(e) — the figure on this copy is drawn in ink, not printed
+- **Paper:** Q1(e) asks the candidate to show that Y₀ = h_oe − h_fe h_re/(R_s + h_ie) "for the hybrid
+  parameter model of a transistor shown in Fig. 1(e)". The figure captioned Fig. 1(e) on page 2 of this
+  copy is a **hand drawing in blue ballpoint** — the two-port model, its elements lettered R_s, hi,
+  h_r V_2, h_f I_1, ho, Z_L and its nodes 1, 1', 2, 2' — in the same ink and the same hand as the item-letter
+  corrections in the margin of that page.
+- **Issue:** every other figure on this paper is cleanly printed. **Whether the printed paper carried a
+  figure here that this photograph does not show, or whether the space was blank and the student drew
+  the standard model into it, cannot be determined from the photograph.** If the second, then the
+  transcribed figure records his understanding of the question rather than the examiner's, and a
+  derivation taught from it could be built on the wrong sign convention — the drawn I₂ arrow points
+  into the output port while I_L points out of it, and the sign of the second term in Y₀ depends on
+  which is used.
+- **Correct form:** unknown. Not reconstructed.
+- **How to handle:** the `figure_data` block carries a `provenance:` key stating all of this in full;
+  read it before teaching from the block. Ask him directly whether he drew it. If he did, get the
+  original printed sheet before working the derivation, and until then derive Y₀ from `16` §6.8–§6.20's
+  own model rather than from this drawing — the target expression is printed on the paper and is not in
+  doubt, only the figure is.
+- **Severity:** legibility
+
+### P18 · End of Semester (21 Oct 2025), Q4(b), Fig. 4 (b) — an unvalued resistor and an unlabelled axis mark
+- **Paper:** panel (b) of Fig. 4 (b) shows a series resistor lettered **R** with no value; panel (a)
+  shows the triangular input with "30 V" and "−30 V" marked on the voltage axis and a bare "**2**"
+  marked on the time axis with no unit.
+- **Issue:** with no value for R, no current and no power can be computed anywhere in the circuit. For
+  the question actually asked — the wave-shape of the output — R's value does not matter, so this is not
+  fatal; but the figure is incomplete as drawn and a candidate may waste time looking for the value. The
+  "2" on the time axis is worse: it could be seconds, milliseconds, or a count of half-cycles, and the
+  paper gives no period or frequency anywhere, so the horizontal scale of the answer sketch is
+  undetermined.
+- **Correct form:** a value for R, and a unit on the time mark.
+- **How to handle:** tell him R is not needed for a wave-shape answer, and draw the output against the
+  same unlabelled time axis as the input rather than inventing a scale. Also note that the diodes'
+  forward drop is not given, so it is not stated whether the clipping levels are 10 V and 5 V or 10.7 V
+  and 5.7 V; state the assumption in the script.
+- **Severity:** omission
+
+### P19 · End of Semester (21 Oct 2025), Q2(b) — r_e = 50 mV/I_E, again
+- **Paper:** "Neglect V_BE and use r_e=50mV/I_E. Take β1=β2=75 and treat the transformers as ideal
+  ones."
+- **Issue:** identical to P8, one year later, on the same figure — the transformer-coupled two-stage
+  amplifier of 2024 Fig. 5(a), reprinted here as Fig. 2(b) with β raised from 50 to 75. V_T computed
+  here on 2026-09-03 in Python is 25.852 mV at 300 K, so the printed 50 mV is again very nearly twice
+  the thermal voltage.
+- **Correct form:** r_e = 25.9 mV/I_E at 300 K.
+- **How to handle:** **the repetition settles it — this is the lecturer's standing convention, not a
+  typo.** Work the question with 50 mV as printed, and write the standard result beside it. See P8.
+- **Severity:** value
+
+### P20 · End of Semester (21 Oct 2025) — cosmetic bundle
+- **Paper:** the feedback fraction in Q1(f)'s formula is typeset as a capital **B** — "A' = A/(1+BA)" —
+  where β is meant, on a paper that uses β correctly for the same quantity in Q4(d) and for a transistor
+  current gain in Q2(b) and Q2(c). "(4marks)", "(6marks)", "(5marks)" with no space, alongside
+  "(3 marks)", "(2 marks)" with one. "(3 marks)" broken across a line in Q5(b). "Take V_BE=0.7" with no
+  unit. Q2(c)(iii) and (iv) name the drops across R_L and R_E as "V_c" and "V_E", symbols that
+  conventionally mean node potentials rather than element drops. Fig. 4 (b)'s and Fig. 5 (a)'s captions
+  do not follow the question numbering — both sit inside Question 4. Resistances given as "10K", "10M",
+  "500", "5K", "1 K", "20 K" with the Ω sometimes present in the text and never on the figures.
+- **Issue:** none of it changes an answer. The "V_c"/"V_E" naming in Q2(c) is the one worth saying out
+  loud, because on that circuit the emitter node sits **below** ground, so the drop across R_E and the
+  emitter potential differ in sign — a candidate who reads (iv) as "the emitter potential" gets the
+  sign of V_CE wrong in part (v).
+- **Correct form:** β for the feedback fraction; "(4 marks)"; "V_BE = 0.7 V"; "voltage drop across R_L"
+  written out rather than abbreviated to V_c.
+- **How to handle:** transcribe verbatim, correct when speaking, and make him state for each of Q2(c)'s
+  seven parts whether it is a node potential or an element drop before he computes any of them.
+- **Severity:** notation
+
+<!-- Later papers append their own P-numbered entries above this line. -->
+
+---
+
 <sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>
