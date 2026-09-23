@@ -402,4 +402,281 @@ and the log will be corrected.
 
 ---
 
+## § F · Exam papers
+
+Defects in the **assessment papers themselves**, as distinct from the lecture documents. Entry IDs are
+`P1`, `P2`, … and each is referenced by a `⚠ VERIFY` marker at the matching question in
+`past-papers/<paper>.md`. **The full entry lives here only** — the paper file just points to it.
+
+| IDs | Paper |
+|---|---|
+| **P1–P3** | Assignment 1, 10 Aug 2026 — *tabulated in `past-papers/00-past-papers-index.md`, not repeated here* |
+| **P4–P8** | End of Semester Examination, **23 Oct 2024** |
+| **P9–P12** | CAT 1, **20 Aug 2024** |
+| **P13–P18** | End of Semester Examination, **27 Oct 2025** |
+
+★ marks the worst defect on each paper.
+
+> **Read this section beside § A.** Two of these papers set, verbatim, a worked example and an exercise
+> out of the lecture documents — and the KB already flags a substantive error inside one of them (**V3**,
+> ·CRV p18) and a reconstructed line beside it (**L5**). See P-entries and the "What this paper adds"
+> sections of the two exam files.
+
+---
+
+### P4 · EMT 3101 End of Semester (23 Oct 2024), Q1(c) — the variance you are told to prove is the reciprocal of the right one ★
+- **Paper:** "Show, by a detailed method, that $\mathrm{Var}(X) = \dfrac{1}{18a^{2}}$", for the density
+  $f(x) = kx$ on $0 \le x \le a$, $a$ and $k$ positive constants.
+- **Issue:** the variance of that density is $\dfrac{a^{2}}{18}$, not $\dfrac{1}{18a^{2}}$. Normalisation
+  gives $k = 2/a^{2}$; then $E(X) = 2a/3$, $E(X^{2}) = a^{2}/2$ and
+  $\mathrm{Var}(X) = \tfrac{a^{2}}{2} - \tfrac{4a^{2}}{9} = \tfrac{a^{2}}{18}$. **Recomputed symbolically
+  with `sympy` on 2026-09-03.** The two expressions agree only at $a = 1$. It matters more than a
+  misprint normally would because the question is a **show that**: the printed line is the target the
+  candidate steers towards, so a student who trusts it spends five marks hunting an algebra slip that
+  is not there.
+- **Correct form:** $\mathrm{Var}(X) = \dfrac{a^{2}}{18}$.
+- **How to handle:** derive it, get $a^{2}/18$, and **say in the script that the printed target is wrong
+  and why** — one line, and it converts a trap into a mark. *(He caught it in the exam: on the
+  photograph the printed right-hand side is struck through in blue ballpoint with "a²/18" written beside
+  it. That is his own correction, not a mark scheme — the paper carries no answers.)*
+- **Severity:** value.
+
+### P5 · EMT 3101 End of Semester (23 Oct 2024), Q3(b)(i) — two numbering levels collide
+- **Paper:** "**(i)** Calculate the value of: **(i)** $P(T > 3.5)$ and **(ii)** $P(T = 3)$. *[3 Marks]*"
+- **Issue:** item (i) of Q3(b) contains its own (i) and (ii), so "(i)" names two different things one
+  line apart. The four graded parts of Q3(b) are the outer (i)–(iv); the inner pair share the outer
+  (i)'s three marks between them.
+- **How to handle:** when setting this as a mock, relabel the inner pair (α)/(β) or "first"/"second" and
+  say you have done so. Reprinted **unchanged** on the 2025 paper — see P18.
+- **Severity:** structural.
+
+### P6 · EMT 3101 End of Semester (23 Oct 2024), formula sheet (page 4) — the Gamma function's argument changes name inside its own definition
+- **Paper:** $\Gamma(n) = \int_0^{\infty}t^{x-1}e^{-t}\,dt$
+- **Issue:** the left-hand side is a function of $n$ and the right-hand side of $x$. Whichever letter was
+  meant, one of them is wrong. The row also states **no convergence condition**, and the integral
+  converges only for $x > 0$.
+- **Correct form:** $\Gamma(x) = \int_0^{\infty}t^{x-1}e^{-t}\,dt$, $x > 0$.
+- **How to handle:** cosmetic in practice — nobody will lose a mark over it — but it is the *same*
+  carelessness about $\Gamma$'s argument that produces the substantive P9 on the CAT, so it is worth
+  naming when teaching either. The sheet is reprinted unchanged on the 2025 paper (P16).
+- **Severity:** notation.
+
+### P7 · EMT 3101 End of Semester (23 Oct 2024), Q2(a)(ii) — an integral with no differential
+- **Paper:** "$\int_0^{0.1} e^{2x}\sin 3x.$" — no $dx$, closed with a full stop as though it were a
+  sentence, and its "*[2 Marks]*" printed alone on the line below, level with nothing.
+- **Issue:** intent is unambiguous ($dx$), but a displayed integral with no differential is exactly the
+  habit the same course penalises in a script.
+- **Severity:** notation. Reprinted unchanged on the 2025 paper — see P18.
+
+### P8 · EMT 3101 End of Semester (23 Oct 2024), Q4 — a whole 15-mark question on a documented knowledge-base gap
+- **Paper:** "Determine the power series solution of the differential equation $y'' + xy' + 2y = 0$ using
+  **either** the **Leibniz-Maclaurin** method or the **Frobenius method**, given … $y = 1$ and
+  $\frac{dy}{dx} = 2$." *[15 Marks]*
+- **Issue:** not a defect in the paper's mathematics — a defect in what he can revise from, and it is the
+  largest one in the subject. **Frobenius' method is a documented gap**: `00-index.md` § Gap map records
+  that `06-bessels-equation.md` asserts the solution "is obtained by Frobenius' method" and that the
+  lecturer's own margin reads *"Homework: show!! (Derive)"*. The derivation is on no page. The
+  **Leibniz–Maclaurin** route from an ODE to a power series is not in `04` or `05` either; both files
+  build the machinery and neither points it at a differential equation.
+- **How to handle:** treat this as the **first gap to fill** if lecture notes ever arrive. It is not a
+  one-off: the identical question, same ODE, same boundary conditions, was set on **CAT 1 (20 Aug 2024,
+  7 marks, Leibniz–Maclaurin only)** and again on the **2025 final (27 Oct 2025, Q4(b), 11 marks)** —
+  **33 marks across three papers**. Until then, say plainly that this material has not been supplied
+  rather than teaching it from general knowledge.
+- **Severity:** cataloguing.
+
+---
+
+### P9 · EMT 3101 CAT 1 (20 Aug 2024), Q2 stem — the Gamma integral given a domain it does not have ★
+- **Paper:** "The Gamma function is defined as $\Gamma(x) = \int_0^{\infty}e^{-t}t^{x-1}dt$,
+  $\;x \ne 0, -1, -2, -3, \cdots$"
+- **Issue:** **the integral converges only for $x > 0$.** The excluded set $\{0,-1,-2,\dots\}$ is the set
+  of *poles of the analytically continued* Gamma function — a different object, defined by continuation
+  **precisely because the integral does not exist there**. As printed the definition claims, for
+  instance, $x = -\tfrac12$, where the integrand behaves like $t^{-3/2}$ near the origin and the integral
+  diverges.
+- **Correct form:** $\Gamma(x) = \int_0^{\infty}e^{-t}t^{x-1}dt$ for $x > 0$; $\Gamma$ then extends to
+  every $x \ne 0,-1,-2,\dots$ by analytic continuation, equivalently by iterating
+  $\Gamma(x) = \Gamma(x+1)/x$.
+- **How to handle:** quote the integral **with $x > 0$**, then add the one sentence about continuation.
+  That is a mark gained, not lost — and it is exactly the kind of definitional line a memorising reader
+  absorbs whole, which is why it is starred. Compare P6: the same casualness about $\Gamma$'s argument,
+  on the exam formula sheet.
+- **Severity:** value.
+
+### P10 · EMT 3101 CAT 1 (20 Aug 2024), Q4 — a Maclaurin expansion of a function that has none
+- **Paper:** "Use Maclaurin's theorem to expand $\sqrt{x}\ln(x+1)$ as a power series."
+- **Issue:** Maclaurin's theorem needs $f$ and all its derivatives to exist at $x = 0$ (`04` §1 states the
+  three conditions). Here $f'(x) = \dfrac{\ln(1+x)}{2\sqrt x} + \dfrac{\sqrt x}{1+x} \to -\infty$ as
+  $x \to 0^{+}$, so **the product has no Maclaurin series at all**. What exists is
+  $\sqrt x\left(x - \tfrac{x^{2}}{2} + \tfrac{x^{3}}{3} - \cdots\right)
+  = x^{3/2} - \tfrac12 x^{5/2} + \tfrac13 x^{7/2} - \cdots$, a fractional-power (Puiseux) series.
+- **Correct form:** "Expand $\ln(x+1)$ by Maclaurin's theorem and hence obtain a series for
+  $\sqrt x\,\ln(x+1)$."
+- **How to handle:** do exactly that, integrate term by term, and **write the one sentence saying why the
+  product itself has no Maclaurin series**. The marks are unaffected and the sentence is free credit.
+  The same looseness runs through this subject's assessments — Assignment 1 Q4 integrates
+  $\theta^{-1/3}$ without mentioning that it is singular at the lower limit, and
+  `past-papers/00-past-papers-index.md` already makes that point.
+- **Severity:** ambiguity.
+
+### P11 · EMT 3101 CAT 1 (20 Aug 2024), Q1 and Q2 — mark allocations that attach to the wrong thing, and no total
+- **Paper:** Q1 prints a single "*[7 Marks]*" covering four sub-parts (a)–(d) with no split between them.
+  Q2 prints "*[5 Marks]*" on the line carrying the **definition of $\Gamma(x)$** — the stem — above its
+  two sub-parts (i) and (ii), so as laid out the definition itself appears to be worth five marks. **No
+  total is printed anywhere on the sheet.**
+- **Issue:** the paper's marks are therefore 7 + 5 + 7 + 5 = 24 only by inference, and two of the four
+  allocations cannot be attributed to a specific task. This is why the paper file records
+  `marks_reconcile: false` — there is nothing to reconcile *against*.
+- **How to handle:** for a timed mock, mark Q1 out of 7 as a single whole, and split Q2 as 3 for (i) and
+  2 for (ii) — (i) does the work — stating that the split is yours.
+- **Severity:** structural.
+
+### P12 · EMT 3101 CAT 1 (20 Aug 2024), throughout — notation and punctuation, collected
+- **Paper:** "$E(T) = Var(T)$" with *Var* set in italic maths, so it reads as a product $V\!\cdot\!a\!\cdot\!r$
+  (Q1(c)) — the house form is $\mathrm{Var}(T)$. "Hence evaluate, correct to 3 decimal places," closes
+  with a **comma** before a displayed integral (Q4). "Show your workings" for "your working"
+  (instructions).
+- **Severity:** typo. None of it touches the mathematics; collected in one entry rather than three.
+
+---
+
+### P13 · EMT 3101 End of Semester (27 Oct 2025), Q3(b) — the Beta reduction formula printed without the $n$ it depends on ★
+- **Paper:** "Show clearly that
+  $\displaystyle\int_0^{1}x^{m-1}(1-x)^{p-1}dx = \frac{1}{n}B\!\left(\frac{m}{n},p\right), \; n \ne 0$.
+  Hence, find the exact value of $\displaystyle\int_0^{1}x^{5}(1-x^{3})^{2}dx$."
+- **Issue:** **no $n$ appears on the left-hand side at all.** As printed the left side is exactly
+  $B(m,p)$, a number independent of $n$, while the right side changes with every $n$ — so the identity is
+  false for all but one value of $n$, and it cannot be "shown". The "hence" is then unreachable: the
+  integrand $x^{5}(1-x^{3})^{2}$ has a cube inside the bracket and the printed identity has no slot for
+  it.
+- **Correct form:** $\displaystyle\int_0^{1}x^{m-1}\left(1-x^{n}\right)^{p-1}dx
+  = \frac{1}{n}B\!\left(\frac{m}{n},\,p\right)$.
+- **Check (mine, `sympy`, 2026-09-03):** with the corrected identity, $m = 6$, $n = 3$, $p = 3$ give
+  $\tfrac13 B(2,3) = \tfrac{1}{36}$; direct integration gives
+  $\tfrac16 - \tfrac29 + \tfrac1{12} = \tfrac{1}{36}$. **They agree, which confirms the corrected form is
+  the one the question was built on.**
+- **How to handle:** write the identity with $(1-x^{n})$, prove it by $u = x^{n}$, and say the printed
+  version is missing the exponent. *(On the photograph he has written a blue-pen "n" above the printed
+  exponent — that is his own correction and it is right. **Reading caveat:** the blue ink partly
+  obscures the printed characters; blue-channel isolation at 7× reads the printed glyph as $p$ in both
+  places, and that reading is recorded as *partly obscured*, not clean.)*
+- **Severity:** value.
+
+### P14 · EMT 3101 End of Semester (27 Oct 2025), Q1(c) — a density with two unknowns and only one condition
+- **Paper:** $f(x) = mx$ on $0 \le x \le 4$, $f(x) = k$ on $4 \le x \le 9$, zero otherwise, "where $m$ and
+  $k$ are positive constants. Find as an exact simplified fraction the value of $E(X)$."
+- **Issue:** normalisation gives $8m + 5k = 1$ — **one equation, two unknowns**. Every admissible $m$
+  gives a different answer: $E(X) = \tfrac{13}{2} - \tfrac{92m}{3}$ (verified with `sympy`,
+  2026-09-03). **As printed the question cannot be answered.**
+- **Correct form:** add the missing condition — continuity of $f$ at $x = 4$, i.e. $4m = k$. That gives
+  $m = \tfrac{1}{28}$, $k = \tfrac17$ and $E(X) = \tfrac{227}{42} \approx 5.4048$ — a single exact
+  simplified fraction, which is precisely what the question demands. **The wording is the evidence for
+  the intent.**
+- **How to handle:** state the continuity assumption **in writing before using it**, and say why it is
+  needed. Contrast the 2024 paper's Q3(a), which is the same idea done properly: there both pieces are
+  fully specified and normalisation alone pins $k$ down (to exactly $7/2$, a repeated root).
+- **Severity:** omission.
+
+### P15 · EMT 3101 End of Semester (27 Oct 2025), Q1(a) — a Bessel series asserted over $\mathbb{Z}$ that only exists over $\mathbb{N}$
+- **Paper:** $J_n(x) = \sum_{r=0}^{\infty}\left[\frac{(-1)^{r}}{(n+r)!\,r!}\left(\frac x2\right)^{2r+n}\right]$,
+  "$n \in \mathbb{Z}$", and the limit $\lim_{x\to0}J_n(x)/x^{n} = 1/(2^{n}n!)$, "$n \in \mathbb{Z}$".
+- **Issue:** for a **negative** integer $n$, $(n+r)!$ is undefined for every $r < -n$, and $n!$ on the
+  right-hand side is undefined outright. Both statements need $n \ge 0$.
+- **Correct form:** $n \in \mathbb{N}$ (equivalently $n \in \mathbb{Z}$, $n \ge 0$). For general order the
+  factorials become Gamma functions, $\Gamma(n+r+1)$ and $\Gamma(n+1)$ — which is how
+  `06-bessels-equation.md` writes it.
+- **How to handle:** answer for $n \ge 0$ and note the restriction; it costs nothing and shows you read
+  the statement. Read it beside **V8** in § A — the KB's own Bessel document drops the $-\nu$ from the
+  exponent of $J_{-\nu}$, so negative order is shaky in the notes as well as on the paper.
+- **Severity:** notation.
+
+### P16 · EMT 3101 End of Semester (27 Oct 2025), formula sheet (page 4) — the 2024 sheet reprinted unchanged, defect included
+- **Paper:** $\Gamma(n) = \int_0^{\infty}t^{x-1}e^{-t}\,dt$ — character for character the 2024 sheet.
+- **Issue:** see **P6** for the substance. The reason for a separate ID is the fact of the reprint: the
+  sheet went out again thirteen months later with nothing corrected, so **this is a stable feature of the
+  paper, not a one-off typo**, and he will meet it again.
+- **Severity:** notation.
+
+### P17 · EMT 3101 End of Semester (27 Oct 2025), Q4(b) — the documented gap, for the third time
+- **Paper:** "Determine the power series solution of the differential equation $y'' + xy' + 2y = 0$ using
+  **either** the **Leibniz-Maclaurin** method or the **Frobenius method** …" *[11 Marks]*
+- **Issue:** see **P8**. Recorded separately because of the pattern it completes:
+
+  | Paper | Where | Marks | Method allowed |
+  |---|---|---|---|
+  | CAT 1, 20 Aug 2024 | Q3 | 7 | Leibniz–Maclaurin only |
+  | End of Semester, 23 Oct 2024 | Q4 | 15 | either |
+  | End of Semester, 27 Oct 2025 | Q4(b) | 11 | either |
+
+  **Identical wording, identical ODE, identical boundary conditions, 33 marks across three papers — and
+  the method is not in this knowledge base.**
+- **Severity:** cataloguing.
+
+### P18 · EMT 3101 End of Semester (27 Oct 2025), Q2(a)(ii) and Q3(a)(i) — 2024's defects reprinted verbatim
+- **Paper:** Q2(a)(ii) prints "$\int_0^{0.1}e^{2x}\sin3x.$" with no $dx$ and an orphaned "*[2 Marks]*"
+  below it — identical to **P7**. Q3(a)(i) prints "Calculate the value of: (i) $P(T>3.5)$ and (ii)
+  $P(T=3)$" inside an item already labelled (i) — identical to **P5**.
+- **Issue:** neither affects the mathematics. They are logged together because of what they show about
+  how the 2025 paper was made: **the 2024 file was reused, the mark values edited, and the typography
+  left untouched.** That is corroboration for the recurrence analysis in the two paper files — 70 of the
+  2025 paper's 90 marks are 2024 questions, word for word.
+- **Severity:** typo.
+
+### P19 · EMT 3101 Tutorial 1 (31 Aug 2026), Q3 — duplicated item letter
+- **Sheet:** the four items of Question 3 are labelled **(i)**, **(ii)**, **(ii)**, **(iv)**.
+- **Issue:** the third item carries the same letter as the second. It should be **(iii)**.
+- **How to handle:** cosmetic — the four items are distinct and unambiguous. Worth noting only because a
+  student answering "part (ii)" has to say which one, and because the same class of slip
+  (duplicated item letters) is already logged for this department at **P8** on the 2024 fluid paper.
+- **Severity:** typo (structural). No effect on the mathematics.
+
+### P20 · EMT 3101 Tutorial 1 (31 Aug 2026), Q4 — the symbol changes between the formula and the sentence
+- **Sheet:** "The second moment of area of a rectangle through its centroid is given by $\frac{bl^3}{12}$.
+  Determine the approximate change in the second moment of area if $b$ is increased by 3.5% and **$I$** is
+  reduced by 2.5%."
+- **Issue:** the formula uses a lower-case **$l$** (the rectangle's depth); the sentence then says **$I$**
+  (capital i). Worse, $I$ is the standard symbol for the second moment of area *itself* — so as printed the
+  question says the second moment is reduced by 2.5 % **while asking for the change in the second moment**.
+  It is circular on its face.
+- **Correct reading:** the depth $l$ is reduced by 2.5 %. This is not a guess: **the same question appears
+  on both the 23 Oct 2024 and 27 Oct 2025 finals, and both print $l$ in the sentence.** The tutorial is the
+  only one of the three that gets it wrong.
+- **How to handle:** use $l$. Point out to him that a capital $I$ and a lower-case $l$ are near-identical in
+  this serif face, which is exactly why the convention is to name the quantity in words the first time.
+- **Severity:** notation. Recoverable, and settled by the two finals.
+
+### P21 · EMT 3101 Tutorial 1 (31 Aug 2026), Q6(a) — the Beta reduction formula, missing its $x^n$ ★
+- **Sheet:** "Show clearly that
+  $\displaystyle\int_0^{1}x^{m-1}(1-x)^{p-1}dx = \frac{1}{n}B\!\left(\frac{m}{n},p\right),\; n \ne 0.$"
+- **Issue:** **there is no $n$ on the left-hand side.** As printed the left side is exactly $B(m,p)$ — a
+  number that does not depend on $n$ — while the right side changes with every $n$. The identity is false
+  for all but one value of $n$, so it cannot be "shown". Part (b) is then unreachable: its integrand
+  $x^{5}(1-x^{3})^{2}$ has a cube inside the bracket and the printed identity has nowhere to put it.
+- **Correct form:** $\displaystyle\int_0^{1}x^{m-1}\left(1-x^{n}\right)^{p-1}dx
+  = \frac{1}{n}B\!\left(\frac{m}{n},\,p\right)$, proved by the substitution $u = x^{n}$.
+- **Check (mine, `sympy`, 2026-09-04):** with the corrected identity, $m=6$, $n=3$, $p=3$ give
+  $\tfrac13 B(2,3) = \tfrac1{36}$, and direct integration of $x^5(1-x^3)^2$ over $[0,1]$ gives $\tfrac1{36}$.
+  They agree, confirming the corrected form is the one part (b) was built on.
+- **⚠ This is the SAME defect, in the SAME question, as P13** — the 27 Oct 2025 end-of-semester paper's
+  Q3(b). **The lecturer has reissued the question to the 2026 cohort without fixing it.** That is worth
+  telling him directly: it means the printed error is stable, and it will probably appear again.
+- **Severity:** value. The question is unanswerable as printed.
+
+### P22 · EMT 3101 Tutorial 1 (31 Aug 2026), Q5 — "Maclaurin's theorem" applied to a function that has no Maclaurin series
+- **Sheet:** "Use Maclaurin's theorem to expand $\sqrt{x}\ln(x+1)$ as a power series."
+- **Issue:** a Maclaurin series requires **all** derivatives at $x=0$. The expansion of
+  $\sqrt{x}\ln(x+1)$ runs $x^{3/2} - \tfrac12 x^{5/2} + \tfrac13 x^{7/2} - \cdots$ — **half-integer
+  powers**, a Puiseux series, not a Maclaurin one. The second derivative does not exist at 0.
+- **Intended route, which is unambiguous:** expand $\ln(1+x)$, which *does* have a Maclaurin series, and
+  multiply the result by $\sqrt{x}$. Then integrate term by term. The "hence" works perfectly.
+- **How to handle:** teach the method as intended, but make the distinction out loud — it is a genuinely
+  useful thing for him to know, and a good marker will not penalise a student who names it. Do **not**
+  treat this as a blocker; it is a wording looseness the textbooks share.
+- **Severity:** notation (wording). Method unaffected.
+
+<!-- Later papers append their own P-numbered entries above this line. -->
+
+---
+
 <sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>

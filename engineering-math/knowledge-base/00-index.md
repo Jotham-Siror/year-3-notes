@@ -8,7 +8,7 @@ built: "Transcribed from rendered page images; equations in canonical LaTeX; eve
 coverage: "66/66 pages mapped, contiguous, no gaps"
 total_verification_flags: 24   # 9 substantive (V1–V9) + 15 cosmetic (C1–C15)
 reading_limitations: 18        # L1–L18: 3 settled as clean readings, 1 reconstructed with certainty, 2 illegible but cancelled — no content gaps
-past_papers: 1                 # Assignment 1, Aug 2026 — see past-papers/
+past_papers: 5                 # Assignment 1 + Tutorial 1 + CAT 1 2024 + finals 2024 & 2025 — see past-papers/
 ---
 
 # Engineering Mathematics III (EMT 3101) — Knowledge Base Index
@@ -57,6 +57,27 @@ Full working in `../sources/SOURCES.md` § How these files were made.
 | Paper | Set | Questions | Solutions |
 |---|---|---|---|
 | Assignment 1 — EMT 3101 | 10 Aug 2026 | 5 | `past-papers/EMT3101-ASSIGNMENT1-2026-08-10.md` |
+| CAT 1 — EMT 3101 | 20 Aug 2024 | 4 | `past-papers/EMT3101-CAT1-2024-08-20.md` |
+| End of Semester — EMT 3101 | 23 Oct 2024 | 5 | `past-papers/EMT3101-EXAM-2024-10-23.md` |
+| End of Semester — EMT 3101 | 27 Oct 2025 | 5 | `past-papers/EMT3101-EXAM-2025-10-27.md` |
+| **Tutorial 1** — EMT 3101 | 31 Aug 2026 | 6 | `past-papers/EMT3101-TUTORIAL1-2026-08-31.md` |
+
+> ### ⚠⚠ The 2025 final is the 2024 final
+>
+> **70 of the 2025 paper's 90 marks are 2024 questions, and not one repeated question was reworded.**
+> All four genuinely new questions went into the compulsory Question One. The ODE $y'' + xy' + 2y = 0$
+> appears on all three papers, identically worded, for 33 marks in total. Two finals is not a rule — but
+> working the 2024 paper is, on this evidence, the highest-yield hour in this unit.
+> Detail in `past-papers/00-past-papers-index.md`.
+>
+> **And Tutorial 1 (31 Aug 2026, this cohort) draws from the same pool.** **Three of its six questions are
+> already on papers we hold, and between them they touch all three:** Q6 is the 2025 final's Q3(b) reissued
+> *with its printed error intact*, Q4 is on both finals, and Q5 is the 2024 CAT's Q4 verbatim. **Half of a
+> current tutorial has been examined before.**
+>
+> ⚠ **Legendre polynomials and the Gamma duplication formula are examined and appear nowhere in this KB.**
+> ⚠ **So are small changes / total differentials** — Tutorial 1 Q4 and both finals, three appearances, and
+> partial differentiation is in none of the six topic files. Add to the gap map.
 
 **What it tells us about examinable scope** — see `past-papers/00-past-papers-index.md` for the
 full read. In one line: **file `01` carries the paper.** Four of the five questions are Gamma/Beta;
