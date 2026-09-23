@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="Georgia, 'Times New Roman', serif">
+<title>BEE 3101 End of Semester (25 Oct 2024) — Figure Q2: two perfect dielectrics</title>
+<desc>A rectangular box divided by a vertical line into Region 1 on the left and Region 2 on the right, with a single horizontal arrow running left to right through both — the propagation axis and the boundary normal. Region 1 carries eta-1 = 300 ohm, an incident field E_xi1 = 100 V/m, and sigma-1 = 0. Region 2 carries eta-2 = 100 ohm. The conductivity in Region 2 is printed with subscript 1 as well, which is an error in the paper: it should be sigma-2 = 0. Required: the incident, reflected and transmitted powers.</desc>
+<style>
+  .wall{fill:none;stroke:#1a1a1a;stroke-width:2.2}
+  .tint{fill:#eaf1f7}
+  .hd{font-size:19px;fill:#111}
+  .val{font-size:22px;fill:#111}
+  .sub{font-size:16px;fill:#111}
+  .flow{stroke:#1a4a72;stroke-width:2}
+  .cap{font-size:12.5px;fill:#555}
+  .figlab{font-size:14px;fill:#555;font-style:italic}
+  .err{font-size:12px;fill:#b3261e}
+</style>
+<defs>
+  <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#1a4a72"/></marker>
+</defs>
+
+<rect x="320" y="60" width="180" height="270" class="tint"/>
+<rect x="140" y="60" width="360" height="270" class="wall"/>
+<line x1="320" y1="60" x2="320" y2="330" class="wall"/>
+
+<text x="230" y="100" class="hd" text-anchor="middle">Region 1</text>
+<text x="410" y="100" class="hd" text-anchor="middle">Region 2</text>
+
+<text x="230" y="188" class="val" text-anchor="middle">&#951;&#8321; =300&#937;</text>
+<text x="410" y="188" class="val" text-anchor="middle">&#951;&#8322; =100&#937;</text>
+
+<line x1="70" y1="214" x2="572" y2="214" class="flow" marker-end="url(#fa)"/>
+
+<text x="230" y="244" class="sub" text-anchor="middle">E&#8339;&#7522;&#8321;=100</text>
+<text x="230" y="264" class="sub" text-anchor="middle">V/m</text>
+
+<text x="230" y="304" class="val" text-anchor="middle">&#963;&#8321;=0</text>
+<text x="410" y="304" class="val" text-anchor="middle">&#963;&#8321;=0</text>
+
+
+<text x="320" y="352" class="figlab" text-anchor="middle">Figure Q2</text>
+<text x="320" y="376" class="cap" text-anchor="middle">BEE 3101 End of Semester (25 Oct 2024), Q2(b) &#8212; redrawn as printed.</text>
+<text x="320" y="392" class="err" text-anchor="middle">Called &#8220;Figure Q1&#8221; in the text (P6); Region 2&#8217;s conductivity is printed with subscript 1 (P7).</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 460" width="620" height="460" font-family="Georgia, 'Times New Roman', serif">
+<title>BEE 3101 End of Semester (25 Oct 2024) — Figure Q4: rectangular waveguide, three viewing directions</title>
+<desc>A rectangular waveguide drawn in oblique projection as a hollow box. Three arrows mark the viewing directions the question asks about: X enters horizontally from the left and points at the near end face, Y points down onto the top face, and Z points up at the bottom face from below left. The near end face carries the two edge labels b and a. A dashed line along the interior is the hidden back-bottom edge. No field lines are printed — supplying them for the TE10 mode is the task.</desc>
+<style>
+  .box{fill:none;stroke:#4a3a5a;stroke-width:1.8;stroke-linejoin:round}
+  .face{fill:#f7f5fa}
+  .hid{fill:none;stroke:#4a3a5a;stroke-width:1.4;stroke-dasharray:7 5}
+  .arr{stroke:#4a3a5a;stroke-width:1.8;fill:none}
+  .lab{font-size:17px;fill:#111}
+  .edge{font-size:15px;fill:#111}
+  .figlab{font-size:14px;fill:#555;font-style:italic}
+  .cap{font-size:12.5px;fill:#555}
+</style>
+<defs>
+  <marker id="ga" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#4a3a5a"/></marker>
+</defs>
+
+<!-- top face, front face and near end face of the guide -->
+<path d="M 170,250 L 470,250 L 510,205 L 210,205 Z" class="face"/>
+<path d="M 170,250 L 470,250 L 470,310 L 170,310 Z" class="face"/>
+<path d="M 170,250 L 210,205 L 210,265 L 170,310 Z" class="face"/>
+<path d="M 170,250 L 470,250 L 510,205 L 210,205 Z" class="box"/>
+<path d="M 170,250 L 470,250 L 470,310 L 170,310 Z" class="box"/>
+<path d="M 170,250 L 210,205 L 210,265 L 170,310 Z" class="box"/>
+<path d="M 470,250 L 510,205" class="box"/>
+<path d="M 470,310 L 510,265 L 510,205" class="box"/>
+
+<!-- hidden back-bottom edge, drawn dashed as on the paper -->
+<line x1="210" y1="265" x2="510" y2="265" class="hid"/>
+
+<!-- edge labels on the near end face -->
+<text x="176" y="277" class="edge">b</text>
+<text x="194" y="295" class="edge">a</text>
+
+<!-- the three viewing directions -->
+<line x1="58" y1="280" x2="162" y2="280" class="arr" marker-end="url(#ga)"/>
+<text x="70" y="266" class="lab">X</text>
+<line x1="340" y1="118" x2="340" y2="224" class="arr" marker-end="url(#ga)"/>
+<text x="356" y="142" class="lab">Y</text>
+<line x1="296" y1="398" x2="352" y2="320" class="arr" marker-end="url(#ga)"/>
+<text x="316" y="392" class="lab">Z</text>
+
+<text x="450" y="404" class="figlab" text-anchor="middle">Figure Q4</text>
+<text x="310" y="434" class="cap" text-anchor="middle">BEE 3101 End of Semester (25 Oct 2024), Q4(d) &#8212; as printed. No field lines are given.</text>
+<text x="310" y="450" class="cap" text-anchor="middle">Which of a and b is the broad wall is not resolvable from the drawing.</text>
+</svg>

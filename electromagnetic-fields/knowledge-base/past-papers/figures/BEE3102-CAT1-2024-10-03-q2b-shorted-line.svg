@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 356" width="720" height="356" font-family="Georgia, 'Times New Roman', serif">
+<title>BEE 3102 CAT (3 Oct 2024) — Fig. 1: short-circuited lossless line</title>
+<desc>A two-conductor transmission line drawn as a pair of long horizontal bars, looked into from the left at Z_in and shorted at the right-hand end. The unknown length L_min is dimensioned along the top. The characteristic impedance Z0 = 50 ohm is written between the conductors. At the right-hand end two open terminals are joined by a vertical link, labelled Shorted line. Required: the shortest electrical length that makes Z_in = j50 ohm.</desc>
+<style>
+  .cond{fill:#e8e8de;stroke:#1a1a1a;stroke-width:1.6}
+  .wire{stroke:#1a1a1a;stroke-width:1.8;fill:none}
+  .term{fill:#ffffff;stroke:#1a1a1a;stroke-width:1.8}
+  .dim{stroke:#1a1a1a;stroke-width:1.4;fill:none}
+  .lab{font-size:17px;fill:#111}
+  .cap{font-size:12.5px;fill:#555}
+  .figlab{font-size:14px;fill:#555;font-style:italic}
+</style>
+<defs>
+  <marker id="ka" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,1 L10,5 L0,9 z" fill="#1a1a1a"/></marker>
+</defs>
+
+<!-- L_min dimension along the top -->
+<line x1="145" y1="112" x2="430" y2="112" class="dim" marker-start="url(#ka)" marker-end="url(#ka)"/>
+<text x="287" y="98" class="lab" text-anchor="middle">L&#8344;&#7522;&#8345;=?</text>
+
+<!-- the two conductors -->
+<rect x="140" y="150" width="290" height="14" class="cond"/>
+<rect x="140" y="236" width="290" height="14" class="cond"/>
+
+<text x="285" y="203" class="lab" text-anchor="middle">Z&#8320;=50&#937;</text>
+
+<!-- terminals and the short at the right-hand end -->
+<line x1="430" y1="157" x2="458" y2="157" class="wire"/>
+<line x1="430" y1="243" x2="458" y2="243" class="wire"/>
+<circle cx="466" cy="157" r="7" class="term"/>
+<circle cx="466" cy="243" r="7" class="term"/>
+<line x1="473" y1="157" x2="512" y2="157" class="wire"/>
+<line x1="473" y1="243" x2="512" y2="243" class="wire"/>
+<line x1="512" y1="157" x2="512" y2="243" class="wire"/>
+<text x="526" y="206" class="lab">Shorted line</text>
+
+<!-- looking in from the left -->
+<path d="M 96,278 L 96,200 L 178,200" class="wire" marker-end="url(#ka)"/>
+<text x="90" y="298" class="lab" text-anchor="middle">Z&#7522;&#8345;</text>
+
+<text x="300" y="292" class="figlab" text-anchor="middle">Fig. 1</text>
+<text x="360" y="326" class="cap" text-anchor="middle">BEE 3102 CAT (3 Oct 2024), Q2(b) &#8212; redrawn as printed. Schematic: no frequency or wavelength</text>
+<text x="360" y="342" class="cap" text-anchor="middle">is given, and none is needed for an electrical length.</text>
+</svg>
