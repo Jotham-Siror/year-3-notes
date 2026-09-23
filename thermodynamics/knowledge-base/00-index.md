@@ -77,6 +77,43 @@ Full detail in `../sources/SOURCES.md`.
 > the citation: `·TT p13` is the page whose footer reads 13, i.e. **PDF page 12**. Check the footer,
 > not the viewer, when resolving a TT citation.
 
+## Past-paper register
+
+| Paper | Date | Marks | File |
+|---|---|---|---|
+| **CAT 1** *(printed MEC 3104)* | 28 Aug 2024 | none printed | `past-papers/MEC3104-CAT1-2024-08-28.md` — unsolved |
+| **CAT 2** (MEC 3105) | 2 Oct 2024 | 30 ✓ | `past-papers/MEC3105-CAT2-2024-10-02.md` — unsolved |
+| **End of Semester** *(printed MEC 3104)* | 1 Nov 2024 | 70 of 110 offered | `past-papers/MEC3104-EXAM-2024-11-01.md` — unsolved |
+| **CAT 1** (MEC 3105) | 26 Aug 2025 | none printed | `past-papers/MEC3105-CAT1-2025-08-26.md` — unsolved |
+| **CAT 2** (MEC 3105) | 3 Oct 2025 | none printed | `past-papers/MEC3105-CAT2-2025-10-03.md` — unsolved |
+| **October Exam** (MEC 3105) | 24 Oct 2025 | 90 printed / 60 sat ✓ | `past-papers/MEC3105-EXAM-2025-10-24.md` — unsolved |
+
+Full analysis, coverage tables and the house format:
+[`past-papers/00-past-papers-index.md`](past-papers/00-past-papers-index.md). Exam-paper defects (P1–P13)
+live in `_verification-log.md` **§ Exam papers**.
+
+> ### ⚠ The gap map below was examined, almost item for item
+>
+> **Six papers now, and the 2025 set is worse than the 2024 set.** Marks on material the five lecture
+> documents do not teach: **2025 CAT 1 — 75 %. 2025 CAT 2 — 59 %. 2025 October exam — 74 %**, including
+> **22 of its 30 compulsory marks**.
+>
+> They reach for **the SFEE** (four papers now, twice on compulsory questions, 21 marks in 2025 alone), a
+> **general definition of entropy**, the **Diesel/Otto comparison**, the **vapour-compression cycle**, the
+> **Rankine cycle** (5 marks in 2024 → 20 in 2025), **property tables** (eight questions), **availability**,
+> and two terms that appear nowhere in this KB at all — **"work ratio"** and **"specific steam
+> consumption"**.
+>
+> Three consequences. The `[added]` formula-sheet material was the right call and must keep its labels.
+> **The SFEE can no longer stand as a documented gap.** And **no steam table has ever been photographed** —
+> ask him for one; it blocks more marks than anything else here.
+
+> ### ⚠ Two codes, one unit
+>
+> Thermodynamics is **MEC 3105**. The 2024 CAT 1 and end-of-semester paper are both printed **MEC 3104**,
+> which is **Fluid Theory** — and the Fluid Theory CAT 2 of 9 Oct 2024 carries that code in the same term,
+> for the same cohort. Match a paper by unit **name**, never by code. See erratum **P1**.
+
 ## The lecturer's syllabus map
 
 Recovered from the group-activity headers, which carry section numbers the decks do not.
@@ -98,10 +135,18 @@ knowledge-base/
 ├── _nomenclature.md
 ├── _formula-sheet.md
 ├── _verification-log.md
-└── exercises/               ← group activities, never interleaved
-    ├── 00-exercises-index.md
-    ├── ga1-topic1-part1-equations-of-state.md
-    └── ga2-topic1-part2-first-law.md
+├── exercises/               ← group activities, never interleaved
+│   ├── 00-exercises-index.md
+│   ├── ga1-topic1-part1-equations-of-state.md
+│   └── ga2-topic1-part2-first-law.md
+└── past-papers/             ← actual CATs and exams, never interleaved either
+    ├── 00-past-papers-index.md
+    ├── MEC3104-CAT1-2024-08-28.md
+    ├── MEC3105-CAT2-2024-10-02.md
+    ├── MEC3104-EXAM-2024-11-01.md
+    ├── MEC3105-CAT1-2025-08-26.md
+    ├── MEC3105-CAT2-2025-10-03.md
+    └── MEC3105-EXAM-2025-10-24.md
 ```
 
 ### Why exercises are a separate folder
@@ -172,14 +217,16 @@ three times and unpicked afterwards.
 | Topic | Assessed in | Final verdict |
 |---|---|---|
 | **Van der Waals equation, constants $a$, $b$** | GA1 Part B | ❌ **ABSENT FROM ALL FIVE DECKS.** FL s37 gives Beattie-Bridgeman, Benedict-Webb-Rubin and virial instead. Supplied `[added]` in `02-first-law` §2.12 and on the formula sheet. ⚠ **And GA1 prints the constants in the wrong units — see V28.** |
-| **Steady-flow energy equation** | GA2 | ❌ **ABSENT FROM ALL FIVE DECKS.** FL covers closed systems only; TC and HE never write it. **Still unsupplied** — it is needed for one GA2 *discussion* prompt (Part A Q3), not for any numerical task, so it was left as a documented gap rather than invented. |
-| **Otto / Diesel / Brayton / Rankine / Stirling efficiency** | likely CAT | ❌ **ABSENT FROM ALL FIVE DECKS.** Named in TC s13, tabulated in HE s12, analysed nowhere. Supplied `[added]` on the formula sheet. |
-| **Entropy as a property** (general definition, Clausius inequality, $T\,ds$) | — | ⚠ **PARTIAL.** No general definition anywhere. HE s28 gives the **Carnot-specific** $Q_H = T_H\Delta s$, $Q_C = T_C\Delta s$ — the only entropy equations in the course. $dS = \delta Q_{rev}/T$ supplied `[added]`. |
+| **Steady-flow energy equation** | GA2 · **CAT 1 Q3** · **Exam Q1F — COMPULSORY** | ❌ **ABSENT FROM ALL FIVE DECKS.** FL covers closed systems only; TC and HE never write it. **Still unsupplied** — it is needed for one GA2 *discussion* prompt (Part A Q3), not for any numerical task, so it was left as a documented gap rather than invented. |
+| **Otto / Diesel / Brayton / Rankine / Stirling efficiency** | ✅ **confirmed — CAT 2 Q3A/B, Exam Q5 (20 marks)** | ❌ **ABSENT FROM ALL FIVE DECKS.** Named in TC s13, tabulated in HE s12, analysed nowhere. Supplied `[added]` on the formula sheet. |
+| **Entropy as a property** (general definition, Clausius inequality, $T\,ds$) | **CAT 2 Q1C · Exam Q2A** | ⚠ **PARTIAL.** No general definition anywhere. HE s28 gives the **Carnot-specific** $Q_H = T_H\Delta s$, $Q_C = T_C\Delta s$ — the only entropy equations in the course. $dS = \delta Q_{rev}/T$ supplied `[added]`. |
 | Compressibility factor $Z$, $Z \gtrless 1$ | GA1 Part B | ✅ **taught in full** — FL s35–s36, with reduced properties and the generalised chart |
 | Specific heats, $c_p - c_v = R$ | GA2 Part B | ✅ **taught** — FL s28, molar form via $\gamma$; convert basis for the exercises |
 | Enthalpy $h = u + Pv$ | GA2 | ✅ **taught and derived** — FL s21 |
-| Property / steam tables | — | ❌ **referenced but never reproduced** (FL s15, s21; EPC s15). Needed to finish FL s21's example. |
+| Property / steam tables | **CAT 2 Q3B/Q4B · Exam Q2B/Q3B** | ❌ **referenced but never reproduced** (FL s15, s21; EPC s15). Needed to finish FL s21's example. |
 | Third law | — | ⚠ appears **once**, on TC's orphan decorative slide 2. Nowhere else. |
+| **Availability / exergy** | **CAT 2 Q1B (3 marks)** | ❌ **ABSENT FROM THE ENTIRE KB.** The word occurs exactly once, inside TC s12's quoted entropy definition ("the *un*availability of…"); "exergy" occurs nowhere. Nearest coverage is EPC s84's **quality of energy** table — the same idea without the name or the formalism. Supply as `[added]`. |
+| **Vapour-compression refrigeration cycle** | **Exam Q4 (20 marks)** | ❌ **ABSENT.** The phrase appears nowhere. TC s11 carries the course's only *P*–*h* diagram and HE §5 names the cycle once in a list. Supply as `[added]`. |
 
 **Three hard gaps remain, and all three are assessable.** Van der Waals is *directly* assessed in
 GA1 Part B and has been supplied `[added]`. The named-cycle efficiencies are a CAT risk given Topic 3

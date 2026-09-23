@@ -895,4 +895,455 @@ give exact roots of the cubic.
 
 ---
 
+## Exam papers
+
+Defects in the actual assessment papers (not the lecture documents). Entry IDs are `P1`, `P2`, … allocated
+continuously across the whole `past-papers/` folder, and referenced by a `⚠ VERIFY` marker at the matching
+question in `past-papers/<paper>.md`. Per standing instruction the full entry lives **here only** — the paper
+file just points to it.
+
+**Allocation — 2024 papers:** `P1`, `P2`, `P9` span more than one paper · `P3`–`P7` = End of Semester,
+1 Nov 2024 · `P8`, `P10` = CAT 1, 28 Aug 2024 · `P11`–`P13` = CAT 2, 2 Oct 2024.
+**Allocation — 2025 papers:** `P14` spans the CAT 1 and the exam (the same question appears on both) ·
+`P15` and `P26` span all three · `P16`, `P17` = CAT 1, 26 Aug 2025 · `P18` spans both CATs · `P19` = CAT 2,
+3 Oct 2025 · `P20`–`P25` = 2025 October Exam, 24 Oct 2025. **Next paper starts at `P27`.**
+
+### P1 · CAT 1 (28 Aug 2024) and End of Semester (1 Nov 2024) — the wrong unit code ★
+- **Paper:** both are headed "**MEC 3104** – ENGINEERING THERMODYNAMICS".
+- **Issue:** Thermodynamics is **MEC 3105**. That is the code on this knowledge base, on `../sources/`, and
+  on the **CAT 2 of 2 October 2024** — the only one of the three 2024 papers that gets it right. **MEC 3104
+  is Fluid Theory**, and the Fluid Theory CAT 2 of **9 October 2024** carries exactly that code, in the same
+  term, for the same cohort
+  (`../../../fluid-flow/knowledge-base/past-papers/MEC3104-CAT2-2024-10-09.md`).
+- **So:** in the 2024/25 year, MEC 3104 appears on papers for **two different units**, and one of the two is
+  wrong. On the balance of evidence the Thermodynamics papers are the mislabelled ones.
+- **How to handle:** file the papers under this KB regardless of the printed code — the content settles it
+  beyond doubt. Never match a paper to a subject by code alone in this repository; match by **unit name**.
+  Worth mentioning to the lecturer or the department.
+- **Severity:** cataloguing (paper defect). No effect on the physics, considerable effect on filing.
+
+### P2 · CAT 1 (28 Aug 2024), CAT 2 (2 Oct 2024) and End of Semester (1 Nov 2024) — header spelling
+- **Paper:** "SCHOOL OF COMPUTING AND ENGINEERING **SCHENCES**" on all three; and the CAT 1 and the
+  end-of-semester paper read "**BACHELOR OF ELECTRICAL AND ELECTRONICS ENGINEERING**", omitting "SCIENCE IN"
+  (the CAT 2 has it right).
+- **Correct form:** SCIENCES; Bachelor of Science in Electrical and Electronics Engineering.
+- **Severity:** cosmetic. Noted because it is the *same* letterhead error on three separate papers, which is
+  a useful cross-check that they belong to one set.
+
+### P3 · End of Semester (1 Nov 2024), Q2 — parts sum to 40 inside a 20-mark question ★
+- **Paper:** Q2 is headed "(20 MARKS)". Its parts are marked **[8]**, **[8]**, **[8]**, **[8]** — and then a
+  closing line, "State any other assumptions you will have made", also marked **[8 Marks]** while not being
+  a numbered part at all.
+- **Issue:** the allocations sum to **40**, double the stated total, and one of the five is attached to an
+  instruction rather than a question. Instruction 4 on the front of the paper is explicit that "All other
+  questions carry 20 Marks each", so the question header is right and the part-marks are wrong.
+- **How to handle:** for a mock, halve the printed allocations (4 each, with the assumptions line folded
+  into the three parts) and say that is what you have done. Do not present the printed numbers as a mark
+  scheme.
+- **Severity:** structural (marks). The largest arithmetic defect on the paper.
+
+### P4 · End of Semester (1 Nov 2024), Q3 — parts sum to 16 of a stated 20
+- **Paper:** Q3 is headed "(20 MARKS)"; its two parts are marked [8] and [8].
+- **Issue:** four marks unaccounted for. Unlike Q2 this is a shortfall rather than an excess, so the two
+  defects do not share a cause.
+- **How to handle:** mark it out of 16, or scale to 20, and say which.
+- **Severity:** structural (marks).
+
+### P5 · End of Semester (1 Nov 2024), Q2(B) — property data printed without units
+- **Paper:** "Assuming that $h_1 = 392.285$; $s_1 = 1.7319$; $h_4 = h_3 = 266$, determine:".
+- **Issue:** three thermodynamic properties given as bare numbers. $h$ is in kJ/kg and $s$ in kJ/kg·K, but
+  neither is stated, and a student who assumes J/kg is out by a factor of a thousand throughout.
+- **The data itself is sound** — checked here against standard R-134a properties (CoolProp, 2026-09-03): at
+  **201.7 kPa** saturated vapour has $h \approx 392.7$ kJ/kg and $s \approx 1.733$ kJ/kg·K, and at
+  **1200 kPa** saturated liquid has $h \approx 265.9$ kJ/kg. The printed figures match to within ordinary
+  table-edition differences, and the saturation temperatures come out at ≈ −9.9 °C and ≈ 46.3 °C, which is a
+  perfectly ordinary car air-conditioner. **Only the units are missing.**
+- **How to handle:** supply the units and say the paper omitted them. Then point out what the three values
+  *mean* — $h_1$ and $s_1$ are the compressor inlet as saturated vapour, and $h_3 = h_4$ is the throttling
+  process — because that reading is what makes the question tractable.
+- **Severity:** notation (units). Recoverable, and worth using to teach unit discipline.
+
+### P6 · End of Semester (1 Nov 2024), Q3(B) — the cycle COP cannot be computed from what is given
+- **Paper:** "The refrigerant R-22 is used as the working fluid in a **conventional heat pump cycle**.
+  Saturated vapor enters the compressor of this unit at 10°C; its exit temperature from the compressor is
+  measured and found to be 85°C. If the compressor exit is at 2 MPa what is the compressor isentropic
+  efficiency and the cycle COP?"
+- **Issue:** the **isentropic efficiency** is fully determined by what is given. The **cycle COP** is not —
+  it needs the enthalpy leaving the condenser, and the paper never states that state.
+- **The states given are sound** — checked here (CoolProp, 2026-09-03): R-22 saturated vapour at 10 °C sits
+  at ≈ 681 kPa, and at 2 MPa the saturation temperature is ≈ 51.3 °C, so 85 °C at the compressor exit is
+  genuinely superheated by about 34 K. The pressure ratio is ≈ 2.9 and 2 MPa is well below R-22's critical
+  pressure of 4.99 MPa. Nothing here is physically wrong.
+- **The reading that closes it:** "conventional cycle" conventionally means saturated liquid leaves the
+  condenser and the expansion is isenthalpic. That is standard, and it is almost certainly the intent.
+- **How to handle:** state the assumption explicitly before using it — the paper's own habit of awarding
+  marks for stated assumptions (see Q2B) suggests the lecturer expects exactly that.
+- **Severity:** omission (under-specified). Recoverable by convention, not from the page.
+
+### P7 · End of Semester (1 Nov 2024) — the appendix is missing from the photographed set
+- **Paper:** instruction 5 reads "Required standard thermodynamics data is provided in the appendix."
+- **Issue:** the photographs supplied are "Page 1 of 2" and "Page 2 of 2" only. **No appendix is among
+  them.** Q2(B) needs the R-134a superheat table at 1200 kPa; Q3(B) needs R-22 tables; and the knowledge
+  base itself records property tables as "referenced but never reproduced".
+- **This is not a defect in the paper** — the appendix presumably exists and was simply not photographed. It
+  is logged here because it blocks the same questions a paper defect would.
+- **How to handle:** **ask him to photograph the appendix.** Until then, Q2(B) and Q3(B) cannot be worked,
+  and table values must not be invented into this knowledge base to close the hole.
+- **Severity:** missing material (source completeness, not a paper error).
+
+### P8 · CAT 1 (28 Aug 2024) — no marks printed anywhere
+- **Paper:** four questions, eight parts, and **not one mark allocation** — no part-marks and no total. The
+  page is complete and nothing is cropped.
+- **How to handle:** for a mock, weight it by the marks the *same topics* carry elsewhere in the set: the
+  end-of-semester paper prices the first law and specific-heat definitions at 3–4 marks each and the
+  heat-pump comparison at 8. Say where the weighting came from.
+- **Severity:** omission (marks). The same defect appears on the 3 Oct 2024 Electromagnetic Fields CAT, so
+  it may be a departmental habit rather than a one-off.
+
+### P9 · CAT 1 (28 Aug 2024) and CAT 2 (2 Oct 2024) — "ASSESMENT"
+- **Paper:** "CONTINUOUS **ASSESMENT** TEST 1" and "CONTINUOUS **ASSESMENT** TEST 2".
+- **Correct form:** ASSESSMENT.
+- **Severity:** cosmetic. Logged once and referenced from both papers.
+
+### P10 · CAT 1 (28 Aug 2024), Q3 — the question is over-determined, and its two routes disagree ★
+- **Paper:** a steam turbine, steam in at **5 MPa, 450 °C**, out at **100 kPa, 150 °C**, $\dot m = 2$ kg/s,
+  $\dot W = 800$ kW, heat loss 50 kW. "Using the First Law of Thermodynamics, calculate the change in
+  specific enthalpy of the steam as it passes through the turbine."
+- **Issue:** $\Delta h$ is fixed **twice over**, by two independent routes, and the two do not agree.
+  1. **From the energy balance** (the route the question intends):
+     $\Delta h = (\dot Q - \dot W)/\dot m = (-50 - 800)/2 = \mathbf{-425\ kJ/kg}$.
+  2. **From the two states, via steam tables:** $h(5\ \text{MPa},\,450\,^\circ\text{C}) = 3317$ kJ/kg and
+     $h(100\ \text{kPa},\,150\,^\circ\text{C}) = 2777$ kJ/kg, so $\Delta h = \mathbf{-541\ kJ/kg}$.
+     *(Computed here with CoolProp/IAPWS-IF97, 2026-09-03.)*
+- **The gap is 116 kJ/kg — about 27 %.** The inlet and exit states as printed are not consistent with the
+  stated power and heat loss: a turbine expanding between those two states at 2 kg/s would produce roughly
+  1030 kW net, not 800 kW with 50 kW of loss.
+- **How to handle:** the *method* the question wants is unaffected — answer by route 1, which is what "using
+  the First Law" asks for, and state the usual assumptions (steady state, negligible kinetic and potential
+  terms). **But this is a genuinely instructive question to work with him**, because a student who checks his
+  answer against the steam tables will find it does not agree, and needs to know that the data, not his
+  arithmetic, is at fault. Do not let him conclude he has made an error.
+- **Severity:** value (inconsistent data). Method-neutral, but a real trap for a careful student.
+
+### P11 · CAT 2 (2 Oct 2024), Q3(A) and Q4(A) — one mark for a two-part discussion question
+- **Paper:** "Describe the Rankine cycle and its significance in power generation. **1 Mark**" and "How does
+  heat exchange occur in a steam boiler, and why is insulation important in this process? **1Mark**".
+- **Issue:** each asks two things and prices them as a single recall. By contrast Q2(A) awards **8 of the
+  paper's 30 marks** for one comparison. The paper's marks are not where its writing is.
+- **How to handle:** not an error to correct, but tell him about it before a timed mock — the natural
+  instinct is to write a page on the Rankine cycle and lose the time on Q2(A), which is worth eight times as
+  much.
+- **Severity:** structural (allocation). Affects exam technique, not correctness.
+
+### P12 · CAT 2 (2 Oct 2024), Q3(B) — unanswerable as printed: no turbine inlet pressure ★
+- **Paper:** "A Rankine cycle operates with **superheated steam at 500°C** and a condenser temperature of
+  45°C. Assuming no losses, determine the amount of work done by the turbine if the mass flow rate of steam
+  is 2 kg/s. **Use steam tables for enthalpy values.**"
+- **Issue:** a superheated state needs **two** independent properties. Temperature alone places the inlet
+  anywhere along the 500 °C isotherm, and the enthalpy there varies by hundreds of kJ/kg across the
+  pressures a steam plant might plausibly use. The condenser temperature fixes only the **exit** pressure.
+  **No inlet enthalpy can be read from any table, so the turbine work cannot be found.**
+- **What is missing:** the boiler / turbine-inlet pressure. One number.
+- **How to handle:** **do not guess it.** If working the question with him, supply a pressure explicitly,
+  say that you are supplying it and that the paper did not, and then run the standard route — isentropic
+  expansion to the condenser pressure, dryness fraction at exit, $w = h_1 - h_2$, then $\dot W = \dot m w$.
+  That is the same route **Q4(B)** needs, and Q4(B) *is* fully specified (3 MPa, 350 °C → 50 kPa), so the
+  two make an excellent teaching pair: same method, one answerable and one not, and the difference is
+  exactly the missing second property.
+- **Severity:** omission (paper defect). The question cannot be answered as printed.
+
+### P13 · CAT 2 (2 Oct 2024), Q2(B) — which COP is wanted is not stated
+- **Paper:** "Consider a refrigeration cycle operating with **R-134a**, where the evaporator and condenser
+  temperatures are -10°C and 40°C, respectively. Determine the coefficient of performance (COP) of the
+  cycle. *(4 Marks)*"
+- **Issue:** two different quantities answer to that description and they need different data.
+  - **Reversed Carnot** between the two absolute temperatures — needs nothing but the temperatures.
+  - **The ideal vapour-compression cycle** — needs four R-134a enthalpies from tables that the paper does
+    not supply and the knowledge base does not contain.
+  The question **names the refrigerant**, which points at the second; it **supplies only temperatures**,
+  which points at the first. Nothing on the page resolves it.
+- **How to handle:** work the reversed-Carnot value, say explicitly that that is the reading being used and
+  why, and note what the other reading would need. ⚠ **Use kelvin** — `_nomenclature.md` clash 11 is exactly
+  this trap, and the COP formulae in `03b` §3b.6 assume absolute temperatures throughout.
+- **Severity:** ambiguity (under-specified). Answerable, but only after a stated choice.
+
+### P14 · CAT 1 (26 Aug 2025), Q3 and 2025 October Exam (24 Oct 2025), Q4(b) — a reversible isothermal process cannot have its heat transfer chosen ★
+- **Paper:** "Steam at 7 *bar* and dryness fraction 0.95 expands in a cylinder behind a piston
+  **isothermally and reversibly** to a pressure of 1.5 *bar*. **The heat supplied during the process is
+  found to be 420 *kJ/kg***. Calculate … (a) The specific change of internal energy (b) The specific change
+  of enthalpy, and (c) The work done." **Printed twice, word for word** — CAT 1 Q3 (5/5/2) and exam Q4(b)
+  (5/5/2), eight weeks apart.
+- **Issue:** the question is **over-determined**. For a *reversible* process $q = \int T\,ds$, and because
+  this one is also *isothermal* that collapses to $q = T(s_2 - s_1)$ — fixed entirely by the two end states,
+  which the rest of the data already fix. It is not free to be stated. The printed 420 kJ/kg is not the
+  value the data imply.
+- **Computed here** (CoolProp / IAPWS-IF97, **2026-09-03**): the isotherm is $T_{sat}(7\ \mathrm{bar}) =
+  164.95\ ^\circ$C $= 438.10$ K. State 1 (7 bar, $x = 0.95$): $u = 2478.0$ kJ/kg, $h = 2659.5$ kJ/kg,
+  $s = 6.4713$ kJ/kg·K. State 2 is **superheated** steam at 1.5 bar, 164.95 °C (saturation there is only
+  111.35 °C): $u = 2603.0$ kJ/kg, $h = 2803.0$ kJ/kg, $s = 7.4908$ kJ/kg·K. Hence
+  $q_{rev} = 438.10 \times (7.4908 - 6.4713) = \mathbf{446.6\ kJ/kg}$ against the **420 kJ/kg** printed —
+  a gap of **26.6 kJ/kg, about 6 %**.
+- **Consequence for the answers:** parts (a) and (b) are unaffected — $\Delta u = +125.0$ kJ/kg and
+  $\Delta h = +143.6$ kJ/kg come from the two states alone. Part (c) is not: $w = q - \Delta u$ gives
+  **295.0 kJ/kg** with the paper's $q$ and **321.6 kJ/kg** with the consistent one.
+- **How to handle:** answer part (c) with the paper's 420 kJ/kg — that is the datum the question hands him
+  and the marks will follow it. **Then show him the check**, because a careful student who verifies his own
+  work with $q = T\Delta s$ will find the 6 % gap and needs to know the *data*, not his method, is at
+  fault. This is the same trap as **P10** on the 2024 CAT 1, and it is worth teaching the two together.
+  ⚠ Also teach the state-2 move explicitly: isothermal expansion out of the wet region lands in the
+  **superheat table**, and that switch of table is the examinable step in the question.
+- **Severity:** value (inconsistent data). Method-neutral for two parts of three; the paper's most
+  instructive defect, and the only one that appears on two different 2025 papers.
+
+### P15 · CAT 1 (26 Aug 2025), CAT 2 (3 Oct 2025) and 2025 October Exam (24 Oct 2025) — the promised property table is missing from every photographed set ★
+- **Paper:** CAT 1 and the exam both print "Other important values are shown in the **accompanying vapor
+  table**"; the CAT 2's instructions read "Where necessary, **use the steam table attached**".
+- **Issue:** **no table of any kind is among the photographs of any of the three papers.** CAT 1 is two
+  pages, CAT 2 is two pages, the exam is four numbered pages ("1" … "4") and none carries an appendix.
+- **What it blocks, in marks:**
+  - **CAT 1:** Q1 (6) and Q3 (12) → **18 of 32**.
+  - **CAT 2:** Q4(b) (5) and Q4(c) (12) → **17 of 34**.
+  - **Exam:** Q1(c) (7), Q1(d) (7), Q2(b) (10), Q4(b) (12) → **36 of the 90 offered**; and Q5(b) (8) needs
+    **R-134a** tables, which a *vapour/steam* table would not contain at all.
+- **This is not a defect in the papers** — the tables presumably exist and were simply not photographed,
+  exactly as with the 2024 end-of-semester appendix (**P7**). It is logged because it blocks the same
+  questions a paper defect would, and because it is now the **fourth consecutive** assessment set in this
+  folder to be filed without the property data it depends on.
+- **How to handle:** **ask him to photograph the vapour/steam table and any refrigerant table issued with
+  it.** Until then those questions cannot be worked, and **table values must not be invented into this
+  knowledge base to close the hole.** Where a check was needed to prove a question is answerable, the
+  numbers were computed from CoolProp/IAPWS-IF97 and labelled as such in the paper file — they are not a
+  substitute for the lecturer's table and must never be quoted as one.
+- **Severity:** missing material (source completeness, not a paper error).
+
+### P16 · CAT 1 (26 Aug 2025) — two of the three Important Constants carry the wrong unit
+- **Paper:** "Specific heat capacity of air at constant volume, $c_v = 0.718\ J/kg.K$" and "Specific air
+  constant $R = 287\ J/mol.K$".
+- **Issue:** both values are right and both units are wrong.
+  - $c_v$ for air is **0.718 kJ/kg·K**, not 0.718 J/kg·K — a factor of **1000**.
+  - $R$ for air is **287 J/kg·K**, not 287 J/mol·K. On a molar basis the gas constant of air is about
+    8.31 J/mol·K; 287 J/mol·K is not the gas constant of anything.
+- **Why it matters:** $R$ is **load-bearing in Q4(c)**, which needs $m = P_1V_1/(RT_1)$ before it can find
+  the work. Read as J/mol·K the mass comes out about 29 times too small and the answer with it. This is
+  the same class of fault as **V28** (GA1's Van der Waals constants) — a correct number under a wrong unit,
+  invisible until you substitute.
+- **Correct form:** $c_v = 0.718$ kJ/kg·K; $R = 287$ J/kg·K $= 0.287$ kJ/kg·K.
+- **How to handle:** correct both before he starts, out loud, and use the pair as a unit-discipline drill:
+  $c_p - c_v = R$ gives $1.005 - 0.718 = 0.287$ kJ/kg·K, which is the check that catches it.
+  ⚠ The same $c_v$ defect recurs on the October exam — see **P20**.
+- **Severity:** notation (units). Recoverable, but silently wrong if it is not caught.
+
+### P17 · CAT 1 (26 Aug 2025), Q2 — a lost exponent, and an exit state that is not self-consistent
+- **Paper:** "…specific volume of **4.37 *m/kg*** and internal energy of 2360 *kJ/kg*."
+- **Issue (a) — notation:** specific volume is in **m³/kg**. The cube is missing. The inlet value in the
+  same sentence is printed correctly as $0.143\ m^3/kg$, so it is a typesetting slip, not a convention.
+- **Issue (b) — value:** the exit pair $(v = 4.37\ \mathrm{m^3/kg},\ u = 2360\ \mathrm{kJ/kg})$ is **not a
+  consistent state of steam at 0.35 bar**. Computed here (CoolProp / IAPWS-IF97, **2026-09-03**):
+  $v = 4.37$ m³/kg gives $x = 0.9657$, whose internal energy is **2398 kJ/kg**, not 2360; conversely
+  $u = 2360$ kJ/kg gives $x = 0.9482$, whose specific volume is **4.291 m³/kg**, not 4.37. The mismatch is
+  ~38 kJ/kg in $u$, about 1.6 % in dryness. *(The **inlet** state is sound: at 13.8 bar the saturated
+  vapour has $v_g = 0.14274$ m³/kg and $u_g = 2591.4$ kJ/kg, which is the printed (0.143, 2590) to three
+  figures.)*
+- **Does it change the answer?** **No.** Every property the question needs is printed on the paper, so the
+  power comes out at ≈ 102.65 kW either way and no table is consulted. It matters only if he cross-checks
+  the exit state against the steam tables, finds it does not close, and concludes he has blundered.
+- **How to handle:** fix the unit; work the question exactly as printed; and if he does check it against a
+  table, tell him the data is at fault, not his arithmetic. Contrast **P10** on the 2024 CAT 1, which is
+  the same shape of defect with a 27 % consequence instead of none — the pair makes the point that
+  "inconsistent data" and "wrong answer" are not the same thing.
+- **Severity:** notation (units) + value (minor inconsistency). Answer unaffected.
+
+### P18 · CAT 1 (26 Aug 2025) and CAT 2 (3 Oct 2025) — no total mark printed on either paper
+- **Paper:** every part carries an allocation, but neither CAT states a total anywhere — no "(30 Marks)"
+  header, no footer figure, nothing beside the title.
+- **Issue:** the parts sum to **32** on the CAT 1 (6 + 6 + 12 + 8) and **34** on the CAT 2
+  (3 + 6 + 5 + 20). Neither is a round number, and with no stated total there is nothing to reconcile the
+  sums against, so `marks_reconcile` cannot be set true on either file.
+- **Not the same defect as P8.** The 2024 CAT 1 printed **no marks at all**, part-marks included. These two
+  print every part-mark and omit only the total, which is a much smaller problem: the weighting is
+  recoverable, only the scaling is not.
+- **How to handle:** mark each out of its own sum (32 and 34) and say so, or scale to 30 and say so. Do not
+  present either figure as the lecturer's. ⚠ Note the contrast with the **October exam**, which prints a
+  total on every question and where **all five reconcile exactly** (30, 15, 15, 15, 15) — the first
+  Thermodynamics paper in this folder of which that is true, against **P3** and **P4** in 2024.
+- **Severity:** omission (marks).
+
+### P19 · CAT 2 (3 Oct 2025), Q4 — the figure does not show the cycle the question specifies, and carries no caption ★
+- **Paper:** "Dry saturated steam is supplied at 40 *bar* to a turbine. Given that the condenser pressure
+  is 0.035 *bar* and the plant operates on an **ideal Rankine cycle as shown in Figure 2**", followed by
+  "(a) Describe the process of the Rankine cycle **shown in Figure 2**."
+- **Issue (a) — the drawing contradicts the data.** The $T$–$s$ diagram places **state 3 in the superheat
+  region** (on a straight isobar that leaves the saturated-vapour line and rises to the right) and lands
+  **state 4 on the saturated-vapour line**. The question specifies **dry saturated** steam at 40 bar, which
+  puts state 3 exactly *on* the saturated-vapour line, and — computed here (CoolProp / IAPWS-IF97,
+  **2026-09-03**) — puts state 4 at $x_4 = \mathbf{0.698}$, well **inside** the dome. The figure is a
+  generic textbook ideal-Rankine-**with-superheat** diagram; it is not a picture of this cycle.
+  *(Working: $h_3 = 2800.8$ kJ/kg and $s_3 = 6.0696$ kJ/kg·K at 40 bar, $x = 1$; at 0.035 bar
+  $s_f = 0.3906$, $s_{fg} = 8.1305$, so $x_4 = (6.0696 - 0.3906)/8.1305 = 0.698$; $h_4 = 1814.5$ kJ/kg.)*
+- **Issue (b) — the name.** The text calls it "Figure 2" twice, and **the figure carries no caption at
+  all**. The paper's other figure *is* captioned ("Figure 1: P-V diagram of the Otto Cycle"), so the
+  omission is specific to this one.
+- **Why it matters:** part (a) is worth 3 marks for *describing the process shown in Figure 2*. A student
+  who describes what is drawn will describe a superheat cycle; a student who describes what is specified
+  will describe a dry-saturated one. Parts (b) and (c), 17 marks, depend on the dry-saturated reading.
+- **How to handle:** **answer from the question's numbers, not from the picture.** Use the figure only for
+  the four process names and the direction of the arrows, and tell him explicitly that state 3 as drawn is
+  not the state he has been given. Then use it as a teaching point: on a $T$–$s$ diagram the whole reason a
+  real plant superheats is to push state 4 out of the wet region, and this figure shows the cycle that has
+  done so while the question asks about the one that has not — $x_4 = 0.70$ is wet enough to worry a
+  turbine designer.
+- **Severity:** structural (figure/text mismatch), with a cataloguing element (uncaptioned figure). The
+  worst defect on this paper.
+
+### P20 · 2025 October Exam (24 Oct 2025) — the Important Constants block, five defects in six lines ★
+- **Paper:** "Gas constant $\dot R = 8.3145\ kJ/kg\ K$ · Molar mass of argon $\dot m = 40$ kg/kmol ·
+  Specific heat capacity of argon at constant pressure, $c_p = 0.520\ kJ/kg.K$ · Specific heat capacity of
+  air at constant volume, $c_v = 0.718\ J/kg.K$ · Specific heat capacity of air at constant pressure,
+  $c_p = 1.041\ kJ/kg\ K$".
+- **Issue:**
+  1. **$\dot R$** — a dot accent is a *rate* marker throughout this subject. The universal gas constant is
+     $\bar R$ (or $R_u$).
+  2. **8.3145 kJ/kg K** — the unit is **kJ/kmol·K**. There is no substance whose specific gas constant is
+     8.3145 kJ/kg·K.
+  3. **$\dot m$ for a molar mass** — $\dot m$ is *mass flow rate*, and this very paper uses it that way in
+     Q5(b). Molar mass is $M$.
+  4. **$c_v = 0.718\ J/kg.K$** — wrong by a factor of 1000; it is **kJ**/kg·K. The same defect appears on
+     the August CAT 1 (**P16**), so it is a carried-over template error, not a one-off.
+  5. **$c_p(\mathrm{air}) = 1.041$ kJ/kg·K is numerically inconsistent with the other two.** Checked here
+     (arithmetic, **2026-09-03**): $1.041 - 0.718 = 0.323$ kJ/kg·K, but $R_{air} = 0.287$; and
+     $1.041/0.718 = 1.450$, not the $\gamma = 1.4$ the August CAT prints. The value that satisfies both
+     $c_p = \gamma c_v$ and $c_p - c_v = R$ is **1.005 kJ/kg·K**. (1.041 is roughly $c_p$ for air near
+     550–600 K; nothing on this paper works at that temperature.)
+- **What is correct:** $c_p(\mathrm{argon}) = 0.520$ kJ/kg·K is right and self-consistent — with
+  $R_{ar} = 8.3145/40 = 0.20786$ kJ/kg·K it gives $c_v = 0.31214$ and $\gamma = 1.666$, exactly right for a
+  monatomic gas.
+- **Why it matters:** **Q3(b) cannot be started without reading line 1 as molar and dividing by line 2** —
+  $R_{argon} = \bar R/M$. And Q5(a) needs $c_v$ for air, which is printed in the wrong unit and whose
+  partner $c_p$ is wrong outright. Neither $R_{air}$ nor $\gamma$ is printed on this paper at all.
+- **How to handle:** hand him the corrected block before he starts, and teach the two-line check that
+  catches all of it: $c_p - c_v = R$ and $\gamma = c_p/c_v$ must both hold for the same gas.
+- **Severity:** notation (symbols and units) + value (one wrong constant). The paper's worst defect,
+  because it sits on the front page and is load-bearing for two of the five questions.
+
+### P21 · 2025 October Exam (24 Oct 2025), Q3(a)(ii) — a missing word
+- **Paper:** part (ii) reads, as printed, "**The supplied to the engine** *(3 marks)*", between
+  "(i) The thermal efficiency of the engine" and "(iii) The heat rejected by the engine".
+- **Issue:** the word **"heat"** is absent from the printed paper. What appears above the line on the
+  photograph is **the student's own pen**, inserted with a caret — it is his correction, not the paper's
+  text, and it must not be read back as exam content.
+- **Correct form:** "The **heat** supplied to the engine."
+- **How to handle:** no real ambiguity — part (iii) asks for the heat rejected and part (i) for the
+  efficiency, so (ii) can only be $Q_H$. Transcribe it as printed, teach it as intended, and note that this
+  is the second paper in the set to be signed off with a word missing.
+- **Severity:** omission (a word). Recoverable from context.
+
+### P22 · 2025 October Exam (24 Oct 2025), Q5(a) — the initial pressure cannot be read ★
+- **Paper:** "Air initially with pressure, volume and temperature of **⟦illegible⟧** $kN/m^2$, 0.14 $m^3$
+  and 25 °C respectively is compressed to a pressure of 0.14 $MN/m^2$ according to the law
+  $PV^{1.25} = constant$. Determine the change in entropy. *(7 marks)*"
+- **Issue:** the printed initial pressure is **obliterated by the student's own blue-pen scribble**, with
+  "0.14" written twice above it (the first attempt struck through). Roughly three to five printed
+  characters sit under the ink. Colour separation of the photograph at full resolution (blue channel vs
+  red, **2026-09-03**) recovers fragments — an ascender, a decimal point, a partial ring — but **not a
+  readable number**. This is a defect of *the photograph*, not of the paper.
+- **What can honestly be said:** the process is a **compression to 140 kN/m²**, so the initial pressure
+  must be **below 140 kN/m²**. That is the only constraint the page supports. His handwritten "0.14" cannot
+  be the initial pressure: 0.14 kN/m² is a near-vacuum, and 0.14 MN/m² is the *final* pressure, which would
+  leave no compression at all. It most likely records the **volume**, printed immediately afterwards.
+- **Consequence:** the question **cannot be worked from this photograph**. Both $m = P_1V_1/(RT_1)$ and
+  $T_2 = T_1(P_2/P_1)^{(n-1)/n}$ need the missing number, so the mass *and* the temperature ratio are
+  blocked, and with them the entropy change.
+- **How to handle:** **ask him what the paper says.** Do not guess it, and do not infer it from the
+  handwriting. If working the question as practice before he answers, **supply a value explicitly**, say
+  that you are supplying it and that the paper's own could not be read, and pick something ordinary for air
+  in a cylinder. The method — $T_2$ from the polytropic relation, then
+  $\Delta s = m[c_v\ln(T_2/T_1) + R\ln(v_2/v_1)]$ — is unaffected and is what the 7 marks are for.
+- **Severity:** legibility (photograph, not paper). The only question in the 2025 set that cannot be read.
+
+### P23 · 2025 October Exam (24 Oct 2025), Q5(b) Table 1 — states 3 and 4 are over-specified, and the extra data disagree
+- **Paper:** *Table 1: Parameters at each section of a refrigeration system shown in Figure 1* —
+  $P_1 = 100\ kPa$, $P_2 = 800\ kPa$, $T_1 = -20\ ^\circ$C, $T_2 = 50\ ^\circ$C, $T_3 = 30\ ^\circ$C,
+  $T_4 = -25\ ^\circ$C, $x_3 = 0.0$.
+- **Issue:** in a vapour-compression cycle states 3 and 4 are each fixed by **two** properties, and the
+  table supplies a third that does not agree.
+  - **State 4** leaves the throttle as a wet mixture at the evaporator pressure, so its temperature is not
+    free. Checked here (CoolProp, **2026-09-03**): $T_{sat}$ at $P_4 = P_1 = 100$ kPa is
+    **−26.36 °C**, but the table prints **−25 °C**, which is the saturation temperature of
+    **106.4 kPa**. The two readings give $x_4 = 0.3513$ and $x_4 = 0.3446$ — a **2 % spread on the 3-mark
+    part (i)**.
+  - **State 3** has the same slip, smaller: $x_3 = 0$ at 30 °C corresponds to **770.2 kPa**, not the 800 kPa
+    printed; at 800 kPa and 30 °C R-134a is very slightly **subcooled**, not saturated. Here it is
+    harmless — $h_3 = 241.72$ kJ/kg either way — but it is the same modelling error.
+- **Everything else in the table is sound.** $T_{sat}(800\ \mathrm{kPa}) = 31.33$ °C, so $T_2 = 50$ °C is
+  genuinely superheated; $T_1 = -20$ °C at 100 kPa is superheated by about 6 K, which is an ordinary
+  suction superheat. The cycle the table describes is a perfectly realistic domestic refrigerator: the
+  numbers give $\dot Q_{evap} \approx 14.6$ kW, compressor heat rejection $\approx 0.28$ kW and
+  $\mathrm{COP} \approx 2.9$.
+- **How to handle:** take **$P_1 = 100$ kPa** as the evaporator pressure — it is the pressure the figure's
+  state numbering is built on and the value used for $h_1$ — say explicitly that the printed
+  $T_4 = -25\ ^\circ$C is inconsistent with it by 1.4 K, and note that the answer moves by 2 % on the other
+  reading. Then make the general point, which is worth more than the arithmetic: **inside the dome,
+  pressure and temperature are not independent.** That is the single idea the table gets wrong, and it is
+  the idea the question is testing.
+- **Severity:** value (over-specified, mutually inconsistent). Answerable after a stated choice — compare
+  **P13** on the 2024 CAT 2, which is the same species of defect.
+
+### P24 · 2025 October Exam (24 Oct 2025), Q2(b)(i) — "work input" for a process that outputs work
+- **Paper:** "Steam at 7 *bar* with a dryness fraction of 0.9, **expands** reversibly at constant pressure
+  until the temperature is 200 °C. Calculate **(i) The work input** *(4 marks)*".
+- **Issue:** the process is an **expansion at constant pressure**, so the specific volume rises and the
+  steam does work **on** its surroundings. Computed here (CoolProp / IAPWS-IF97, **2026-09-03**):
+  $v_1 = 0.24561$ m³/kg at 7 bar, $x = 0.9$; $v_2 = 0.30000$ m³/kg at 7 bar, 200 °C (superheated — the
+  saturation temperature there is only 164.95 °C); so $w = P(v_2 - v_1) = 700 \times 0.05439 =
+  \mathbf{+38.08\ kJ/kg}$, an **output**. There is no work input.
+- **⚠ This is the knowledge base's own worst fault, set as an exam question.** `02-first-law` §2.3 and
+  flags **V5–V9** record that FL states one sign convention on s13 ("work done on the gas is positive") and
+  its exact opposite on s30, and that FL's single worked example (s20) mixes the two inside one calculation
+  and lands an answer **one fifth** of the correct magnitude (**V8**). A student taught from that deck has
+  no stable way to decide what "work input" means.
+- **How to handle:** answer with the **magnitude, 38.1 kJ/kg**, and state the direction **in words** —
+  "the steam does 38.1 kJ/kg of work on the piston" — rather than trusting a sign. Say which convention is
+  in use before writing anything. Then check the whole part with the first law: $q = \Delta h = 289.1$
+  kJ/kg for an isobaric process and $\Delta u = 251.0$ kJ/kg, and $289.1 - 38.1 = 251.0$ closes exactly.
+  That closure is the proof the sign is right, and it is a better habit than memorising a convention.
+- **Severity:** notation (sign convention). Recoverable, and the best available hook for teaching V8.
+
+### P25 · 2025 October Exam (24 Oct 2025), Q3(a) — "65 hp" with no definition of the horsepower
+- **Paper:** "Assuming that the engine will have a net output of **65 *hp***, determine …".
+- **Issue:** the Important Constants block defines five quantities and the horsepower is not among them,
+  and this is the only non-SI unit on the paper. Mechanical horsepower is 745.7 W; metric horsepower
+  (PS/ch) is 735.5 W. Computed here (**2026-09-03**) with $\eta = 0.6988$: mechanical gives
+  $\dot W = 48.47$ kW and $\dot Q_H = 69.37$ kW; metric gives $47.81$ kW and $68.42$ kW — a **1.4 %**
+  spread, enough to change the second significant figure of the answers to parts (ii) and (iii).
+- **How to handle:** use **mechanical horsepower, 745.7 W**, which is the usual default in engineering
+  thermodynamics texts, **and write the conversion down** as part of the answer. Not worth a mark either
+  way, but a stated conversion is what an examiner can follow.
+- **Severity:** ambiguity (units). Minor, and entirely recoverable by convention.
+
+### P26 · CAT 1 (26 Aug 2025), CAT 2 (3 Oct 2025) and 2025 October Exam (24 Oct 2025) — cosmetic cluster, and what the 2025 papers FIXED
+- **Paper, the slips:** CAT 2's instruction "Answer **question ALL questions** in the answer booklet
+  provided"; CAT 1's Q3 stem breaking off mid-phrase, "Calculate the specific", before parts that each
+  begin "The specific …"; mark labels reading "(1 marks)" (CAT 2 Q3c, exam Q1c-i) and "(2 mark)" (exam
+  Q2b-iii); the exam's "the mixture of water and condensate leaves **the** 90 °C" (Q1d — "at" is missing);
+  "the **nozzles** exit" for "the nozzle's exit" (exam Q1b-iii); "labeled" beside "labelled" usage
+  elsewhere (exam Q5b).
+- **Severity:** cosmetic. Logged once for the whole 2025 set rather than one entry each, as **P2** and
+  **P9** were for 2024.
+- **⚠ And the part that is worth more than the typos — three 2024 defects do NOT recur:**
+  1. **P1, the wrong unit code, is fixed.** All three 2025 papers are headed "**MEC 3105**: Thermodynamics".
+     The 2024 CAT 1 and end-of-semester paper were both printed MEC 3104, which is Fluid Theory. Matching
+     by unit *name* remains the safe rule for the 2024 papers, but the 2025 set is correctly coded.
+  2. **P2, the letterhead, is fixed.** All three read "SCHOOL OF COMPUTING AND ENGINEERING **SCIENCES**"
+     (2024: "SCHENCES") and "**Bachelor of Science in** Electrical and Electronics Engineering" (2024's
+     CAT 1 and exam omitted "Science in").
+  3. **P9, "ASSESMENT", is gone** — the 2025 CATs are headed simply "CAT 1" and "CAT 2" and never spell
+     the phrase out.
+  Recorded here so that a future reader does not carry P1, P2 or P9 forward onto the 2025 papers by
+  analogy. They are 2024 defects and they were corrected.
+
+<!-- Later papers append their own P-numbered entries above this line. -->
+
+
+---
+
 <sub><i>Compiled by Jotham-JS — Jotham Siror · Jesus Saves · 2026</i></sub>
