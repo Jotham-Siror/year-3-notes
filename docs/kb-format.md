@@ -49,6 +49,28 @@ Keep them locally — they are the fastest way to check a citation without openi
 `SOURCES.md` that they exist. **Where a transcript and a topic file disagree, the topic file wins**:
 it carries the readings settled last.
 
+### Non-technical subjects — two substitutions
+
+A subject with no symbols and no equations keeps this shape exactly, but two cross-cutting files have
+nothing to hold. **Substitute them; do not drop them** — the point of the layout is that the same slot
+holds the same *kind* of thing in every subject.
+
+| Standard file | Replaced by | Why |
+|---|---|---|
+| `_nomenclature.md` — symbols, units, clash table | **`_glossary.md`** — terms, definitions, **clash table** | there are no symbols, but confusable terms behave exactly like symbol clashes and cost the same marks |
+| `_formula-sheet.md` — every equation in one place | **`_chronology.md`** — every date in one place | the single-sheet reference you actually carry into a history exam is the timeline |
+
+Frontmatter follows: topic files carry **`key_dates`** where a technical subject carries `key_equations`.
+
+Where a subject has **more than one account of the same events**, the verification log adds one prefix,
+**`D`**, for a cross-source discrepancy — two sources disagreeing, which is not the same as one source
+being wrong. Define it at the top of that log, and present both sides in the topic file rather than
+picking one. Only promote a `D` to a `V` when one side is demonstrably an error.
+
+The LaTeX rules below do not bind such a subject. What replaces them: a date, name or treaty in full on
+first appearance, and the glossary's clash table doing the work the nomenclature clash table does
+elsewhere. `world-civ-2/` is the worked example.
+
 ## How to split topic files
 
 Two different source shapes, two different rules:
@@ -203,10 +225,12 @@ diff for names and digit runs.
 3. Render every page to images; read them
 4. Write topic files with full frontmatter, tags and citations
 5. Extract `_nomenclature.md` — get the clash table right, it is the most-consulted section
-6. Extract `_formula-sheet.md` in corrected form
+   *(a non-technical subject writes `_glossary.md` here instead — see the substitutions above)*
+6. Extract `_formula-sheet.md` in corrected form *(or `_chronology.md`)*
 7. Write `_verification-log.md` as you go, not afterwards
 8. Write `00-index.md` last — coverage map, dependency order, verification summary, gap map
-9. Add the subject to the table in `README.md` and `CLAUDE.md`
+9. Add the subject to the table in `README.md` and `CLAUDE.md`, and give it a card in `index.html`
+   — a subject that is not in all three is not finished
 10. Verify: re-read pages against the file, recompute every number, confirm cross-references
     resolve, grep for personal detail
 

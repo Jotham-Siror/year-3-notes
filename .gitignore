@@ -18,6 +18,7 @@
 *.potx
 *.doc
 *.docx
+*.rtf
 *.xls
 *.xlsx
 *.odt
@@ -120,6 +121,17 @@ __pycache__/
 #  **/sources/* rule above, plus the *.pdf / *.docx / *.zip extension rules.
 #  Do NOT re-add a blanket `thermodynamics/` line: core.ignorecase is true on
 #  Windows, so it would also swallow thermodynamics/knowledge-base/.)
+
+# ── Ansys Electronics Desktop / Icepak ───────────────
+#  Solver output is large, binary and regenerable, and this repo sits on
+#  OneDrive — an unignored results folder syncs on every iteration.
+#  The .py build scripts and our own .md write-ups ARE committed.
+*.aedt
+*.aedt.lock
+*.aedtresults/
+*.aedtz
+*.pyaedt/
+**/ansys/**/*.log
 
 # ── Windows / OneDrive / Office ────────────────────────────────
 desktop.ini

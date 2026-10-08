@@ -1,7 +1,7 @@
 # Year 3 Engineering — Knowledge Bases
 
-Verified, machine-readable knowledge bases for Year 3 electrical-engineering coursework at
-Strathmore University. Built to be used **with Claude** as a study tutor that already knows the
+Verified, machine-readable knowledge bases for Year 3 coursework at Strathmore University — six
+engineering units and one humanities unit. Built to be used **with Claude** as a study tutor that already knows the
 course — but perfectly readable on their own.
 
 **📖 Read them online: <https://jotham-siror.github.io/year-3-notes/>** — no clone, no GitHub
@@ -10,12 +10,21 @@ GitHub shows `.html` files as source code.
 
 | Subject | Code | Source material | Status |
 |---|---|---|---|
-| [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
+| [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 5 past papers |
 | [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 4 topic files from 5 handouts, 109 flags, 6 past papers, 1 lab |
-| [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 51 flags, both group activities |
-| [Analogue Electronics I](analogue-electronics/knowledge-base/00-index.md) | BEE 3103 | Lecture notes (100 pp.) + 7 lesson documents (169 pp.) + 4 reference decks | 14 topic files, 388 flags, 3 tiers |
-| [Digital Electronics II](digital-electronics/knowledge-base/00-index.md) | BEE 3102 | 6 chapter decks (348 slides) + excitation-table sheet | 10 topic files, 81 flags, 144 figures, 1 past paper |
-| [Engineering Mathematics III](engineering-math/knowledge-base/00-index.md) | EMT 3101 | 6 topic documents (66 pp.) — one typeset, five handwritten scans | 6 topic files, 24 flags, 1 assignment |
+| [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 51 flags, 6 past papers, both group activities |
+| [Analogue Electronics I](analogue-electronics/knowledge-base/00-index.md) | BEE 3103 | Lecture notes (100 pp.) + 7 lesson documents (169 pp.) + 4 reference decks | 14 topic files, 388 flags, 3 tiers, 4 past papers |
+| [Digital Electronics II](digital-electronics/knowledge-base/00-index.md) | BEE 3102 | 6 chapter decks (348 slides) + excitation-table sheet | 10 topic files, 81 flags, 144 figures, 5 past papers |
+| [Engineering Mathematics III](engineering-math/knowledge-base/00-index.md) | EMT 3101 | 6 topic documents (66 pp.) — one typeset, five handwritten scans | 6 topic files, 24 flags, 5 papers — assignment, tutorial, CAT, two finals |
+| [World Civilization II](world-civ-2/knowledge-base/00-index.md) | *not confirmed* | Lecture handout (9 pp.) + 2 reference articles | 2 topic files, 32 flags, 4 cross-source discrepancies |
+| [Engineering Mathematics IV](engineering-math-iv/README.md) *(Sem 2)* | EMT 3201 | none supplied | ❌ **no knowledge base** — one transcribed paper only |
+
+**32 past papers are transcribed across the seven subjects that have them.** Match a paper to its subject
+by unit **name**, never by code — the codes collide between cohorts, and `CLAUDE.md` lists exactly how.
+
+**World Civilization II is the only non-technical subject here.** It has no symbols and no equations, so it
+substitutes `_glossary.md` for the nomenclature file and `_chronology.md` for the formula sheet;
+`docs/kb-format.md` records the substitution as the rule for any humanities subject added later.
 
 ## What this actually is
 
@@ -23,7 +32,7 @@ Each subject's lecture material has been transcribed into structured Markdown: e
 LaTeX, every claim anchored to the slide or page it came from, every figure described, and **every
 suspected error in the original flagged and corrected**.
 
-That last part is the reason this exists. Across the six subjects there are **637 documented
+That last part is the reason this exists. Across the seven knowledge bases there are **735 documented
 defects** in the lecture material — wrong constants, mislabelled results, broken derivations. A few
 examples:
 
@@ -52,6 +61,10 @@ examples:
   own line above it implies the missing term
 - EMT 3101, Gamma and Beta printed p6: $\Gamma(9/2) = 16.8114$. It is **11.6317** — and the next line
   on the same page uses the correct value to reach $(4.5)! = 52.3428$
+- World Civilization II, handout p9: France is said to have declared war on "Prussia and Austria" in
+  April 1792. It was **Austria alone**, on 20 April; Prussia entered afterwards. The same handout also
+  places the Tennis Court Oath *after* the royal session of 23 June — it was sworn on 20 June, before it,
+  which is the whole point of it
 
 Every one is logged with the correct form and the reasoning. **Revise from the corrected versions.**
 
@@ -149,9 +162,16 @@ This repository is public, so four things are withheld on purpose. Please don't 
     └── sources/SOURCES.md
 └── engineering-math/
     ├── knowledge-base/          # 6 topic files + nomenclature, formulas, log
-    │   └── past-papers/         # transcribed assignment, worked
+    │   └── past-papers/         # transcribed assignment, tutorial, CAT and two finals
     └── sources/SOURCES.md       # (a local _transcripts/ layer sits beside the
                                  #  knowledge base, untracked — see SOURCES.md)
+└── world-civ-2/
+    ├── knowledge-base/          # 2 topic files + glossary, chronology, log
+    ├── study-guides/            # question bank, quizzes, flashcards, comparison tables
+    └── sources/SOURCES.md
+└── engineering-math-iv/         # no knowledge base — one transcribed paper
+    ├── README.md                # why the folder exists and what it is not
+    └── knowledge-base/past-papers/
 ```
 
 ## Portable prompts
