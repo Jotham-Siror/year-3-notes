@@ -2,7 +2,7 @@
 kb: "Electromagnetic Fields — EEE3202"
 file_role: nomenclature
 purpose: "Every symbol used in the course material with meaning and SI units. Resolves symbol clashes. Consult this when a topic file's notation is ambiguous."
-scope: "Sections marked CURRENT are covered by a current-cohort document (WC1, TL or TLT). Sections marked PENDING are carried over from the old cohort and await this year's equivalent."
+scope: "Sections marked CURRENT are covered by a current-cohort document (WC1, TL, TLT, WG or CEM). Sections marked PENDING are carried over from the old cohort and await this year's equivalent."
 ---
 
 # Nomenclature and symbols
@@ -27,13 +27,21 @@ them**. Flag these explicitly when teaching.
 | **$T$** | **transmission coefficient** (boundary) *or* **period** (energy section) | two unrelated uses already in this file. Neither is used in TL/TLT |
 | **$\mu$** | **permeability** (H/m) | also the SI prefix **micro** ($10^{-6}$) — "μA/m" is microamps per metre. Watch context |
 | **$\varepsilon$** | **permittivity** (F/m); $\varepsilon^*$ = complex permittivity | $\varepsilon_0$ = free-space value |
-| **$\rho_v$** vs **$\rho_s$** | $\rho_v$ = **volume** charge density (C/m³) — the one used throughout | $\rho_s$ = *surface* charge density (C/m²). ⚠ WC1 p3 prints $\rho_s$ where $\rho_v$ is meant (V6) |
+| **$\rho_v$** vs **$\rho_s$** | $\rho_v$ = **volume** charge density (C/m³) — the one used throughout | $\rho_s$ = *surface* charge density (C/m²). ⚠ WC1 p3 prints $\rho_s$ where $\rho_v$ is meant (V6), and ·CEM p6 does it again for 2-D Poisson (F6) |
 | **$\delta$** | **skin depth / depth of penetration** (m) | not a boundary-layer thickness (that is Fluid Flow) |
 | **$\theta$** | **loss-tangent angle**, $\tan\theta = \sigma/\omega\varepsilon$ | distinguish from $\theta_\eta$, the impedance angle, which is *half* the arctangent; and from $\theta_r$, the phase of $\Gamma$ in TL/TLT |
-| **$k$** vs **$\beta$** | $k = \omega\sqrt{\mu\varepsilon}$ is the **wave number** in a lossless medium | in a lossless medium $k$ and $\beta$ coincide; in a lossy one they do not |
+| **$k$** vs **$\beta$** vs **$k_c$** | $k = \omega\sqrt{\mu\varepsilon}$ is the **wave number** in a lossless *unbounded* medium; $k_c$ the waveguide **cut-off** wave number | in an unbounded lossless medium $k$ and $\beta$ coincide; in a lossy one they do not; **in a waveguide they differ even with no loss**: $\beta^2 = k^2 - k_c^2$. ⚠ ·WG p5 prints $k_c$ for $k_c^2$ (W4) |
 | **$\mathbf{a}$** vs **$\alpha$** | $\mathbf{a}_x, \mathbf{a}_y, \mathbf{a}_z$ = **unit vectors** | visually close to $\alpha$ in the handout's font |
 | **$J$** | current density (A/m²) — $J_c$ conduction, $J_{disp}$ displacement | not to be confused with $j = \sqrt{-1}$; and ⚠ ·TL p7 switches from $j$ to $i$ for the imaginary unit mid-equation (C34) |
 | **superscripts $^{+}$ / $^{-}$** | forward- / backward-travelling wave amplitude | ⚠ **·TL prints $V_0^{+}$ where $V_0^{-}$ belongs three times** (T5, T6, T7), each time collapsing the expression to something trivial. Check the superscript against which direction the term travels |
+| **$V_p$** (·WG) vs **$u$** | $V_p = \omega/\beta$ = phase velocity **in the guide**, always $> c$; $u = 1/\sqrt{\mu\varepsilon}$ = speed in the **unbounded** filling medium, $c$ for air | ⚠ **·WG p8 uses $V_p$ for both on one page** (W8). In the $f_c$ formula it means $u$. Substituting the guide's $V_p$ there is wrong. Also distinct from $u_p = 1/\sqrt{LC}$ on a transmission line |
+| **$\lambda$**, **$\lambda_c$**, **$\lambda_g$** | free-space wavelength $c/f$; **cut-off** wavelength; **guide** wavelength $2\pi/\beta$ | three wavelengths in one waveguide question. $\lambda_g > \lambda$ always; a mode propagates only if $\lambda < \lambda_c$ |
+| **$\eta$** vs **$Z_{TE}$**, **$Z_{TM}$** | $\eta$ = the filling medium's intrinsic impedance (377 Ω for air); $Z_{TE}$, $Z_{TM}$ = the **wave impedance in the guide** | ⚠ ·WG pp. 9–10 ask for "characteristic impedance of the guide $\eta$" (C48). The answer is $Z_{TE} = \eta/\sqrt{1-(f_c/f)^2}$, not $\eta$ |
+| **$a$, $b$** (waveguide) | inner width and height of the guide (m); $a$ the **broad** wall by convention | not the unit vectors $\mathbf{a}_x$…, not the polarization phase angle $a$ (old cohort). ⚠ ·WG pp. 7–8 print $a$ where $b$ belongs four times (W7) |
+| **$m$, $n$** | waveguide **mode integers** — half-wave variations across $a$ and $b$ | TM: both $\ge 1$. TE: one may be 0, not both |
+| **$V_1, V_2, \ldots$** (·CEM) | in the five-node molecule: the four **neighbours** of $V_0$ (top, left, bottom, right). In an iteration example: **node numbers** | ⚠ **same symbols, two meanings in one handout.** Applying the molecule to node 3, the molecule's "$V_1$" is the node above 3 — not node 1 |
+| **$f^k$** (·CEM) | the handout's notation for the $k$-th **derivative** $f^{(k)}$ | reads as a power. Write $f^{(k)}$ (C50) |
+| **$h$** (·CEM) | **mesh size**, $\Delta x = \Delta y = h$ (m) | not Planck's constant; not the lowercase magnetic-field components $h_x$, $h_y$, $h_z$ of ·WG |
 
 ---
 
@@ -128,6 +136,50 @@ them**. Flag these explicitly when teaching.
 | $d_{min}$ | distance from the load to the **first** voltage minimum | m | the slotted-line input that fixes $\theta_r$ |
 | $X$ | reactance — imaginary part of a stub's input impedance | Ω | $+$ inductive, $-$ capacitive |
 | $\ell$ | physical line length | m or λ | exam answers usually want it in wavelengths |
+
+---
+
+## Rectangular waveguides — CURRENT
+
+*Covered by WG. See `03-waveguides.md`.*
+
+| Symbol | Quantity | SI unit | Notes |
+|---|---|---|---|
+| $a$, $b$ | inner width and height of the guide | m | $a > b$; $a$ is the broad wall |
+| $m$, $n$ | mode integers | – | $TE_{mn}$, $TM_{mn}$ |
+| $TE_{mn}$ | transverse-electric mode: $E_z = 0$, $H_z \neq 0$ | – | dominant: $TE_{10}$ |
+| $TM_{mn}$ | transverse-magnetic mode: $H_z = 0$, $E_z \neq 0$ | – | lowest: $TM_{11}$ |
+| $e_x(x,y)$, $h_x(x,y)$, … | field components with the $e^{-j\beta z}$ factor removed | V/m, A/m | lowercase = cross-section only |
+| $k$ | unbounded-medium wave number $\omega\sqrt{\mu\varepsilon}$ | rad/m | — |
+| $k_c$ | cut-off wave number $\sqrt{(m\pi/a)^2 + (n\pi/b)^2}$ | rad/m | $k_c^2 = k^2 - \beta^2$ |
+| $k_x$, $k_y$ | separation constants $m\pi/a$, $n\pi/b$ | rad/m | $k_c^2 = k_x^2 + k_y^2$ |
+| $\beta$ | phase constant in the guide | rad/m | imaginary below cut-off |
+| $\alpha$ | attenuation below cut-off, $\sqrt{k_c^2 - k^2}$ | Np/m | `[added]` — not in the handout |
+| $f_c$ | cut-off frequency | Hz | $TE_{10}$: $c/2a$ |
+| $\lambda_c$ | cut-off wavelength | m | $TE_{10}$: $2a$ |
+| $\lambda_g$ | guide wavelength $2\pi/\beta$ | m | $\lambda/\sqrt{1-(f_c/f)^2}$ |
+| $V_p$ | phase velocity in the guide | m/s | $c/\sqrt{1-(f_c/f)^2} > c$ |
+| $V_g$ | group velocity | m/s | $c\sqrt{1-(f_c/f)^2} < c$. `[added]` — not in the handout |
+| $Z_{TE}$ | TE wave impedance | Ω | $\eta/\sqrt{1-(f_c/f)^2}$ |
+| $Z_{TM}$ | TM wave impedance | Ω | $\eta\sqrt{1-(f_c/f)^2}$. `[added]` — not in the handout |
+
+## Computational electromagnetics — CURRENT
+
+*Covered by CEM. See `04-computational-em.md`.*
+
+| Symbol | Quantity | SI unit | Notes |
+|---|---|---|---|
+| CEM | computational electromagnetics | – | numerical solution of Maxwell's equations |
+| FDM | finite-difference method | – | — |
+| $\Delta x$, $\Delta y$ | grid spacing | m | — |
+| $h$ | mesh size, when $\Delta x = \Delta y$ | m | — |
+| $O(\Delta x^n)$ | truncation error of order $n$ | – | forward/backward $O(\Delta x)$; central $O(\Delta x^2)$ |
+| $f^{(k)}(x)$ | $k$-th derivative | – | handout writes $f^k$ |
+| $y_i$ | ODE solution value at node $i$ | – | — |
+| $V_{i,j}$ | potential at grid node $(i, j)$ | V | $i$ along $x$, $j$ along $y$ |
+| $V_0$; $V_1$–$V_4$ | molecule centre; neighbours top, left, bottom, right | V | ⚠ see the clash table |
+| fixed node | boundary node, potential given | – | — |
+| free node | interior node, potential unknown | – | — |
 
 ---
 

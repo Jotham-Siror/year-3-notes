@@ -31,11 +31,11 @@ canonical_house_format: "../../../fluid-flow/knowledge-base/past-papers/00-past-
 | Paper | Date | Marks | Qs | Status | File |
 |---|---|---|---|---|---|
 | EEE 3202 **CAT 1** | 13 Aug 2025 | 30 | 2 | `solved` | [`EEE3202-CAT1-2025-08-13.md`](EEE3202-CAT1-2025-08-13.md) |
-| BEE 3101 **End of Semester** | 25 Oct 2024 | 60 (75 printed) | 5 (23 parts) | `unsolved` | [`BEE3101-EXAM-2024-10-25.md`](BEE3101-EXAM-2024-10-25.md) |
+| BEE 3101 **End of Semester** | 25 Oct 2024 | 60 (75 printed) | 5 (23 parts) | `partial` — Q1e, Q4b–d, Q5b in `03`/`04` | [`BEE3101-EXAM-2024-10-25.md`](BEE3101-EXAM-2024-10-25.md) |
 | BEE 3102 **CAT 1** | 29 Aug 2024 | 37 (no total printed) | 2 (4 parts) | `unsolved` | [`BEE3102-CAT1-2024-08-29.md`](BEE3102-CAT1-2024-08-29.md) |
 | BEE 3102 **CAT** *(printed "CAT 1")* | 3 Oct 2024 | none printed | 2 (4 parts) | `unsolved` | [`BEE3102-CAT1-2024-10-03.md`](BEE3102-CAT1-2024-10-03.md) |
-| BEE 3101 **CAT** *(no number printed)* | 1 Oct 2025 | 30 in parts, no total | 2 (4 parts) | `unsolved` | [`BEE3101-CAT-2025-10-01.md`](BEE3101-CAT-2025-10-01.md) |
-| BEE 3102 **End of Semester** | 23 Oct 2025 | 90 printed / 60 sat ✓ | 5 (34 parts) | `unsolved` | [`BEE3102-EXAM-2025-10-23.md`](BEE3102-EXAM-2025-10-23.md) |
+| BEE 3101 **CAT** *(no number printed)* | 1 Oct 2025 | 30 in parts, no total | 2 (4 parts) | `partial` — Q2b | [`BEE3101-CAT-2025-10-01.md`](BEE3101-CAT-2025-10-01.md) |
+| BEE 3102 **End of Semester** | 23 Oct 2025 | 90 printed / 60 sat ✓ | 5 (34 parts) | `partial` — Q5c | [`BEE3102-EXAM-2025-10-23.md`](BEE3102-EXAM-2025-10-23.md) |
 
 **Errata IDs.** `P1`–`P13` = 25 Oct 2024 exam · `P14`–`P16` = 29 Aug 2024 CAT · `P17`–`P20` = 3 Oct 2024 CAT ·
 `P21`–`P26` = 1 Oct 2025 CAT · `P27`–`P37` = 23 Oct 2025 exam. The next paper starts at **P38**.
@@ -61,9 +61,15 @@ exactly 30 and Questions Two to Five to exactly 15 each. Five of the six do not 
 | old `05` — Poynting | Aug 2025 CAT Q1c, Q1d, Q2a(v) · 2024 CAT 1 Q1b(iv), Q2a · 2024 exam Q2a · **2025 exam Q1b, Q1c, Q3b, Q3c(ii)–(iii), Q4a** |
 | old `06` — polarization | Aug 2025 CAT Q1a, Q1e · 2024 exam Q1f · **2025 exam Q1d, Q3a** |
 | old `07` — reflection & transmission | 2024 CAT 1 Q2b (ten parts) · 2024 exam Q2b, Q2c · **2025 exam Q1f(ii), Q4a, Q4b(ii)–(iv)** |
-| ❌ **transmission lines** | 2024 CAT (3 Oct) Q1a, Q1b · 2024 exam Q3a–c · **2025 CAT Q1 (15 marks, Smith chart)** · **2025 exam Q2 (15 marks, entire question)** |
-| ❌ **rectangular waveguides** | 2024 CAT (3 Oct) Q2a, Q2b · 2024 Exam Q1e, Q4b, Q4c, Q4d |
-| ❌ **computational EM / finite differences** | 2024 exam Q5a, Q5b · **2025 CAT Q2 (15 marks)** · **2025 exam Q5 (15 marks, entire question)** |
+| ✅ `02` — **transmission lines** | 2024 CAT (3 Oct) Q1a, Q1b, **Q2b** · 2024 exam Q3a–c · **2025 CAT Q1 (15 marks, Smith chart)** · **2025 exam Q2 (15 marks, entire question)** |
+| ✅ `03` — **rectangular waveguides** | 2024 CAT (3 Oct) Q2a · 2024 Exam Q1e, Q4b, **Q4c, Q4d (the handout's revision Q4, Q3 verbatim)** |
+| ✅ `04` — **computational EM / finite differences** | 2024 exam Q5a, **Q5b (the handout's Example 1 verbatim)** · **2025 CAT Q2 (15 marks)** · **2025 exam Q5 (15 marks, entire question)** |
+
+> **✅ Update 8 Oct 2026.** The three territories marked ❌ in the sections below — transmission lines,
+> waveguides, computational EM — are now covered by `02` (10 Sep 2026), `03` (30 Sep 2026) and `04` (8 Oct
+> 2026). The sections below are kept as the record of what the papers showed **before** those handouts
+> arrived; their "do not fill the hole" advice is superseded. The 3 Oct 2024 CAT's Q2(b) is a shorted
+> transmission line, not a waveguide — it is now listed under `02`.
 
 **`01` §1 (the wave equation itself) and §3 (phasor form) have never been examined directly** in any of the
 four papers — they are the machinery, not the questions.

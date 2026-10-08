@@ -11,7 +11,7 @@ GitHub shows `.html` files as source code.
 | Subject | Code | Source material | Status |
 |---|---|---|---|
 | [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 2 past papers |
-| [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 1 handout, 43 flags, 1 past paper, 1 lab |
+| [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 4 topic files from 5 handouts, 109 flags, 6 past papers, 1 lab |
 | [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 51 flags, both group activities |
 | [Analogue Electronics I](analogue-electronics/knowledge-base/00-index.md) | BEE 3103 | Lecture notes (100 pp.) + 7 lesson documents (169 pp.) + 4 reference decks | 14 topic files, 388 flags, 3 tiers |
 | [Digital Electronics II](digital-electronics/knowledge-base/00-index.md) | BEE 3102 | 6 chapter decks (348 slides) + excitation-table sheet | 10 topic files, 81 flags, 144 figures, 1 past paper |

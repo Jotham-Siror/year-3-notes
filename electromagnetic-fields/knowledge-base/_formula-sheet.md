@@ -2,7 +2,7 @@
 kb: "Electromagnetic Fields — EEE3202"
 file_role: formula-sheet
 purpose: "Every key equation from the current-cohort material in one place, each tagged to its source page. All forms given here are the CORRECTED forms; where the handout prints something different, the flag ID is noted."
-scope: "WC1 (§1-8), TL and TLT (§9-13). Extend as further material arrives."
+scope: "WC1 (§1-8), TL and TLT (§9-13), WG (§14), CEM (§15). Extend as further material arrives."
 ---
 
 # Formula sheet — Electromagnetic Fields (EEE3202)
@@ -325,6 +325,75 @@ The chart also reads off $\Gamma$ (magnitude and angle), VSWR, return loss and p
 
 ---
 
+## 14 · Rectangular waveguides
+
+·WG pp. 5–8. ·WG p9: the short forms **are not provided in the exam** — memorise them.
+
+**Wave numbers** ·WG p5 ⚠ W4
+
+$$k = \omega\sqrt{\mu\varepsilon} \qquad\qquad k_c^2 = k^2 - \beta^2 \qquad\qquad k_c^2 = \left(\frac{m\pi}{a}\right)^2 + \left(\frac{n\pi}{b}\right)^2$$
+
+**Phase constant** ·WG p8 ⚠ W7 ($b$ printed as $a$)
+
+$$\beta = \sqrt{k^2 - k_c^2} = \sqrt{\omega^2\mu\varepsilon - \left(\frac{m\pi}{a}\right)^2 - \left(\frac{n\pi}{b}\right)^2}$$
+
+**Cut-off** ·WG p8 ⚠ W8 (the speed here is $1/\sqrt{\mu\varepsilon}$, not the guide $V_p$)
+
+$$f_c = \frac{1}{2\pi\sqrt{\mu\varepsilon}}\sqrt{\left(\frac{m\pi}{a}\right)^2 + \left(\frac{n\pi}{b}\right)^2} \qquad\qquad \lambda_c = \frac{2}{\sqrt{(m/a)^2 + (n/b)^2}}$$
+
+**Dominant mode $TE_{10}$** `[added]`
+
+$$\lambda_c = 2a \qquad\qquad f_c = \frac{c}{2a}$$
+
+**The short forms.** Let $F = \sqrt{1 - (f_c/f)^2}$ and $\lambda = c/f$. Printed ·WG p8 unless tagged.
+
+| Quantity | Formula | Source |
+|---|---|---|
+| Phase velocity | $V_p = \omega/\beta = c/F$ | ·WG p8 |
+| Guide wavelength | $\lambda_g = 2\pi/\beta = \lambda/F$ | long form ·WG p8 ⚠ W7; short form `[added]` |
+| Group velocity | $V_g = cF$ | `[added]` — not in the handout |
+| Product | $V_pV_g = c^2$ | `[added]` |
+| TE wave impedance | $Z_{TE} = \eta/F$ | ·WG p8 |
+| TM wave impedance | $Z_{TM} = \eta F$ | `[added]` — not in the handout |
+| Below cut-off ($f < f_c$) | $\alpha = \dfrac{2\pi}{c}\sqrt{f_c^2 - f^2}$ Np/m | `[added]` — from $\beta = \sqrt{k^2-k_c^2}$ with $k < k_c$ |
+
+All the `[added]` forms reproduce the handout's own printed answers to its revision Q4 and Q5.
+
+---
+
+## 15 · Computational EM — finite differences
+
+·CEM pp. 1–6.
+
+**Taylor pair** ·CEM pp. 1–2 ⚠ F1 (·CEM p2 labels the alternating series $f(x+\Delta x)$)
+
+$$f(x+\Delta x) = \sum_{k=0}^{\infty}\frac{f^{(k)}(x)(\Delta x)^k}{k!} \qquad\qquad f(x-\Delta x) = \sum_{k=0}^{\infty}\frac{(-1)^kf^{(k)}(x)(\Delta x)^k}{k!}$$
+
+**Second difference** ·CEM p2 ⚠ F2 (error is $O(\Delta x^2)$)
+
+$$f''(x) \approx \frac{f(x+\Delta x) - 2f(x) + f(x-\Delta x)}{\Delta x^2}$$
+
+**First differences** ·CEM pp. 2–3 ⚠ F3 (backward printed with $+\Delta x$)
+
+| Name | Formula | Error |
+|---|---|---|
+| Forward | $f'(x) \approx \dfrac{f(x+\Delta x) - f(x)}{\Delta x}$ | $O(\Delta x)$ |
+| Backward | $f'(x) \approx \dfrac{f(x) - f(x-\Delta x)}{\Delta x}$ | $O(\Delta x)$ |
+| Central | $f'(x) \approx \dfrac{f(x+\Delta x) - f(x-\Delta x)}{2\Delta x}$ | $O(\Delta x^2)$ |
+
+**Poisson, finite-difference form** ·CEM p6 ⚠ F6 ($\rho_v$, not $\rho_s$), $\Delta x = \Delta y = h$
+
+$$V_{i,j} = \frac{1}{4}\left(V_{i+1,j} + V_{i,j+1} + V_{i-1,j} + V_{i,j-1} + \frac{h^2\rho_v}{\varepsilon}\right)$$
+
+**Laplace — the five-node molecule** ·CEM p6
+
+$$V_{i,j} = \frac{1}{4}\left(V_{i+1,j} + V_{i,j+1} + V_{i-1,j} + V_{i,j-1}\right) \qquad\qquad V_0 = \frac{1}{4}\left(V_1 + V_2 + V_3 + V_4\right)$$
+
+Each free node is the **average of its four neighbours**. Iterate with the **newest** values
+(·CEM p8; ⚠ F7).
+
+---
+
 ## Quick numerical anchors
 
 | Quantity | Value |
@@ -337,6 +406,8 @@ The chart also reads off $\Gamma$ (magnitude and angle), VSWR, return loss and p
 | $Z_0$ common values | 50 Ω (RF/coax), 75 Ω (video/aerial), 300 Ω (twin-lead / folded dipole) |
 | dipole input impedance | 73 Ω (half-wave, the value both TL and TLT use) |
 | $S = 1$ | perfectly matched; $\Gamma = 0$; RL $= \infty$ |
+| $TE_{10}$ cut-off | $\lambda_c = 2a$, $f_c = c/2a$ — a 5 cm guide cuts off at 3 GHz |
+| waveguide | $V_p > c > V_g$, $V_pV_g = c^2$, $\lambda_g > \lambda$, $Z_{TE} > \eta$ |
 
 ---
 

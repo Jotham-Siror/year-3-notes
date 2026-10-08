@@ -3,10 +3,10 @@ kb: "Electromagnetic Fields — Year 3"
 course_code: "EEE3202"
 lecturer: "withheld"
 file_role: index
-source: "Current-cohort material, issued progressively. 3 documents received so far (56 pp.): WC1 (18 pp.), TL (16 pp.), TLT (22 pp.)"
+source: "Current-cohort material, issued progressively. 5 documents received so far (75 pp.): WC1 (18 pp.), TL (16 pp.), TLT (22 pp.), WG (10 pp.), CEM (9 pp.)"
 built: "Transcribed from rendered page images; equations in canonical LaTeX; suspected errors flagged inline and collected in _verification-log.md; every worked example and exercise solved and numerically verified"
-coverage: "56/56 pages mapped across WC1, TL and TLT, no gaps"
-total_verification_flags: 67
+coverage: "75/75 pages mapped across WC1, TL, TLT, WG and CEM, no gaps"
+total_verification_flags: 109
 ---
 
 # Electromagnetic Fields (EEE3202) — Knowledge Base Index
@@ -15,7 +15,7 @@ total_verification_flags: 67
 source page, every suspected error flagged and corrected. Start here, then open the topic file you
 need rather than re-reading the raw PDFs.
 
-**Status.** The course is delivered as **material released progressively**. Three documents have
+**Status.** The course is delivered as **material released progressively**. Five documents have
 been issued so far. This index is the register — update it as each new one arrives.
 
 > **Operating instructions** (how to navigate and teach from this KB) live in `CLAUDE.md` at the
@@ -30,9 +30,11 @@ been issued so far. This index is the register — update it as each new one arr
 | **WC1** | *Electromagnetic Wave Characteristics I* | 18 | ✅ | the lecturer | `01-wave-characteristics-1.md` |
 | **TL** | *Transmission lines* | 16 | ✅ 10 Sep 2026 | the lecturer | `02-transmission-lines.md` |
 | **TLT** | *Transmission Line Theory* | 22 | ✅ 3 Sep 2026 | **a distributed slide deck** (Sadiku 5e, Ida 3e, Pozar 4e) — issued by the lecturer, not written by him | `02-transmission-lines.md` |
+| **WG** | *Waveguides* | 10 | ✅ 30 Sep 2026 | the lecturer | `03-waveguides.md` |
+| **CEM** | *Computational Electomagnetics* (sic) | 9 | ✅ 8 Oct 2026 | the lecturer | `04-computational-em.md` |
 | WC2 | *Electromagnetic Wave Characteristics II* (expected) | — | ⏳ not yet issued | — | — |
 
-Provenance is cited as **·WC1 p7**, **·TL p12**, **·TLT p20** in the topic files.
+Provenance is cited as **·WC1 p7**, **·TL p12**, **·TLT p20**, **·WG p8**, **·CEM p6** in the topic files.
 
 > **⚠ TL and TLT are not equal in standing.** TL is the lecturer's own writing and sets the scope.
 > TLT is course material he distributed but did not author. Both are current-cohort and both are
@@ -72,9 +74,14 @@ code. Match a paper by unit **name**, never by code.
 - **✅ The Smith chart blocker is resolved.** ·TLT p20 is a **full blank Smith chart** with all
   perimeter and radially-scaled parameter scales. Erratum P22 is closed — print that page before
   attempting either 2025 Smith-chart question.
-- **What is still missing:** **rectangular waveguides** (≈17 marks on the 2024 exam) and
-  **computational electromagnetics / the finite-difference method** (15 marks on the 2024 exam, 15
-  on the 1 Oct 2025 CAT, 12 on the 23 Oct 2025 exam). See the gap map below.
+- **✅ Waveguides are now covered** (`03`, from 30 Sep 2026). The 2024 exam's Q4(b), Q4(c) and Q4(d) are
+  this handout's revision questions **word for word** — Q4(c)'s five answers are printed in the handout
+  and reproduced in `03` § 9. Q1(e) is worked there too.
+- **✅ Computational EM is now covered** (`04`, from 8 Oct 2026). **The 2024 exam's Q5(b) is this
+  handout's Example 1**, same figure; the 2025 exam's Q5(b) copies the handout's Taylor series, **error
+  and all** (F1 → P29). About **45 marks across three papers** now have notes behind them.
+- **What is still missing:** polarization, the Poynting vector, and reflection/transmission at a boundary —
+  all still old-cohort only. See the gap map below.
 - **§5 (the α/β derivation) and §6 (loss tangent)** were untested in 2025; 2024 asked for a *definition* of
   loss tangent (Q1c) and used §5's β as one step of a chain (CAT 1 Q1b). Teach §5 for **use**, not
   reproduction.
@@ -105,7 +112,8 @@ code. Match a paper by unit **name**, never by code.
 - **`_formula-sheet.md`** — every equation in one place, each tagged to its source page, all in
   corrected form.
 - **`_verification-log.md`** — every flagged source error with the correct form and why.
-  § A–D cover WC1 and the old cohort, **§ T covers TL and TLT**, § E covers the exam papers.
+  § A–D cover WC1 and the old cohort, **§ T covers TL and TLT**, **§ W covers WG**, **§ F covers CEM**,
+  § E covers the exam papers.
 - **`_reference-old-cohort/`** — the previous cohort's knowledge base. **Not authoritative.** See
   § Old-cohort reference below.
 - **`../sources/`** — the raw PDFs. Not tracked; see `../sources/SOURCES.md`.
@@ -131,7 +139,7 @@ Two files depart from the one-to-one mapping, both deliberately:
 `[def]` definition · `[derivation]` step-by-step · `[eq]` key equation · `[ex]` worked example
 (lecturer's numbers) · `[exercise]` problem stated but **not solved** in the source · `[fig]` figure
 described from the rendered page · `[added]` supplied here, **not** in the source · `·WC1 pN` /
-`·TL pN` / `·TLT pN` provenance · `⚠ VERIFY` flagged suspected source error.
+`·TL pN` / `·TLT pN` / `·WG pN` / `·CEM pN` provenance · `⚠ VERIFY` flagged suspected source error.
 
 ---
 
@@ -141,6 +149,8 @@ described from the rendered page · `[added]` supplied here, **not** in the sour
 |---|---|---|---|
 | `01-wave-characteristics-1.md` | WC1 | 1–18 | Maxwell → wave equation (general / conducting / dielectric / free space); uniform plane waves; d'Alembert solution; phasor form; E–H relationship and $\eta$; propagation constant $\gamma = \alpha + j\beta$; loss tangent and $\varepsilon^*$; lossy / perfect-dielectric / conductor cases; skin depth; 2 tutorial questions |
 | `02-transmission-lines.md` | TL 1–16, TLT 1–22 | 38 | RLGC model and the four primary line constants; telegrapher's equations; lossy and lossless wave equations; $u_p$; phasor form and $\gamma$; $Z_0$; reflection coefficient; standing waves, VSWR, return loss; slotted-line measurement; $Z_{in}(-z)$; short- and open-circuit stubs; quarter-wave transformer; **the Smith chart, with a blank chart**; 2 worked examples + 3 unsolved exercises, all solved and verified |
+| `03-waveguides.md` | WG | 1–10 | TEM vs TE vs TM; transverse fields from $E_z$, $H_z$; cut-off wave number $k_c$; TM separation of variables; boundary conditions and mode integers $m$, $n$; $\beta$, $f_c$, $\lambda_c$, $V_p$, $\lambda_g$, $Z_{TE}$; the short forms incl. $V_g$ `[added]`; 5 revision questions + 2024 exam Q1(e), solved and checked against the handout's printed answers |
+| `04-computational-em.md` | CEM | 1–9 | Definition and need for CEM; Taylor pair; second difference; forward / backward / central first differences; FDM on an ODE (completed); finite-difference Poisson and Laplace; five-node molecule; iteration method; Example 1 (8 nodes, 5 iterations) re-run in full |
 
 ### Section map within WC1
 
@@ -176,6 +186,34 @@ described from the rendered page · `[added]` supplied here, **not** in the sour
 | 14 | TLT 18–22 | **The Smith chart** — method, blank chart, example. TLT only |
 | 15 | TL, TLT | All 5 examples and exercises, solved and numerically verified |
 
+### Section map within `03-waveguides.md`
+
+| § | Pages | Content | Examined? |
+|---|---|---|---|
+| 1 | WG 1–2 | TEM, TE and TM | ✅ "why no TEM" — twice, 2 marks |
+| 2 | WG 2–3 | The four-step method | — |
+| 3 | WG 3–4 | Phasor fields, $e^{-j\beta z}$ | — |
+| 4 | WG 4 | Six curl equations | — |
+| 5 | WG 5 | Transverse fields; $k_c$, $k$ | — |
+| 6 | WG 5–6 | TM: Helmholtz equation, separation of variables | — |
+| 7 | WG 7–8 | Boundary conditions; $k_x = m\pi/a$, $k_y = n\pi/b$ | — |
+| 8 | WG 8 | **Results and short forms** | ✅ 12 marks, 2024 exam |
+| 9 | WG 9–10 | **Revision questions, solved** + 2024 exam Q1(e) | ✅ Q3, Q4 are 2024 exam Q4(d), Q4(c) |
+
+### Section map within `04-computational-em.md`
+
+| § | Pages | Content | Examined? |
+|---|---|---|---|
+| 1 | CEM 1, 3 | What CEM is and why it is needed | ✅ every paper, 2–5 marks |
+| 2 | CEM 1–2 | Taylor pair, **second difference** | ✅ 2025 exam Q5b, 3 marks |
+| 3 | CEM 2–3 | Forward, backward, central first differences | — |
+| 4 | CEM 3–4 | FDM on an ODE (completed here) | — |
+| 5 | CEM 5–6 | Poisson / Laplace finite-difference form, five-node molecule | ✅ underpins every node question |
+| 6 | CEM 7 | The iteration method | ✅ |
+| 7 | CEM 7–8 | **Example 1, eight nodes** | ✅ **2024 exam Q5b, verbatim** |
+| 8 | CEM 8–9 | Revision questions | ✅ (c) = Example 1 |
+| 9 | — | Exam map | — |
+
 ## Dependency / teaching order
 
 Within WC1 the order is strictly sequential — §1 → §2 → §3 → §4 → §5 → §6 → §7 → §8. Nothing can be
@@ -193,6 +231,13 @@ they need only $\Gamma$, $Z_{in}$ and the chart, all of which can be quoted.
 
 **`02` depends on `01`.** $\gamma = \alpha + j\beta$, phasor notation and the wave equation are all
 established in WC1 §§ 3, 5 and reused here with the same symbols and the same meanings.
+
+**`03` depends on `01`** (the Helmholtz equation comes from WC1's wave equation with $\sigma = 0$; $\eta$
+from WC1 § 4) **and lightly on `02`** (TEM lines, $\beta$). Its exam weight sits entirely in §§ 1, 8 and 9 —
+**teach those first**; the derivation in §§ 2–7 has never been examined.
+
+**`04` stands alone.** It needs only Laplace's equation and Taylor series. **Teach § 7 (Example 1) first** —
+it is a past exam question verbatim — then § 5's molecule, then § 2's derivation.
 
 ---
 
@@ -212,8 +257,8 @@ read as his lecturer's notes. Ask him for the material instead; it belongs in `.
 | **Reflection & transmission at a boundary** | ❌ **absent from current cohort** | `_reference-old-cohort/07-reflection-transmission.md` | **22 of 37 marks** on the Aug 2024 CAT; 7 more on the 2024 exam |
 | **Transmission lines** — matching, stub reactances, quarter-wave transformer | ✅ **`02` §§ 1–13** (TL) | — | **Closed 10 Sep 2026.** Was the largest hole in this KB |
 | **Smith chart** — normalized impedance, VSWR, $\Gamma$, $Z_{in}$ | ✅ **`02` § 14** (TLT), blank chart at ·TLT p20 | — | **Closed 3 Sep 2026.** Erratum P22 resolved |
-| **Rectangular waveguides** — cut-off, λ_g, v_g, v_p, guide impedance, TE₁₀ patterns | ❌ **absent from BOTH** | ❌ **nothing** | **≈17 marks** on the 2024 exam. Ask him for the material |
-| **Computational EM / finite-difference method** | ❌ **absent from BOTH** | ❌ **nothing** | **15 marks** on the 2024 exam (Q5), **15** on the 1 Oct 2025 CAT, **12** on the 23 Oct 2025 exam. Asked in every paper in the folder. **Now the single biggest remaining gap** |
+| **Rectangular waveguides** — cut-off, λ_g, v_g, v_p, guide impedance, TE₁₀ patterns | ✅ **`03`** (WG) | — | **Closed 30 Sep 2026.** TE derivation, $V_g$ and $Z_{TM}$ are not in the handout — supplied `[added]`, confirmed by its printed answers |
+| **Computational EM / finite-difference method** | ✅ **`04`** (CEM) | — | **Closed 8 Oct 2026.** ≈45 marks across three papers |
 
 ### Using the polarization gap-filler
 
@@ -255,7 +300,7 @@ is the fuller and better-organised treatment of that ground.
 
 ---
 
-## Verification summary — 67 flags
+## Verification summary — 109 flags
 
 Full detail in `_verification-log.md`.
 
@@ -263,6 +308,8 @@ Full detail in `_verification-log.md`.
 |---|---|---|---|---|
 | § A–D | WC1 + old cohort | 20 (V1–V20) | 23 (C1–C32) | 43 |
 | **§ T** | **TL + TLT** | **12 (T1–T12)** | **12 (C24–C35)** | **24** |
+| **§ W** | **WG** | **8 (W1–W8)** | **13 (C36–C48)** | **21** |
+| **§ F** | **CEM** | **7 (F1–F7)** | **14 (C49–C62)** | **21** |
 
 **The physics is sound throughout. The transcription is not** — and TL is now the worst offender in
 the knowledge base, at roughly one substantive defect per 1.3 pages against WC1's one per 0.9. Four
@@ -334,11 +381,25 @@ TL adds a position that is a minimum labelled $max$ (T10). The warning therefore
 
 See `_verification-log.md` § D and § T.
 
+### WG and CEM — the same failure modes, and one new one
+
+- **A letter swapped for its neighbour.** ·WG pp. 7–8 write $a$ for $b$ four times (W7) — harmless for
+  $TE_{10}$, **15 % wrong** on $\lambda_g$ for $TE_{11}$. ·CEM p2's backward difference uses
+  $x + \Delta x$ for $x - \Delta x$ (F3).
+- **One symbol, two quantities.** ·WG p8's $V_p$ is the medium speed in one formula and the guide phase
+  velocity in the next (W8) — the same class as WC1's $\sigma$/$\alpha$.
+- **Dimensions catch it again.** ·WG p5's $k_c = k^2 - \beta^2$ (W4) and ·CEM p6's $\rho_s/\varepsilon$ (F6).
+- **New: a handout error carried into an exam.** ·CEM p2's mislabelled Taylor series (F1) is printed
+  verbatim in the 23 Oct 2025 exam Q5(b) (P29). **The verification log is now also a guide to which exam
+  questions are broken before you sit them.**
+- **New: the description and the worked example disagree.** ·CEM p7 says iterate with *old* values; ·CEM p8
+  uses the *newest*. Only the second reproduces the printed answers (F7).
+
 ---
 
 ## Provenance notes
 
-- All 56 pages across the three documents were **rendered to images and read directly**. The PDF
+- All 75 pages across the five documents were **rendered to images and read directly**. The PDF
   text layer mangles mathematics; V10 and T8 in particular are invisible without the render.
 - Every figure in all three documents is described in its topic file. **No page currently requires a
   screenshot.**
@@ -346,9 +407,13 @@ See `_verification-log.md` § D and § T.
   handout (one carries a University of Utah ECE logo). Legible and transcribed, but not his own
   typesetting — do not cite them as such. ·TL p10 is a product photograph with no instructional
   content.
-- **Nine problems have been solved and numerically verified** across the knowledge base: WC1's two
+- **Nine problems have been solved and numerically verified** across WC1 and `02`: WC1's two
   tutorial questions, and `02`'s two worked examples plus three exercises the sources left unsolved
-  and two revision questions. All are tagged `[added]` — they are not the lecturer's.
+  and two revision questions. **`03` and `04` add five more**: WG revision Q4 and Q5 (all ten printed
+  answers reproduced), the 2024 exam's Q1(e), CEM's unfinished ODE example (checked against the exact
+  solution) and CEM's Example 1 (re-run, seven of eight printed values exact). All solutions are tagged
+  `[added]` — they are not the lecturer's.
+- **·WG p1 is two product photographs** with no instructional content.
 - Nothing was invented. If a question needs content absent from the sources, say so and ask rather
   than filling the gap.
 

@@ -2,8 +2,8 @@
 kb: "Electromagnetic Fields — EEE3202"
 file_role: verification-log
 purpose: "Every suspected error found in the current-cohort handouts, with what the page prints, the correct form, and why. Consult before teaching any section; prefer the corrected form."
-sources_covered: "WC1 (18 pp.) — § A–D; TL (16 pp.) and TLT (22 pp.) — § T; past papers — § E"
-totals: "67 source flags — WC1: 20 substantive (V1–V20) + 23 cosmetic (C1–C23) in § A–D; TL/TLT: 12 substantive (T1–T12) + 12 cosmetic (C24–C35) in § T. Plus 37 exam-paper defects (P1–P37) in § E"
+sources_covered: "WC1 (18 pp.) — § A–D; TL (16 pp.) and TLT (22 pp.) — § T; WG (10 pp.) — § W; CEM (9 pp.) — § F; past papers — § E"
+totals: "109 source flags — WC1: 20 substantive (V1–V20) + 23 cosmetic (C1–C23) in § A–D; TL/TLT: 12 substantive (T1–T12) + 12 cosmetic (C24–C35) in § T; WG: 8 substantive (W1–W8) + 13 cosmetic (C36–C48) in § W; CEM: 7 substantive (F1–F7) + 14 cosmetic (C49–C62) in § F. Plus 37 exam-paper defects (P1–P37) in § E. Next cosmetic ID is C63"
 method: "Every page rendered to image and read directly (not from the PDF text layer, which mangles mathematics). All numerical claims re-computed."
 ---
 
@@ -411,6 +411,212 @@ A third habit joins § D's two, and it catches T5, T6 and T7 with no algebra at 
 
 ---
 
+## § W — WG (rectangular waveguides)
+
+**21 flags: 8 substantive (W1–W8), 13 cosmetic (C36–C48).** Topic file: `03-waveguides.md`.
+
+Same pattern as TL: the physics is sound, the typesetting is not. **W7 is the one that changes
+numerical answers.** The transverse-field equations (W2, W3) were checked by solving the curl
+equations symbolically.
+
+### Substantive — W1–W8
+
+### W1 · ·WG p4, fourth curl equation · An $e$ where an $h$ belongs
+- **Printed:** $\dfrac{dh_z}{dy} + j\beta e_y = j\omega\varepsilon e_x$
+- **Correct:** $\dfrac{\partial h_z}{\partial y} + j\beta h_y = j\omega\varepsilon e_x$
+- **Why:** it is the $x$-component of $\nabla\times\tilde{\mathbf{H}}$; every term on the left is
+  an $H$ component. Its mirror from $\nabla\times\tilde{\mathbf{E}}$, the first equation in the set,
+  has $e$ throughout.
+- **Severity:** substantive — the four transverse-field results are solved from this set.
+
+### W2 · ·WG p5 · $\tilde{E}_y$ has the wrong sign in front
+- **Printed:** $\tilde{E}_y = \dfrac{-j}{k_c^2}\left(-\beta\dfrac{dE_z}{dy} + \omega\mu\dfrac{dH_z}{dx}\right)$
+- **Correct:** $\tilde{E}_y = \dfrac{+j}{k_c^2}\left(-\beta\dfrac{\partial E_z}{\partial y} + \omega\mu\dfrac{\partial H_z}{\partial x}\right)$
+- **Why:** solving the four transverse curl equations (symbolically, here) gives $+j$. As printed, every
+  $E_y$ the formula produces points the wrong way.
+- **Severity:** substantive.
+
+### W3 · ·WG p5 · $\tilde{H}_y$ differentiates $E_z$ along the wrong axis
+- **Printed:** $\tilde{H}_y = -\dfrac{j}{k_c^2}\left(\omega\varepsilon\dfrac{dE_z}{dy} + \beta\dfrac{dH_z}{dy}\right)$
+- **Correct:** $\tilde{H}_y = -\dfrac{j}{k_c^2}\left(\omega\varepsilon\dfrac{\partial E_z}{\partial x} + \beta\dfrac{\partial H_z}{\partial y}\right)$
+- **Why:** symbolic solution; and by pattern — in each of the other three components the $E_z$ and
+  $H_z$ derivatives are taken in **different** directions. As printed, $\tilde{H}_y$ has both in $y$.
+- **Severity:** substantive.
+
+### W4 · ·WG p5 · The cut-off wave number — two errors in one line
+- **Printed:** $k_c = k^2 - \beta^2 = \omega\sqrt{\mu\varepsilon} - \beta^2$
+- **Correct:** $k_c^2 = k^2 - \beta^2 = \omega^2\mu\varepsilon - \beta^2$
+- **Why:** dimensions. $k^2 - \beta^2$ is m⁻²; $k_c$ is m⁻¹. And $\omega\sqrt{\mu\varepsilon}$ is $k$,
+  not $k^2$ — the handout prints $k = \omega\sqrt{\mu\varepsilon}$ on the very next line.
+- **Does it propagate?** No — ·WG p8 uses the correct $\beta = \sqrt{k^2 - k_c^2}$.
+- **Severity:** substantive but self-limiting.
+
+### W5 · ·WG p6 · Sign of $\beta^2$ in the reduced wave equation
+- **Printed:** $\dfrac{\partial^2E_z}{\partial x^2} + \dfrac{d^2E_z}{dy^2} + (\beta^2 + k^2)E = 0$
+- **Correct:** $\dfrac{\partial^2E_z}{\partial x^2} + \dfrac{\partial^2E_z}{\partial y^2} + (k^2 - \beta^2)E_z = 0$
+- **Why:** $\partial^2/\partial z^2 \to (-j\beta)^2 = -\beta^2$. Only the minus lets the next line call
+  the bracket $k_c^2$, which ·WG p5 defines as $k^2 - \beta^2$.
+- **Severity:** substantive.
+
+### W6 · ·WG p6 · Separation of variables, $Y$ for $X$
+- **Printed:** $Y\dfrac{\partial^2X}{\partial x^2} + Y\dfrac{d^2Y}{dy^2} + k_c^2(XY) = 0$
+- **Correct:** $Y\dfrac{d^2X}{dx^2} + X\dfrac{d^2Y}{dy^2} + k_c^2XY = 0$
+- **Why:** differentiating $XY$ twice in $y$ leaves $X$ as a factor.
+- **Does it propagate?** No — the next line, divided by $XY$, is correct.
+- **Severity:** substantive but self-limiting.
+
+### W7 · ·WG pp. 7–8 · $b$ replaced by $a$, four times ★ most serious in this document
+- **Printed:** "$e_z = 0$ at $y = 0$ and $y = a$" (p7); $k_y = \dfrac{n\pi}{a}$ (p8); $(n\pi/a)^2$ inside
+  both $\beta$ and $\lambda_g$ (p8)
+- **Correct:** $y = b$; $k_y = \dfrac{n\pi}{b}$; $(n\pi/b)^2$ in $\beta$ and $\lambda_g$
+- **Why:** $k_y$ is fixed by the wall at $y = b$. The text above the boundary conditions says "as $y$
+  approaches 0 and $b$", the next page says "at $y = b$", and the printed $f_c$ and $\lambda_c$ on the
+  same page use $b$. The page contradicts itself.
+- **Re-computed:** revision Q5 ($TE_{11}$, 7.22 × 3.4 cm, 8 GHz). Printed $\lambda_g$ formula →
+  **4.03 cm**. Correct formula → **4.730 cm**, matching the handout's printed answer 4.731 cm.
+- **Harmless for $TE_{10}$** ($n = 0$), which is why revision Q4 and the 2024 exam Q4(c) come out right
+  either way.
+- **Severity:** substantive — changes numerical answers for any mode with $n \ge 1$.
+
+### W8 · ·WG p8 · $V_p$ stands for two different speeds on one page
+- **Printed:** $f_c = \dfrac{V_p}{2\pi}\sqrt{\left(\frac{m\pi}{a}\right)^2 + \left(\frac{n\pi}{b}\right)^2}$, then
+  four lines later $V_p = \dfrac{\omega}{\beta} = \dfrac{c}{\sqrt{1 - (f_c/f)^2}}$
+- **Correct:** in the $f_c$ formula the speed is $u = 1/\sqrt{\mu\varepsilon}$ — the speed in the
+  **unbounded** filling medium, $c$ for air. $V_p = \omega/\beta$ is the phase velocity **in the guide**
+  and is always greater than $c$.
+- **Why:** the first equality on the same line is $\dfrac{1}{2\pi\sqrt{\mu\varepsilon}}$, so the
+  quantity must be $1/\sqrt{\mu\varepsilon}$. Substituting the guide's $V_p$ makes $f_c$ depend on $f_c$.
+- **Severity:** substantive — a symbol collision of the same kind as WC1's $\sigma$/$\alpha$.
+
+### Cosmetic — C36–C48
+
+| ID | Page | Prints | Should be |
+|---|---|---|---|
+| C36 | ·WG pp. 1, 4, 6 | "ca be considered", "we ca obtain", "ca be separated" | can |
+| C37 | ·WG p1 | "we call it a **traverse** (TE) mode" | transverse electric |
+| C38 | ·WG p1 | item 1 reads "Those that support TEM modes **and those that do not**"; item 2: "at least **or** component" | item 1 is only the TEM family; "at least **one** component" |
+| C39 | ·WG p2 | "the homogenous wave equations given in equations 1 **ad** 2" | "and"; "homogeneous" (also p5); and the equations are not given until p5, where only one is numbered |
+| C40 | ·WG pp. 3–4 | eq 2a's unit vector printed $\tilde{a}_z$; eq 2b ends $h_z e_z$ | $\mathbf{a}_z e_z$; $\mathbf{a}_z h_z$ — the unit vector replaced by a field component |
+| C41 | ·WG pp. 4–6 | every derivative written $d/dx$, $d/dy$; p6 mixes $\partial$ and $d$ inside single equations | partial derivatives throughout |
+| C42 | ·WG pp. 5–6 | "each of the components $a_x$, $a_y$ and $a_z$"; $+k^2E$, $+k_c^2E$ | the components $E_x$, $E_y$, $E_z$; $E_z$ |
+| C43 | ·WG p8 | mode denoted $T_{mn}$ | $TM_{mn}$ |
+| C44 | ·WG pp. 3–4 | "are **the** used to find"; "such as such as the inside" | then; once |
+| C45 | ·WG p10 | revision Q5(d) answer $3.785\times10^{8}$ m/s | $3.784\times10^{8}$ — unrounded 3.7843 |
+| C46 | ·WG p7 | "These forms … definitely satisfy the differential equations given by" | sentence breaks off; no equation follows |
+| C47 | ·WG pp. 7–8 | "satisfying_$e_z$", "satisfying_ez" | stray underscore |
+| C48 | ·WG pp. 9–10 | revision Q4(e), Q5(e): "Characteristic impedance of the guide $\eta$" | $Z_{TE}$ — $\eta$ is the filling medium's intrinsic impedance, which the formula **divides** to get the guide's |
+
+### Scope note (not an error)
+
+The handout **derives TM only**, yet its results page gives $Z_{TE}$ and all its revision questions
+are TE ($TE_{10}$, $TE_{11}$). It gives **no group velocity**, though both numerical revision
+questions ask for one, and no $Z_{TM}$. ·WG p9 says the short forms "discussed in class" are not
+provided in the exam. `03-waveguides.md` § 8 supplies them, tagged `[added]`; all reproduce the
+handout's own printed answers.
+
+---
+
+## § F — CEM (computational electromagnetics / finite differences)
+
+**21 flags: 7 substantive (F1–F7), 14 cosmetic (C49–C62).** Topic file: `04-computational-em.md`.
+
+**F1 reached an exam paper** — it is the source of erratum P29. The worked iteration example was
+re-run in full; seven of its eight printed answers reproduce exactly.
+
+### Substantive — F1–F7
+
+### F1 · ·CEM p2 · The alternating Taylor series is labelled $f(x+\Delta x)$ ★ most serious in this document
+- **Printed:** p1, $f(x+\Delta x) = \sum \dfrac{f^k(x)(\Delta x)^k}{k!}$ above the written-out
+  expansion of $f(x-\Delta x)$; p2, $f(x+\Delta x) = \sum \dfrac{(-1)^k f^k(x)(\Delta x)^k}{k!}$ above
+  the expansion of $f(x+\Delta x)$
+- **Correct:** $f(x-\Delta x) = \sum_k \dfrac{(-1)^k f^{(k)}(x)(\Delta x)^k}{k!}$ — the alternating
+  series is the **minus** expansion
+- **Why:** $(-1)^k(\Delta x)^k = (-\Delta x)^k$. p1's plain series is correctly labelled
+  $f(x+\Delta x)$; only p2's label is wrong. The page order adds confusion: the written-out equation
+  beneath p1's series is the $f(x-\Delta x)$ expansion, and the one beneath p2's is $f(x+\Delta x)$.
+- **Propagation:** **copied verbatim into the 23 Oct 2025 exam Q5(b)** — see P29.
+- **Severity:** substantive.
+
+### F2 · ·CEM p2 · Remainder of the summed series
+- **Printed:** $f(x+\Delta x) + f(x-\Delta x) = 2f(x) + \Delta x^2 f''(x) + O(\Delta x)$
+- **Correct:** $\ldots + O(\Delta x^4)$, so the second difference has error $O(\Delta x^2)$
+- **Why:** the odd terms cancel; the first surviving dropped term is $\dfrac{2\Delta x^4}{4!}f^{(4)}(x)$.
+  With $O(\Delta x)$, dividing by $\Delta x^2$ gives an error that **grows** as the grid is refined.
+- **Severity:** substantive.
+
+### F3 · ·CEM p2 · The backward difference points forward ★
+- **Printed:** $f'(x) \approx \dfrac{f(x) - f(x+\Delta x)}{\Delta x}$
+- **Correct:** $f'(x) \approx \dfrac{f(x) - f(x-\Delta x)}{\Delta x}$
+- **Why:** as printed it is the negative of the forward difference on the line above. For $f = x^2$ at
+  $x = 1$ it gives $-(2 + \Delta x)$ against a true slope of $+2$.
+- **Severity:** substantive — plausible-looking, so easy to learn wrongly.
+
+### F4 · ·CEM p4 · Coefficient of $y_{i+1}$ in the ODE example
+- **Printed:** $\left(\dfrac{1}{\Delta x^2} + \dfrac{1}{2\Delta x}\right)y_{i+1}$
+- **Correct:** $\left(\dfrac{1}{\Delta x^2} - \dfrac{1}{2\Delta x}\right)y_{i+1}$
+- **Why:** the first-derivative term is $-\dfrac{y_{i+1} - y_{i-1}}{2\Delta x}$, so $y_{i+1}$ picks up
+  a minus.
+- **Does it propagate?** No — the numerical line $5y_{i-1} - 7y_i + 3y_{i+1} = 0$ is correct
+  ($4 - 1 = 3$).
+- **Severity:** substantive but self-limiting.
+
+### F5 · ·CEM pp. 3–4 · The ODE's domain is stated two ways
+- **Printed:** "$0 \le x \le 10$", "$y(10) = 5$" (p3); grid from $x = 0$ to $X = 5$ and
+  $\Delta x = 5/10 = 0.5$ (pp. 3–4)
+- **Correct:** $0 \le x \le 5$, with $y = 5$ at the right end — the reading all the working uses
+- **Re-computed:** on $0 \le x \le 10$ with 11 nodes, $\Delta x = 1$ and the difference solution swings
+  to about $-910$ against an exact solution that stays between about $-17$ and $+105$. On $0 \le x \le 5$ it tracks the
+  exact solution to within 0.25.
+- **Severity:** substantive — the problem statement contradicts its own working.
+
+### F6 · ·CEM p6 · $\rho_s$ in the two-dimensional Poisson equation
+- **Printed:** "For two-dimensional solution region … $\rho_v$ is replaced by $\rho_s$", then
+  $\dfrac{d^2V}{dx^2} + \dfrac{d^2V}{dy^2} = -\dfrac{\rho_s}{\varepsilon}$
+- **Correct:** $-\dfrac{\rho_v}{\varepsilon}$
+- **Why:** dimensions. The left side is V/m². $\rho_v/\varepsilon$ is V/m²; $\rho_s/\varepsilon$ is V/m.
+  A 2-D problem has a volume density that does not vary with $z$.
+- **Does it propagate?** Not in practice — every example and exam question is charge-free.
+- **Severity:** substantive but self-limiting. Same class as WC1's V6 ($\rho_s$ for $\rho_v$).
+
+### F7 · ·CEM pp. 7–8 · "Old values" in the description, "newest values" in the example
+- **Printed:** p7, "we repeat the calculation at every free node using **old values** to determine new
+  ones"; p8, "using the **newest** surrounding potentials each time the potential at that node is
+  calculated"
+- **Correct:** the newest-value method (Gauss–Seidel) — it is what the example uses and what its
+  printed answers need
+- **Re-computed:** Example 1 after five sweeps. Newest values: $V_1 = 9.659$, $V_4 = 9.545$,
+  $V_6 = 18.84$ — the handout's numbers. Old values only (Jacobi): $V_1 = 9.053$, $V_4 = 8.223$,
+  $V_6 = 17.51$. Up to 1.3 V apart.
+- **Severity:** substantive — the method as described does not reproduce the handout's answers, and
+  a five-iteration exam answer depends on it.
+
+### Cosmetic — C49–C62
+
+| ID | Page | Prints | Should be |
+|---|---|---|---|
+| C49 | ·CEM p1, filename | COMPUTATIONAL ELEC**TO**MAGNETICS | ELEC**TRO**MAGNETICS — kept in the filename so citations match |
+| C50 | ·CEM pp. 1–2 | $f^k(x)$ for the $k$-th derivative | $f^{(k)}(x)$ — without brackets it reads as a power |
+| C51 | ·CEM p2 | equation 2 ends "$\pm$ – – –" | "$+\cdots$" |
+| C52 | ·CEM p2 | "subtract equation 2 from equation 1" | from equation 2 subtract equation 1 — the printed result is (2) − (1) |
+| C53 | ·CEM p3 | "With **initial** equations $y(0) = 1$, $y(10) = 5$" | boundary conditions — one at each end |
+| C54 | ·CEM p4 | $\Delta x = \dfrac{x_b - x_b}{11-1}$ | $\dfrac{x_b - x_a}{11-1}$ — as printed the numerator is zero |
+| C55 | ·CEM p6 | $V^2V = -\dfrac{\rho_v}{\varepsilon}$ | $\nabla^2V$ |
+| C56 | ·CEM p6 | eqs 2, 3: $V'' = \dfrac{d^2V}{\partial x}$, $\dfrac{d^2V}{\partial y}$ | $\dfrac{\partial^2V}{\partial x^2}$, $\dfrac{\partial^2V}{\partial y^2}$ |
+| C57 | ·CEM p6 | $V_{i+1.j}$, $V_{i.j+1}$, $V_{i.j}$ | comma, not full stop, between indices |
+| C58 | ·CEM p6 | "charge-free $(ps = 0)$" | $\rho = 0$ |
+| C59 | ·CEM pp. 5–6 | text cites "Figure (a)", "Figure (b)" | neither drawing on p5 carries a label |
+| C60 | ·CEM p8 | first iteration $V_4 = 1.873$ | 1.875 — and the second iteration uses 1.875 |
+| C61 | ·CEM p8 | after five iterations $V_2 = 4.707$ | **4.705** — unrounded 4.7053, either way of rounding |
+| C62 | ·CEM p1 | "solutio ns", "to s olve" | words broken across lines by justification |
+
+### Scope note (not an error)
+
+The ODE example on ·CEM pp. 3–4 **stops** at "Write the finite difference equations at each point".
+`04-computational-em.md` § 4 completes it, tagged `[added]`. The revision question (c) on ·CEM pp. 8–9
+is **Example 1 repeated**, figure for figure — and the 25 Oct 2024 exam Q5(b) is the same figure again.
+
+---
+
 ## § E — Exam papers
 
 Defects in the actual assessment papers (not the handouts). Entry IDs are `P1`, `P2`, … allocated
@@ -546,6 +752,10 @@ printed), 1 Oct 2025 · `P27`–`P37` = BEE 3102 End of Semester, 23 Oct 2025. N
 - **How to handle:** use that reading, **state it out loud as an assumption before starting the iteration**,
   and flag it to the lecturer. Do not present the assumption as something the figure says.
 - **Severity:** omission (paper defect). The question is unanswerable as printed without it.
+- **✅ Settled 8 Oct 2026 by the handout.** This figure is ·CEM p7's *Example 1*, and the handout works it.
+  Its first-iteration arithmetic puts 0 V on the left edge and the step, and its printed $V_8 = 11.25$ needs
+  0 V on the lower limb's inner wall and floor. **The "whole side" reading above is the lecturer's own.**
+  Full solution in `04-computational-em.md` § 7.
 
 ### P14 · BEE 3102 CAT 1 (29 Aug 2024) — no total printed, and the parts sum to 37
 - **Paper:** Q1 is marked (2) and (13); Q2 is marked (2) and (20). **No total appears anywhere** on the sheet.
@@ -713,8 +923,9 @@ printed), 1 Oct 2025 · `P27`–`P37` = BEE 3102 End of Semester, 23 Oct 2025. N
   $f(x-\Delta x) = \sum_k \frac{(-1)^k f^{(k)}(x)(\Delta x)^k}{k!}$; add them and truncate at $k = 2$, and
   the odd-order terms cancel to leave the stated second difference.
 - **How to handle:** teach both expansions and say plainly that the paper prints one of the pair with the
-  wrong left-hand side. **Do not** write the full derivation into this knowledge base — finite-difference
-  material has no handout behind it and would read as his lecturer's notes. Flag it and ask for the handout.
+  wrong left-hand side. The full derivation is now in `04-computational-em.md` § 2.
+- **✅ Source traced 8 Oct 2026.** The paper copies ·CEM p2, which prints the same mislabelled series — the
+  handout's own error, carried into the exam. See **F1** in § F.
 - **Severity:** error as printed (substantive). The worst defect on this paper.
 
 ### P30 · BEE 3102 End of Semester (23 Oct 2025), Q4(b) — region 1 is never specified
