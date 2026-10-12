@@ -1,0 +1,3 @@
+# 006 — Lab 4: inputs the sheet does not give
+Date: 2026-10-12 · Supersedes: none
+Radiation is off (no emissivities are given; the Lab 3 sheet asked for it explicitly, this one does not). The modules are copper, so each block is near-isothermal and its surface maximum stands in for T_case, as in Lab 2. The capacitor bank is centred and raised 10 mm clear of the module tops (resting on the plate it would overlap IGBT2 and IGBT3). The fan is a fixed-flow velocity inlet at 45 °C, since no fan curve is given. Part A is laminar (Ra ≈ 10⁸); Part B uses zero-equation turbulence (jet Re ≈ 3,000–14,000).

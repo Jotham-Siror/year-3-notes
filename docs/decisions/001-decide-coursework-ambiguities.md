@@ -1,0 +1,3 @@
+# 001 — Claude decides coursework ambiguities, Joseph is not asked
+Date: 2026-10-12 · Supersedes: the global "ask one question with a recommendation" rule, for coursework engineering choices only
+When a lab sheet is misprinted or silent on a modelling detail, Claude makes the most defensible engineering call and records it as an assumption in the report instead of putting the choice to Joseph. Joseph ruled this on 11 Oct 2026 ("Stop asking me all these questions… just do what you think is best"): he cannot judge these calls, so asking only stalls the work. Outward-facing or destructive actions are still confirmed.
