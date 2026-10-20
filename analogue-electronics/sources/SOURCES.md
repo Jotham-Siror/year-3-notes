@@ -97,6 +97,21 @@ right**; see `../knowledge-base/00-index.md` § Reference decks before teaching 
 
 ---
 
+## `past-papers/` — photographs of the 2026 CATs
+
+The two 2026 CATs arrived as single photographs, not inside a PDF. Kept here, untracked; transcribed in
+`../knowledge-base/past-papers/`.
+
+| File | Paper | Transcription |
+|---|---|---|
+| `BEE3106-CAT1-2026.jpg` | CAT 1, 2026 (day not printed) | `BEE3106-CAT1-2026.md` |
+| `BEE3106-CAT2-2026.png` | CAT 2, 2026 (day not printed) | `BEE3106-CAT2-2026.md` |
+
+The 2024 and 2025 papers came from `New folder/Year 3 papers.pdf` and `3.1 Engineering Papers 2025.pdf`
+at the repository root.
+
+---
+
 ## Text layers — why every page was read from a render
 
 | Code | Text layer | Consequence |

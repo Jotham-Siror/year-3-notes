@@ -369,9 +369,9 @@ This is the most valuable thing two independent sources buy. Full table in the l
 - **Nothing was invented.** Three pages need a screenshot and are named above; every other gap is
   recorded rather than filled.
 
-## Past papers — four, transcribed
+## Past papers — six, transcribed
 
-`past-papers/` now holds four papers, transcribed verbatim, `status: unsolved`. Start at
+`past-papers/` now holds six papers, transcribed verbatim, `status: unsolved`. Start at
 [`past-papers/00-past-papers-index.md`](past-papers/00-past-papers-index.md).
 
 | Paper | Date | Marks | File |
@@ -380,9 +380,19 @@ This is the most valuable thing two independent sources buy. Full table in the l
 | **End of Semester** | 22 Oct 2024 | 90 printed / 60 sat | `past-papers/BEE3106-EXAM-2024-10-22.md` |
 | **CAT** | 9 Sep 2025 | 40 ✓ | `past-papers/BEE3106-CAT-2025-09-09.md` |
 | **End of Semester** | 21 Oct 2025 | 90 printed / 60 sat | `past-papers/BEE3106-EXAM-2025-10-21.md` |
+| **CAT 1** | 2026 *(day not printed)* | 30 ✓ | `past-papers/BEE3106-CAT1-2026.md` |
+| **CAT 2** | 2026 *(day not printed)* | 30 ✓ | `past-papers/BEE3106-CAT2-2026.md` |
 
 **⚠ The papers are printed BEE 3106, not BEE 3103.** This index and `CLAUDE.md` both use BEE 3103. Same
 unit; the code on the paper is what the file names use. Logged as erratum **P1**.
+
+### ⚠ The 2026 CATs break the pattern
+
+The 2026 cohort's two CATs (30 marks each) share **no item** with the 2024/2025 CAT, and **22 of their 60
+marks have no source in this knowledge base** — the IoT critique, two Arduino builds, "PMOS as a sensor"
+and the optocoupler. They also give **22 marks to the LED and photodiode** (`04` §4.13–§4.14, ·J p41–p43),
+which the triage below files under "descriptive, learn the lists" and no earlier paper examined. Detail in
+the past-papers index.
 
 ### What the real mark distribution says — and it does not match the triage table
 

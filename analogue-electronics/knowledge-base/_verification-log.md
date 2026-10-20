@@ -3097,15 +3097,18 @@ keeps its own ID.
 
 | Paper | File | IDs |
 |---|---|---|
-| *(all four papers)* | — | **P1** |
+| *(all six papers)* | — | **P1** |
 | CAT, 17 Sep 2024 | `past-papers/BEE3106-CAT-2024-09-17.md` | P2–P5 |
 | End of Semester, 22 Oct 2024 | `past-papers/BEE3106-EXAM-2024-10-22.md` | P6–P11 |
 | CAT, 9 Sep 2025 | `past-papers/BEE3106-CAT-2025-09-09.md` | P12–P14 |
 | End of Semester, 21 Oct 2025 | `past-papers/BEE3106-EXAM-2025-10-21.md` | P15–P20 |
+| CAT 1, 2026 *(day not printed)* | `past-papers/BEE3106-CAT1-2026.md` | P21–P25 |
+| CAT 2, 2026 *(day not printed)* | `past-papers/BEE3106-CAT2-2026.md` | P26–P28 |
 
 ---
 
 ### P1 · ALL FOUR PAPERS — the unit code on the papers is not the unit code in this knowledge base
+- **2026 update:** the two 2026 CATs (P21–P28) are printed BEE 3106 as well — six papers, one code.
 - **Paper:** every page of all four papers is headed "**BEE 3106**: ANALOGUE ELECTRONICS I". The
   knowledge base, its index, this log's own front matter and the project `CLAUDE.md` all say
   "Analogue Electronics I — **BEE 3103**".
@@ -3429,6 +3432,107 @@ keeps its own ID.
   written out rather than abbreviated to V_c.
 - **How to handle:** transcribe verbatim, correct when speaking, and make him state for each of Q2(c)'s
   seven parts whether it is a node potential or an element drop before he computes any of them.
+- **Severity:** notation
+
+### P21 ★ · CAT 1 (2026), item (e) — the load voltages need a bias supply the paper does not give
+- **Paper:** "A silicon photosensor … produces a photocurrent of 2.5 mA when illuminated. If the photodiode
+  is connected to a 2.2 kΩ load resistor, calculate: i. The voltage developed across the load resistor …
+  iii. The new voltage if the photocurrent increases by 40% …"
+- **Issue:** the intended working is Ohm's law — $2.5\ \text{mA} \times 2.2\ \text{k}\Omega = 5.5\ \text{V}$,
+  and $3.5\ \text{mA} \times 2.2\ \text{k}\Omega = 7.7\ \text{V}$ for (iii). Recomputed here, 2026-10-20. But a
+  photodiode on its own cannot push 5.5 V into a load: unbiased, a silicon junction develops well under 1 V.
+  The numbers only hold if the photodiode is **reverse-biased** from a supply of at least 7.7 V and acts as a
+  current source — which is how `04` §4.14 (·J p42–p43) presents it — and the paper gives no supply and no
+  circuit. Part (iv) then lands on a second unstated fact: 5.5 V and 7.7 V are both above the 5 V input
+  range of a standard Arduino analogue pin.
+- **Correct form:** "A reverse-biased silicon photodiode, supplied from 12 V, produces …", or a circuit.
+- **How to handle:** work (i)–(iii) as the paper intends — $V = I_p R_L$, $P = I_p^2 R_L$ — and say once that
+  this assumes a reverse-bias supply large enough to keep the diode in its photoconductive region. In (iv),
+  a full answer notes that the reading rises with light, and that 5.5–7.7 V must be divided down before it
+  reaches a 5 V Arduino pin.
+- **Severity:** ambiguity
+
+### P22 · CAT 1 (2026), item (f) — "load current and power" does not say average or RMS
+- **Paper:** "Calculate: Peak input voltage, Peak output voltage, Average DC output voltage and Load current
+  and power."
+- **Issue:** the half-wave figures are $V_m = 12\sqrt{2} = 16.97\ \text{V}$, $V_{m,\text{out}} = 16.27\ \text{V}$,
+  $V_{dc} = V_{m,\text{out}}/\pi = 5.18\ \text{V}$, $I_{dc} = 51.8\ \text{mA}$ (recomputed here, 2026-10-20). "Power"
+  then has two readings that differ by a factor of about 2.5: d.c. power $V_{dc} I_{dc} = 0.268\ \text{W}$, or
+  the power actually dissipated, $V_{rms}^2/R_L = (V_{m,\text{out}}/2)^2/R_L = 0.662\ \text{W}$. The placement of
+  "load current" directly after "Average DC output voltage" points to the d.c. reading.
+- **Correct form:** "the d.c. load current and the d.c. output power".
+- **How to handle:** answer with $I_{dc}$ and $P_{dc} = V_{dc} I_{dc}$, the reading `05` §5.6 and `12` §2.6 use for
+  rectification efficiency, and state the assumption in one line.
+- **Severity:** ambiguity
+
+### P23 · CAT 1 (2026) — no date, time, duration or total printed
+- **Paper:** the header gives school, programme and "BEE 3106 ANALOGUE ELECTRONICS I CAT1", then "Attempt
+  all questions." No date, no time, no duration, no total.
+- **Issue:** the file cannot follow the `<UNIT>-<TYPE>-<YYYY-MM-DD>` naming rule, and the 30-mark total is
+  computed, not stated. Compare the 2024 and 2025 CATs, which printed date and time but no total (P2, P14).
+- **Correct form:** a date line and "Total: 30 marks".
+- **How to handle:** filed as `BEE3106-CAT1-2026.md` on his statement that this is the 2026 cohort's paper.
+  For a timed mock, the earlier CATs ran 1.5 hours for 40 marks.
+- **Severity:** structural
+
+### P24 · CAT 1 (2026), items (b), (c), (d) — three open wordings
+- **Paper:** (b) "List and describe four types of sensors and actuators, in each section" — 4 marks.
+  (c) "Develop a proposal … Implement the idea using Arduino and at least four photodevices & a buzzer" —
+  4 marks. (d) "sketch the possible graphs for the photodevices behaviour when exposed to voltage".
+- **Issue:** (b) reads three ways — four in total, four sensors plus four actuators, or four for each of the
+  stem's five sections (forty items for 4 marks). (c) asks for a proposal *and* an implementation for 4 marks,
+  with no hardware or code expected in a written CAT stated either way. (d) "exposed to voltage": a
+  photodevice responds to light; the reading that fits "mathematical expression … graphs" is the V–I
+  characteristic under bias, at several light levels.
+- **Correct form:** (b) "four sensors and four actuators"; (c) "a block diagram and outline circuit";
+  (d) "under forward and reverse bias, at different light intensities".
+- **How to handle:** (b) four sensors and four actuators, each tied to a section of the stem; (c) a block
+  diagram, the device list and a short description of the logic; (d) the notes' own curves — the LED's
+  luminosity against forward current (·J p42) and the photodiode's $I_R$ against light and its reverse output
+  family (·J p43), all in `04` §4.13–§4.14.
+- **Severity:** ambiguity
+
+### P25 · CAT 1 (2026) — cosmetic bundle
+- **Paper:** the stem is a vendor's marketing text ("Check out the Temperature, Optical and MEMS Sensing
+  products", "Check out the large portfolio of IoT-ready parts from Analog Devices"), printed with an
+  ellipsis "…" where text was cut. "every day functions" for "everyday". "photodevices behaviour" with no
+  apostrophe. "there is wide range of" with no article. The five icons under the stem are decorative artwork
+  and carry no figure number.
+- **Issue:** nothing computed changes. Item (a) asks for a critique of this very text, so its promotional
+  tone is plausibly the point of the item rather than a defect.
+- **How to handle:** transcribe verbatim. For (a), the vendor framing is fair material for the critique.
+- **Severity:** notation
+
+### P26 ★ · CAT 2 (2026), item (a) — the divider answer depends on an unstated choice
+- **Paper:** "α=0.985 and V_BE=0.3V. If V_CC=16V, R_E=2kΩ, R_B2=20kΩ calculate R_B1 and R_C to place Q point
+  at I_C=2mA, V_CE=6V. Draw possible graphical representation."
+- **Issue:** $R_C$ is unambiguous: $I_E = I_C/\alpha = 2.030\ \text{mA}$, $V_E = 4.061\ \text{V}$,
+  $R_C = (16 - 4.061 - 6)/2\ \text{mA} = 2.97\ \text{k}\Omega$. $R_B1$ is not. With
+  $V_B = 4.361\ \text{V}$ and $I_{R_{B2}} = 218.0\ \mu\text{A}$: counting the base current
+  ($\beta = \alpha/(1-\alpha) = 65.7$, $I_B = 30.5\ \mu\text{A}$) gives $R_{B1} = 46.8\ \text{k}\Omega$;
+  neglecting it gives $53.4\ \text{k}\Omega$ — about 14 % apart. Recomputed here, 2026-10-20. The paper
+  gives α, which is only needed for the exact route, so the exact route is the likelier intent. "Draw
+  possible graphical representation" names no graph. $V_{BE} = 0.3\ \text{V}$ is a germanium-typical value
+  on an NPN the paper otherwise does not describe; it is the given value and is used as given.
+- **Correct form:** "Include the base current", and "draw the d.c. load line showing the Q-point".
+- **How to handle:** work the exact route (it uses every given), quote the approximate figure in one line,
+  and draw the d.c. load line through $(V_{CE}, I_C) = (6\ \text{V}, 2\ \text{mA})$ with end points
+  $V_{CC} = 16\ \text{V}$ and $V_{CC}/(R_C + R_E)$.
+- **Severity:** ambiguity
+
+### P27 · CAT 2 (2026) — no date, time, duration or total printed
+- **Paper:** as CAT 1 (P23): header, "Attempt all questions.", no date, time, duration or total.
+- **Issue and handling:** as P23. Filed as `BEE3106-CAT2-2026.md`.
+- **Severity:** structural
+
+### P28 · CAT 2 (2026) — cosmetic bundle
+- **Paper:** item (a)'s sentence has two main verbs — "In a marine radio communication that has an
+  amplifier with an NPN transistor circuit below has α=0.985". "[4marks]" with no space beside "[6 marks]"
+  and "[10 marks]" with one. Item (b) asks to "Generate" an equation that is standard (Shockley's). The
+  figure under (d) has no number or caption, no resistor values and no Vcc value; only "10mA" and "Pullup"
+  are printed on it. Item (e)'s marks sit on its own line, far right.
+- **Issue:** nothing computed changes. Item (d) is descriptive, so the missing values do not block it.
+- **How to handle:** transcribe verbatim, correct when speaking.
 - **Severity:** notation
 
 <!-- Later papers append their own P-numbered entries above this line. -->

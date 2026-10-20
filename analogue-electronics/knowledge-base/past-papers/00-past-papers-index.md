@@ -2,11 +2,11 @@
 kb: "Analogue Electronics I — BEE 3103"
 file_role: past-papers-index
 purpose: "Register of every CAT / exam paper transcribed into this KB, plus the house format for adding the next one."
-papers: 4
-total_questions: 12
-total_parts: 71
+papers: 6
+total_questions: 14
+total_parts: 82
 unit_codes: ["BEE 3106", "BEE 3103"]
-unit_code_note: "⚠ THE KB AND THE PAPERS DISAGREE. This knowledge base and CLAUDE.md both call the unit BEE 3103; all four papers are printed BEE 3106. Same unit, same lecturer, same content — the code on the paper is what the file names use. Logged once as erratum P1. Codes are not unique anywhere in this repository; match a paper by unit NAME."
+unit_code_note: "⚠ THE KB AND THE PAPERS DISAGREE. This knowledge base and CLAUDE.md both call the unit BEE 3103; all six papers are printed BEE 3106. Same unit, same lecturer, same content — the code on the paper is what the file names use. Logged once as erratum P1. Codes are not unique anywhere in this repository; match a paper by unit NAME."
 status_legend: "unsolved = questions only · partial = some model solutions worked & verified · solved = all verified"
 canonical_house_format: "../../../fluid-flow/knowledge-base/past-papers/00-past-papers-index.md § House format"
 ---
@@ -34,17 +34,44 @@ canonical_house_format: "../../../fluid-flow/knowledge-base/past-papers/00-past-
 | **End of Semester** | 22 Oct 2024 | 90 printed / 60 sat | 5 (25 parts) | `unsolved` | [`BEE3106-EXAM-2024-10-22.md`](BEE3106-EXAM-2024-10-22.md) |
 | **CAT** | 9 Sep 2025 | 40 ✓ | 1 (8 items) | `unsolved` | [`BEE3106-CAT-2025-09-09.md`](BEE3106-CAT-2025-09-09.md) |
 | **End of Semester** | 21 Oct 2025 | 90 printed / 60 sat | 5 (30 parts) | `unsolved` | [`BEE3106-EXAM-2025-10-21.md`](BEE3106-EXAM-2025-10-21.md) |
+| **CAT 1** | 2026 *(day not printed)* | 30 ✓ | 1 (6 items) | `unsolved` | [`BEE3106-CAT1-2026.md`](BEE3106-CAT1-2026.md) |
+| **CAT 2** | 2026 *(day not printed)* | 30 ✓ | 1 (5 items) | `unsolved` | [`BEE3106-CAT2-2026.md`](BEE3106-CAT2-2026.md) |
 
-**Errata IDs** run across the whole folder, not per paper: **P1–P20**. The next paper starts at **P21**. Full
+**Errata IDs** run across the whole folder, not per paper: **P1–P28**. The next paper starts at **P29**. Full
 entries live in `../_verification-log.md` **§ Exam papers**, and nowhere else.
 
-**All four papers reconcile per question.** Neither exam prints a paper-level total, and neither CAT prints a
+**All six papers reconcile per question.** Neither exam prints a paper-level total, and neither CAT prints a
 total or a rubric — but every printed allocation adds up to its heading. This is the best-behaved set of
 papers in the repository.
 
 ---
 
-## ⚠ The finding that matters most: the 2025 CAT is the 2024 CAT, verbatim
+## The 2026 CATs — his own class, and a new kind of paper
+
+The 2026 cohort sat **two** CATs, 30 marks each, and **neither shares a single item with the 2024/2025
+CAT.** The reissue pattern below did not hold for this cohort. Both papers dress the questions in an
+application (IoT, marine radio, sonar) and both ask for an **Arduino** build.
+
+| | CAT 1 (2026) | CAT 2 (2026) |
+|---|---|---|
+| Diodes and photodevices (LED, photodiode) | c, d, e — 16 | d — 6 *(LED half)* |
+| Rectifiers | f — 8 | — |
+| BJT bias | — | a — 10 |
+| FET | — | b, c — 8 |
+| Sensors and IoT, Arduino | a, b — 6 | e — 6 |
+| **Not in any source here** | **6 of 30** | **16 of 30** |
+
+- **Photodevices are new to the papers.** No item on the four earlier papers touched the LED or the
+  photodiode; the 2026 CATs give them 22 marks between them.
+- **22 of the 60 marks have no source in this knowledge base:** the IoT critique, the two Arduino builds,
+  "PMOS as a sensor" and the optocoupler as a device. A further 4 (sensors and actuators) sit on tier-3
+  deck RD4 only. If he wants these covered, the source has to come from class — a handout or the
+  lecturer's slides on photodevices, optocouplers and sensors.
+- **Neither paper prints a date.** Both are filed under the year only (P23, P27).
+
+---
+
+## ⚠ The finding that matters most for the older papers: the 2025 CAT is the 2024 CAT, verbatim
 
 **All eight items. All forty marks. Word for word.** Two cohorts, twelve months apart, the same paper —
 the same P-N junction biasing question, the same clipper with the same 15 V sinusoid and 0.7 V silicon
@@ -68,18 +95,20 @@ The **transformer-coupled two-stage amplifier** figure is reused between exams w
 | `01-matter-atoms-and-semiconductors` | ❌ **never** |
 | `02-resistors-and-dc-network-theorems` | ❌ **never — zero marks across all four papers** |
 | `03-capacitors-inductors-and-transformers` | 2024 exam Q5(a) · 2025 exam Q2(b) *(turns ratio only)* |
-| `04-diodes` / `11-diodes` | CAT (a) · 2024 exam Q1(b), Q2(a) · 2025 exam Q1(b), Q3(b), Q3(d), Q3(e), Q5(c) |
-| `05-rectifiers-filters-and-regulation` / `12-rectifiers` | CAT (b) · 2024 exam Q1(c), Q2(b), Q2(c) · 2025 exam Q1(d), Q4(b), Q5(d) |
-| `06-bipolar-junction-transistors` / `13` | CAT (c), (h) · 2024 exam Q1(d), Q1(i), Q3(b) · 2025 exam Q1(b), Q2(c) |
-| `07-field-effect-transistors` / `14` | CAT (d), (e) · 2024 exam Q1(a), Q1(e), Q3(a), Q3(c) · 2025 exam Q1(c), Q1(g), Q4(a), Q4(c) |
+| `04-diodes` / `11-diodes` | CAT (a) · 2024 exam Q1(b), Q2(a) · 2025 exam Q1(b), Q3(b), Q3(d), Q3(e), Q5(c) · **2026 CAT 1 (c), (d), (e)** *(LED, photodiode)* · **2026 CAT 2 (d)** *(LED half only)* |
+| `05-rectifiers-filters-and-regulation` / `12-rectifiers` | CAT (b) · 2024 exam Q1(c), Q2(b), Q2(c) · 2025 exam Q1(d), Q4(b), Q5(d) · **2026 CAT 1 (f)** |
+| `06-bipolar-junction-transistors` / `13` | CAT (c), (h) · 2024 exam Q1(d), Q1(i), Q3(b) · 2025 exam Q1(b), Q2(c) · **2026 CAT 2 (a)** |
+| `07-field-effect-transistors` / `14` | CAT (d), (e) · 2024 exam Q1(a), Q1(e), Q3(a), Q3(c) · 2025 exam Q1(c), Q1(g), Q4(a), Q4(c) · **2026 CAT 2 (b)**, (c) *(PMOS construction only)* |
 | `15-fabrication-and-integrated-circuits` | CAT (f), (g) · 2024 exam Q1(f), Q4(a), Q4(c), Q5(b) · 2025 exam Q1(a), Q1(h), Q5(a), Q5(b) |
 | `16-h-parameters-and-bjt-amplifiers` | 2024 exam Q1(h), Q4(b) · 2025 exam Q1(e), Q2(a), Q3(a) |
 | `17-multistage-feedback-frequency-response` | 2024 exam Q1(g), Q5(a), Q5(c) · 2025 exam Q1(f), Q2(b), Q3(c), Q4(d) |
+| `_reference-decks.md` § RD4 *(tier 3)* | **2026 CAT 1 (b)** — sensors and actuators |
+| ❌ **No source in this KB** | **2026 CAT 1 (a), (c) · 2026 CAT 2 (c), (d), (e)** — IoT critique, Arduino builds, PMOS as a sensor, the optocoupler. 22 of 60 marks. |
 
 **`15`, `16` and `17` carry the exams.** Between them they take roughly half of every end-of-semester paper —
 fabrication and IC processing, h-parameter analysis, and multistage/feedback/frequency response. They are
-also the three topic files that sit furthest from the CATs, which never leave diodes, transistors and
-fabrication. **Revising for a CAT and revising for the exam are different jobs in this unit.**
+also the three topic files that sit furthest from the CATs, which stay in diodes, rectifiers, transistors
+and — up to 2025 — fabrication. **Revising for a CAT and revising for the exam are different jobs in this unit.**
 
 **`02` has never been worth a single mark.** Worth knowing before he spends an evening on network theorems.
 
@@ -87,7 +116,7 @@ fabrication. **Revising for a CAT and revising for the exam are different jobs i
 
 ## ⚠ Where the papers outrun the primary source
 
-Nothing on these four papers is absent from the knowledge base — but a great deal of it is absent from
+Nothing on the four 2024/2025 papers is absent from the knowledge base (the 2026 CATs are another matter — see above) — but a great deal of it is absent from
 **tier 1**, the 100-page course lecture notes, and is only covered by the tier-2 lesson documents and tier-3
 decks that `00-index.md` classes as supporting material.
 
@@ -95,7 +124,9 @@ decks that `00-index.md` classes as supporting material.
 |---|---|
 | 2024 end-of-semester | **59 of 90 (66 %)** — 21 on `15`, 11 on `16`, 9 on `17`, 8 `11`-only, 7 `12`-only, 3 on `14` §4.8 |
 | 2025 end-of-semester | **43 of 90 (48 %)** |
-| Either CAT | 10 of 40, all on `15` |
+| Either 2024/2025 CAT | 10 of 40, all on `15` |
+| 2026 CAT 1 | **10 of 30** — 6 in no source at all, 4 on RD4 only |
+| 2026 CAT 2 | **16 of 30** — all in no source at all |
 
 **Two-thirds of the 2024 exam could not be revised from the course lecture notes alone.** Teach from the
 tier-2 and tier-3 material without apology — but say which tier it comes from, because he will not find it
