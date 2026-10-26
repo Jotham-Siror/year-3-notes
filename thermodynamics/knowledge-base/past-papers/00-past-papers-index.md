@@ -60,9 +60,9 @@ its stated total and another four marks short. Check the arithmetic before setti
 | `03b-second-law-and-cycles` | CAT 1 Q4(ii) · CAT 2 Q1A, Q2A, Q2B · Exam Q1G, Q3A |
 | `04-thermodynamic-cycles` | CAT 2 Q4A · Exam Q2B, Q3A |
 | `05-heat-engines-and-carnot` | CAT 2 Q1C · Exam Q2A *(both partial — see the gap table)* |
-| ❌ **steady-flow energy equation** | CAT 1 Q3 · **Exam Q1F — on the compulsory question** |
-| ❌ **availability / exergy** | CAT 2 Q1B |
-| ❌ **Rankine cycle, analysed** | CAT 2 Q3A, Q3B |
+| ⚠ **steady-flow energy equation** — now `06` §6.3 (VC s6, enthalpy-only; full form `[added]`) | CAT 1 Q3 · **Exam Q1F — on the compulsory question** |
+| ✅ **availability / exergy** — now `06` §6.8 (VC s17) | CAT 2 Q1B |
+| ✅ **Rankine cycle, analysed** — now `06` §6.3–§6.7 (VC s6–s16) | CAT 2 Q3A, Q3B |
 | ❌ **vapour-compression refrigeration cycle** | Exam Q4 (20 marks) |
 | ❌ **Otto / Diesel comparison** | Exam Q5 (20 marks) |
 | ❌ **property / steam tables** | CAT 2 Q3B, Q4B · Exam Q2B, Q3B |

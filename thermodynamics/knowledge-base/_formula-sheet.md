@@ -383,8 +383,77 @@ $\eta_{Stirling} = \eta_{Carnot}$ with ideal regeneration.
 
 | Section | Document | Stage |
 |---|---|---|
-| Steady-flow energy equation | **absent from all five decks** — assessed in GA2 | 1c |
+| Steady-flow energy equation | ✅ now on this sheet — VC s6 (enthalpy-only), full form `[added]` | done |
 | Group activity solutions | GA1, GA2 | 1c |
+
+---
+
+## §1.2–§1.3 (TT2) — expansion, specific heat, calorimetry ·TT2
+
+| Name | Formula | Source |
+|---|---|---|
+| Linear expansion | $\Delta L = \alpha L_0 \Delta T$ | ·TT2 p19 |
+| Area expansion | $\Delta A = \gamma A_0 \Delta T$, $\gamma = 2\alpha$ | ·TT2 p20 |
+| Volume expansion | $\Delta V = \beta V_0 \Delta T$ ($\beta \approx 3\alpha$ for solids) | ·TT2 p20 |
+| Calorie | $1\ \mathrm{cal} = 4.186\ \mathrm{J}$ | ·TT2 p32 |
+| Specific heat | $Q = mc\,\Delta T$ | ·TT2 p34 |
+| Two-body calorimetry | $Q_{cold} = -Q_{hot}$ | ·TT2 p39 |
+| Many bodies | $\sum Q_k = 0$ | ·TT2 p41 |
+| Latent heat | $Q = \pm mL$; water $L_f = 3.33 \times 10^5$, $L_v = 2.26 \times 10^6\ \mathrm{J/kg}$ | ·TT2 p44–p45 |
+| Conduction (rod) | $P = kA(T_h - T_c)/L$ | ·TT2 p55 |
+| Stefan's law | $P = \sigma A e T^4$; $P_{net} = \sigma A e (T^4 - T_0^4)$ | ·TT2 p62–p63 |
+
+## Topic 3 part 3 — vapour power cycles ·VC
+
+| Name | Formula | Source |
+|---|---|---|
+| Wet-mixture entropy | $s = (1-x)s_f + x s_g$ | ·VC s3 |
+| SFEE per kg (no KE/PE) | $(q_{in}-q_{out}) + (w_{in}-w_{out}) = h_e - h_i$ | ·VC s6 |
+| [added] SFEE, full | $q - w = (h_e - h_i) + \tfrac{1}{2}(V_e^2 - V_i^2) + g(z_e - z_i)$ | — |
+| Pump | $w_{pump,in} = h_2 - h_1 = v(P_2 - P_1)$ | ·VC s6 |
+| Boiler | $q_{in} = h_3 - h_2$ | ·VC s6 |
+| Turbine | $w_{turb,out} = h_3 - h_4$ | ·VC s6 |
+| Condenser | $q_{out} = h_4 - h_1$ | ·VC s6 |
+| Rankine efficiency | $\eta_{th} = w_{net}/q_{in} = 1 - q_{out}/q_{in}$ | ·VC s6 |
+| Heat rate | $\eta_{th} = 3412/\text{heat rate (Btu/kWh)}$ | ·VC s6 |
+| Pump isentropic eff. | $\eta_P = (h_{2s}-h_1)/(h_{2a}-h_1)$ | ·VC s7 |
+| Turbine isentropic eff. | $\eta_T = (h_3-h_{4a})/(h_3-h_{4s})$ | ·VC s7 |
+| Reheat | $q_{in} = (h_3-h_2)+(h_5-h_4)$; $w_{turb} = (h_3-h_4)+(h_5-h_6)$ | ·VC s11 |
+| Open FWH | $q_{in} = h_5-h_4$; $q_{out} = (1-y)(h_7-h_1)$; $w_{turb} = (h_5-h_6)+(1-y)(h_6-h_7)$; $y = \dot m_6/\dot m_5$ | ·VC s14 |
+| Exergy destroyed | $x_{dest} = T_0 s_{gen}$; cycle with source/sink: $x_{dest} = T_0(q_{out}/T_L - q_{in}/T_H)$ | ·VC s17 |
+| Stream exergy | $\psi = (h-h_0) - T_0(s-s_0) + V^2/2 + gz$ | ·VC s17 |
+| Utilisation factor | $\epsilon_u = (\dot W_{net} + \dot Q_p)/\dot Q_{in} = 1 - \dot Q_{out}/\dot Q_{in}$ | ·VC s19 |
+
+## Topic 4 — heat transfer ·HT, IP
+
+| Name | Formula | Source |
+|---|---|---|
+| Fourier | $q = -kA\,dT/dx$; plane wall $q = kA(T_1-T_2)/L$ | ·HT p1 |
+| Resistances | $R_{cond} = L/(kA)$; $R_{cyl} = \ln(r_2/r_1)/(2\pi k L)$; $R_{conv} = 1/(hA)$ | ·HT p1–p2 |
+| Newton | $q = hA(T_s - T_\infty)$ | ·HT p2 |
+| Stefan–Boltzmann | $q_{net} = \varepsilon\sigma A(T_s^4 - T_{sur}^4)$, **kelvin** | ·HT p3 |
+| Network | series $\sum R$; parallel $1/R = \sum 1/R_i$; $q = \Delta T_{overall}/R_{total}$ | ·HT p4 |
+| LMTD | $Q = UA\,\Delta T_{LM}$; $\Delta T_{LM} = (\Delta T_1 - \Delta T_2)/\ln(\Delta T_1/\Delta T_2)$ | ·HT p5 |
+| Overall $U$ | $1/(UA) = 1/(h_iA_i) + R_{wall} + 1/(h_oA_o)$ | ·HT p6 |
+| Effectiveness–NTU | $\varepsilon = Q/Q_{max}$; $Q_{max} = C_{min}(T_{h,in}-T_{c,in})$; $\mathrm{NTU} = UA/C_{min}$ | ·HT p7 |
+| Critical radius | $r_c = k_{ins}/h$ | ·HT p8 |
+| Insulated pipe | $Q = 2\pi L(T_i - T_o)\big/\big[\tfrac{1}{r_1h_i} + \tfrac{\ln(r_2/r_1)}{k_{pipe}} + \tfrac{\ln(r_3/r_2)}{k_{ins}} + \tfrac{1}{r_3h_c}\big]$ | ·HT p9 |
+| Arrhenius | $k = A\,e^{-E_a/(RT)}$ | ·HT p11 |
+| Cable ampacity | $I^2R_{dc}(1+\lambda) = (T_{max} - T_{amb})/R_T$; derating $I \propto \sqrt{\Delta T}$ | ·HT p13 |
+| Busbar | $I^2R = hA(T_s - T_{amb}) + \varepsilon\sigma A(T_s^4 - T_{amb}^4)$ | ·HT p13 |
+| Junction | $T_j = T_{amb} + P_{loss}(R_{jc} + R_{cs} + R_{sa})$ | ·HT p14 |
+| Fin efficiency | $\eta_f = \tanh(mL)/(mL)$, $m = \sqrt{hP/(kA_c)}$ | ·HT p15 |
+| Heat equation | $\rho c_p\,\partial T/\partial t = \nabla\cdot(k\nabla T) + \dot q_{gen}$ | ·HT p18 |
+| Junction-to-ambient | $R_{ja} = (T_j - T_\infty)/P$ | ·IP p6 |
+
+## Topic 5 — experiments ·T5
+
+| Name | Formula | Source |
+|---|---|---|
+| Method of mixtures | $c_s = \dfrac{(m_w + m_{cal})c_w(T_f - T_{i,w})}{m_s(T_{i,s} - T_f)}$, with $C_{cal} = m_{cal}c_w$ | ·T5 p2–p3 |
+| Conductivity | $k = q/[A\,(dT/dx)]$, $q = VI$ | ·T5 p5 |
+| Film coefficient | $h = q/[A(T_s - T_\infty)]$ | ·T5 p5 |
+| % error | $|x - x_{true}|/x_{true} \times 100\ \%$ | ·T5 p4 |
 
 ---
 

@@ -4,10 +4,10 @@ course_code: "MEC 3105"
 programme: "BSc Electrical Engineering, Year 3 Semester 1"
 lecturer: "withheld"
 file_role: index
-source: "5 lecture documents (200 pp.) + 2 sets of assessed group activities. See ../sources/SOURCES.md"
+source: "10 lecture documents (316 pp.) + 2 sets of assessed group activities. See ../sources/SOURCES.md"
 built: "COMPLETE — all five lecture documents plus both group activities."
-coverage: "200 / 200 lecture pages transcribed and verified. GA1 (8 groups) and GA2 (9 groups) transcribed and solved."
-total_verification_flags: 51
+coverage: "316 / 316 lecture pages transcribed and verified. GA1 (8 groups) and GA2 (9 groups) transcribed and solved."
+total_verification_flags: 65
 ---
 
 <!-- Compiled by Jotham-JS, 2026. MEC 3105 Thermodynamics knowledge base. -->
@@ -18,6 +18,10 @@ total_verification_flags: 51
 > [`../README.md`](../README.md). This file is the operational index.
 
 > ## ✅ Build status — complete
+>
+> **26 Oct 2026 — five documents added (116 pages):** TT2 → `01b`, VC → `06`, HT → `07`, IP → `08`,
+> T5 → `09`. VC closes the Rankine, exergy and (enthalpy-only) SFEE gaps. Topics 4 and 5 are new
+> material that **no past paper has examined yet**. TT2 lost its minus signs in conversion — see V29.
 >
 > **Every one of the 200 lecture pages is transcribed and verified.** Both assessed group activities
 > are in `exercises/` — **every question transcribed, every one worked and verified**, each
@@ -61,10 +65,16 @@ piston engine.
 | **EPC** | Energy Equations and Phase Changes | 92 | 2 | `03a-…` **+** `03b-…` *(split)* | ✅ **verified — 8 V, 8 C** |
 | **TC** | Power Production and Thermodynamic Cycles (1) | 24 | 3 | `04-thermodynamic-cycles.md` | ✅ **verified — 5 V, 7 C** |
 | **HE** | Power Production and Thermodynamic Cycles (2) | 30 | 3 | `05-heat-engines-and-carnot.md` | ✅ **verified — 4 V, 2 C** |
+| **TT2** | Temperature and Thermometry 2 | 52 | 1 — 1.2, 1.3 | `01b-thermal-expansion-heat-and-calorimetry.md` | ✅ **verified — 3 V, 2 C** |
+| **VC** | Vapour and Combined Power Cycles | 22 | 3 — part 3 | `06-vapour-and-combined-power-cycles.md` | ✅ **verified — 0 V, 1 C** |
+| **HT** | Topic 4 — Heat Transfer and Thermal Analysis | 26 | 4 — 4.1–4.3 | `07-heat-transfer-and-thermal-analysis.md` | ✅ **verified — 2 V, 3 C** |
+| **IP** | Topic 4 — Ansys Icepak | 8 | 4 — 4.4–4.11 | `08-ansys-icepak.md` | ✅ **verified — 0 V, 2 C** |
+| **T5** | Topic 5 — Experiments on Heat Transfer | 8 | 5 | `09-heat-transfer-experiments.md` | ✅ **verified — 0 V, 1 C** |
 | **GA1** | Group Activities 1 — 8 groups | — | 1 — §1.1, §1.2 | `exercises/ga1-…md` | ✅ **solved — 1 V (V28)** |
 | **GA2** | Group Activities 2 — 9 groups | — | 1 — §1.3 | `exercises/ga2-…md` | ✅ **solved — clean** |
 
 Provenance: **·TT p7** (page-based) · **·EPC s68** (slide-based) · **·GA1 G3 Part B Q2** (exercises).
+New documents: **·TT2 p40** (printed footer; PDF page = footer − 17) · **·VC s6** · **·HT p9** · **·IP p5** · **·T5 p3** (PDF pages).
 Full detail in `../sources/SOURCES.md`.
 
 > **⚠ TC slide numbers are shifted by an untitled image slide.** TC slide 2 is a full-bleed image with
@@ -131,7 +141,7 @@ Recovered from the group-activity headers, which carry section numbers the decks
 ```
 knowledge-base/
 ├── 00-index.md              ← this file
-├── 01- … 05-….md            ← lecture documents ONLY
+├── 01- … 09-….md            ← lecture documents ONLY (01b = TT2, the second half of TT)
 ├── _nomenclature.md
 ├── _formula-sheet.md
 ├── _verification-log.md
@@ -217,15 +227,15 @@ three times and unpicked afterwards.
 | Topic | Assessed in | Final verdict |
 |---|---|---|
 | **Van der Waals equation, constants $a$, $b$** | GA1 Part B | ❌ **ABSENT FROM ALL FIVE DECKS.** FL s37 gives Beattie-Bridgeman, Benedict-Webb-Rubin and virial instead. Supplied `[added]` in `02-first-law` §2.12 and on the formula sheet. ⚠ **And GA1 prints the constants in the wrong units — see V28.** |
-| **Steady-flow energy equation** | GA2 · **CAT 1 Q3** · **Exam Q1F — COMPULSORY** | ❌ **ABSENT FROM ALL FIVE DECKS.** FL covers closed systems only; TC and HE never write it. **Still unsupplied** — it is needed for one GA2 *discussion* prompt (Part A Q3), not for any numerical task, so it was left as a documented gap rather than invented. |
-| **Otto / Diesel / Brayton / Rankine / Stirling efficiency** | ✅ **confirmed — CAT 2 Q3A/B, Exam Q5 (20 marks)** | ❌ **ABSENT FROM ALL FIVE DECKS.** Named in TC s13, tabulated in HE s12, analysed nowhere. Supplied `[added]` on the formula sheet. |
+| **Steady-flow energy equation** | GA2 · **CAT 1 Q3** · **Exam Q1F — COMPULSORY** | ⚠ **PARTLY FILLED by VC s6** (26 Oct 2026): the per-unit-mass form $(q_{in}-q_{out})+(w_{in}-w_{out}) = h_e - h_i$, applied to pump, boiler, turbine, condenser. **No KE or PE terms** — the full form is supplied `[added]` in `06` §6.3. |
+| **Otto / Diesel / Brayton / Rankine / Stirling efficiency** | ✅ **confirmed — CAT 2 Q3A/B, Exam Q5 (20 marks)** | ✅ **Rankine now taught in full — VC s6–s7, s11, s14** (`06`). ❌ Otto, Diesel, Brayton, Stirling still analysed nowhere (Brayton named on VC s21) — `[added]` on the formula sheet. |
 | **Entropy as a property** (general definition, Clausius inequality, $T\,ds$) | **CAT 2 Q1C · Exam Q2A** | ⚠ **PARTIAL.** No general definition anywhere. HE s28 gives the **Carnot-specific** $Q_H = T_H\Delta s$, $Q_C = T_C\Delta s$ — the only entropy equations in the course. $dS = \delta Q_{rev}/T$ supplied `[added]`. |
 | Compressibility factor $Z$, $Z \gtrless 1$ | GA1 Part B | ✅ **taught in full** — FL s35–s36, with reduced properties and the generalised chart |
 | Specific heats, $c_p - c_v = R$ | GA2 Part B | ✅ **taught** — FL s28, molar form via $\gamma$; convert basis for the exercises |
 | Enthalpy $h = u + Pv$ | GA2 | ✅ **taught and derived** — FL s21 |
-| Property / steam tables | **CAT 2 Q3B/Q4B · Exam Q2B/Q3B** | ❌ **referenced but never reproduced** (FL s15, s21; EPC s15). Needed to finish FL s21's example. |
+| Property / steam tables | **CAT 2 Q3B/Q4B · Exam Q2B/Q3B** | ❌ **referenced but never reproduced** (FL s15, s21; EPC s15; VC s6; T5 p8 "as prescribed for MEC 3105"). Needed to finish FL s21's example and every Rankine number. |
 | Third law | — | ⚠ appears **once**, on TC's orphan decorative slide 2. Nowhere else. |
-| **Availability / exergy** | **CAT 2 Q1B (3 marks)** | ❌ **ABSENT FROM THE ENTIRE KB.** The word occurs exactly once, inside TC s12's quoted entropy definition ("the *un*availability of…"); "exergy" occurs nowhere. Nearest coverage is EPC s84's **quality of energy** table — the same idea without the name or the formalism. Supply as `[added]`. |
+| **Availability / exergy** | **CAT 2 Q1B (3 marks)** | ✅ **FILLED by VC s17** (26 Oct 2026) — definition, exergy destruction (four forms), stream exergy. `06` §6.8. *Earlier note, kept:* ❌ **ABSENT FROM THE ENTIRE KB.** The word occurs exactly once, inside TC s12's quoted entropy definition ("the *un*availability of…"); "exergy" occurs nowhere. Nearest coverage is EPC s84's **quality of energy** table — the same idea without the name or the formalism. Supply as `[added]`. |
 | **Vapour-compression refrigeration cycle** | **Exam Q4 (20 marks)** | ❌ **ABSENT.** The phrase appears nowhere. TC s11 carries the course's only *P*–*h* diagram and HE §5 names the cycle once in a list. Supply as `[added]`. |
 
 **Three hard gaps remain, and all three are assessable.** Van der Waals is *directly* assessed in

@@ -43,6 +43,13 @@ The symbol collisions that actually cost marks, most damaging first.
 | **12** | $\eta$ | **HE** writes bare $\eta$ for thermal efficiency | **EPC, TC** write $\eta_{th}$; **HE** also uses $\eta_{Carnot}$ | ✅ verified — read from context |
 | **13** | $E$ | **TC s12**: internal energy, in $H = E + PV$ | **FL s15**: *total* energy $E = U + \mathrm{KE} + \mathrm{PE}$ | ✅ verified — TC's usage is the odd one (C21) |
 | **14** | $W_{net}$ | **TC s16** assigns it units "kJ, Btu, **kW, hp**" — energy *and* power | correct: work per cycle is **energy**; the rate is $\dot W_{net}$ | ✅ verified — **TC s16 is wrong** (V22) |
+| **15** | $\varepsilon$ / $\epsilon$ | **HT**: emissivity *and* heat-exchanger **effectiveness**, same letter, same document | **VC s19**: $\epsilon_u$ utilisation factor | ⚠️ three meanings — read the subscript and the section |
+| **16** | $e$ vs $\varepsilon$ | **TT2**: emissivity written $e$ | **HT, IP**: emissivity written $\varepsilon$ | ✅ same quantity |
+| **17** | $\gamma$, $\beta$ | **TT2**: $\gamma = 2\alpha$ area expansion; $\beta$ volume expansion | **FL**: $\gamma = c_p/c_v$ | ⚠️ different quantities |
+| **18** | $P$ | **TT2, HT p14**: **power** in W ($P = Q/\Delta t$, $P_{loss}$); **HT p15**: fin **perimeter** in m | everywhere else: pressure | ⚠️ row 10 no longer holds from TT2 on |
+| **19** | $k$, $A$, $R$ | **HT p11 Arrhenius**: $k$ ageing rate, $A$ pre-exponential factor, $R$ gas constant | **HT elsewhere**: conductivity, area, thermal resistance | ⚠️ one equation only |
+| **20** | $\rho$ | density | **HT p22**: electrical resistivity in $\dot q = I^2\rho/A^2$ | ⚠️ |
+| **21** | $V$ | volume | **VC s17, IP p4**: velocity | ✅ as row 2 |
 
 ### 1 · The sign convention for work — the single highest-risk item in the unit
 

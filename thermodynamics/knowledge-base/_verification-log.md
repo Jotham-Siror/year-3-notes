@@ -60,6 +60,12 @@ page, so a PDF viewer shows one less: `p13` = PDF page 12.
 | **Total (lecture documents)** | **200 / 200** | **26** | **24** | **50 flags** |
 | **GA1** — group activity | — | **1** *(V28)* | 0 | ✅ complete |
 | **Grand total** | — | **27** | **24** | **51 flags** |
+| **TT2** — Temperature and Thermometry 2 *(added 26 Oct 2026)* | 52 | 3 | 2 | ✅ |
+| **VC** — Vapour and Combined Power Cycles | 22 | 0 | 1 | ✅ |
+| **HT** — Topic 4 Heat Transfer | 26 | 2 | 3 | ✅ |
+| **IP** — Topic 4 Icepak | 8 | 0 | 2 | ✅ |
+| **T5** — Topic 5 Experiments | 8 | 0 | 1 | ✅ |
+| **Grand total, all ten documents** | **316** | **32** | **33** | **65 flags** |
 
 **Numbering note.** IDs are issued in build order, one document at a time, and are **not contiguous** —
 `C12`, `C13`, `C14` and `C20` were never issued. Every ID matches the inline flag in the topic file that
@@ -1343,6 +1349,71 @@ file just points to it.
 
 <!-- Later papers append their own P-numbered entries above this line. -->
 
+
+---
+
+## Documents added 26 Oct 2026 — TT2, VC, HT, IP, T5
+
+Read the same way as the first five: every equation page from a render, every worked number recomputed.
+IDs continue from V28 and C28.
+
+### V29 · Minus signs lost throughout TT2 ·TT2 p23–p69
+
+The conversion turned most "−" into the digit "2" and some "°" into "8".
+
+| Page | Printed | Means |
+|---|---|---|
+| p28 | "37.08C, 41.78C, 4.78C" | 37.0 °C, 41.7 °C, 4.7 °C |
+| p45, p47 | ice "initially at 230.0 °C"; "from 230 °C to 0 °C" | −30.0 °C |
+| p50 | "6 kg of ice at 25 °C" | −5.00 °C (the table on p50 prints −5.00) |
+| p54–p55 | "where $T_h$ – $T_c$" | $T_h > T_c$ |
+| p69 Q1 | area "$5 \times 10^{24}$ m²" | $5 \times 10^{-4}$ m² (checked: gives the printed 68.2 °C) |
+| p69 Q4 | ice "at 25.00 °C"; answer "T = 5 0 °C" | −5.00 °C; T = 0 °C (checked: gives the printed 5.23 kg) |
+
+Equation images are unaffected. Corrected throughout `01b`.
+
+### V30 · Ring-and-rod answer: heat, not cool ·TT2 p28 Problem 3
+
+Printed "261 °C" is **−61 °C** (V29's lost minus). It changes the physics: aluminium contracts faster than
+steel, so the ring slips on when both are **cooled** by 96 °C. Working in `01b` §1b.1.
+
+### V31 · Specific heat of water printed as 186 ·TT2 p36
+
+"the specific heat of water is 186 J/kg·°C" — the leading 4 is lost. It is 4186.
+
+### V32 · Critical-radius example overstates when insulation starts to help ·HT p9
+
+"Only insulation thicker than 11 mm (r > 19 mm) will reduce heat loss below the bare-cable value." Past
+$r_c$ the loss falls, but stays above the bare value until $R(r) = R_{bare}$: with $r_1 = 8$ mm,
+$k = 0.19$, $h = 10$, that is $r \approx 64$ mm — about 56 mm of PVC. At $r_c$ itself the loss is 27 %
+**above** bare ($R = 1.56$ vs $1.99$ K·m/W). Working in `07` §7.3.
+
+### V33 · Solar radiation on the wrong side of the overhead-line balance ·HT p17
+
+Printed $I^2R_{ac} = q_{conv(wind)} + q_{rad(solar)}$. Solar input heats the conductor. Standard form
+(IEEE 738 / CIGRE): $I^2R_{ac} + q_{solar} = q_{conv} + q_{rad}$.
+
+### Cosmetic
+
+| ID | Doc | Where | Issue |
+|---|---|---|---|
+| **C29** | TT2 | p35, p37 | Tables 1 and 2 identical; Table 1 caption "J/kg?°C" |
+| **C30** | TT2 | p29–p38 | headings jump 1.2 → 1.3 → 3.1 → 3.3 |
+| **C31** | VC | s2 | $H = E + PV$ — $E$ for internal energy, as TC s12 (C21) |
+| **C32** | HT | p7 | "Where UAUA is…" |
+| **C33** | HT | p10 | layered $R_{total}$ missing its $\Sigma$ |
+| **C34** | HT | p14 | busbar example: "= 20 W/m² × area (illustrative)" — unit muddle, no answer reached |
+| **C35** | IP | p4 | velocity $V$ in equations, $u$ in text |
+| **C36** | IP | p7–p8 | cross-references to "Section 5 / 7" from an older numbering |
+| **C37** | T5 | p4 | numerator 3118.6 should be 3119.4; answer 876 J/(kg·K) unaffected |
+
+### Checked and cleared
+
+TT2: rail 30.013 m and 29.994 m; oceans $2 \times 10^{-4}$ and 0.3 m; Ex 1 388 J/(kg·°C); Ex 2 37.9 °C;
+ice-to-steam 3.11 kJ; Ex 3 3.03 °C (3.01 unrounded); Ex 4 1.89 kg; p69 Q2 27.9 °C, Q3 26.6 °C.
+HT: busbar 100.1 W; fin 384 W; LMTD 34.8 K, 4.93 m²; $r_c$ 19 mm; transformer 70.6 / 58 °C;
+derating 351 A; $R_{sa}$ 0.046 °C/W; motor 15.96 kW. IP: none worked. T5: 876 J/(kg·K), 2.7 %;
+convection table self-consistent at $A \approx 0.058$ m². VC: no numerical example.
 
 ---
 

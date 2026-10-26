@@ -16,7 +16,7 @@ Every citation in the knowledge base then resolves against the same document.
 
 ## `lecture-notes/` — the knowledge base is built from these
 
-Five documents, 200 pages total. The **Code** column is what the knowledge base cites.
+Ten documents, 316 pages total. The first five were the original build; the last five were added on 26 Oct 2026. The **Code** column is what the knowledge base cites.
 
 | Code | File | Pages | Size | Format | Course topic |
 |---|---|---|---|---|---|
@@ -25,8 +25,18 @@ Five documents, 200 pages total. The **Code** column is what the knowledge base 
 | **EPC** | `3.02 - Energy Equations and Phase Changes.pdf` | 92 | 5.0 MB | PowerPoint → Print to PDF | Topic 2 — Energy Equations & Phase Changes |
 | **TC** | `3.1 MEC 3105 Power production and Thermodynamic Cycles.pdf` | 24 | 1.7 MB | PowerPoint → Print to PDF | Topic 3 — Power Production & Cycles (part 1) |
 | **HE** | `3.2 MEC 3105 Power production and Thermodynamic Cycles.pdf` | 30 | 1.4 MB | PowerPoint → Print to PDF | Topic 3 — Power Production & Cycles (part 2) |
+| **TT2** | `Temperature and Thermometry 2.pdf` | 52 | 1.5 MB | Word 2010 → PDF; equations are images | Topic 1 — 1.2 thermal expansion, 1.3 heat, calorimetry, latent heat, heat transfer basics |
+| **VC** | `3.3 MEC 3105 Vapour and Combined Power Cycles.pdf` | 22 | 2.1 MB | PowerPoint → Print to PDF | Topic 3 — Power Production & Cycles (part 3) |
+| **HT** | `MEC_3105_Topic4_Lecture_Notes1.pdf` | 26 | 1.2 MB | Word → Print to PDF | Topic 4 — 4.1–4.3 Heat Transfer and Thermal Analysis |
+| **IP** | `MEC_3105_Topic4_2_Lecture_Notes_Ansys_Icepak.pdf` | 8 | 0.9 MB | Word → Print to PDF | Topic 4 — 4.4–4.11 Ansys Icepak (a copy also sits in `../ansys/`) |
+| **T5** | `MEC_3105_Topic 5.pdf` | 8 | 0.8 MB | Word → Print to PDF | Topic 5 — Practical Application and Experiments on Heat Transfer |
 
 Provenance is cited as **·TT p7** for the page-based document and **·EPC s68** for the slide decks.
+**·TT2 pN** uses TT2's printed footer (18–69; PDF page = footer − 17). **·VC sN**, **·HT pN**, **·IP pN** and
+**·T5 pN** are PDF page numbers.
+
+> **TT2 lost most of its minus signs in conversion** — "230 °C" means −30 °C. Every case is listed
+> under V29 in `../knowledge-base/_verification-log.md`. Its equations are images: read from renders only.
 
 **Letter codes, not the file numbers.** The lecturer's `3.0 / 3.01 / 3.02 / 3.1 / 3.2` prefixes are
 one keystroke apart (`·3.1 s12` vs `·3.01 s12`) and do not match the decks' own internal topic
@@ -105,7 +115,12 @@ thermodynamics/
     │   ├── 3.01 First_Law_of_Thermodynamics.pdf
     │   ├── 3.02 - Energy Equations and Phase Changes.pdf
     │   ├── 3.1 MEC 3105 Power production and Thermodynamic Cycles.pdf
-    │   └── 3.2 MEC 3105 Power production and Thermodynamic Cycles.pdf
+    │   ├── 3.2 MEC 3105 Power production and Thermodynamic Cycles.pdf
+    │   ├── 3.3 MEC 3105 Vapour and Combined Power Cycles.pdf
+    │   ├── Temperature and Thermometry 2.pdf
+    │   ├── MEC_3105_Topic4_Lecture_Notes1.pdf
+    │   ├── MEC_3105_Topic4_2_Lecture_Notes_Ansys_Icepak.pdf
+    │   └── MEC_3105_Topic 5.pdf
     └── group-activities/
         ├── ga-1/   (9 .docx)
         ├── ga-2/   (9 .docx)
@@ -125,7 +140,7 @@ and identical extracted text** — a re-save, not a revision. Both redundant cop
 
 ## Do the notes work without them?
 
-**Yes.** All 200 lecture pages are transcribed and verified, and both group activities are extracted.
+**Yes.** All 316 lecture pages are transcribed and verified, and both group activities are extracted.
 The sources are needed only to check a citation against the original page. See
 `../knowledge-base/00-index.md`.
 
