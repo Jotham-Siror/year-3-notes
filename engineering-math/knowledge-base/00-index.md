@@ -79,10 +79,24 @@ Full working in `../sources/SOURCES.md` § How these files were made.
 > ⚠ **So are small changes / total differentials** — Tutorial 1 Q4 and both finals, three appearances, and
 > partial differentiation is in none of the six topic files. Add to the gap map.
 
-**What it tells us about examinable scope** — see `past-papers/00-past-papers-index.md` for the
-full read. In one line: **file `01` carries the paper.** Four of the five questions are Gamma/Beta;
-the fifth (Q4) is Maclaurin followed by term-by-term integration of a fractional power, and uses no
-Gamma or Beta function at all.
+**What the five papers tell us about examinable scope.** The full read, with marks by file, is
+`past-papers/00-past-papers-index.md` § What we know about examinable scope. In brief:
+
+- **`02` carries the most marks on every paper actually sat**: 7 of 24 on the CAT, and 26 and 21 of 90
+  on the 2024 and 2025 finals. That is 54 of 204 printed marks across the three.
+- **`01` and `04` are the only files on all five papers.** `04`'s expand-then-integrate-term-by-term
+  question is on every one of them.
+- **`03` is on both finals (15 marks each) and Tutorial 1. `05` and `06` have appeared once each**,
+  as 2024 Q1(e) and 2025 Q1(a), both inside the compulsory Question One.
+- **⚠ 58 of those 204 marks are on material this knowledge base does not hold**, plus 4 on Tutorial 1:
+  - the power-series ODE $y'' + xy' + 2y = 0$ by Leibniz–Maclaurin or Frobenius: 33 marks over three papers;
+  - Legendre polynomials: 9 marks, compulsory on both finals;
+  - the Gamma duplication formula: 16 marks across both finals;
+  - small changes / total differentials: Tutorial 1 Q4, 4 marks.
+- **Assignment 1 alone, which is one paper's evidence, points the other way.** Four of its five
+  questions are `01` Gamma/Beta read-offs. The fifth (Q4) is Maclaurin followed by term-by-term
+  integration of a fractional power, with no Gamma or Beta function in it. It is the outlier, not the
+  template.
 
 ---
 
@@ -207,7 +221,7 @@ graph — if you change one, change both.)*
 | | |
 |---|---|
 | **Heaviest** | `02` — 22 pages, two full derivations and a parameter-fitting problem |
-| **Most exam-weighted** | `01` — four of Assignment 1's five questions came straight out of it |
+| **Most exam-weighted** | `02`: the largest share of every paper actually sat, 54 of 204 printed marks across the CAT and both finals. Material outside all six files carries 58. `01` and `04` are the only files on all five papers. *(On Assignment 1 alone, four of five questions were `01`.)* |
 | **Most error-prone to revise from** | `01` and `06` — see the verification summary |
 | **Shortest route to marks** | `01` §5.4–5.5, the Beta read-off rules. Three lines of pattern-matching turn an unfamiliar integral into a Gamma quotient |
 

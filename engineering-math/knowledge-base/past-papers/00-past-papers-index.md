@@ -15,8 +15,9 @@ status_legend: "unsolved = questions only · partial = some model answers worked
 # EMT 3101 — Assessed and tutorial work index
 
 > **Read me first.** This folder holds assessment papers **and tutorial sheets** transcribed into Markdown
-> and, where marked `solved`, worked through. Use it to quiz him, to set a timed mock, or to work a question with him. Open the paper
-> file; each one is self-contained and says what it maps to in the main knowledge base.
+> and, where marked `solved`, worked through. Use it for quizzing, for setting a timed mock, or for working
+> a single question through. Open the paper file; each one is self-contained and says what it maps to in the
+> main knowledge base.
 >
 > **Three rules that matter:**
 >
@@ -58,53 +59,108 @@ the two.
 
 ## What we know about examinable scope
 
-**One paper is a thin evidence base** — treat what follows as a working hypothesis, not a
-prediction, and revise the whole syllabus.
+**Five papers, read together:** Assignment 1 (10 Aug 2026), CAT 1 (20 Aug 2024), the end-of-semester
+finals of 23 Oct 2024 and 27 Oct 2025, and Tutorial 1 (31 Aug 2026). That is still a thin evidence base,
+and thinner than it looks: the 2025 final is largely the 2024 final reprinted (see the next section).
+Treat what follows as a working hypothesis, not a prediction, and revise the whole syllabus.
 
 ### Coverage so far
 
-| Knowledge-base file | Questions drawn from it |
-|---|---|
-| `01` Gamma and Beta Functions | **Q1, Q2, Q3(a), Q3(b), Q5** — four of five questions |
-| `04` Maclaurin's Theorem | Q4 (expand, then integrate term by term) |
-| `02` CRV and Beta Distribution | none |
-| `03` Binomial Theorem | none |
-| `05` Leibniz Theorem | none |
-| `06` Bessel's Equation | none |
+Printed marks by knowledge-base file. Assignment 1 prints no marks, so it is counted in questions. The
+question-by-question list is § Coverage across the five papers, further down. **"Sat papers"** means the
+three that a cohort actually sat as assessments: the CAT and the two finals.
+
+| Knowledge-base file | Assignment 1 (questions) | CAT 1 2024 (of 24) | Final 2024 (of 90) | Final 2025 (of 90) | Tutorial 1 (of 26) | Sat papers (of 204) |
+|---|---|---|---|---|---|---|
+| `01` Gamma and Beta Functions | **4 of 5** | 5 | 8 | 14 | 11 | 27 |
+| `02` CRV and Beta Distribution | — | **7** | **26** | **21** | — | **54** |
+| `03` Binomial Theorem | — | — | 15 | 15 | 7 | 30 |
+| `04` Maclaurin's Theorem | 1 of 5 | 5 | 10 | 11 | 4 | 26 |
+| `05` Leibniz Theorem | — | — | 4 | — | — | 4 |
+| `06` Bessel's Equation | — | — | — | 5 | — | 5 |
+| ❌ **Not in this knowledge base** | — | **7** | **27** | **24** | 4 | **58** |
+
+*Every column reconciles: CAT $5+7+5+7 = 24$; 2024 $8+26+15+10+4+27 = 90$; 2025
+$14+21+15+11+5+24 = 90$; Tutorial 1 $11+7+4+4 = 26$. These are **printed** marks. On each final only
+60 of the 90 are attemptable (Question One plus any two), so no single candidate meets every mark in a
+column.*
+
+### ⚠ Examined, but not in this knowledge base
+
+**58 of the 204 printed marks on the sat papers, plus 4 on Tutorial 1.** That is more than any single
+topic file carries. It comes from four items:
+
+| Item | Where it has been set | Printed marks | Avoidable? | Why the knowledge base cannot teach it |
+|---|---|---|---|---|
+| **Power-series solution of $y'' + xy' + 2y = 0$**, with $y(0) = 1$ and $y'(0) = 2$. By Leibniz–Maclaurin on the CAT; by Leibniz–Maclaurin *or* Frobenius on the finals | CAT Q3 · 2024 Q4 · 2025 Q4(b), with **identical wording all three times** | $7 + 15 + 11 =$ **33** | **No** on the CAT ("Answer ALL"); optional on the finals | Frobenius is a documented gap (`../00-index.md` § Gap map). The Leibniz–Maclaurin route to an ODE is in neither `04` nor `05` |
+| **Legendre polynomials** | 2024 Q1(d): $P_2(x)$ by Rodrigues' formula · 2025 Q1(d): a cubic written as a combination of Legendre polynomials | $4 + 5 =$ **9** | **No: inside the compulsory Question One, both years** | *Legendre* and *Rodrigues* occur nowhere in this knowledge base |
+| **Gamma duplication formula** | Q2(b) on both finals (formula stated, a corollary asked for) · Q5(b)(ii) on both finals (formula derived) | $3 + 5 + 3 + 5 =$ **16** | optional questions | Not in `01`, and not on either final's printed formula sheet |
+| **Small changes / total differentials** | Tutorial 1 Q4, the $bl^3/12$ second-moment question that both finals also set as Q1(b) | **4** | no (tutorial: "Answer ALL") | The finals add "Using the Binomial theorem", which `03` §5 covers. The tutorial drops that instruction, and partial differentiation is in none of the six topic files |
+
+**The ODE is the most-repeated item in the subject, and the one this knowledge base can least help
+with.** It is on every paper a cohort has sat. It is the first thing to build if lecture notes for it
+arrive. **Legendre is the only gap item that cannot be avoided on a final.**
 
 ### The pattern
 
-**Four of the five questions are the same skill in different clothing: recognise an integral's
-shape and read the Gamma or Beta parameters off it.** Not one asks for a definition, a property, or
-a derivation reproduced from the notes.
+1. **`02` carries the most marks on every paper actually sat**: 7 of 24 on the CAT, 26 of 90 in 2024,
+   21 of 90 in 2025. Across the three that is 54 of 204, nearly twice the next file (`03`, 30). It is
+   absent from Assignment 1 and Tutorial 1, the two pieces of this cohort's coursework. Its recurring
+   items are the battery-lifetime cdf (2024 Q3(b) = 2025 Q3(a)) and the Beta-parameter fit lifted
+   verbatim from ·CRV p16 (Q5(a) on both finals, with **V3** inside it).
+2. **`01` and `04` are the only files on all five papers.**
+   - `01` is the Gamma/Beta read-off (§5.4–5.5) every time. Beyond Assignment 1 it also brings
+     *show-that* proofs: the Beta reduction formula (2025 Q3(b) = Tutorial 1 Q6(a)) and the duplication
+     formula (both finals' Q5(b)(ii), which is a gap item).
+   - `04`: **expand by Maclaurin, then integrate term by term** is the only question type on every one
+     of the five papers. It appears as Assignment 1 Q4 ($\cos2\theta/\theta^{1/3}$), CAT Q4 = Tutorial 1
+     Q5 ($\sqrt x\,\ln(x+1)$), and Q2(a) on both finals ($e^{2x}\sin3x$). Both finals also set the same
+     Maclaurin limit (2024 Q1(g) = 2025 Q1(f)).
+3. **`03` is on both finals, 15 marks each, and on Tutorial 1.** It has never been on the CAT or on
+   Assignment 1. Its fixed item is the resonant-frequency percentage error, Q2(c) on both finals, which is
+   ·BIN p8 Exercise 1 verbatim.
+4. **`05` and `06` have each appeared once, and both times inside the compulsory Question One.** Leibniz
+   was 2024 Q1(e), 4 marks, almost verbatim ·LEI p8–9 Example 2. Bessel was 2025 Q1(a), 5 marks: the
+   series for $J_n$ and its limit at the origin. Each carries few marks overall, but neither could be
+   avoided on the paper where it appeared.
 
-That points revision at `01` §5.4 and §5.5 — the improper form and the trigonometric form, and the
-read-off rules that go with them. Those two pages carry the paper.
+#### Assignment 1 on its own: one paper's evidence
 
-**Q4 is the exception** and worth naming precisely: it expands $\cos2\theta$ by Maclaurin and then
-integrates $\theta^{2k-1/3}$ term by term. **No Gamma or Beta function appears in it** — it is the
-one question testing the *series* half of the course rather than the *special functions* half.
+These observations were drawn from Assignment 1 alone, and they still hold *for that paper*. It is the
+outlier among the five, not the template.
 
-**Two further habits the paper rewards:**
-
-- **Two of the five integrals are improper** — Q3(b) is singular at $x = 3$, Q4 at $\theta = 0$ —
-  and neither question mentions it. The Beta and Gamma definitions absorb both without special
-  treatment, because all they require is $m, n > 0$. Saying so explicitly is a free mark.
-- **Q1 and Q3 both hinge on choosing the right substitution**, and in both cases the substitution is
-  handed to you. When it is not, the thing to look for is the one that makes an unwanted term cancel
-  (Q1) or maps the interval onto $[0,1]$ (Q3).
+- **Four of its five questions are the same skill in different clothing:** recognise an integral's
+  shape and read the Gamma or Beta parameters off it (`01` §5.4 and §5.5). None asks for a definition,
+  a property or a derivation. The later papers do (item 2 above).
+- **Q4 is the exception.** It expands $\cos2\theta$ by Maclaurin and integrates $\theta^{2k-1/3}$ term
+  by term, with no Gamma or Beta function in it. It turned out to be the most durable question type in
+  the subject (item 2).
+- **Two of its five integrals are improper:** Q3(b) is singular at $x = 3$ and Q4 at $\theta = 0$. Neither
+  question says so. The Beta and Gamma definitions absorb both without special treatment, because all
+  they require is $m, n > 0$. Saying so explicitly is a free mark. The CAT's Q4 (= Tutorial 1 Q5) has a
+  related trap at its lower limit: $\sqrt x\,\ln(x+1)$ has no Maclaurin series at the origin (**P10**).
+- **Q1 and Q3 both hinge on choosing the right substitution**, and both times the paper supplies it.
+  When it does not, look for the substitution that makes an unwanted term cancel (Q1) or maps the
+  interval onto $[0,1]$ (Q3).
+- **Do not carry its "it is all Gamma and Beta" reading into revision for a final.** On the three sat
+  papers, `01` supplies 27 of 204 printed marks.
 
 ### Where a future paper would most plausibly go
 
-- **Q4 is the only cross-topic question** — Maclaurin feeding an integral. It is the one natural
-  bridge between the two halves of the course, so it is the likeliest place for another combined
-  question.
-- **Files `02`, `03`, `05` and `06` are entirely untested so far.** `06` in particular is the
-  course's technical peak — six recurrence proofs across five pages — and it would be surprising for
-  it to stay unassessed. **Do not read "not on Assignment 1" as "not examinable".**
-
----
-
+- **A final will most likely look like the last two.** 70 of the 2025 final's 90 printed marks were
+  2024 questions, reprinted word for word. Questions Two and Five were reprinted whole, and all four new
+  questions went into Question One. Work the 2024 final, then the 2025 final's four new questions:
+  Q1(a), Q1(c), Q1(d) and Q3(b).
+- **Expect the power-series ODE again.** It is on every paper a cohort has sat, with identical wording
+  each time, and this knowledge base cannot teach it (gap table above).
+- **Expect expand-then-integrate.** It is the only question type on all five papers.
+- **Question One is where new material goes, and that is where `05`, `06` and Legendre have appeared.**
+  `06` is the course's technical peak, with six recurrence proofs across five pages. So far only its
+  series definition has been examined (2025 Q1(a)). **The recurrence proofs have never been set.** A
+  file examined once is not a file examined lightly.
+- **Tutorial 1 is this cohort's own sheet**, and half of it has been examined before (see the next
+  section). Treat its three new questions as exam material too: Q1 and Q2 (`03`), and Q3 (`01`,
+  including the negative-argument $\Gamma(-3/2)$).
 
 ---
 
@@ -126,8 +182,8 @@ wording: the 2024 CAT (7 marks), the 2024 final (15) and the 2025 final (11) —
 sittings**.
 
 The honest caveat, which should be said alongside: **this is two finals and one CAT, not a rule.** A
-lecturer can change a paper at any time. But if he works the 2024 final until it is automatic, the evidence
-says he has seen most of the next one.
+lecturer can change a paper at any time. But on this evidence, a student who works the 2024 final until it
+is automatic has already seen most of the next one.
 
 ### ⚠ And the 2026 tutorial draws from the same pool
 
@@ -152,26 +208,26 @@ evidence **every paper in this folder is live revision material**, not history.
 
 | KB topic file | Where it has been examined |
 |---|---|
-| `01-gamma-and-beta-functions` | CAT Q2 · 2024 Q1(f), Q5(b)(i) · 2025 Q1(e), Q3(b), Q5(b)(i) · **Tutorial 1 Q3 (all four items), Q6(a)–(b)** |
+| `01-gamma-and-beta-functions` | Assignment 1 Q1, Q2, Q3(a), Q3(b), Q5 · CAT Q2 · 2024 Q1(f), Q5(b)(i) · 2025 Q1(e), Q3(b), Q5(b)(i) · **Tutorial 1 Q3 (all four items), Q6(a)–(b)** |
 | `02-crv-and-beta-distribution` | CAT Q1 · 2024 Q1(c), Q3(a), Q3(b), Q5(a) · 2025 Q1(c), Q3(a), Q5(a) — **the heaviest section in the unit** |
 | `03-binomial-theorem` | 2024 Q1(a), Q1(b), Q2(c) · 2025 Q1(b), Q2(c), Q4(a) · **Tutorial 1 Q1, Q2** |
-| `04-maclaurin-theorem` | CAT Q4 · 2024 Q1(g), Q2(a) · 2025 Q1(f), Q2(a) · **Tutorial 1 Q5** |
+| `04-maclaurin-theorem` | Assignment 1 Q4 · CAT Q4 · 2024 Q1(g), Q2(a) · 2025 Q1(f), Q2(a) · **Tutorial 1 Q5** |
 | `05-leibniz-theorem` | 2024 Q1(e) — **once** |
 | `06-bessels-equation` | 2025 Q1(a) — **once** |
 | ❌ **not in the KB** | CAT Q3 · 2024 Q1(d), Q2(b), Q4, Q5(b)(ii) · 2025 Q1(d), Q2(b), Q4(b), Q5(b)(ii) · **Tutorial 1 Q4** (small changes / total differentials — in none of the six topic files, and now examined three times) |
 
-**Gap totals: 27 of 90 on the 2024 final, 24 of 90 on the 2025 final, 7 of 24 on the CAT.** Frobenius is
-already a documented gap; **Legendre polynomials and the Gamma duplication formula appear nowhere in the
-knowledge base** and should be added to the gap map.
+**Gap totals: 27 of 90 on the 2024 final, 24 of 90 on the 2025 final, 7 of 24 on the CAT, 4 of 26 on
+Tutorial 1.** Frobenius is already a documented gap; **Legendre polynomials and the Gamma duplication
+formula appear nowhere in the knowledge base** and should be added to the gap map.
 
 **Two questions run the other way — they are lifted verbatim from the lecture notes.** Q2(c) is ·BIN p8
 Example 1 and Q5(a) is ·CRV p16 Example 1, on both finals. ⚠ The knowledge base already flags **V3** inside
 the latter, so check the correction before teaching it.
 
-## ⚠ Four defects worth knowing before he revises
+## ⚠ Four defects worth knowing before revising
 
-- **P4 ★** 2024 Q1(c) asks him to *show* the variance is $1/(18a^2)$. It is $a^2/18$ — confirmed
-  symbolically. He cannot show what is printed.
+- **P4 ★** 2024 Q1(c) is a *show-that* for a variance of $1/(18a^2)$. It is $a^2/18$ — confirmed
+  symbolically. The printed target cannot be shown.
 - **P9 ★** The 2024 CAT's Q2 gives the Gamma integral the domain of its analytic continuation, so as printed
   it claims convergence at $x = -\tfrac12$.
 - **P13 ★** The 2025 Q3(b) Beta reduction formula is printed with no $n$ on the left; the corrected form
