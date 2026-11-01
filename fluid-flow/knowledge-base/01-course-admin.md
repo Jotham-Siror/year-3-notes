@@ -2,6 +2,7 @@
 kb: "MEC 3104 Fluid Theory"
 lecturer: "withheld"
 section: "01 — Course Administration"
+source: "MEC 3104 FLUID THEORY - newlypasted.pdf (561 pp., Oct 2026 edition)"
 slides: "1-10"
 file_role: topic
 subtopics:
@@ -10,7 +11,7 @@ subtopics:
   - "learning objectives"
   - "course content outline"
   - "assessment weighting"
-  - "reference textbooks"
+  - "reference textbooks (five in the Oct 2026 edition)"
 key_equations: []
 prerequisites: []
 leads_to: ["02-history", "03-fluid-properties"]
@@ -34,10 +35,12 @@ notation and worked examples used later).
 ## Identity & logistics ·slides 1–2
 - Course: **MEC 3104 — Fluid Theory**. Lecturer name and contact details are on slide 1 of the course
   handout; they are deliberately not reproduced here.
-- Timetable: Wednesdays 08:15–10:15 (Aberdares room); Thursdays 08:15 online.
+- Timetable (Oct 2026 edition) ·slide 2: Mondays 15:15–16:15 online; Tuesdays 10:15–12:15 (STM F2-1);
+  Wednesdays 12:15–14:15 (SERC Forge 2).
+  *(The Jul 2026 edition gave Wednesdays 08:15–10:15 (Aberdares room) and Thursdays 08:15 online.)*
 
 ## Prerequisites & purpose ·slide 3
-- Prerequisites: **Chemistry I; Thermodynamics**.
+- Prerequisites: **Chemistry I; Physics I; Thermodynamics**. *(Physics I is new in the Oct 2026 edition.)*
 - Purpose: develop problem-solving skills in fluid mechanics and use them to formulate models for industrial problems.
 
 ## Learning objectives ·slides 4–5
@@ -51,8 +54,9 @@ By the end, the learner should be able to:
 ## Course content outline ·slides 6–7
 Introduction to principal concepts/methods of fluid mechanics; pressure measurement; hydrostatics and buoyancy;
 open systems and control-volume analysis; mass/energy/momentum conservation for moving fluids; viscous and
-turbulent flows; flow through pipes; flow through open channels; flow measurement; pumping.
-*(This outline maps onto KB files 03–11.)*
+turbulent flows; flow through pipes; flow through open channels; flow measurement; **lift and drag**; pumping.
+*(This outline maps onto KB files 03–11. "Lift and Drag" is listed for the first time in the Oct 2026 edition
+·slide 7; the topic was already taught in the deck — see 11-drag-and-lift.)*
 
 ## Assessment ·slide 8
 Continuous Assessment Tests **40%**, Examination **60%**, Total 100%.
@@ -65,6 +69,8 @@ Continuous Assessment Tests **40%**, Examination **60%**, Total 100%.
 3. Douglas J.F., Gasiorek J.M., Swaffield J.A. (1998). *Fluid Mechanics*, 3rd ed., Longman.
 4. White M. Frank (2016). *Fluid Mechanics*, 6th ed., McGraw Hill Education, ISBN 978-9-38-596549-4.
    *(reproduced as printed on slide 10.)*
+5. Nakayama Y., Boucher R.F. (1999). *Introduction to Fluid Mechanics*, 2nd ed., Yokendo Co. Ltd.,
+   ISBN 0-340-67649-3. ·slide 10 *(new in the Oct 2026 edition.)*
 
 ---
 

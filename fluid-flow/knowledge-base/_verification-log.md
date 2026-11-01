@@ -3,12 +3,16 @@ kb: "MEC 3104 Fluid Theory"
 file_role: verification-log
 purpose: "Every flagged discrepancy between a slide and an independently checked standard form. Spot-check basis (suspicious items only), per user instruction. Slide-faithful content is preserved in the topic files; nothing is silently 'corrected'."
 scale: "started with section 06; grows as remaining sections are processed"
-covers: "lecture slides (§ Section NN blocks) AND assessment papers (§ Exam papers, IDs P1, P2, …)"
+covers: "lecture slides (§ Section NN blocks, second-pass S1–S32, Oct 2026 edition re-verification S33–S85) AND assessment papers (§ Exam papers, IDs P1, P2, …)"
+edition: "all ·slide N refer to the Oct 2026 edition (561 pp.); ·old slide N = Jul 2026 .pptx only — see _edition-map.md"
 ---
 
 <!-- Compiled by Jotham-JS, 2026. MEC 3104 Fluid Theory knowledge base. -->
 
 # Verification log
+
+> **Oct 2026 edition:** see **§ Oct 2026 edition — re-verification** at the end of this file for which errors
+> below are still printed, which were fixed, and the new flags S33–S85.
 
 Format per entry: **·slide N** — what the slide says → the issue → checked standard form → source.
 Severity: `error` (wrong result), `notation` (dimensionally/typographically loose but intent clear),
@@ -18,31 +22,31 @@ Severity: `error` (wrong result), `notation` (dimensionally/typographically loos
 
 ## Section 06 — Energy & Bernoulli
 
-### ·slide 249 — Pitot velocity, notation
+### ·slide 239 — Pitot velocity, notation
 - **Slide:** $v_A=\sqrt{2g\,(p_B - p_A/\rho g)}$.
 - **Issue:** mixes a pressure ($p_B$) and a head ($p_A/\rho g$) inside the same root — dimensionally
   inconsistent as written.
 - **Standard form:** $v_A=\sqrt{2g\,(p_B/\rho g - p_A/\rho g)} = \sqrt{2(p_B-p_A)/\rho} = \sqrt{2gH}$. The
-  lecturer's surrounding steps (slides 249–250) use the correct $\sqrt{2gH}$, so this is a transcription slip
+  lecturer's surrounding steps (slides 239–240) use the correct $\sqrt{2gH}$, so this is a transcription slip
   in one line, not a wrong result.
 - **Severity:** notation.
 - **Source:** Engineering ToolBox, "Pitot Tubes" — $v=\sqrt{2(p_t-p_s)/\rho}$
   (https://www.engineeringtoolbox.com/pitot-tubes-d_612.html); Pitot tube, Wikipedia
   (https://en.wikipedia.org/wiki/Pitot_tube).
 
-### ·slide 230 — Daniel Bernoulli dates, typo
+### ·slide 217 — Daniel Bernoulli dates, typo
 - **Slide:** "Daniel Bernoulli 1700 – 1783".
 - **Issue:** death year. Daniel Bernoulli died 17 March **1782**.
 - **Severity:** typo (biographical). Source: standard biographical record.
 
-### ·slide 238 — units typo
+### ·slide 223 — units typo
 - **Slide:** velocity $v_2$ printed as "4.59 m/2".
 - **Issue:** "m/2" is a typo for "m/s". Value 4.59 m/s is correct for the given data.
 - **Severity:** typo.
 
 ## Section 02 — History
 
-### ·slide 21 — Leonardo da Vinci dates, error
+### ·slide 22 — Leonardo da Vinci dates, error
 - **Slide:** "Leonardo da Vinci 14th April 1452 – 2nd May 1514".
 - **Issue:** birth day and death year both wrong.
 - **Correct:** born **15 April 1452** (Vinci), died **2 May 1519** (Amboise).
@@ -65,18 +69,18 @@ Severity: `error` (wrong result), `notation` (dimensionally/typographically loos
 - **Severity:** error (unit, ~6 orders of magnitude).
 - **Source:** Mean free path, Wikipedia (https://en.wikipedia.org/wiki/Mean_free_path).
 
-### ·slide 45 — "liquids 3× denser than gases", likely order-of-magnitude slip
+### ·slide 43 — "liquids 3× denser than gases", likely order-of-magnitude slip
 - **Slide:** "liquids are 3 times denser than gases at 1 atm".
 - **Issue:** water (~1000 kg/m³) vs air (~1.2 kg/m³) ≈ 800–1000×. "3 times" is wrong if literal.
 - **Read as:** ~**3 orders of magnitude** (≈10³×). Severity: error/ambiguous wording.
 
-### ·slide 44 — units-table minor typos
+### ·slide 42 — units-table minor typos
 - 1 m³ printed as "35.335 ft³" → standard **35.315 ft³**; BG viscosity "slug/m/s" → **slug/(ft·s)**;
   "Lbg/ft²" → **lbf/ft²**. Severity: typo (do not memorize the 35.335 value).
 
 ## Section 04 — Fluid Statics
 
-### ·slide 102 — standard-atmosphere structure, errors
+### ·slide 89 — standard-atmosphere structure, errors
 - **Slide:** "0.65 °C/100 m lapse in the troposphere up to ≈1 km; constant −50.5 °C from 1 km to 10 km."
 - **Issue:** boundaries and the isothermal temperature are wrong.
 - **Correct (International Standard Atmosphere):** the 6.5 °C/km lapse continues through the whole troposphere to
@@ -89,24 +93,24 @@ Severity: `error` (wrong result), `notation` (dimensionally/typographically loos
 
 ## Section 07 — Momentum (several confirmed slide errors)
 
-### ·slide 266 — impulse–momentum sign
+### ·slide 258 — impulse–momentum sign
 - **Slide:** $F = (Mv_1 - Mv_2)/t$. **Correct:** $F = (Mv_2 - Mv_1)/t = \dot m(v_2-v_1)$ (final − initial).
 - **Severity:** error (sign). Confirmed on rendered slide.
 
-### ·slide 271 — resultant force sign
+### ·slide 263 — resultant force sign
 - **Slide:** $F = \sqrt{F_x^2 - F_y^2}$. **Correct:** $F = \sqrt{F_x^2 + F_y^2}$.
 - **Severity:** error. Confirmed on rendered slide (viewed PDF page 271).
 
-### ·slide 277 — moving-plate jet force, wrong power of v
+### ·old slide 277 — moving-plate jet force, wrong power of v *(reworked correctly on slide 268 in the Oct 2026 edition)*
 - **Slide:** $F = \rho Q(v-u)^2\sin\theta / v^2$. **Correct:** $/v$ (i.e. $\rho Q(v-u)^2\sin\theta/v$).
 - **Reason:** the slide's own $Q'=Q(v-u)/v$ with $F=\rho Q'(v-u)\sin\theta$ gives $/v$; and $/v^2$ is
   dimensionally not a force (yields kg/s).
 - **Severity:** error. Confirmed on rendered slide (viewed PDF page 277).
 
-### ·slides 291 & 295 — impeller torque uses peripheral u instead of absolute v
+### ·slides 284 & 288 — impeller torque uses peripheral u instead of absolute v
 - **Slide:** $T = \dot m(r_2 u_2\cos\alpha_2 - r_1 u_1\cos\alpha_1)$.
 - **Correct (Euler turbomachine eqn):** $T = \dot m(r_2 v_2\cos\alpha_2 - r_1 v_1\cos\alpha_1)$ — the moment of
-  momentum uses the tangential component of the **absolute** velocity $v\cos\alpha$ (α defined on slide 293 as
+  momentum uses the tangential component of the **absolute** velocity $v\cos\alpha$ (α defined on slide 286 as
   the angle of the absolute velocity $v$ to the peripheral velocity $u$). The linear-momentum version on slide
   271 correctly uses $v$.
 - **Severity:** error. Confirmed on rendered slides (viewed PDF pages 291, 295).
@@ -115,7 +119,7 @@ Severity: `error` (wrong result), `notation` (dimensionally/typographically loos
 
 ## Section 08 — Viscous Flow
 
-### ·slide 382 — sinusoidal BL profile sin vs cos
+### ·slide 371 — sinusoidal BL profile sin vs cos
 - **Slide:** velocity profile "$v = v_{max}\cos(\pi y/2\delta)$".
 - **Issue:** the slide's own $dv/dy$ and its numerical answers (τ max at wall y=0, ≈0 at edge y=δ) correspond to
   $v = v_{max}\sin(\pi y/2\delta)$ (zero at wall, peak at edge — the physical BL shape). "cos" is a typo for "sin".
@@ -123,25 +127,25 @@ Severity: `error` (wrong result), `notation` (dimensionally/typographically loos
 
 ## Section 10 — Open-Channel Flow
 
-### ·slide 493 — Manning n typo
+### ·slide 472 — Manning n typo
 - **Slide (problem):** "n = 0.12 (relatively smooth concrete)". **Correct:** **n = 0.012** — used in the worked
-  solution on slide 495 (concrete ≈ 0.012–0.015). "0.12" is 10× too large.
+  solution on old slide 495 (concrete ≈ 0.012–0.015). "0.12" is 10× too large.
 - **Severity:** typo. (Bazin coefficient shown here in the standard hydraulic-radius form $c=87/(1+\alpha/\sqrt m)$.)
 
 ## Section 11 — Drag and Lift
 
-### ·slide 531 — flat-plate wall shear coefficient
+### ·old slide 531 — flat-plate wall shear coefficient
 - **Slide:** $\tau_0 = 3.65\sqrt{\mu\rho U^3/x}$.
 - **Issue:** coefficient 3.65 is physically implausible (implies $C_f\approx7$). Standard laminar flat-plate
   wall shear is $\tau_0 = 0.332\sqrt{\rho\mu U^3/x}$ (Blasius; momentum-integral estimates ≈0.33–0.37).
 - **Read as:** decimal-point slip → **≈0.33–0.365**. Severity: error (numeric). (δ=5.48√(νx/U) is a defensible
   form and kept.)
 
-### ·slide 560 — flat-plate C_D constant
+### ·slide 533 — flat-plate C_D constant
 - **Slide (problem):** "$C_D = 0.31/Re^{1/7}$". **Correct:** $C_D = 0.031\,Re^{-1/7}$ — used in the worked
-  solution (slide 561, giving C_D=0.00249). "0.31" is 10× too large. Severity: typo.
+  solution (slide 534, giving C_D=0.00249). "0.31" is 10× too large. Severity: typo.
 
-### ·slide 572 — moment coefficient label
+### ·slide 545 — moment coefficient label
 - **Slide:** third force line printed as "$L = C_M\,l\,\rho U^2/2$". Should be **$M$** (moment), not L.
   Severity: typo/label.
 
@@ -190,8 +194,8 @@ full entry lives here only — the paper file just points to it.
   symbol and the correct axis. Cross-ref `05-flow-fundamentals` (vorticity & circulation).
 - **Severity:** notation.
 - **Refinement (2026-08-03, from tracing the paper to its slides):** the two halves of this erratum have
-  different owners. The **δ-for-∂ slip is inherited from the deck** — slide 195 also prints
-  "ζ = (δv/δx − δu/δy)". But the **axis label is the paper's own error**: slide 195 says
+  different owners. The **δ-for-∂ slip is inherited from the deck** — slide 184 also prints
+  "ζ = (δv/δx − δu/δy)". But the **axis label is the paper's own error**: slide 184 says
   "ζ = vorticity **for z-axis**", which is correct; the CAT changed it to "along the x-axis", which is not.
   So when teaching this, say the notation slip came from the slides but the axis error did not.
 
@@ -282,9 +286,9 @@ full entry lives here only — the paper file just points to it.
 ### P14 · MEC 3104 CAT 1 (19 Aug 2025), Q6(b) — tests a term that is not in the course notes
 - **Paper:** "In a Langrarian flow, one particle is followed along the flow." (true/false, 1 mark)
 - **Finding:** all 594 slides of the lecture deck were searched for **Lagrang** and **Euleri** — **zero hits for
-  both**. The deck teaches streamline, streakline, pathline and stream tube (slides 172–174) and defines steady
+  both**. The deck teaches streamline, streakline, pathline and stream tube (slides 163–164) and defines steady
   flow (175), but never introduces the Lagrangian/Eulerian pair of descriptions. "Control volume" appears
-  (s6, 267, 268, 273) but only in the momentum context, never contrasted with a particle-following description.
+  (s6, 259, 260, 265) but only in the momentum context, never contrasted with a particle-following description.
 - **Status of the statement itself:** as printed it is **true** in standard fluid mechanics — the Lagrangian
   description follows an individual fluid particle along its path, while the Eulerian description watches fixed
   points in space. (Separate from the "Langrarian" → **Lagrangian** spelling already logged as P6.)
@@ -294,13 +298,13 @@ full entry lives here only — the paper file just points to it.
 
 ### P15 · MEC 3104 CAT 1 (19 Aug 2025), Q1 — method not taught in the deck
 - **Paper:** "Given that this relationship is dimensionally consistent, determine the dimensions of α." (2 marks)
-- **Finding:** the deck supplies the **ingredients** — primary dimensions {M},{L},{T} on slide 41 and a table of
-  secondary dimensions with their formulas (Area {L²}, Pressure {ML⁻¹T⁻²}, Energy {ML²T⁻²}) on slides 43–44 —
+- **Finding:** the deck supplies the **ingredients** — primary dimensions {M},{L},{T} on slide 39 and a table of
+  secondary dimensions with their formulas (Area {L²}, Pressure {ML⁻¹T⁻²}, Energy {ML²T⁻²}) on slides 41–42 —
   but a search of all 594 slides for *dimensional homogeneity*, *dimensionally consistent*, *dimensional
   analysis*, *Buckingham*, *Rayleigh* and *π theorem* returns **zero hits**. The technique of balancing
   dimensions across an equation to solve for an unknown coefficient is never demonstrated.
 - **How to handle:** unlike P14 this is answerable from the notes, but only by a student who invents the method.
-  Teach the method from slides 41–44 rather than assuming it.
+  Teach the method from slides 39–42 rather than assuming it.
 - **Severity:** partial gap (teachable from the notes, but not taught in them).
 
 ### P16 · MEC 3104 CAT 2 (9 Oct 2024), Q1(b) — dimensions marked in feet, note says inches
@@ -538,7 +542,7 @@ full entry lives here only — the paper file just points to it.
   2024 CAT 1 (Q4(a)) as "$P2 - p1 = \rho\ldots$". One of the two papers has the subtraction the wrong way
   round, and it is this one.
 - **Correct form:** $p_2 - p_1 = \rho\dfrac{d^2}{D^2}\dfrac{D^2-d^2}{D^2}(v_0-v_1)^2$, matching
-  `07-momentum.md` §7.6 (·slides 280–282).
+  `07-momentum.md` §7.6 (·slides 272–274).
 - **Checked here (2026-09-03):** with ρ = 998 kg/m³, d = 6 cm, D = 20 cm, v₀ = 40 m/s and 3 m/s for the
   annulus velocity, the right-hand side is **+111.9 kPa**. As a value of $p_1 - p_2$ that would mean the pump
   drops the pressure by 112 kPa.
@@ -572,7 +576,7 @@ full entry lives here only — the paper file just points to it.
   axis. Angular momentum plays no part in it, in the formula, or in Figure 5. As printed, part (i) either
   belongs to a different question or should read "linear momentum".
 - **Correct form:** unresolved. It may be a deliberate free-standing recall item (the KB does teach angular
-  momentum, `07-momentum` §7.8, ·slides 286–288), or it may be a slip for "linear". The paper gives no way to
+  momentum, `07-momentum` §7.8, ·slides 280–282), or it may be a slip for "linear". The paper gives no way to
   tell.
 - **How to handle:** answer it as printed — state conservation of angular momentum — and do **not** try to
   connect it to the jet pump; there is no connection to find. Worth asking the lecturer which was intended.
@@ -585,7 +589,7 @@ full entry lives here only — the paper file just points to it.
 - **Checked here (2026-09-03, sympy):** $\dfrac{\partial u}{\partial x} + \dfrac{\partial v}{\partial y} =
   -k(2x+y) + k(x+2y) = k(y-x)$, which vanishes only on the line $y = x$.
 - **Issue:** an incompressible two-dimensional flow must satisfy $\partial u/\partial x + \partial v/\partial y
-  = 0$ everywhere (`08-viscous-flow` §8.1, ·slides 304–307). This field does not, so it is not a physically
+  = 0$ everywhere (`08-viscous-flow` §8.1, ·slides 291–296). This field does not, so it is not a physically
   admissible incompressible flow — the paper calls it "the flow velocity of a certain system" when no such
   system exists.
 - **Does it break the question?** No. Both parts are still answerable exactly as set: the streamline equation
@@ -697,8 +701,8 @@ its own flags could not be re-found until this pass. Scope: ~200 `·slide N` cit
 example re-computed, every named coefficient checked against standard values.
 
 **Headline results**
-- The **18 previously logged slide flags are all re-confirmed verbatim** in the deck — including s271, s493,
-  s531 and s560, whose text lives inside equation objects. Nothing in the first pass was invented.
+- The **18 previously logged slide flags are all re-confirmed verbatim** in the deck — including s263, s472,
+  old s531 and s533, whose text lives inside equation objects. Nothing in the first pass was invented.
 - **Provenance is the KB's strongest feature:** ~200 citations sampled, only **2 wrong** (both fixed).
 - Every worked example re-computed in sections 05, 08, 09, 10 and 11 **agrees**. `_formula-sheet.md` is clean:
   no equation mis-transcribed, none dimensionally inconsistent.
@@ -711,108 +715,108 @@ example re-computed, every named coefficient checked against standard values.
 | # | File | Was | Now |
 |---|---|---|---|
 | K1 | `10-open-channel-flow.md` §10.8 | "a jump/drawdown occurs at the break" | a **drawdown**. A hydraulic jump is supercritical→subcritical; a mild→steep slope break is the opposite transition. The KB had it backwards. |
-| K2 | `04-fluid-statics.md` §relative equilibrium | "β = resultant accel/mass" | β = resultant **force** per unit mass (slide 159: β = F/m) — numerically the acceleration. "accel/mass" is meaningless. |
-| K3 | `11-drag-and-lift.md` §11.4 | Strouhal attributed to "Taylor/Roshko" | slide 548 names **G. I. Taylor only**. Roshko was the KB's addition. |
+| K2 | `04-fluid-statics.md` §relative equilibrium | "β = resultant accel/mass" | β = resultant **force** per unit mass (slide 151: β = F/m) — numerically the acceleration. "accel/mass" is meaningless. |
+| K3 | `11-drag-and-lift.md` §11.4 | Strouhal attributed to "Taylor/Roshko" | slide 522 names **G. I. Taylor only**. Roshko was the KB's addition. |
 | K4 | `_formula-sheet.md` wing lift | `L = C_L l ½ρU²` | same, now marked **per unit span (N/m)** — without it the equation reads as a total force but yields N/m. |
 
-Mis-citations fixed: Manning worked solution is on **slide 495**, not 494 (also corrected in the Section 10
-entry above); Kutta–Joukowski boxed equation is on **slide 566**, with the spinning-ball prose on 567–568.
+Mis-citations fixed: Manning worked solution is on **old slide 495**, not 494 (also corrected in the Section 10
+entry above); Kutta–Joukowski boxed equation is on **slide 540**, with the spinning-ball prose on 541 *(old slides 566–568; the Oct 2026 edition moves the equation to slide 540)*.
 Frontmatter `verification_flags: 0` corrected to `1` in `08-viscous-flow.md` and `10-open-channel-flow.md`.
 
 ## S-entries — slide errors found in the second pass
 
 ### Section 03 — Fluid Properties
-- **·S1 slide 46 — arithmetic.** "SG(Hg) = 13500/1000 = 13.6". 13500/1000 = **13.5**. The answer 13.6 is right;
-  the numerator is the typo (slide 45 gives ρ_Hg = 13,580). A student copying this learns 13500/1000 = 13.6.
+- **·S1 slide 44 — arithmetic.** "SG(Hg) = 13500/1000 = 13.6". 13500/1000 = **13.5**. The answer 13.6 is right;
+  the numerator is the typo (slide 43 gives ρ_Hg = 13,580). A student copying this learns 13500/1000 = 13.6.
 
 ### Section 04 — Fluid Statics
-- **·S2 slide 116 — inclined manometer, statement backwards.** "H = L sin α. The smaller the α, the larger the
+- **·S2 slide 102 — inclined manometer, statement backwards.** "H = L sin α. The smaller the α, the larger the
   H." False as written: with H = L sinα, a smaller α gives a **smaller** H for a given L. The real point — why
   inclined manometers are sensitive — is that for a **given H**, a smaller α gives a **longer, more readable
   travel L**. Worth teaching explicitly; it is the whole purpose of the instrument.
-- **·S3 slides 99, 100 — missing ρ₀/P₀.** Brackets printed `[1 − ((n−1)/n)·P₀·g·z]`; should be
+- **·S3 slides 86, 87 — missing ρ₀/P₀.** Brackets printed `[1 − ((n−1)/n)·P₀·g·z]`; should be
   `[1 − ((n−1)/n)(ρ₀g/P₀)z]`. "P₀gz" is dimensionally garbage; the pressure ratio one line above has it right.
-- **·S4 slide 104 — lapse rate.** "dT/dz = 0.0065 K/100" contradicts slide 103's correct 0.0065 K/m. The
+- **·S4 slide 90 — lapse rate.** "dT/dz = 0.0065 K/100" contradicts slide 89's correct 0.0065 K/m. The
   slide's own n = 1.235 requires K/m.
-- **·S5 slide 92 — p₀ dropped.** "P = p₀ + ρg(z₀−z) = ρgh"; the last expression should be p₀ + ρgh.
-- **·S6 slide 107 — missing minus sign.** Isothermal "P ≈ P₀e^{gZ/RT}"; the slide's own arithmetic uses
+- **·S5 slide 79 — p₀ dropped.** "P = p₀ + ρg(z₀−z) = ρgh"; the last expression should be p₀ + ρgh.
+- **·S6 slide 93 — missing minus sign.** Isothermal "P ≈ P₀e^{gZ/RT}"; the slide's own arithmetic uses
   exp(−0.5929), so it must be e^{−gz/RT}.
-- **·S7 slide 134 — sinθ dropped.** "Force on a minute area dA = ρg·y_G·dA" must be ρg·y·sinθ·dA (strip depth,
+- **·S7 slide 122 — sinθ dropped.** "Force on a minute area dA = ρg·y_G·dA" must be ρg·y·sinθ·dA (strip depth,
   not centroid). The omission also makes the following line valid only for a vertical surface.
-- **·S8 slide 140 — invalid substitution.** "h_G is substituted for y_G" is legitimate only when θ = 90°, yet
-  slides 130–140 set up an inclined bank.
-- **·S9 slide 163 — centripetal vs centrifugal.** In vessel-fixed rotating axes the body force producing the
+- **·S8 slide 133 — invalid substitution.** "h_G is substituted for y_G" is legitimate only when θ = 90°, yet
+  slides 118–136 set up an inclined bank.
+- **·S9 slide 155 — centripetal vs centrifugal.** In vessel-fixed rotating axes the body force producing the
   paraboloid is the outward **centrifugal** inertial force. A centripetal force points inward and would tilt
   the free surface the other way.
 
 ### Section 06 — Energy & Bernoulli
-- **·S10 slide 256 — Torricelli derivation loses the elevation term. THE MOST SUBSTANTIVE FINDING.** The slide
+- **·S10 slide 246 — Torricelli derivation loses the elevation term. THE MOST SUBSTANTIVE FINDING.** The slide
   sets p_A = p_B = atmospheric, writes `p_A/ρg + 0 = p_B/ρg + v_B²/2g`, then `v_B²/2g = (p_A − p_B)/ρg` — which
   by its own algebra gives **v_B = 0** — and yet concludes v_B = √(2gH). The term z_A = H was dropped from the
   left-hand side. The correct statement is v_B²/2g = (p_A − p_B)/ρg **+ H**, which with p_A = p_B gives
   v_B = √(2gH). Do not learn this derivation from the slide as printed.
-- **·S11 slide 229 — head definitions.** "p/ρ = pressure head" must be **p/ρg** (the boxed equation on the same
+- **·S11 slide 217 — head definitions.** "p/ρ = pressure head" must be **p/ρg** (the boxed equation on the same
   slide has it right). And "velocity head (K.E./unit **mass**)" — a head is in metres, i.e. energy per unit
   **weight** (J/N); per unit mass gives J/kg = m²/s².
-- **·S12 slide 231 — symbol reuse and a broken line.** "ρV²/2 + P + ρgz = H" reuses H (defined in metres on
-  slide 229) for a quantity in pascals; and "ρV²/2 + Ps = ρV²/2 = dynamic pressure" should end = P_t.
-- **·S13 slides 243–244 — Venturi radical misplaced.** Printed "Q = C[A₂/{1 − √(A₂/A₁)²}·√2gH": the square root
+- **·S12 slide 218 — symbol reuse and a broken line.** "ρV²/2 + P + ρgz = H" reuses H (defined in metres on
+  slide 217) for a quantity in pascals; and "ρV²/2 + Ps = ρV²/2 = dynamic pressure" should end = P_t.
+- **·S13 slide 231 — Venturi radical misplaced.** Printed "Q = C[A₂/{1 − √(A₂/A₁)²}·√2gH": the square root
   sits on the area ratio instead of on the whole (1 − (A₂/A₁)²), and the outer bracket never closes. *(Relevant:
   the 2024 CAT Q3b prints the same formula in its correct form — compare them.)*
-- **·S14 slide 259 — symbol clash.** A used for both the orifice area and the tank cross-section in one line
-  ("−dH·A = −dH·πr²"), after slide 258 used a for the hole.
+- **·S14 slide 251 — symbol clash.** A used for both the orifice area and the tank cross-section in one line
+  ("−dH·A = −dH·πr²"), after slide 250 used a for the hole.
 
 ### Section 07 — Momentum
-- **·S15 slide 279 — dimensionally impossible.** "ρQ(v₂²−v₁²) = (p₁−p₂)A₂": LHS is watts, RHS is newtons.
+- **·S15 slide 271 — dimensionally impossible.** "ρQ(v₂²−v₁²) = (p₁−p₂)A₂": LHS is watts, RHS is newtons.
   Correct: **ρQ(v₂−v₁) = (p₁−p₂)A₂**. The boxed Borda–Carnot result that follows is right; only this
   intermediate is wrong.
-- **·S16 slide 282 — sign statement contradicts the slide's own result. Read this before the 2024 CAT Q4a.**
+- **·S16 slide 274 — sign statement contradicts the slide's own result. Read this before the 2024 CAT Q4a.**
   The slide's algebra gives p₂ − p₁ = ρ(d²/D²)((D²−d²)/D²)(v₀−v₁)² > 0, i.e. **p₂ > p₁** — which is precisely
   what makes a jet pump work. The prose then says "p₁ − p₂ is always positive", which is backwards.
-- **·S17 slide 271 (second pair of equations) — signs and lost velocities.** Rearranging the slide's own first
+- **·S17 slide 263 (second pair of equations) — signs and lost velocities.** Rearranging the slide's own first
   pair gives +Fx and +Fy, not −Fx/−Fy (the pressure terms' signs were not flipped when moved across), and the
   Fx line has lost v₁ and v₂ entirely. *(This is a second, separate defect on the slide already flagged for
   √(Fx²−Fy²).)*
-- **·S18 slide 238 — rounding, inherited by section 07.** 800 L/min truncated to 0.013 m³/s instead of 0.01333,
+- **·S18 slide 223 — rounding, inherited by section 07.** 800 L/min truncated to 0.013 m³/s instead of 0.01333,
   making every velocity ≈2.5 % low. Correct: v₁ = 6.79, v₂ = 4.72, v₃ = 1.70 m/s (slide prints 6.62 / 4.59).
 
 ### Section 08 — Viscous Flow
-- **·S19 slides 323, 324 — spurious ρ.** The non-dimensional vorticity-transport equation is printed with a
+- **·S19 slides 311, 312 — spurious ρ.** The non-dimensional vorticity-transport equation is printed with a
   leading ρ; the RHS is dimensionless, so the ρ must not be there.
-- **·S20 slide 370 — spurious μ.** Turbulent BL written "… = −∂p/∂x + μ ∂τ/∂y". τ already contains μ, so
+- **·S20 slide 359 — spurious μ.** Turbulent BL written "… = −∂p/∂x + μ ∂τ/∂y". τ already contains μ, so
   μ ∂τ/∂y has units Pa²·s/m. Correct: ∂τ/∂y.
-- **·S21 slide 382 — unit.** dv/dy given as "2020 **m³/s**"; a velocity gradient is s⁻¹. *(Separate from the
+- **·S21 slide 371 — unit.** dv/dy given as "2020 **m³/s**"; a velocity gradient is s⁻¹. *(Separate from the
   sin/cos flag already logged on this slide.)*
-- **·S22 slide 320 — wrong velocity component.** The y-momentum equation's LHS is written with u where v is
-  required (slide 310 has the same slip). The deck self-corrects on slide 321.
+- **·S22 slide 308 — wrong velocity component.** The y-momentum equation's LHS is written with u where v is
+  required (slide 299 has the same slip). The deck self-corrects on slide 309.
 
 ### Section 09 — Flow in Pipes
-- **·S23 slides 405, 408 — smooth/rough criteria inverted.** Printed "ε ≤ 5 v*/ν" and "ε ≥ 70 v*/ν". v*/ν has
+- **·S23 slides 392, 395 — smooth/rough criteria inverted.** Printed "ε ≤ 5 v*/ν" and "ε ≥ 70 v*/ν". v*/ν has
   units of 1/m and cannot bound a length. Correct: **ε ≤ 5ν/v\*** (hydraulically smooth) and **ε ≥ 70ν/v\***
   (fully rough) — equivalently ε⁺ = εv\*/ν ≤ 5 and ≥ 70.
-- **·S24 slide 409 — Nikuradse criterion inverted.** "Re > 900(ε/d)" must be **Re > 900(d/ε)**. As printed,
+- **·S24 slide 396 — Nikuradse criterion inverted.** "Re > 900(ε/d)" must be **Re > 900(d/ε)**. As printed,
   ε/d = 0.01 would make every flow above Re = 9 "fully rough".
-- **·S25 slide 411 — slug units labelled lb.** "μ = 3.11×10⁻² lb/ft·s" and "ρ = 2.44 lb/ft³" are **slug**-based
+- **·S25 slide 398 — slug units labelled lb.** "μ = 3.11×10⁻² lb/ft·s" and "ρ = 2.44 lb/ft³" are **slug**-based
   values. Glycerin is 1260 kg/m³ = 2.44 slug/ft³ (78.6 lbm/ft³). Re = 392 is unaffected, but the labels are
-  wrong — the same defect class already logged for slide 44.
-- **·S26 slide 404 — "Assume laminar flow" with λ = 0.0230.** At 70 °C water, v = 9.7 ft/s, d = 6 in gives
+  wrong — the same defect class already logged for slide 42.
+- **·S26 slide 391 — "Assume laminar flow" with λ = 0.0230.** At 70 °C water, v = 9.7 ft/s, d = 6 in gives
   Re ≈ 1.1×10⁶ — firmly **turbulent**, and 0.023 is the correct *turbulent* cast-iron value. The stated
   assumption contradicts both the data and the coefficient used.
 
 ### Section 10 — Open-Channel Flow
-- **·S27 slide 495 — arithmetic.** "m = 80.23/24.20 = 3.15 in = 0.2763 ft". 80.23/24.20 = **3.3153 in**
+- **·S27 old slide 495 — arithmetic.** "m = 80.23/24.20 = 3.15 in = 0.2763 ft". 80.23/24.20 = **3.3153 in**
   (and 0.2763 ft = 3.3156 in). "3.15" is a typo for 3.32; downstream results are unaffected.
-- **·S28 slide 498(c) — missing factor 2.** "s = 5.0 + [(1.2)(√2)] = 8.394 m" evaluates to 6.697. The answer
+- **·S28 slide 475(c) — missing factor 2.** "s = 5.0 + [(1.2)(√2)] = 8.394 m" evaluates to 6.697. The answer
   8.394 requires **both** sloping sides: 5.0 + 2(1.2√2).
-- **·S29 slide 486 — Bazin coefficient.** Printed c = 87/(1 + α/√(mi)); the standard form is **87/(1 + α/√m)**.
+- **·S29 slide 465 — Bazin coefficient.** Printed c = 87/(1 + α/√(mi)); the standard form is **87/(1 + α/√m)**.
   The KB body already prints the standard form — previously disclosed only in a trailing footnote, now logged.
 
 ### Section 11 — Drag and Lift
-- **·S30 slide 572 — moment equation dimensionally inconsistent.** Beyond the L→M label already logged: per unit
+- **·S30 slide 545 — moment equation dimensionally inconsistent.** Beyond the L→M label already logged: per unit
   span, lift and drag are forces per unit length, so C·l·½ρU² = N/m ✓. But **moment** per unit span is N·m/m = N,
   so it needs **l²**: M = C_M·**l²**·½ρU².
-- **·S31 slides 534, 555 — density in slug/ft³ labelled lb/ft³.** Slide 534: "ρ = 1.93 lb/cft" for water at
-  70 °F — water is 62.4 lb/ft³; 1.93 is its **slug**/ft³ value. Slide 555: "ρ = 0.00242 lb/cft" for air.
+- **·S31 slides 509, 528 — density in slug/ft³ labelled lb/ft³.** Slid 509: "ρ = 1.93 lb/cft" for water at
+  70 °F — water is 62.4 lb/ft³; 1.93 is its **slug**/ft³ value. Slid 528: "ρ = 0.00242 lb/cft" for air.
   Since D = C_D·ρv²A/2 needs **mass** density, taking the labels literally makes both answers wrong by
   g ≈ 32.2. The values used are right; only the labels are wrong.
   *Secondary:* 0.00242 slug/ft³ is air at ≈10 °C, not the stated 50 °C (≈0.00212) — the datum contradicts the
@@ -821,28 +825,442 @@ Frontmatter `verification_flags: 0` corrected to `1` in `08-viscous-flow.md` and
 ## Known coverage gaps (content in the deck, absent from the KB)
 
 Not errors — but a future chat should not assume the topic files are exhaustive.
+*(Updated 31 Oct 2026. Closed in the edition update: slide 41's definition of a dimension and slide 42's full
+table (03); the wake and ground boundary layer, slides 349–350 (08); Itaya's correlation (393), the convergent
+pipe (422), ζ ≈ 1 at 50–60° and the Coandă note (416–417), and the missing l = 120 ft (398) (09).)*
 
 | Section | Missing |
 |---|---|
-| 03 | **slide 43** dropped entirely (the deck's definition of a *dimension*); slide 44's angular-velocity row and two conversions |
-| 08 | slide 360 (definition of a **wake**); slide 361 (ground boundary layer ≈1 m) |
-| 09 | **Itaya's smooth-pipe correlation** (slide 406); **slide 442** (convergent pipe/contraction) dropped entirely; slide 432's ζ≈1 for θ=50–60° and the Coandă wall-attachment note; slide 465's needle/ball throttle-area formula. Also §9.3's worked example omits the pipe length l = 120 ft, so its h_f = 60.9 ft cannot be reproduced from the data given |
-| 11 | slides 591 (saturation-pressure / air-solubility table) and 592 (hydrofoil pressure distribution) |
+| 09 | slide 445's needle/ball throttle-area formulas |
+| 11 | slide 559 (saturation-pressure / air-solubility table) and slide 560 (hydrofoil pressure distribution) |
 | `_formula-sheet.md` | Ganguillet–Kutter and Bazin (§10); moment coefficient and interference coefficient k = L/L₀ (§11) |
 
 
 ### Addendum (found 2026-08-03 while answering a question about Venturi tubes)
-- **·S32 slide 440 — "venturi flame".** The hump-in-a-channel example calls the arrangement a "venturi
-  **flame**"; it is a venturi **flume**. `09-pipe-flow.md` §(·440–441) already writes "flume" — a silent
+- **·S32 old slide 440 — "venturi flame".** The hump-in-a-channel example calls the arrangement a "venturi
+  **flame**"; it is a venturi **flume**. `09-pipe-flow.md` §(·old slides 440–441) already writes "flume" — a silent
   correction, now logged. *(Note also that 440–441 is open-channel content sitting inside the deck's pipe-flow
   block; the KB follows the deck's slide order, so it is filed under `09-pipe-flow.md` rather than `10`.)*
-- **Venturi cross-reference:** the tube itself is slides **240–244** (Topic 06, `06-energy-bernoulli.md` §6.6),
-  not near slide 230 — 230 is Daniel Bernoulli's biography. Erratum **S13** applies to 243–244; the 2024 CAT
-  Q3b prints the same formula correctly, so the two are worth comparing side by side.
+- **Venturi cross-reference:** the tube itself is slides **227–234** in the Oct 2026 edition (Topic 06,
+  `06-energy-bernoulli.md` §6.6; old slides 240–244 plus the new example and exercise), not near slide 217,
+  which is Daniel Bernoulli's biography. Erratum **S13** applies to slide 231; the 2024 CAT Q3b prints the same
+  formula correctly, so the two are worth comparing side by side.
 
-Also unverifiable from text alone (content lives in slide **images**, not text): slide 56's rheological
-diagram curves (03) and slide 428's l/d ≈ 1–99 experimental range (09). Neither is disputed — flagged as
+Also unverifiable from text alone (content lives in slide **images**, not text): slide 51's rheological
+diagram curves (03) and slide 412's l/d ≈ 1–99 experimental range (09). Neither is disputed — flagged as
 unaudited rather than wrong.
+
+---
+
+# § Oct 2026 edition — re-verification (31 October 2026)
+
+The lecturer reissued the deck as a 561-page PDF (October 2026). Every slide of the new edition in all
+eleven topic ranges was viewed as a rendered image and every number on a new or reworded slide was
+recomputed. All `·slide N` references in this log were renumbered to the new edition first (see
+`_edition-map.md`); entries about slides the new edition dropped now read `·old slide N`.
+
+**Read the status tables before trusting an older entry above.** Several errors logged in the first and
+second passes are **fixed** in the new edition; most are **still printed**; a few slides were dropped, taking
+their errors with them. New errors are logged as **S33–S85** below. In the topic files every inline flag now says
+*(still printed in the Oct 2026 edition)* or *(fixed in the Oct 2026 edition)*.
+
+**Rendering note (not a defect).** The new PDF uses a font that is not embedded; in some viewers the ² and ³
+superscripts and a few Greek letters (μ) do not draw, leaving gaps — e.g. "gA = bQ" on slide 497 is $gA^3 = bQ^2$
+in the text layer. These were read from the text layer and are **not** flagged as slide errors. If a printed copy
+shows the gaps too, treat the text-layer reading as the intended one.
+
+## Status of earlier flags in the Oct 2026 edition
+
+### Topics 01–03 (slides 1–65)
+
+| ID | new page | status | one-line evidence (what the new page prints) |
+|---|---|---|---|
+| s22 da Vinci dates | 22 | STILL PRINTED | "14th April 1452 – 2nd May 1514" under the portrait, unchanged |
+| s29 Kirchhoff spelling | 29 | STILL PRINTED | title "1869 – Kirchoff…" |
+| s33 mean free path | 33 | STILL PRINTED | "The mean free path of the molecules is about 0.06 pm" |
+| s43 "3× denser" | 43 | STILL PRINTED | "Generally, liquids are 3 times denser than gases at 1 atm P" |
+| s42 units table — 35.335 ft³ | 42 | STILL PRINTED | "1m³ = 35.335 tt³" |
+| s42 units table — slug/m/s | 42 | STILL PRINTED | BG viscosity "Slugs/m/s", "1slug/m/s = 47.88 kg/m/s" |
+| s42 units table — "Lbg/ft²" | 42 | FIXED | pressure row now reads "Lbf/ft²" |
+| S1 SG(Hg) arithmetic | 44 | FIXED | "Example: SG (Hg)= 13600 kg/m³/1000 kg/m³ = 13.6" (13600/1000 = 13.6 ✓) |
+| P15 dimensional method not in deck | 60–61 | CHANGED (partly closed) | new section "Dimensional homogeneity": each additive term must have the same dimensions; Bernoulli example. Still no worked "find the dimensions of α" problem |
+| Coverage gap: slide 41 (definition of a dimension) | 41 | now in KB | "Is the index number of the combination of base units expressing a physical quantity: L, M, T" — added to §3.2 |
+| Coverage gap: slide 42 angular-velocity row + conversions | 42 | now in KB | angular velocity {T⁻¹}, s⁻¹ both systems; all conversion factors added to §3.2 |
+
+### Topic 04 — Fluid Statics (slides 66–156)
+
+| ID | New page | Status | Evidence (what the new page prints) |
+|---|---|---|---|
+| s89 standard atmosphere (first-pass flag) | 89 | STILL PRINTED | "decreases by 0.65°C every 100 m … up to approximately 1 km high, but is constant at −50.5°C from 1 km to 10 km high"; also "Derive the value for n at the troposphere (less than 1Km)" |
+| S2 inclined manometer | 102 | STILL PRINTED | "H = Lsinα" then bold "The smaller the α, the larger the H" |
+| S3 missing ρ₀/P₀ | 86, 87 | CHANGED | 87 FIXED: "{[1 − ((n−1)/n)ρ₀g/P₀ z]^{1/n−1}". 86 pressure lines correct, but final density line now prints "ρ(z)/ρ₀ = [1 − ((n−1)/n) g z P₀/ρ₀]^{1/n−1}" — ratio inverted (was "P₀gz"). Still wrong. |
+| S4 lapse rate "K/100" | 90 | FIXED | Slide 90 now works n: "−0.0065 = −(n−1)/n · 1.225 · 9.80665 · 288.15/101325 … n = 1.23496"; no "K/100" anywhere. Slide 91 gives "B = 0.00650 K/m". |
+| S5 p₀ dropped | 79 | FIXED | "P = p₀ + ρg(z₀ − z)" … "Or if ΔP = P1 − P2: P = po + ρgh" |
+| S6 missing minus in exponent | 93 (and 91) | FIXED | "P ≈ P₀e^{−gZ/RT}" on both 91 and 93 |
+| S7 sinθ dropped / y_G for y | 121 (was cited 122) | STILL PRINTED (moved) | "Force acting on a minute area dA = ρgy_G dA" now on 121; 122 starts at "Moment of this force around the x axis" |
+| S8 h_G substituted for y_G | 133 | STILL PRINTED | "yc = y_G + h²/12h_G; h_G is substituted for y_G" |
+| S9 centripetal vs centrifugal | 155 | STILL PRINTED | "2. −mrω² due to the centripetal acceleration rω² in the horizontal direction" |
+| K2 β = F/m (KB-fix) | 151 | STILL PRINTED (KB-fix stands) | "acceleration in this direction = β = F/m. Or, p = ρβh" |
+| θ for angular velocity (KB minor note) | 154 | FIXED | "constant angular velocity ω?" and "Imagine cylindrical coordinates (r,θ,z)" — θ is now only the coordinate angle |
+| "Z = ωr²/2g" drops ω's square (KB inline note) | 156 | FIXED | "Z = ω²r /2g + c", "Z − ho = ω² * r /2g" — ω² present; the gap after r is a lost superscript (PDF export), not an error |
+
+### Topics 05–06 (slides 157–255)
+
+| ID | new page | status | one-line evidence |
+|---|---|---|---|
+| Pitot notation (first-pass, ·slide 239) | 239 | FIXED | now "v_A = √{2g(P_B – P_A)/ρg)}" with the steps P_B/ρg − P_A/ρg shown; dimensionally right (one stray ")" left) |
+| Bernoulli dates (first-pass, ·slide 217) | 217 | STILL PRINTED | "Daniel Bernoulli 1700 – 1783" |
+| "m/2" unit (first-pass, ·slide 223) | 223 | FIXED | now "= 4.59 m/s" |
+| S10 Torricelli elevation term | 246 | FIXED (new slip, see S58) | now "P_A/ρg + H = P_B/ρg + V_B²/2g … ⇒ V_B²/2g − H = 0 ⇒ v_B = √2gH" |
+| S11 head definitions | 217 | CHANGED (partly fixed) | "p/ρg = pressure head" fixed; "V²/2g = velocity head (K.E/unit mass)" and "Z = potential head (P.E. /unit mass)" still printed — note the log names only the velocity head; the potential head carries the same slip |
+| S12 H reused / broken line | 218 | CHANGED (partly fixed) | broken line now "ρV²/2 + Ps = Pt" (fixed); still "ρV²/2 + P + ρgz = H", "ρV²/2 + P = H", and new "If H = Pt and P = Ps" |
+| S13 Venturi radical | 231 | STILL PRINTED | "Q = C[A₂/{√1 – (A₂/A₁)²} * √2gH" |
+| S14 A for hole and tank | 251 (and 252) | STILL PRINTED | "small hole of area A … −dH A = −dH π r² dt"; 252 "v = Q/A = C_a√2gH/A" with A = πr² |
+| S18 rounding 0.013 | 223 | STILL PRINTED | "Q = 800L/min /1000L/m³ /60 s/min = 0.013 m³/s", v₁ 6.62, v₂ 4.59; slide still stops at "Find v₃…." |
+| 05 inline ω typo (·slide 184; noted in 05, not in log) | 184 | FIXED | now "ω = ½(ω₁ + ω₂) = ½ (δv/δx – δu/δy)" (old 195 read "δv/δx – δv/δy") |
+| P4 note "δ for ∂ inherited from slide 184" | 184 | STILL PRINTED | "ζ = (δv/δx - δu/δy); ζ = vorticity for z-axis" — axis label still correct, δ still used |
+
+Notes for whoever edits `_verification-log.md` and `00-index.md`:
+- The log's S10 text calls slide 246 "THE MOST SUBSTANTIVE FINDING"; the index's verification summary repeats
+  it ("The worst is slide 246…"). Both need "(fixed in the Oct 2026 edition)".
+- The § Addendum "Venturi cross-reference" still uses old numbers ("slides 240–244", "230 is Daniel Bernoulli's
+  biography", "S13 applies to 243–244"). In the Oct 2026 edition the Venturi block is **slides 227–234**
+  (biography 228, derivation 229–231, S13 on 231, new example 232–233, exercise 234); the Bernoulli
+  biography is on 217.
+- 06's frontmatter used to carry `verification_flags: 1`; now 16 (6 open log entries + S53–S62). 05 was 0; now 6.
+- The 07-momentum §7.10 line "·222 — conduit velocities … v₃=1.66" quotes a v₃ the slide never computes
+  (slide 223 stops at "Find v₃…."); 06 now marks 1.66 as [added]. Not edited (outside my files).
+
+### Topics 07–08 (slides 256–375)
+
+| ID | new page | status | one-line evidence |
+|---|---|---|---|
+| impulse sign (log "·slide 258") | 258 | STILL PRINTED | 258 reads "F = (Mv₁ − Mv₂)/t" |
+| resultant √(Fx²−Fy²) (log "·slide 263") | 263 | FIXED | 263 now reads "F = √(Fx² + Fy²)" |
+| moving-plate /v² (log "·slide 263", old 277) | 268 | FIXED | old 277 dropped; 268 prints "Q' = Q(v−u)/v", "F = ρQ'(v−u) sinθ", "F = ρQ(v−u)²sinθ/v" — correct |
+| impeller torque u for v (log "·slides 284 & 288") | 284, 287, 288 | STILL PRINTED | "T = m(r₂u₂cosα₂ − r₁u₁cosα₁)" on all three |
+| S15 ρQ(v₂²−v₁²) | 270 | FIXED | 270 reads "ρQ(v₂ − v₁) = (p₁ − p₂)A₂" (old 279 had squares) |
+| S16 jet-pump prose vs result | 275 | CHANGED | formula flipped to "P1 − p2 = ρ(d²/D²)((D²−d²)/D²)(vo−v1)²" to match the prose "p1 − p2 is always positive"; now both wrong → S67 |
+| S17 bend second pair | 263 | FIXED | now "Fx = m(v1cosα1 − v2cosα2) + A1p1cosα1 − A2p2cosα2", same for Fy; follows from the first pair |
+| S18 0.013 m³/s rounding | 223 | STILL PRINTED | 223: "= 0.013 m3/s … = 6.62 m/s … = 4.59 m/s" (outside my range; checked because §7.10 quotes it) |
+| S19 spurious ρ, vorticity transport | 311, 312 | FIXED | no leading ρ on either page (new slip on 311 → S71) |
+| S20 μ ∂τ/∂y | 359 | STILL PRINTED | "= −∂p̄/∂x + μ δτ/δy" |
+| S21 "2020 m³/s" | 371 | STILL PRINTED | text layer "= 2020 m³/s cos 224.4y" (cube not drawn in render) |
+| S22 u for v in y-equation | 299, 308 | STILL PRINTED | 308 y-eq LHS "ρ(∂u/∂t + u∂u/∂x + v∂u/∂y)"; 299 "dv/dt = ∂u/∂t + …"; 309 correct |
+| sin/cos BL profile (log "·slide 371") | 371 | FIXED | now "v = vmax sin(πy/2δ)" |
+| hidden-slide note (old 369) | 358 | RESOLVED | old 369 is visible as new 358; content as in KB §8.8 |
+| coverage gap: wake / ground BL (log table, 08) | 349, 350 | ADDED to KB §8.7 | both pages unchanged from old 360/361 |
+
+### Topics 09–11 (slides 376–561)
+
+| ID | New page | Status | One-line evidence |
+|---|---|---|---|
+| s472 (n = 0.12) | 472 | STILL PRINTED | "…and n = 0.12 (relatively smooth concrete"; the worked solution that used 0.012 (old 494–495) is dropped, so the deck now shows only the wrong value. New Problem 5 (494) uses n = 0.012 for finished concrete. |
+| old s531 (τ₀ = 3.65) | — | DROPPED | old 530–531 (flat-plate C_f, δ, τ₀) have no new page (map blank). KB keeps them as `old slide`. |
+| s533 (C_D = 0.31) | 533 | STILL PRINTED | "Take C_D = 0.31/Re^1/7"; slide 534 still uses 0.031 → C_D = 0.00249. |
+| s545 (L → M) | 545 | STILL PRINTED | third line still "L = C_M l ρU²/2 ; C_M = moment coefficient". |
+| S23 | 392, 395 | STILL PRINTED | 392 "ε ≤ 5u/v … (v = kinematic viscosity)"; 395 "ε ≥ 70 u/v" (old 408 had "u/v₀" — subscript gone, ratio still inverted). |
+| S24 | 396 | STILL PRINTED | "When Re>900(ε/d), then:". |
+| S25 | 398–399 | STILL PRINTED | "3.11 x 10⁻² lb/ft/s", "2.44 lb/ft³" (slug values). |
+| S26 | 391 | STILL PRINTED | "Assume laminar flow:" with λ = 0.0230. |
+| S27 | — | DROPPED | lived on old 495 (worked solution), not in the new edition. |
+| S28 | 475 | STILL PRINTED | "s = 5.0 + [(1.2)(√2)] = 8.394 m"; slide now titled "Solution (1)". |
+| S29 | 465 | STILL PRINTED | Bazin "c = 87/(1+α/√mi)". |
+| S30 | 545 | STILL PRINTED | moment line has l, not l². |
+| S31 | 509, 528 | STILL PRINTED | "ρ = 1.93 lb/cft"; "ρ = 0.00242 lb/cft" (air "at 50 °C"). |
+| S32 | — | DROPPED | "venturi flame" lived on old 440 (dropped with old 438–441). |
+| K1 (§10.8 drawdown) | — | DROPPED (source) | old 516–519 not in the new edition; KB fix stays with the kept material. |
+| K3 (Taylor/Roshko) | 522 | UNCHANGED | "G. I. Taylor (1886-1975), calculated … f = 0.198 (U/d)(1 − 19.7/Re)" — Taylor only. |
+| Kutta–Joukowski boxed equation (citation) | 540, 541 | CHANGED | equation closes 540 ("L = ρUΓ = Kutta-Joukowski equation"), 541 is titled "L = ρUΓ" with the spinning-ball/dimple prose. KB note citing "566 / 567–568" corrected to 540 / 541. |
+| T₁ exponent (KB called it an extraction garble) | 530 | FIXED | new 530 prints "= πf/5 ρω² r_o⁵"; old slide 557 (rendered) printed "r_o²" — it was a slide error, not a garble. |
+| Coandă / wall-effect coverage gap | 416 | STILL ON SLIDE → now in KB | "if θ is small the fluid flow attaches to one of the side walls due to a wall attachment phenomenon (the wall effect)". Added to `09` §9.7 (the 2025 CAT 2 Q2(5) asks for it). |
+| (not logged before) old s566 "2πr₀ρU" without u | 540 | FIXED | new 540: "= 2πr₀²ωρU = 2πr₀uρU (u = r₀ω)"; integrand now complete (… − 4r₀ω/U sinθ − 4 sin²θ). |
+
+Coverage gaps closed while here (from the log's "Known coverage gaps", section 09): Itaya correlation (393),
+convergent pipe (422), ζ ≈ 1 at θ = 50–60° and wall effect (416), separation note (417), glycerin pipe length
+120 ft (398). Still not in the KB: 445 needle/ball throttle-area formulas; 559 saturation-pressure/air-solubility
+table; 560 hydrofoil pressure-distribution figure.
+
+## New flags — S33 to S85
+
+IDs run on from the second pass (S1–S32). V = substantive (changes the mathematics), C = cosmetic.
+
+### Topics 01–03 (slides 1–65)
+
+#### S33 · page 42 — ft·lbf conversion (C)
+- **Prints:** "1ft.lbf = 1.35558 J" and "1ft.lbf/s = 1.35558 W".
+- **Should be:** 1 ft·lbf = **1.35582 J** (and 1.35582 W).
+- **Why:** 1 ft·lbf = 0.3048 m × 4.448222 N = 1.355818 J. Two digits transposed (…558 vs …582).
+- **Note:** present in the Jul 2026 edition too (old slide 44); never logged. The KB had copied 1.35558
+  without comment. Same row set also prints "1slug/f³" (f³ for ft³) — trivial, folded in here.
+- **Severity:** C (value typo, 0.02 %).
+
+#### S34 · page 54 — capillary constants with no units (C, but high practical impact)
+- **Prints:** "Water: h = 30/d · Alcohol: h = 11.6/d · Mercury: h = -10/d" — no units, no tube material.
+- **Should be:** "glass tube, d and h in mm", as old slide 63 said ("Some values where a glass tube is placed in
+  the following liquids (d is in mm)").
+- **Why:** 4σ/(ρg) for water = 4(0.0728)/(998 × 9.81) = 2.97×10⁻⁵ m² = 29.7 mm². The constant 30 holds
+  only in mm; with d in metres the height is wrong by 10⁶. (Ethanol gives 11.5 mm², mercury at θ = 140° gives
+  −11.2 mm², so 11.6 and −10 are consistent too.)
+- **Severity:** C — an omission rather than a wrong statement, but a student using SI throughout gets a
+  nonsense answer. Consider V if the log prefers to grade by consequence.
+
+#### S35 · page 56 — bulk modulus loses its minus sign (V)
+- **Prints:** "K = ΔP/ΔV/V= VdP/dV" (zoomed at 250 dpi: no minus sign anywhere on the line).
+- **Should be:** $K = -V\,dP/dV$ (old slide 66 printed "= -VdP/dV").
+- **Why:** a pressure rise (dP > 0) gives a volume fall (dV < 0); without the minus sign K < 0, which
+  contradicts the slide's own K = 2.06×10⁹ Pa on page 57. The ρ-form on the same page (K = ρ dP/dρ) is right.
+- **Severity:** V (sign error introduced in the Oct 2026 rewording).
+
+#### S36 · page 57 — bracket and l-for-1 typos (C)
+- **Prints:** "√(Kdρ/ρ) /dρ)" (dρ struck through) — one opening bracket, two closing; and "2.06 x l0⁹ Pa",
+  "1.4 x l0⁵ Pa", "4.85 x l0⁻¹⁰ l/Pa" with the letter l for the digit 1.
+- **Should be:** $\sqrt{(K\,d\rho/\rho)/d\rho} = \sqrt{K/\rho}$; 2.06×10⁹ Pa; 1.4×10⁵ Pa; 4.85×10⁻¹⁰ 1/Pa.
+- **Why:** count the brackets. The l-for-1 typos were already in the Jul 2026 edition (old slides 68–69).
+- **Severity:** C. Values check: 1/2.06×10⁹ = 4.854×10⁻¹⁰ ✓; β × 101 325 Pa = 0.0049 % ✓; γP = 1.4 × 101 325 =
+  1.42×10⁵ Pa ✓.
+
+#### Reading limitations (not defects, not flagged)
+- Page 50 "Units = m /s; cgs = 1 cm /s" and page 61 "P + ½ ρV  + ρgZ": the superscript ² does not render
+  (poppler, non-embedded ArialMT); the text layer has m²/s, cm²/s and ρV². Treated as a PDF rendering
+  artefact. The KB writes the squares. If a printed copy also lacks them, that would become a cosmetic flag.
+
+### Topic 04 — Fluid Statics (slides 66–156)
+
+All placeholders; verbatim text is from the rendered page.
+
+**S37 · slide 81 · V**
+- Prints: "pmax = 91,000 Pa − (9790 N/m³)(−60 m)(9.81) = 678,400(9.81) Pa ≈ 678 (9.81)kPa."
+- Should be: $p_{\max} = 91{,}000 - (9790)(-60) = 678{,}400$ Pa ≈ 678 kPa (as the Jul 2026 edition printed).
+- Why: slide 80 gives γ(water) = 9790 N/m³, which is already ρg; multiplying by 9.81 again is wrong. The line is also internally inconsistent: $91{,}000 + 9790\cdot60\cdot9.81 = 5.85\times10^6$ but $678{,}400\times9.81 = 6.66\times10^6$.
+
+**S38 · slides 84–85 · V** (final result correct; middle lines wrong)
+- Prints (84): "At z = 0; P/P₀ = P₀/P₀; or, c = P₀/P₀ = 1" and "Z = −(1/g)(P₀/ρ₀) * [(n/(n−1))(P/P₀)^{(n−1)/n} + 1]". (85): "gZ (ρ₀/P₀)(n−1)/n = −[(P/P₀)^{n−1/n} + 1]", "1 − g(ρ₀/P₀) z = (n/(n−1))(P/P₀)^{n−1/n}", "[1 − g(ρ₀/P₀)z] (n−1)/n = (P/P₀)^{n−1/n}".
+- Should be: $z = -\frac{1}{g}\frac{P_0}{\rho_0}\frac{n}{n-1}\big[(P/P_0)^{(n-1)/n} - 1\big]$, hence $(P/P_0)^{(n-1)/n} = 1 - \frac{n-1}{n}\frac{\rho_0 g}{P_0}z$.
+- Why: put z = 0, P/P₀ = 1 into the printed line: it gives $0 = -\frac{1}{g}\frac{P_0}{\rho_0}\big(\frac{n}{n-1} + 1\big) \neq 0$. The constant must be $-\frac{n}{n-1}$, not +1; and on 85 the factor $(n-1)/n$ multiplies only the z-term. Same slip was on old slides 97–98 (never logged).
+
+**S39 · slide 92 · C**
+- Prints: "g/RB = 9.087 m/s² / 287 m²/s².K * 0.0065 K/m = 5.26".
+- Should be: 9.807.
+- Why: $9.807/(287\times0.0065) = 5.26$; $9.087/(287\times0.0065) = 4.87$. New in the Oct 2026 edition (old deck only said "take g/RB = 5.26").
+
+**S40 · slide 119 · V**
+- Prints (new lines): "P = ~~ρg~~ sin θy_GA = ~~ρg~~h_GA" (ρg struck through), then "P = sin θy_GA = h_GA" and "=> P = the product of P at the centroid G and the underwater area of the bank wall".
+- Should be: $P = \rho g\sin\theta\,y_G A = \rho g h_G A$; "pressure at the centroid".
+- Why: $h_G A$ has units m³; a force needs ρg (N/m³) in front. The P-for-pressure wording also clashes with P = force on the same line.
+
+**S41 · slides 122–123 · V**
+- Prints (122): "Total moment on the gate = ∫ρgy² dA = ρg y²∫ dA." (123 title): "ρg y² ∫dA; ρg y²A = Ix".
+- Should be: $\rho g\int_A y^2\,dA = \rho g I_x$, with $I_x = \int_A y^2\,dA$.
+- Why: y varies across the gate, so $y^2$ cannot be taken outside the integral; and $I_x$ (m⁴) has no ρg. The Jul 2026 edition had "ρg∫y²dA; ∫y²dA = Ix".
+
+**S42 · slide 124 (and 129) · C**
+- Prints (124): "Ix = I_G + Ay_G" (no exponent and no blank gap). (129): "Ixx = (5 ft)(10 ft)³/12 + (50)(5) = 1665 ft⁴".
+- Should be: $I_x = I_G + A y_G^2$; on 129 $(50)(5)^2$, giving 1666.7 ft⁴.
+- Why: units — $A y_G$ is m³, I is m⁴. Slide 123 prints the theorem correctly; 129's own 1665 needs the square ($416.7 + 250 = 666.7$ without it). Classed C because the deck states and uses the correct form elsewhere.
+
+**S43 · slides 128–131 · V — most serious new error**
+- Prints (128): "Yc = y_G + h²/12y_G = 5ft + (10ft)²/(12 x 5ft) = 5ft + 1.667ft = 6.667ft" (exponents are export gaps). (129, "OR"): "Ixx = bL³/12 + Ay_G … = 1665 ft⁴ … l = y_CP = I_x sin θ/h_cG A = (1665)(6/10)/((12)(50)) = 1.665 ft". (130): "Dist from B to l: 10 − 6.667 ft = 3.333 ft … P(10)sin θ = (38,400)(3.333) … P(10)*(6/10) = 128064 … P = 21,344 lbf". (131): "Bx + (38,400(0.6) − 21,344) lbf; Or: Bx = 1696 lbf … Bz = 30,700 lbf".
+- Should be: $l = I_G\sin\theta/(h_{CG}A) = (416.7)(0.6)/600 = 0.417$ ft; CP 4.583 ft from B; $P = 38{,}400\times4.583/6 = 29{,}333 \approx 29{,}300$ lbf; $B_x = 29{,}333 - 23{,}040 = 6{,}293 \approx 6{,}300$ lbf; $B_z = 30{,}720 \approx 30{,}700$ lbf (only B_z was right).
+- Why: in $y_C = y_G + I_G/(Ay_G)$, y is measured along the plane from the free-surface line. The slide uses $y_G = 5$ ft (from the gate's end); the correct $y_G = h_{CG}/\sin\theta = 12/0.6 = 20$ ft gives $100/(12\times20) = 0.417$ ft. The "OR" route uses I about the gate's end instead of $I_G$ about the centroid. Repeatable check: both routes must give the same CP offset, 0.417 ft. Secondary: the slide's own numbers give $B_x = -1{,}696$ (sign dropped) and $128{,}064/38{,}400 = 3.335 \neq 3.333$.
+
+**S44 · slide 132 · C**
+- Prints: "Take γ = 9.79 N/m".
+- Should be: γ = 9.79 kN/m³.
+- Why: specific weight has units N/m³; water is 9790 N/m³.
+
+**S45 · slide 148 · C**
+- Prints: "b) for stability, MG needs to be > GB" then "barge is stable if L² > 3H²/2 or 2L > 2.45H" (exponents are export gaps).
+- Should be: stable if $\overline{MG} > 0$, i.e. $I_o/V_{\text{sub}} > \overline{GB}$.
+- Why: $\overline{MG} > \overline{GB}$ would give $L^2/3H - H/2 > H/2$, i.e. $L > 1.73H$, not the printed $2L > 2.45H$, which comes from $\overline{MG} > 0$ ($L > 1.225H$).
+
+**S46 · slides 147, 152 · C**
+- Prints: (147) "the barge is statistically stable"; (152) "A dog racer rests her coffee mug".
+- Should be: "statically stable"; "drag racer".
+- Why: wording slips; no effect on the maths.
+
+Not flagged (export artefact, not an error): the Oct 2026 PDF drops many superscripts and leaves a blank gap — e.g. 128 "h  /12y_G" and "(10ft)  /(12 x 5ft)", 142–143 "lbf/ft", "0.641 ft", 147 "Io = 1/12 bL", 148 "b(2L)  /12", "8bL  /12", "L  /3H", 152–153 "m/s", 156 "ω²r /2g". The arithmetic uses the exponents. Noted once in the file's header comment.
+
+Not flagged (rounding): slide 90 rounds to 0.034 but prints n = 1.23496, which comes from the unrounded 0.03416; with 0.034, n = 1.236. Noted inline.
+
+### Topics 05–06 (slides 157–255)
+
+| ID | page | prints (verbatim) | should be | why (repeatable check) | V/C |
+|---|---|---|---|---|---|
+| S47 | 177 | "Average velocity = Q/A = 1.1 m³/hr ÷ (0.01m)² π * 12 m * 3600 s/hr = 0.08 m/s"; "Re = … (870)(0.08)(0.02)/(0.1040) = 13.8 < 2300 => laminar" | $v = Q/(\pi R^2) = 0.973$ m/s; $Re = 163$ | area × L has units m³, so Q/(πR²L) has units 1/s, not m/s; 0.08 = 0.973/12. Also 870·0.08·0.02/0.104 = 13.4, not 13.8. Conclusion "laminar" and slide 178 (ΔP 97.1 kPa, 29.67 W) unaffected | V |
+| S48 | 172, 177, 178; also 223–226, 233, 241–242, 248 | rendered page shows "kinematic viscosity = /ρ", "(0.01m) π", "1.1 m /hr", "Q * 8 L/πR⁴", "62.4 lbf/ft ;", "9.79 N/m", "(1/12) =" | μ, ², ³ present | the PDF text layer (`pdftotext`) holds µ/²/³ at those spots; the rendered glyphs are blank — a font-embedding fault of the PDF export, not of the slide text | C |
+| S49 | 158 | "Langrarian", "Eularian" | Lagrangian, Eulerian | spelling; also in Jul 2026 edition (old 167); not previously logged | C |
+| S50 | 191–192 (title of 192), 194 | "Γ = ∮_A ζ dA" | $\Gamma = \iint_A \zeta\,dA$ | ∮ is a closed line integral (slide 189); an integral over area A is a surface integral. Also in Jul 2026 edition | C |
+| S51 | 196–197 | 196: "obtain the equation of the streamline for this flow"; 197: "Circulation = (∂v/∂x − ∂u/∂y) … = 2k => rotational" | 197 answers rotationality, and the quantity is vorticity ζ | question and solution do not match; ζ has units s⁻¹, Γ has m²/s | C |
+| S52 | 203 | "mean velocities u₁ and u₂" beside "ρ₁A₁v₁ = ρ₂A₂v₂" | v₁, v₂ | same quantity, two symbols on one slide | C |
+| S53 | 220 | "V₁²/2g + P₁/ρg + z₁ = V₂²/2g + P₂/ρg + z₂ + h₂ +V₃²/2g +P₃/ρg +z₃+ h₃ …" | "… + z₂ + h₂ = V₃²/2g + P₃/ρg + z₃ + h₃" | read literally it sums two sections' heads; the figure (EL/HGL) shows one equation per section. Also old 235 | C |
+| S54 | 226 | "Take γ(air) = 9.79 N/m² and g = 9.807 g/m²" (render: "N/m", "g/m") | γ(water) = 9.79 kN/m³; g = 9.807 m/s² | 9.79 kN/m³ is water; air ≈ 0.012 kN/m³. The printed answer 2.66 m/s is reproduced only with γ_water = 9.79 kN/m³ and γ_Hg = 13.6γ_water | V |
+| S55 | 232–233 | 233: "But P₁ – P₂ = hγ=13.6 y", "y = 3.201 m/13.6;", "y = 0.254 m = 254 mm"; symbolic line "= A₂√{[2g(p1−p2)/γ]/[1 − (A1/A2)²]}"; 232: "Take γ(Hg) = 13.6" | $p_1-p_2 = (13.6-1)\gamma y$, $y = 3.201/12.6 = 0.254$ m; ratio $(A_2/A_1)^2$ and factor C; "s.g.(Hg) = 13.6" | 3.201/13.6 = 0.235 ≠ 0.254; 3.201/12.6 = 0.2540. Manometer under water must subtract the water column. Numeric line uses 0.01767/0.07069 (= A₂/A₁) correctly | V |
+| S56 | 234 | "Determine the discharge coefficient … if the discharge is 2.12 cfs. Take C = 0.979" | give no C (it is the answer) | recomputed: Q_ideal = 2.166 cfs, C = 2.12/2.166 = 0.979 | C |
+| S57 | 241–242 | "γm = 846 lbf ft/s²; γw = 62.4 lbf ft s²"; "= 549 lbf ft²/s²" | 846 and 62.4 lbf/ft³; 549 lbf/ft² | specific weight is force/volume; pressure is force/area. Jul 2026 edition (old 251–252) had lbf/ft³ and lbf/ft². Numbers correct (v = 23.8 ft/s) | C |
+| S58 | 246 | "P_A/ρg + P_B/ρg = V_B²/2g - H" | $p_A/\rho g - p_B/\rho g = v_B^2/2g - H$ | subtract P_B/ρg from both sides of the line above; the next line "(P_A − P_B)/ρg = …" is correct | C |
+| S59 | 248 | "(r_jet)² = 0.004297 ft²" | 0.004306 ft² | 0.01353/π = 0.004306; r_jet 0.0656 ft and D_jet 1.58 in unaffected | C |
+| S60 | 249 | "v = Q/a = 0.329/0.1353 = 24.3 ft/s" | 0.329/0.01353 | jet area on slide 248 is 0.01353 ft²; 0.329/0.1353 = 2.43. Result 24.3 correct (= C_v√2gH = 24.4) | C |
+| S61 | 250 | "∫dH/H^-½" | ∫H^(−½) dH = ∫dH/H^½ | dividing by H^(−½) multiplies by √H; next line "1/1/2 * H^1/2" and t₂−t₁ result correct. Also old 259 | C |
+| S62 | 252 | "H = (πv)²/C_a * 1/2g* r⁴" | $(\pi v/C_a)^2 r^4/2g$ | squaring (πv/C_a) squares C_a; the line above, "H = (πv/C_a r²)² * 1/2g", is right. H ∝ r⁴ unaffected | C |
+
+Not flagged (judged correct or immaterial): 175 compares Re = 60 000 with 50 000 (Ekman) rather than 2320 —
+turbulent either way; 177 uses 2300 vs 2320 on 173 — immaterial; 194 rounds Γ to 82.23 (unrounded 82.25);
+194 calls 4934 m²/min an "Area" (a velocity × perimeter) — left as a wording quirk; 230 missing bracket
+"v₂²(1 − (A₂/A₁)²/2g" and "u the velocity" while using v — minor; 255 "Toricelli", and "Q = C·b√2g·z^½ dz"
+without ∫ — minor, final weir formula correct.
+
+### Topics 07–08 (slides 256–375)
+
+#### S63 · slide 266 — jet force component loses its square — V
+- **Prints:** "Fx = Fsinθ = ρQv sin θ".
+- **Should be:** $F_x = F\sin\theta = \rho Qv\sin^2\theta$.
+- **Why:** the slide's own $F = \rho Qv\sin\theta$ times $\sin\theta$. The Jul 2026 edition (old 274) printed
+  sin²θ; the 265 inset also gives $F_x = F_N\sin\theta$ with $F_N = \rho aV^2\sin\theta$.
+
+#### S64 · slide 267 — reworded jet-split lines — C
+- **Prints:** "Force acting along flat board if the flow loss is disregarded, v = 0" and
+  "Δm = F cos θ = ρQv cosθ".
+- **Should be:** "force along the board = 0" (old edition: "disregarded = 0"); and the along-board momentum
+  flux in is $\rho Qv\cos\theta$, not $F\cos\theta$.
+- **Why:** the velocity along the board is $v$, not 0; and with $F = \rho Qv\sin\theta$ (266),
+  $F\cos\theta = \rho Qv\sin\theta\cos\theta = F_y$. The $Q_1$, $Q_2$ results are unaffected.
+
+#### S65 · slide 265 (pasted inset) — component label — C
+- **Prints:** "F_N = ρaV² sin θ; F_x = F_N sin θ; F_x = F_N cos θ".
+- **Should be:** third line $F_y = F_N\cos\theta$.
+- **Why:** two different components cannot both be $F_x$; 266 labels it $F_y$.
+
+#### S66 · slide 271 — reworked Borda–Carnot chain carries a spurious factor — V
+- **Prints:** "hs = 2v₂v₁/2g[(A₁/A₂)−1] + (v₁²−v₂²)/2g [(A₁/A₂)−1]"; "−2v2v1/2g + (v₁²−v₂²)/2g [1−(A₁/A₂)]";
+  "hs = (v1−v2)²/2g [1−(A₁/A₂)]"; "hs = v1²(1−A1/A2)²/2g [1−(A₁/A₂)]"; then "hs = (1 − A1/A2)² v1²/2g".
+- **Should be:** $h_s = \frac{2v_1v_2}{2g}(r-1) + \frac{v_1^2-v_2^2}{2g}$ with $r = A_1/A_2$; substituting
+  $v_2 = rv_1$ in the first term gives $\frac{v_1^2-2v_1v_2+v_2^2}{2g} = \frac{(v_1-v_2)^2}{2g} = (1-r)^2\frac{v_1^2}{2g}$ — no bracket factor.
+- **Why:** $2r(r-1) + 1 - r^2 = (1-r)^2$ identically, so any extra $(1-r)$ factor makes the chain wrong; also
+  $-2v_1v_2 + v_1^2 - v_2^2 \neq (v_1-v_2)^2$. Final boxed result is correct.
+
+#### S67 · slides 275–276 — jet-pump pressure change printed with the subtraction reversed — V
+- **Prints (275):** "P1 – p2 = ρ (d²/D²)((D²−d²)/D²)(vo−v1)²" and "p1 –p2 is always positive".
+  **(276):** "The change in pressure (p₁ – p₂) … P1 – p2 = ρ …".
+- **Should be:** $p_2 - p_1 = \rho\frac{d^2}{D^2}\frac{D^2-d^2}{D^2}(v_0-v_1)^2 > 0$.
+- **Why:** substitute continuity $D^2v_2 = (D^2-d^2)v_1 + d^2v_0$ into the slide's own momentum line
+  $\frac{\pi}{4}\rho[D^2v_2^2 - (D^2-d^2)v_1^2 - d^2v_0^2] = \frac{\pi}{4}D^2(p_1-p_2)$: the bracket equals
+  $-D^2\frac{d^2}{D^2}\frac{D^2-d^2}{D^2}(v_0-v_1)^2$. Numerically for the 276 data (ρ = 1000): $v_2 = 6.67$ m/s,
+  $p_1 - p_2 = -817$ Pa. Supersedes S16; same defect as exam P33.
+
+#### S68 · slide 275 — stray continuity scrap — C
+- **Prints:** "A1v1 = A2v2; V2 = A1v1/A2; [struck through: πD²/4 · v1/πd²/4]; V2 = D²/d²".
+- **Should be:** jet-pump continuity $D^2v_2 = (D^2-d^2)v_1 + d^2v_0$ (or drop the lines).
+- **Why:** "V2 = D²/d²" equates a velocity to a pure number (dimension check); not used later.
+
+#### S69 · slide 287 — relative velocities written as ω — C
+- **Prints:** "The relative velocities to the impeller are ω₁ and ω₂."
+- **Should be:** $w_1$, $w_2$ (as in the figure and the Jul 2026 edition).
+- **Why:** $\omega$ is the impeller angular velocity on 288 ($L = T\omega$).
+
+#### S70 · slides 309, 310, 314 (and 327) — cylindrical Navier–Stokes mixes y and r — V
+- **Prints (314):** x: "ρ(∂u/∂t + u∂u/∂x + v∂u/∂y) = ρX − ∂P/∂x + μ(∂²u/∂y² + 1∂²u/r∂r²)";
+  r: "ρ(∂v/∂t + u∂v/∂x + v∂v/∂y) = ρR − ∂P/∂y + μ(∂²v/∂x² + (1/r)∂v/∂r − (v/r²)∂²v/∂r²)".
+  **(310):** x viscous "μ(∂²u/∂y² + (1/r)∂u/∂r + ∂²u/∂r²)"; r: "ρR − ∂P/∂y + μ(∂²v/∂x² + (1/r)∂v/∂r − v/r² + ∂²v/∂r²)".
+  **(309):** x viscous "μ(∂²u/∂y² + (1/r)∂u/∂r + ∂²v/∂r²)"; r viscous "μ(∂²v/∂x² + (1/r)∂v/∂r − v/r² + ∂²v/∂y²)".
+  **(327):** x viscous "μ(∂²u/∂x² + (1/r)∂y/∂x + ∂²u/∂r²)".
+- **Should be:** $\rho(\partial_t u + u\partial_x u + v\partial_r u) = \rho X - \partial_x p + \mu(\partial_{xx}u + \partial_{rr}u + \tfrac1r\partial_r u)$;
+  $\rho(\partial_t v + u\partial_x v + v\partial_r v) = \rho R - \partial_r p + \mu(\partial_{xx}v + \partial_{rr}v + \tfrac1r\partial_r v - v/r^2)$.
+- **Why:** coordinates are $(x, r)$ — no $y$ may appear; the x-equation may contain only $u$; and with
+  $u = u(r)$ it must reduce to 327's $\partial p/\partial x = \mu(u'' + u'/r)$. 309 is unchanged from old 321 and
+  314 repeats the top of old 322; neither was logged before. 310 is reworded (partly corrected).
+
+#### S71 · slide 311 — unstarred variables in the non-dimensional line — C
+- **Prints:** "∂ζ*/∂t* + u*∂ζ*/∂x* + v*∂ζ*/∂y* = μ/Ulρ (∂²ζ/∂x² + ∂²ζ/∂y²)".
+- **Should be:** $\frac{\mu}{\rho Ul}\big(\frac{\partial^2\zeta^*}{\partial x^{*2}} + \frac{\partial^2\zeta^*}{\partial y^{*2}}\big)$.
+- **Why:** LHS is dimensionless in starred variables; RHS must be too. Next line ("= 1/Re(…)") is right.
+
+#### S72 · slide 306 — normal stress labelled τ — C
+- **Prints:** "Tensile stress in x direction on the face at distance dx is: τ = σx + (∂σx/∂x)dx".
+- **Should be:** $\sigma_x + (\partial\sigma_x/\partial x)\,dx$.
+- **Why:** τ is the shear stress throughout the deck; the Jul 2026 edition labelled it "dx" (also wrong).
+
+#### S73 · slide 317 — pressure-gradient sign lost — C
+- **Prints:** after "3. No body force ⇒ ρX = 0": "ρ(u∂u/∂x + v∂u/∂y) = ∂P/∂x + μ(∂²u/∂x² + ∂²u/∂y²)".
+- **Should be:** $= -\partial P/\partial x + \mu(\ldots)$.
+- **Why:** dropping $\rho X$ from the line above cannot change the sign of the pressure term; 318 restores it.
+
+#### S74 · slides 322, 324, 329, 330 — ΔP defined as a drop, then substituted with the wrong sign — V
+- **Prints (322):** "−dP/dx = ΔP/l" then "=> Q = −(1/12)(ΔP/μl)h³". **(324):** "ΔP = −11.11Pa".
+  **(329):** "If P drop = ΔP … ΔP = −128Qμl/πd⁴ … ΔP = −32μlv/d²". **(330):** "ΔP = −128Qμl/πd⁴".
+- **Should be:** $Q = +\dfrac{\Delta P\,h^3}{12\mu l}$; $\Delta P = +\dfrac{128Q\mu l}{\pi d^4} = +\dfrac{32\mu lv}{d^2}$; 324 answer +11.11 Pa (drop).
+- **Why:** substituting the slide's own $dP/dx = -\Delta P/l$ into $Q = -\frac{1}{12\mu}\frac{dP}{dx}h^3$ gives $+$.
+  A "pressure drop" that comes out negative contradicts its own definition. 322/329 carry this from the Jul
+  2026 edition (never logged; the KB had silently printed the positive form); 324 is new.
+
+#### S75 · slide 324 — wrong coefficient in the working — C
+- **Prints:** "= 0.01 m³/sec = − 1.11 ΔP" then "ΔP = −11.11Pa".
+- **Should be:** $0.01 = -9.0\times10^{-4}\,\Delta P$, since $h^3/(12\mu l) = 0.06^3/(12\cdot0.01\cdot2) = 9.0\times10^{-4}$.
+- **Why:** $0.01/(-1.11) = -0.009$, not −11.11; the printed answer matches $9.0\times10^{-4}$. Also note (not a
+  flag): the problem gives no plate width, so Q must be read as per metre of width.
+
+#### S76 · slides 327–328 — sign of the pipe velocity profile — V
+- **Prints (327):** "U = −(1/4μ)(dP/dx) r² + c1 log r + c2", then "U = −(1/4μ)(dP/dx)(ro² − r²)".
+  **(328):** "U = (1/4μ)(dP/dx)(ro² − r²) => parabola"; shear column "τ = −μ du/dr = −½ (dP/dr) r … = −μ (1/4μ) dP/dx ro² = 2·(1/4) dP/dx ro = ½ dP/dx r".
+- **Should be:** $u = +\frac{1}{4\mu}\frac{dp}{dx}r^2 + c_1\ln r + c_2$ → $u = -\frac{1}{4\mu}\frac{dp}{dx}(r_0^2-r^2)$; $\tau = -\tfrac12\frac{dp}{dx}r$.
+- **Why:** integrate $\frac{\mu}{r}\frac{d}{dr}(r\,u') = dp/dx$ ⇒ $u' = \frac{r}{2\mu}\frac{dp}{dx}$; with $dp/dx<0$, $u$ must be
+  positive. 327's first line is a new slip (Jul 2026 had +); 328's header and τ column carry over from old 339
+  (never logged).
+
+#### S77 · slide 369 — stray x and extra factor in the lubrication lines — V
+- **Prints:** "P = 6μU/α(h₁−αx) − 6μQ/α(h₁−αx)² − 6μU/α(h₁+h₂) x" and
+  "P = ∫₀ˡ P dx = 6μUl²(h1−h2)/(h₁−h2)² [log(h1/h2) − 2(h1−h2)/(h1+h2)] x".
+- **Should be:** $p = \frac{6\mu U}{\alpha h} - \frac{6\mu Q}{\alpha h^2} - \frac{6\mu U}{\alpha(h_1+h_2)}$ ($h = h_1-\alpha x$);
+  $W = \frac{6\mu Ul^2}{(h_1-h_2)^2}\big[\ln\frac{h_1}{h_2} - \frac{2(h_1-h_2)}{h_1+h_2}\big]$ per unit width.
+- **Why:** the constant of integration on 368 has no x, and with the x $p(l)\neq0$. Numerically (Python) the
+  corrected W equals $\int_0^l p\,dx$ exactly and its maximum is $0.160\,\mu Ul^2/h_2^2$ at $h_1/h_2 = 2.19$ — the
+  slide's own $P_{max}$. With the extra $(h_1-h_2)$ the load would have units N, not N/m. The extra factor was
+  in old 380 too; the stray x's are new.
+
+#### S78 · slide 373 — surface speed typo — C
+- **Prints:** "dv = ω(πd) = 1.667rps(π*0.10m) = 0.5436 m/s" and "τ = 0.11Pa s(0.5436/0.00015) = 384.0 N/m²".
+- **Should be:** 0.5236 m/s.
+- **Why:** $1.667\pi(0.10) = 0.5236$; $0.11\times0.5236/0.00015 = 384.0$ but $0.11\times0.5436/0.00015 = 398.6$.
+  Jul 2026 edition printed 0.5236; the energy line still uses 0.5236.
+
+### Topics 09–11 (slides 376–561)
+
+**S79 · slide 457 · C**
+- Prints: "From Moody chart: for ε/d = 0.001, f = 0.0219", then "Thus hp = 100 ft + (9.17)²/2(32.2) (0.0216(400)/(2/12) + Σζ)" (and 0.0216 again on 458).
+- Should be: one value, **0.0216**.
+- Why: Colebrook, 1/√f = −2 log(ε/3.7d + 2.51/(Re√f)) at Re = 1.389×10⁵, ε/d = 0.001 → f = 0.02156. With 0.0219, h_p = 186 ft instead of 185 ft; 4.2 hp unchanged.
+
+**S80 · slide 457 · C**
+- Prints (heading): "Solution, cnt'd [hf = 120 ft – 20 ft + v²/2g (fL/d + Σζ)]".
+- Should be: **h_p** = 120 ft − 20 ft + …
+- Why: slide 456 defines that expression as the pump head h_p (= z₂ − z₁ + h_f + Σh_m); h_f is the friction term alone.
+
+**S81 · slides 455–456 · C**
+- Prints: problem gives "Water (ρ = 1.94 slugs/ft³) … ε/d ration is 0.001" — no viscosity; solution then uses "Re = Vd/v = 9.17(2/12)/0.000011 = 139,000".
+- Should be: the question should state ν = 1.1×10⁻⁵ ft²/s (or μ).
+- Why: Re (and so the Moody f) cannot be computed from the data as set. Also writes ν as "v".
+
+**S82 · slide 474 (part 2, new) · C**
+- Prints: "2. Using the parameters of the channel in example 1, calculate the velocity and the flow rate in the pipes".
+- Should be: a definite instruction — which parameters (slope 1/400? n?), in which units; "channels", not "pipes".
+- Why: ambiguous and unsolved. Example 1 is in feet with the wrong n (0.12); the Example 2 sections are in metres. KB gives an `[added]` answer under one stated reading (SI Manning, i = 1/400, n = 0.012): v = 4.17 / 4.83 / 3.84 m/s, Q = 26.2 / 60.4 / 28.6 m³/s.
+
+**S83 · slide 497 (new) · C**
+- Prints: "Emin = Ac/2b + hc".
+- Should be: E_min = A_c/(2b) + h_c.
+- Why: as written it parses as (A_c/2)·b; the next line's arithmetic "(8)(2.218)/[(2)(8)]" uses A_c/(2b). Same defect as exam erratum P29 (2025 CAT 2 — same problem data).
+
+**S84 · slide 538 (new) · V**
+- Prints: "ρU²/2 − ρ(4U² sin²θ + r_o²ω²)/2 = p − p∞".
+- Should be: ρU²/2 − ρ(4U² sin²θ + **4Ur₀ω sinθ** + r₀²ω²)/2 = p − p∞.
+- Why: expand (2U sinθ + r₀ω)². Check: with ω = 0 the forms agree; with ω ≠ 0 they differ by 2ρUr₀ω sinθ. The dropped term is the only one that survives ∫_{−π/2}^{π/2}(…) sinθ dθ — without it L = 0. Slide 538's next line and slide 540 are correct.
+
+**S85 · slide 531 (split-out page; same text on old slide 558) · V**
+- Prints: "T₂ = πf'ρω²r_ob" and "= 2πf/5 ρω² r_o⁵ + πfρω²r_ob".
+- Should be: T₂ = πf′ρω²r₀⁴b (and + πfρω²r₀⁴b).
+- Why: T₂ = F′r₀ with F′ = f′(ρ(r₀ω)²/2)(2πr₀b) → πf′ρω²r₀⁴b. Dimensions: ρω²r₀b = kg m⁻³ s⁻² m² = Pa, not N·m. The slide's own final factorisation πfρω²r₀⁴(2r₀/5 + b) requires r₀⁴b. Present since the old deck, never logged.
+
+Not flagged (checked, fine): 457 "Half-closed gate valve" vs 455 figure "Half-open gate valve" (same thing); Σζ = 13.4 adds up; 494 A, m, Q; 497 h_c; 534 F_D = 0.02012 MN, P = 4.628 MW (exact: 0.02009 MN, 4.62 MW — rounding of C_D); 534 unclosed "[(6.5)(50)" bracket (trivial, also old).
 
 
 ---

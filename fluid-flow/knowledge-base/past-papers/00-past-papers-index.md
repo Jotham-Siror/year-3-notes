@@ -46,7 +46,7 @@ to the 2025 end-of-semester paper. The next paper starts at **P43**.
 | `02-history` | 2024 Q1a (hydraulics vs hydrodynamics), Q1b (which came first) |
 | `03-fluid-properties` | 2025 CAT 1 Q1 (dimensional homogeneity), Q4 (compressibility / bulk modulus) · **2025 exam Q1(a), Q1(b)** |
 | `04-fluid-statics` | 2025 CAT 1 Q2, Q3, Q4, Q5 · 2024 CAT 1 Q1c, Q1d · **2025 exam Q1(c), Q1(d), Q1(g)** (metacentric height on an 18 × 32 ft pontoon) |
-| ❌ **absent from the KB** | **2025 CAT 2 Q2(5)** — "the wall effect", 2 marks. Zero hits across all eleven topic files, the formula sheet and the nomenclature |
+| `09-pipe-flow` (wall effect) | **2025 CAT 2 Q2(5)** — "the wall effect", 2 marks. *Was absent from the KB; now covered from slides 416–417 of the Oct 2026 edition (`09-pipe-flow.md`, minor losses — the Coandă effect, though the slide does not name it).* |
 | `05-flow-fundamentals` | 2025 Q6 (streamlines, Lagrangian), Q7 (Re symbols), Q8a, Q9 (vorticity), Q10 (flow rate) · 2024 CAT 1 Q1c (steady flow, continuity, vortices), Q1e (define streamline), Q2a · **2024 CAT 2 Q1a** (matching six scientists to their fields) · **2025 CAT 2 Q1(3)(b)(i)** · **2025 exam Q1(e), Q1(f), Q2(b), Q2(d), Q3(a), Q5(d)(i)** |
 | `06-energy-bernoulli` | 2025 Q4 (Bernoulli → headloss) · 2024 CAT 1 Q3a (derive Bernoulli from Euler), Q3b (Venturi), Q4b (weir) · **2024 CAT 2 Q1b** (Pitot tube) · **2025 CAT 2 Q1(1), Q3(1)** · **2025 exam Q1(h), Q4(a)–(d)** (Pitot again, and Bernoulli with a head-loss reservoir) |
 | `07-momentum` | 2024 CAT 1 Q4a (jet pump) · **2025 exam Q2(c)** (the jet pump returns — same figure, subtraction reversed) |

@@ -11,9 +11,14 @@ Every `·slide N` citation in the knowledge base then resolves against the same 
 
 ## The lecture deck — the knowledge base is built from this
 
-| File | Slides | Size | Notes |
+Two editions exist. **The knowledge base cites the October 2026 edition.**
+
+| File | Pages | Size | Notes |
 |---|---|---|---|
-| `MEC 3104 FLUID THEORY NOTES.pptx` | 594 | 32 MB | Course lecturer. **All `·slide N` citations refer to this deck.** Slide 369 is hidden in the file but is included in the knowledge base and marked |
+| `MEC 3104 FLUID THEORY - newlypasted.pdf` | 561 | 41 MB | **Oct 2026 edition** (exported from PowerPoint, 13 Oct 2026). **All `·slide N` citations refer to this PDF** — PDF page N = slide N. |
+| `MEC 3104 FLUID THEORY NOTES.pptx` | 594 | 32 MB | Jul 2026 edition. Cited only as `·old slide N`, for content the new edition dropped. Slide 369 is hidden in this file. |
+
+`../knowledge-base/_edition-map.md` converts any old slide number to the new one.
 
 ## `textbooks/` — reference reading
 
@@ -42,6 +47,7 @@ mechanics references available through the university library.
 fluid-flow/
 └── sources/
     ├── SOURCES.md                          ← this file (tracked)
+    ├── MEC 3104 FLUID THEORY - newlypasted.pdf
     ├── MEC 3104 FLUID THEORY NOTES.pptx
     └── textbooks/
         ├── Fluid_Mechanics_by_John_F.Douglas.pdf
@@ -50,16 +56,16 @@ fluid-flow/
         └── fundamentals of fluid  mechanicsMunson Young(Autosaved).pdf
 ```
 
-Keep the deck's **exact filename** and do not re-order slides — the knowledge base cites slide
+Keep both decks' **exact filenames** and do not re-order slides — the knowledge base cites slide
 numbers throughout.
 
 ## Do the notes work without them?
 
-**Yes.** All 594 slides are transcribed into `../knowledge-base/`, with equations extracted from the
-PowerPoint XML and figures described from the rendered slides. You need the deck only to check a
-citation against the original slide.
+**Yes.** All 561 slides of the Oct 2026 edition — and everything from the Jul 2026 edition that it
+dropped — are transcribed into `../knowledge-base/`, with equations checked against the rendered
+slides. You need a deck only to check a citation against the original slide.
 
-**Total not tracked: ~111 MB.** The knowledge base that replaces it is under 250 KB.
+**Total not tracked: ~152 MB.** The knowledge base that replaces it is under 250 KB.
 
 ---
 

@@ -10,7 +10,7 @@ GitHub shows `.html` files as source code.
 
 | Subject | Code | Source material | Status |
 |---|---|---|---|
-| [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 594-slide lecture deck | 11 topics, 50 flags, 5 past papers |
+| [Fluid Flow](fluid-flow/knowledge-base/00-index.md) | MEC 3104 | 561-slide lecture deck (Oct 2026 edition) | 11 topics, 103 flags, 5 past papers |
 | [Electromagnetic Fields](electromagnetic-fields/knowledge-base/00-index.md) | EEE3202 | Lecture handouts, issued progressively | 4 topic files from 5 handouts, 109 flags, 6 past papers, 1 lab |
 | [Thermodynamics](thermodynamics/knowledge-base/00-index.md) | MEC 3105 | 5 lecture documents (200 pp.) + assessed group activities | 7 topic files, 51 flags, 6 past papers, both group activities |
 | [Analogue Electronics I](analogue-electronics/knowledge-base/00-index.md) | BEE 3103 | Lecture notes (100 pp.) + 7 lesson documents (169 pp.) + 4 reference decks | 14 topic files, 388 flags, 3 tiers, 4 past papers |
@@ -138,7 +138,7 @@ This repository is public, so four things are withheld on purpose. Please don't 
 │   ├── presentation-style-prompt.md
 │   └── study-assistant-instructions.md
 ├── fluid-flow/
-│   ├── knowledge-base/          # 11 topic files + nomenclature, formulas, log
+│   ├── knowledge-base/          # 11 topic files + nomenclature, formulas, log, edition map
 │   │   └── past-papers/         # transcribed CATs + redrawn SVG figures
 │   ├── study-guides/            # human-facing interactive HTML
 │   └── sources/SOURCES.md       # manifest (files themselves untracked)
